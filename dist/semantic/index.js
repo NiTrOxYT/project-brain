@@ -1,3 +1,4 @@
+export * from "./normalizer";
 export * from "./service";
 export * from "./types";
 export * from "./errors";

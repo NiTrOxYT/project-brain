@@ -1,6 +1,7 @@
 import path from "path";
 import { FileSystemService } from "../filesystem";
 import { ScannerService } from "../scanner";
+import { normalize } from "./normalizer";
 export class SemanticService {
     workspaceRoot;
     filesystem = new FileSystemService();
@@ -11,11 +12,7 @@ export class SemanticService {
         const snapshot = await new ScannerService(this.workspaceRoot).snapshot();
         const entries = [];
         for (const symbol of snapshot.symbols) {
-            const terms = symbol.name
-                .replace(/([a-z])([A-Z])/g, "$1 $2")
-                .toLowerCase()
-                .split(/\s+/)
-                .filter(Boolean);
+            const terms = normalize(symbol.name);
             entries.push({
                 id: symbol.file +
                     "::" +

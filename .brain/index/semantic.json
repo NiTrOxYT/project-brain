@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T17:26:32.229Z",
+  "generatedAt": "2026-06-26T17:32:33.551Z",
   "entries": [
     {
       "id": "packages/cache/errors.ts::CacheError",
@@ -253,7 +253,9 @@
       "id": "packages/kernel/constants.ts::PROJECT_BRAIN_NAME",
       "file": "packages/kernel/constants.ts",
       "terms": [
-        "project_brain_name"
+        "project",
+        "brain",
+        "name"
       ],
       "weight": 100
     },
@@ -261,7 +263,9 @@
       "id": "packages/kernel/constants.ts::PROJECT_BRAIN_VERSION",
       "file": "packages/kernel/constants.ts",
       "terms": [
-        "project_brain_version"
+        "project",
+        "brain",
+        "version"
       ],
       "weight": 100
     },
@@ -269,7 +273,10 @@
       "id": "packages/kernel/constants.ts::PROJECT_BRAIN_DIRECTORY_NAME",
       "file": "packages/kernel/constants.ts",
       "terms": [
-        "project_brain_directory_name"
+        "project",
+        "brain",
+        "directory",
+        "name"
       ],
       "weight": 100
     },
@@ -277,7 +284,9 @@
       "id": "packages/kernel/constants.ts::PROJECT_BRAIN_CONFIG",
       "file": "packages/kernel/constants.ts",
       "terms": [
-        "project_brain_config"
+        "project",
+        "brain",
+        "config"
       ],
       "weight": 100
     },
@@ -285,7 +294,8 @@
       "id": "packages/kernel/constants.ts::MEMORY_DIRECTORY",
       "file": "packages/kernel/constants.ts",
       "terms": [
-        "memory_directory"
+        "memory",
+        "directory"
       ],
       "weight": 100
     },
@@ -293,7 +303,8 @@
       "id": "packages/kernel/constants.ts::GRAPH_DIRECTORY",
       "file": "packages/kernel/constants.ts",
       "terms": [
-        "graph_directory"
+        "graph",
+        "directory"
       ],
       "weight": 100
     },
@@ -301,7 +312,8 @@
       "id": "packages/kernel/constants.ts::CACHE_DIRECTORY",
       "file": "packages/kernel/constants.ts",
       "terms": [
-        "cache_directory"
+        "cache",
+        "directory"
       ],
       "weight": 100
     },
@@ -309,7 +321,8 @@
       "id": "packages/kernel/constants.ts::TASK_DIRECTORY",
       "file": "packages/kernel/constants.ts",
       "terms": [
-        "task_directory"
+        "task",
+        "directory"
       ],
       "weight": 100
     },
@@ -496,7 +509,7 @@
       "id": "packages/workspace/service.ts::IWorkspaceService",
       "file": "packages/workspace/service.ts",
       "terms": [
-        "iworkspace",
+        "workspace",
         "service"
       ],
       "weight": 100
