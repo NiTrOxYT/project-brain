@@ -1,4 +1,5 @@
 import { OrchestratorService } from "../orchestrator";
+import { QueryAnalyzerService } from "../query-analyzer";
 
 import {
     BrainRequest,
@@ -15,6 +16,11 @@ export class BrainService {
         request: BrainRequest
     ): Promise<BrainResponse> {
 
+        const analysis =
+            new QueryAnalyzerService().analyze(
+                request.prompt
+            );
+
         const orchestrator =
             new OrchestratorService(
                 this.workspaceRoot
@@ -23,7 +29,7 @@ export class BrainService {
         const result =
             await orchestrator.execute({
 
-                query: request.prompt
+                query: analysis.keywords.join(" ")
 
             });
 
