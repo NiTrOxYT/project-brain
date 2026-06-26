@@ -4,7 +4,6 @@ import { ProjectService } from "../project";
 import { IndexerService } from "../indexer";
 import { SymbolsService } from "../symbols";
 import { ImportsService } from "../imports";
-import { GraphBuilderService } from "../graph-builder";
 import { KnowledgeService } from "../knowledge";
 import { GraphService } from "../graph";
 import { CacheService } from "../cache";
@@ -24,7 +23,8 @@ export class RuntimeService {
         await new IndexerService(this.context.root, workspaceRoot).index();
         await new SymbolsService(this.context.root, workspaceRoot).index();
         await new ImportsService(this.context.root, workspaceRoot).index();
-        await new GraphBuilderService(workspaceRoot).build();
+        const { SemanticService } = await import("../semantic");
+        await new SemanticService(workspaceRoot).build();
         await new KnowledgeService(workspaceRoot).initialize();
         await new GraphService(workspaceRoot).initialize();
         await new CacheService(workspaceRoot).initialize();

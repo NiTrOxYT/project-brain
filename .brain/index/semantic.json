@@ -1,0 +1,532 @@
+{
+  "generatedAt": "2026-06-26T17:26:32.229Z",
+  "entries": [
+    {
+      "id": "packages/cache/errors.ts::CacheError",
+      "file": "packages/cache/errors.ts",
+      "terms": [
+        "cache",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cache/service.ts::CacheService",
+      "file": "packages/cache/service.ts",
+      "terms": [
+        "cache",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cache/types.ts::RuntimeCache",
+      "file": "packages/cache/types.ts",
+      "terms": [
+        "runtime",
+        "cache"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/banner.ts::banner",
+      "file": "packages/cli/banner.ts",
+      "terms": [
+        "banner"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/errors.ts::FileSystemError",
+      "file": "packages/filesystem/errors.ts",
+      "terms": [
+        "file",
+        "system",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/service.ts::FileSystemService",
+      "file": "packages/filesystem/service.ts",
+      "terms": [
+        "file",
+        "system",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/types.ts::WriteJsonOptions",
+      "file": "packages/filesystem/types.ts",
+      "terms": [
+        "write",
+        "json",
+        "options"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/types.ts::ReadJsonOptions",
+      "file": "packages/filesystem/types.ts",
+      "terms": [
+        "read",
+        "json",
+        "options"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph/errors.ts::GraphError",
+      "file": "packages/graph/errors.ts",
+      "terms": [
+        "graph",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph/service.ts::GraphService",
+      "file": "packages/graph/service.ts",
+      "terms": [
+        "graph",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph/types.ts::GraphNode",
+      "file": "packages/graph/types.ts",
+      "terms": [
+        "graph",
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph/types.ts::GraphEdge",
+      "file": "packages/graph/types.ts",
+      "terms": [
+        "graph",
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph/types.ts::ProjectGraph",
+      "file": "packages/graph/types.ts",
+      "terms": [
+        "project",
+        "graph"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph-builder/errors.ts::GraphBuilderError",
+      "file": "packages/graph-builder/errors.ts",
+      "terms": [
+        "graph",
+        "builder",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph-builder/service.ts::GraphBuilderService",
+      "file": "packages/graph-builder/service.ts",
+      "terms": [
+        "graph",
+        "builder",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph-builder/types.ts::GraphNode",
+      "file": "packages/graph-builder/types.ts",
+      "terms": [
+        "graph",
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph-builder/types.ts::GraphEdge",
+      "file": "packages/graph-builder/types.ts",
+      "terms": [
+        "graph",
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph-builder/types.ts::DependencyGraph",
+      "file": "packages/graph-builder/types.ts",
+      "terms": [
+        "dependency",
+        "graph"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/imports/errors.ts::ImportsError",
+      "file": "packages/imports/errors.ts",
+      "terms": [
+        "imports",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/imports/service.ts::ImportsService",
+      "file": "packages/imports/service.ts",
+      "terms": [
+        "imports",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/imports/types.ts::ImportRecord",
+      "file": "packages/imports/types.ts",
+      "terms": [
+        "import",
+        "record"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/imports/types.ts::ImportIndex",
+      "file": "packages/imports/types.ts",
+      "terms": [
+        "import",
+        "index"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/indexer/errors.ts::IndexerError",
+      "file": "packages/indexer/errors.ts",
+      "terms": [
+        "indexer",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/indexer/service.ts::IndexerService",
+      "file": "packages/indexer/service.ts",
+      "terms": [
+        "indexer",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/indexer/types.ts::IndexedFile",
+      "file": "packages/indexer/types.ts",
+      "terms": [
+        "indexed",
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/indexer/types.ts::IndexResult",
+      "file": "packages/indexer/types.ts",
+      "terms": [
+        "index",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/boot.ts::BrainKernel",
+      "file": "packages/kernel/boot.ts",
+      "terms": [
+        "brain",
+        "kernel"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/constants.ts::PROJECT_BRAIN_NAME",
+      "file": "packages/kernel/constants.ts",
+      "terms": [
+        "project_brain_name"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/constants.ts::PROJECT_BRAIN_VERSION",
+      "file": "packages/kernel/constants.ts",
+      "terms": [
+        "project_brain_version"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/constants.ts::PROJECT_BRAIN_DIRECTORY_NAME",
+      "file": "packages/kernel/constants.ts",
+      "terms": [
+        "project_brain_directory_name"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/constants.ts::PROJECT_BRAIN_CONFIG",
+      "file": "packages/kernel/constants.ts",
+      "terms": [
+        "project_brain_config"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/constants.ts::MEMORY_DIRECTORY",
+      "file": "packages/kernel/constants.ts",
+      "terms": [
+        "memory_directory"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/constants.ts::GRAPH_DIRECTORY",
+      "file": "packages/kernel/constants.ts",
+      "terms": [
+        "graph_directory"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/constants.ts::CACHE_DIRECTORY",
+      "file": "packages/kernel/constants.ts",
+      "terms": [
+        "cache_directory"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/constants.ts::TASK_DIRECTORY",
+      "file": "packages/kernel/constants.ts",
+      "terms": [
+        "task_directory"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/types.ts::BrainPaths",
+      "file": "packages/kernel/types.ts",
+      "terms": [
+        "brain",
+        "paths"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/kernel/types.ts::RuntimeContext",
+      "file": "packages/kernel/types.ts",
+      "terms": [
+        "runtime",
+        "context"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/knowledge/errors.ts::KnowledgeError",
+      "file": "packages/knowledge/errors.ts",
+      "terms": [
+        "knowledge",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/knowledge/service.ts::KnowledgeService",
+      "file": "packages/knowledge/service.ts",
+      "terms": [
+        "knowledge",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/knowledge/types.ts::KnowledgeFile",
+      "file": "packages/knowledge/types.ts",
+      "terms": [
+        "knowledge",
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/knowledge/types.ts::KnowledgeIndex",
+      "file": "packages/knowledge/types.ts",
+      "terms": [
+        "knowledge",
+        "index"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/manifest/errors.ts::ManifestError",
+      "file": "packages/manifest/errors.ts",
+      "terms": [
+        "manifest",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/manifest/service.ts::ManifestService",
+      "file": "packages/manifest/service.ts",
+      "terms": [
+        "manifest",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/manifest/types.ts::Manifest",
+      "file": "packages/manifest/types.ts",
+      "terms": [
+        "manifest"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/project/errors.ts::ProjectError",
+      "file": "packages/project/errors.ts",
+      "terms": [
+        "project",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/project/service.ts::ProjectService",
+      "file": "packages/project/service.ts",
+      "terms": [
+        "project",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/project/types.ts::ProjectInfo",
+      "file": "packages/project/types.ts",
+      "terms": [
+        "project",
+        "info"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/runtime/errors.ts::RuntimeError",
+      "file": "packages/runtime/errors.ts",
+      "terms": [
+        "runtime",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/runtime/service.ts::RuntimeService",
+      "file": "packages/runtime/service.ts",
+      "terms": [
+        "runtime",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/runtime/types.ts::RuntimeContext",
+      "file": "packages/runtime/types.ts",
+      "terms": [
+        "runtime",
+        "context"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/symbols/errors.ts::SymbolsError",
+      "file": "packages/symbols/errors.ts",
+      "terms": [
+        "symbols",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/symbols/service.ts::SymbolsService",
+      "file": "packages/symbols/service.ts",
+      "terms": [
+        "symbols",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/symbols/types.ts::SymbolRecord",
+      "file": "packages/symbols/types.ts",
+      "terms": [
+        "symbol",
+        "record"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/symbols/types.ts::SymbolIndex",
+      "file": "packages/symbols/types.ts",
+      "terms": [
+        "symbol",
+        "index"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/errors.ts::WorkspaceError",
+      "file": "packages/workspace/errors.ts",
+      "terms": [
+        "workspace",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::IWorkspaceService",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "iworkspace",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::WorkspaceService",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "workspace",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/types.ts::WorkspaceOptions",
+      "file": "packages/workspace/types.ts",
+      "terms": [
+        "workspace",
+        "options"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/types.ts::WorkspaceResult",
+      "file": "packages/workspace/types.ts",
+      "terms": [
+        "workspace",
+        "result"
+      ],
+      "weight": 100
+    }
+  ]
+}
