@@ -45,6 +45,16 @@ export interface QueryDiagnostics {
     runtimeMetricsSummary?: any;
     executionSnapshotId?: string;
 
+    /** Workspace engine stats when a WorkspaceEngine is active. */
+    workspaceDiagnostics?: {
+        totalTransactions: number;
+        totalChanges: number;
+        totalPatchesApplied: number;
+        rolledBackTransactions: number;
+        totalArtifactsApplied: number;
+        activeLocks: number;
+    };
+
 }
 
 export interface QueryResult {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T20:20:47.805Z",
+  "generatedAt": "2026-06-26T20:46:05.097Z",
   "nodes": [
     {
       "id": "packages/agent-runtime/executor.ts",
@@ -450,11 +450,31 @@
       "type": "file"
     },
     {
+      "id": "packages/test-workspace-engine.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/workspace/index.ts",
       "type": "file"
     },
     {
       "id": "packages/workspace/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts",
       "type": "file"
     }
   ],
@@ -652,6 +672,11 @@
     {
       "from": "packages/agent-runtime/service.ts",
       "to": "packages/agent-runtime/hooks.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/agent-runtime/service.ts",
+      "to": "packages/workspace/workspace-engine.ts",
       "type": "imports"
     },
     {
@@ -1542,6 +1567,11 @@
     {
       "from": "packages/orchestrator/executor.ts",
       "to": "packages/agent-runtime/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/orchestrator/executor.ts",
+      "to": "packages/workspace/workspace-engine.ts",
       "type": "imports"
     },
     {
@@ -2770,6 +2800,51 @@
       "type": "imports"
     },
     {
+      "from": "packages/test-workspace-engine.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts",
+      "to": "packages/workspace/workspace-engine.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts",
+      "to": "packages/workspace/workspace-journal.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts",
+      "to": "packages/workspace/workspace-lock.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts",
+      "to": "packages/workspace/workspace-patch.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts",
+      "to": "packages/workspace/workspace-errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts",
+      "to": "packages/agent-runtime/service.ts",
+      "type": "imports"
+    },
+    {
       "from": "packages/workspace/index.ts",
       "to": "packages/workspace/service.ts",
       "type": "imports"
@@ -2782,6 +2857,36 @@
     {
       "from": "packages/workspace/index.ts",
       "to": "packages/workspace/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/index.ts",
+      "to": "packages/workspace/workspace-types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/index.ts",
+      "to": "packages/workspace/workspace-errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/index.ts",
+      "to": "packages/workspace/workspace-journal.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/index.ts",
+      "to": "packages/workspace/workspace-lock.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/index.ts",
+      "to": "packages/workspace/workspace-patch.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/index.ts",
+      "to": "packages/workspace/workspace-engine.ts",
       "type": "imports"
     },
     {
@@ -2802,6 +2907,81 @@
     {
       "from": "packages/workspace/service.ts",
       "to": "packages/workspace/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts",
+      "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts",
+      "to": "packages/workspace/workspace-types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts",
+      "to": "packages/workspace/workspace-errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts",
+      "to": "packages/workspace/workspace-journal.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts",
+      "to": "packages/workspace/workspace-lock.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts",
+      "to": "packages/workspace/workspace-patch.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts",
+      "to": "packages/workspace/workspace-types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts",
+      "to": "packages/workspace/workspace-types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts",
+      "to": "packages/workspace/workspace-errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts",
+      "to": "packages/workspace/workspace-types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts",
+      "to": "packages/workspace/workspace-errors.ts",
       "type": "imports"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T20:20:46.887Z",
+  "generatedAt": "2026-06-26T20:46:04.028Z",
   "entries": [
     {
       "id": "packages/agent-runtime/artifacts.ts::RuntimeArtifact",
@@ -891,6 +891,15 @@
       "weight": 100
     },
     {
+      "id": "packages/agent-runtime/service.ts::workspaceEngine",
+      "file": "packages/agent-runtime/service.ts",
+      "terms": [
+        "workspace",
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
       "id": "packages/agent-runtime/service.ts::middlewares",
       "file": "packages/agent-runtime/service.ts",
       "terms": [
@@ -1146,6 +1155,24 @@
       "file": "packages/agent-runtime/service.ts",
       "terms": [
         "attempt"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/agent-runtime/service.ts::wsResult",
+      "file": "packages/agent-runtime/service.ts",
+      "terms": [
+        "ws",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/agent-runtime/service.ts::wsErr",
+      "file": "packages/agent-runtime/service.ts",
+      "terms": [
+        "ws",
+        "err"
       ],
       "weight": 100
     },
@@ -8598,6 +8625,24 @@
       "weight": 100
     },
     {
+      "id": "packages/orchestrator/executor.ts::workspaceDiagnostics",
+      "file": "packages/orchestrator/executor.ts",
+      "terms": [
+        "workspace",
+        "diagnostics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/orchestrator/executor.ts::wsDiag",
+      "file": "packages/orchestrator/executor.ts",
+      "terms": [
+        "ws",
+        "diag"
+      ],
+      "weight": 100
+    },
+    {
       "id": "packages/orchestrator/scheduler.ts::OrchestratorScheduler",
       "file": "packages/orchestrator/scheduler.ts",
       "terms": [
@@ -15832,6 +15877,1318 @@
       "weight": 100
     },
     {
+      "id": "packages/test-workspace-engine.ts::passed",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "passed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::failed",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "failed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::errors",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "errors"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::assert",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "assert"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::assertThrows",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "assert",
+        "throws"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::err",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::assertAsyncThrows",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "assert",
+        "async",
+        "throws"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::err",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::makeTempWorkspace",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "make",
+        "temp",
+        "workspace"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::dir",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::cleanupWorkspace",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "cleanup",
+        "workspace"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testTransactionLifecycle",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "transaction",
+        "lifecycle"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::absPath",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::diag",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "diag"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testRollback",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "rollback"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::initTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "init",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::absPath",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::content",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::diag",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "diag"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testRollbackOnError",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "rollback",
+        "on",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::initTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "init",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::content",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testMultipleOperations",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "multiple",
+        "operations"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testDeleteFile",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "delete",
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::createTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "create",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::delTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "del",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::createTx2",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "create",
+        "tx2"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::delTx2",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "del",
+        "tx2"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testRenameFile",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "rename",
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::createTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "create",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::renameTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "rename",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testPatchEngine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "patch",
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::patcher",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "patcher"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::old",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "old"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::updated",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "updated"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::patch",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::applied",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "applied"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::noPatch",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "no",
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::createTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "create",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::absFilePath",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "abs",
+        "file",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::filePatch",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "file",
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::patchTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "patch",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::onDisk",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "on",
+        "disk"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testLockManager",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "lock",
+        "manager"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::locks",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "locks"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testLockContention",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "lock",
+        "contention"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx1",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx1"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx2",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx2"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testJournal",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "journal"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::journalPath",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "journal",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::lines",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "lines"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::entries",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "entries"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::beginEntry",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "begin",
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::writeEntry",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "write",
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::commitEntry",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "commit",
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::stateDir",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "state",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::journal",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "journal"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::allEntries",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "all",
+        "entries"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::txEntries",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx",
+        "entries"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testPreview",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "preview"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::initTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "init",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::previews",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "previews"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::onDisk",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "on",
+        "disk"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::updated",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "updated"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testValidateFile",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "validate",
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::createTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "create",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::okTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "ok",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::okResult",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "ok",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::failTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "fail",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::failResult",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "fail",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::contentTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "content",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::contentResult",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "content",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testApplyArtifacts",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "apply",
+        "artifacts"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::artifacts",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "artifacts"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::diag",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "diag"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testApplyArtifactsEmpty",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "apply",
+        "artifacts",
+        "empty"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testDryRunMode",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "dry",
+        "run",
+        "mode"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testConcurrentTransactionIsolation",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "concurrent",
+        "transaction",
+        "isolation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx1",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx1"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx2",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx2"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testDiagnostics",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "diagnostics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::diag0",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "diag0"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::diag1",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "diag1"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::diag2",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "diag2"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::diag3",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "diag3"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testPartialRollbackOnMultiOpError",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "partial",
+        "rollback",
+        "on",
+        "multi",
+        "op",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::initTx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "init",
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::result",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testUseCommittedTransactionIDError",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "use",
+        "committed",
+        "transaction",
+        "id",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::tx",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::testRegressionAgentRuntime",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "test",
+        "regression",
+        "agent",
+        "runtime"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::root",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::engine",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::runtime",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "runtime"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::response",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::diag",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "diag"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::main",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "main"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-workspace-engine.ts::e",
+      "file": "packages/test-workspace-engine.ts",
+      "terms": [
+        "e"
+      ],
+      "weight": 100
+    },
+    {
       "id": "packages/workspace/errors.ts::WorkspaceError",
       "file": "packages/workspace/errors.ts",
       "terms": [
@@ -15969,6 +17326,1504 @@
       "terms": [
         "workspace",
         "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::ApplicableArtifact",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "applicable",
+        "artifact"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::StagedTransaction",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "staged",
+        "transaction"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::generateTxId",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "generate",
+        "tx",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::WorkspaceEngine",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "workspace",
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::journal",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "journal"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::locks",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "locks"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::patcher",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "patcher"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::staged",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "staged"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::stateDir",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "state",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::options",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "options"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::totalTransactions",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "total",
+        "transactions"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::committedTransactions",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "committed",
+        "transactions"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::rolledBackTransactions",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "rolled",
+        "back",
+        "transactions"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::totalPatchesApplied",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "total",
+        "patches",
+        "applied"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::totalArtifactsApplied",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "total",
+        "artifacts",
+        "applied"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::totalChanges",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "total",
+        "changes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::constructor",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::beginTransaction",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "begin",
+        "transaction"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::tx",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::stage",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "stage"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::staged",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "staged"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::paths",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "paths"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::p",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::err",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::preview",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "preview"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::staged",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "staged"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::patches",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "patches"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::op",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "op"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::existing",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "existing"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::patch",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::patch",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::commit",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "commit"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::staged",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "staged"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::startTime",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "start",
+        "time"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::op",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "op"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::err",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::result",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::rollback",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "rollback"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::staged",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "staged"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::applyArtifacts",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "apply",
+        "artifacts"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::startTime",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "start",
+        "time"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::applicable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "applicable"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::emptyTxId",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "empty",
+        "tx",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::tx",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "tx"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::txId",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "tx",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::artifact",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "artifact"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::result",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::diagnostics",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "diagnostics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::applyOperation",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "apply",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::txId",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "tx",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::existing",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "existing"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::patch",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::existing",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "existing"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absOld",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "old"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absNew",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "new"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::existing",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "existing"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::exists",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "exists"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::validation",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "validation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::actual",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "actual"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::match",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::absPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "abs",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::existing",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "existing"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::newContent",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "new",
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::rollbackInternal",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "rollback",
+        "internal"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::backupEntries",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "backup",
+        "entries"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::err",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::buildResult",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "build",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::requireStaged",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "require",
+        "staged"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::staged",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "staged"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::backup",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "backup"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::safeReadFile",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "safe",
+        "read",
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::resolve",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "resolve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::ensureParentDir",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "ensure",
+        "parent",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::dir",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::ensureStateDirectory",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "ensure",
+        "state",
+        "directory"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::pathsForOperation",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "paths",
+        "for",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::resolve",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "resolve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts::primaryPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "terms": [
+        "primary",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::WorkspaceEngineError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "workspace",
+        "engine",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "code"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::WorkspaceTransactionError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "workspace",
+        "transaction",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "code"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::WorkspaceLockError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "workspace",
+        "lock",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "code"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::WorkspaceValidationError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "workspace",
+        "validation",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "code"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::WorkspacePatchError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "workspace",
+        "patch",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "code"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts::constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::WorkspaceJournal",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "workspace",
+        "journal"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::journalPath",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "journal",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::entryCount",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "entry",
+        "count"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::constructor",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::lines",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "lines"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::append",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "append"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::dir",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::err",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::readAll",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "read",
+        "all"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::entries",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "entries"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::lines",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "lines"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::line",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "line"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::readTransaction",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "read",
+        "transaction"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts::record",
+      "file": "packages/workspace/workspace-journal.ts",
+      "terms": [
+        "record"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::WorkspaceLockManager",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "workspace",
+        "lock",
+        "manager"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::locks",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "locks"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::acquire",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "acquire"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::existing",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "existing"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::release",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "release"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::existing",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "existing"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::releaseAll",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "release",
+        "all"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::isLocked",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "is",
+        "locked"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::lockedBy",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "locked",
+        "by"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts::activeLocks",
+      "file": "packages/workspace/workspace-lock.ts",
+      "terms": [
+        "active",
+        "locks"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::WorkspacePatchEngine",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "workspace",
+        "patch",
+        "engine"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::generatePatch",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "generate",
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::oldLines",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "old",
+        "lines"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::newLines",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "new",
+        "lines"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::hunks",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "hunks"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::applyPatch",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "apply",
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::lines",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "lines"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::result",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::pos",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "pos"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::hunk",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "hunk"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::isIdentical",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "is",
+        "identical"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::diff",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "diff"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::m",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "m"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::n",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "n"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::dp",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "dp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::i",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "i"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::j",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "j"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::EditOp",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "edit",
+        "op"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::edits",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "edits"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::i",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "i"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::j",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "j"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::hunks",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "hunks"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::k",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "k"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::edit",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "edit"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::hunkStart",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "hunk",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::removed",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "removed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts::added",
+      "file": "packages/workspace/workspace-patch.ts",
+      "terms": [
+        "added"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WriteFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "write",
+        "file",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::ReadFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "read",
+        "file",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::DeleteFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "delete",
+        "file",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::RenameFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "rename",
+        "file",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::CreateDirectoryOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "create",
+        "directory",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::DeleteDirectoryOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "delete",
+        "directory",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::ValidateFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "validate",
+        "file",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::PatchFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "patch",
+        "file",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "operation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspacePatch",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "patch"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::PatchHunk",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "patch",
+        "hunk"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceJournalAction",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "journal",
+        "action"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceJournalEntry",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "journal",
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceLock",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "lock"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::TransactionStatus",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "transaction",
+        "status"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceTransaction",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "transaction"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::ChangeKind",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "change",
+        "kind"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceChange",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "change"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceValidationResult",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "validation",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceEngineResult",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "engine",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceEngineOptions",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "engine",
+        "options"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts::WorkspaceEngineDiagnostics",
+      "file": "packages/workspace/workspace-types.ts",
+      "terms": [
+        "workspace",
+        "engine",
+        "diagnostics"
       ],
       "weight": 100
     }

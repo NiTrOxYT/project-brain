@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T20:20:46.710Z",
+  "generatedAt": "2026-06-26T20:46:03.828Z",
   "symbols": [
     {
       "name": "RuntimeArtifact",
@@ -497,467 +497,455 @@
       "name": "MockAgentProvider",
       "kind": "class",
       "file": "packages/agent-runtime/service.ts",
-      "line": 23
+      "line": 24
     },
     {
       "name": "id",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 24
+      "line": 25
     },
     {
       "name": "name",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 25
+      "line": 26
     },
     {
       "name": "capabilities",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 26
+      "line": 27
     },
     {
       "name": "priority",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 37
+      "line": 38
     },
     {
       "name": "version",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 38
+      "line": 39
     },
     {
       "name": "supportedRuntimeVersion",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 39
+      "line": 40
     },
     {
       "name": "health",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 40
+      "line": 41
     },
     {
       "name": "metadata",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 41
+      "line": 42
     },
     {
       "name": "initialize",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 43
+      "line": 44
     },
     {
       "name": "shutdown",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 44
+      "line": 45
     },
     {
       "name": "supportsCapability",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 46
+      "line": 47
     },
     {
       "name": "execute",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 50
+      "line": 51
     },
     {
       "name": "progress",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 63
+      "line": 64
     },
     {
       "name": "artifactType",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 102
+      "line": 103
     },
     {
       "name": "artifact",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 113
+      "line": 114
     },
     {
       "name": "pause",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 160
+      "line": 161
     },
     {
       "name": "resume",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 161
+      "line": 162
     },
     {
       "name": "cancel",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 162
+      "line": 163
     },
     {
       "name": "AgentRuntimeService",
       "kind": "class",
       "file": "packages/agent-runtime/service.ts",
-      "line": 166
+      "line": 167
     },
     {
       "name": "registry",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 167
+      "line": 168
     },
     {
       "name": "engine",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 168
+      "line": 169
     },
     {
-      "name": "middlewares",
+      "name": "workspaceEngine",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
       "line": 170
     },
     {
-      "name": "hooks",
-      "kind": "property",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 171
-    },
-    {
-      "name": "timings",
+      "name": "middlewares",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
       "line": 172
     },
     {
+      "name": "hooks",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 173
+    },
+    {
+      "name": "timings",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 174
+    },
+    {
       "name": "providerSelectionReasoning",
-      "kind": "property",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 177
-    },
-    {
-      "name": "replayStatistics",
-      "kind": "property",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 178
-    },
-    {
-      "name": "snapshotStatistics",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
       "line": 179
     },
     {
-      "name": "sessionId",
+      "name": "replayStatistics",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
       "line": 180
     },
     {
+      "name": "snapshotStatistics",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 181
+    },
+    {
+      "name": "sessionId",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 182
+    },
+    {
       "name": "totalExecutionTimeMs",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 183
+      "line": 185
     },
     {
       "name": "taskCounts",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 184
+      "line": 186
     },
     {
       "name": "totalArtifactsCount",
       "kind": "property",
       "file": "packages/agent-runtime/service.ts",
-      "line": 187
+      "line": 189
     },
     {
       "name": "constructor",
       "kind": "constructor",
       "file": "packages/agent-runtime/service.ts",
-      "line": 189
+      "line": 191
     },
     {
       "name": "addMiddleware",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 197
+      "line": 201
     },
     {
       "name": "addHooks",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 201
+      "line": 205
     },
     {
       "name": "list",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 204
+      "line": 208
     },
     {
       "name": "desc",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 206
+      "line": 210
     },
     {
       "name": "prov",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 207
+      "line": 211
     },
     {
       "name": "e",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 211
+      "line": 215
     },
     {
       "name": "execute",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 217
+      "line": 221
     },
     {
       "name": "startExecution",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 221
+      "line": 225
     },
     {
       "name": "providers",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 225
+      "line": 229
     },
     {
       "name": "reasoning",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 226
+      "line": 230
     },
     {
       "name": "selected",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 228
+      "line": 232
     },
     {
       "name": "executor",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 236
+      "line": 240
     },
     {
       "name": "runningTasks",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 239
+      "line": 243
     },
     {
       "name": "completedTasks",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 240
+      "line": 244
     },
     {
       "name": "providerAssignments",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 241
+      "line": 245
     },
     {
       "name": "retryCounts",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 242
+      "line": 246
     },
     {
       "name": "snapshotId",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 249
+      "line": 253
     },
     {
       "name": "response",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 252
+      "line": 256
     },
     {
       "name": "attempt",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 260
+      "line": 264
+    },
+    {
+      "name": "wsResult",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 282
+    },
+    {
+      "name": "wsErr",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 286
     },
     {
       "name": "elapsed",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 276
+      "line": 293
     },
     {
       "name": "register",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 288
+      "line": 305
     },
     {
       "name": "h",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 291
+      "line": 308
     },
     {
       "name": "e",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 295
+      "line": 312
     },
     {
       "name": "unregister",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 300
+      "line": 317
     },
     {
       "name": "h",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 303
+      "line": 320
     },
     {
       "name": "e",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 307
+      "line": 324
     },
     {
       "name": "providers",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 312
+      "line": 329
     },
     {
       "name": "capabilities",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 316
+      "line": 333
     },
     {
       "name": "caps",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 317
+      "line": 334
     },
     {
       "name": "p",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 318
+      "line": 335
     },
     {
       "name": "c",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 319
+      "line": 336
     },
     {
       "name": "diagnostics",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 326
+      "line": 343
     },
     {
       "name": "shutdown",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 340
+      "line": 357
     },
     {
       "name": "list",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 341
+      "line": 358
     },
     {
       "name": "desc",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 342
+      "line": 359
     },
     {
       "name": "provider",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 343
+      "line": 360
     },
     {
       "name": "e",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 347
+      "line": 364
     },
     {
       "name": "h",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 352
+      "line": 369
     },
     {
       "name": "e",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 356
+      "line": 373
     },
     {
       "name": "persistEvent",
       "kind": "method",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 361
-    },
-    {
-      "name": "runtimeDir",
-      "kind": "variable",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 363
-    },
-    {
-      "name": "eventsFile",
-      "kind": "variable",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 367
-    },
-    {
-      "name": "err",
-      "kind": "variable",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 369
-    },
-    {
-      "name": "saveSnapshot",
-      "kind": "method",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 372
-    },
-    {
-      "name": "snapshotId",
-      "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
       "line": 378
     },
@@ -968,130 +956,160 @@
       "line": 380
     },
     {
-      "name": "snapshotFile",
+      "name": "eventsFile",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
       "line": 384
     },
     {
-      "name": "snapshot",
+      "name": "err",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 385
+      "line": 386
     },
     {
-      "name": "err",
+      "name": "saveSnapshot",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 389
+    },
+    {
+      "name": "snapshotId",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 395
+    },
+    {
+      "name": "runtimeDir",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
       "line": 397
     },
     {
-      "name": "recover",
-      "kind": "method",
+      "name": "snapshotFile",
+      "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
       "line": 401
     },
     {
-      "name": "snapshotFile",
+      "name": "snapshot",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 403
+      "line": 402
     },
     {
       "name": "err",
-      "kind": "variable",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 407
-    },
-    {
-      "name": "replay",
-      "kind": "method",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 411
-    },
-    {
-      "name": "events",
-      "kind": "variable",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 412
-    },
-    {
-      "name": "eventsFile",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
       "line": 414
     },
     {
-      "name": "lines",
-      "kind": "variable",
+      "name": "recover",
+      "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 416
+      "line": 418
     },
     {
-      "name": "line",
+      "name": "snapshotFile",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 417
-    },
-    {
-      "name": "ev",
-      "kind": "variable",
-      "file": "packages/agent-runtime/service.ts",
-      "line": 419
+      "line": 420
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 425
+      "line": 424
     },
     {
-      "name": "replaySession",
+      "name": "replay",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 430
+      "line": 428
     },
     {
       "name": "events",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 431
+      "line": 429
     },
     {
       "name": "eventsFile",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 433
+      "line": 431
     },
     {
       "name": "lines",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 435
+      "line": 433
     },
     {
       "name": "line",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 436
+      "line": 434
     },
     {
       "name": "ev",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 438
+      "line": 436
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/agent-runtime/service.ts",
-      "line": 444
+      "line": 442
+    },
+    {
+      "name": "replaySession",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 447
+    },
+    {
+      "name": "events",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 448
+    },
+    {
+      "name": "eventsFile",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 450
+    },
+    {
+      "name": "lines",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 452
+    },
+    {
+      "name": "line",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 453
+    },
+    {
+      "name": "ev",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 455
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 461
     },
     {
       "name": "getSessionId",
       "kind": "method",
       "file": "packages/agent-runtime/service.ts",
-      "line": 450
+      "line": 467
     },
     {
       "name": "AgentCapability",
@@ -5591,355 +5609,367 @@
       "name": "OrchestratorExecutor",
       "kind": "class",
       "file": "packages/orchestrator/executor.ts",
-      "line": 6
+      "line": 7
     },
     {
       "name": "stage",
       "kind": "property",
       "file": "packages/orchestrator/executor.ts",
-      "line": 7
+      "line": 8
     },
     {
       "name": "results",
       "kind": "property",
       "file": "packages/orchestrator/executor.ts",
-      "line": 8
+      "line": 9
     },
     {
       "name": "assignments",
       "kind": "property",
       "file": "packages/orchestrator/executor.ts",
-      "line": 9
+      "line": 10
     },
     {
       "name": "retryCounts",
       "kind": "property",
       "file": "packages/orchestrator/executor.ts",
-      "line": 10
+      "line": 11
     },
     {
       "name": "retries",
       "kind": "property",
       "file": "packages/orchestrator/executor.ts",
-      "line": 13
+      "line": 14
     },
     {
       "name": "rollbackCount",
       "kind": "property",
       "file": "packages/orchestrator/executor.ts",
-      "line": 14
+      "line": 15
     },
     {
       "name": "totalExecutionTime",
       "kind": "property",
       "file": "packages/orchestrator/executor.ts",
-      "line": 15
+      "line": 16
     },
     {
       "name": "runtimeService",
       "kind": "property",
       "file": "packages/orchestrator/executor.ts",
-      "line": 17
+      "line": 18
     },
     {
       "name": "constructor",
       "kind": "constructor",
       "file": "packages/orchestrator/executor.ts",
-      "line": 19
+      "line": 20
     },
     {
       "name": "execute",
       "kind": "method",
       "file": "packages/orchestrator/executor.ts",
-      "line": 28
+      "line": 30
     },
     {
       "name": "startTime",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 42
+      "line": 44
     },
     {
       "name": "taskMap",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 45
+      "line": 47
     },
     {
       "name": "t",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 46
+      "line": 48
     },
     {
       "name": "failedTasks",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 50
-    },
-    {
-      "name": "completedTasks",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 51
-    },
-    {
-      "name": "skippedTasks",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
       "line": 52
     },
     {
-      "name": "batch",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 55
-    },
-    {
-      "name": "tasksToRun",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 61
-    },
-    {
-      "name": "tId",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 62
-    },
-    {
-      "name": "task",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 63
-    },
-    {
-      "name": "shouldSkip",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 64
-    },
-    {
-      "name": "pre",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 65
-    },
-    {
-      "name": "workersCount",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 87
-    },
-    {
-      "name": "activeWorkers",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 88
-    },
-    {
-      "name": "batchPromises",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 91
-    },
-    {
-      "name": "workerId",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 92
-    },
-    {
-      "name": "task",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 95
-    },
-    {
-      "name": "runStart",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 96
-    },
-    {
-      "name": "failureRule",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 99
-    },
-    {
-      "name": "simulateFailure",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 100
-    },
-    {
-      "name": "shouldSucceedOnRetry",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 101
-    },
-    {
-      "name": "request",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 113
-    },
-    {
-      "name": "response",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 131
-    },
-    {
-      "name": "activeTasks",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 171
-    },
-    {
-      "name": "allUnscheduled",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 172
-    },
-    {
-      "name": "t",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 173
-    },
-    {
-      "name": "completedList",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 183
-    },
-    {
-      "name": "compId",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 184
-    },
-    {
-      "name": "originalTask",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 185
-    },
-    {
-      "name": "rollbackNode",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 187
-    },
-    {
-      "name": "rollbackRequest",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 195
-    },
-    {
-      "name": "response",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 212
-    },
-    {
-      "name": "report",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 230
-    },
-    {
-      "name": "generateReport",
-      "kind": "method",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 239
-    },
-    {
-      "name": "totalTasks",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 240
-    },
-    {
       "name": "completedTasks",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 241
-    },
-    {
-      "name": "failedTasks",
-      "kind": "variable",
-      "file": "packages/orchestrator/executor.ts",
-      "line": 242
+      "line": 53
     },
     {
       "name": "skippedTasks",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
+      "line": 54
+    },
+    {
+      "name": "batch",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 57
+    },
+    {
+      "name": "tasksToRun",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 63
+    },
+    {
+      "name": "tId",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 64
+    },
+    {
+      "name": "task",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 65
+    },
+    {
+      "name": "shouldSkip",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 66
+    },
+    {
+      "name": "pre",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 67
+    },
+    {
+      "name": "workersCount",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 89
+    },
+    {
+      "name": "activeWorkers",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 90
+    },
+    {
+      "name": "batchPromises",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 93
+    },
+    {
+      "name": "workerId",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 94
+    },
+    {
+      "name": "task",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 97
+    },
+    {
+      "name": "runStart",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 98
+    },
+    {
+      "name": "failureRule",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 101
+    },
+    {
+      "name": "simulateFailure",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 102
+    },
+    {
+      "name": "shouldSucceedOnRetry",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 103
+    },
+    {
+      "name": "request",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 115
+    },
+    {
+      "name": "response",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 133
+    },
+    {
+      "name": "activeTasks",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 174
+    },
+    {
+      "name": "allUnscheduled",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 175
+    },
+    {
+      "name": "t",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 176
+    },
+    {
+      "name": "completedList",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 186
+    },
+    {
+      "name": "compId",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 187
+    },
+    {
+      "name": "originalTask",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 188
+    },
+    {
+      "name": "rollbackNode",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 190
+    },
+    {
+      "name": "rollbackRequest",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 198
+    },
+    {
+      "name": "response",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 215
+    },
+    {
+      "name": "report",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 233
+    },
+    {
+      "name": "generateReport",
+      "kind": "method",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 242
+    },
+    {
+      "name": "totalTasks",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
       "line": 243
     },
     {
-      "name": "activeBatchesCount",
+      "name": "completedTasks",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 244
+    },
+    {
+      "name": "failedTasks",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 245
+    },
+    {
+      "name": "skippedTasks",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
       "line": 246
     },
     {
+      "name": "activeBatchesCount",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 249
+    },
+    {
       "name": "parallelism",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 247
+      "line": 250
     },
     {
       "name": "executionDepth",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 252
+      "line": 255
     },
     {
       "name": "runtimeDiags",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 254
+      "line": 257
     },
     {
       "name": "providersList",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 255
+      "line": 258
     },
     {
       "name": "selectedProvider",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 257
+      "line": 260
     },
     {
       "name": "providerHealth",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 258
+      "line": 261
     },
     {
       "name": "match",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 261
+      "line": 264
     },
     {
       "name": "matchedProvider",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 269
+      "line": 272
     },
     {
       "name": "executionSnapshotId",
       "kind": "variable",
       "file": "packages/orchestrator/executor.ts",
-      "line": 274
+      "line": 277
+    },
+    {
+      "name": "workspaceDiagnostics",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 280
+    },
+    {
+      "name": "wsDiag",
+      "kind": "variable",
+      "file": "packages/orchestrator/executor.ts",
+      "line": 282
     },
     {
       "name": "OrchestratorScheduler",
@@ -6185,37 +6215,37 @@
       "name": "ScheduleBatch",
       "kind": "interface",
       "file": "packages/orchestrator/types.ts",
-      "line": 23
+      "line": 25
     },
     {
       "name": "ExecutionSchedule",
       "kind": "interface",
       "file": "packages/orchestrator/types.ts",
-      "line": 29
+      "line": 31
     },
     {
       "name": "ExecutionReport",
       "kind": "interface",
       "file": "packages/orchestrator/types.ts",
-      "line": 33
+      "line": 35
     },
     {
       "name": "WorkerAssignment",
       "kind": "interface",
       "file": "packages/orchestrator/types.ts",
-      "line": 50
+      "line": 59
     },
     {
       "name": "OrchestratorRequest",
       "kind": "interface",
       "file": "packages/orchestrator/types.ts",
-      "line": 55
+      "line": 64
     },
     {
       "name": "OrchestratorResponse",
       "kind": "interface",
       "file": "packages/orchestrator/types.ts",
-      "line": 61
+      "line": 70
     },
     {
       "name": "PlannerError",
@@ -6779,25 +6809,25 @@
       "name": "error",
       "kind": "variable",
       "file": "packages/query-engine/service.ts",
-      "line": 214
+      "line": 225
     },
     {
       "name": "createErrorResult",
       "kind": "method",
       "file": "packages/query-engine/service.ts",
-      "line": 222
+      "line": 233
     },
     {
       "name": "totalTimeMs",
       "kind": "variable",
       "file": "packages/query-engine/service.ts",
-      "line": 224
+      "line": 235
     },
     {
       "name": "emptyContext",
       "kind": "variable",
       "file": "packages/query-engine/service.ts",
-      "line": 226
+      "line": 237
     },
     {
       "name": "QueryRequest",
@@ -6815,7 +6845,7 @@
       "name": "QueryResult",
       "kind": "interface",
       "file": "packages/query-engine/types.ts",
-      "line": 50
+      "line": 60
     },
     {
       "name": "RelationshipAnalyzerError",
@@ -10982,6 +11012,924 @@
       "line": 94
     },
     {
+      "name": "passed",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 22
+    },
+    {
+      "name": "failed",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 23
+    },
+    {
+      "name": "errors",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 24
+    },
+    {
+      "name": "assert",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 26
+    },
+    {
+      "name": "assertThrows",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 37
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 43
+    },
+    {
+      "name": "assertAsyncThrows",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 55
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 61
+    },
+    {
+      "name": "makeTempWorkspace",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 74
+    },
+    {
+      "name": "dir",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 75
+    },
+    {
+      "name": "cleanupWorkspace",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 79
+    },
+    {
+      "name": "testTransactionLifecycle",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 87
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 89
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 91
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 92
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 104
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 112
+    },
+    {
+      "name": "diag",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 117
+    },
+    {
+      "name": "testRollback",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 126
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 128
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 130
+    },
+    {
+      "name": "initTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 133
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 138
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 143
+    },
+    {
+      "name": "content",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 144
+    },
+    {
+      "name": "diag",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 147
+    },
+    {
+      "name": "testRollbackOnError",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 154
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 156
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 158
+    },
+    {
+      "name": "initTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 161
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 166
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 170
+    },
+    {
+      "name": "content",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 174
+    },
+    {
+      "name": "testMultipleOperations",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 181
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 183
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 185
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 186
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 193
+    },
+    {
+      "name": "testDeleteFile",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 205
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 207
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 209
+    },
+    {
+      "name": "createTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 212
+    },
+    {
+      "name": "delTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 218
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 220
+    },
+    {
+      "name": "createTx2",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 225
+    },
+    {
+      "name": "delTx2",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 229
+    },
+    {
+      "name": "testRenameFile",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 239
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 241
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 243
+    },
+    {
+      "name": "createTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 245
+    },
+    {
+      "name": "renameTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 249
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 251
+    },
+    {
+      "name": "testPatchEngine",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 262
+    },
+    {
+      "name": "patcher",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 264
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 265
+    },
+    {
+      "name": "old",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 267
+    },
+    {
+      "name": "updated",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 268
+    },
+    {
+      "name": "patch",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 270
+    },
+    {
+      "name": "applied",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 277
+    },
+    {
+      "name": "noPatch",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 281
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 287
+    },
+    {
+      "name": "createTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 288
+    },
+    {
+      "name": "absFilePath",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 293
+    },
+    {
+      "name": "filePatch",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 294
+    },
+    {
+      "name": "patchTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 296
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 298
+    },
+    {
+      "name": "onDisk",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 301
+    },
+    {
+      "name": "testLockManager",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 309
+    },
+    {
+      "name": "locks",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 311
+    },
+    {
+      "name": "testLockContention",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 344
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 346
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 348
+    },
+    {
+      "name": "tx1",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 350
+    },
+    {
+      "name": "tx2",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 353
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 365
+    },
+    {
+      "name": "testJournal",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 373
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 375
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 377
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 378
+    },
+    {
+      "name": "journalPath",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 383
+    },
+    {
+      "name": "lines",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 386
+    },
+    {
+      "name": "entries",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 389
+    },
+    {
+      "name": "beginEntry",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 390
+    },
+    {
+      "name": "writeEntry",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 391
+    },
+    {
+      "name": "commitEntry",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 392
+    },
+    {
+      "name": "stateDir",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 400
+    },
+    {
+      "name": "journal",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 401
+    },
+    {
+      "name": "allEntries",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 402
+    },
+    {
+      "name": "txEntries",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 404
+    },
+    {
+      "name": "testPreview",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 411
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 413
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 415
+    },
+    {
+      "name": "initTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 418
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 423
+    },
+    {
+      "name": "previews",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 425
+    },
+    {
+      "name": "onDisk",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 433
+    },
+    {
+      "name": "updated",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 438
+    },
+    {
+      "name": "testValidateFile",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 445
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 447
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 449
+    },
+    {
+      "name": "createTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 452
+    },
+    {
+      "name": "okTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 457
+    },
+    {
+      "name": "okResult",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 459
+    },
+    {
+      "name": "failTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 464
+    },
+    {
+      "name": "failResult",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 466
+    },
+    {
+      "name": "contentTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 471
+    },
+    {
+      "name": "contentResult",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 477
+    },
+    {
+      "name": "testApplyArtifacts",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 484
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 486
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 488
+    },
+    {
+      "name": "artifacts",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 490
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 514
+    },
+    {
+      "name": "diag",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 522
+    },
+    {
+      "name": "testApplyArtifactsEmpty",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 529
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 531
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 533
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 536
+    },
+    {
+      "name": "testDryRunMode",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 547
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 549
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 551
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 553
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 555
+    },
+    {
+      "name": "testConcurrentTransactionIsolation",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 565
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 567
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 569
+    },
+    {
+      "name": "tx1",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 572
+    },
+    {
+      "name": "tx2",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 573
+    },
+    {
+      "name": "testDiagnostics",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 592
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 594
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 596
+    },
+    {
+      "name": "diag0",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 597
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 602
+    },
+    {
+      "name": "diag1",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 603
+    },
+    {
+      "name": "diag2",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 608
+    },
+    {
+      "name": "diag3",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 612
+    },
+    {
+      "name": "testPartialRollbackOnMultiOpError",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 621
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 623
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 625
+    },
+    {
+      "name": "initTx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 628
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 633
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 638
+    },
+    {
+      "name": "testUseCommittedTransactionIDError",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 650
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 652
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 654
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 655
+    },
+    {
+      "name": "testRegressionAgentRuntime",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 672
+    },
+    {
+      "name": "root",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 674
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 676
+    },
+    {
+      "name": "runtime",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 680
+    },
+    {
+      "name": "response",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 682
+    },
+    {
+      "name": "diag",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 707
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 716
+    },
+    {
+      "name": "e",
+      "kind": "variable",
+      "file": "packages/test-workspace-engine.ts",
+      "line": 746
+    },
+    {
       "name": "WorkspaceError",
       "kind": "class",
       "file": "packages/workspace/errors.ts",
@@ -11082,6 +12030,1044 @@
       "kind": "interface",
       "file": "packages/workspace/types.ts",
       "line": 7
+    },
+    {
+      "name": "ApplicableArtifact",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 32
+    },
+    {
+      "name": "StagedTransaction",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 43
+    },
+    {
+      "name": "generateTxId",
+      "kind": "function",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 57
+    },
+    {
+      "name": "WorkspaceEngine",
+      "kind": "class",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 63
+    },
+    {
+      "name": "journal",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 64
+    },
+    {
+      "name": "locks",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 65
+    },
+    {
+      "name": "patcher",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 66
+    },
+    {
+      "name": "staged",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 67
+    },
+    {
+      "name": "stateDir",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 68
+    },
+    {
+      "name": "options",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 69
+    },
+    {
+      "name": "totalTransactions",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 72
+    },
+    {
+      "name": "committedTransactions",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 73
+    },
+    {
+      "name": "rolledBackTransactions",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 74
+    },
+    {
+      "name": "totalPatchesApplied",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 75
+    },
+    {
+      "name": "totalArtifactsApplied",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 76
+    },
+    {
+      "name": "totalChanges",
+      "kind": "property",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 77
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 79
+    },
+    {
+      "name": "beginTransaction",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 106
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 113
+    },
+    {
+      "name": "stage",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 139
+    },
+    {
+      "name": "staged",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 140
+    },
+    {
+      "name": "paths",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 145
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 146
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 150
+    },
+    {
+      "name": "preview",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 166
+    },
+    {
+      "name": "staged",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 167
+    },
+    {
+      "name": "patches",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 168
+    },
+    {
+      "name": "op",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 170
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 172
+    },
+    {
+      "name": "existing",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 173
+    },
+    {
+      "name": "patch",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 175
+    },
+    {
+      "name": "patch",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 179
+    },
+    {
+      "name": "commit",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 194
+    },
+    {
+      "name": "staged",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 195
+    },
+    {
+      "name": "startTime",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 196
+    },
+    {
+      "name": "op",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 201
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 214
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 222
+    },
+    {
+      "name": "rollback",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 232
+    },
+    {
+      "name": "staged",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 233
+    },
+    {
+      "name": "applyArtifacts",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 242
+    },
+    {
+      "name": "startTime",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 246
+    },
+    {
+      "name": "applicable",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 247
+    },
+    {
+      "name": "emptyTxId",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 252
+    },
+    {
+      "name": "tx",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 265
+    },
+    {
+      "name": "txId",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 269
+    },
+    {
+      "name": "artifact",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 272
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 280
+    },
+    {
+      "name": "diagnostics",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 285
+    },
+    {
+      "name": "applyOperation",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 300
+    },
+    {
+      "name": "txId",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 301
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 305
+    },
+    {
+      "name": "existing",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 306
+    },
+    {
+      "name": "patch",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 310
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 326
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 334
+    },
+    {
+      "name": "existing",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 335
+    },
+    {
+      "name": "absOld",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 348
+    },
+    {
+      "name": "absNew",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 349
+    },
+    {
+      "name": "existing",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 350
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 371
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 382
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 393
+    },
+    {
+      "name": "exists",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 394
+    },
+    {
+      "name": "validation",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 395
+    },
+    {
+      "name": "actual",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 405
+    },
+    {
+      "name": "match",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 406
+    },
+    {
+      "name": "absPath",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 424
+    },
+    {
+      "name": "existing",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 425
+    },
+    {
+      "name": "newContent",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 428
+    },
+    {
+      "name": "rollbackInternal",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 443
+    },
+    {
+      "name": "backupEntries",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 447
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 463
+    },
+    {
+      "name": "buildResult",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 478
+    },
+    {
+      "name": "requireStaged",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 498
+    },
+    {
+      "name": "staged",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 499
+    },
+    {
+      "name": "backup",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 506
+    },
+    {
+      "name": "safeReadFile",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 513
+    },
+    {
+      "name": "resolve",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 522
+    },
+    {
+      "name": "ensureParentDir",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 527
+    },
+    {
+      "name": "dir",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 528
+    },
+    {
+      "name": "ensureStateDirectory",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 534
+    },
+    {
+      "name": "pathsForOperation",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 542
+    },
+    {
+      "name": "resolve",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 543
+    },
+    {
+      "name": "primaryPath",
+      "kind": "method",
+      "file": "packages/workspace/workspace-engine.ts",
+      "line": 561
+    },
+    {
+      "name": "WorkspaceEngineError",
+      "kind": "class",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 5
+    },
+    {
+      "name": "code",
+      "kind": "property",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 6
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 7
+    },
+    {
+      "name": "WorkspaceTransactionError",
+      "kind": "class",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 13
+    },
+    {
+      "name": "code",
+      "kind": "property",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 14
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 15
+    },
+    {
+      "name": "WorkspaceLockError",
+      "kind": "class",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 24
+    },
+    {
+      "name": "code",
+      "kind": "property",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 25
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 26
+    },
+    {
+      "name": "WorkspaceValidationError",
+      "kind": "class",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 39
+    },
+    {
+      "name": "code",
+      "kind": "property",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 40
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 41
+    },
+    {
+      "name": "WorkspacePatchError",
+      "kind": "class",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 50
+    },
+    {
+      "name": "code",
+      "kind": "property",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 51
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "line": 52
+    },
+    {
+      "name": "WorkspaceJournal",
+      "kind": "class",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 10
+    },
+    {
+      "name": "journalPath",
+      "kind": "property",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 11
+    },
+    {
+      "name": "entryCount",
+      "kind": "property",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 12
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 14
+    },
+    {
+      "name": "lines",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 19
+    },
+    {
+      "name": "append",
+      "kind": "method",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 25
+    },
+    {
+      "name": "dir",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 27
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 33
+    },
+    {
+      "name": "readAll",
+      "kind": "method",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 38
+    },
+    {
+      "name": "entries",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 39
+    },
+    {
+      "name": "lines",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 42
+    },
+    {
+      "name": "line",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 43
+    },
+    {
+      "name": "readTransaction",
+      "kind": "method",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 53
+    },
+    {
+      "name": "record",
+      "kind": "method",
+      "file": "packages/workspace/workspace-journal.ts",
+      "line": 62
+    },
+    {
+      "name": "WorkspaceLockManager",
+      "kind": "class",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 9
+    },
+    {
+      "name": "locks",
+      "kind": "property",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 11
+    },
+    {
+      "name": "acquire",
+      "kind": "method",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 18
+    },
+    {
+      "name": "existing",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 19
+    },
+    {
+      "name": "release",
+      "kind": "method",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 38
+    },
+    {
+      "name": "existing",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 39
+    },
+    {
+      "name": "releaseAll",
+      "kind": "method",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 48
+    },
+    {
+      "name": "isLocked",
+      "kind": "method",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 56
+    },
+    {
+      "name": "lockedBy",
+      "kind": "method",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 60
+    },
+    {
+      "name": "activeLocks",
+      "kind": "method",
+      "file": "packages/workspace/workspace-lock.ts",
+      "line": 65
+    },
+    {
+      "name": "WorkspacePatchEngine",
+      "kind": "class",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 10
+    },
+    {
+      "name": "generatePatch",
+      "kind": "method",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 15
+    },
+    {
+      "name": "oldLines",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 21
+    },
+    {
+      "name": "newLines",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 22
+    },
+    {
+      "name": "hunks",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 23
+    },
+    {
+      "name": "applyPatch",
+      "kind": "method",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 39
+    },
+    {
+      "name": "lines",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 46
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 47
+    },
+    {
+      "name": "pos",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 48
+    },
+    {
+      "name": "hunk",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 50
+    },
+    {
+      "name": "isIdentical",
+      "kind": "method",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 83
+    },
+    {
+      "name": "diff",
+      "kind": "method",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 91
+    },
+    {
+      "name": "m",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 92
+    },
+    {
+      "name": "n",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 93
+    },
+    {
+      "name": "dp",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 96
+    },
+    {
+      "name": "i",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 97
+    },
+    {
+      "name": "j",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 98
+    },
+    {
+      "name": "EditOp",
+      "kind": "type",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 108
+    },
+    {
+      "name": "edits",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 109
+    },
+    {
+      "name": "i",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 110
+    },
+    {
+      "name": "j",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 110
+    },
+    {
+      "name": "hunks",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 129
+    },
+    {
+      "name": "k",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 130
+    },
+    {
+      "name": "edit",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 132
+    },
+    {
+      "name": "hunkStart",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 139
+    },
+    {
+      "name": "removed",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 140
+    },
+    {
+      "name": "added",
+      "kind": "variable",
+      "file": "packages/workspace/workspace-patch.ts",
+      "line": 141
+    },
+    {
+      "name": "WriteFileOperation",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 7
+    },
+    {
+      "name": "ReadFileOperation",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 14
+    },
+    {
+      "name": "DeleteFileOperation",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 20
+    },
+    {
+      "name": "RenameFileOperation",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 25
+    },
+    {
+      "name": "CreateDirectoryOperation",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 31
+    },
+    {
+      "name": "DeleteDirectoryOperation",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 37
+    },
+    {
+      "name": "ValidateFileOperation",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 43
+    },
+    {
+      "name": "PatchFileOperation",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 50
+    },
+    {
+      "name": "WorkspaceOperation",
+      "kind": "type",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 56
+    },
+    {
+      "name": "WorkspacePatch",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 68
+    },
+    {
+      "name": "PatchHunk",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 77
+    },
+    {
+      "name": "WorkspaceJournalAction",
+      "kind": "type",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 85
+    },
+    {
+      "name": "WorkspaceJournalEntry",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 100
+    },
+    {
+      "name": "WorkspaceLock",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 113
+    },
+    {
+      "name": "TransactionStatus",
+      "kind": "type",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 121
+    },
+    {
+      "name": "WorkspaceTransaction",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 128
+    },
+    {
+      "name": "ChangeKind",
+      "kind": "type",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 140
+    },
+    {
+      "name": "WorkspaceChange",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 142
+    },
+    {
+      "name": "WorkspaceValidationResult",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 153
+    },
+    {
+      "name": "WorkspaceEngineResult",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 163
+    },
+    {
+      "name": "WorkspaceEngineOptions",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 177
+    },
+    {
+      "name": "WorkspaceEngineDiagnostics",
+      "kind": "interface",
+      "file": "packages/workspace/workspace-types.ts",
+      "line": 191
     }
   ]
 }

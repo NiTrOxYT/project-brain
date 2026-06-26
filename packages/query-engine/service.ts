@@ -207,7 +207,18 @@ export class QueryEngineService {
                     selectedProvider: context.executionDiagnostics?.selectedProvider,
                     providerHealth: context.executionDiagnostics?.providerHealth,
                     runtimeMetricsSummary: context.executionDiagnostics?.runtimeMetricsSummary,
-                    executionSnapshotId: context.executionDiagnostics?.executionSnapshotId
+                    executionSnapshotId: context.executionDiagnostics?.executionSnapshotId,
+                    workspaceDiagnostics: context.executionDiagnostics?.workspaceDiagnostics
+                        ? {
+                            totalTransactions: context.executionDiagnostics.workspaceDiagnostics.totalTransactions,
+                            totalChanges: context.executionDiagnostics.workspaceDiagnostics.totalChanges,
+                            totalPatchesApplied: context.executionDiagnostics.workspaceDiagnostics.totalPatchesApplied,
+                            rolledBackTransactions: context.executionDiagnostics.workspaceDiagnostics.rolledBackTransactions,
+                            totalArtifactsApplied: 0,
+                            activeLocks: 0
+                        }
+                        : undefined
+
                 }
             };
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T20:20:48.757Z",
+  "generatedAt": "2026-06-26T20:46:03.204Z",
   "query": "implement dynamic execution graph exporter",
   "plan": {
     "originalQuery": "implement dynamic execution graph exporter",
@@ -37,12 +37,12 @@
     },
     {
       "path": "packages/engineering-planner/service.ts",
-      "score": 373.4455953501631,
+      "score": 374.3002562769846,
       "estimatedTokens": 6611
     },
     {
       "path": "packages/filesystem/service.ts",
-      "score": 258.3455031734521,
+      "score": 258.34550316688274,
       "estimatedTokens": 179,
       "lastModified": "2026-06-26T21:55:50+05:30",
       "commitCount": 1,
@@ -51,7 +51,7 @@
     },
     {
       "path": "packages/execution-graph/types.ts",
-      "score": 162.69039058317523,
+      "score": 162.69039050794294,
       "estimatedTokens": 120
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "path": "packages/graph/types.ts",
-      "score": 72.8050809780964,
+      "score": 72.80508093887728,
       "estimatedTokens": 66,
       "lastModified": "2026-06-26T21:55:50+05:30",
       "commitCount": 1,
@@ -2197,6 +2197,13 @@
     {
       "source": "EngineeringPlannerService.plan",
       "target": "execData",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 216
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "n",
       "type": "references",
       "file": "packages/engineering-planner/service.ts",
       "line": 216
@@ -5161,7 +5168,7 @@
     "estimatedLOC": 840,
     "estimatedDuration": 31,
     "diagnostics": {
-      "planningTimeMs": 30,
+      "planningTimeMs": 31,
       "graphNodes": 25,
       "graphEdges": 24,
       "dependencyDepth": 3,
@@ -5243,7 +5250,7 @@
     "selectedProvider": "Mock Agent Provider",
     "providerHealth": "Healthy",
     "runtimeMetricsSummary": {
-      "totalExecutionTimeMs": 30,
+      "totalExecutionTimeMs": 29,
       "taskCounts": {
         "Pending": 0,
         "Queued": 25,
@@ -5297,10 +5304,10 @@
       },
       "snapshotStatistics": {
         "totalSnapshotsWritten": 50,
-        "lastSnapshotId": "snapshot-1782505248582"
+        "lastSnapshotId": "snapshot-1782506763029"
       }
     },
-    "executionSnapshotId": "snapshot-1782505248582"
+    "executionSnapshotId": "snapshot-1782506763029"
   },
   "estimatedTokens": 12000
 }

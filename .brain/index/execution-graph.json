@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T20:20:46.882Z",
+  "generatedAt": "2026-06-26T20:46:04.022Z",
   "nodes": [
     {
       "id": "packages/agent-runtime/artifacts.ts#RuntimeArtifact",
@@ -530,6 +530,12 @@
       "kind": "property"
     },
     {
+      "id": "packages/agent-runtime/service.ts#AgentRuntimeService.workspaceEngine",
+      "symbol": "AgentRuntimeService.workspaceEngine",
+      "file": "packages/agent-runtime/service.ts",
+      "kind": "property"
+    },
+    {
       "id": "packages/agent-runtime/service.ts#AgentRuntimeService.middlewares",
       "symbol": "AgentRuntimeService.middlewares",
       "file": "packages/agent-runtime/service.ts",
@@ -654,6 +660,12 @@
       "symbol": "indexOf",
       "file": "external",
       "kind": "external"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "symbol": "WorkspaceEngine.applyArtifacts",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
     },
     {
       "id": "packages/agent-runtime/service.ts#AgentRuntimeService.unregister",
@@ -4202,6 +4214,318 @@
       "kind": "function"
     },
     {
+      "id": "packages/test-workspace-engine.ts#passed",
+      "symbol": "passed",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#failed",
+      "symbol": "failed",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#errors",
+      "symbol": "errors",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#assert",
+      "symbol": "assert",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#assertThrows",
+      "symbol": "assertThrows",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#fn",
+      "symbol": "fn",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#assertAsyncThrows",
+      "symbol": "assertAsyncThrows",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "symbol": "makeTempWorkspace",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#mkdtempSync",
+      "symbol": "mkdtempSync",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#tmpdir",
+      "symbol": "tmpdir",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "symbol": "cleanupWorkspace",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#rmSync",
+      "symbol": "rmSync",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "symbol": "testTransactionLifecycle",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "symbol": "WorkspaceEngine",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "symbol": "WorkspaceEngine.beginTransaction",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "symbol": "WorkspaceEngine.stage",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "symbol": "WorkspaceEngine.commit",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testRollback",
+      "symbol": "testRollback",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollback",
+      "symbol": "WorkspaceEngine.rollback",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "symbol": "testRollbackOnError",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "symbol": "testMultipleOperations",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testDeleteFile",
+      "symbol": "testDeleteFile",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testRenameFile",
+      "symbol": "testRenameFile",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testPatchEngine",
+      "symbol": "testPatchEngine",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine",
+      "symbol": "WorkspacePatchEngine",
+      "file": "packages/workspace/workspace-patch.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.generatePatch",
+      "symbol": "WorkspacePatchEngine.generatePatch",
+      "file": "packages/workspace/workspace-patch.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.applyPatch",
+      "symbol": "WorkspacePatchEngine.applyPatch",
+      "file": "packages/workspace/workspace-patch.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.isIdentical",
+      "symbol": "WorkspacePatchEngine.isIdentical",
+      "file": "packages/workspace/workspace-patch.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testLockManager",
+      "symbol": "testLockManager",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts#WorkspaceLockManager",
+      "symbol": "WorkspaceLockManager",
+      "file": "packages/workspace/workspace-lock.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.acquire",
+      "symbol": "WorkspaceLockManager.acquire",
+      "file": "packages/workspace/workspace-lock.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.isLocked",
+      "symbol": "WorkspaceLockManager.isLocked",
+      "file": "packages/workspace/workspace-lock.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.lockedBy",
+      "symbol": "WorkspaceLockManager.lockedBy",
+      "file": "packages/workspace/workspace-lock.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.release",
+      "symbol": "WorkspaceLockManager.release",
+      "file": "packages/workspace/workspace-lock.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.releaseAll",
+      "symbol": "WorkspaceLockManager.releaseAll",
+      "file": "packages/workspace/workspace-lock.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testLockContention",
+      "symbol": "testLockContention",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testJournal",
+      "symbol": "testJournal",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts#WorkspaceJournal",
+      "symbol": "WorkspaceJournal",
+      "file": "packages/workspace/workspace-journal.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readAll",
+      "symbol": "WorkspaceJournal.readAll",
+      "file": "packages/workspace/workspace-journal.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readTransaction",
+      "symbol": "WorkspaceJournal.readTransaction",
+      "file": "packages/workspace/workspace-journal.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testPreview",
+      "symbol": "testPreview",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.preview",
+      "symbol": "WorkspaceEngine.preview",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testValidateFile",
+      "symbol": "testValidateFile",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "symbol": "testApplyArtifacts",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "symbol": "testApplyArtifactsEmpty",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testDryRunMode",
+      "symbol": "testDryRunMode",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "symbol": "testConcurrentTransactionIsolation",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testDiagnostics",
+      "symbol": "testDiagnostics",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "symbol": "testPartialRollbackOnMultiOpError",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "symbol": "testUseCommittedTransactionIDError",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "symbol": "testRegressionAgentRuntime",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-workspace-engine.ts#main",
+      "symbol": "main",
+      "file": "packages/test-workspace-engine.ts",
+      "kind": "function"
+    },
+    {
       "id": "packages/workspace/errors.ts#WorkspaceError",
       "symbol": "WorkspaceError",
       "file": "packages/workspace/errors.ts",
@@ -4277,6 +4601,492 @@
       "id": "packages/workspace/types.ts#WorkspaceResult",
       "symbol": "WorkspaceResult",
       "file": "packages/workspace/types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#ApplicableArtifact",
+      "symbol": "ApplicableArtifact",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#StagedTransaction",
+      "symbol": "StagedTransaction",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#generateTxId",
+      "symbol": "generateTxId",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#toString",
+      "symbol": "toString",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#randomBytes",
+      "symbol": "randomBytes",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.journal",
+      "symbol": "WorkspaceEngine.journal",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.locks",
+      "symbol": "WorkspaceEngine.locks",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.patcher",
+      "symbol": "WorkspaceEngine.patcher",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.staged",
+      "symbol": "WorkspaceEngine.staged",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stateDir",
+      "symbol": "WorkspaceEngine.stateDir",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.options",
+      "symbol": "WorkspaceEngine.options",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.totalTransactions",
+      "symbol": "WorkspaceEngine.totalTransactions",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.committedTransactions",
+      "symbol": "WorkspaceEngine.committedTransactions",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rolledBackTransactions",
+      "symbol": "WorkspaceEngine.rolledBackTransactions",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.totalPatchesApplied",
+      "symbol": "WorkspaceEngine.totalPatchesApplied",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.totalArtifactsApplied",
+      "symbol": "WorkspaceEngine.totalArtifactsApplied",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.totalChanges",
+      "symbol": "WorkspaceEngine.totalChanges",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.constructor",
+      "symbol": "WorkspaceEngine.constructor",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureStateDirectory",
+      "symbol": "WorkspaceEngine.ensureStateDirectory",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceEngineError",
+      "symbol": "WorkspaceEngineError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts#WorkspaceJournal.record",
+      "symbol": "WorkspaceJournal.record",
+      "file": "packages/workspace/workspace-journal.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.requireStaged",
+      "symbol": "WorkspaceEngine.requireStaged",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.pathsForOperation",
+      "symbol": "WorkspaceEngine.pathsForOperation",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceTransactionError",
+      "symbol": "WorkspaceTransactionError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.primaryPath",
+      "symbol": "WorkspaceEngine.primaryPath",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.resolve",
+      "symbol": "WorkspaceEngine.resolve",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.safeReadFile",
+      "symbol": "WorkspaceEngine.safeReadFile",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "symbol": "WorkspaceEngine.applyOperation",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.buildResult",
+      "symbol": "WorkspaceEngine.buildResult",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "symbol": "WorkspaceEngine.rollbackInternal",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.diagnostics",
+      "symbol": "WorkspaceEngine.diagnostics",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.backup",
+      "symbol": "WorkspaceEngine.backup",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureParentDir",
+      "symbol": "WorkspaceEngine.ensureParentDir",
+      "file": "packages/workspace/workspace-engine.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#unlinkSync",
+      "symbol": "unlinkSync",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#renameSync",
+      "symbol": "renameSync",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#isAbsolute",
+      "symbol": "isAbsolute",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceEngineError.code",
+      "symbol": "WorkspaceEngineError.code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceEngineError.constructor",
+      "symbol": "WorkspaceEngineError.constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceTransactionError.code",
+      "symbol": "WorkspaceTransactionError.code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceTransactionError.constructor",
+      "symbol": "WorkspaceTransactionError.constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceLockError",
+      "symbol": "WorkspaceLockError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceLockError.code",
+      "symbol": "WorkspaceLockError.code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceLockError.constructor",
+      "symbol": "WorkspaceLockError.constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceValidationError",
+      "symbol": "WorkspaceValidationError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceValidationError.code",
+      "symbol": "WorkspaceValidationError.code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspaceValidationError.constructor",
+      "symbol": "WorkspaceValidationError.constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspacePatchError",
+      "symbol": "WorkspacePatchError",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspacePatchError.code",
+      "symbol": "WorkspacePatchError.code",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-errors.ts#WorkspacePatchError.constructor",
+      "symbol": "WorkspacePatchError.constructor",
+      "file": "packages/workspace/workspace-errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts#WorkspaceJournal.journalPath",
+      "symbol": "WorkspaceJournal.journalPath",
+      "file": "packages/workspace/workspace-journal.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts#WorkspaceJournal.entryCount",
+      "symbol": "WorkspaceJournal.entryCount",
+      "file": "packages/workspace/workspace-journal.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts#WorkspaceJournal.constructor",
+      "symbol": "WorkspaceJournal.constructor",
+      "file": "packages/workspace/workspace-journal.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "packages/workspace/workspace-journal.ts#WorkspaceJournal.append",
+      "symbol": "WorkspaceJournal.append",
+      "file": "packages/workspace/workspace-journal.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.locks",
+      "symbol": "WorkspaceLockManager.locks",
+      "file": "packages/workspace/workspace-lock.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.activeLocks",
+      "symbol": "WorkspaceLockManager.activeLocks",
+      "file": "packages/workspace/workspace-lock.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.diff",
+      "symbol": "WorkspacePatchEngine.diff",
+      "file": "packages/workspace/workspace-patch.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#fill",
+      "symbol": "fill",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#Array",
+      "symbol": "Array",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.diff.EditOp",
+      "symbol": "WorkspacePatchEngine.diff.EditOp",
+      "file": "packages/workspace/workspace-patch.ts",
+      "kind": "type"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WriteFileOperation",
+      "symbol": "WriteFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#ReadFileOperation",
+      "symbol": "ReadFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#DeleteFileOperation",
+      "symbol": "DeleteFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#RenameFileOperation",
+      "symbol": "RenameFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#CreateDirectoryOperation",
+      "symbol": "CreateDirectoryOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#DeleteDirectoryOperation",
+      "symbol": "DeleteDirectoryOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#ValidateFileOperation",
+      "symbol": "ValidateFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#PatchFileOperation",
+      "symbol": "PatchFileOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceOperation",
+      "symbol": "WorkspaceOperation",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "type"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspacePatch",
+      "symbol": "WorkspacePatch",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#PatchHunk",
+      "symbol": "PatchHunk",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceJournalAction",
+      "symbol": "WorkspaceJournalAction",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "type"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceJournalEntry",
+      "symbol": "WorkspaceJournalEntry",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceLock",
+      "symbol": "WorkspaceLock",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#TransactionStatus",
+      "symbol": "TransactionStatus",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "type"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceTransaction",
+      "symbol": "WorkspaceTransaction",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#ChangeKind",
+      "symbol": "ChangeKind",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "type"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceChange",
+      "symbol": "WorkspaceChange",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceValidationResult",
+      "symbol": "WorkspaceValidationResult",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceEngineResult",
+      "symbol": "WorkspaceEngineResult",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceEngineOptions",
+      "symbol": "WorkspaceEngineOptions",
+      "file": "packages/workspace/workspace-types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/workspace-types.ts#WorkspaceEngineDiagnostics",
+      "symbol": "WorkspaceEngineDiagnostics",
+      "file": "packages/workspace/workspace-types.ts",
       "kind": "interface"
     }
   ],
@@ -4699,6 +5509,16 @@
     {
       "from": "packages/agent-runtime/service.ts#AgentRuntimeService.execute",
       "to": "external#indexOf",
+      "type": "calls"
+    },
+    {
+      "from": "packages/agent-runtime/service.ts#AgentRuntimeService.execute",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/agent-runtime/service.ts#AgentRuntimeService.execute",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
       "type": "calls"
     },
     {
@@ -11947,6 +12767,1486 @@
       "type": "calls"
     },
     {
+      "from": "packages/test-workspace-engine.ts#assert",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assert",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assert",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assertThrows",
+      "to": "external#fn",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assertThrows",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assertThrows",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assertThrows",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assertAsyncThrows",
+      "to": "external#fn",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assertAsyncThrows",
+      "to": "external#fn",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assertAsyncThrows",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assertAsyncThrows",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#assertAsyncThrows",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "to": "external#mkdtempSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "to": "external#tmpdir",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "to": "external#rmSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "external#startsWith",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "packages/agent-runtime/service.ts#AgentRuntimeService.diagnostics",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollback",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollback",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/agent-runtime/service.ts#AgentRuntimeService.diagnostics",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollback",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollback",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollback",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDeleteFile",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRenameFile",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.generatePatch",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.applyPatch",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.isIdentical",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPatchEngine",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockManager",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockManager",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockManager",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.acquire",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockManager",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockManager",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.isLocked",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockManager",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.lockedBy",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockManager",
+      "to": "packages/test-workspace-engine.ts#assertThrows",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockManager",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.release",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockManager",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.releaseAll",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "packages/test-workspace-engine.ts#assertThrows",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testLockContention",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/ast/service.ts#AstService.parse",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readAll",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testJournal",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.preview",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPreview",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testValidateFile",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testValidateFile",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testValidateFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testValidateFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testValidateFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testValidateFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testValidateFile",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testValidateFile",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testValidateFile",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "packages/agent-runtime/service.ts#AgentRuntimeService.diagnostics",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDryRunMode",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "external#all",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "external#all",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "packages/agent-runtime/service.ts#AgentRuntimeService.diagnostics",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testDiagnostics",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "to": "packages/test-workspace-engine.ts#assertThrows",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "packages/test-workspace-engine.ts#makeTempWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "external#import",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "external#import",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "packages/agent-runtime/service.ts#AgentRuntimeService",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "packages/agent-runtime/runtime.ts#RuntimeEngine.execute",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "packages/agent-runtime/runtime.ts#RuntimeEngine.execute",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "packages/test-workspace-engine.ts#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "packages/agent-runtime/service.ts#AgentRuntimeService.diagnostics",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "to": "packages/test-workspace-engine.ts#cleanupWorkspace",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testTransactionLifecycle",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testRollback",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testRollback",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testRollbackOnError",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testMultipleOperations",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testDeleteFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testDeleteFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testRenameFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testRenameFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testPatchEngine",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testPatchEngine",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testLockManager",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testLockManager",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testLockContention",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testLockContention",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testJournal",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testJournal",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testPreview",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testPreview",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testValidateFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testValidateFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testApplyArtifacts",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testApplyArtifactsEmpty",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testDryRunMode",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testDryRunMode",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testConcurrentTransactionIsolation",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testDiagnostics",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testDiagnostics",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testPartialRollbackOnMultiOpError",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testUseCommittedTransactionIDError",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "packages/test-workspace-engine.ts#testRegressionAgentRuntime",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "external#error",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-workspace-engine.ts#main",
+      "to": "external#exit",
+      "type": "calls"
+    },
+    {
       "from": "packages/workspace/errors.ts#WorkspaceError.constructor",
       "to": "external#super",
       "type": "calls"
@@ -12024,6 +14324,771 @@
     {
       "from": "packages/workspace/service.ts#WorkspaceService.validate",
       "to": "packages/workspace/service.ts#WorkspaceService.exists",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#generateTxId",
+      "to": "external#now",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#generateTxId",
+      "to": "external#toString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#generateTxId",
+      "to": "external#randomBytes",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.staged",
+      "to": "external#Map",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.constructor",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.constructor",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureStateDirectory",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.constructor",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.constructor",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.constructor",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "to": "packages/workspace/workspace-errors.ts#WorkspaceEngineError",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "to": "packages/workspace/workspace-engine.ts#generateTxId",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "to": "external#toISOString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "to": "external#Date",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "to": "external#Map",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal.record",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.requireStaged",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.pathsForOperation",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.acquire",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "to": "packages/retriever/scorer.ts#RetrieverScorer.add",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "to": "packages/workspace/workspace-errors.ts#WorkspaceTransactionError",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal.record",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.primaryPath",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.preview",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.requireStaged",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.preview",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.resolve",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.preview",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.safeReadFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.preview",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.generatePatch",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.preview",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.requireStaged",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "external#now",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal.record",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "external#toISOString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "external#Date",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.releaseAll",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "packages/architecture-memory/service.ts#ArchitectureMemoryService.delete",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.buildResult",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.requireStaged",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollback",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "to": "external#now",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "to": "packages/workspace/workspace-engine.ts#generateTxId",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.beginTransaction",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.stage",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyArtifacts",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.commit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.resolve",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.safeReadFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.backup",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.isIdentical",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.generatePatch",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureParentDir",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#writeFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal.record",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#toISOString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#Date",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "packages/workspace/workspace-errors.ts#WorkspaceTransactionError",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#unlinkSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#renameSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#mkdirSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#rmSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.applyOperation",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.applyPatch",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal.record",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "external#reverse",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "external#from",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "external#entries",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "external#unlinkSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureParentDir",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "external#writeFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "external#toISOString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "external#Date",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.releaseAll",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.rollbackInternal",
+      "to": "packages/architecture-memory/service.ts#ArchitectureMemoryService.delete",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.buildResult",
+      "to": "external#now",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.requireStaged",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.requireStaged",
+      "to": "packages/workspace/workspace-errors.ts#WorkspaceTransactionError",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.backup",
+      "to": "external#has",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.backup",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.safeReadFile",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.safeReadFile",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.resolve",
+      "to": "external#isAbsolute",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureParentDir",
+      "to": "external#dirname",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureParentDir",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureParentDir",
+      "to": "external#mkdirSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureStateDirectory",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.ensureStateDirectory",
+      "to": "external#mkdirSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-engine.ts#WorkspaceEngine.pathsForOperation",
+      "to": "packages/workspace/workspace-engine.ts#WorkspaceEngine.resolve",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-errors.ts#WorkspaceEngineError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-errors.ts#WorkspaceTransactionError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-errors.ts#WorkspaceLockError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-errors.ts#WorkspaceValidationError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-errors.ts#WorkspacePatchError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.constructor",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.constructor",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.constructor",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.constructor",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.constructor",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.constructor",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.append",
+      "to": "external#dirname",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.append",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.append",
+      "to": "external#mkdirSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.append",
+      "to": "external#appendFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.append",
+      "to": "external#stringify",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readAll",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readAll",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readAll",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readAll",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readAll",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readAll",
+      "to": "packages/ast/service.ts#AstService.parse",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readTransaction",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readTransaction",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal.readAll",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.record",
+      "to": "packages/workspace/workspace-journal.ts#WorkspaceJournal.append",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.record",
+      "to": "external#toISOString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-journal.ts#WorkspaceJournal.record",
+      "to": "external#Date",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.locks",
+      "to": "external#Map",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.acquire",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.acquire",
+      "to": "packages/workspace/workspace-errors.ts#WorkspaceLockError",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.acquire",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.acquire",
+      "to": "external#toISOString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.acquire",
+      "to": "external#Date",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.release",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.release",
+      "to": "packages/architecture-memory/service.ts#ArchitectureMemoryService.delete",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.releaseAll",
+      "to": "external#entries",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.releaseAll",
+      "to": "packages/architecture-memory/service.ts#ArchitectureMemoryService.delete",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.isLocked",
+      "to": "external#has",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.lockedBy",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.activeLocks",
+      "to": "external#from",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-lock.ts#WorkspaceLockManager.activeLocks",
+      "to": "external#values",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.generatePatch",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.generatePatch",
+      "to": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.diff",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.generatePatch",
+      "to": "external#toISOString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.generatePatch",
+      "to": "external#Date",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.applyPatch",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.applyPatch",
+      "to": "packages/workspace/workspace-errors.ts#WorkspacePatchError",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.applyPatch",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.applyPatch",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.diff",
+      "to": "external#from",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.diff",
+      "to": "external#fill",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.diff",
+      "to": "external#Array",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.diff",
+      "to": "external#max",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.diff",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/workspace-patch.ts#WorkspacePatchEngine.diff",
+      "to": "external#reverse",
       "type": "calls"
     }
   ]

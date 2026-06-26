@@ -18,6 +18,7 @@ import {
 import { RuntimeArtifact } from "./artifacts";
 import { RuntimeMiddleware } from "./middleware";
 import { RuntimeHooks } from "./hooks";
+import { WorkspaceEngine } from "../workspace/workspace-engine";
 
 // Mock Provider Implementation
 export class MockAgentProvider implements AgentProvider {
@@ -166,6 +167,7 @@ export class MockAgentProvider implements AgentProvider {
 export class AgentRuntimeService {
     private readonly registry = new AgentRegistry();
     private readonly engine: RuntimeEngine;
+    private readonly workspaceEngine?: WorkspaceEngine;
 
     private readonly middlewares: RuntimeMiddleware[] = [];
     private readonly hooks: RuntimeHooks[] = [];
@@ -187,9 +189,11 @@ export class AgentRuntimeService {
     private totalArtifactsCount = 0;
 
     constructor(
-        private readonly workspaceRoot: string
+        private readonly workspaceRoot: string,
+        workspaceEngine?: WorkspaceEngine
     ) {
         this.engine = new RuntimeEngine(this.registry);
+        this.workspaceEngine = workspaceEngine;
         // Register default Mock provider
         this.registry.register(new MockAgentProvider());
     }
@@ -271,6 +275,19 @@ export class AgentRuntimeService {
             completedTasks.push(request.task.id);
         }
         this.saveSnapshot(runningTasks, completedTasks, providerAssignments, retryCounts);
+
+        // Apply artifacts to workspace if engine is configured and execution succeeded
+        if (this.workspaceEngine && response.status === "Completed" && response.artifacts.length > 0) {
+            try {
+                const wsResult = await this.workspaceEngine.applyArtifacts(response.artifacts);
+                if (wsResult.success) {
+                    response.workspaceTransactionId = wsResult.transactionId;
+                }
+            } catch (wsErr: any) {
+                // Workspace application errors are non-fatal — log only
+                this.providerSelectionReasoning.push(`WorkspaceEngine apply error: ${wsErr.message}`);
+            }
+        }
 
         // Accumulate cumulative metrics
         const elapsed = Date.now() - startExecution;

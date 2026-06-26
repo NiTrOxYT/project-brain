@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T20:20:46.750Z",
+  "generatedAt": "2026-06-26T20:46:03.872Z",
   "imports": [
     {
       "source": "packages/agent-runtime/executor.ts",
@@ -156,6 +156,10 @@
     {
       "source": "packages/agent-runtime/service.ts",
       "target": "./hooks"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "../workspace/workspace-engine"
     },
     {
       "source": "packages/agent-runtime/types.ts",
@@ -868,6 +872,10 @@
     {
       "source": "packages/orchestrator/executor.ts",
       "target": "../agent-runtime"
+    },
+    {
+      "source": "packages/orchestrator/executor.ts",
+      "target": "../workspace/workspace-engine"
     },
     {
       "source": "packages/orchestrator/index.ts",
@@ -1850,6 +1858,42 @@
       "target": "./synchronizer"
     },
     {
+      "source": "packages/test-workspace-engine.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/test-workspace-engine.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-workspace-engine.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/test-workspace-engine.ts",
+      "target": "./workspace/workspace-engine"
+    },
+    {
+      "source": "packages/test-workspace-engine.ts",
+      "target": "./workspace/workspace-journal"
+    },
+    {
+      "source": "packages/test-workspace-engine.ts",
+      "target": "./workspace/workspace-lock"
+    },
+    {
+      "source": "packages/test-workspace-engine.ts",
+      "target": "./workspace/workspace-patch"
+    },
+    {
+      "source": "packages/test-workspace-engine.ts",
+      "target": "./workspace/workspace-errors"
+    },
+    {
+      "source": "packages/test-workspace-engine.ts",
+      "target": "./agent-runtime/service"
+    },
+    {
       "source": "packages/workspace/index.ts",
       "target": "./service"
     },
@@ -1860,6 +1904,30 @@
     {
       "source": "packages/workspace/index.ts",
       "target": "./errors"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-types"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-errors"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-journal"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-lock"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-patch"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-engine"
     },
     {
       "source": "packages/workspace/service.ts",
@@ -1876,6 +1944,66 @@
     {
       "source": "packages/workspace/service.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/workspace/workspace-engine.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/workspace/workspace-engine.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/workspace/workspace-engine.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "packages/workspace/workspace-engine.ts",
+      "target": "./workspace-types"
+    },
+    {
+      "source": "packages/workspace/workspace-engine.ts",
+      "target": "./workspace-errors"
+    },
+    {
+      "source": "packages/workspace/workspace-engine.ts",
+      "target": "./workspace-journal"
+    },
+    {
+      "source": "packages/workspace/workspace-engine.ts",
+      "target": "./workspace-lock"
+    },
+    {
+      "source": "packages/workspace/workspace-engine.ts",
+      "target": "./workspace-patch"
+    },
+    {
+      "source": "packages/workspace/workspace-journal.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/workspace/workspace-journal.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/workspace/workspace-journal.ts",
+      "target": "./workspace-types"
+    },
+    {
+      "source": "packages/workspace/workspace-lock.ts",
+      "target": "./workspace-types"
+    },
+    {
+      "source": "packages/workspace/workspace-lock.ts",
+      "target": "./workspace-errors"
+    },
+    {
+      "source": "packages/workspace/workspace-patch.ts",
+      "target": "./workspace-types"
+    },
+    {
+      "source": "packages/workspace/workspace-patch.ts",
+      "target": "./workspace-errors"
     }
   ]
 }

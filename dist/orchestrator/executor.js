@@ -3,6 +3,7 @@ export class OrchestratorExecutor {
     plan;
     schedule;
     maxWorkers;
+    workspaceEngine;
     stage = "init";
     results = [];
     assignments = [];
@@ -12,11 +13,12 @@ export class OrchestratorExecutor {
     rollbackCount = 0;
     totalExecutionTime = 0;
     runtimeService;
-    constructor(plan, schedule, maxWorkers = 4, runtimeService) {
+    constructor(plan, schedule, maxWorkers = 4, runtimeService, workspaceEngine) {
         this.plan = plan;
         this.schedule = schedule;
         this.maxWorkers = maxWorkers;
-        this.runtimeService = runtimeService || new AgentRuntimeService(process.cwd());
+        this.workspaceEngine = workspaceEngine;
+        this.runtimeService = runtimeService || new AgentRuntimeService(process.cwd(), workspaceEngine);
     }
     async execute(simulateFailures = []) {
         this.stage = "running";
@@ -119,7 +121,8 @@ export class OrchestratorExecutor {
                     this.results.push({
                         taskId: tId,
                         status: "completed",
-                        executionTimeMs: Date.now() - runStart
+                        executionTimeMs: Date.now() - runStart,
+                        workspaceTransactionId: response.workspaceTransactionId
                     });
                 }
                 else {
@@ -233,6 +236,19 @@ export class OrchestratorExecutor {
             providerHealth = matchedProvider.health || "Healthy";
         }
         const executionSnapshotId = runtimeDiags?.snapshotStatistics?.lastSnapshotId;
+        // Aggregate workspace diagnostics if engine is present
+        let workspaceDiagnostics;
+        if (this.workspaceEngine) {
+            const wsDiag = this.workspaceEngine.diagnostics?.();
+            if (wsDiag) {
+                workspaceDiagnostics = {
+                    totalTransactions: wsDiag.totalTransactions,
+                    totalChanges: wsDiag.totalChanges,
+                    totalPatchesApplied: wsDiag.totalPatchesApplied,
+                    rolledBackTransactions: wsDiag.rolledBackTransactions
+                };
+            }
+        }
         return {
             totalTasks,
             completedTasks,
@@ -247,7 +263,8 @@ export class OrchestratorExecutor {
             selectedProvider,
             providerHealth,
             runtimeMetricsSummary: runtimeDiags,
-            executionSnapshotId
+            executionSnapshotId,
+            workspaceDiagnostics
         };
     }
 }

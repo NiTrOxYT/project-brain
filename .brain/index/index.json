@@ -849,14 +849,14 @@
     {
       "path": "packages/agent-runtime/service.ts",
       "extension": ".ts",
-      "size": 15515,
-      "modifiedAt": "2026-06-26T20:18:13.527Z"
+      "size": 16407,
+      "modifiedAt": "2026-06-26T20:40:19.999Z"
     },
     {
       "path": "packages/agent-runtime/types.ts",
       "extension": ".ts",
-      "size": 2103,
-      "modifiedAt": "2026-06-26T20:16:50.445Z"
+      "size": 2221,
+      "modifiedAt": "2026-06-26T20:39:49.601Z"
     },
     {
       "path": "packages/architecture-memory/errors.ts",
@@ -1419,8 +1419,8 @@
     {
       "path": "packages/orchestrator/executor.ts",
       "extension": ".ts",
-      "size": 12036,
-      "modifiedAt": "2026-06-26T20:18:27.396Z"
+      "size": 12928,
+      "modifiedAt": "2026-06-26T20:41:05.421Z"
     },
     {
       "path": "packages/orchestrator/index.ts",
@@ -1443,8 +1443,8 @@
     {
       "path": "packages/orchestrator/types.ts",
       "extension": ".ts",
-      "size": 1676,
-      "modifiedAt": "2026-06-26T20:17:18.540Z"
+      "size": 2061,
+      "modifiedAt": "2026-06-26T20:40:39.085Z"
     },
     {
       "path": "packages/planner/errors.ts",
@@ -1533,14 +1533,14 @@
     {
       "path": "packages/query-engine/service.ts",
       "extension": ".ts",
-      "size": 11044,
-      "modifiedAt": "2026-06-26T20:17:29.091Z"
+      "size": 11794,
+      "modifiedAt": "2026-06-26T20:41:55.781Z"
     },
     {
       "path": "packages/query-engine/types.ts",
       "extension": ".ts",
-      "size": 933,
-      "modifiedAt": "2026-06-26T20:17:23.078Z"
+      "size": 1248,
+      "modifiedAt": "2026-06-26T20:41:36.081Z"
     },
     {
       "path": "packages/relationship-analyzer/errors.ts",
@@ -1891,6 +1891,12 @@
       "modifiedAt": "2026-06-26T19:32:15.598Z"
     },
     {
+      "path": "packages/test-workspace-engine.ts",
+      "extension": ".ts",
+      "size": 34836,
+      "modifiedAt": "2026-06-26T20:45:36.155Z"
+    },
+    {
       "path": "packages/workspace/errors.ts",
       "extension": ".ts",
       "size": 154,
@@ -1899,8 +1905,8 @@
     {
       "path": "packages/workspace/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:30:31.769Z"
+      "size": 291,
+      "modifiedAt": "2026-06-26T20:39:38.954Z"
     },
     {
       "path": "packages/workspace/service.ts",
@@ -1913,6 +1919,42 @@
       "extension": ".ts",
       "size": 139,
       "modifiedAt": "2026-06-26T15:30:14.674Z"
+    },
+    {
+      "path": "packages/workspace/workspace-engine.ts",
+      "extension": ".ts",
+      "size": 22266,
+      "modifiedAt": "2026-06-26T20:45:02.768Z"
+    },
+    {
+      "path": "packages/workspace/workspace-errors.ts",
+      "extension": ".ts",
+      "size": 2278,
+      "modifiedAt": "2026-06-26T20:44:06.344Z"
+    },
+    {
+      "path": "packages/workspace/workspace-journal.ts",
+      "extension": ".ts",
+      "size": 2858,
+      "modifiedAt": "2026-06-26T20:37:42.224Z"
+    },
+    {
+      "path": "packages/workspace/workspace-lock.ts",
+      "extension": ".ts",
+      "size": 2760,
+      "modifiedAt": "2026-06-26T20:37:56.387Z"
+    },
+    {
+      "path": "packages/workspace/workspace-patch.ts",
+      "extension": ".ts",
+      "size": 5480,
+      "modifiedAt": "2026-06-26T20:38:18.718Z"
+    },
+    {
+      "path": "packages/workspace/workspace-types.ts",
+      "extension": ".ts",
+      "size": 6590,
+      "modifiedAt": "2026-06-26T20:37:17.761Z"
     },
     {
       "path": "project-brain.json",

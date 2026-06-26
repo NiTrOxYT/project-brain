@@ -18,6 +18,8 @@ export interface ExecutionResult {
     error?: string;
     output?: string;
     executionTimeMs: number;
+    /** Set when a WorkspaceEngine transaction applied artifacts for this task. */
+    workspaceTransactionId?: string;
 }
 
 export interface ScheduleBatch {
@@ -45,6 +47,13 @@ export interface ExecutionReport {
     providerHealth?: string;
     runtimeMetricsSummary?: any;
     executionSnapshotId?: string;
+    /** Aggregated workspace engine diagnostics across all tasks in this execution. */
+    workspaceDiagnostics?: {
+        totalTransactions: number;
+        totalChanges: number;
+        totalPatchesApplied: number;
+        rolledBackTransactions: number;
+    };
 }
 
 export interface WorkerAssignment {

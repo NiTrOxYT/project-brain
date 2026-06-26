@@ -137,6 +137,7 @@ export class AgentRuntimeService {
     workspaceRoot;
     registry = new AgentRegistry();
     engine;
+    workspaceEngine;
     middlewares = [];
     hooks = [];
     timings = {
@@ -154,9 +155,10 @@ export class AgentRuntimeService {
         Pending: 0, Queued: 0, Running: 0, Paused: 0, Completed: 0, Failed: 0, Cancelled: 0, Retrying: 0, RolledBack: 0
     };
     totalArtifactsCount = 0;
-    constructor(workspaceRoot) {
+    constructor(workspaceRoot, workspaceEngine) {
         this.workspaceRoot = workspaceRoot;
         this.engine = new RuntimeEngine(this.registry);
+        this.workspaceEngine = workspaceEngine;
         // Register default Mock provider
         this.registry.register(new MockAgentProvider());
     }
@@ -223,6 +225,19 @@ export class AgentRuntimeService {
             completedTasks.push(request.task.id);
         }
         this.saveSnapshot(runningTasks, completedTasks, providerAssignments, retryCounts);
+        // Apply artifacts to workspace if engine is configured and execution succeeded
+        if (this.workspaceEngine && response.status === "Completed" && response.artifacts.length > 0) {
+            try {
+                const wsResult = await this.workspaceEngine.applyArtifacts(response.artifacts);
+                if (wsResult.success) {
+                    response.workspaceTransactionId = wsResult.transactionId;
+                }
+            }
+            catch (wsErr) {
+                // Workspace application errors are non-fatal — log only
+                this.providerSelectionReasoning.push(`WorkspaceEngine apply error: ${wsErr.message}`);
+            }
+        }
         // Accumulate cumulative metrics
         const elapsed = Date.now() - startExecution;
         this.totalExecutionTimeMs += elapsed;

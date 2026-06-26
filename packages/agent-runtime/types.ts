@@ -90,4 +90,6 @@ export interface RuntimeResponse {
     error?: string;
     artifacts: RuntimeArtifact[];
     metrics: RuntimeMetrics;
+    /** Set when a WorkspaceEngine transaction applied the artifacts to disk. */
+    workspaceTransactionId?: string;
 }
