@@ -25,9 +25,8 @@ export class ImportResolverService {
             const candidates = [
                 base + ".ts",
                 base + ".tsx",
-                path.join(base, "service.ts"),
                 path.join(base, "index.ts")
-              ];
+            ];
             const match = candidates.find(candidate => files.has(candidate));
             resolved.push({
                 source: record.source,

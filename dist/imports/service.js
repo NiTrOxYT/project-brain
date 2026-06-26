@@ -1,10 +1,13 @@
 import fs from "fs/promises";
 import path from "path";
+import ts from "typescript";
+import { AstService } from "../ast";
 import { FileSystemService } from "../filesystem";
 export class ImportsService {
     projectRoot;
     workspaceRoot;
     filesystem = new FileSystemService();
+    parser = new AstService();
     constructor(projectRoot, workspaceRoot) {
         this.projectRoot = projectRoot;
         this.workspaceRoot = workspaceRoot;
@@ -39,15 +42,55 @@ export class ImportsService {
                 !fullPath.endsWith(".tsx")) {
                 continue;
             }
-            const content = await fs.readFile(fullPath, "utf8");
-            const regex = /import\s+(?:.*?\s+from\s+)?["']([^"']+)["']/g;
-            let match;
-            while ((match = regex.exec(content)) !== null) {
-                output.push({
-                    source: path.relative(this.projectRoot, fullPath),
-                    target: match[1]
-                });
-            }
+            const parsed = await this.parser.parse(fullPath);
+            this.extract(parsed.ast, fullPath, output);
         }
+    }
+    extract(source, file, output) {
+        const visit = (node) => {
+            //
+            // import ... from "..."
+            // import "./x"
+            //
+            if (ts.isImportDeclaration(node)) {
+                if (ts.isStringLiteral(node.moduleSpecifier)) {
+                    output.push({
+                        source: path.relative(this.projectRoot, file),
+                        target: node.moduleSpecifier.text
+                    });
+                }
+            }
+            //
+            // export ... from "..."
+            // export * from "..."
+            //
+            else if (ts.isExportDeclaration(node)) {
+                if (node.moduleSpecifier &&
+                    ts.isStringLiteral(node.moduleSpecifier)) {
+                    output.push({
+                        source: path.relative(this.projectRoot, file),
+                        target: node.moduleSpecifier.text
+                    });
+                }
+            }
+            //
+            // dynamic import("...")
+            //
+            else if (ts.isCallExpression(node)) {
+                if (node.expression.kind ===
+                    ts.SyntaxKind.ImportKeyword &&
+                    node.arguments.length === 1) {
+                    const arg = node.arguments[0];
+                    if (ts.isStringLiteral(arg)) {
+                        output.push({
+                            source: path.relative(this.projectRoot, file),
+                            target: arg.text
+                        });
+                    }
+                }
+            }
+            ts.forEachChild(node, visit);
+        };
+        visit(source);
     }
 }

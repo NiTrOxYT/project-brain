@@ -4,22 +4,17 @@
   "description": "Persistent AI Runtime for Software Engineering",
   "type": "module",
   "private": true,
-
   "bin": {
     "brain": "./dist/cli.js"
   },
-
   "scripts": {
     "build": "tsc",
     "dev": "tsx packages/main.ts",
     "start": "node dist/main.js"
   },
-
-  "dependencies": {},
-
   "devDependencies": {
     "@types/node": "^24.0.0",
     "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   }
 }

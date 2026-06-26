@@ -1,8 +1,20 @@
+export type SymbolKind =
+
+    | "class"
+    | "interface"
+    | "type"
+    | "enum"
+    | "function"
+    | "method"
+    | "constructor"
+    | "property"
+    | "variable";
+
 export interface SymbolRecord {
 
     name: string;
 
-    kind: "class" | "function" | "interface" | "type" | "enum" | "variable";
+    kind: SymbolKind;
 
     file: string;
 

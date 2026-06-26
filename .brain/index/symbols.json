@@ -1,6 +1,48 @@
 {
-  "generatedAt": "2026-06-26T18:39:08.097Z",
+  "generatedAt": "2026-06-26T19:05:21.801Z",
   "symbols": [
+    {
+      "name": "AstError",
+      "kind": "class",
+      "file": "packages/ast/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/ast/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "AstService",
+      "kind": "class",
+      "file": "packages/ast/service.ts",
+      "line": 6
+    },
+    {
+      "name": "parse",
+      "kind": "method",
+      "file": "packages/ast/service.ts",
+      "line": 8
+    },
+    {
+      "name": "source",
+      "kind": "variable",
+      "file": "packages/ast/service.ts",
+      "line": 12
+    },
+    {
+      "name": "ast",
+      "kind": "variable",
+      "file": "packages/ast/service.ts",
+      "line": 18
+    },
+    {
+      "name": "ParsedSourceFile",
+      "kind": "interface",
+      "file": "packages/ast/types.ts",
+      "line": 3
+    },
     {
       "name": "BrainError",
       "kind": "class",
@@ -8,10 +50,46 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/brain/errors.ts",
+      "line": 3
+    },
+    {
       "name": "BrainService",
       "kind": "class",
       "file": "packages/brain/service.ts",
       "line": 9
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/brain/service.ts",
+      "line": 11
+    },
+    {
+      "name": "execute",
+      "kind": "method",
+      "file": "packages/brain/service.ts",
+      "line": 15
+    },
+    {
+      "name": "analysis",
+      "kind": "variable",
+      "file": "packages/brain/service.ts",
+      "line": 19
+    },
+    {
+      "name": "orchestrator",
+      "kind": "variable",
+      "file": "packages/brain/service.ts",
+      "line": 24
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/brain/service.ts",
+      "line": 29
     },
     {
       "name": "BrainRequest",
@@ -32,10 +110,46 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/cache/errors.ts",
+      "line": 3
+    },
+    {
       "name": "CacheService",
       "kind": "class",
       "file": "packages/cache/service.ts",
       "line": 6
+    },
+    {
+      "name": "fs",
+      "kind": "property",
+      "file": "packages/cache/service.ts",
+      "line": 8
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/cache/service.ts",
+      "line": 10
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/cache/service.ts",
+      "line": 14
+    },
+    {
+      "name": "cachePath",
+      "kind": "variable",
+      "file": "packages/cache/service.ts",
+      "line": 16
+    },
+    {
+      "name": "cache",
+      "kind": "variable",
+      "file": "packages/cache/service.ts",
+      "line": 26
     },
     {
       "name": "RuntimeCache",
@@ -50,16 +164,70 @@
       "line": 1
     },
     {
+      "name": "run",
+      "kind": "function",
+      "file": "packages/cli/cli.ts",
+      "line": 6
+    },
+    {
+      "name": "command",
+      "kind": "variable",
+      "file": "packages/cli/cli.ts",
+      "line": 10
+    },
+    {
+      "name": "runtime",
+      "kind": "variable",
+      "file": "packages/cli/cli.ts",
+      "line": 16
+    },
+    {
       "name": "ContextBudgetError",
       "kind": "class",
       "file": "packages/context-budget/errors.ts",
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/context-budget/errors.ts",
+      "line": 3
+    },
+    {
       "name": "ContextBudgetService",
       "kind": "class",
       "file": "packages/context-budget/service.ts",
       "line": 11
+    },
+    {
+      "name": "budget",
+      "kind": "method",
+      "file": "packages/context-budget/service.ts",
+      "line": 13
+    },
+    {
+      "name": "ranked",
+      "kind": "variable",
+      "file": "packages/context-budget/service.ts",
+      "line": 17
+    },
+    {
+      "name": "selected",
+      "kind": "variable",
+      "file": "packages/context-budget/service.ts",
+      "line": 27
+    },
+    {
+      "name": "usedTokens",
+      "kind": "variable",
+      "file": "packages/context-budget/service.ts",
+      "line": 29
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/context-budget/service.ts",
+      "line": 31
     },
     {
       "name": "ContextCandidate",
@@ -92,16 +260,82 @@
       "line": 25
     },
     {
+      "name": "assemble",
+      "kind": "method",
+      "file": "packages/context-loader/assembler.ts",
+      "line": 27
+    },
+    {
       "name": "ContextLoaderError",
       "kind": "class",
       "file": "packages/context-loader/errors.ts",
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/context-loader/errors.ts",
+      "line": 3
+    },
+    {
       "name": "ContextLoaderService",
       "kind": "class",
       "file": "packages/context-loader/service.ts",
       "line": 12
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/context-loader/service.ts",
+      "line": 14
+    },
+    {
+      "name": "retriever",
+      "kind": "property",
+      "file": "packages/context-loader/service.ts",
+      "line": 17
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/context-loader/service.ts",
+      "line": 19
+    },
+    {
+      "name": "load",
+      "kind": "method",
+      "file": "packages/context-loader/service.ts",
+      "line": 30
+    },
+    {
+      "name": "retrieval",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 34
+    },
+    {
+      "name": "expandedFiles",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 43
+    },
+    {
+      "name": "project",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 51
+    },
+    {
+      "name": "symbols",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 60
+    },
+    {
+      "name": "imports",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 69
     },
     {
       "name": "ContextRequest",
@@ -122,9 +356,51 @@
       "line": 1
     },
     {
+      "name": "services",
+      "kind": "property",
+      "file": "packages/core/container.ts",
+      "line": 3
+    },
+    {
+      "name": "register",
+      "kind": "method",
+      "file": "packages/core/container.ts",
+      "line": 6
+    },
+    {
+      "name": "resolve",
+      "kind": "method",
+      "file": "packages/core/container.ts",
+      "line": 18
+    },
+    {
+      "name": "service",
+      "kind": "variable",
+      "file": "packages/core/container.ts",
+      "line": 22
+    },
+    {
       "name": "Kernel",
       "kind": "class",
       "file": "packages/core/kernel.ts",
+      "line": 3
+    },
+    {
+      "name": "container",
+      "kind": "property",
+      "file": "packages/core/kernel.ts",
+      "line": 5
+    },
+    {
+      "name": "RuntimeService",
+      "kind": "class",
+      "file": "packages/core/service.ts",
+      "line": 1
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/core/service.ts",
       "line": 3
     },
     {
@@ -140,10 +416,46 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/filesystem/errors.ts",
+      "line": 2
+    },
+    {
       "name": "FileSystemService",
       "kind": "class",
       "file": "packages/filesystem/service.ts",
       "line": 3
+    },
+    {
+      "name": "exists",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 5
+    },
+    {
+      "name": "mkdir",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 14
+    },
+    {
+      "name": "writeJson",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 20
+    },
+    {
+      "name": "readJson",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 28
+    },
+    {
+      "name": "raw",
+      "kind": "variable",
+      "file": "packages/filesystem/service.ts",
+      "line": 29
     },
     {
       "name": "WriteJsonOptions",
@@ -164,10 +476,46 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/graph/errors.ts",
+      "line": 3
+    },
+    {
       "name": "GraphService",
       "kind": "class",
       "file": "packages/graph/service.ts",
       "line": 6
+    },
+    {
+      "name": "fs",
+      "kind": "property",
+      "file": "packages/graph/service.ts",
+      "line": 8
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/graph/service.ts",
+      "line": 10
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/graph/service.ts",
+      "line": 14
+    },
+    {
+      "name": "graphPath",
+      "kind": "variable",
+      "file": "packages/graph/service.ts",
+      "line": 16
+    },
+    {
+      "name": "graph",
+      "kind": "variable",
+      "file": "packages/graph/service.ts",
+      "line": 26
     },
     {
       "name": "GraphNode",
@@ -194,10 +542,58 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/graph-builder/errors.ts",
+      "line": 3
+    },
+    {
       "name": "GraphBuilderService",
       "kind": "class",
       "file": "packages/graph-builder/service.ts",
       "line": 7
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/graph-builder/service.ts",
+      "line": 9
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/graph-builder/service.ts",
+      "line": 11
+    },
+    {
+      "name": "build",
+      "kind": "method",
+      "file": "packages/graph-builder/service.ts",
+      "line": 15
+    },
+    {
+      "name": "imports",
+      "kind": "variable",
+      "file": "packages/graph-builder/service.ts",
+      "line": 25
+    },
+    {
+      "name": "nodes",
+      "kind": "variable",
+      "file": "packages/graph-builder/service.ts",
+      "line": 37
+    },
+    {
+      "name": "edges",
+      "kind": "variable",
+      "file": "packages/graph-builder/service.ts",
+      "line": 39
+    },
+    {
+      "name": "graph",
+      "kind": "variable",
+      "file": "packages/graph-builder/service.ts",
+      "line": 55
     },
     {
       "name": "GraphNode",
@@ -224,10 +620,76 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/graph-traversal/errors.ts",
+      "line": 3
+    },
+    {
       "name": "GraphTraversalService",
       "kind": "class",
       "file": "packages/graph-traversal/service.ts",
       "line": 5
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 7
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 10
+    },
+    {
+      "name": "traverse",
+      "kind": "method",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 14
+    },
+    {
+      "name": "graph",
+      "kind": "variable",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 19
+    },
+    {
+      "name": "visited",
+      "kind": "variable",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 28
+    },
+    {
+      "name": "frontier",
+      "kind": "variable",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 30
+    },
+    {
+      "name": "i",
+      "kind": "variable",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 32
+    },
+    {
+      "name": "next",
+      "kind": "variable",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 34
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 36
+    },
+    {
+      "name": "edge",
+      "kind": "variable",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 38
     },
     {
       "name": "TraverseRequest",
@@ -242,16 +704,190 @@
       "line": 9
     },
     {
+      "name": "ImportResolverError",
+      "kind": "class",
+      "file": "packages/import-resolver/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/import-resolver/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "ImportResolverService",
+      "kind": "class",
+      "file": "packages/import-resolver/service.ts",
+      "line": 13
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/import-resolver/service.ts",
+      "line": 15
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/import-resolver/service.ts",
+      "line": 18
+    },
+    {
+      "name": "resolve",
+      "kind": "method",
+      "file": "packages/import-resolver/service.ts",
+      "line": 22
+    },
+    {
+      "name": "index",
+      "kind": "variable",
+      "file": "packages/import-resolver/service.ts",
+      "line": 24
+    },
+    {
+      "name": "imports",
+      "kind": "variable",
+      "file": "packages/import-resolver/service.ts",
+      "line": 33
+    },
+    {
+      "name": "files",
+      "kind": "variable",
+      "file": "packages/import-resolver/service.ts",
+      "line": 42
+    },
+    {
+      "name": "resolved",
+      "kind": "variable",
+      "file": "packages/import-resolver/service.ts",
+      "line": 49
+    },
+    {
+      "name": "record",
+      "kind": "variable",
+      "file": "packages/import-resolver/service.ts",
+      "line": 51
+    },
+    {
+      "name": "directory",
+      "kind": "variable",
+      "file": "packages/import-resolver/service.ts",
+      "line": 73
+    },
+    {
+      "name": "base",
+      "kind": "variable",
+      "file": "packages/import-resolver/service.ts",
+      "line": 78
+    },
+    {
+      "name": "candidates",
+      "kind": "variable",
+      "file": "packages/import-resolver/service.ts",
+      "line": 86
+    },
+    {
+      "name": "match",
+      "kind": "variable",
+      "file": "packages/import-resolver/service.ts",
+      "line": 99
+    },
+    {
+      "name": "ResolvedImport",
+      "kind": "interface",
+      "file": "packages/import-resolver/types.ts",
+      "line": 1
+    },
+    {
       "name": "ImportsError",
       "kind": "class",
       "file": "packages/imports/errors.ts",
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/imports/errors.ts",
+      "line": 3
+    },
+    {
       "name": "ImportsService",
       "kind": "class",
       "file": "packages/imports/service.ts",
       "line": 7
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/imports/service.ts",
+      "line": 9
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/imports/service.ts",
+      "line": 11
+    },
+    {
+      "name": "index",
+      "kind": "method",
+      "file": "packages/imports/service.ts",
+      "line": 16
+    },
+    {
+      "name": "imports",
+      "kind": "variable",
+      "file": "packages/imports/service.ts",
+      "line": 18
+    },
+    {
+      "name": "index",
+      "kind": "variable",
+      "file": "packages/imports/service.ts",
+      "line": 25
+    },
+    {
+      "name": "walk",
+      "kind": "method",
+      "file": "packages/imports/service.ts",
+      "line": 43
+    },
+    {
+      "name": "entries",
+      "kind": "variable",
+      "file": "packages/imports/service.ts",
+      "line": 48
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/imports/service.ts",
+      "line": 52
+    },
+    {
+      "name": "fullPath",
+      "kind": "variable",
+      "file": "packages/imports/service.ts",
+      "line": 63
+    },
+    {
+      "name": "content",
+      "kind": "variable",
+      "file": "packages/imports/service.ts",
+      "line": 77
+    },
+    {
+      "name": "regex",
+      "kind": "variable",
+      "file": "packages/imports/service.ts",
+      "line": 82
+    },
+    {
+      "name": "match",
+      "kind": "variable",
+      "file": "packages/imports/service.ts",
+      "line": 85
     },
     {
       "name": "ImportRecord",
@@ -272,10 +908,76 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/indexer/errors.ts",
+      "line": 3
+    },
+    {
       "name": "IndexerService",
       "kind": "class",
       "file": "packages/indexer/service.ts",
       "line": 7
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/indexer/service.ts",
+      "line": 9
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/indexer/service.ts",
+      "line": 11
+    },
+    {
+      "name": "index",
+      "kind": "method",
+      "file": "packages/indexer/service.ts",
+      "line": 16
+    },
+    {
+      "name": "files",
+      "kind": "variable",
+      "file": "packages/indexer/service.ts",
+      "line": 18
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/indexer/service.ts",
+      "line": 25
+    },
+    {
+      "name": "walk",
+      "kind": "method",
+      "file": "packages/indexer/service.ts",
+      "line": 42
+    },
+    {
+      "name": "entries",
+      "kind": "variable",
+      "file": "packages/indexer/service.ts",
+      "line": 50
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/indexer/service.ts",
+      "line": 57
+    },
+    {
+      "name": "fullPath",
+      "kind": "variable",
+      "file": "packages/indexer/service.ts",
+      "line": 68
+    },
+    {
+      "name": "stat",
+      "kind": "variable",
+      "file": "packages/indexer/service.ts",
+      "line": 84
     },
     {
       "name": "IndexedFile",
@@ -294,6 +996,18 @@
       "kind": "class",
       "file": "packages/kernel/boot.ts",
       "line": 13
+    },
+    {
+      "name": "boot",
+      "kind": "method",
+      "file": "packages/kernel/boot.ts",
+      "line": 15
+    },
+    {
+      "name": "brain",
+      "kind": "variable",
+      "file": "packages/kernel/boot.ts",
+      "line": 17
     },
     {
       "name": "PROJECT_BRAIN_NAME",
@@ -362,10 +1076,52 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/knowledge/errors.ts",
+      "line": 3
+    },
+    {
       "name": "KnowledgeService",
       "kind": "class",
       "file": "packages/knowledge/service.ts",
       "line": 6
+    },
+    {
+      "name": "fs",
+      "kind": "property",
+      "file": "packages/knowledge/service.ts",
+      "line": 8
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/knowledge/service.ts",
+      "line": 10
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/knowledge/service.ts",
+      "line": 14
+    },
+    {
+      "name": "knowledgePath",
+      "kind": "variable",
+      "file": "packages/knowledge/service.ts",
+      "line": 16
+    },
+    {
+      "name": "exists",
+      "kind": "variable",
+      "file": "packages/knowledge/service.ts",
+      "line": 22
+    },
+    {
+      "name": "data",
+      "kind": "variable",
+      "file": "packages/knowledge/service.ts",
+      "line": 30
     },
     {
       "name": "KnowledgeFile",
@@ -386,10 +1142,46 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/manifest/errors.ts",
+      "line": 3
+    },
+    {
       "name": "ManifestService",
       "kind": "class",
       "file": "packages/manifest/service.ts",
       "line": 8
+    },
+    {
+      "name": "fs",
+      "kind": "property",
+      "file": "packages/manifest/service.ts",
+      "line": 10
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/manifest/service.ts",
+      "line": 12
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/manifest/service.ts",
+      "line": 25
+    },
+    {
+      "name": "exists",
+      "kind": "method",
+      "file": "packages/manifest/service.ts",
+      "line": 29
+    },
+    {
+      "name": "load",
+      "kind": "method",
+      "file": "packages/manifest/service.ts",
+      "line": 35
     },
     {
       "name": "Manifest",
@@ -404,10 +1196,46 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/orchestrator/errors.ts",
+      "line": 3
+    },
+    {
       "name": "OrchestratorService",
       "kind": "class",
       "file": "packages/orchestrator/service.ts",
       "line": 9
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/orchestrator/service.ts",
+      "line": 11
+    },
+    {
+      "name": "execute",
+      "kind": "method",
+      "file": "packages/orchestrator/service.ts",
+      "line": 15
+    },
+    {
+      "name": "loader",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 19
+    },
+    {
+      "name": "bundle",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 24
+    },
+    {
+      "name": "context",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 31
     },
     {
       "name": "ExecuteRequest",
@@ -428,10 +1256,118 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/planner/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "SemanticEntry",
+      "kind": "interface",
+      "file": "packages/planner/service.ts",
+      "line": 11
+    },
+    {
+      "name": "SemanticIndex",
+      "kind": "interface",
+      "file": "packages/planner/service.ts",
+      "line": 19
+    },
+    {
       "name": "PlannerService",
       "kind": "class",
       "file": "packages/planner/service.ts",
       "line": 25
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/planner/service.ts",
+      "line": 27
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/planner/service.ts",
+      "line": 30
+    },
+    {
+      "name": "plan",
+      "kind": "method",
+      "file": "packages/planner/service.ts",
+      "line": 34
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 38
+    },
+    {
+      "name": "keywords",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 41
+    },
+    {
+      "name": "semantic",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 44
+    },
+    {
+      "name": "modules",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 53
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 56
+    },
+    {
+      "name": "score",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 58
+    },
+    {
+      "name": "keyword",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 60
+    },
+    {
+      "name": "targetModules",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 86
+    },
+    {
+      "name": "intent",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 97
+    },
+    {
+      "name": "contextBudget",
+      "kind": "variable",
+      "file": "packages/planner/service.ts",
+      "line": 102
+    },
+    {
+      "name": "detectIntent",
+      "kind": "method",
+      "file": "packages/planner/service.ts",
+      "line": 132
+    },
+    {
+      "name": "calculateBudget",
+      "kind": "method",
+      "file": "packages/planner/service.ts",
+      "line": 180
     },
     {
       "name": "ExecutionIntent",
@@ -452,10 +1388,82 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/project/errors.ts",
+      "line": 3
+    },
+    {
       "name": "ProjectService",
       "kind": "class",
       "file": "packages/project/service.ts",
       "line": 7
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/project/service.ts",
+      "line": 9
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/project/service.ts",
+      "line": 11
+    },
+    {
+      "name": "detect",
+      "kind": "method",
+      "file": "packages/project/service.ts",
+      "line": 16
+    },
+    {
+      "name": "packageJsonPath",
+      "kind": "variable",
+      "file": "packages/project/service.ts",
+      "line": 18
+    },
+    {
+      "name": "packageJson",
+      "kind": "variable",
+      "file": "packages/project/service.ts",
+      "line": 23
+    },
+    {
+      "name": "dependencies",
+      "kind": "variable",
+      "file": "packages/project/service.ts",
+      "line": 36
+    },
+    {
+      "name": "project",
+      "kind": "variable",
+      "file": "packages/project/service.ts",
+      "line": 41
+    },
+    {
+      "name": "detectFramework",
+      "kind": "method",
+      "file": "packages/project/service.ts",
+      "line": 76
+    },
+    {
+      "name": "detectLanguage",
+      "kind": "method",
+      "file": "packages/project/service.ts",
+      "line": 92
+    },
+    {
+      "name": "detectPackageManager",
+      "kind": "method",
+      "file": "packages/project/service.ts",
+      "line": 113
+    },
+    {
+      "name": "checks",
+      "kind": "variable",
+      "file": "packages/project/service.ts",
+      "line": 117
     },
     {
       "name": "ProjectInfo",
@@ -470,10 +1478,46 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/query-analyzer/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "STOP_WORDS",
+      "kind": "variable",
+      "file": "packages/query-analyzer/service.ts",
+      "line": 3
+    },
+    {
       "name": "QueryAnalyzerService",
       "kind": "class",
       "file": "packages/query-analyzer/service.ts",
       "line": 26
+    },
+    {
+      "name": "analyze",
+      "kind": "method",
+      "file": "packages/query-analyzer/service.ts",
+      "line": 28
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "file": "packages/query-analyzer/service.ts",
+      "line": 32
+    },
+    {
+      "name": "tokens",
+      "kind": "variable",
+      "file": "packages/query-analyzer/service.ts",
+      "line": 37
+    },
+    {
+      "name": "keywords",
+      "kind": "variable",
+      "file": "packages/query-analyzer/service.ts",
+      "line": 42
     },
     {
       "name": "QueryAnalysis",
@@ -488,6 +1532,12 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/retriever/errors.ts",
+      "line": 3
+    },
+    {
       "name": "Score",
       "kind": "interface",
       "file": "packages/retriever/scorer.ts",
@@ -500,10 +1550,112 @@
       "line": 11
     },
     {
+      "name": "scores",
+      "kind": "property",
+      "file": "packages/retriever/scorer.ts",
+      "line": 13
+    },
+    {
+      "name": "add",
+      "kind": "method",
+      "file": "packages/retriever/scorer.ts",
+      "line": 16
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/retriever/scorer.ts",
+      "line": 36
+    },
+    {
+      "name": "results",
+      "kind": "method",
+      "file": "packages/retriever/scorer.ts",
+      "line": 45
+    },
+    {
       "name": "RetrieverService",
       "kind": "class",
       "file": "packages/retriever/service.ts",
       "line": 16
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/retriever/service.ts",
+      "line": 18
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/retriever/service.ts",
+      "line": 21
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "file": "packages/retriever/service.ts",
+      "line": 25
+    },
+    {
+      "name": "snapshot",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 29
+    },
+    {
+      "name": "semantic",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 34
+    },
+    {
+      "name": "queryTerms",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 43
+    },
+    {
+      "name": "scorer",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 48
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 51
+    },
+    {
+      "name": "score",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 53
+    },
+    {
+      "name": "term",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 55
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 83
+    },
+    {
+      "name": "name",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 85
+    },
+    {
+      "name": "term",
+      "kind": "variable",
+      "file": "packages/retriever/service.ts",
+      "line": 90
     },
     {
       "name": "RetrieveRequest",
@@ -530,10 +1682,46 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/runtime/errors.ts",
+      "line": 3
+    },
+    {
       "name": "RuntimeService",
       "kind": "class",
       "file": "packages/runtime/service.ts",
       "line": 14
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/runtime/service.ts",
+      "line": 16
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/runtime/service.ts",
+      "line": 20
+    },
+    {
+      "name": "workspace",
+      "kind": "variable",
+      "file": "packages/runtime/service.ts",
+      "line": 22
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/runtime/service.ts",
+      "line": 26
+    },
+    {
+      "name": "workspaceRoot",
+      "kind": "variable",
+      "file": "packages/runtime/service.ts",
+      "line": 28
     },
     {
       "name": "RuntimeContext",
@@ -548,10 +1736,40 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/scanner/errors.ts",
+      "line": 3
+    },
+    {
       "name": "ScannerService",
       "kind": "class",
       "file": "packages/scanner/service.ts",
       "line": 7
+    },
+    {
+      "name": "fs",
+      "kind": "property",
+      "file": "packages/scanner/service.ts",
+      "line": 9
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/scanner/service.ts",
+      "line": 12
+    },
+    {
+      "name": "snapshot",
+      "kind": "method",
+      "file": "packages/scanner/service.ts",
+      "line": 16
+    },
+    {
+      "name": "graph",
+      "kind": "variable",
+      "file": "packages/scanner/service.ts",
+      "line": 18
     },
     {
       "name": "ProjectSnapshot",
@@ -566,16 +1784,88 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/semantic/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "STOP_WORDS",
+      "kind": "variable",
+      "file": "packages/semantic/normalizer.ts",
+      "line": 1
+    },
+    {
       "name": "normalize",
       "kind": "function",
       "file": "packages/semantic/normalizer.ts",
       "line": 6
     },
     {
+      "name": "normalized",
+      "kind": "variable",
+      "file": "packages/semantic/normalizer.ts",
+      "line": 8
+    },
+    {
+      "name": "terms",
+      "kind": "variable",
+      "file": "packages/semantic/normalizer.ts",
+      "line": 42
+    },
+    {
       "name": "SemanticService",
       "kind": "class",
       "file": "packages/semantic/service.ts",
       "line": 12
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/semantic/service.ts",
+      "line": 14
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/semantic/service.ts",
+      "line": 17
+    },
+    {
+      "name": "build",
+      "kind": "method",
+      "file": "packages/semantic/service.ts",
+      "line": 21
+    },
+    {
+      "name": "snapshot",
+      "kind": "variable",
+      "file": "packages/semantic/service.ts",
+      "line": 23
+    },
+    {
+      "name": "entries",
+      "kind": "variable",
+      "file": "packages/semantic/service.ts",
+      "line": 28
+    },
+    {
+      "name": "symbol",
+      "kind": "variable",
+      "file": "packages/semantic/service.ts",
+      "line": 30
+    },
+    {
+      "name": "terms",
+      "kind": "variable",
+      "file": "packages/semantic/service.ts",
+      "line": 32
+    },
+    {
+      "name": "semantic",
+      "kind": "variable",
+      "file": "packages/semantic/service.ts",
+      "line": 55
     },
     {
       "name": "SemanticEntry",
@@ -596,28 +1886,430 @@
       "line": 1
     },
     {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/symbols/errors.ts",
+      "line": 3
+    },
+    {
       "name": "SymbolsService",
       "kind": "class",
       "file": "packages/symbols/service.ts",
-      "line": 7
+      "line": 15
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/symbols/service.ts",
+      "line": 17
+    },
+    {
+      "name": "parser",
+      "kind": "property",
+      "file": "packages/symbols/service.ts",
+      "line": 20
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/symbols/service.ts",
+      "line": 23
+    },
+    {
+      "name": "index",
+      "kind": "method",
+      "file": "packages/symbols/service.ts",
+      "line": 31
+    },
+    {
+      "name": "symbols",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 33
+    },
+    {
+      "name": "index",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 43
+    },
+    {
+      "name": "walk",
+      "kind": "method",
+      "file": "packages/symbols/service.ts",
+      "line": 73
+    },
+    {
+      "name": "entries",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 81
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 94
+    },
+    {
+      "name": "fullPath",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 112
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 147
+    },
+    {
+      "name": "extract",
+      "kind": "method",
+      "file": "packages/symbols/service.ts",
+      "line": 168
+    },
+    {
+      "name": "visit",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 178
+    },
+    {
+      "name": "kind",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 184
+    },
+    {
+      "name": "name",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 187
+    },
+    {
+      "name": "position",
+      "kind": "variable",
+      "file": "packages/symbols/service.ts",
+      "line": 310
+    },
+    {
+      "name": "SymbolKind",
+      "kind": "type",
+      "file": "packages/symbols/types.ts",
+      "line": 1
     },
     {
       "name": "SymbolRecord",
       "kind": "interface",
       "file": "packages/symbols/types.ts",
-      "line": 1
+      "line": 13
     },
     {
       "name": "SymbolIndex",
       "kind": "interface",
       "file": "packages/symbols/types.ts",
+      "line": 25
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-ast.ts",
+      "line": 7
+    },
+    {
+      "name": "parser",
+      "kind": "variable",
+      "file": "packages/test-ast.ts",
+      "line": 9
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/test-ast.ts",
+      "line": 12
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/test-ast.ts",
+      "line": 20
+    },
+    {
+      "name": "count",
+      "kind": "variable",
+      "file": "packages/test-ast.ts",
+      "line": 27
+    },
+    {
+      "name": "visit",
+      "kind": "function",
+      "file": "packages/test-ast.ts",
+      "line": 29
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-brain.ts",
+      "line": 5
+    },
+    {
+      "name": "brain",
+      "kind": "variable",
+      "file": "packages/test-brain.ts",
+      "line": 7
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-brain.ts",
+      "line": 12
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-budget.ts",
+      "line": 7
+    },
+    {
+      "name": "workspace",
+      "kind": "variable",
+      "file": "packages/test-budget.ts",
+      "line": 9
+    },
+    {
+      "name": "planner",
+      "kind": "variable",
+      "file": "packages/test-budget.ts",
       "line": 13
+    },
+    {
+      "name": "retriever",
+      "kind": "variable",
+      "file": "packages/test-budget.ts",
+      "line": 17
+    },
+    {
+      "name": "budgeter",
+      "kind": "variable",
+      "file": "packages/test-budget.ts",
+      "line": 21
+    },
+    {
+      "name": "plan",
+      "kind": "variable",
+      "file": "packages/test-budget.ts",
+      "line": 25
+    },
+    {
+      "name": "retrieval",
+      "kind": "variable",
+      "file": "packages/test-budget.ts",
+      "line": 33
+    },
+    {
+      "name": "candidates",
+      "kind": "variable",
+      "file": "packages/test-budget.ts",
+      "line": 45
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-budget.ts",
+      "line": 61
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-context.ts",
+      "line": 8
+    },
+    {
+      "name": "loader",
+      "kind": "variable",
+      "file": "packages/test-context.ts",
+      "line": 10
+    },
+    {
+      "name": "bundle",
+      "kind": "variable",
+      "file": "packages/test-context.ts",
+      "line": 15
+    },
+    {
+      "name": "context",
+      "kind": "variable",
+      "file": "packages/test-context.ts",
+      "line": 22
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-import-resolver.ts",
+      "line": 9
+    },
+    {
+      "name": "resolver",
+      "kind": "variable",
+      "file": "packages/test-import-resolver.ts",
+      "line": 11
+    },
+    {
+      "name": "imports",
+      "kind": "variable",
+      "file": "packages/test-import-resolver.ts",
+      "line": 16
+    },
+    {
+      "name": "samples",
+      "kind": "variable",
+      "file": "packages/test-normalizer.ts",
+      "line": 3
+    },
+    {
+      "name": "sample",
+      "kind": "variable",
+      "file": "packages/test-normalizer.ts",
+      "line": 19
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-orchestrator.ts",
+      "line": 5
+    },
+    {
+      "name": "runtime",
+      "kind": "variable",
+      "file": "packages/test-orchestrator.ts",
+      "line": 7
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-orchestrator.ts",
+      "line": 12
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-planner.ts",
+      "line": 5
+    },
+    {
+      "name": "planner",
+      "kind": "variable",
+      "file": "packages/test-planner.ts",
+      "line": 7
+    },
+    {
+      "name": "prompts",
+      "kind": "variable",
+      "file": "packages/test-planner.ts",
+      "line": 12
+    },
+    {
+      "name": "prompt",
+      "kind": "variable",
+      "file": "packages/test-planner.ts",
+      "line": 28
+    },
+    {
+      "name": "analyzer",
+      "kind": "variable",
+      "file": "packages/test-query.ts",
+      "line": 3
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-retriever.ts",
+      "line": 9
+    },
+    {
+      "name": "retriever",
+      "kind": "variable",
+      "file": "packages/test-retriever.ts",
+      "line": 11
+    },
+    {
+      "name": "queries",
+      "kind": "variable",
+      "file": "packages/test-retriever.ts",
+      "line": 16
+    },
+    {
+      "name": "query",
+      "kind": "variable",
+      "file": "packages/test-retriever.ts",
+      "line": 32
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-scanner.ts",
+      "line": 5
+    },
+    {
+      "name": "scanner",
+      "kind": "variable",
+      "file": "packages/test-scanner.ts",
+      "line": 7
+    },
+    {
+      "name": "snapshot",
+      "kind": "variable",
+      "file": "packages/test-scanner.ts",
+      "line": 12
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-semantic.ts",
+      "line": 5
+    },
+    {
+      "name": "semantic",
+      "kind": "variable",
+      "file": "packages/test-semantic.ts",
+      "line": 7
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-semantic.ts",
+      "line": 12
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-symbols.ts",
+      "line": 5
+    },
+    {
+      "name": "service",
+      "kind": "variable",
+      "file": "packages/test-symbols.ts",
+      "line": 7
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/test-symbols.ts",
+      "line": 16
     },
     {
       "name": "WorkspaceError",
       "kind": "class",
       "file": "packages/workspace/errors.ts",
       "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/errors.ts",
+      "line": 3
     },
     {
       "name": "IWorkspaceService",
@@ -630,6 +2322,72 @@
       "kind": "class",
       "file": "packages/workspace/service.ts",
       "line": 16
+    },
+    {
+      "name": "fs",
+      "kind": "property",
+      "file": "packages/workspace/service.ts",
+      "line": 18
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/service.ts",
+      "line": 20
+    },
+    {
+      "name": "exists",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 34
+    },
+    {
+      "name": "create",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 38
+    },
+    {
+      "name": "directories",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 40
+    },
+    {
+      "name": "directory",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 51
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 90
+    },
+    {
+      "name": "created",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 92
+    },
+    {
+      "name": "validate",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 104
+    },
+    {
+      "name": "load",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 108
+    },
+    {
+      "name": "dispose",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 110
     },
     {
       "name": "WorkspaceOptions",

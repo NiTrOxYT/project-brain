@@ -1,10 +1,13 @@
 import fs from "fs/promises";
 import path from "path";
+import ts from "typescript";
+import { AstService } from "../ast";
 import { FileSystemService } from "../filesystem";
 export class SymbolsService {
     projectRoot;
     workspaceRoot;
     filesystem = new FileSystemService();
+    parser = new AstService();
     constructor(projectRoot, workspaceRoot) {
         this.projectRoot = projectRoot;
         this.workspaceRoot = workspaceRoot;
@@ -35,34 +38,68 @@ export class SymbolsService {
                 await this.walk(fullPath, output);
                 continue;
             }
-            if (!fullPath.endsWith(".ts")) {
+            if (!fullPath.endsWith(".ts") &&
+                !fullPath.endsWith(".tsx")) {
                 continue;
             }
-            const content = await fs.readFile(fullPath, "utf8");
-            const lines = content.split("\n");
-            for (let i = 0; i < lines.length; i++) {
-                const line = lines[i].trim();
-                const patterns = [
-                    { regex: /^export\s+class\s+(\w+)/, kind: "class" },
-                    { regex: /^export\s+interface\s+(\w+)/, kind: "interface" },
-                    { regex: /^export\s+type\s+(\w+)/, kind: "type" },
-                    { regex: /^export\s+enum\s+(\w+)/, kind: "enum" },
-                    { regex: /^export\s+function\s+(\w+)/, kind: "function" },
-                    { regex: /^export\s+const\s+(\w+)/, kind: "variable" }
-                ];
-                for (const pattern of patterns) {
-                    const match = line.match(pattern.regex);
-                    if (!match) {
-                        continue;
-                    }
-                    output.push({
-                        name: match[1],
-                        kind: pattern.kind,
-                        file: path.relative(this.projectRoot, fullPath),
-                        line: i + 1
-                    });
+            const parsed = await this.parser.parse(fullPath);
+            this.extract(parsed.ast, fullPath, output);
+        }
+    }
+    extract(source, file, output) {
+        const visit = (node) => {
+            let kind;
+            let name;
+            if (ts.isClassDeclaration(node)) {
+                kind = "class";
+                name = node.name?.text;
+            }
+            else if (ts.isInterfaceDeclaration(node)) {
+                kind = "interface";
+                name = node.name.text;
+            }
+            else if (ts.isTypeAliasDeclaration(node)) {
+                kind = "type";
+                name = node.name.text;
+            }
+            else if (ts.isEnumDeclaration(node)) {
+                kind = "enum";
+                name = node.name.text;
+            }
+            else if (ts.isFunctionDeclaration(node)) {
+                kind = "function";
+                name = node.name?.text;
+            }
+            else if (ts.isMethodDeclaration(node)) {
+                kind = "method";
+                name = node.name.getText(source);
+            }
+            else if (ts.isConstructorDeclaration(node)) {
+                kind = "constructor";
+                name = "constructor";
+            }
+            else if (ts.isPropertyDeclaration(node)) {
+                kind = "property";
+                name = node.name.getText(source);
+            }
+            else if (ts.isVariableDeclaration(node)) {
+                kind = "variable";
+                if (ts.isIdentifier(node.name)) {
+                    name = node.name.text;
                 }
             }
-        }
+            if (kind &&
+                name) {
+                const position = source.getLineAndCharacterOfPosition(node.getStart());
+                output.push({
+                    name,
+                    kind,
+                    file: path.relative(this.projectRoot, file),
+                    line: position.line + 1
+                });
+            }
+            ts.forEachChild(node, visit);
+        };
+        visit(source);
     }
 }
