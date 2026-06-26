@@ -1,9 +1,11 @@
 import path from "path";
+import { RuntimeService } from "../core";
 import { FileSystemService } from "../filesystem";
-export class WorkspaceService {
+export class WorkspaceService extends RuntimeService {
     options;
     fs = new FileSystemService();
     constructor(options) {
+        super();
         this.options = options;
     }
     get root() {

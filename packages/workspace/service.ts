@@ -1,4 +1,5 @@
 import path from "path";
+import { RuntimeService } from "../core";
 
 import { FileSystemService } from "../filesystem";
 import { WorkspaceOptions, WorkspaceResult } from "./types";
@@ -12,13 +13,15 @@ export interface IWorkspaceService {
     dispose(): Promise<void>;
 }
 
-export class WorkspaceService implements IWorkspaceService {
+export class WorkspaceService extends RuntimeService {
 
     private readonly fs = new FileSystemService();
 
     constructor(
         private readonly options: WorkspaceOptions
-    ) {}
+    ) {
+        super();
+    }
 
     private get root(): string {
         return path.join(this.options.root, ".brain");
