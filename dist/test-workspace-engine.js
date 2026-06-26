@@ -253,8 +253,11 @@ async function testPatchEngine() {
         const createTx = engine.beginTransaction();
         engine.stage(createTx.id, { kind: "WriteFile", path: "patched.ts", content: old });
         await engine.commit(createTx.id);
+        // Generate the patch using the actual file path in root
+        const absFilePath = path.join(root, "patched.ts");
+        const filePatch = patcher.generatePatch(absFilePath, old, updated);
         const patchTx = engine.beginTransaction();
-        engine.stage(patchTx.id, { kind: "PatchFile", path: "patched.ts", patch });
+        engine.stage(patchTx.id, { kind: "PatchFile", path: "patched.ts", patch: filePatch });
         const result = await engine.commit(patchTx.id);
         assert(result.success, "PatchFile operation committed");
         assert(result.patches.length === 1, "One patch recorded");

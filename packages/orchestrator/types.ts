@@ -20,6 +20,13 @@ export interface ExecutionResult {
     executionTimeMs: number;
     /** Set when a WorkspaceEngine transaction applied artifacts for this task. */
     workspaceTransactionId?: string;
+    /** Provider SDK fields */
+    model?: string;
+    sessionId?: string;
+    promptTokens?: number;
+    completionTokens?: number;
+    estimatedCost?: number;
+    providerDisplayName?: string;
 }
 
 export interface ScheduleBatch {
@@ -54,7 +61,18 @@ export interface ExecutionReport {
         totalPatchesApplied: number;
         rolledBackTransactions: number;
     };
+    /** Provider SDK diagnostics */
+    providerVersion?: string;
+    selectedModel?: string;
+    sessionId?: string;
+    promptTokens?: number;
+    completionTokens?: number;
+    estimatedCost?: number;
+    fallbackChain?: string[];
+    selectionReason?: string;
+    capabilityScore?: number;
 }
+
 
 export interface WorkerAssignment {
     taskId: string;

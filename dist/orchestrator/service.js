@@ -4,9 +4,11 @@ import { OrchestratorError } from "./errors";
 import { AgentRuntimeService } from "../agent-runtime";
 export class MultiAgentOrchestratorService {
     workspaceRoot;
+    runtime;
     runtimeService;
-    constructor(workspaceRoot) {
+    constructor(workspaceRoot, runtime) {
         this.workspaceRoot = workspaceRoot;
+        this.runtime = runtime;
         this.runtimeService = new AgentRuntimeService(workspaceRoot);
     }
     async orchestrate(request) {

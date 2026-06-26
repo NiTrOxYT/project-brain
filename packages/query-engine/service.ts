@@ -217,10 +217,20 @@ export class QueryEngineService {
                             totalArtifactsApplied: 0,
                             activeLocks: 0
                         }
-                        : undefined
-
+                        : undefined,
+                    // Provider SDK diagnostics
+                    providerVersion: context.executionDiagnostics?.providerVersion,
+                    selectedModel: context.executionDiagnostics?.selectedModel,
+                    sessionId: context.executionDiagnostics?.sessionId,
+                    promptTokens: context.executionDiagnostics?.promptTokens,
+                    completionTokens: context.executionDiagnostics?.completionTokens,
+                    estimatedCost: context.executionDiagnostics?.estimatedCost,
+                    fallbackChain: context.executionDiagnostics?.fallbackChain,
+                    selectionReason: context.executionDiagnostics?.selectionReason,
+                    capabilityScore: context.executionDiagnostics?.capabilityScore
                 }
             };
+
 
         } catch (error: any) {
 

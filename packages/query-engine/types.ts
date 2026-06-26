@@ -55,6 +55,17 @@ export interface QueryDiagnostics {
         activeLocks: number;
     };
 
+    /** Provider SDK diagnostics */
+    providerVersion?: string;
+    selectedModel?: string;
+    sessionId?: string;
+    promptTokens?: number;
+    completionTokens?: number;
+    estimatedCost?: number;
+    fallbackChain?: string[];
+    selectionReason?: string;
+    capabilityScore?: number;
+
 }
 
 export interface QueryResult {

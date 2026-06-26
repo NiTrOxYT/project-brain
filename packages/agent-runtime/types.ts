@@ -92,4 +92,12 @@ export interface RuntimeResponse {
     metrics: RuntimeMetrics;
     /** Set when a WorkspaceEngine transaction applied the artifacts to disk. */
     workspaceTransactionId?: string;
+    /** Provider SDK fields — populated when ProviderRuntimeService is active. */
+    model?: string;
+    providerVersion?: string;
+    sessionId?: string;
+    promptTokens?: number;
+    completionTokens?: number;
+    estimatedCost?: number;
+    providerDisplayName?: string;
 }

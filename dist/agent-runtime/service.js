@@ -138,6 +138,7 @@ export class AgentRuntimeService {
     registry = new AgentRegistry();
     engine;
     workspaceEngine;
+    providerRuntime;
     middlewares = [];
     hooks = [];
     timings = {
@@ -155,10 +156,11 @@ export class AgentRuntimeService {
         Pending: 0, Queued: 0, Running: 0, Paused: 0, Completed: 0, Failed: 0, Cancelled: 0, Retrying: 0, RolledBack: 0
     };
     totalArtifactsCount = 0;
-    constructor(workspaceRoot, workspaceEngine) {
+    constructor(workspaceRoot, workspaceEngine, providerRuntime) {
         this.workspaceRoot = workspaceRoot;
         this.engine = new RuntimeEngine(this.registry);
         this.workspaceEngine = workspaceEngine;
+        this.providerRuntime = providerRuntime;
         // Register default Mock provider
         this.registry.register(new MockAgentProvider());
     }
@@ -184,6 +186,41 @@ export class AgentRuntimeService {
     async execute(request, onEvent = () => { }) {
         const startExecution = Date.now();
         this.taskCounts.Queued++;
+        // --- Provider Runtime delegation ---
+        // If a ProviderRuntimeService is configured, delegate execution through it.
+        // This enables the full provider SDK pipeline: negotiation, health, retry,
+        // fallback, metrics, sessions, streaming.
+        if (this.providerRuntime) {
+            try {
+                const response = await this.providerRuntime.execute(request, onEvent);
+                const execTime = Date.now() - startExecution;
+                this.totalExecutionTimeMs += execTime;
+                this.totalArtifactsCount += response.artifacts.length;
+                this.taskCounts[response.status === "Completed" ? "Completed" : "Failed"]++;
+                return response;
+            }
+            catch (err) {
+                this.taskCounts.Failed++;
+                return {
+                    taskId: request.task.id,
+                    status: "Failed",
+                    error: `ProviderRuntime error: ${err.message}`,
+                    artifacts: [],
+                    metrics: {
+                        provider: "provider-runtime",
+                        capability: request.task.type,
+                        executionTime: Date.now() - startExecution,
+                        retries: 0,
+                        artifactsProduced: 0,
+                        eventsEmitted: 0,
+                        taskCount: 1,
+                        cancellationCount: 0,
+                        pauseCount: 0,
+                        resumeCount: 0
+                    }
+                };
+            }
+        }
         // Evaluate and record capability negotiation provider selection reasoning
         const providers = this.registry.discover(request.task.type);
         const reasoning = `Negotiating capability: '${request.task.type}'. Candidates count: ${providers.length}. `;

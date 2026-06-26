@@ -105,9 +105,15 @@ export class WorkspaceEngine {
         const patches = [];
         for (const op of staged.tx.operations) {
             if (op.kind === "WriteFile") {
-                const existing = this.safeReadFile(op.path);
+                const absPath = this.resolve(op.path);
+                const existing = this.safeReadFile(absPath);
                 if (existing !== null && existing !== op.content) {
-                    const patch = this.patcher.generatePatch(op.path, existing, op.content);
+                    const patch = this.patcher.generatePatch(absPath, existing, op.content);
+                    patches.push(patch);
+                }
+                else if (existing === null) {
+                    // New file — generate a patch showing full addition
+                    const patch = this.patcher.generatePatch(op.path, "", op.content);
                     patches.push(patch);
                 }
             }

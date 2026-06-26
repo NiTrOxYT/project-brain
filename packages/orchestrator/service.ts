@@ -8,7 +8,11 @@ export class MultiAgentOrchestratorService {
     private readonly runtimeService: AgentRuntimeService;
 
     constructor(
-        private readonly workspaceRoot: string
+
+        private readonly workspaceRoot: string,
+
+        private readonly runtime?: AgentRuntimeService
+
     ) {
         this.runtimeService = new AgentRuntimeService(workspaceRoot);
     }
@@ -41,7 +45,7 @@ export class MultiAgentOrchestratorService {
 import path from "path";
 
 export class OrchestratorService {
-    constructor(private readonly workspaceRoot: string) {}
+    constructor(private readonly workspaceRoot: string) { }
 
     async execute(request: { query: string }): Promise<{ context: any }> {
         const projectRoot = path.dirname(this.workspaceRoot);
