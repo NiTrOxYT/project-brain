@@ -1,19 +1,22 @@
 import path from "path";
 
 import { FileSystemService } from "../filesystem";
-import { IndexResult } from "../indexer";
-import { SymbolIndex } from "../symbols";
-import { ImportIndex } from "../imports";
+import { ScannerService } from "../scanner";
+import { normalize } from "../semantic";
+import { RetrieverScorer } from "./scorer";
 
 import {
+
     RetrieveRequest,
-    RetrieveResult,
-    RetrievedFile
+
+    RetrieveResult
+
 } from "./types";
 
 export class RetrieverService {
 
-    private readonly filesystem = new FileSystemService();
+    private readonly filesystem =
+        new FileSystemService();
 
     constructor(
         private readonly workspaceRoot: string
@@ -23,142 +26,120 @@ export class RetrieverService {
         request: RetrieveRequest
     ): Promise<RetrieveResult> {
 
-        const index =
-            await this.filesystem.readJson<IndexResult>(
+        const snapshot =
+            await new ScannerService(
+                this.workspaceRoot
+            ).snapshot();
+
+        const semantic =
+            await this.filesystem.readJson<any>(
                 path.join(
                     this.workspaceRoot,
                     "index",
-                    "index.json"
+                    "semantic.json"
                 )
             );
 
-        const symbols =
-            await this.filesystem.readJson<SymbolIndex>(
-                path.join(
-                    this.workspaceRoot,
-                    "index",
-                    "symbols.json"
-                )
+        const queryTerms =
+            normalize(
+                request.query
             );
 
-        const imports =
-            await this.filesystem.readJson<ImportIndex>(
-                path.join(
-                    this.workspaceRoot,
-                    "index",
-                    "imports.json"
-                )
-            );
+        const scorer =
+            new RetrieverScorer();
 
-        const scores = new Map<
-            string,
-            RetrievedFile
-        >();
+        for (const entry of semantic.entries) {
 
-        const query =
-            request.query.toLowerCase();
+            let score = 0;
 
-        const touch = (
-            file: string
-        ): RetrievedFile => {
+            for (const term of queryTerms) {
 
-            if (!scores.has(file)) {
+                if (
+                    entry.terms.includes(term)
+                ) {
 
-                scores.set(file, {
+                    score += 100;
 
-                    path: file,
-
-                    score: 0,
-
-                    reasons: []
-
-                });
+                }
 
             }
 
-            return scores.get(file)!;
+            if (score > 0) {
 
-        };
+                scorer.add(
 
-        for (const file of index.files) {
+                    entry.file,
+
+                    score,
+
+                    "semantic"
+
+                );
+
+            }
+
+        }
+
+        for (const file of snapshot.files) {
 
             const name =
-                path.basename(file.path)
-                    .toLowerCase();
-
-            if (
-                name.includes(query)
-            ) {
-
-                const result =
-                    touch(file.path);
-
-                result.score += 50;
-
-                result.reasons.push(
-                    "filename"
+                path.basename(
+                    file.path
                 );
+
+            for (const term of queryTerms) {
+
+                if (
+                    name
+                        .toLowerCase()
+                        .includes(term)
+                ) {
+
+                    scorer.add(
+
+                        file.path,
+
+                        25,
+
+                        "filename"
+
+                    );
+
+                }
 
             }
 
         }
-
-        for (const symbol of symbols.symbols) {
-
-            if (
-                symbol.name
-                    .toLowerCase()
-                    .includes(query)
-            ) {
-
-                const result =
-                    touch(symbol.file);
-
-                result.score += 100;
-
-                result.reasons.push(
-                    "symbol"
-                );
-
-            }
-
-        }
-
-        for (const edge of imports.imports) {
-
-            if (
-                edge.target
-                    .toLowerCase()
-                    .includes(query)
-            ) {
-
-                const result =
-                    touch(edge.source);
-
-                result.score += 25;
-
-                result.reasons.push(
-                    "import"
-                );
-
-            }
-
-        }
-
-        const files =
-            [...scores.values()]
-                .sort(
-                    (a, b) =>
-                        b.score - a.score
-                )
-                .slice(
-                    0,
-                    request.limit ?? 20
-                );
 
         return {
 
-            files
+            files:
+
+                scorer
+                    .results()
+                    .slice(
+                        0,
+                        request.limit ?? 20
+                    )
+                    .map(
+
+                        result => ({
+
+                            path:
+
+                                result.file,
+
+                            score:
+
+                                result.score,
+
+                            reasons:
+
+                                result.reasons
+
+                        })
+
+                    )
 
         };
 

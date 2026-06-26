@@ -1,6 +1,30 @@
 {
-  "generatedAt": "2026-06-26T16:11:29.416Z",
+  "generatedAt": "2026-06-26T18:39:08.097Z",
   "symbols": [
+    {
+      "name": "BrainError",
+      "kind": "class",
+      "file": "packages/brain/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "BrainService",
+      "kind": "class",
+      "file": "packages/brain/service.ts",
+      "line": 9
+    },
+    {
+      "name": "BrainRequest",
+      "kind": "interface",
+      "file": "packages/brain/types.ts",
+      "line": 1
+    },
+    {
+      "name": "BrainResponse",
+      "kind": "interface",
+      "file": "packages/brain/types.ts",
+      "line": 7
+    },
     {
       "name": "CacheError",
       "kind": "class",
@@ -23,6 +47,90 @@
       "name": "banner",
       "kind": "function",
       "file": "packages/cli/banner.ts",
+      "line": 1
+    },
+    {
+      "name": "ContextBudgetError",
+      "kind": "class",
+      "file": "packages/context-budget/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "ContextBudgetService",
+      "kind": "class",
+      "file": "packages/context-budget/service.ts",
+      "line": 11
+    },
+    {
+      "name": "ContextCandidate",
+      "kind": "interface",
+      "file": "packages/context-budget/types.ts",
+      "line": 1
+    },
+    {
+      "name": "BudgetRequest",
+      "kind": "interface",
+      "file": "packages/context-budget/types.ts",
+      "line": 13
+    },
+    {
+      "name": "BudgetResult",
+      "kind": "interface",
+      "file": "packages/context-budget/types.ts",
+      "line": 21
+    },
+    {
+      "name": "ExecutionContext",
+      "kind": "interface",
+      "file": "packages/context-loader/assembler.ts",
+      "line": 3
+    },
+    {
+      "name": "ContextAssembler",
+      "kind": "class",
+      "file": "packages/context-loader/assembler.ts",
+      "line": 25
+    },
+    {
+      "name": "ContextLoaderError",
+      "kind": "class",
+      "file": "packages/context-loader/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "ContextLoaderService",
+      "kind": "class",
+      "file": "packages/context-loader/service.ts",
+      "line": 12
+    },
+    {
+      "name": "ContextRequest",
+      "kind": "interface",
+      "file": "packages/context-loader/types.ts",
+      "line": 1
+    },
+    {
+      "name": "ContextBundle",
+      "kind": "interface",
+      "file": "packages/context-loader/types.ts",
+      "line": 7
+    },
+    {
+      "name": "ServiceContainer",
+      "kind": "class",
+      "file": "packages/core/container.ts",
+      "line": 1
+    },
+    {
+      "name": "Kernel",
+      "kind": "class",
+      "file": "packages/core/kernel.ts",
+      "line": 3
+    },
+    {
+      "name": "Service",
+      "kind": "interface",
+      "file": "packages/core/types.ts",
       "line": 1
     },
     {
@@ -108,6 +216,30 @@
       "kind": "interface",
       "file": "packages/graph-builder/types.ts",
       "line": 19
+    },
+    {
+      "name": "GraphTraversalError",
+      "kind": "class",
+      "file": "packages/graph-traversal/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "GraphTraversalService",
+      "kind": "class",
+      "file": "packages/graph-traversal/service.ts",
+      "line": 5
+    },
+    {
+      "name": "TraverseRequest",
+      "kind": "interface",
+      "file": "packages/graph-traversal/types.ts",
+      "line": 1
+    },
+    {
+      "name": "TraverseResult",
+      "kind": "interface",
+      "file": "packages/graph-traversal/types.ts",
+      "line": 9
     },
     {
       "name": "ImportsError",
@@ -257,13 +389,61 @@
       "name": "ManifestService",
       "kind": "class",
       "file": "packages/manifest/service.ts",
-      "line": 7
+      "line": 8
     },
     {
       "name": "Manifest",
       "kind": "interface",
       "file": "packages/manifest/types.ts",
       "line": 1
+    },
+    {
+      "name": "OrchestratorError",
+      "kind": "class",
+      "file": "packages/orchestrator/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "OrchestratorService",
+      "kind": "class",
+      "file": "packages/orchestrator/service.ts",
+      "line": 9
+    },
+    {
+      "name": "ExecuteRequest",
+      "kind": "interface",
+      "file": "packages/orchestrator/types.ts",
+      "line": 1
+    },
+    {
+      "name": "ExecuteResult",
+      "kind": "interface",
+      "file": "packages/orchestrator/types.ts",
+      "line": 7
+    },
+    {
+      "name": "PlannerError",
+      "kind": "class",
+      "file": "packages/planner/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "PlannerService",
+      "kind": "class",
+      "file": "packages/planner/service.ts",
+      "line": 25
+    },
+    {
+      "name": "ExecutionIntent",
+      "kind": "type",
+      "file": "packages/planner/types.ts",
+      "line": 1
+    },
+    {
+      "name": "ExecutionPlan",
+      "kind": "interface",
+      "file": "packages/planner/types.ts",
+      "line": 9
     },
     {
       "name": "ProjectError",
@@ -284,6 +464,66 @@
       "line": 1
     },
     {
+      "name": "QueryAnalyzerError",
+      "kind": "class",
+      "file": "packages/query-analyzer/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "QueryAnalyzerService",
+      "kind": "class",
+      "file": "packages/query-analyzer/service.ts",
+      "line": 26
+    },
+    {
+      "name": "QueryAnalysis",
+      "kind": "interface",
+      "file": "packages/query-analyzer/types.ts",
+      "line": 1
+    },
+    {
+      "name": "RetrieverError",
+      "kind": "class",
+      "file": "packages/retriever/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "Score",
+      "kind": "interface",
+      "file": "packages/retriever/scorer.ts",
+      "line": 1
+    },
+    {
+      "name": "RetrieverScorer",
+      "kind": "class",
+      "file": "packages/retriever/scorer.ts",
+      "line": 11
+    },
+    {
+      "name": "RetrieverService",
+      "kind": "class",
+      "file": "packages/retriever/service.ts",
+      "line": 16
+    },
+    {
+      "name": "RetrieveRequest",
+      "kind": "interface",
+      "file": "packages/retriever/types.ts",
+      "line": 1
+    },
+    {
+      "name": "RetrievedFile",
+      "kind": "interface",
+      "file": "packages/retriever/types.ts",
+      "line": 9
+    },
+    {
+      "name": "RetrieveResult",
+      "kind": "interface",
+      "file": "packages/retriever/types.ts",
+      "line": 19
+    },
+    {
       "name": "RuntimeError",
       "kind": "class",
       "file": "packages/runtime/errors.ts",
@@ -300,6 +540,54 @@
       "kind": "interface",
       "file": "packages/runtime/types.ts",
       "line": 1
+    },
+    {
+      "name": "ScannerError",
+      "kind": "class",
+      "file": "packages/scanner/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "ScannerService",
+      "kind": "class",
+      "file": "packages/scanner/service.ts",
+      "line": 7
+    },
+    {
+      "name": "ProjectSnapshot",
+      "kind": "interface",
+      "file": "packages/scanner/types.ts",
+      "line": 1
+    },
+    {
+      "name": "SemanticError",
+      "kind": "class",
+      "file": "packages/semantic/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "normalize",
+      "kind": "function",
+      "file": "packages/semantic/normalizer.ts",
+      "line": 6
+    },
+    {
+      "name": "SemanticService",
+      "kind": "class",
+      "file": "packages/semantic/service.ts",
+      "line": 12
+    },
+    {
+      "name": "SemanticEntry",
+      "kind": "interface",
+      "file": "packages/semantic/types.ts",
+      "line": 1
+    },
+    {
+      "name": "SemanticIndex",
+      "kind": "interface",
+      "file": "packages/semantic/types.ts",
+      "line": 13
     },
     {
       "name": "SymbolsError",
@@ -335,13 +623,13 @@
       "name": "IWorkspaceService",
       "kind": "interface",
       "file": "packages/workspace/service.ts",
-      "line": 6
+      "line": 7
     },
     {
       "name": "WorkspaceService",
       "kind": "class",
       "file": "packages/workspace/service.ts",
-      "line": 15
+      "line": 16
     },
     {
       "name": "WorkspaceOptions",

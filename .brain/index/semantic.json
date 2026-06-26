@@ -1,6 +1,42 @@
 {
-  "generatedAt": "2026-06-26T17:32:33.551Z",
+  "generatedAt": "2026-06-26T18:39:08.110Z",
   "entries": [
+    {
+      "id": "packages/brain/errors.ts::BrainError",
+      "file": "packages/brain/errors.ts",
+      "terms": [
+        "brain",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/brain/service.ts::BrainService",
+      "file": "packages/brain/service.ts",
+      "terms": [
+        "brain",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/brain/types.ts::BrainRequest",
+      "file": "packages/brain/types.ts",
+      "terms": [
+        "brain",
+        "request"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/brain/types.ts::BrainResponse",
+      "file": "packages/brain/types.ts",
+      "terms": [
+        "brain",
+        "response"
+      ],
+      "weight": 100
+    },
     {
       "id": "packages/cache/errors.ts::CacheError",
       "file": "packages/cache/errors.ts",
@@ -33,6 +69,134 @@
       "file": "packages/cli/banner.ts",
       "terms": [
         "banner"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-budget/errors.ts::ContextBudgetError",
+      "file": "packages/context-budget/errors.ts",
+      "terms": [
+        "context",
+        "budget",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-budget/service.ts::ContextBudgetService",
+      "file": "packages/context-budget/service.ts",
+      "terms": [
+        "context",
+        "budget",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-budget/types.ts::ContextCandidate",
+      "file": "packages/context-budget/types.ts",
+      "terms": [
+        "context",
+        "candidate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-budget/types.ts::BudgetRequest",
+      "file": "packages/context-budget/types.ts",
+      "terms": [
+        "budget",
+        "request"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-budget/types.ts::BudgetResult",
+      "file": "packages/context-budget/types.ts",
+      "terms": [
+        "budget",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-loader/assembler.ts::ExecutionContext",
+      "file": "packages/context-loader/assembler.ts",
+      "terms": [
+        "execution",
+        "context"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-loader/assembler.ts::ContextAssembler",
+      "file": "packages/context-loader/assembler.ts",
+      "terms": [
+        "context",
+        "assembler"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-loader/errors.ts::ContextLoaderError",
+      "file": "packages/context-loader/errors.ts",
+      "terms": [
+        "context",
+        "loader",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-loader/service.ts::ContextLoaderService",
+      "file": "packages/context-loader/service.ts",
+      "terms": [
+        "context",
+        "loader",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-loader/types.ts::ContextRequest",
+      "file": "packages/context-loader/types.ts",
+      "terms": [
+        "context",
+        "request"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/context-loader/types.ts::ContextBundle",
+      "file": "packages/context-loader/types.ts",
+      "terms": [
+        "context",
+        "bundle"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/core/container.ts::ServiceContainer",
+      "file": "packages/core/container.ts",
+      "terms": [
+        "service",
+        "container"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/core/kernel.ts::Kernel",
+      "file": "packages/core/kernel.ts",
+      "terms": [
+        "kernel"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/core/types.ts::Service",
+      "file": "packages/core/types.ts",
+      "terms": [
+        "service"
       ],
       "weight": 100
     },
@@ -165,6 +329,44 @@
       "terms": [
         "dependency",
         "graph"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph-traversal/errors.ts::GraphTraversalError",
+      "file": "packages/graph-traversal/errors.ts",
+      "terms": [
+        "graph",
+        "traversal",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph-traversal/service.ts::GraphTraversalService",
+      "file": "packages/graph-traversal/service.ts",
+      "terms": [
+        "graph",
+        "traversal",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph-traversal/types.ts::TraverseRequest",
+      "file": "packages/graph-traversal/types.ts",
+      "terms": [
+        "traverse",
+        "request"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/graph-traversal/types.ts::TraverseResult",
+      "file": "packages/graph-traversal/types.ts",
+      "terms": [
+        "traverse",
+        "result"
       ],
       "weight": 100
     },
@@ -407,6 +609,78 @@
       "weight": 100
     },
     {
+      "id": "packages/orchestrator/errors.ts::OrchestratorError",
+      "file": "packages/orchestrator/errors.ts",
+      "terms": [
+        "orchestrator",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/orchestrator/service.ts::OrchestratorService",
+      "file": "packages/orchestrator/service.ts",
+      "terms": [
+        "orchestrator",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/orchestrator/types.ts::ExecuteRequest",
+      "file": "packages/orchestrator/types.ts",
+      "terms": [
+        "execute",
+        "request"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/orchestrator/types.ts::ExecuteResult",
+      "file": "packages/orchestrator/types.ts",
+      "terms": [
+        "execute",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/planner/errors.ts::PlannerError",
+      "file": "packages/planner/errors.ts",
+      "terms": [
+        "planner",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/planner/service.ts::PlannerService",
+      "file": "packages/planner/service.ts",
+      "terms": [
+        "planner",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/planner/types.ts::ExecutionIntent",
+      "file": "packages/planner/types.ts",
+      "terms": [
+        "execution",
+        "intent"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/planner/types.ts::ExecutionPlan",
+      "file": "packages/planner/types.ts",
+      "terms": [
+        "execution",
+        "plan"
+      ],
+      "weight": 100
+    },
+    {
       "id": "packages/project/errors.ts::ProjectError",
       "file": "packages/project/errors.ts",
       "terms": [
@@ -434,6 +708,97 @@
       "weight": 100
     },
     {
+      "id": "packages/query-analyzer/errors.ts::QueryAnalyzerError",
+      "file": "packages/query-analyzer/errors.ts",
+      "terms": [
+        "query",
+        "analyzer",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/query-analyzer/service.ts::QueryAnalyzerService",
+      "file": "packages/query-analyzer/service.ts",
+      "terms": [
+        "query",
+        "analyzer",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/query-analyzer/types.ts::QueryAnalysis",
+      "file": "packages/query-analyzer/types.ts",
+      "terms": [
+        "query",
+        "analysis"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/retriever/errors.ts::RetrieverError",
+      "file": "packages/retriever/errors.ts",
+      "terms": [
+        "retriever",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/retriever/scorer.ts::Score",
+      "file": "packages/retriever/scorer.ts",
+      "terms": [
+        "score"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/retriever/scorer.ts::RetrieverScorer",
+      "file": "packages/retriever/scorer.ts",
+      "terms": [
+        "retriever",
+        "scorer"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/retriever/service.ts::RetrieverService",
+      "file": "packages/retriever/service.ts",
+      "terms": [
+        "retriever",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/retriever/types.ts::RetrieveRequest",
+      "file": "packages/retriever/types.ts",
+      "terms": [
+        "retrieve",
+        "request"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/retriever/types.ts::RetrievedFile",
+      "file": "packages/retriever/types.ts",
+      "terms": [
+        "retrieved",
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/retriever/types.ts::RetrieveResult",
+      "file": "packages/retriever/types.ts",
+      "terms": [
+        "retrieve",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
       "id": "packages/runtime/errors.ts::RuntimeError",
       "file": "packages/runtime/errors.ts",
       "terms": [
@@ -457,6 +822,77 @@
       "terms": [
         "runtime",
         "context"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/scanner/errors.ts::ScannerError",
+      "file": "packages/scanner/errors.ts",
+      "terms": [
+        "scanner",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/scanner/service.ts::ScannerService",
+      "file": "packages/scanner/service.ts",
+      "terms": [
+        "scanner",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/scanner/types.ts::ProjectSnapshot",
+      "file": "packages/scanner/types.ts",
+      "terms": [
+        "project",
+        "snapshot"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/semantic/errors.ts::SemanticError",
+      "file": "packages/semantic/errors.ts",
+      "terms": [
+        "semantic",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/semantic/normalizer.ts::normalize",
+      "file": "packages/semantic/normalizer.ts",
+      "terms": [
+        "normalize"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/semantic/service.ts::SemanticService",
+      "file": "packages/semantic/service.ts",
+      "terms": [
+        "semantic",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/semantic/types.ts::SemanticEntry",
+      "file": "packages/semantic/types.ts",
+      "terms": [
+        "semantic",
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/semantic/types.ts::SemanticIndex",
+      "file": "packages/semantic/types.ts",
+      "terms": [
+        "semantic",
+        "index"
       ],
       "weight": 100
     },

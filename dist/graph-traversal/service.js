@@ -7,7 +7,7 @@ export class GraphTraversalService {
         this.workspaceRoot = workspaceRoot;
     }
     async traverse(files, depth = 1) {
-        const graph = await this.filesystem.readJson(path.join(this.workspaceRoot, "graph", "dependencies.json"));
+        const graph = await this.filesystem.readJson(path.join(this.workspaceRoot, "graph", "graph.json"));
         const visited = new Set(files);
         let frontier = [...files];
         for (let i = 0; i < depth; i++) {

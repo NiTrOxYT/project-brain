@@ -21,7 +21,7 @@ export class GraphTraversalService {
                 path.join(
                     this.workspaceRoot,
                     "graph",
-                    "dependencies.json"
+                    "graph.json"
                 )
             );
 

@@ -1,4 +1,666 @@
 {
-  "nodes": [],
-  "edges": []
+  "generatedAt": "2026-06-26T18:39:08.417Z",
+  "nodes": [
+    {
+      "id": "packages/brain/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/cache/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/cli/cli.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/context-loader/assembler.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/context-loader/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/core/kernel.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/filesystem/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/graph/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/graph-builder/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/graph-traversal/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/imports/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/indexer/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/kernel/boot.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/knowledge/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/main.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/manifest/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/orchestrator/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/planner/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/project/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/query-analyzer/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/retriever/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/runtime/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/scanner/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/semantic/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/symbols/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-brain.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-budget.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-context.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-normalizer.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-orchestrator.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-planner.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-query.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-retriever.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-scanner.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-semantic.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/workspace/service.ts",
+      "type": "file"
+    }
+  ],
+  "edges": [
+    {
+      "from": "packages/brain/service.ts",
+      "to": "../orchestrator",
+      "type": "imports"
+    },
+    {
+      "from": "packages/brain/service.ts",
+      "to": "../query-analyzer",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cache/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cache/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cache/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/cli.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/cli.ts",
+      "to": "./banner",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/cli.ts",
+      "to": "../runtime",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-loader/assembler.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-loader/service.ts",
+      "to": "../graph-traversal",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-loader/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-loader/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-loader/service.ts",
+      "to": "../retriever",
+      "type": "imports"
+    },
+    {
+      "from": "packages/core/kernel.ts",
+      "to": "./container",
+      "type": "imports"
+    },
+    {
+      "from": "packages/filesystem/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-builder/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-builder/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-builder/service.ts",
+      "to": "../imports",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-builder/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-traversal/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-traversal/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/imports/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/imports/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/imports/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/imports/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/indexer/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/indexer/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/indexer/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/indexer/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/kernel/boot.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/kernel/boot.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/knowledge/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/knowledge/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/knowledge/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/main.ts",
+      "to": "./cli",
+      "type": "imports"
+    },
+    {
+      "from": "packages/manifest/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/manifest/service.ts",
+      "to": "../core",
+      "type": "imports"
+    },
+    {
+      "from": "packages/manifest/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/manifest/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/manifest/service.ts",
+      "to": "./errors",
+      "type": "imports"
+    },
+    {
+      "from": "packages/orchestrator/service.ts",
+      "to": "../context-loader",
+      "type": "imports"
+    },
+    {
+      "from": "packages/orchestrator/service.ts",
+      "to": "../context-loader",
+      "type": "imports"
+    },
+    {
+      "from": "packages/planner/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/planner/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/planner/service.ts",
+      "to": "../semantic",
+      "type": "imports"
+    },
+    {
+      "from": "packages/project/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/project/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/project/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/project/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/query-analyzer/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/retriever/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/retriever/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/retriever/service.ts",
+      "to": "../scanner",
+      "type": "imports"
+    },
+    {
+      "from": "packages/retriever/service.ts",
+      "to": "../semantic",
+      "type": "imports"
+    },
+    {
+      "from": "packages/retriever/service.ts",
+      "to": "./scorer",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../workspace",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../manifest",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../project",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../indexer",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../symbols",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../imports",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../graph-builder",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../knowledge",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../graph",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../cache",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/scanner/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/scanner/service.ts",
+      "to": "../graph-builder",
+      "type": "imports"
+    },
+    {
+      "from": "packages/scanner/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/scanner/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/semantic/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/semantic/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/semantic/service.ts",
+      "to": "../scanner",
+      "type": "imports"
+    },
+    {
+      "from": "packages/semantic/service.ts",
+      "to": "./normalizer",
+      "type": "imports"
+    },
+    {
+      "from": "packages/symbols/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/symbols/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/symbols/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/symbols/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-brain.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-brain.ts",
+      "to": "./brain",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-budget.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-budget.ts",
+      "to": "./planner",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-budget.ts",
+      "to": "./retriever",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-budget.ts",
+      "to": "./context-budget",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-normalizer.ts",
+      "to": "./semantic",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-orchestrator.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-orchestrator.ts",
+      "to": "./orchestrator",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-planner.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-planner.ts",
+      "to": "./planner",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-query.ts",
+      "to": "./query-analyzer",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-retriever.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-scanner.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-scanner.ts",
+      "to": "./scanner",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-semantic.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-semantic.ts",
+      "to": "./semantic",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/service.ts",
+      "to": "../core",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/service.ts",
+      "to": "./types",
+      "type": "imports"
+    }
+  ]
 }

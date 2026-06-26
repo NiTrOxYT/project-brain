@@ -7,7 +7,10 @@ export class GraphBuilderService {
         this.workspaceRoot = workspaceRoot;
     }
     async build() {
-        const imports = await this.filesystem.readJson(path.join(this.workspaceRoot, "index", "imports.json"));
+        const { ImportResolverService } = await import("../import-resolver");
+        const imports = {
+            imports: await new ImportResolverService(this.workspaceRoot).resolve()
+        };
         const nodes = new Set();
         const edges = imports.imports.map(importRecord => {
             nodes.add(importRecord.source);
@@ -25,7 +28,7 @@ export class GraphBuilderService {
             })),
             edges
         };
-        await this.filesystem.writeJson(path.join(this.workspaceRoot, "graph", "dependencies.json"), graph);
+        await this.filesystem.writeJson(path.join(this.workspaceRoot, "graph", "graph.json"), graph);
         return graph;
     }
 }

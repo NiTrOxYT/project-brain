@@ -2,9 +2,25 @@ import process from "process";
 import { RetrieverService } from "./retriever";
 async function main() {
     const retriever = new RetrieverService(process.cwd() + "/.brain");
-    const result = await retriever.retrieve({
-        query: "runtime"
-    });
-    console.log(result);
+    const queries = [
+        "runtime",
+        "workspace",
+        "semantic",
+        "graph",
+        "manifest",
+        "authentication"
+    ];
+    for (const query of queries) {
+        console.log();
+        console.log("==========");
+        console.log(query);
+        console.log("==========");
+        console.dir(await retriever.retrieve({
+            query,
+            limit: 10
+        }), {
+            depth: null
+        });
+    }
 }
 main();

@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-06-26T16:11:29.420Z",
+  "generatedAt": "2026-06-26T18:39:08.104Z",
   "imports": [
+    {
+      "source": "packages/brain/service.ts",
+      "target": "../orchestrator"
+    },
+    {
+      "source": "packages/brain/service.ts",
+      "target": "../query-analyzer"
+    },
     {
       "source": "packages/cache/service.ts",
       "target": "path"
@@ -24,6 +32,30 @@
     {
       "source": "packages/cli/cli.ts",
       "target": "../runtime"
+    },
+    {
+      "source": "packages/context-loader/assembler.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/context-loader/service.ts",
+      "target": "../graph-traversal"
+    },
+    {
+      "source": "packages/context-loader/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/context-loader/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/context-loader/service.ts",
+      "target": "../retriever"
+    },
+    {
+      "source": "packages/core/kernel.ts",
+      "target": "./container"
     },
     {
       "source": "packages/filesystem/service.ts",
@@ -56,6 +88,14 @@
     {
       "source": "packages/graph-builder/service.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/graph-traversal/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/graph-traversal/service.ts",
+      "target": "../filesystem"
     },
     {
       "source": "packages/imports/service.ts",
@@ -119,6 +159,10 @@
     },
     {
       "source": "packages/manifest/service.ts",
+      "target": "../core"
+    },
+    {
+      "source": "packages/manifest/service.ts",
       "target": "../filesystem"
     },
     {
@@ -128,6 +172,26 @@
     {
       "source": "packages/manifest/service.ts",
       "target": "./errors"
+    },
+    {
+      "source": "packages/orchestrator/service.ts",
+      "target": "../context-loader"
+    },
+    {
+      "source": "packages/orchestrator/service.ts",
+      "target": "../context-loader"
+    },
+    {
+      "source": "packages/planner/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/planner/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/planner/service.ts",
+      "target": "../semantic"
     },
     {
       "source": "packages/project/service.ts",
@@ -144,6 +208,30 @@
     {
       "source": "packages/project/service.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/query-analyzer/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/retriever/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/retriever/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/retriever/service.ts",
+      "target": "../scanner"
+    },
+    {
+      "source": "packages/retriever/service.ts",
+      "target": "../semantic"
+    },
+    {
+      "source": "packages/retriever/service.ts",
+      "target": "./scorer"
     },
     {
       "source": "packages/runtime/service.ts",
@@ -190,6 +278,38 @@
       "target": "./types"
     },
     {
+      "source": "packages/scanner/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/scanner/service.ts",
+      "target": "../graph-builder"
+    },
+    {
+      "source": "packages/scanner/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/scanner/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/semantic/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/semantic/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/semantic/service.ts",
+      "target": "../scanner"
+    },
+    {
+      "source": "packages/semantic/service.ts",
+      "target": "./normalizer"
+    },
+    {
       "source": "packages/symbols/service.ts",
       "target": "fs/promises"
     },
@@ -206,8 +326,84 @@
       "target": "./types"
     },
     {
+      "source": "packages/test-brain.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-brain.ts",
+      "target": "./brain"
+    },
+    {
+      "source": "packages/test-budget.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-budget.ts",
+      "target": "./planner"
+    },
+    {
+      "source": "packages/test-budget.ts",
+      "target": "./retriever"
+    },
+    {
+      "source": "packages/test-budget.ts",
+      "target": "./context-budget"
+    },
+    {
+      "source": "packages/test-context.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-normalizer.ts",
+      "target": "./semantic"
+    },
+    {
+      "source": "packages/test-orchestrator.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-orchestrator.ts",
+      "target": "./orchestrator"
+    },
+    {
+      "source": "packages/test-planner.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-planner.ts",
+      "target": "./planner"
+    },
+    {
+      "source": "packages/test-query.ts",
+      "target": "./query-analyzer"
+    },
+    {
+      "source": "packages/test-retriever.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-scanner.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-scanner.ts",
+      "target": "./scanner"
+    },
+    {
+      "source": "packages/test-semantic.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-semantic.ts",
+      "target": "./semantic"
+    },
+    {
       "source": "packages/workspace/service.ts",
       "target": "path"
+    },
+    {
+      "source": "packages/workspace/service.ts",
+      "target": "../core"
     },
     {
       "source": "packages/workspace/service.ts",

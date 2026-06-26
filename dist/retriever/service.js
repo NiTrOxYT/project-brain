@@ -1,5 +1,8 @@
 import path from "path";
 import { FileSystemService } from "../filesystem";
+import { ScannerService } from "../scanner";
+import { normalize } from "../semantic";
+import { RetrieverScorer } from "./scorer";
 export class RetrieverService {
     workspaceRoot;
     filesystem = new FileSystemService();
@@ -7,53 +10,40 @@ export class RetrieverService {
         this.workspaceRoot = workspaceRoot;
     }
     async retrieve(request) {
-        const index = await this.filesystem.readJson(path.join(this.workspaceRoot, "index", "index.json"));
-        const symbols = await this.filesystem.readJson(path.join(this.workspaceRoot, "index", "symbols.json"));
-        const imports = await this.filesystem.readJson(path.join(this.workspaceRoot, "index", "imports.json"));
-        const scores = new Map();
-        const query = request.query.toLowerCase();
-        const touch = (file) => {
-            if (!scores.has(file)) {
-                scores.set(file, {
-                    path: file,
-                    score: 0,
-                    reasons: []
-                });
+        const snapshot = await new ScannerService(this.workspaceRoot).snapshot();
+        const semantic = await this.filesystem.readJson(path.join(this.workspaceRoot, "index", "semantic.json"));
+        const queryTerms = normalize(request.query);
+        const scorer = new RetrieverScorer();
+        for (const entry of semantic.entries) {
+            let score = 0;
+            for (const term of queryTerms) {
+                if (entry.terms.includes(term)) {
+                    score += 100;
+                }
             }
-            return scores.get(file);
-        };
-        for (const file of index.files) {
-            const name = path.basename(file.path)
-                .toLowerCase();
-            if (name.includes(query)) {
-                const result = touch(file.path);
-                result.score += 50;
-                result.reasons.push("filename");
+            if (score > 0) {
+                scorer.add(entry.file, score, "semantic");
             }
         }
-        for (const symbol of symbols.symbols) {
-            if (symbol.name
-                .toLowerCase()
-                .includes(query)) {
-                const result = touch(symbol.file);
-                result.score += 100;
-                result.reasons.push("symbol");
+        for (const file of snapshot.files) {
+            const name = path.basename(file.path);
+            for (const term of queryTerms) {
+                if (name
+                    .toLowerCase()
+                    .includes(term)) {
+                    scorer.add(file.path, 25, "filename");
+                }
             }
         }
-        for (const edge of imports.imports) {
-            if (edge.target
-                .toLowerCase()
-                .includes(query)) {
-                const result = touch(edge.source);
-                result.score += 25;
-                result.reasons.push("import");
-            }
-        }
-        const files = [...scores.values()]
-            .sort((a, b) => b.score - a.score)
-            .slice(0, request.limit ?? 20);
         return {
-            files
+            files: scorer
+                .results()
+                .slice(0, request.limit ?? 20)
+                .map(result => ({
+                path: result.file,
+                score: result.score,
+                reasons: result.reasons
+            }))
         };
     }
 }

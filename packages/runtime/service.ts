@@ -50,13 +50,17 @@ export class RuntimeService {
             this.context.root,
             workspaceRoot
         ).index();
-
+        
+        await new GraphBuilderService(
+            workspaceRoot
+        ).build();
+        
         const { SemanticService } =
-    await import("../semantic");
-
-await new SemanticService(
-    workspaceRoot
-).build();
+            await import("../semantic");
+        
+        await new SemanticService(
+            workspaceRoot
+        ).build();
 
         await new KnowledgeService(
             workspaceRoot
