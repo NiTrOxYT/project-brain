@@ -1,0 +1,4264 @@
+{
+  "generatedAt": "2026-06-26T20:15:16.408Z",
+  "query": "explain relationship analyzer service",
+  "plan": {
+    "originalQuery": "explain relationship analyzer service",
+    "normalizedQuery": "explain relationship analyzer service",
+    "intent": "analysis",
+    "keywords": [
+      "explain",
+      "relationship",
+      "analyzer",
+      "service"
+    ],
+    "targetModules": [
+      "packages/relationship-analyzer/service.ts",
+      "packages/query-analyzer/service.ts",
+      "packages/relationship-analyzer/errors.ts",
+      "packages/agent-runtime/service.ts",
+      "packages/architecture-memory/service.ts",
+      "packages/ast/service.ts",
+      "packages/brain/service.ts",
+      "packages/cache/service.ts",
+      "packages/context-assembler/service.ts",
+      "packages/context-assembler/types.ts",
+      "packages/context-budget/service.ts",
+      "packages/context-loader/service.ts"
+    ],
+    "contextBudget": 10,
+    "confidence": 0.95
+  },
+  "files": [
+    {
+      "path": "packages/synchronizer/service.ts",
+      "score": 452.03033096117565,
+      "estimatedTokens": 2840
+    },
+    {
+      "path": "packages/knowledge-fusion/service.ts",
+      "score": 412.00000000000006,
+      "estimatedTokens": 4825
+    },
+    {
+      "path": "packages/filesystem/service.ts",
+      "score": 240.39770666396475,
+      "estimatedTokens": 179,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/orchestrator/service.ts",
+      "score": 144.57981874321408,
+      "estimatedTokens": 542,
+      "lastModified": "2026-06-26T21:57:57+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/workspace/service.ts",
+      "score": 139.75458677736412,
+      "estimatedTokens": 683,
+      "lastModified": "2026-06-26T22:53:38+05:30",
+      "commitCount": 2,
+      "churnScore": 2,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "path",
+      "score": 135,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/filesystem/index.ts",
+      "score": 132.77591973244148,
+      "estimatedTokens": 20,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/relationship-analyzer/types.ts",
+      "score": 125.98245425846532,
+      "estimatedTokens": 107
+    },
+    {
+      "path": "packages/semantic/index.ts",
+      "score": 120.56856187290973,
+      "estimatedTokens": 27,
+      "lastModified": "2026-06-26T23:03:01+05:30",
+      "commitCount": 2,
+      "churnScore": 2,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/runtime/service.ts",
+      "score": 119.53787787138062,
+      "estimatedTokens": 624,
+      "lastModified": "2026-06-27T00:22:47+05:30",
+      "commitCount": 3,
+      "churnScore": 3,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/retriever/index.ts",
+      "score": 88.99665551839468,
+      "estimatedTokens": 26,
+      "lastModified": "2026-06-27T00:22:47+05:30",
+      "commitCount": 2,
+      "churnScore": 2,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/core/types.js",
+      "score": 84.61538461538461,
+      "estimatedTokens": 3,
+      "lastModified": "2026-06-26T22:53:38+05:30",
+      "commitCount": 2,
+      "churnScore": 2,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/scanner/index.js",
+      "score": 84.61538461538461,
+      "estimatedTokens": 20,
+      "lastModified": "2026-06-26T22:53:38+05:30",
+      "commitCount": 2,
+      "churnScore": 2,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "fs/promises",
+      "score": 80.21739130434781,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/relationship-analyzer/index.ts",
+      "score": 76.30434782608695,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/relationship-analyzer/errors.ts",
+      "score": 67.4611368619443,
+      "estimatedTokens": 44
+    },
+    {
+      "path": "packages/synchronizer/errors.ts",
+      "score": 61.87102339451375,
+      "estimatedTokens": 40
+    },
+    {
+      "path": "typescript",
+      "score": 15.65217391304348,
+      "estimatedTokens": 0
+    },
+    {
+      "path": ".brain/graph/dependencies.json",
+      "score": 15.384615384615389,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": ".gitignore",
+      "score": 15.384615384615389,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/errors.js",
+      "score": 15.384615384615389,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/indexer/error.js",
+      "score": 15.384615384615389,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/service.js",
+      "score": 15.384615384615389,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "LICENSE",
+      "score": 15.384615384615389,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/manifest/schema.ts",
+      "score": 15.384615384615389,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "crypto",
+      "score": 7.82608695652174,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "process",
+      "score": 1.956521739130435,
+      "estimatedTokens": 0
+    }
+  ],
+  "symbols": [
+    {
+      "name": "FileSystemService",
+      "kind": "class",
+      "file": "packages/filesystem/service.ts",
+      "line": 3
+    },
+    {
+      "name": "exists",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 5
+    },
+    {
+      "name": "mkdir",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 14
+    },
+    {
+      "name": "writeJson",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 20
+    },
+    {
+      "name": "readJson",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 28
+    },
+    {
+      "name": "raw",
+      "kind": "variable",
+      "file": "packages/filesystem/service.ts",
+      "line": 29
+    },
+    {
+      "name": "KnowledgeFusionService",
+      "kind": "class",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 18
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 20
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 22
+    },
+    {
+      "name": "fuse",
+      "kind": "method",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 27
+    },
+    {
+      "name": "query",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 31
+    },
+    {
+      "name": "options",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 32
+    },
+    {
+      "name": "semanticRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 35
+    },
+    {
+      "name": "c",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 37
+    },
+    {
+      "name": "planner",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 41
+    },
+    {
+      "name": "plan",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 42
+    },
+    {
+      "name": "keywords",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 43
+    },
+    {
+      "name": "retriever",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 45
+    },
+    {
+      "name": "retrieval",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 46
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 50
+    },
+    {
+      "name": "graphPath",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 56
+    },
+    {
+      "name": "execPath",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 57
+    },
+    {
+      "name": "relPath",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 58
+    },
+    {
+      "name": "evolutionPath",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 59
+    },
+    {
+      "name": "graph",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 68
+    },
+    {
+      "name": "execGraph",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 72
+    },
+    {
+      "name": "relData",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 76
+    },
+    {
+      "name": "evolutionAnalytics",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 80
+    },
+    {
+      "name": "semanticSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 85
+    },
+    {
+      "name": "graphRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 88
+    },
+    {
+      "name": "edge",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 91
+    },
+    {
+      "name": "graphSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 101
+    },
+    {
+      "name": "execRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 104
+    },
+    {
+      "name": "execFileRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 105
+    },
+    {
+      "name": "node",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 108
+    },
+    {
+      "name": "semScore",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 109
+    },
+    {
+      "name": "toFile",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 114
+    },
+    {
+      "name": "fromFile",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 121
+    },
+    {
+      "name": "executionSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 130
+    },
+    {
+      "name": "executionFileSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 131
+    },
+    {
+      "name": "relRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 134
+    },
+    {
+      "name": "relFileRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 135
+    },
+    {
+      "name": "rel",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 137
+    },
+    {
+      "name": "sourceId",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 142
+    },
+    {
+      "name": "targetId",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 143
+    },
+    {
+      "name": "relationshipSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 156
+    },
+    {
+      "name": "relationshipFileSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 157
+    },
+    {
+      "name": "memoryRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 160
+    },
+    {
+      "name": "memoryEntriesMap",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 161
+    },
+    {
+      "name": "memoryService",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 164
+    },
+    {
+      "name": "relevantMemory",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 165
+    },
+    {
+      "name": "total",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 166
+    },
+    {
+      "name": "i",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 167
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 168
+    },
+    {
+      "name": "entryId",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 169
+    },
+    {
+      "name": "architectureSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 177
+    },
+    {
+      "name": "evolutionRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 180
+    },
+    {
+      "name": "churnRawMap",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 182
+    },
+    {
+      "name": "churnSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 186
+    },
+    {
+      "name": "recencySignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 188
+    },
+    {
+      "name": "rec",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 190
+    },
+    {
+      "name": "coChangeRawMap",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 197
+    },
+    {
+      "name": "coChangeSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 208
+    },
+    {
+      "name": "churn",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 211
+    },
+    {
+      "name": "recency",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 212
+    },
+    {
+      "name": "coChange",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 213
+    },
+    {
+      "name": "combined",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 214
+    },
+    {
+      "name": "evolutionSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 218
+    },
+    {
+      "name": "candidateMap",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 221
+    },
+    {
+      "name": "getOrCreateCandidate",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 223
+    },
+    {
+      "name": "cand",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 224
+    },
+    {
+      "name": "duplicateCount",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 248
+    },
+    {
+      "name": "addSignalValue",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 250
+    },
+    {
+      "name": "hadSem",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 275
+    },
+    {
+      "name": "hadSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 287
+    },
+    {
+      "name": "finalCandidates",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 318
+    },
+    {
+      "name": "activeVals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 326
+    },
+    {
+      "name": "reasons",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 340
+    },
+    {
+      "name": "semanticContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 377
+    },
+    {
+      "name": "executionContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 378
+    },
+    {
+      "name": "relationshipContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 379
+    },
+    {
+      "name": "graphContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 380
+    },
+    {
+      "name": "architectureContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 381
+    },
+    {
+      "name": "evolutionContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 382
+    },
+    {
+      "name": "diagnostics",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 393
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 409
+    },
+    {
+      "name": "normalizeScores",
+      "kind": "method",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 415
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 416
+    },
+    {
+      "name": "min",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 419
+    },
+    {
+      "name": "max",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 420
+    },
+    {
+      "name": "score",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 422
+    },
+    {
+      "name": "range",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 427
+    },
+    {
+      "name": "MultiAgentOrchestratorService",
+      "kind": "class",
+      "file": "packages/orchestrator/service.ts",
+      "line": 7
+    },
+    {
+      "name": "runtimeService",
+      "kind": "property",
+      "file": "packages/orchestrator/service.ts",
+      "line": 8
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/orchestrator/service.ts",
+      "line": 10
+    },
+    {
+      "name": "orchestrate",
+      "kind": "method",
+      "file": "packages/orchestrator/service.ts",
+      "line": 16
+    },
+    {
+      "name": "scheduler",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 24
+    },
+    {
+      "name": "schedule",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 25
+    },
+    {
+      "name": "executor",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 28
+    },
+    {
+      "name": "execResult",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 29
+    },
+    {
+      "name": "OrchestratorService",
+      "kind": "class",
+      "file": "packages/orchestrator/service.ts",
+      "line": 43
+    },
+    {
+      "name": "execute",
+      "kind": "method",
+      "file": "packages/orchestrator/service.ts",
+      "line": 46
+    },
+    {
+      "name": "projectRoot",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 47
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 49
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 50
+    },
+    {
+      "name": "RelationshipAnalyzerError",
+      "kind": "class",
+      "file": "packages/relationship-analyzer/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/relationship-analyzer/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "RelationshipType",
+      "kind": "type",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 1
+    },
+    {
+      "name": "RelationshipRecord",
+      "kind": "interface",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 11
+    },
+    {
+      "name": "RelationshipIndex",
+      "kind": "interface",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 25
+    },
+    {
+      "name": "RuntimeService",
+      "kind": "class",
+      "file": "packages/runtime/service.ts",
+      "line": 14
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/runtime/service.ts",
+      "line": 16
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/runtime/service.ts",
+      "line": 20
+    },
+    {
+      "name": "workspace",
+      "kind": "variable",
+      "file": "packages/runtime/service.ts",
+      "line": 22
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/runtime/service.ts",
+      "line": 26
+    },
+    {
+      "name": "workspaceRoot",
+      "kind": "variable",
+      "file": "packages/runtime/service.ts",
+      "line": 28
+    },
+    {
+      "name": "SynchronizerError",
+      "kind": "class",
+      "file": "packages/synchronizer/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/synchronizer/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "SynchronizerService",
+      "kind": "class",
+      "file": "packages/synchronizer/service.ts",
+      "line": 17
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/synchronizer/service.ts",
+      "line": 19
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/synchronizer/service.ts",
+      "line": 21
+    },
+    {
+      "name": "forceRebuild",
+      "kind": "method",
+      "file": "packages/synchronizer/service.ts",
+      "line": 26
+    },
+    {
+      "name": "runtime",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 28
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 32
+    },
+    {
+      "name": "synchronize",
+      "kind": "method",
+      "file": "packages/synchronizer/service.ts",
+      "line": 37
+    },
+    {
+      "name": "indexPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 41
+    },
+    {
+      "name": "existingIndex",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 48
+    },
+    {
+      "name": "existingFilesMap",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 49
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 50
+    },
+    {
+      "name": "currentFilesMap",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 54
+    },
+    {
+      "name": "addedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 56
+    },
+    {
+      "name": "removedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 57
+    },
+    {
+      "name": "changedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 58
+    },
+    {
+      "name": "extFile",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 61
+    },
+    {
+      "name": "relPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 72
+    },
+    {
+      "name": "stateDir",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 78
+    },
+    {
+      "name": "statePath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 79
+    },
+    {
+      "name": "state",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 84
+    },
+    {
+      "name": "updatedIndexes",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 102
+    },
+    {
+      "name": "updatedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 105
+    },
+    {
+      "name": "affectedSet",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 109
+    },
+    {
+      "name": "newlyAddedOrChanged",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 110
+    },
+    {
+      "name": "symbolsPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 113
+    },
+    {
+      "name": "symbolsList",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 114
+    },
+    {
+      "name": "symbolsData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 117
+    },
+    {
+      "name": "symbolsService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 121
+    },
+    {
+      "name": "addedSymbols",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 122
+    },
+    {
+      "name": "fileSyms",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 126
+    },
+    {
+      "name": "importsPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 139
+    },
+    {
+      "name": "importsList",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 140
+    },
+    {
+      "name": "importsData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 143
+    },
+    {
+      "name": "importsService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 147
+    },
+    {
+      "name": "addedImports",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 148
+    },
+    {
+      "name": "fileImps",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 152
+    },
+    {
+      "name": "relationshipsPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 165
+    },
+    {
+      "name": "relationshipsList",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 166
+    },
+    {
+      "name": "relData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 169
+    },
+    {
+      "name": "relService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 173
+    },
+    {
+      "name": "projectSymbols",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 174
+    },
+    {
+      "name": "addedRelationships",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 175
+    },
+    {
+      "name": "fileRels",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 179
+    },
+    {
+      "name": "execService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 192
+    },
+    {
+      "name": "graphService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 197
+    },
+    {
+      "name": "semanticPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 202
+    },
+    {
+      "name": "semanticEntries",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 203
+    },
+    {
+      "name": "semanticData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 206
+    },
+    {
+      "name": "sym",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 210
+    },
+    {
+      "name": "terms",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 211
+    },
+    {
+      "name": "scanProject",
+      "kind": "method",
+      "file": "packages/synchronizer/service.ts",
+      "line": 255
+    },
+    {
+      "name": "filesMap",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 257
+    },
+    {
+      "name": "walk",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 259
+    },
+    {
+      "name": "entries",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 261
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 263
+    },
+    {
+      "name": "fullPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 274
+    },
+    {
+      "name": "stat",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 282
+    },
+    {
+      "name": "IWorkspaceService",
+      "kind": "interface",
+      "file": "packages/workspace/service.ts",
+      "line": 7
+    },
+    {
+      "name": "WorkspaceService",
+      "kind": "class",
+      "file": "packages/workspace/service.ts",
+      "line": 16
+    },
+    {
+      "name": "fs",
+      "kind": "property",
+      "file": "packages/workspace/service.ts",
+      "line": 18
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/service.ts",
+      "line": 20
+    },
+    {
+      "name": "exists",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 34
+    },
+    {
+      "name": "create",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 38
+    },
+    {
+      "name": "directories",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 40
+    },
+    {
+      "name": "directory",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 51
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 90
+    },
+    {
+      "name": "created",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 92
+    },
+    {
+      "name": "validate",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 104
+    },
+    {
+      "name": "load",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 108
+    },
+    {
+      "name": "dispose",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 110
+    }
+  ],
+  "relationships": [
+    {
+      "source": "FileSystemService.exists",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/filesystem/service.ts",
+      "line": 7
+    },
+    {
+      "source": "FileSystemService.mkdir",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/filesystem/service.ts",
+      "line": 15
+    },
+    {
+      "source": "FileSystemService.mkdir",
+      "target": "mkdir",
+      "type": "references",
+      "file": "packages/filesystem/service.ts",
+      "line": 15
+    },
+    {
+      "source": "FileSystemService.writeJson",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/filesystem/service.ts",
+      "line": 21
+    },
+    {
+      "source": "FileSystemService.writeJson",
+      "target": "data",
+      "type": "references",
+      "file": "packages/filesystem/service.ts",
+      "line": 23
+    },
+    {
+      "source": "FileSystemService.readJson",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/filesystem/service.ts",
+      "line": 29
+    },
+    {
+      "source": "FileSystemService.readJson",
+      "target": "parse",
+      "type": "references",
+      "file": "packages/filesystem/service.ts",
+      "line": 30
+    },
+    {
+      "source": "FileSystemService.readJson",
+      "target": "raw",
+      "type": "references",
+      "file": "packages/filesystem/service.ts",
+      "line": 30
+    },
+    {
+      "source": "KnowledgeFusionService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 20
+    },
+    {
+      "source": "KnowledgeFusionService.constructor",
+      "target": "FusionStrategy",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 24
+    },
+    {
+      "source": "KnowledgeFusionService.constructor",
+      "target": "WeightedFusionStrategy",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 24
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "FusionRequest",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 27
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "FusionResult",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 27
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "request",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 31
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "query",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 31
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "options",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 32
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semanticCandidates",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 36
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semanticRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 38
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "set",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 38
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "c",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 38
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "score",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 38
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "PlannerService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 41
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 41
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "planner",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 42
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "plan",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 42
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "keywords",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 43
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "RetrieverService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 45
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "retriever",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 46
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "retrieve",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 46
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "retrieval",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 50
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "files",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 50
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "file",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 51
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "execExists",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 61
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "evolutionExists",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 61
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 62
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 62
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graphPath",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 62
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "execPath",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 63
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relPath",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 64
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "evolutionPath",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 65
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 69
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "nodes",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 69
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "edges",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 69
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 77
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "fileHistory",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 81
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "coChangeRelationships",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 81
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "normalizeScores",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 85
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semScore",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 90
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semanticSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 90
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 90
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graph",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 91
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "edge",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 92
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graphRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 93
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "get",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 93
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "execGraph",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 108
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "node",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 109
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "id",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 112
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "execRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 113
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "toFile",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 115
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "execFileRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 116
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "fromFile",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 122
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relData",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 137
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "rel",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 138
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "source",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 142
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "target",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 143
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 145
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "targetId",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 145
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relFileRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 146
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "sourceId",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 149
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "ArchitectureMemoryService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 164
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "memoryService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 165
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "search",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 165
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relevantMemory",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 166
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "i",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 167
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "total",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 167
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 169
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "memoryRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 170
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "entryId",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 170
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "memoryEntriesMap",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 171
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "evolutionAnalytics",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 181
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "churnRawMap",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 184
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "churnScore",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 184
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "recentlyChanged",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 191
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "rec",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 191
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "stableModule",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 192
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "abandonedModule",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 193
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "recencySignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 194
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "coChangeRawMap",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 201
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "count",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 201
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "churnSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 211
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "coChangeSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 213
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "churn",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 214
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "recency",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 214
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "coChange",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 214
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "evolutionRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 215
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "combined",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 215
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "KnowledgeCandidate",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 221
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "candidateMap",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 224
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "cand",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 225
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "type",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 228
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 231
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semantic",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 233
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "evolution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 238
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "reasons",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 241
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "CandidateSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 253
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "getOrCreateCandidate",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 257
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "max",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 259
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "fPath",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 269
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "addSignalValue",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 270
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graphSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 274
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "hadSem",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 277
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "duplicateCount",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 277
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "executionSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 281
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "executionFileSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 286
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "hadSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 289
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relationshipSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 293
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relationshipFileSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 298
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "architectureSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 305
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "evolutionSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 311
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "activeVals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 335
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "finalCandidates",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 361
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semanticContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 385
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "executionContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 386
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relationshipContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 387
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graphContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 388
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "architectureContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 389
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "evolutionContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 390
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "FusionDiagnostics",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 393
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "candidates",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 405
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "diagnostics",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 406
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "KnowledgeFusionError",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 410
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "error",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 410
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "scores",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 417
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "normalized",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 417
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "score",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 423
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "min",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 423
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "max",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 424
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "id",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 429
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 429
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "range",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 430
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "set",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 431
+    },
+    {
+      "source": "MultiAgentOrchestratorService.runtimeService",
+      "target": "AgentRuntimeService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 8
+    },
+    {
+      "source": "MultiAgentOrchestratorService.constructor",
+      "target": "runtimeService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 13
+    },
+    {
+      "source": "MultiAgentOrchestratorService.constructor",
+      "target": "AgentRuntimeService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 13
+    },
+    {
+      "source": "MultiAgentOrchestratorService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 13
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorRequest",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 16
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorResponse",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 16
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "plan",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 17
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "request",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 17
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorError",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 20
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorScheduler",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 24
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "scheduler",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 25
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "schedule",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 25
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorExecutor",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 28
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "runtimeService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 28
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "executor",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 29
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "execute",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 29
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "report",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 34
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "execResult",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 34
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "results",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 35
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "assignments",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 36
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "query",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 46
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "context",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 46
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 47
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "QueryEngineService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 48
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 49
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "engine",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 50
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "request",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 51
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "result",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 57
+    },
+    {
+      "source": "RelationshipAnalyzerError",
+      "target": "Error",
+      "type": "extends",
+      "file": "packages/relationship-analyzer/errors.ts",
+      "line": 1
+    },
+    {
+      "source": "RelationshipAnalyzerError.constructor",
+      "target": "name",
+      "type": "references",
+      "file": "packages/relationship-analyzer/errors.ts",
+      "line": 7
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "source",
+      "type": "references",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 13
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "target",
+      "type": "references",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 15
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "type",
+      "type": "references",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 17
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "RelationshipType",
+      "type": "references",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 17
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "file",
+      "type": "references",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 19
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "line",
+      "type": "references",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 21
+    },
+    {
+      "source": "RelationshipIndex",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 29
+    },
+    {
+      "source": "RelationshipIndex",
+      "target": "RelationshipRecord",
+      "type": "references",
+      "file": "packages/relationship-analyzer/types.ts",
+      "line": 29
+    },
+    {
+      "source": "RuntimeService.constructor",
+      "target": "RuntimeContext",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 17
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "WorkspaceService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 22
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "context",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 23
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "workspace",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 26
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "initialize",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 26
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "result",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 28
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ManifestService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 30
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 31
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "load",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 32
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ProjectService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 34
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "detect",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 37
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "IndexerService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 39
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "index",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 42
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "SymbolsService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 44
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ImportsService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 49
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ImportResolverService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 54
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "resolve",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 59
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "RelationshipAnalyzerService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 61
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "analyze",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 67
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ExecutionGraphService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 69
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "build",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 74
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "GraphBuilderService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 76
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "SemanticService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 80
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "KnowledgeService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 87
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "GraphService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 91
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "CacheService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 95
+    },
+    {
+      "source": "SynchronizerError",
+      "target": "Error",
+      "type": "extends",
+      "file": "packages/synchronizer/errors.ts",
+      "line": 1
+    },
+    {
+      "source": "SynchronizerError.constructor",
+      "target": "name",
+      "type": "references",
+      "file": "packages/synchronizer/errors.ts",
+      "line": 7
+    },
+    {
+      "source": "SynchronizerService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 19
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "RuntimeService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 28
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 29
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "runtime",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 31
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "initialize",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 31
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "SynchronizerError",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 33
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "error",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 33
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SynchronizationState",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 37
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 41
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 43
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 43
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "indexPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 43
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "forceRebuild",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 45
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 48
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "IndexResult",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 48
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "IndexedFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 49
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "existingIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 50
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "files",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 50
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "existingFilesMap",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 51
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "set",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 51
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "file",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 51
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "scanProject",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 54
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 60
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "currentFilesMap",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 60
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 60
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "get",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 61
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "extFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 62
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 63
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "changedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 68
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "removedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 74
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "stateDir",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 79
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "updatedIndexes",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 90
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "mkdir",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 94
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "writeJson",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 97
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "statePath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 97
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "state",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 97
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "updatedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 106
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SymbolRecord",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 114
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 116
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SymbolIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 117
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsList",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbols",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "affectedSet",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "sym",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SymbolsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 121
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 121
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "newlyAddedOrChanged",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 124
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 126
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "extractFromFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 126
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedSymbols",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 127
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "fileSyms",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 127
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ImportRecord",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 140
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 142
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ImportIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 143
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsList",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "imports",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "imp",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "source",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ImportsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 147
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 152
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedImports",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 153
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "fileImps",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 153
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "RelationshipRecord",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 166
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relationshipsPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 168
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "RelationshipIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 169
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relationshipsList",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "rel",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "RelationshipAnalyzerService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 173
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "s",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 174
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "name",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 174
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 179
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "projectSymbols",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 179
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedRelationships",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 180
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "fileRels",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 180
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ExecutionGraphService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 192
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "execService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 193
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "buildIncremental",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 193
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "GraphBuilderService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 197
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "graphService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 198
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "build",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 198
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "semanticPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 205
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "semanticEntries",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 207
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "semanticData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 207
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 207
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "normalize",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 211
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "id",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 213
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "terms",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 215
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "error",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 245
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SynchronizerError",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 245
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "IndexedFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 255
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 261
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "dir",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 261
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 263
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 266
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "name",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 266
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "walk",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 278
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "fullPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 278
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "stat",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 282
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 283
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "filesMap",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 285
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "set",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 285
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "relPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 285
+    },
+    {
+      "source": "IWorkspaceService",
+      "target": "initialize",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 8
+    },
+    {
+      "source": "IWorkspaceService",
+      "target": "WorkspaceResult",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 8
+    },
+    {
+      "source": "IWorkspaceService",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 9
+    },
+    {
+      "source": "IWorkspaceService",
+      "target": "create",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 10
+    },
+    {
+      "source": "IWorkspaceService",
+      "target": "validate",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 11
+    },
+    {
+      "source": "IWorkspaceService",
+      "target": "load",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 12
+    },
+    {
+      "source": "IWorkspaceService",
+      "target": "dispose",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 13
+    },
+    {
+      "source": "WorkspaceService",
+      "target": "RuntimeService",
+      "type": "extends",
+      "file": "packages/workspace/service.ts",
+      "line": 16
+    },
+    {
+      "source": "WorkspaceService.fs",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 18
+    },
+    {
+      "source": "WorkspaceService.constructor",
+      "target": "WorkspaceOptions",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 21
+    },
+    {
+      "source": "WorkspaceService",
+      "target": "options",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 27
+    },
+    {
+      "source": "WorkspaceService.exists",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 35
+    },
+    {
+      "source": "WorkspaceService.exists",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 35
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 49
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "mkdir",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 49
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "directories",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 51
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "directory",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 53
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "writeJson",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 57
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "project",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 62
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "id",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 63
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "name",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 64
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "workspace",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 70
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "graph",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 72
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "index",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 73
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "cache",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 74
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "history",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 75
+    },
+    {
+      "source": "WorkspaceService.create",
+      "target": "state",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 76
+    },
+    {
+      "source": "WorkspaceService.initialize",
+      "target": "WorkspaceResult",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 90
+    },
+    {
+      "source": "WorkspaceService.initialize",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 92
+    },
+    {
+      "source": "WorkspaceService.initialize",
+      "target": "created",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 94
+    },
+    {
+      "source": "WorkspaceService.initialize",
+      "target": "create",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 95
+    },
+    {
+      "source": "WorkspaceService.validate",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/workspace/service.ts",
+      "line": 105
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "packages/filesystem/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/filesystem/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/knowledge-fusion/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/orchestrator/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/relationship-analyzer/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/retriever/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/runtime/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/semantic/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/synchronizer/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/workspace/service.ts",
+        "type": "file"
+      }
+    ],
+    "edges": [
+      {
+        "from": "packages/filesystem/index.ts",
+        "to": "packages/filesystem/service.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/filesystem/service.ts",
+        "to": "fs/promises",
+        "type": "imports"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts",
+        "to": "packages/retriever/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/orchestrator/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/relationship-analyzer/index.ts",
+        "to": "packages/relationship-analyzer/types.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/relationship-analyzer/index.ts",
+        "to": "packages/relationship-analyzer/errors.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/runtime/service.ts",
+        "to": "packages/relationship-analyzer/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/runtime/service.ts",
+        "to": "packages/semantic/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "fs/promises",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/relationship-analyzer/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/semantic/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/semantic/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/synchronizer/errors.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/workspace/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/workspace/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      }
+    ]
+  },
+  "executionGraph": {
+    "nodes": [
+      {
+        "id": "packages/filesystem/service.ts#FileSystemService",
+        "type": "class"
+      },
+      {
+        "id": "packages/filesystem/service.ts#FileSystemService.readJson",
+        "type": "method"
+      },
+      {
+        "id": "packages/filesystem/service.ts#FileSystemService.writeJson",
+        "type": "method"
+      },
+      {
+        "id": "packages/filesystem/service.ts#FileSystemService.exists",
+        "type": "method"
+      },
+      {
+        "id": "packages/filesystem/service.ts#FileSystemService.mkdir",
+        "type": "method"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#OrchestratorService",
+        "type": "class"
+      },
+      {
+        "id": "packages/knowledge-fusion/service.ts#KnowledgeFusionService",
+        "type": "class"
+      },
+      {
+        "id": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.fuse",
+        "type": "method"
+      },
+      {
+        "id": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.filesystem",
+        "type": "property"
+      },
+      {
+        "id": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.normalizeScores",
+        "type": "method"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#MultiAgentOrchestratorService",
+        "type": "class"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.runtimeService",
+        "type": "property"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.orchestrate",
+        "type": "method"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#OrchestratorService.execute",
+        "type": "method"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#OrchestratorService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/synchronizer/service.ts#SynchronizerService",
+        "type": "class"
+      },
+      {
+        "id": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "type": "method"
+      },
+      {
+        "id": "packages/relationship-analyzer/errors.ts#RelationshipAnalyzerError",
+        "type": "class"
+      },
+      {
+        "id": "packages/relationship-analyzer/errors.ts#RelationshipAnalyzerError.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/relationship-analyzer/types.ts#RelationshipType",
+        "type": "type"
+      },
+      {
+        "id": "packages/relationship-analyzer/types.ts#RelationshipRecord",
+        "type": "interface"
+      },
+      {
+        "id": "packages/relationship-analyzer/types.ts#RelationshipIndex",
+        "type": "interface"
+      },
+      {
+        "id": "packages/runtime/service.ts#RuntimeService",
+        "type": "class"
+      },
+      {
+        "id": "packages/runtime/service.ts#RuntimeService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/runtime/service.ts#RuntimeService.initialize",
+        "type": "method"
+      },
+      {
+        "id": "packages/workspace/service.ts#WorkspaceService",
+        "type": "class"
+      },
+      {
+        "id": "packages/synchronizer/errors.ts#SynchronizerError",
+        "type": "class"
+      },
+      {
+        "id": "packages/synchronizer/errors.ts#SynchronizerError.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/synchronizer/service.ts#SynchronizerService.filesystem",
+        "type": "property"
+      },
+      {
+        "id": "packages/synchronizer/service.ts#SynchronizerService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/synchronizer/service.ts#SynchronizerService.forceRebuild",
+        "type": "method"
+      },
+      {
+        "id": "packages/synchronizer/service.ts#SynchronizerService.scanProject",
+        "type": "method"
+      },
+      {
+        "id": "packages/workspace/service.ts#IWorkspaceService",
+        "type": "interface"
+      },
+      {
+        "id": "packages/workspace/service.ts#WorkspaceService.fs",
+        "type": "property"
+      },
+      {
+        "id": "packages/workspace/service.ts#WorkspaceService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/workspace/service.ts#WorkspaceService.exists",
+        "type": "method"
+      },
+      {
+        "id": "packages/workspace/service.ts#WorkspaceService.create",
+        "type": "method"
+      },
+      {
+        "id": "packages/workspace/service.ts#WorkspaceService.initialize",
+        "type": "method"
+      },
+      {
+        "id": "packages/workspace/service.ts#WorkspaceService.validate",
+        "type": "method"
+      },
+      {
+        "id": "packages/workspace/service.ts#WorkspaceService.load",
+        "type": "method"
+      },
+      {
+        "id": "packages/workspace/service.ts#WorkspaceService.dispose",
+        "type": "method"
+      }
+    ],
+    "edges": [
+      {
+        "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.filesystem",
+        "to": "packages/filesystem/service.ts#FileSystemService",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.fuse",
+        "to": "packages/filesystem/service.ts#FileSystemService.exists",
+        "type": "calls"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.fuse",
+        "to": "packages/filesystem/service.ts#FileSystemService.readJson",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.fuse",
+        "to": "packages/filesystem/service.ts#FileSystemService.readJson",
+        "type": "calls"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.fuse",
+        "to": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.normalizeScores",
+        "type": "calls"
+      },
+      {
+        "from": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.orchestrate",
+        "to": "packages/orchestrator/service.ts#OrchestratorService.execute",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.orchestrate",
+        "to": "packages/orchestrator/service.ts#OrchestratorService.execute",
+        "type": "calls"
+      },
+      {
+        "from": "packages/runtime/service.ts#RuntimeService.initialize",
+        "to": "packages/workspace/service.ts#WorkspaceService",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.filesystem",
+        "to": "packages/filesystem/service.ts#FileSystemService",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.forceRebuild",
+        "to": "packages/synchronizer/errors.ts#SynchronizerError",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/filesystem/service.ts#FileSystemService.exists",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/filesystem/service.ts#FileSystemService.exists",
+        "type": "calls"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/synchronizer/service.ts#SynchronizerService.forceRebuild",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/synchronizer/service.ts#SynchronizerService.forceRebuild",
+        "type": "calls"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/filesystem/service.ts#FileSystemService.readJson",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/filesystem/service.ts#FileSystemService.readJson",
+        "type": "calls"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/synchronizer/service.ts#SynchronizerService.scanProject",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/synchronizer/service.ts#SynchronizerService.scanProject",
+        "type": "calls"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
+        "type": "calls"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
+        "type": "calls"
+      },
+      {
+        "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
+        "to": "packages/synchronizer/errors.ts#SynchronizerError",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.fs",
+        "to": "packages/filesystem/service.ts#FileSystemService",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.create",
+        "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.create",
+        "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
+        "type": "calls"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.create",
+        "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.create",
+        "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
+        "type": "calls"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+        "to": "packages/workspace/service.ts#WorkspaceService.exists",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+        "to": "packages/workspace/service.ts#WorkspaceService.exists",
+        "type": "calls"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+        "to": "packages/workspace/service.ts#WorkspaceService.create",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+        "to": "packages/workspace/service.ts#WorkspaceService.create",
+        "type": "calls"
+      },
+      {
+        "from": "packages/workspace/service.ts#WorkspaceService.validate",
+        "to": "packages/workspace/service.ts#WorkspaceService.exists",
+        "type": "calls"
+      }
+    ]
+  },
+  "estimatedTokens": 10000
+}

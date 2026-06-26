@@ -12,6 +12,13 @@ export class SymbolsService {
         this.projectRoot = projectRoot;
         this.workspaceRoot = workspaceRoot;
     }
+    async extractFromFile(relativePath) {
+        const fullPath = path.join(this.projectRoot, relativePath);
+        const parsed = await this.parser.parse(fullPath);
+        const output = [];
+        this.extract(parsed.ast, fullPath, output);
+        return output;
+    }
     async index() {
         const symbols = [];
         await this.walk(this.projectRoot, symbols);

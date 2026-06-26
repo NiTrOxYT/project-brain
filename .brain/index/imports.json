@@ -1,6 +1,246 @@
 {
-  "generatedAt": "2026-06-26T18:39:08.104Z",
+  "generatedAt": "2026-06-26T20:20:46.750Z",
   "imports": [
+    {
+      "source": "packages/agent-runtime/executor.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "packages/agent-runtime/executor.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/agent-runtime/executor.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/agent-runtime/executor.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/agent-runtime/executor.ts",
+      "target": "./middleware"
+    },
+    {
+      "source": "packages/agent-runtime/executor.ts",
+      "target": "./hooks"
+    },
+    {
+      "source": "packages/agent-runtime/executor.ts",
+      "target": "./artifacts"
+    },
+    {
+      "source": "packages/agent-runtime/hooks.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/agent-runtime/hooks.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./registry"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./executor"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./artifacts"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./events"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./middleware"
+    },
+    {
+      "source": "packages/agent-runtime/index.ts",
+      "target": "./hooks"
+    },
+    {
+      "source": "packages/agent-runtime/middleware.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/agent-runtime/middleware.ts",
+      "target": "./artifacts"
+    },
+    {
+      "source": "packages/agent-runtime/provider.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/agent-runtime/registry.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/agent-runtime/registry.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/agent-runtime/registry.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/agent-runtime/runtime.ts",
+      "target": "./registry"
+    },
+    {
+      "source": "packages/agent-runtime/runtime.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/agent-runtime/runtime.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "./registry"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "./executor"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "./artifacts"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "./middleware"
+    },
+    {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "./hooks"
+    },
+    {
+      "source": "packages/agent-runtime/types.ts",
+      "target": "./artifacts"
+    },
+    {
+      "source": "packages/agent-runtime/types.ts",
+      "target": "./events"
+    },
+    {
+      "source": "packages/architecture-memory/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/architecture-memory/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/architecture-memory/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/architecture-memory/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/architecture-memory/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/architecture-memory/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/architecture-memory/service.ts",
+      "target": "../semantic"
+    },
+    {
+      "source": "packages/architecture-memory/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/architecture-memory/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/ast/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/ast/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/ast/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/ast/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/ast/service.ts",
+      "target": "typescript"
+    },
+    {
+      "source": "packages/ast/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/ast/types.ts",
+      "target": "typescript"
+    },
+    {
+      "source": "packages/brain/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/brain/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/brain/index.ts",
+      "target": "./errors"
+    },
     {
       "source": "packages/brain/service.ts",
       "target": "../orchestrator"
@@ -8,6 +248,22 @@
     {
       "source": "packages/brain/service.ts",
       "target": "../query-analyzer"
+    },
+    {
+      "source": "packages/brain/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/cache/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/cache/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/cache/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/cache/service.ts",
@@ -34,8 +290,116 @@
       "target": "../runtime"
     },
     {
+      "source": "packages/cli/index.ts",
+      "target": "./cli"
+    },
+    {
+      "source": "packages/cli/index.ts",
+      "target": "./banner"
+    },
+    {
+      "source": "packages/context-assembler/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/context-assembler/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/context-assembler/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "../planner"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "../context-budget"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "../engineering-planner"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "../orchestrator"
+    },
+    {
+      "source": "packages/context-assembler/service.ts",
+      "target": "../knowledge-fusion"
+    },
+    {
+      "source": "packages/context-assembler/types.ts",
+      "target": "../planner"
+    },
+    {
+      "source": "packages/context-assembler/types.ts",
+      "target": "../engineering-planner"
+    },
+    {
+      "source": "packages/context-assembler/types.ts",
+      "target": "../orchestrator"
+    },
+    {
+      "source": "packages/context-budget/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/context-budget/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/context-budget/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/context-budget/service.ts",
+      "target": "./types"
+    },
+    {
       "source": "packages/context-loader/assembler.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/context-loader/index.ts",
+      "target": "./assembler"
+    },
+    {
+      "source": "packages/context-loader/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/context-loader/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/context-loader/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/context-loader/service.ts",
@@ -54,12 +418,144 @@
       "target": "../retriever"
     },
     {
+      "source": "packages/context-loader/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/core/index.ts",
+      "target": "./kernel"
+    },
+    {
+      "source": "packages/core/index.ts",
+      "target": "./container"
+    },
+    {
+      "source": "packages/core/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/core/index.ts",
+      "target": "./types"
+    },
+    {
       "source": "packages/core/kernel.ts",
       "target": "./container"
     },
     {
+      "source": "packages/engineering-planner/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/engineering-planner/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/engineering-planner/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/engineering-planner/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/engineering-planner/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/engineering-planner/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/engineering-planner/service.ts",
+      "target": "../import-resolver"
+    },
+    {
+      "source": "packages/engineering-planner/service.ts",
+      "target": "../architecture-memory"
+    },
+    {
+      "source": "packages/engineering-planner/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/engineering-planner/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/execution-graph/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/execution-graph/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/execution-graph/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/execution-graph/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/execution-graph/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/execution-graph/service.ts",
+      "target": "typescript"
+    },
+    {
+      "source": "packages/execution-graph/service.ts",
+      "target": "../ast"
+    },
+    {
+      "source": "packages/execution-graph/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/execution-graph/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/execution-graph/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/execution-graph/service.ts",
+      "target": "../import-resolver"
+    },
+    {
+      "source": "packages/execution-graph/service.ts",
+      "target": "../import-resolver"
+    },
+    {
+      "source": "packages/filesystem/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/filesystem/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/filesystem/index.ts",
+      "target": "./errors"
+    },
+    {
       "source": "packages/filesystem/service.ts",
       "target": "fs/promises"
+    },
+    {
+      "source": "packages/graph/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/graph/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/graph/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/graph/service.ts",
@@ -72,6 +568,18 @@
     {
       "source": "packages/graph/service.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/graph-builder/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/graph-builder/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/graph-builder/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/graph-builder/service.ts",
@@ -90,12 +598,72 @@
       "target": "./types"
     },
     {
+      "source": "packages/graph-builder/service.ts",
+      "target": "../import-resolver"
+    },
+    {
+      "source": "packages/graph-traversal/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/graph-traversal/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/graph-traversal/index.ts",
+      "target": "./errors"
+    },
+    {
       "source": "packages/graph-traversal/service.ts",
       "target": "path"
     },
     {
       "source": "packages/graph-traversal/service.ts",
       "target": "../filesystem"
+    },
+    {
+      "source": "packages/import-resolver/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/import-resolver/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/import-resolver/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/import-resolver/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/import-resolver/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/import-resolver/service.ts",
+      "target": "../indexer"
+    },
+    {
+      "source": "packages/import-resolver/service.ts",
+      "target": "../imports"
+    },
+    {
+      "source": "packages/import-resolver/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/imports/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/imports/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/imports/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/imports/service.ts",
@@ -107,11 +675,31 @@
     },
     {
       "source": "packages/imports/service.ts",
+      "target": "typescript"
+    },
+    {
+      "source": "packages/imports/service.ts",
+      "target": "../ast"
+    },
+    {
+      "source": "packages/imports/service.ts",
       "target": "../filesystem"
     },
     {
       "source": "packages/imports/service.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/indexer/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/indexer/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/indexer/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/indexer/service.ts",
@@ -135,7 +723,35 @@
     },
     {
       "source": "packages/kernel/boot.ts",
+      "target": "./constants"
+    },
+    {
+      "source": "packages/kernel/boot.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/kernel/index.ts",
+      "target": "./boot"
+    },
+    {
+      "source": "packages/kernel/index.ts",
+      "target": "./constants"
+    },
+    {
+      "source": "packages/kernel/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/knowledge/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/knowledge/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/knowledge/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/knowledge/service.ts",
@@ -147,11 +763,75 @@
     },
     {
       "source": "packages/knowledge/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/knowledge-fusion/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/knowledge-fusion/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/knowledge-fusion/index.ts",
+      "target": "./strategies"
+    },
+    {
+      "source": "packages/knowledge-fusion/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/knowledge-fusion/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/knowledge-fusion/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/knowledge-fusion/service.ts",
+      "target": "../planner"
+    },
+    {
+      "source": "packages/knowledge-fusion/service.ts",
+      "target": "../retriever"
+    },
+    {
+      "source": "packages/knowledge-fusion/service.ts",
+      "target": "../architecture-memory"
+    },
+    {
+      "source": "packages/knowledge-fusion/service.ts",
+      "target": "./strategies"
+    },
+    {
+      "source": "packages/knowledge-fusion/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/knowledge-fusion/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/knowledge-fusion/strategies.ts",
       "target": "./types"
     },
     {
       "source": "packages/main.ts",
       "target": "./cli"
+    },
+    {
+      "source": "packages/manifest/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/manifest/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/manifest/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/manifest/service.ts",
@@ -174,12 +854,96 @@
       "target": "./errors"
     },
     {
-      "source": "packages/orchestrator/service.ts",
-      "target": "../context-loader"
+      "source": "packages/orchestrator/executor.ts",
+      "target": "../engineering-planner"
+    },
+    {
+      "source": "packages/orchestrator/executor.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/orchestrator/executor.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/orchestrator/executor.ts",
+      "target": "../agent-runtime"
+    },
+    {
+      "source": "packages/orchestrator/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/orchestrator/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/orchestrator/index.ts",
+      "target": "./scheduler"
+    },
+    {
+      "source": "packages/orchestrator/index.ts",
+      "target": "./executor"
+    },
+    {
+      "source": "packages/orchestrator/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/orchestrator/scheduler.ts",
+      "target": "../engineering-planner"
+    },
+    {
+      "source": "packages/orchestrator/scheduler.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/orchestrator/scheduler.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/orchestrator/service.ts",
-      "target": "../context-loader"
+      "target": "./types"
+    },
+    {
+      "source": "packages/orchestrator/service.ts",
+      "target": "./scheduler"
+    },
+    {
+      "source": "packages/orchestrator/service.ts",
+      "target": "./executor"
+    },
+    {
+      "source": "packages/orchestrator/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/orchestrator/service.ts",
+      "target": "../agent-runtime"
+    },
+    {
+      "source": "packages/orchestrator/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/orchestrator/service.ts",
+      "target": "../query-engine"
+    },
+    {
+      "source": "packages/orchestrator/types.ts",
+      "target": "../engineering-planner"
+    },
+    {
+      "source": "packages/planner/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/planner/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/planner/index.ts",
+      "target": "./service"
     },
     {
       "source": "packages/planner/service.ts",
@@ -192,6 +956,22 @@
     {
       "source": "packages/planner/service.ts",
       "target": "../semantic"
+    },
+    {
+      "source": "packages/planner/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/project/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/project/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/project/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/project/service.ts",
@@ -210,8 +990,184 @@
       "target": "./types"
     },
     {
+      "source": "packages/query-analyzer/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/query-analyzer/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/query-analyzer/index.ts",
+      "target": "./errors"
+    },
+    {
       "source": "packages/query-analyzer/service.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/query-engine/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/query-engine/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/query-engine/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "../synchronizer"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "../planner"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "../retriever"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "../context-assembler"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "../knowledge-fusion"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "../engineering-planner"
+    },
+    {
+      "source": "packages/query-engine/service.ts",
+      "target": "../orchestrator"
+    },
+    {
+      "source": "packages/query-engine/types.ts",
+      "target": "../context-assembler"
+    },
+    {
+      "source": "packages/relationship-analyzer/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/relationship-analyzer/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/relationship-analyzer/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/relationship-analyzer/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/relationship-analyzer/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/relationship-analyzer/service.ts",
+      "target": "typescript"
+    },
+    {
+      "source": "packages/relationship-analyzer/service.ts",
+      "target": "../ast"
+    },
+    {
+      "source": "packages/relationship-analyzer/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/relationship-analyzer/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/relationship-analyzer/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/repository-evolution/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/repository-evolution/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/repository-evolution/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/repository-evolution/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/repository-evolution/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/repository-evolution/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/repository-evolution/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/repository-evolution/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/repository-evolution/service.ts",
+      "target": "child_process"
+    },
+    {
+      "source": "packages/repository-evolution/service.ts",
+      "target": "util"
+    },
+    {
+      "source": "packages/retriever/index.ts",
+      "target": "./scorer"
+    },
+    {
+      "source": "packages/retriever/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/retriever/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/retriever/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/retriever/service.ts",
@@ -232,6 +1188,22 @@
     {
       "source": "packages/retriever/service.ts",
       "target": "./scorer"
+    },
+    {
+      "source": "packages/retriever/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/runtime/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/runtime/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/runtime/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/runtime/service.ts",
@@ -278,6 +1250,34 @@
       "target": "./types"
     },
     {
+      "source": "packages/runtime/service.ts",
+      "target": "../import-resolver"
+    },
+    {
+      "source": "packages/runtime/service.ts",
+      "target": "../relationship-analyzer"
+    },
+    {
+      "source": "packages/runtime/service.ts",
+      "target": "../execution-graph"
+    },
+    {
+      "source": "packages/runtime/service.ts",
+      "target": "../semantic"
+    },
+    {
+      "source": "packages/scanner/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/scanner/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/scanner/index.ts",
+      "target": "./errors"
+    },
+    {
       "source": "packages/scanner/service.ts",
       "target": "path"
     },
@@ -292,6 +1292,22 @@
     {
       "source": "packages/scanner/service.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/semantic/index.ts",
+      "target": "./normalizer"
+    },
+    {
+      "source": "packages/semantic/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/semantic/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/semantic/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/semantic/service.ts",
@@ -310,6 +1326,22 @@
       "target": "./normalizer"
     },
     {
+      "source": "packages/semantic/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/symbols/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/symbols/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/symbols/index.ts",
+      "target": "./errors"
+    },
+    {
       "source": "packages/symbols/service.ts",
       "target": "fs/promises"
     },
@@ -319,11 +1351,195 @@
     },
     {
       "source": "packages/symbols/service.ts",
+      "target": "typescript"
+    },
+    {
+      "source": "packages/symbols/service.ts",
+      "target": "../ast"
+    },
+    {
+      "source": "packages/symbols/service.ts",
       "target": "../filesystem"
     },
     {
       "source": "packages/symbols/service.ts",
       "target": "./types"
+    },
+    {
+      "source": "packages/synchronizer/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/synchronizer/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/synchronizer/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../filesystem"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../indexer"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../symbols"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../imports"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../relationship-analyzer"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../execution-graph"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../graph-builder"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../semantic"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../runtime"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "../semantic"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/synchronizer/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/test-agent-runtime-refinement.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-agent-runtime-refinement.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-agent-runtime-refinement.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/test-agent-runtime-refinement.ts",
+      "target": "./agent-runtime/index"
+    },
+    {
+      "source": "packages/test-agent-runtime-refinement.ts",
+      "target": "./orchestrator/index"
+    },
+    {
+      "source": "packages/test-agent-runtime-refinement.ts",
+      "target": "./query-engine/index"
+    },
+    {
+      "source": "packages/test-agent-runtime-refinement.ts",
+      "target": "./runtime/index"
+    },
+    {
+      "source": "packages/test-agent-runtime-refinement.ts",
+      "target": "./knowledge-fusion/index"
+    },
+    {
+      "source": "packages/test-agent-runtime-refinement.ts",
+      "target": "./engineering-planner/index"
+    },
+    {
+      "source": "packages/test-agent-runtime.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-agent-runtime.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-agent-runtime.ts",
+      "target": "./agent-runtime/index"
+    },
+    {
+      "source": "packages/test-agent-runtime.ts",
+      "target": "./orchestrator/index"
+    },
+    {
+      "source": "packages/test-agent-runtime.ts",
+      "target": "./query-engine/index"
+    },
+    {
+      "source": "packages/test-agent-runtime.ts",
+      "target": "./runtime/index"
+    },
+    {
+      "source": "packages/test-agent-runtime.ts",
+      "target": "./knowledge-fusion/index"
+    },
+    {
+      "source": "packages/test-agent-runtime.ts",
+      "target": "./engineering-planner/index"
+    },
+    {
+      "source": "packages/test-architecture-memory.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-architecture-memory.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-architecture-memory.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-architecture-memory.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-architecture-memory.ts",
+      "target": "./architecture-memory"
+    },
+    {
+      "source": "packages/test-architecture-memory.ts",
+      "target": "./query-engine"
+    },
+    {
+      "source": "packages/test-ast.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-ast.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-ast.ts",
+      "target": "typescript"
+    },
+    {
+      "source": "packages/test-ast.ts",
+      "target": "./ast"
     },
     {
       "source": "packages/test-brain.ts",
@@ -350,8 +1566,128 @@
       "target": "./context-budget"
     },
     {
+      "source": "packages/test-context-assembler.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-context-assembler.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-context-assembler.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-context-assembler.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "packages/test-context-assembler.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-context-assembler.ts",
+      "target": "./context-assembler"
+    },
+    {
       "source": "packages/test-context.ts",
       "target": "process"
+    },
+    {
+      "source": "packages/test-context.ts",
+      "target": "./context-loader"
+    },
+    {
+      "source": "packages/test-engineering-planner.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-engineering-planner.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-engineering-planner.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-engineering-planner.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-engineering-planner.ts",
+      "target": "./engineering-planner"
+    },
+    {
+      "source": "packages/test-engineering-planner.ts",
+      "target": "./query-engine"
+    },
+    {
+      "source": "packages/test-engineering-planner.ts",
+      "target": "./knowledge-fusion"
+    },
+    {
+      "source": "packages/test-engineering-planner.ts",
+      "target": "./context-assembler"
+    },
+    {
+      "source": "packages/test-execution-graph.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-execution-graph.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-execution-graph.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-execution-graph.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-execution-graph.ts",
+      "target": "./execution-graph"
+    },
+    {
+      "source": "packages/test-import-resolver.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-import-resolver.ts",
+      "target": "./import-resolver"
+    },
+    {
+      "source": "packages/test-knowledge-fusion.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-knowledge-fusion.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-knowledge-fusion.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-knowledge-fusion.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-knowledge-fusion.ts",
+      "target": "./synchronizer"
+    },
+    {
+      "source": "packages/test-knowledge-fusion.ts",
+      "target": "./knowledge-fusion"
+    },
+    {
+      "source": "packages/test-knowledge-fusion.ts",
+      "target": "./knowledge-fusion/strategies"
+    },
+    {
+      "source": "packages/test-knowledge-fusion.ts",
+      "target": "./knowledge-fusion/types"
     },
     {
       "source": "packages/test-normalizer.ts",
@@ -363,7 +1699,27 @@
     },
     {
       "source": "packages/test-orchestrator.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-orchestrator.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-orchestrator.ts",
+      "target": "./engineering-planner"
+    },
+    {
+      "source": "packages/test-orchestrator.ts",
       "target": "./orchestrator"
+    },
+    {
+      "source": "packages/test-orchestrator.ts",
+      "target": "./query-engine"
+    },
+    {
+      "source": "packages/test-orchestrator.ts",
+      "target": "./knowledge-fusion"
     },
     {
       "source": "packages/test-planner.ts",
@@ -374,12 +1730,80 @@
       "target": "./planner"
     },
     {
+      "source": "packages/test-query-engine.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-query-engine.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-query-engine.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-query-engine.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-query-engine.ts",
+      "target": "./query-engine"
+    },
+    {
       "source": "packages/test-query.ts",
       "target": "./query-analyzer"
     },
     {
+      "source": "packages/test-relationship-analyzer.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-relationship-analyzer.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-relationship-analyzer.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-relationship-analyzer.ts",
+      "target": "./relationship-analyzer"
+    },
+    {
+      "source": "packages/test-relationship-analyzer.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-repository-evolution.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-repository-evolution.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-repository-evolution.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-repository-evolution.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-repository-evolution.ts",
+      "target": "./repository-evolution"
+    },
+    {
+      "source": "packages/test-repository-evolution.ts",
+      "target": "./knowledge-fusion"
+    },
+    {
       "source": "packages/test-retriever.ts",
       "target": "process"
+    },
+    {
+      "source": "packages/test-retriever.ts",
+      "target": "./retriever"
     },
     {
       "source": "packages/test-scanner.ts",
@@ -396,6 +1820,46 @@
     {
       "source": "packages/test-semantic.ts",
       "target": "./semantic"
+    },
+    {
+      "source": "packages/test-symbols.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-symbols.ts",
+      "target": "./symbols"
+    },
+    {
+      "source": "packages/test-synchronizer.ts",
+      "target": "process"
+    },
+    {
+      "source": "packages/test-synchronizer.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-synchronizer.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-synchronizer.ts",
+      "target": "./runtime"
+    },
+    {
+      "source": "packages/test-synchronizer.ts",
+      "target": "./synchronizer"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./errors"
     },
     {
       "source": "packages/workspace/service.ts",

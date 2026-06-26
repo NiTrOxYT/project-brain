@@ -1,0 +1,3675 @@
+{
+  "generatedAt": "2026-06-26T19:47:02.126Z",
+  "query": "how does legacy adr entry work?",
+  "plan": {
+    "originalQuery": "how does legacy adr entry work?",
+    "normalizedQuery": "how does legacy adr entry work?",
+    "intent": "analysis",
+    "keywords": [
+      "how",
+      "does",
+      "legacy",
+      "adr",
+      "entry",
+      "work?"
+    ],
+    "targetModules": [
+      "packages/architecture-memory/service.ts",
+      "packages/architecture-memory/types.ts",
+      "packages/context-assembler/service.ts",
+      "packages/context-assembler/types.ts",
+      "packages/imports/service.ts",
+      "packages/indexer/service.ts",
+      "packages/knowledge-fusion/service.ts",
+      "packages/planner/service.ts",
+      "packages/retriever/service.ts",
+      "packages/semantic/types.ts",
+      "packages/symbols/service.ts",
+      "packages/synchronizer/service.ts"
+    ],
+    "contextBudget": 10,
+    "confidence": 0.95
+  },
+  "files": [
+    {
+      "path": "packages/architecture-memory/service.ts",
+      "score": 389.73719518321207,
+      "estimatedTokens": 2639
+    },
+    {
+      "path": "packages/knowledge-fusion/service.ts",
+      "score": 290,
+      "estimatedTokens": 4009
+    },
+    {
+      "path": "packages/context-assembler/service.ts",
+      "score": 239.84386006098734,
+      "estimatedTokens": 3152
+    },
+    {
+      "path": "path",
+      "score": 150,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "fs/promises",
+      "score": 115.38461538461536,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/architecture-memory/index.ts",
+      "score": 115.38461538461536,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/filesystem/index.ts",
+      "score": 115.38461538461536,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/semantic/index.ts",
+      "score": 69.23076923076923,
+      "estimatedTokens": 27
+    },
+    {
+      "path": "packages/architecture-memory/errors.ts",
+      "score": 57.69532650960215,
+      "estimatedTokens": 43
+    },
+    {
+      "path": "packages/planner/index.ts",
+      "score": 57.69230769230768,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "process",
+      "score": 34.61538461538461,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "crypto",
+      "score": 23.076923076923077,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "typescript",
+      "score": 0,
+      "estimatedTokens": 0
+    }
+  ],
+  "symbols": [
+    {
+      "name": "ArchitectureMemoryError",
+      "kind": "class",
+      "file": "packages/architecture-memory/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/architecture-memory/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "MemoryStorage",
+      "kind": "interface",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 9
+    },
+    {
+      "name": "FileSystemMemoryStorage",
+      "kind": "class",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 19
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 20
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 22
+    },
+    {
+      "name": "getMemoryPath",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 24
+    },
+    {
+      "name": "getMetadataPath",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 28
+    },
+    {
+      "name": "loadMemory",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 32
+    },
+    {
+      "name": "saveMemory",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 36
+    },
+    {
+      "name": "loadMetadata",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 40
+    },
+    {
+      "name": "metadataPath",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 41
+    },
+    {
+      "name": "saveMetadata",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 48
+    },
+    {
+      "name": "existsMemory",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 52
+    },
+    {
+      "name": "existsMetadata",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 56
+    },
+    {
+      "name": "ensureDirectory",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 60
+    },
+    {
+      "name": "ArchitectureMemoryService",
+      "kind": "class",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 67
+    },
+    {
+      "name": "storage",
+      "kind": "property",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 69
+    },
+    {
+      "name": "memoryDir",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 75
+    },
+    {
+      "name": "create",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 79
+    },
+    {
+      "name": "now",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 89
+    },
+    {
+      "name": "nextIdNum",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 91
+    },
+    {
+      "name": "id",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 92
+    },
+    {
+      "name": "newEntry",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 94
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 115
+    },
+    {
+      "name": "update",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 121
+    },
+    {
+      "name": "index",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 129
+    },
+    {
+      "name": "existing",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 135
+    },
+    {
+      "name": "updatedEntry",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 138
+    },
+    {
+      "name": "delete",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 164
+    },
+    {
+      "name": "list",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 193
+    },
+    {
+      "name": "get",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 198
+    },
+    {
+      "name": "search",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 203
+    },
+    {
+      "name": "queryTerms",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 206
+    },
+    {
+      "name": "ScoredEntry",
+      "kind": "interface",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 212
+    },
+    {
+      "name": "scored",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 217
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 219
+    },
+    {
+      "name": "score",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 221
+    },
+    {
+      "name": "titleTerms",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 223
+    },
+    {
+      "name": "descTerms",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 224
+    },
+    {
+      "name": "tagTerms",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 225
+    },
+    {
+      "name": "qTerm",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 227
+    },
+    {
+      "name": "ensureInitialized",
+      "kind": "method",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 251
+    },
+    {
+      "name": "existsMetadata",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 255
+    },
+    {
+      "name": "existsMemory",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 256
+    },
+    {
+      "name": "memory",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 260
+    },
+    {
+      "name": "idNum",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 265
+    },
+    {
+      "name": "metadata",
+      "kind": "variable",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 284
+    },
+    {
+      "name": "ContextAssemblerService",
+      "kind": "class",
+      "file": "packages/context-assembler/service.ts",
+      "line": 11
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/context-assembler/service.ts",
+      "line": 13
+    },
+    {
+      "name": "planner",
+      "kind": "property",
+      "file": "packages/context-assembler/service.ts",
+      "line": 14
+    },
+    {
+      "name": "budgeter",
+      "kind": "property",
+      "file": "packages/context-assembler/service.ts",
+      "line": 15
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/context-assembler/service.ts",
+      "line": 17
+    },
+    {
+      "name": "assemble",
+      "kind": "method",
+      "file": "packages/context-assembler/service.ts",
+      "line": 25
+    },
+    {
+      "name": "queryHashInput",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 40
+    },
+    {
+      "name": "queryHash",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 51
+    },
+    {
+      "name": "cacheDir",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 56
+    },
+    {
+      "name": "cachePath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 57
+    },
+    {
+      "name": "isCached",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 59
+    },
+    {
+      "name": "cached",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 63
+    },
+    {
+      "name": "symbolsPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 65
+    },
+    {
+      "name": "indexPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 66
+    },
+    {
+      "name": "relationshipsPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 67
+    },
+    {
+      "name": "graphPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 68
+    },
+    {
+      "name": "cachedTime",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 77
+    },
+    {
+      "name": "isValid",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 78
+    },
+    {
+      "name": "plan",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 92
+    },
+    {
+      "name": "fusedCandidates",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 95
+    },
+    {
+      "name": "fusionService",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 98
+    },
+    {
+      "name": "fusionResult",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 99
+    },
+    {
+      "name": "symbolsData",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 111
+    },
+    {
+      "name": "budgetCandidates",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 116
+    },
+    {
+      "name": "memoryEntriesList",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 117
+    },
+    {
+      "name": "cand",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 119
+    },
+    {
+      "name": "content",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 121
+    },
+    {
+      "name": "estimatedTokens",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 130
+    },
+    {
+      "name": "symbolCount",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 131
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 140
+    },
+    {
+      "name": "budgetResult",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 155
+    },
+    {
+      "name": "selectedFilesCandidate",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 160
+    },
+    {
+      "name": "selectedMemoryCandidates",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 161
+    },
+    {
+      "name": "selectedFiles",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 163
+    },
+    {
+      "name": "selectedFilesSet",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 164
+    },
+    {
+      "name": "selectedMemoryEntriesList",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 167
+    },
+    {
+      "name": "entryId",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 169
+    },
+    {
+      "name": "filteredSymbols",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 177
+    },
+    {
+      "name": "seenSymbols",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 178
+    },
+    {
+      "name": "sym",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 180
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 182
+    },
+    {
+      "name": "filteredRelationships",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 197
+    },
+    {
+      "name": "seenRels",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 198
+    },
+    {
+      "name": "relData",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 202
+    },
+    {
+      "name": "rel",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 204
+    },
+    {
+      "name": "filteredGraph",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 224
+    },
+    {
+      "name": "graphData",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 228
+    },
+    {
+      "name": "execPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 242
+    },
+    {
+      "name": "filteredExecutionGraph",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 243
+    },
+    {
+      "name": "execData",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 247
+    },
+    {
+      "name": "fromFile",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 255
+    },
+    {
+      "name": "toFile",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 256
+    },
+    {
+      "name": "contextPackage",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 264
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 290
+    },
+    {
+      "name": "KnowledgeFusionService",
+      "kind": "class",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 18
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 20
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 22
+    },
+    {
+      "name": "fuse",
+      "kind": "method",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 27
+    },
+    {
+      "name": "query",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 31
+    },
+    {
+      "name": "options",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 32
+    },
+    {
+      "name": "semanticRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 35
+    },
+    {
+      "name": "c",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 37
+    },
+    {
+      "name": "planner",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 41
+    },
+    {
+      "name": "plan",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 42
+    },
+    {
+      "name": "keywords",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 43
+    },
+    {
+      "name": "retriever",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 45
+    },
+    {
+      "name": "retrieval",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 46
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 50
+    },
+    {
+      "name": "graphPath",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 56
+    },
+    {
+      "name": "execPath",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 57
+    },
+    {
+      "name": "relPath",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 58
+    },
+    {
+      "name": "graph",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 66
+    },
+    {
+      "name": "execGraph",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 70
+    },
+    {
+      "name": "relData",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 74
+    },
+    {
+      "name": "semanticSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 79
+    },
+    {
+      "name": "graphRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 82
+    },
+    {
+      "name": "edge",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 85
+    },
+    {
+      "name": "graphSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 95
+    },
+    {
+      "name": "execRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 98
+    },
+    {
+      "name": "execFileRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 99
+    },
+    {
+      "name": "node",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 102
+    },
+    {
+      "name": "semScore",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 103
+    },
+    {
+      "name": "toFile",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 108
+    },
+    {
+      "name": "fromFile",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 115
+    },
+    {
+      "name": "executionSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 124
+    },
+    {
+      "name": "executionFileSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 125
+    },
+    {
+      "name": "relRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 128
+    },
+    {
+      "name": "relFileRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 129
+    },
+    {
+      "name": "rel",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 131
+    },
+    {
+      "name": "sourceId",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 136
+    },
+    {
+      "name": "targetId",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 137
+    },
+    {
+      "name": "relationshipSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 150
+    },
+    {
+      "name": "relationshipFileSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 151
+    },
+    {
+      "name": "memoryRaw",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 154
+    },
+    {
+      "name": "memoryEntriesMap",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 155
+    },
+    {
+      "name": "memoryService",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 158
+    },
+    {
+      "name": "relevantMemory",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 159
+    },
+    {
+      "name": "total",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 160
+    },
+    {
+      "name": "i",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 161
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 162
+    },
+    {
+      "name": "entryId",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 163
+    },
+    {
+      "name": "architectureSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 171
+    },
+    {
+      "name": "candidateMap",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 174
+    },
+    {
+      "name": "getOrCreateCandidate",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 176
+    },
+    {
+      "name": "cand",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 177
+    },
+    {
+      "name": "duplicateCount",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 200
+    },
+    {
+      "name": "addSignalValue",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 202
+    },
+    {
+      "name": "hadSem",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 228
+    },
+    {
+      "name": "hadSignals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 240
+    },
+    {
+      "name": "finalCandidates",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 264
+    },
+    {
+      "name": "activeVals",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 272
+    },
+    {
+      "name": "reasons",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 285
+    },
+    {
+      "name": "semanticContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 319
+    },
+    {
+      "name": "executionContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 320
+    },
+    {
+      "name": "relationshipContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 321
+    },
+    {
+      "name": "graphContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 322
+    },
+    {
+      "name": "architectureContribution",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 323
+    },
+    {
+      "name": "diagnostics",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 333
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 348
+    },
+    {
+      "name": "normalizeScores",
+      "kind": "method",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 354
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 355
+    },
+    {
+      "name": "min",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 358
+    },
+    {
+      "name": "max",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 359
+    },
+    {
+      "name": "score",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 361
+    },
+    {
+      "name": "range",
+      "kind": "variable",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 366
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ArchitectureMemoryError",
+      "target": "Error",
+      "type": "extends",
+      "file": "packages/architecture-memory/errors.ts",
+      "line": 1
+    },
+    {
+      "source": "ArchitectureMemoryError.constructor",
+      "target": "name",
+      "type": "references",
+      "file": "packages/architecture-memory/errors.ts",
+      "line": 7
+    },
+    {
+      "source": "MemoryStorage",
+      "target": "loadMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 10
+    },
+    {
+      "source": "MemoryStorage",
+      "target": "ArchitectureMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 10
+    },
+    {
+      "source": "MemoryStorage",
+      "target": "saveMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 11
+    },
+    {
+      "source": "MemoryStorage",
+      "target": "loadMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 12
+    },
+    {
+      "source": "MemoryStorage",
+      "target": "MemoryMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 12
+    },
+    {
+      "source": "MemoryStorage",
+      "target": "saveMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 13
+    },
+    {
+      "source": "MemoryStorage",
+      "target": "existsMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 14
+    },
+    {
+      "source": "MemoryStorage",
+      "target": "existsMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 15
+    },
+    {
+      "source": "MemoryStorage",
+      "target": "ensureDirectory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 16
+    },
+    {
+      "source": "FileSystemMemoryStorage",
+      "target": "MemoryStorage",
+      "type": "implements",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 19
+    },
+    {
+      "source": "FileSystemMemoryStorage.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 20
+    },
+    {
+      "source": "FileSystemMemoryStorage.getMemoryPath",
+      "target": "memoryDir",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 25
+    },
+    {
+      "source": "FileSystemMemoryStorage.getMetadataPath",
+      "target": "memoryDir",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 29
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMemory",
+      "target": "ArchitectureMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 32
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMemory",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 33
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMemory",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 33
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMemory",
+      "target": "getMemoryPath",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 33
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMemory",
+      "target": "ArchitectureMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 36
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMemory",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 37
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMemory",
+      "target": "writeJson",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 37
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMemory",
+      "target": "getMemoryPath",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 37
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMemory",
+      "target": "memory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 37
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMetadata",
+      "target": "MemoryMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 40
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMetadata",
+      "target": "getMetadataPath",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 41
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMetadata",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 42
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMetadata",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 42
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMetadata",
+      "target": "metadataPath",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 42
+    },
+    {
+      "source": "FileSystemMemoryStorage.loadMetadata",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 45
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMetadata",
+      "target": "MemoryMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 48
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMetadata",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 49
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMetadata",
+      "target": "writeJson",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 49
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMetadata",
+      "target": "getMetadataPath",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 49
+    },
+    {
+      "source": "FileSystemMemoryStorage.saveMetadata",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 49
+    },
+    {
+      "source": "FileSystemMemoryStorage.existsMemory",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 53
+    },
+    {
+      "source": "FileSystemMemoryStorage.existsMemory",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 53
+    },
+    {
+      "source": "FileSystemMemoryStorage.existsMemory",
+      "target": "getMemoryPath",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 53
+    },
+    {
+      "source": "FileSystemMemoryStorage.existsMetadata",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 57
+    },
+    {
+      "source": "FileSystemMemoryStorage.existsMetadata",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 57
+    },
+    {
+      "source": "FileSystemMemoryStorage.existsMetadata",
+      "target": "getMetadataPath",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 57
+    },
+    {
+      "source": "FileSystemMemoryStorage.ensureDirectory",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 61
+    },
+    {
+      "source": "FileSystemMemoryStorage.ensureDirectory",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 61
+    },
+    {
+      "source": "FileSystemMemoryStorage.ensureDirectory",
+      "target": "memoryDir",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 61
+    },
+    {
+      "source": "FileSystemMemoryStorage.ensureDirectory",
+      "target": "mkdir",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 62
+    },
+    {
+      "source": "ArchitectureMemoryService.storage",
+      "target": "MemoryStorage",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 69
+    },
+    {
+      "source": "ArchitectureMemoryService.constructor",
+      "target": "MemoryStorage",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 73
+    },
+    {
+      "source": "ArchitectureMemoryService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 75
+    },
+    {
+      "source": "ArchitectureMemoryService.constructor",
+      "target": "storage",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 76
+    },
+    {
+      "source": "ArchitectureMemoryService.constructor",
+      "target": "FileSystemMemoryStorage",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 76
+    },
+    {
+      "source": "ArchitectureMemoryService.constructor",
+      "target": "memoryDir",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 76
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "ArchitectureEntry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 80
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "source",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 81
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "ArchitectureSource",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 81
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "memory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 88
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 88
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "ensureInitialized",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 88
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "nextIdNum",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 92
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 95
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "id",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 96
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "now",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 99
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 103
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "newEntry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 103
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "storage",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 110
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "saveMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 110
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "saveMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 111
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "ArchitectureMemoryError",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 116
+    },
+    {
+      "source": "ArchitectureMemoryService.create",
+      "target": "error",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 116
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "ArchitectureEntry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 123
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "memory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 128
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 128
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "ensureInitialized",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 128
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 129
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "id",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 129
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "index",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 131
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "ArchitectureMemoryError",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 132
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "existing",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 139
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "now",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 141
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "updatedEntry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 144
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "storage",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 150
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "saveMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 150
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "saveMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 151
+    },
+    {
+      "source": "ArchitectureMemoryService.update",
+      "target": "error",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 156
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "memory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 168
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 168
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "ensureInitialized",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 168
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 169
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "id",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 169
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "index",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 171
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "ArchitectureMemoryError",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 172
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "storage",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 181
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "saveMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 181
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "saveMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 182
+    },
+    {
+      "source": "ArchitectureMemoryService.delete",
+      "target": "error",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 185
+    },
+    {
+      "source": "ArchitectureMemoryService.list",
+      "target": "ArchitectureEntry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 193
+    },
+    {
+      "source": "ArchitectureMemoryService.list",
+      "target": "memory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 194
+    },
+    {
+      "source": "ArchitectureMemoryService.list",
+      "target": "ensureInitialized",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 194
+    },
+    {
+      "source": "ArchitectureMemoryService.list",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 195
+    },
+    {
+      "source": "ArchitectureMemoryService.get",
+      "target": "ArchitectureEntry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 198
+    },
+    {
+      "source": "ArchitectureMemoryService.get",
+      "target": "memory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 199
+    },
+    {
+      "source": "ArchitectureMemoryService.get",
+      "target": "ensureInitialized",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 199
+    },
+    {
+      "source": "ArchitectureMemoryService.get",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 200
+    },
+    {
+      "source": "ArchitectureMemoryService.get",
+      "target": "id",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 200
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "ArchitectureEntry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 203
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "memory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 205
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "ensureInitialized",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 205
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "normalize",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 206
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "query",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 206
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "queryTerms",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 208
+    },
+    {
+      "source": "ArchitectureMemoryService.search.ScoredEntry",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 213
+    },
+    {
+      "source": "ArchitectureMemoryService.search.ScoredEntry",
+      "target": "ArchitectureEntry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 213
+    },
+    {
+      "source": "ArchitectureMemoryService.search.ScoredEntry",
+      "target": "score",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 214
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "ScoredEntry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 217
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 219
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 223
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "t",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 225
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "titleTerms",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 228
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "qTerm",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 228
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "score",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 229
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "descTerms",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 231
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "tagTerms",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 234
+    },
+    {
+      "source": "ArchitectureMemoryService.search",
+      "target": "scored",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 240
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "memory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 251
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "ArchitectureMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 251
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 251
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "MemoryMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 251
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "storage",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 253
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "ensureDirectory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 253
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "existsMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 255
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "existsMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 256
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "loadMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 260
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 263
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 264
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "id",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 264
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "idNum",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 266
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "nextIdNum",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 266
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "source",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 276
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "saveMemory",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 289
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "saveMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 290
+    },
+    {
+      "source": "ArchitectureMemoryService.ensureInitialized",
+      "target": "loadMetadata",
+      "type": "references",
+      "file": "packages/architecture-memory/service.ts",
+      "line": 314
+    },
+    {
+      "source": "ContextAssemblerService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 13
+    },
+    {
+      "source": "ContextAssemblerService.planner",
+      "target": "PlannerService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 14
+    },
+    {
+      "source": "ContextAssemblerService.budgeter",
+      "target": "ContextBudgetService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 15
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "planner",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 21
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "PlannerService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 21
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 21
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "budgeter",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 22
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "ContextBudgetService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 22
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fusedCandidates",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 34
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextPackage",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 36
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "options",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 40
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "query",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 42
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "update",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 53
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "queryHashInput",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 53
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 56
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cacheDir",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 57
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "queryHash",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 57
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cachePath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "isCached",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 61
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 63
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 71
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "stat",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 71
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "symbolsPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 71
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "indexPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 72
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "relationshipsPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 73
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "graphPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 74
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cached",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 77
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cachedTime",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 80
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "isValid",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 80
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "planner",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 92
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "plan",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 92
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "KnowledgeFusionService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 97
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fusionService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 99
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fuse",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 99
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fusionResult",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 108
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "candidates",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 108
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "symbols",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 111
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cand",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 120
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "type",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 120
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "content",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 123
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "id",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 124
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "symbolsData",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 131
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "file",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 131
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "budgetCandidates",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 133
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "score",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 135
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "estimatedTokens",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 136
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "symbolCount",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 137
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 140
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 140
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "memoryEntriesList",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 149
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "budgeter",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 155
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "budget",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 155
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "contextBudget",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 157
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "budgetResult",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 160
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "files",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 160
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedFilesCandidate",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 163
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedFiles",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 164
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedMemoryCandidates",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 168
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "entryId",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 170
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedMemoryEntriesList",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 172
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextSymbol",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 177
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedFilesSet",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 181
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "sym",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 181
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "name",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 182
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "kind",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 182
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "seenSymbols",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 183
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "key",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 183
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "add",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 184
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filteredSymbols",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 185
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "line",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 189
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextRelationship",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 197
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 202
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "relData",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 204
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "rel",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 205
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "source",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 206
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "target",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 206
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "seenRels",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 207
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filteredRelationships",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 209
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextGraph",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 224
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "nodes",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 224
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "edges",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 224
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filteredGraph",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 230
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "graphData",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 231
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "execPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 245
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filteredExecutionGraph",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 249
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "execData",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 250
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fromFile",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 257
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "toFile",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 257
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "graph",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 275
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "usedTokens",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 278
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "mkdir",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 283
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "writeJson",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 286
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "contextPackage",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 286
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "error",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 292
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextAssemblerError",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 292
+    },
+    {
+      "source": "KnowledgeFusionService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 20
+    },
+    {
+      "source": "KnowledgeFusionService.constructor",
+      "target": "FusionStrategy",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 24
+    },
+    {
+      "source": "KnowledgeFusionService.constructor",
+      "target": "WeightedFusionStrategy",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 24
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "FusionRequest",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 27
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "FusionResult",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 27
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "query",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 31
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "options",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 32
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semanticCandidates",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 36
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semanticRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 38
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "set",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 38
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "c",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 38
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "score",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 38
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "PlannerService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 41
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 41
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "planner",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 42
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "plan",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 42
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "keywords",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 43
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "RetrieverService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 45
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "retriever",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 46
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "retrieve",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 46
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "retrieval",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 50
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "files",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 50
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "file",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 51
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 61
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 61
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graphPath",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 61
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "execPath",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 62
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relPath",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 63
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 67
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "nodes",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 67
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "edges",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 67
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 75
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "normalizeScores",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 79
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semScore",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 84
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semanticSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 84
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 84
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graph",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 85
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "edge",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 86
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graphRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 87
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "get",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 87
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "execGraph",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 102
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "node",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 103
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "id",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 106
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "execRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 107
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "toFile",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 109
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "execFileRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 110
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "fromFile",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 116
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relData",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 131
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "rel",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 132
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "source",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 136
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "target",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 137
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 139
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "targetId",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 139
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relFileRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 140
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "sourceId",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 143
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "ArchitectureMemoryService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 158
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "memoryService",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 159
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "search",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 159
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relevantMemory",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 160
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "i",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 161
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "total",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 161
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 163
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "memoryRaw",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 164
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "entryId",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 164
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "memoryEntriesMap",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 165
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "KnowledgeCandidate",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 174
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "candidateMap",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 177
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "cand",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 178
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "type",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 181
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 184
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semantic",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 186
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "reasons",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 193
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "CandidateSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 205
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "getOrCreateCandidate",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 209
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "max",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 212
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "addSignalValue",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 223
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graphSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 227
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "hadSem",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 230
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "duplicateCount",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 230
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "executionSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 234
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "executionFileSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 239
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "hadSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 242
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relationshipSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 246
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relationshipFileSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 251
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "architectureSignals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 258
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "activeVals",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 280
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "finalCandidates",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 303
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "semanticContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 326
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "executionContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 327
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "relationshipContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 328
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "graphContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 329
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "architectureContribution",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 330
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "FusionDiagnostics",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 333
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "candidates",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 344
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "diagnostics",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 345
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "KnowledgeFusionError",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 349
+    },
+    {
+      "source": "KnowledgeFusionService.fuse",
+      "target": "error",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 349
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "scores",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 356
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "normalized",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 356
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "score",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 362
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "min",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 362
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "max",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 363
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "id",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 368
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 368
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "range",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 369
+    },
+    {
+      "source": "KnowledgeFusionService.normalizeScores",
+      "target": "set",
+      "type": "references",
+      "file": "packages/knowledge-fusion/service.ts",
+      "line": 370
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "packages/architecture-memory/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/architecture-memory/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/context-assembler/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/filesystem/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/knowledge-fusion/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/planner/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/semantic/index.ts",
+        "type": "file"
+      }
+    ],
+    "edges": [
+      {
+        "from": "packages/architecture-memory/index.ts",
+        "to": "packages/architecture-memory/service.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/architecture-memory/index.ts",
+        "to": "packages/architecture-memory/errors.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/architecture-memory/service.ts",
+        "to": "fs/promises",
+        "type": "imports"
+      },
+      {
+        "from": "packages/architecture-memory/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/architecture-memory/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/architecture-memory/service.ts",
+        "to": "packages/semantic/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/architecture-memory/service.ts",
+        "to": "packages/architecture-memory/errors.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "fs/promises",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "crypto",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "packages/planner/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts",
+        "to": "packages/planner/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/knowledge-fusion/service.ts",
+        "to": "packages/architecture-memory/index.ts",
+        "type": "imports"
+      }
+    ]
+  },
+  "architectureMemory": [
+    {
+      "id": "ARCH-000003",
+      "title": "Legacy ADR entry",
+      "category": "adr",
+      "description": "This is a legacy ADR",
+      "tags": [
+        "legacy"
+      ],
+      "relatedFiles": [],
+      "relatedSymbols": [],
+      "createdAt": "2026-06-26T19:47:01.922Z",
+      "updatedAt": "2026-06-26T19:47:01.922Z",
+      "source": "user",
+      "confidence": 1
+    }
+  ],
+  "estimatedTokens": 9997
+}

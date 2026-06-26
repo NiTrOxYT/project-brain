@@ -1,0 +1,6725 @@
+{
+  "generatedAt": "2026-06-26T20:20:43.475Z",
+  "query": "implement agent runtime diagnostics dashboard",
+  "plan": {
+    "originalQuery": "implement agent runtime diagnostics dashboard",
+    "normalizedQuery": "implement agent runtime diagnostics dashboard",
+    "intent": "feature",
+    "keywords": [
+      "implement",
+      "agent",
+      "runtime",
+      "diagnostics",
+      "dashboard"
+    ],
+    "targetModules": [
+      "packages/agent-runtime/errors.ts",
+      "packages/agent-runtime/artifacts.ts",
+      "packages/agent-runtime/events.ts",
+      "packages/agent-runtime/executor.ts",
+      "packages/agent-runtime/hooks.ts",
+      "packages/agent-runtime/middleware.ts",
+      "packages/agent-runtime/provider.ts",
+      "packages/agent-runtime/registry.ts",
+      "packages/agent-runtime/runtime.ts",
+      "packages/agent-runtime/service.ts",
+      "packages/agent-runtime/types.ts",
+      "packages/cache/types.ts"
+    ],
+    "contextBudget": 12,
+    "confidence": 0.95
+  },
+  "files": [
+    {
+      "path": "packages/test-agent-runtime-refinement.ts",
+      "score": 615.9375,
+      "estimatedTokens": 5267
+    },
+    {
+      "path": "packages/agent-runtime/service.ts",
+      "score": 520.529153539241,
+      "estimatedTokens": 3879
+    },
+    {
+      "path": "packages/agent-runtime/types.ts",
+      "score": 356.5875843506283,
+      "estimatedTokens": 526
+    },
+    {
+      "path": "packages/agent-runtime/registry.ts",
+      "score": 214.52454927303927,
+      "estimatedTokens": 824
+    },
+    {
+      "path": "packages/agent-runtime/index.ts",
+      "score": 135,
+      "estimatedTokens": 75
+    },
+    {
+      "path": "packages/orchestrator/service.ts",
+      "score": 121.55977804675764,
+      "estimatedTokens": 542,
+      "lastModified": "2026-06-26T21:57:57+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/orchestrator/index.ts",
+      "score": 104.49541284403671,
+      "estimatedTokens": 34,
+      "lastModified": "2026-06-26T21:57:57+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/runtime/service.ts",
+      "score": 100.33864816832438,
+      "estimatedTokens": 624,
+      "lastModified": "2026-06-27T00:22:47+05:30",
+      "commitCount": 3,
+      "churnScore": 3,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/agent-runtime/events.ts",
+      "score": 79.0457166807853,
+      "estimatedTokens": 99
+    },
+    {
+      "path": "path",
+      "score": 74.3119266055046,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/agent-runtime/artifacts.ts",
+      "score": 69.47211270640915,
+      "estimatedTokens": 85
+    },
+    {
+      "path": "fs",
+      "score": 61.926605504587165,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/orchestrator/errors.ts",
+      "score": 61.25803874835461,
+      "estimatedTokens": 39,
+      "lastModified": "2026-06-26T21:57:57+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/core/types.js",
+      "score": 50.000000000000014,
+      "estimatedTokens": 3,
+      "lastModified": "2026-06-26T22:53:38+05:30",
+      "commitCount": 2,
+      "churnScore": 2,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/orchestrator/types.js",
+      "score": 50.000000000000014,
+      "estimatedTokens": 3,
+      "lastModified": "2026-06-26T21:57:57+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "process",
+      "score": 39.633027522935784,
+      "estimatedTokens": 0
+    },
+    {
+      "path": ".brain/graph/dependencies.json",
+      "score": 0,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": ".gitignore",
+      "score": 0,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "crypto",
+      "score": 0,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "dist/errors.js",
+      "score": 0,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/indexer/error.js",
+      "score": 0,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/service.js",
+      "score": 0,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "fs/promises",
+      "score": 0,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "LICENSE",
+      "score": 0,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/manifest/schema.ts",
+      "score": 0,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    }
+  ],
+  "symbols": [
+    {
+      "name": "RuntimeArtifact",
+      "kind": "interface",
+      "file": "packages/agent-runtime/artifacts.ts",
+      "line": 1
+    },
+    {
+      "name": "RuntimeEventType",
+      "kind": "type",
+      "file": "packages/agent-runtime/events.ts",
+      "line": 1
+    },
+    {
+      "name": "RuntimeEvent",
+      "kind": "interface",
+      "file": "packages/agent-runtime/events.ts",
+      "line": 13
+    },
+    {
+      "name": "RUNTIME_VERSION",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 5
+    },
+    {
+      "name": "isCompatible",
+      "kind": "function",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 7
+    },
+    {
+      "name": "cleanProvider",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 9
+    },
+    {
+      "name": "pMajor",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 10
+    },
+    {
+      "name": "rMajor",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 11
+    },
+    {
+      "name": "AgentRegistry",
+      "kind": "class",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 15
+    },
+    {
+      "name": "providers",
+      "kind": "property",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 16
+    },
+    {
+      "name": "registrationInfo",
+      "kind": "property",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 17
+    },
+    {
+      "name": "nextRegistrationIndex",
+      "kind": "property",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 18
+    },
+    {
+      "name": "register",
+      "kind": "method",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 20
+    },
+    {
+      "name": "unregister",
+      "kind": "method",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 31
+    },
+    {
+      "name": "get",
+      "kind": "method",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 36
+    },
+    {
+      "name": "list",
+      "kind": "method",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 40
+    },
+    {
+      "name": "info",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 42
+    },
+    {
+      "name": "discover",
+      "kind": "method",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 57
+    },
+    {
+      "name": "matches",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 59
+    },
+    {
+      "name": "priorityA",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 72
+    },
+    {
+      "name": "priorityB",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 73
+    },
+    {
+      "name": "regA",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 79
+    },
+    {
+      "name": "regB",
+      "kind": "variable",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 80
+    },
+    {
+      "name": "MockAgentProvider",
+      "kind": "class",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 23
+    },
+    {
+      "name": "id",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 24
+    },
+    {
+      "name": "name",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 25
+    },
+    {
+      "name": "capabilities",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 26
+    },
+    {
+      "name": "priority",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 37
+    },
+    {
+      "name": "version",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 38
+    },
+    {
+      "name": "supportedRuntimeVersion",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 39
+    },
+    {
+      "name": "health",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 40
+    },
+    {
+      "name": "metadata",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 41
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 43
+    },
+    {
+      "name": "shutdown",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 44
+    },
+    {
+      "name": "supportsCapability",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 46
+    },
+    {
+      "name": "execute",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 50
+    },
+    {
+      "name": "progress",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 63
+    },
+    {
+      "name": "artifactType",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 102
+    },
+    {
+      "name": "artifact",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 113
+    },
+    {
+      "name": "pause",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 160
+    },
+    {
+      "name": "resume",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 161
+    },
+    {
+      "name": "cancel",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 162
+    },
+    {
+      "name": "AgentRuntimeService",
+      "kind": "class",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 166
+    },
+    {
+      "name": "registry",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 167
+    },
+    {
+      "name": "engine",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 168
+    },
+    {
+      "name": "middlewares",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 170
+    },
+    {
+      "name": "hooks",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 171
+    },
+    {
+      "name": "timings",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 172
+    },
+    {
+      "name": "providerSelectionReasoning",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 177
+    },
+    {
+      "name": "replayStatistics",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 178
+    },
+    {
+      "name": "snapshotStatistics",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 179
+    },
+    {
+      "name": "sessionId",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 180
+    },
+    {
+      "name": "totalExecutionTimeMs",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 183
+    },
+    {
+      "name": "taskCounts",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 184
+    },
+    {
+      "name": "totalArtifactsCount",
+      "kind": "property",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 187
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 189
+    },
+    {
+      "name": "addMiddleware",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 197
+    },
+    {
+      "name": "addHooks",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 201
+    },
+    {
+      "name": "list",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 204
+    },
+    {
+      "name": "desc",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 206
+    },
+    {
+      "name": "prov",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 207
+    },
+    {
+      "name": "e",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 211
+    },
+    {
+      "name": "startExecution",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 221
+    },
+    {
+      "name": "providers",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 225
+    },
+    {
+      "name": "reasoning",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 226
+    },
+    {
+      "name": "selected",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 228
+    },
+    {
+      "name": "executor",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 236
+    },
+    {
+      "name": "runningTasks",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 239
+    },
+    {
+      "name": "completedTasks",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 240
+    },
+    {
+      "name": "providerAssignments",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 241
+    },
+    {
+      "name": "retryCounts",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 242
+    },
+    {
+      "name": "snapshotId",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 249
+    },
+    {
+      "name": "response",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 252
+    },
+    {
+      "name": "attempt",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 260
+    },
+    {
+      "name": "elapsed",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 276
+    },
+    {
+      "name": "register",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 288
+    },
+    {
+      "name": "h",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 291
+    },
+    {
+      "name": "unregister",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 300
+    },
+    {
+      "name": "providers",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 312
+    },
+    {
+      "name": "capabilities",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 316
+    },
+    {
+      "name": "caps",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 317
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 318
+    },
+    {
+      "name": "c",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 319
+    },
+    {
+      "name": "diagnostics",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 326
+    },
+    {
+      "name": "provider",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 343
+    },
+    {
+      "name": "persistEvent",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 361
+    },
+    {
+      "name": "runtimeDir",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 363
+    },
+    {
+      "name": "eventsFile",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 367
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 369
+    },
+    {
+      "name": "saveSnapshot",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 372
+    },
+    {
+      "name": "snapshotFile",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 384
+    },
+    {
+      "name": "snapshot",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 385
+    },
+    {
+      "name": "recover",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 401
+    },
+    {
+      "name": "replay",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 411
+    },
+    {
+      "name": "events",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 412
+    },
+    {
+      "name": "lines",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 416
+    },
+    {
+      "name": "line",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 417
+    },
+    {
+      "name": "ev",
+      "kind": "variable",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 419
+    },
+    {
+      "name": "replaySession",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 430
+    },
+    {
+      "name": "getSessionId",
+      "kind": "method",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 450
+    },
+    {
+      "name": "AgentCapability",
+      "kind": "type",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 4
+    },
+    {
+      "name": "TaskLifecycle",
+      "kind": "type",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 16
+    },
+    {
+      "name": "RuntimeTask",
+      "kind": "interface",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 27
+    },
+    {
+      "name": "RuntimeContext",
+      "kind": "interface",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 39
+    },
+    {
+      "name": "RuntimeRequest",
+      "kind": "interface",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 45
+    },
+    {
+      "name": "AgentDescriptor",
+      "kind": "interface",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 50
+    },
+    {
+      "name": "RuntimeMetrics",
+      "kind": "interface",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 62
+    },
+    {
+      "name": "RuntimeDiagnostics",
+      "kind": "interface",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 75
+    },
+    {
+      "name": "RuntimeResponse",
+      "kind": "interface",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 87
+    },
+    {
+      "name": "OrchestratorError",
+      "kind": "class",
+      "file": "packages/orchestrator/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/orchestrator/errors.ts",
+      "line": 2
+    },
+    {
+      "name": "MultiAgentOrchestratorService",
+      "kind": "class",
+      "file": "packages/orchestrator/service.ts",
+      "line": 7
+    },
+    {
+      "name": "runtimeService",
+      "kind": "property",
+      "file": "packages/orchestrator/service.ts",
+      "line": 8
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/orchestrator/service.ts",
+      "line": 10
+    },
+    {
+      "name": "orchestrate",
+      "kind": "method",
+      "file": "packages/orchestrator/service.ts",
+      "line": 16
+    },
+    {
+      "name": "scheduler",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 24
+    },
+    {
+      "name": "schedule",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 25
+    },
+    {
+      "name": "executor",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 28
+    },
+    {
+      "name": "execResult",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 29
+    },
+    {
+      "name": "OrchestratorService",
+      "kind": "class",
+      "file": "packages/orchestrator/service.ts",
+      "line": 43
+    },
+    {
+      "name": "execute",
+      "kind": "method",
+      "file": "packages/orchestrator/service.ts",
+      "line": 46
+    },
+    {
+      "name": "projectRoot",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 47
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 49
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/orchestrator/service.ts",
+      "line": 50
+    },
+    {
+      "name": "RuntimeService",
+      "kind": "class",
+      "file": "packages/runtime/service.ts",
+      "line": 14
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/runtime/service.ts",
+      "line": 16
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/runtime/service.ts",
+      "line": 20
+    },
+    {
+      "name": "workspace",
+      "kind": "variable",
+      "file": "packages/runtime/service.ts",
+      "line": 22
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/runtime/service.ts",
+      "line": 26
+    },
+    {
+      "name": "workspaceRoot",
+      "kind": "variable",
+      "file": "packages/runtime/service.ts",
+      "line": 28
+    },
+    {
+      "name": "PriorityTestProvider",
+      "kind": "class",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 24
+    },
+    {
+      "name": "id",
+      "kind": "property",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 25
+    },
+    {
+      "name": "name",
+      "kind": "property",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 26
+    },
+    {
+      "name": "capabilities",
+      "kind": "property",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 27
+    },
+    {
+      "name": "priority",
+      "kind": "property",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 28
+    },
+    {
+      "name": "health",
+      "kind": "property",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 29
+    },
+    {
+      "name": "supportedRuntimeVersion",
+      "kind": "property",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 30
+    },
+    {
+      "name": "shutdownCalled",
+      "kind": "property",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 31
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 33
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 42
+    },
+    {
+      "name": "shutdown",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 43
+    },
+    {
+      "name": "supportsCapability",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 46
+    },
+    {
+      "name": "execute",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 49
+    },
+    {
+      "name": "artifact",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 57
+    },
+    {
+      "name": "pause",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 87
+    },
+    {
+      "name": "resume",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 88
+    },
+    {
+      "name": "cancel",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 89
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 92
+    },
+    {
+      "name": "workspaceRoot",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 93
+    },
+    {
+      "name": "runtimeService",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 96
+    },
+    {
+      "name": "runtime",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 99
+    },
+    {
+      "name": "pLow",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 106
+    },
+    {
+      "name": "pHigh",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 107
+    },
+    {
+      "name": "pMid1",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 108
+    },
+    {
+      "name": "pMid2",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 109
+    },
+    {
+      "name": "task",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 116
+    },
+    {
+      "name": "negotiated",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 117
+    },
+    {
+      "name": "pOffline",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 136
+    },
+    {
+      "name": "negotiatedWithOffline",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 139
+    },
+    {
+      "name": "pIncompatible",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 149
+    },
+    {
+      "name": "negotiatedWithIncompatible",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 152
+    },
+    {
+      "name": "trace",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 164
+    },
+    {
+      "name": "mw1",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 166
+    },
+    {
+      "name": "beforeExecute",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 168
+    },
+    {
+      "name": "afterExecute",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 171
+    },
+    {
+      "name": "mw2",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 176
+    },
+    {
+      "name": "mwMutator",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 186
+    },
+    {
+      "name": "response",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 196
+    },
+    {
+      "name": "runtimeWithMutator",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 209
+    },
+    {
+      "name": "mutationThrew",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 212
+    },
+    {
+      "name": "e",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 218
+    },
+    {
+      "name": "hookTrace",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 233
+    },
+    {
+      "name": "hooks",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 234
+    },
+    {
+      "name": "onProviderRegistered",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 235
+    },
+    {
+      "name": "onTaskQueued",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 238
+    },
+    {
+      "name": "onTaskStarted",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 241
+    },
+    {
+      "name": "onTaskFinished",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 244
+    },
+    {
+      "name": "runtimeWithHooks",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 249
+    },
+    {
+      "name": "uniqueTaskId",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 268
+    },
+    {
+      "name": "events",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 271
+    },
+    {
+      "name": "executeRes",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 272
+    },
+    {
+      "name": "art",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 280
+    },
+    {
+      "name": "artifactProducedEvents",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 289
+    },
+    {
+      "name": "snapshotPath",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 303
+    },
+    {
+      "name": "snapshot",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 310
+    },
+    {
+      "name": "recovered",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 320
+    },
+    {
+      "name": "replayed",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 332
+    },
+    {
+      "name": "sessionReplayed",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 343
+    },
+    {
+      "name": "diags",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 355
+    },
+    {
+      "name": "timeoutTask",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 376
+    },
+    {
+      "name": "runtimeForTimeout",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 377
+    },
+    {
+      "name": "blockProv",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 380
+    },
+    {
+      "name": "timeoutRes",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 384
+    },
+    {
+      "name": "shutdownHookCalled",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 402
+    },
+    {
+      "name": "onRuntimeShutdown",
+      "kind": "method",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 404
+    },
+    {
+      "name": "planner",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 425
+    },
+    {
+      "name": "fuser",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 426
+    },
+    {
+      "name": "orchestrator",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 427
+    },
+    {
+      "name": "query",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 430
+    },
+    {
+      "name": "candidatesResult",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 431
+    },
+    {
+      "name": "plan",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 441
+    },
+    {
+      "name": "execResult",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 448
+    },
+    {
+      "name": "engine",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 465
+    },
+    {
+      "name": "queryResult",
+      "kind": "variable",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 466
+    }
+  ],
+  "relationships": [
+    {
+      "source": "RuntimeArtifact",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/artifacts.ts",
+      "line": 2
+    },
+    {
+      "source": "RuntimeArtifact",
+      "target": "type",
+      "type": "references",
+      "file": "packages/agent-runtime/artifacts.ts",
+      "line": 4
+    },
+    {
+      "source": "RuntimeArtifact",
+      "target": "content",
+      "type": "references",
+      "file": "packages/agent-runtime/artifacts.ts",
+      "line": 6
+    },
+    {
+      "source": "RuntimeArtifact",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/agent-runtime/artifacts.ts",
+      "line": 7
+    },
+    {
+      "source": "RuntimeArtifact",
+      "target": "version",
+      "type": "references",
+      "file": "packages/agent-runtime/artifacts.ts",
+      "line": 8
+    },
+    {
+      "source": "RuntimeArtifact",
+      "target": "provider",
+      "type": "references",
+      "file": "packages/agent-runtime/artifacts.ts",
+      "line": 10
+    },
+    {
+      "source": "RuntimeEvent",
+      "target": "type",
+      "type": "references",
+      "file": "packages/agent-runtime/events.ts",
+      "line": 14
+    },
+    {
+      "source": "RuntimeEvent",
+      "target": "RuntimeEventType",
+      "type": "references",
+      "file": "packages/agent-runtime/events.ts",
+      "line": 14
+    },
+    {
+      "source": "RuntimeEvent",
+      "target": "sessionId",
+      "type": "references",
+      "file": "packages/agent-runtime/events.ts",
+      "line": 18
+    },
+    {
+      "source": "isCompatible",
+      "target": "RUNTIME_VERSION",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 7
+    },
+    {
+      "source": "isCompatible",
+      "target": "cleanProvider",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 10
+    },
+    {
+      "source": "isCompatible",
+      "target": "pMajor",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 12
+    },
+    {
+      "source": "isCompatible",
+      "target": "rMajor",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 12
+    },
+    {
+      "source": "AgentRegistry.providers",
+      "target": "AgentProvider",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 16
+    },
+    {
+      "source": "AgentRegistry.registrationInfo",
+      "target": "index",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 17
+    },
+    {
+      "source": "AgentRegistry.register",
+      "target": "AgentProvider",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 20
+    },
+    {
+      "source": "AgentRegistry.register",
+      "target": "provider",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 21
+    },
+    {
+      "source": "AgentRegistry.register",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 21
+    },
+    {
+      "source": "AgentRegistry.register",
+      "target": "AgentRuntimeError",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 22
+    },
+    {
+      "source": "AgentRegistry.register",
+      "target": "providers",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 24
+    },
+    {
+      "source": "AgentRegistry.register",
+      "target": "set",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 24
+    },
+    {
+      "source": "AgentRegistry.register",
+      "target": "registrationInfo",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 25
+    },
+    {
+      "source": "AgentRegistry.register",
+      "target": "index",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 26
+    },
+    {
+      "source": "AgentRegistry.register",
+      "target": "nextRegistrationIndex",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 26
+    },
+    {
+      "source": "AgentRegistry.unregister",
+      "target": "providers",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 32
+    },
+    {
+      "source": "AgentRegistry.unregister",
+      "target": "delete",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 32
+    },
+    {
+      "source": "AgentRegistry.unregister",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 32
+    },
+    {
+      "source": "AgentRegistry.unregister",
+      "target": "registrationInfo",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 33
+    },
+    {
+      "source": "AgentRegistry.get",
+      "target": "AgentProvider",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 36
+    },
+    {
+      "source": "AgentRegistry.get",
+      "target": "providers",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 37
+    },
+    {
+      "source": "AgentRegistry.get",
+      "target": "get",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 37
+    },
+    {
+      "source": "AgentRegistry.get",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 37
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "AgentDescriptor",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 40
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "providers",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 41
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "registrationInfo",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 42
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "get",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 42
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "p",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 42
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 42
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "name",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 45
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "capabilities",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 46
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "priority",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 47
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "version",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 48
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "supportedRuntimeVersion",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 49
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "health",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 50
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "info",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 51
+    },
+    {
+      "source": "AgentRegistry.list",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 52
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "AgentCapability",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 57
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "AgentProvider",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 57
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "providers",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 59
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "p",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 61
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "supportsCapability",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 61
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "health",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 63
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "isCompatible",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 65
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "supportedRuntimeVersion",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 65
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "matches",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 70
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "priority",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 72
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "priorityA",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 74
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "priorityB",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 74
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "registrationInfo",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 79
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "get",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 79
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 79
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "regA",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 81
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "index",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 81
+    },
+    {
+      "source": "AgentRegistry.discover",
+      "target": "regB",
+      "type": "references",
+      "file": "packages/agent-runtime/registry.ts",
+      "line": 81
+    },
+    {
+      "source": "MockAgentProvider",
+      "target": "AgentProvider",
+      "type": "implements",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 23
+    },
+    {
+      "source": "MockAgentProvider.capabilities",
+      "target": "AgentCapability",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 26
+    },
+    {
+      "source": "MockAgentProvider.supportsCapability",
+      "target": "AgentCapability",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 46
+    },
+    {
+      "source": "MockAgentProvider.supportsCapability",
+      "target": "capabilities",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 47
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "RuntimeTask",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 51
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "RuntimeContext",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 52
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "RuntimeEvent",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 53
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "RuntimeResponse",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 54
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "type",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 57
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "task",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 58
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 58
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "progress",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 68
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "context",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 73
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "simulateFailure",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 73
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "error",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 78
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "status",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 83
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "provider",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 87
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "name",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 87
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "retries",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 90
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "RuntimeArtifact",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 102
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "artifactType",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 104
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "file",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 117
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "content",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 118
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "version",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 119
+    },
+    {
+      "source": "MockAgentProvider.execute",
+      "target": "artifact",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 131
+    },
+    {
+      "source": "AgentRuntimeService.registry",
+      "target": "AgentRegistry",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 167
+    },
+    {
+      "source": "AgentRuntimeService.engine",
+      "target": "RuntimeEngine",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 168
+    },
+    {
+      "source": "AgentRuntimeService.middlewares",
+      "target": "RuntimeMiddleware",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 170
+    },
+    {
+      "source": "AgentRuntimeService.hooks",
+      "target": "RuntimeHooks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 171
+    },
+    {
+      "source": "AgentRuntimeService.sessionId",
+      "target": "now",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 180
+    },
+    {
+      "source": "AgentRuntimeService.taskCounts",
+      "target": "TaskLifecycle",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 184
+    },
+    {
+      "source": "AgentRuntimeService.constructor",
+      "target": "engine",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 192
+    },
+    {
+      "source": "AgentRuntimeService.constructor",
+      "target": "RuntimeEngine",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 192
+    },
+    {
+      "source": "AgentRuntimeService.constructor",
+      "target": "registry",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 192
+    },
+    {
+      "source": "AgentRuntimeService.constructor",
+      "target": "register",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 194
+    },
+    {
+      "source": "AgentRuntimeService.constructor",
+      "target": "MockAgentProvider",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 194
+    },
+    {
+      "source": "AgentRuntimeService.addMiddleware",
+      "target": "RuntimeMiddleware",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 197
+    },
+    {
+      "source": "AgentRuntimeService.addMiddleware",
+      "target": "middlewares",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 198
+    },
+    {
+      "source": "AgentRuntimeService.addHooks",
+      "target": "RuntimeHooks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 201
+    },
+    {
+      "source": "AgentRuntimeService.addHooks",
+      "target": "hooks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 202
+    },
+    {
+      "source": "AgentRuntimeService.addHooks",
+      "target": "registry",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 204
+    },
+    {
+      "source": "AgentRuntimeService.addHooks",
+      "target": "list",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 204
+    },
+    {
+      "source": "AgentRuntimeService.addHooks",
+      "target": "onProviderRegistered",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 205
+    },
+    {
+      "source": "AgentRuntimeService.addHooks",
+      "target": "get",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 207
+    },
+    {
+      "source": "AgentRuntimeService.addHooks",
+      "target": "desc",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 207
+    },
+    {
+      "source": "AgentRuntimeService.addHooks",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 207
+    },
+    {
+      "source": "AgentRuntimeService.addHooks",
+      "target": "prov",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 208
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "RuntimeRequest",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 218
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "RuntimeEvent",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 219
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "RuntimeResponse",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 220
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "now",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 221
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "taskCounts",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 222
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "registry",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 225
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "discover",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 225
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "request",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 225
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "task",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 225
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "type",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 225
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "providers",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 226
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "providerSelectionReasoning",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 229
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "reasoning",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 230
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "selected",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 230
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "name",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 230
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 230
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "priority",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 230
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "health",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 230
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "version",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 230
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "RuntimeExecutor",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 236
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "engine",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 236
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "middlewares",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 236
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "hooks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 236
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "timings",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 236
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "providerAssignments",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 245
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "saveSnapshot",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 249
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "runningTasks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 249
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "completedTasks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 249
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "retryCounts",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 249
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "context",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 250
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "snapshotId",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 250
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "executor",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 252
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "executeTask",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 252
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "sessionId",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 254
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "persistEvent",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 255
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "attempt",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 260
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "response",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 270
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "status",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 270
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "startExecution",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 276
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "totalExecutionTimeMs",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 277
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "elapsed",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 277
+    },
+    {
+      "source": "AgentRuntimeService.execute",
+      "target": "totalArtifactsCount",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 278
+    },
+    {
+      "source": "AgentRuntimeService.register",
+      "target": "AgentProvider",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 288
+    },
+    {
+      "source": "AgentRuntimeService.register",
+      "target": "registry",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 289
+    },
+    {
+      "source": "AgentRuntimeService.register",
+      "target": "register",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 289
+    },
+    {
+      "source": "AgentRuntimeService.register",
+      "target": "provider",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 289
+    },
+    {
+      "source": "AgentRuntimeService.register",
+      "target": "hooks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 291
+    },
+    {
+      "source": "AgentRuntimeService.register",
+      "target": "h",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 292
+    },
+    {
+      "source": "AgentRuntimeService.register",
+      "target": "onProviderRegistered",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 292
+    },
+    {
+      "source": "AgentRuntimeService.unregister",
+      "target": "registry",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 301
+    },
+    {
+      "source": "AgentRuntimeService.unregister",
+      "target": "unregister",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 301
+    },
+    {
+      "source": "AgentRuntimeService.unregister",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 301
+    },
+    {
+      "source": "AgentRuntimeService.unregister",
+      "target": "hooks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 303
+    },
+    {
+      "source": "AgentRuntimeService.unregister",
+      "target": "h",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 304
+    },
+    {
+      "source": "AgentRuntimeService.providers",
+      "target": "AgentDescriptor",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 312
+    },
+    {
+      "source": "AgentRuntimeService.providers",
+      "target": "registry",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 313
+    },
+    {
+      "source": "AgentRuntimeService.providers",
+      "target": "list",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 313
+    },
+    {
+      "source": "AgentRuntimeService.capabilities",
+      "target": "AgentCapability",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 316
+    },
+    {
+      "source": "AgentRuntimeService.capabilities",
+      "target": "registry",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 318
+    },
+    {
+      "source": "AgentRuntimeService.capabilities",
+      "target": "list",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 318
+    },
+    {
+      "source": "AgentRuntimeService.capabilities",
+      "target": "p",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 319
+    },
+    {
+      "source": "AgentRuntimeService.capabilities",
+      "target": "capabilities",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 319
+    },
+    {
+      "source": "AgentRuntimeService.capabilities",
+      "target": "caps",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 320
+    },
+    {
+      "source": "AgentRuntimeService.capabilities",
+      "target": "add",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 320
+    },
+    {
+      "source": "AgentRuntimeService.capabilities",
+      "target": "c",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 320
+    },
+    {
+      "source": "AgentRuntimeService.diagnostics",
+      "target": "RuntimeDiagnostics",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 326
+    },
+    {
+      "source": "AgentRuntimeService.diagnostics",
+      "target": "totalExecutionTimeMs",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 328
+    },
+    {
+      "source": "AgentRuntimeService.diagnostics",
+      "target": "taskCounts",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 329
+    },
+    {
+      "source": "AgentRuntimeService.diagnostics",
+      "target": "totalArtifactsCount",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 330
+    },
+    {
+      "source": "AgentRuntimeService.diagnostics",
+      "target": "providerSelectionReasoning",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 331
+    },
+    {
+      "source": "AgentRuntimeService.diagnostics",
+      "target": "timings",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 332
+    },
+    {
+      "source": "AgentRuntimeService.diagnostics",
+      "target": "replayStatistics",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 335
+    },
+    {
+      "source": "AgentRuntimeService.diagnostics",
+      "target": "snapshotStatistics",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 336
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "registry",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 341
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "list",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 341
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "get",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 343
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "desc",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 343
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 343
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "provider",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 344
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "shutdown",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 346
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "hooks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 352
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "h",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 353
+    },
+    {
+      "source": "AgentRuntimeService.shutdown",
+      "target": "onRuntimeShutdown",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 353
+    },
+    {
+      "source": "AgentRuntimeService.persistEvent",
+      "target": "RuntimeEvent",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 361
+    },
+    {
+      "source": "AgentRuntimeService.persistEvent",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 363
+    },
+    {
+      "source": "AgentRuntimeService.persistEvent",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 364
+    },
+    {
+      "source": "AgentRuntimeService.persistEvent",
+      "target": "runtimeDir",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 364
+    },
+    {
+      "source": "AgentRuntimeService.persistEvent",
+      "target": "eventsFile",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 368
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "now",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 378
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 380
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 381
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "runtimeDir",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 381
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 386
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "snapshotId",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 386
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "runningTasks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 388
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "completedTasks",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 389
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "providerAssignments",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 390
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "retryCounts",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 391
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "timings",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 392
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "snapshotFile",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 394
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "snapshot",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 394
+    },
+    {
+      "source": "AgentRuntimeService.saveSnapshot",
+      "target": "snapshotStatistics",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 395
+    },
+    {
+      "source": "AgentRuntimeService.recover",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 403
+    },
+    {
+      "source": "AgentRuntimeService.recover",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 404
+    },
+    {
+      "source": "AgentRuntimeService.recover",
+      "target": "snapshotFile",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 404
+    },
+    {
+      "source": "AgentRuntimeService.recover",
+      "target": "parse",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 405
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "RuntimeEvent",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 411
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 414
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 415
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "eventsFile",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 415
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "lines",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 417
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "line",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 418
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "parse",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 419
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "ev",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 420
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "events",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 421
+    },
+    {
+      "source": "AgentRuntimeService.replay",
+      "target": "replayStatistics",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 426
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "RuntimeEvent",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 430
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 433
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 434
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "eventsFile",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 434
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "lines",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 436
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "line",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 437
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "parse",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 438
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "ev",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 439
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "sessionId",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 439
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "events",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 440
+    },
+    {
+      "source": "AgentRuntimeService.replaySession",
+      "target": "replayStatistics",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 445
+    },
+    {
+      "source": "AgentRuntimeService.getSessionId",
+      "target": "sessionId",
+      "type": "references",
+      "file": "packages/agent-runtime/service.ts",
+      "line": 451
+    },
+    {
+      "source": "RuntimeTask",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 28
+    },
+    {
+      "source": "RuntimeTask",
+      "target": "type",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 29
+    },
+    {
+      "source": "RuntimeTask",
+      "target": "AgentCapability",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 29
+    },
+    {
+      "source": "RuntimeTask",
+      "target": "file",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 31
+    },
+    {
+      "source": "RuntimeTask",
+      "target": "symbol",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 32
+    },
+    {
+      "source": "RuntimeTask",
+      "target": "status",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 33
+    },
+    {
+      "source": "RuntimeTask",
+      "target": "TaskLifecycle",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 33
+    },
+    {
+      "source": "RuntimeTask",
+      "target": "estimatedLOC",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 35
+    },
+    {
+      "source": "RuntimeTask",
+      "target": "estimatedTokens",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 36
+    },
+    {
+      "source": "RuntimeContext",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 40
+    },
+    {
+      "source": "RuntimeContext",
+      "target": "simulateFailure",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 41
+    },
+    {
+      "source": "RuntimeRequest",
+      "target": "task",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 46
+    },
+    {
+      "source": "RuntimeRequest",
+      "target": "RuntimeTask",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 46
+    },
+    {
+      "source": "RuntimeRequest",
+      "target": "context",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 47
+    },
+    {
+      "source": "RuntimeRequest",
+      "target": "RuntimeContext",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 47
+    },
+    {
+      "source": "AgentDescriptor",
+      "target": "id",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 51
+    },
+    {
+      "source": "AgentDescriptor",
+      "target": "name",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 52
+    },
+    {
+      "source": "AgentDescriptor",
+      "target": "capabilities",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 53
+    },
+    {
+      "source": "AgentDescriptor",
+      "target": "AgentCapability",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 53
+    },
+    {
+      "source": "AgentDescriptor",
+      "target": "priority",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 54
+    },
+    {
+      "source": "AgentDescriptor",
+      "target": "version",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 55
+    },
+    {
+      "source": "AgentDescriptor",
+      "target": "supportedRuntimeVersion",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 56
+    },
+    {
+      "source": "AgentDescriptor",
+      "target": "health",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 57
+    },
+    {
+      "source": "AgentDescriptor",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 59
+    },
+    {
+      "source": "RuntimeMetrics",
+      "target": "provider",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 63
+    },
+    {
+      "source": "RuntimeMetrics",
+      "target": "AgentCapability",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 64
+    },
+    {
+      "source": "RuntimeMetrics",
+      "target": "retries",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 66
+    },
+    {
+      "source": "RuntimeDiagnostics",
+      "target": "totalExecutionTimeMs",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 76
+    },
+    {
+      "source": "RuntimeDiagnostics",
+      "target": "taskCounts",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 77
+    },
+    {
+      "source": "RuntimeDiagnostics",
+      "target": "TaskLifecycle",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 77
+    },
+    {
+      "source": "RuntimeDiagnostics",
+      "target": "providerSelectionReasoning",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 79
+    },
+    {
+      "source": "RuntimeDiagnostics",
+      "target": "replayStatistics",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 83
+    },
+    {
+      "source": "RuntimeDiagnostics",
+      "target": "snapshotStatistics",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 84
+    },
+    {
+      "source": "RuntimeResponse",
+      "target": "status",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 89
+    },
+    {
+      "source": "RuntimeResponse",
+      "target": "TaskLifecycle",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 89
+    },
+    {
+      "source": "RuntimeResponse",
+      "target": "error",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 90
+    },
+    {
+      "source": "RuntimeResponse",
+      "target": "RuntimeArtifact",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 91
+    },
+    {
+      "source": "RuntimeResponse",
+      "target": "RuntimeMetrics",
+      "type": "references",
+      "file": "packages/agent-runtime/types.ts",
+      "line": 92
+    },
+    {
+      "source": "OrchestratorError",
+      "target": "Error",
+      "type": "extends",
+      "file": "packages/orchestrator/errors.ts",
+      "line": 1
+    },
+    {
+      "source": "OrchestratorError.constructor",
+      "target": "name",
+      "type": "references",
+      "file": "packages/orchestrator/errors.ts",
+      "line": 4
+    },
+    {
+      "source": "MultiAgentOrchestratorService.runtimeService",
+      "target": "AgentRuntimeService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 8
+    },
+    {
+      "source": "MultiAgentOrchestratorService.constructor",
+      "target": "runtimeService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 13
+    },
+    {
+      "source": "MultiAgentOrchestratorService.constructor",
+      "target": "AgentRuntimeService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 13
+    },
+    {
+      "source": "MultiAgentOrchestratorService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 13
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorRequest",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 16
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorResponse",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 16
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "plan",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 17
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "request",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 17
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorError",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 20
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorScheduler",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 24
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "scheduler",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 25
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "schedule",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 25
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "OrchestratorExecutor",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 28
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "runtimeService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 28
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "executor",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 29
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "execute",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 29
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "report",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 34
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "execResult",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 34
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "results",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 35
+    },
+    {
+      "source": "MultiAgentOrchestratorService.orchestrate",
+      "target": "assignments",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 36
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "query",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 46
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "context",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 46
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 47
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "QueryEngineService",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 48
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 49
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "engine",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 50
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "request",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 51
+    },
+    {
+      "source": "OrchestratorService.execute",
+      "target": "result",
+      "type": "references",
+      "file": "packages/orchestrator/service.ts",
+      "line": 57
+    },
+    {
+      "source": "RuntimeService.constructor",
+      "target": "RuntimeContext",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 17
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "WorkspaceService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 22
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "context",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 23
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "workspace",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 26
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "initialize",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 26
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "result",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 28
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ManifestService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 30
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 31
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "load",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 32
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ProjectService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 34
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "detect",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 37
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "IndexerService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 39
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "index",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 42
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "SymbolsService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 44
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ImportsService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 49
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ImportResolverService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 54
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "resolve",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 59
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "RelationshipAnalyzerService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 61
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "analyze",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 67
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "ExecutionGraphService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 69
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "build",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 74
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "GraphBuilderService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 76
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "SemanticService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 80
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "KnowledgeService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 87
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "GraphService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 91
+    },
+    {
+      "source": "RuntimeService.initialize",
+      "target": "CacheService",
+      "type": "references",
+      "file": "packages/runtime/service.ts",
+      "line": 95
+    },
+    {
+      "source": "PriorityTestProvider",
+      "target": "AgentProvider",
+      "type": "implements",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 24
+    },
+    {
+      "source": "PriorityTestProvider.capabilities",
+      "target": "AgentCapability",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 27
+    },
+    {
+      "source": "PriorityTestProvider.constructor",
+      "target": "id",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 34
+    },
+    {
+      "source": "PriorityTestProvider.constructor",
+      "target": "name",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 35
+    },
+    {
+      "source": "PriorityTestProvider.constructor",
+      "target": "capabilities",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 36
+    },
+    {
+      "source": "PriorityTestProvider.constructor",
+      "target": "priority",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 37
+    },
+    {
+      "source": "PriorityTestProvider.constructor",
+      "target": "health",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 38
+    },
+    {
+      "source": "PriorityTestProvider.constructor",
+      "target": "supportedRuntimeVersion",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 39
+    },
+    {
+      "source": "PriorityTestProvider.shutdown",
+      "target": "shutdownCalled",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 44
+    },
+    {
+      "source": "PriorityTestProvider.supportsCapability",
+      "target": "AgentCapability",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 46
+    },
+    {
+      "source": "PriorityTestProvider.supportsCapability",
+      "target": "capabilities",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 47
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "RuntimeTask",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 49
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "RuntimeContext",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 49
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "RuntimeEvent",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 49
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "RuntimeResponse",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 49
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "type",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 50
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "task",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 50
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "id",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 50
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "context",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 52
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "RuntimeArtifact",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 57
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "content",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 61
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "artifact",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 64
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "status",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 71
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "provider",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 74
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "name",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 74
+    },
+    {
+      "source": "PriorityTestProvider.execute",
+      "target": "retries",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 77
+    },
+    {
+      "source": "main",
+      "target": "RuntimeService",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 96
+    },
+    {
+      "source": "main",
+      "target": "runtimeService",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 97
+    },
+    {
+      "source": "main",
+      "target": "initialize",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 97
+    },
+    {
+      "source": "main",
+      "target": "AgentRuntimeService",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 99
+    },
+    {
+      "source": "main",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 99
+    },
+    {
+      "source": "main",
+      "target": "PriorityTestProvider",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 106
+    },
+    {
+      "source": "main",
+      "target": "runtime",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 111
+    },
+    {
+      "source": "main",
+      "target": "register",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 111
+    },
+    {
+      "source": "main",
+      "target": "pLow",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 111
+    },
+    {
+      "source": "main",
+      "target": "pHigh",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 112
+    },
+    {
+      "source": "main",
+      "target": "pMid1",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 113
+    },
+    {
+      "source": "main",
+      "target": "pMid2",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 114
+    },
+    {
+      "source": "main",
+      "target": "RuntimeTask",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 116
+    },
+    {
+      "source": "main",
+      "target": "id",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 116
+    },
+    {
+      "source": "main",
+      "target": "type",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 116
+    },
+    {
+      "source": "main",
+      "target": "status",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 116
+    },
+    {
+      "source": "main",
+      "target": "registry",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 117
+    },
+    {
+      "source": "main",
+      "target": "discover",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 117
+    },
+    {
+      "source": "main",
+      "target": "task",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 117
+    },
+    {
+      "source": "main",
+      "target": "negotiated",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 119
+    },
+    {
+      "source": "main",
+      "target": "p",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 119
+    },
+    {
+      "source": "main",
+      "target": "priority",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 119
+    },
+    {
+      "source": "main",
+      "target": "error",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 127
+    },
+    {
+      "source": "main",
+      "target": "pOffline",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 137
+    },
+    {
+      "source": "main",
+      "target": "negotiatedWithOffline",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 140
+    },
+    {
+      "source": "main",
+      "target": "health",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 140
+    },
+    {
+      "source": "main",
+      "target": "pIncompatible",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 150
+    },
+    {
+      "source": "main",
+      "target": "negotiatedWithIncompatible",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 153
+    },
+    {
+      "source": "main",
+      "target": "RuntimeMiddleware",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 166
+    },
+    {
+      "source": "main",
+      "target": "name",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 167
+    },
+    {
+      "source": "main.beforeExecute",
+      "target": "trace",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 169
+    },
+    {
+      "source": "main.afterExecute",
+      "target": "trace",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 172
+    },
+    {
+      "source": "main.beforeExecute",
+      "target": "task",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 189
+    },
+    {
+      "source": "main.beforeExecute",
+      "target": "id",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 189
+    },
+    {
+      "source": "main",
+      "target": "addMiddleware",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 193
+    },
+    {
+      "source": "main",
+      "target": "mw1",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 193
+    },
+    {
+      "source": "main",
+      "target": "mw2",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 194
+    },
+    {
+      "source": "main",
+      "target": "execute",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 196
+    },
+    {
+      "source": "main",
+      "target": "context",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 198
+    },
+    {
+      "source": "main",
+      "target": "trace",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 201
+    },
+    {
+      "source": "main",
+      "target": "runtimeWithMutator",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 210
+    },
+    {
+      "source": "main",
+      "target": "mwMutator",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 210
+    },
+    {
+      "source": "main",
+      "target": "mutationThrew",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 219
+    },
+    {
+      "source": "main",
+      "target": "e",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 220
+    },
+    {
+      "source": "main",
+      "target": "RuntimeHooks",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 234
+    },
+    {
+      "source": "main.onProviderRegistered",
+      "target": "hookTrace",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 236
+    },
+    {
+      "source": "main.onProviderRegistered",
+      "target": "p",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 236
+    },
+    {
+      "source": "main.onProviderRegistered",
+      "target": "id",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 236
+    },
+    {
+      "source": "main.onTaskQueued",
+      "target": "hookTrace",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 239
+    },
+    {
+      "source": "main.onTaskQueued",
+      "target": "t",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 239
+    },
+    {
+      "source": "main.onTaskQueued",
+      "target": "id",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 239
+    },
+    {
+      "source": "main.onTaskStarted",
+      "target": "hookTrace",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 242
+    },
+    {
+      "source": "main.onTaskStarted",
+      "target": "t",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 242
+    },
+    {
+      "source": "main.onTaskStarted",
+      "target": "id",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 242
+    },
+    {
+      "source": "main.onTaskFinished",
+      "target": "hookTrace",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 245
+    },
+    {
+      "source": "main.onTaskFinished",
+      "target": "t",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 245
+    },
+    {
+      "source": "main.onTaskFinished",
+      "target": "id",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 245
+    },
+    {
+      "source": "main",
+      "target": "runtimeWithHooks",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 250
+    },
+    {
+      "source": "main",
+      "target": "addHooks",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 250
+    },
+    {
+      "source": "main",
+      "target": "hooks",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 250
+    },
+    {
+      "source": "main",
+      "target": "hookTrace",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 257
+    },
+    {
+      "source": "main",
+      "target": "now",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 268
+    },
+    {
+      "source": "main",
+      "target": "RuntimeEvent",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 271
+    },
+    {
+      "source": "main",
+      "target": "uniqueTaskId",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 273
+    },
+    {
+      "source": "main",
+      "target": "events",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 276
+    },
+    {
+      "source": "main",
+      "target": "executeRes",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 280
+    },
+    {
+      "source": "main",
+      "target": "art",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 281
+    },
+    {
+      "source": "main",
+      "target": "version",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 281
+    },
+    {
+      "source": "main",
+      "target": "provider",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 281
+    },
+    {
+      "source": "main",
+      "target": "artifactProducedEvents",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 290
+    },
+    {
+      "source": "main",
+      "target": "snapshotPath",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 304
+    },
+    {
+      "source": "main",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 305
+    },
+    {
+      "source": "main",
+      "target": "parse",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 310
+    },
+    {
+      "source": "main",
+      "target": "snapshot",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 311
+    },
+    {
+      "source": "main",
+      "target": "completedTasks",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 312
+    },
+    {
+      "source": "main",
+      "target": "recover",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 320
+    },
+    {
+      "source": "main",
+      "target": "recovered",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 321
+    },
+    {
+      "source": "main",
+      "target": "replay",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 332
+    },
+    {
+      "source": "main",
+      "target": "replayed",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 333
+    },
+    {
+      "source": "main",
+      "target": "replaySession",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 343
+    },
+    {
+      "source": "main",
+      "target": "getSessionId",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 343
+    },
+    {
+      "source": "main",
+      "target": "sessionReplayed",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 344
+    },
+    {
+      "source": "main",
+      "target": "diagnostics",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 355
+    },
+    {
+      "source": "main",
+      "target": "diags",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 357
+    },
+    {
+      "source": "main",
+      "target": "totalExecutionTimeMs",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 357
+    },
+    {
+      "source": "main",
+      "target": "taskCounts",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 359
+    },
+    {
+      "source": "main",
+      "target": "providerSelectionReasoning",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 360
+    },
+    {
+      "source": "main",
+      "target": "runtimeForTimeout",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 381
+    },
+    {
+      "source": "main",
+      "target": "blockProv",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 381
+    },
+    {
+      "source": "main",
+      "target": "timeoutTask",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 385
+    },
+    {
+      "source": "main",
+      "target": "timeoutMs",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 386
+    },
+    {
+      "source": "main",
+      "target": "timeoutRes",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 389
+    },
+    {
+      "source": "main.onRuntimeShutdown",
+      "target": "shutdownHookCalled",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 405
+    },
+    {
+      "source": "main",
+      "target": "shutdown",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 410
+    },
+    {
+      "source": "main",
+      "target": "shutdownHookCalled",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 411
+    },
+    {
+      "source": "main",
+      "target": "shutdownCalled",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 412
+    },
+    {
+      "source": "main",
+      "target": "EngineeringPlannerService",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 425
+    },
+    {
+      "source": "main",
+      "target": "KnowledgeFusionService",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 426
+    },
+    {
+      "source": "main",
+      "target": "MultiAgentOrchestratorService",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 427
+    },
+    {
+      "source": "main",
+      "target": "fuser",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 431
+    },
+    {
+      "source": "main",
+      "target": "fuse",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 431
+    },
+    {
+      "source": "main",
+      "target": "query",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 432
+    },
+    {
+      "source": "main",
+      "target": "options",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 433
+    },
+    {
+      "source": "main",
+      "target": "planner",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 441
+    },
+    {
+      "source": "main",
+      "target": "plan",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 441
+    },
+    {
+      "source": "main",
+      "target": "intent",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 443
+    },
+    {
+      "source": "main",
+      "target": "candidates",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 444
+    },
+    {
+      "source": "main",
+      "target": "candidatesResult",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 444
+    },
+    {
+      "source": "main",
+      "target": "orchestrator",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 448
+    },
+    {
+      "source": "main",
+      "target": "orchestrate",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 448
+    },
+    {
+      "source": "main",
+      "target": "execResult",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 450
+    },
+    {
+      "source": "main",
+      "target": "report",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 450
+    },
+    {
+      "source": "main",
+      "target": "selectedProvider",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 450
+    },
+    {
+      "source": "main",
+      "target": "providerHealth",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 451
+    },
+    {
+      "source": "main",
+      "target": "executionSnapshotId",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 452
+    },
+    {
+      "source": "main",
+      "target": "QueryEngineService",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 465
+    },
+    {
+      "source": "main",
+      "target": "engine",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 466
+    },
+    {
+      "source": "main",
+      "target": "queryResult",
+      "type": "references",
+      "file": "packages/test-agent-runtime-refinement.ts",
+      "line": 474
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "packages/agent-runtime/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/orchestrator/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/orchestrator/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/runtime/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts",
+        "type": "file"
+      }
+    ],
+    "edges": [
+      {
+        "from": "packages/agent-runtime/index.ts",
+        "to": "packages/agent-runtime/types.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/index.ts",
+        "to": "packages/agent-runtime/registry.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/index.ts",
+        "to": "packages/agent-runtime/artifacts.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/index.ts",
+        "to": "packages/agent-runtime/events.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/index.ts",
+        "to": "packages/agent-runtime/service.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/registry.ts",
+        "to": "packages/agent-runtime/types.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts",
+        "to": "fs",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts",
+        "to": "packages/agent-runtime/registry.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts",
+        "to": "packages/agent-runtime/types.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts",
+        "to": "packages/agent-runtime/artifacts.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/types.ts",
+        "to": "packages/agent-runtime/artifacts.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/agent-runtime/types.ts",
+        "to": "packages/agent-runtime/events.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/orchestrator/index.ts",
+        "to": "packages/orchestrator/errors.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/orchestrator/index.ts",
+        "to": "packages/orchestrator/service.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/orchestrator/service.ts",
+        "to": "packages/orchestrator/errors.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/orchestrator/service.ts",
+        "to": "packages/agent-runtime/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/orchestrator/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts",
+        "to": "process",
+        "type": "imports"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts",
+        "to": "fs",
+        "type": "imports"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts",
+        "to": "packages/agent-runtime/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts",
+        "to": "packages/orchestrator/index.ts",
+        "type": "imports"
+      }
+    ]
+  },
+  "executionGraph": {
+    "nodes": [
+      {
+        "id": "packages/agent-runtime/artifacts.ts#RuntimeArtifact",
+        "type": "interface"
+      },
+      {
+        "id": "packages/agent-runtime/events.ts#RuntimeEventType",
+        "type": "type"
+      },
+      {
+        "id": "packages/agent-runtime/events.ts#RuntimeEvent",
+        "type": "interface"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#RUNTIME_VERSION",
+        "type": "variable"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#isCompatible",
+        "type": "function"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#AgentRegistry",
+        "type": "class"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#AgentRegistry.providers",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#AgentRegistry.registrationInfo",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#AgentRegistry.nextRegistrationIndex",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#AgentRegistry.register",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#AgentRegistry.unregister",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#AgentRegistry.get",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#AgentRegistry.list",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/registry.ts#AgentRegistry.discover",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider",
+        "type": "class"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.id",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.name",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.capabilities",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.priority",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.version",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.supportedRuntimeVersion",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.health",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.metadata",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.initialize",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.shutdown",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.supportsCapability",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.execute",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.pause",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.resume",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#MockAgentProvider.cancel",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService",
+        "type": "class"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.registry",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.engine",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.middlewares",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.hooks",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.timings",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.providerSelectionReasoning",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.replayStatistics",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.snapshotStatistics",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.sessionId",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.totalExecutionTimeMs",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.taskCounts",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.totalArtifactsCount",
+        "type": "property"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.register",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.addMiddleware",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.addHooks",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#main.onProviderRegistered",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.execute",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.saveSnapshot",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.persistEvent",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.unregister",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.providers",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.capabilities",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.diagnostics",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.shutdown",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#main.onRuntimeShutdown",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.recover",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.replay",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.replaySession",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/service.ts#AgentRuntimeService.getSessionId",
+        "type": "method"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts#AgentCapability",
+        "type": "type"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts#TaskLifecycle",
+        "type": "type"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts#RuntimeTask",
+        "type": "interface"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts#RuntimeContext",
+        "type": "interface"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts#RuntimeRequest",
+        "type": "interface"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts#AgentDescriptor",
+        "type": "interface"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts#RuntimeMetrics",
+        "type": "interface"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts#RuntimeDiagnostics",
+        "type": "interface"
+      },
+      {
+        "id": "packages/agent-runtime/types.ts#RuntimeResponse",
+        "type": "interface"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#OrchestratorService",
+        "type": "class"
+      },
+      {
+        "id": "packages/orchestrator/errors.ts#OrchestratorError",
+        "type": "class"
+      },
+      {
+        "id": "packages/orchestrator/errors.ts#OrchestratorError.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#MultiAgentOrchestratorService",
+        "type": "class"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.runtimeService",
+        "type": "property"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.orchestrate",
+        "type": "method"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#OrchestratorService.execute",
+        "type": "method"
+      },
+      {
+        "id": "packages/orchestrator/service.ts#OrchestratorService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/runtime/service.ts#RuntimeService",
+        "type": "class"
+      },
+      {
+        "id": "packages/runtime/service.ts#RuntimeService.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/runtime/service.ts#RuntimeService.initialize",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider",
+        "type": "class"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.id",
+        "type": "property"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.name",
+        "type": "property"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.capabilities",
+        "type": "property"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.priority",
+        "type": "property"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.health",
+        "type": "property"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.supportedRuntimeVersion",
+        "type": "property"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.shutdownCalled",
+        "type": "property"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.constructor",
+        "type": "constructor"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.initialize",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.shutdown",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.supportsCapability",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.execute",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.pause",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.resume",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.cancel",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#main",
+        "type": "function"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#main.beforeExecute",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#main.afterExecute",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#main.onTaskQueued",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#main.onTaskStarted",
+        "type": "method"
+      },
+      {
+        "id": "packages/test-agent-runtime-refinement.ts#main.onTaskFinished",
+        "type": "method"
+      }
+    ],
+    "edges": [
+      {
+        "from": "packages/agent-runtime/registry.ts#AgentRegistry.list",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.get",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/registry.ts#AgentRegistry.discover",
+        "to": "packages/agent-runtime/registry.ts#isCompatible",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/registry.ts#AgentRegistry.discover",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.get",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.registry",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.constructor",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.register",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.constructor",
+        "to": "packages/agent-runtime/service.ts#MockAgentProvider",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.addHooks",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.list",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.addHooks",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.get",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.addHooks",
+        "to": "packages/test-agent-runtime-refinement.ts#main.onProviderRegistered",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.execute",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.discover",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.execute",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.saveSnapshot",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.execute",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.persistEvent",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.register",
+        "to": "packages/test-agent-runtime-refinement.ts#main.onProviderRegistered",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.providers",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.list",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.capabilities",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.list",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.shutdown",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.list",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.shutdown",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.get",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.shutdown",
+        "to": "packages/agent-runtime/service.ts#MockAgentProvider.shutdown",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.shutdown",
+        "to": "packages/agent-runtime/service.ts#MockAgentProvider.shutdown",
+        "type": "calls"
+      },
+      {
+        "from": "packages/agent-runtime/service.ts#AgentRuntimeService.shutdown",
+        "to": "packages/test-agent-runtime-refinement.ts#main.onRuntimeShutdown",
+        "type": "calls"
+      },
+      {
+        "from": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.constructor",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.orchestrate",
+        "to": "packages/orchestrator/errors.ts#OrchestratorError",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.orchestrate",
+        "to": "packages/orchestrator/service.ts#OrchestratorService.execute",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.orchestrate",
+        "to": "packages/orchestrator/service.ts#OrchestratorService.execute",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.initialize",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.initialize",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.register",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/registry.ts#AgentRegistry.discover",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.addMiddleware",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.execute",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.execute",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.addHooks",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.recover",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.recover",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.replay",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.replaySession",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.getSessionId",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/agent-runtime/service.ts#AgentRuntimeService.diagnostics",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.shutdown",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/test-agent-runtime-refinement.ts#PriorityTestProvider.shutdown",
+        "type": "calls"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/orchestrator/service.ts#MultiAgentOrchestratorService",
+        "type": "constructs"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.orchestrate",
+        "type": "awaits"
+      },
+      {
+        "from": "packages/test-agent-runtime-refinement.ts#main",
+        "to": "packages/orchestrator/service.ts#MultiAgentOrchestratorService.orchestrate",
+        "type": "calls"
+      }
+    ]
+  },
+  "engineeringPlan": {
+    "goal": "Fulfill intent \"feature\" for request: \"implement agent runtime diagnostics dashboard\"",
+    "summary": "Deterministic execution plan designed to implement changes. Scope targets 6 files with estimated duration of 31.0 hours. Overall risk: Medium. Complexity: Very Large.",
+    "intent": "feature",
+    "confidence": 0.93875,
+    "complexity": {
+      "score": 191.5,
+      "label": "Very Large"
+    },
+    "risk": {
+      "api": 90,
+      "execution": 100,
+      "history": 10,
+      "architecture": 0,
+      "ownership": 0,
+      "overall": "Medium"
+    },
+    "phases": [
+      {
+        "id": "PHASE-1",
+        "name": "Analyze",
+        "tasks": [
+          "TASK-000001",
+          "TASK-000002",
+          "TASK-000003",
+          "TASK-000004",
+          "TASK-000005",
+          "TASK-000006"
+        ]
+      },
+      {
+        "id": "PHASE-2",
+        "name": "Modify",
+        "tasks": [
+          "TASK-000007",
+          "TASK-000008",
+          "TASK-000009",
+          "TASK-000010",
+          "TASK-000011",
+          "TASK-000012"
+        ]
+      },
+      {
+        "id": "PHASE-3",
+        "name": "Validate",
+        "tasks": [
+          "TASK-000013",
+          "TASK-000014",
+          "TASK-000015",
+          "TASK-000016",
+          "TASK-000017",
+          "TASK-000018",
+          "TASK-000019"
+        ]
+      },
+      {
+        "id": "PHASE-4",
+        "name": "Test",
+        "tasks": [
+          "TASK-000020",
+          "TASK-000021",
+          "TASK-000022",
+          "TASK-000023",
+          "TASK-000024",
+          "TASK-000025"
+        ]
+      },
+      {
+        "id": "PHASE-5",
+        "name": "Cleanup",
+        "tasks": [
+          "TASK-000026",
+          "TASK-000027",
+          "TASK-000028",
+          "TASK-000029",
+          "TASK-000030",
+          "TASK-000031"
+        ]
+      }
+    ],
+    "tasks": [
+      {
+        "id": "TASK-000001",
+        "title": "Analyze test-agent-runtime-refinement.ts",
+        "description": "Understand structure, imports, and symbol references of packages/test-agent-runtime-refinement.ts",
+        "type": "analyze",
+        "phaseId": "PHASE-1",
+        "file": "packages/test-agent-runtime-refinement.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 1000,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify structure of packages/test-agent-runtime-refinement.ts",
+          "Analyze dependencies"
+        ],
+        "rationale": [
+          "Identify key entry points for modifications",
+          "Inspect call hierarchies"
+        ],
+        "affectedSymbols": [
+          "packages/test-agent-runtime-refinement.ts#main",
+          "packages/test-agent-runtime-refinement.ts#id",
+          "packages/test-agent-runtime-refinement.ts#error",
+          "packages/test-agent-runtime-refinement.ts#runtime",
+          "packages/test-agent-runtime-refinement.ts#workspaceRoot"
+        ]
+      },
+      {
+        "id": "TASK-000002",
+        "title": "Analyze service.ts",
+        "description": "Understand structure, imports, and symbol references of packages/agent-runtime/service.ts",
+        "type": "analyze",
+        "phaseId": "PHASE-1",
+        "file": "packages/agent-runtime/service.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 1000,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify structure of packages/agent-runtime/service.ts",
+          "Analyze dependencies"
+        ],
+        "rationale": [
+          "Identify key entry points for modifications",
+          "Inspect call hierarchies"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000003",
+        "title": "Analyze types.ts",
+        "description": "Understand structure, imports, and symbol references of packages/agent-runtime/types.ts",
+        "type": "analyze",
+        "phaseId": "PHASE-1",
+        "file": "packages/agent-runtime/types.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 1000,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify structure of packages/agent-runtime/types.ts",
+          "Analyze dependencies"
+        ],
+        "rationale": [
+          "Identify key entry points for modifications",
+          "Inspect call hierarchies"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000004",
+        "title": "Analyze registry.ts",
+        "description": "Understand structure, imports, and symbol references of packages/agent-runtime/registry.ts",
+        "type": "analyze",
+        "phaseId": "PHASE-1",
+        "file": "packages/agent-runtime/registry.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 1000,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify structure of packages/agent-runtime/registry.ts",
+          "Analyze dependencies"
+        ],
+        "rationale": [
+          "Identify key entry points for modifications",
+          "Inspect call hierarchies"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000005",
+        "title": "Analyze test-agent-runtime.ts",
+        "description": "Understand structure, imports, and symbol references of packages/test-agent-runtime.ts",
+        "type": "analyze",
+        "phaseId": "PHASE-1",
+        "file": "packages/test-agent-runtime.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 1000,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify structure of packages/test-agent-runtime.ts",
+          "Analyze dependencies"
+        ],
+        "rationale": [
+          "Identify key entry points for modifications",
+          "Inspect call hierarchies"
+        ],
+        "affectedSymbols": [
+          "packages/test-agent-runtime.ts#main",
+          "packages/test-agent-runtime.ts#id"
+        ]
+      },
+      {
+        "id": "TASK-000006",
+        "title": "Analyze test-orchestrator.ts",
+        "description": "Understand structure, imports, and symbol references of packages/test-orchestrator.ts",
+        "type": "analyze",
+        "phaseId": "PHASE-1",
+        "file": "packages/test-orchestrator.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 1000,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify structure of packages/test-orchestrator.ts",
+          "Analyze dependencies"
+        ],
+        "rationale": [
+          "Identify key entry points for modifications",
+          "Inspect call hierarchies"
+        ],
+        "affectedSymbols": [
+          "packages/test-orchestrator.ts#res1",
+          "packages/test-orchestrator.ts#report"
+        ]
+      },
+      {
+        "id": "TASK-000007",
+        "title": "Modify test-agent-runtime-refinement.ts",
+        "description": "Implement required logic changes in packages/test-agent-runtime-refinement.ts",
+        "type": "modify",
+        "phaseId": "PHASE-2",
+        "file": "packages/test-agent-runtime-refinement.ts",
+        "prerequisites": [
+          "TASK-000001"
+        ],
+        "estimatedEffort": 2,
+        "estimatedTokens": 3000,
+        "estimatedLOC": 80,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no syntax errors",
+          "Verify TypeScript compilation"
+        ],
+        "rationale": [
+          "Core target defined by user query: \"implement agent runtime diagnostics dashboard\""
+        ],
+        "affectedSymbols": [
+          "packages/test-agent-runtime-refinement.ts#main",
+          "packages/test-agent-runtime-refinement.ts#id",
+          "packages/test-agent-runtime-refinement.ts#error",
+          "packages/test-agent-runtime-refinement.ts#runtime",
+          "packages/test-agent-runtime-refinement.ts#workspaceRoot"
+        ],
+        "rollbackTaskId": "TASK-000026"
+      },
+      {
+        "id": "TASK-000008",
+        "title": "Modify service.ts",
+        "description": "Implement required logic changes in packages/agent-runtime/service.ts",
+        "type": "modify",
+        "phaseId": "PHASE-2",
+        "file": "packages/agent-runtime/service.ts",
+        "prerequisites": [
+          "TASK-000002"
+        ],
+        "estimatedEffort": 2,
+        "estimatedTokens": 3000,
+        "estimatedLOC": 80,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no syntax errors",
+          "Verify TypeScript compilation"
+        ],
+        "rationale": [
+          "Core target defined by user query: \"implement agent runtime diagnostics dashboard\""
+        ],
+        "affectedSymbols": [],
+        "rollbackTaskId": "TASK-000027"
+      },
+      {
+        "id": "TASK-000009",
+        "title": "Modify types.ts",
+        "description": "Implement required logic changes in packages/agent-runtime/types.ts",
+        "type": "modify",
+        "phaseId": "PHASE-2",
+        "file": "packages/agent-runtime/types.ts",
+        "prerequisites": [
+          "TASK-000003"
+        ],
+        "estimatedEffort": 2,
+        "estimatedTokens": 3000,
+        "estimatedLOC": 80,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no syntax errors",
+          "Verify TypeScript compilation"
+        ],
+        "rationale": [
+          "Core target defined by user query: \"implement agent runtime diagnostics dashboard\""
+        ],
+        "affectedSymbols": [],
+        "rollbackTaskId": "TASK-000028"
+      },
+      {
+        "id": "TASK-000010",
+        "title": "Modify registry.ts",
+        "description": "Implement required logic changes in packages/agent-runtime/registry.ts",
+        "type": "modify",
+        "phaseId": "PHASE-2",
+        "file": "packages/agent-runtime/registry.ts",
+        "prerequisites": [
+          "TASK-000004"
+        ],
+        "estimatedEffort": 2,
+        "estimatedTokens": 3000,
+        "estimatedLOC": 80,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no syntax errors",
+          "Verify TypeScript compilation"
+        ],
+        "rationale": [
+          "Core target defined by user query: \"implement agent runtime diagnostics dashboard\""
+        ],
+        "affectedSymbols": [],
+        "rollbackTaskId": "TASK-000029"
+      },
+      {
+        "id": "TASK-000011",
+        "title": "Modify test-agent-runtime.ts",
+        "description": "Implement required logic changes in packages/test-agent-runtime.ts",
+        "type": "modify",
+        "phaseId": "PHASE-2",
+        "file": "packages/test-agent-runtime.ts",
+        "prerequisites": [
+          "TASK-000005"
+        ],
+        "estimatedEffort": 2,
+        "estimatedTokens": 3000,
+        "estimatedLOC": 80,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no syntax errors",
+          "Verify TypeScript compilation"
+        ],
+        "rationale": [
+          "Core target defined by user query: \"implement agent runtime diagnostics dashboard\""
+        ],
+        "affectedSymbols": [
+          "packages/test-agent-runtime.ts#main",
+          "packages/test-agent-runtime.ts#id"
+        ],
+        "rollbackTaskId": "TASK-000030"
+      },
+      {
+        "id": "TASK-000012",
+        "title": "Modify test-orchestrator.ts",
+        "description": "Implement required logic changes in packages/test-orchestrator.ts",
+        "type": "modify",
+        "phaseId": "PHASE-2",
+        "file": "packages/test-orchestrator.ts",
+        "prerequisites": [
+          "TASK-000006"
+        ],
+        "estimatedEffort": 2,
+        "estimatedTokens": 3000,
+        "estimatedLOC": 80,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no syntax errors",
+          "Verify TypeScript compilation"
+        ],
+        "rationale": [
+          "Core target defined by user query: \"implement agent runtime diagnostics dashboard\""
+        ],
+        "affectedSymbols": [
+          "packages/test-orchestrator.ts#res1",
+          "packages/test-orchestrator.ts#report"
+        ],
+        "rollbackTaskId": "TASK-000031"
+      },
+      {
+        "id": "TASK-000013",
+        "title": "Validate API of test-agent-runtime-refinement.ts",
+        "description": "Check import resolutions and exported declarations for packages/test-agent-runtime-refinement.ts",
+        "type": "validate",
+        "phaseId": "PHASE-3",
+        "file": "packages/test-agent-runtime-refinement.ts",
+        "prerequisites": [
+          "TASK-000007"
+        ],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no broken call-sites in downstream dependencies"
+        ],
+        "rationale": [
+          "Protect public interfaces from accidental breakage"
+        ],
+        "affectedSymbols": [
+          "packages/test-agent-runtime-refinement.ts#main",
+          "packages/test-agent-runtime-refinement.ts#id",
+          "packages/test-agent-runtime-refinement.ts#error",
+          "packages/test-agent-runtime-refinement.ts#runtime",
+          "packages/test-agent-runtime-refinement.ts#workspaceRoot"
+        ]
+      },
+      {
+        "id": "TASK-000014",
+        "title": "Validate API of service.ts",
+        "description": "Check import resolutions and exported declarations for packages/agent-runtime/service.ts",
+        "type": "validate",
+        "phaseId": "PHASE-3",
+        "file": "packages/agent-runtime/service.ts",
+        "prerequisites": [
+          "TASK-000008"
+        ],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no broken call-sites in downstream dependencies"
+        ],
+        "rationale": [
+          "Protect public interfaces from accidental breakage"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000015",
+        "title": "Validate API of types.ts",
+        "description": "Check import resolutions and exported declarations for packages/agent-runtime/types.ts",
+        "type": "validate",
+        "phaseId": "PHASE-3",
+        "file": "packages/agent-runtime/types.ts",
+        "prerequisites": [
+          "TASK-000009"
+        ],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no broken call-sites in downstream dependencies"
+        ],
+        "rationale": [
+          "Protect public interfaces from accidental breakage"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000016",
+        "title": "Validate API of registry.ts",
+        "description": "Check import resolutions and exported declarations for packages/agent-runtime/registry.ts",
+        "type": "validate",
+        "phaseId": "PHASE-3",
+        "file": "packages/agent-runtime/registry.ts",
+        "prerequisites": [
+          "TASK-000010"
+        ],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no broken call-sites in downstream dependencies"
+        ],
+        "rationale": [
+          "Protect public interfaces from accidental breakage"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000017",
+        "title": "Validate API of test-agent-runtime.ts",
+        "description": "Check import resolutions and exported declarations for packages/test-agent-runtime.ts",
+        "type": "validate",
+        "phaseId": "PHASE-3",
+        "file": "packages/test-agent-runtime.ts",
+        "prerequisites": [
+          "TASK-000011"
+        ],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no broken call-sites in downstream dependencies"
+        ],
+        "rationale": [
+          "Protect public interfaces from accidental breakage"
+        ],
+        "affectedSymbols": [
+          "packages/test-agent-runtime.ts#main",
+          "packages/test-agent-runtime.ts#id"
+        ]
+      },
+      {
+        "id": "TASK-000018",
+        "title": "Validate API of test-orchestrator.ts",
+        "description": "Check import resolutions and exported declarations for packages/test-orchestrator.ts",
+        "type": "validate",
+        "phaseId": "PHASE-3",
+        "file": "packages/test-orchestrator.ts",
+        "prerequisites": [
+          "TASK-000012"
+        ],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Ensure no broken call-sites in downstream dependencies"
+        ],
+        "rationale": [
+          "Protect public interfaces from accidental breakage"
+        ],
+        "affectedSymbols": [
+          "packages/test-orchestrator.ts#res1",
+          "packages/test-orchestrator.ts#report"
+        ]
+      },
+      {
+        "id": "TASK-000019",
+        "title": "Validate full build",
+        "description": "Execute compiler and run regression test suite over the entire repository workspace",
+        "type": "validate",
+        "phaseId": "PHASE-3",
+        "prerequisites": [
+          "TASK-000013",
+          "TASK-000014",
+          "TASK-000015",
+          "TASK-000016",
+          "TASK-000017",
+          "TASK-000018"
+        ],
+        "estimatedEffort": 1,
+        "estimatedTokens": 1000,
+        "estimatedLOC": 0,
+        "estimatedFiles": 6,
+        "validationRequirements": [
+          "tsc build success",
+          "All workspace tests pass"
+        ],
+        "rationale": [
+          "Ensure full system integration and verify codebase stability before staging"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000020",
+        "title": "Test changes in test-agent-runtime-refinement.ts",
+        "description": "Write and run test cases for logic inside packages/test-agent-runtime-refinement.ts",
+        "type": "test",
+        "phaseId": "PHASE-4",
+        "file": "packages/test-agent-runtime-refinement.ts",
+        "prerequisites": [
+          "TASK-000013"
+        ],
+        "estimatedEffort": 1.5,
+        "estimatedTokens": 1500,
+        "estimatedLOC": 60,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify all tests pass",
+          "Verify coverage requirements"
+        ],
+        "rationale": [
+          "Validate correct behavior under edge cases"
+        ],
+        "affectedSymbols": [
+          "packages/test-agent-runtime-refinement.ts#main",
+          "packages/test-agent-runtime-refinement.ts#id",
+          "packages/test-agent-runtime-refinement.ts#error",
+          "packages/test-agent-runtime-refinement.ts#runtime",
+          "packages/test-agent-runtime-refinement.ts#workspaceRoot"
+        ]
+      },
+      {
+        "id": "TASK-000021",
+        "title": "Test changes in service.ts",
+        "description": "Write and run test cases for logic inside packages/agent-runtime/service.ts",
+        "type": "test",
+        "phaseId": "PHASE-4",
+        "file": "packages/agent-runtime/service.ts",
+        "prerequisites": [
+          "TASK-000014"
+        ],
+        "estimatedEffort": 1.5,
+        "estimatedTokens": 1500,
+        "estimatedLOC": 60,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify all tests pass",
+          "Verify coverage requirements"
+        ],
+        "rationale": [
+          "Validate correct behavior under edge cases"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000022",
+        "title": "Test changes in types.ts",
+        "description": "Write and run test cases for logic inside packages/agent-runtime/types.ts",
+        "type": "test",
+        "phaseId": "PHASE-4",
+        "file": "packages/agent-runtime/types.ts",
+        "prerequisites": [
+          "TASK-000015"
+        ],
+        "estimatedEffort": 1.5,
+        "estimatedTokens": 1500,
+        "estimatedLOC": 60,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify all tests pass",
+          "Verify coverage requirements"
+        ],
+        "rationale": [
+          "Validate correct behavior under edge cases"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000023",
+        "title": "Test changes in registry.ts",
+        "description": "Write and run test cases for logic inside packages/agent-runtime/registry.ts",
+        "type": "test",
+        "phaseId": "PHASE-4",
+        "file": "packages/agent-runtime/registry.ts",
+        "prerequisites": [
+          "TASK-000016"
+        ],
+        "estimatedEffort": 1.5,
+        "estimatedTokens": 1500,
+        "estimatedLOC": 60,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify all tests pass",
+          "Verify coverage requirements"
+        ],
+        "rationale": [
+          "Validate correct behavior under edge cases"
+        ],
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000024",
+        "title": "Test changes in test-agent-runtime.ts",
+        "description": "Write and run test cases for logic inside packages/test-agent-runtime.ts",
+        "type": "test",
+        "phaseId": "PHASE-4",
+        "file": "packages/test-agent-runtime.ts",
+        "prerequisites": [
+          "TASK-000017"
+        ],
+        "estimatedEffort": 1.5,
+        "estimatedTokens": 1500,
+        "estimatedLOC": 60,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify all tests pass",
+          "Verify coverage requirements"
+        ],
+        "rationale": [
+          "Validate correct behavior under edge cases"
+        ],
+        "affectedSymbols": [
+          "packages/test-agent-runtime.ts#main",
+          "packages/test-agent-runtime.ts#id"
+        ]
+      },
+      {
+        "id": "TASK-000025",
+        "title": "Test changes in test-orchestrator.ts",
+        "description": "Write and run test cases for logic inside packages/test-orchestrator.ts",
+        "type": "test",
+        "phaseId": "PHASE-4",
+        "file": "packages/test-orchestrator.ts",
+        "prerequisites": [
+          "TASK-000018"
+        ],
+        "estimatedEffort": 1.5,
+        "estimatedTokens": 1500,
+        "estimatedLOC": 60,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "Verify all tests pass",
+          "Verify coverage requirements"
+        ],
+        "rationale": [
+          "Validate correct behavior under edge cases"
+        ],
+        "affectedSymbols": [
+          "packages/test-orchestrator.ts#res1",
+          "packages/test-orchestrator.ts#report"
+        ]
+      },
+      {
+        "id": "TASK-000026",
+        "title": "Rollback changes in test-agent-runtime-refinement.ts",
+        "description": "Discard unstaged modifications or delete created files to restore original state of packages/test-agent-runtime-refinement.ts",
+        "type": "cleanup",
+        "phaseId": "PHASE-5",
+        "file": "packages/test-agent-runtime-refinement.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "git diff is clean for packages/test-agent-runtime-refinement.ts",
+          "Build compiles after revert"
+        ],
+        "rationale": [
+          "Provide clean undo option for safety during autonomous execution"
+        ],
+        "isRollback": true,
+        "rollbackForTaskId": "TASK-000007",
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000027",
+        "title": "Rollback changes in service.ts",
+        "description": "Discard unstaged modifications or delete created files to restore original state of packages/agent-runtime/service.ts",
+        "type": "cleanup",
+        "phaseId": "PHASE-5",
+        "file": "packages/agent-runtime/service.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "git diff is clean for packages/agent-runtime/service.ts",
+          "Build compiles after revert"
+        ],
+        "rationale": [
+          "Provide clean undo option for safety during autonomous execution"
+        ],
+        "isRollback": true,
+        "rollbackForTaskId": "TASK-000008",
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000028",
+        "title": "Rollback changes in types.ts",
+        "description": "Discard unstaged modifications or delete created files to restore original state of packages/agent-runtime/types.ts",
+        "type": "cleanup",
+        "phaseId": "PHASE-5",
+        "file": "packages/agent-runtime/types.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "git diff is clean for packages/agent-runtime/types.ts",
+          "Build compiles after revert"
+        ],
+        "rationale": [
+          "Provide clean undo option for safety during autonomous execution"
+        ],
+        "isRollback": true,
+        "rollbackForTaskId": "TASK-000009",
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000029",
+        "title": "Rollback changes in registry.ts",
+        "description": "Discard unstaged modifications or delete created files to restore original state of packages/agent-runtime/registry.ts",
+        "type": "cleanup",
+        "phaseId": "PHASE-5",
+        "file": "packages/agent-runtime/registry.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "git diff is clean for packages/agent-runtime/registry.ts",
+          "Build compiles after revert"
+        ],
+        "rationale": [
+          "Provide clean undo option for safety during autonomous execution"
+        ],
+        "isRollback": true,
+        "rollbackForTaskId": "TASK-000010",
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000030",
+        "title": "Rollback changes in test-agent-runtime.ts",
+        "description": "Discard unstaged modifications or delete created files to restore original state of packages/test-agent-runtime.ts",
+        "type": "cleanup",
+        "phaseId": "PHASE-5",
+        "file": "packages/test-agent-runtime.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "git diff is clean for packages/test-agent-runtime.ts",
+          "Build compiles after revert"
+        ],
+        "rationale": [
+          "Provide clean undo option for safety during autonomous execution"
+        ],
+        "isRollback": true,
+        "rollbackForTaskId": "TASK-000011",
+        "affectedSymbols": []
+      },
+      {
+        "id": "TASK-000031",
+        "title": "Rollback changes in test-orchestrator.ts",
+        "description": "Discard unstaged modifications or delete created files to restore original state of packages/test-orchestrator.ts",
+        "type": "cleanup",
+        "phaseId": "PHASE-5",
+        "file": "packages/test-orchestrator.ts",
+        "prerequisites": [],
+        "estimatedEffort": 0.5,
+        "estimatedTokens": 500,
+        "estimatedLOC": 0,
+        "estimatedFiles": 1,
+        "validationRequirements": [
+          "git diff is clean for packages/test-orchestrator.ts",
+          "Build compiles after revert"
+        ],
+        "rationale": [
+          "Provide clean undo option for safety during autonomous execution"
+        ],
+        "isRollback": true,
+        "rollbackForTaskId": "TASK-000012",
+        "affectedSymbols": []
+      }
+    ],
+    "executionGraph": {
+      "nodes": [
+        "TASK-000001",
+        "TASK-000002",
+        "TASK-000003",
+        "TASK-000004",
+        "TASK-000005",
+        "TASK-000006",
+        "TASK-000007",
+        "TASK-000008",
+        "TASK-000009",
+        "TASK-000010",
+        "TASK-000011",
+        "TASK-000012",
+        "TASK-000013",
+        "TASK-000014",
+        "TASK-000015",
+        "TASK-000016",
+        "TASK-000017",
+        "TASK-000018",
+        "TASK-000019",
+        "TASK-000020",
+        "TASK-000021",
+        "TASK-000022",
+        "TASK-000023",
+        "TASK-000024",
+        "TASK-000025"
+      ],
+      "edges": [
+        {
+          "from": "TASK-000001",
+          "to": "TASK-000007"
+        },
+        {
+          "from": "TASK-000002",
+          "to": "TASK-000008"
+        },
+        {
+          "from": "TASK-000003",
+          "to": "TASK-000009"
+        },
+        {
+          "from": "TASK-000004",
+          "to": "TASK-000010"
+        },
+        {
+          "from": "TASK-000005",
+          "to": "TASK-000011"
+        },
+        {
+          "from": "TASK-000006",
+          "to": "TASK-000012"
+        },
+        {
+          "from": "TASK-000007",
+          "to": "TASK-000013"
+        },
+        {
+          "from": "TASK-000008",
+          "to": "TASK-000014"
+        },
+        {
+          "from": "TASK-000009",
+          "to": "TASK-000015"
+        },
+        {
+          "from": "TASK-000010",
+          "to": "TASK-000016"
+        },
+        {
+          "from": "TASK-000011",
+          "to": "TASK-000017"
+        },
+        {
+          "from": "TASK-000012",
+          "to": "TASK-000018"
+        },
+        {
+          "from": "TASK-000013",
+          "to": "TASK-000019"
+        },
+        {
+          "from": "TASK-000014",
+          "to": "TASK-000019"
+        },
+        {
+          "from": "TASK-000015",
+          "to": "TASK-000019"
+        },
+        {
+          "from": "TASK-000016",
+          "to": "TASK-000019"
+        },
+        {
+          "from": "TASK-000017",
+          "to": "TASK-000019"
+        },
+        {
+          "from": "TASK-000018",
+          "to": "TASK-000019"
+        },
+        {
+          "from": "TASK-000013",
+          "to": "TASK-000020"
+        },
+        {
+          "from": "TASK-000014",
+          "to": "TASK-000021"
+        },
+        {
+          "from": "TASK-000015",
+          "to": "TASK-000022"
+        },
+        {
+          "from": "TASK-000016",
+          "to": "TASK-000023"
+        },
+        {
+          "from": "TASK-000017",
+          "to": "TASK-000024"
+        },
+        {
+          "from": "TASK-000018",
+          "to": "TASK-000025"
+        }
+      ]
+    },
+    "affectedFiles": [
+      "packages/test-agent-runtime-refinement.ts",
+      "packages/agent-runtime/service.ts",
+      "packages/agent-runtime/types.ts",
+      "packages/agent-runtime/registry.ts",
+      "packages/test-agent-runtime.ts",
+      "packages/test-orchestrator.ts"
+    ],
+    "affectedSymbols": [
+      "packages/test-agent-runtime-refinement.ts#main",
+      "external#push",
+      "packages/test-engineering-planner.ts#featPlan",
+      "packages/test-agent-runtime-refinement.ts#id",
+      "packages/test-agent-runtime-refinement.ts#error",
+      "packages/test-agent-runtime-refinement.ts#runtime",
+      "packages/test-agent-runtime.ts#main",
+      "packages/test-knowledge-fusion.ts#c",
+      "packages/test-architecture-memory.ts#id",
+      "packages/test-orchestrator.ts#res1",
+      "external#join",
+      "packages/test-agent-runtime-refinement.ts#workspaceRoot",
+      "packages/test-orchestrator.ts#report",
+      "external#existsSync",
+      "packages/test-agent-runtime.ts#id"
+    ],
+    "validationChecklist": [
+      "Verify workspace builds successfully via tsc",
+      "Ensure imports resolve correctly across packages",
+      "Execute modified test modules and verify all test cases pass",
+      "Verify caller declarations are not broken by public interface adjustments",
+      "Verify architectural memory rules and check for warnings"
+    ],
+    "missingInformation": [],
+    "estimatedTokens": 40000,
+    "estimatedLOC": 840,
+    "estimatedDuration": 31,
+    "diagnostics": {
+      "planningTimeMs": 31,
+      "graphNodes": 25,
+      "graphEdges": 24,
+      "dependencyDepth": 5,
+      "affectedModules": 6,
+      "complexity": "Very Large",
+      "riskScore": 40
+    }
+  },
+  "executionSchedule": {
+    "batches": [
+      {
+        "batchIndex": 1,
+        "phaseId": "PHASE-1",
+        "taskIds": [
+          "TASK-000001",
+          "TASK-000002",
+          "TASK-000003",
+          "TASK-000004",
+          "TASK-000005",
+          "TASK-000006"
+        ]
+      },
+      {
+        "batchIndex": 2,
+        "phaseId": "PHASE-2",
+        "taskIds": [
+          "TASK-000007",
+          "TASK-000008",
+          "TASK-000009",
+          "TASK-000010",
+          "TASK-000011",
+          "TASK-000012"
+        ]
+      },
+      {
+        "batchIndex": 3,
+        "phaseId": "PHASE-3",
+        "taskIds": [
+          "TASK-000013",
+          "TASK-000014",
+          "TASK-000015",
+          "TASK-000016",
+          "TASK-000017",
+          "TASK-000018"
+        ]
+      },
+      {
+        "batchIndex": 4,
+        "phaseId": "PHASE-3",
+        "taskIds": [
+          "TASK-000019"
+        ]
+      },
+      {
+        "batchIndex": 5,
+        "phaseId": "PHASE-4",
+        "taskIds": [
+          "TASK-000020",
+          "TASK-000021",
+          "TASK-000022",
+          "TASK-000023",
+          "TASK-000024",
+          "TASK-000025"
+        ]
+      }
+    ]
+  },
+  "executionDiagnostics": {
+    "totalTasks": 31,
+    "completedTasks": 25,
+    "failedTasks": 0,
+    "skippedTasks": 0,
+    "parallelism": 5,
+    "executionDepth": 5,
+    "criticalPathLength": 5,
+    "retries": 0,
+    "rollbackCount": 0,
+    "executionTime": 7,
+    "selectedProvider": "Mock Agent Provider",
+    "providerHealth": "Healthy",
+    "runtimeMetricsSummary": {
+      "totalExecutionTimeMs": 30,
+      "taskCounts": {
+        "Pending": 0,
+        "Queued": 25,
+        "Running": 0,
+        "Paused": 0,
+        "Completed": 25,
+        "Failed": 0,
+        "Cancelled": 0,
+        "Retrying": 0,
+        "RolledBack": 0
+      },
+      "artifactsCount": 25,
+      "providerSelectionReasoning": [
+        "Negotiating capability: 'analyze'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'analyze'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'analyze'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'analyze'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'analyze'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'analyze'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'modify'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'modify'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'modify'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'modify'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'modify'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'modify'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'validate'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'validate'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'validate'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'validate'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'validate'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'validate'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'validate'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'test'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'test'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'test'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'test'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'test'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'.",
+        "Negotiating capability: 'test'. Candidates count: 1. Selected 'Mock Agent Provider' (ID: mock-provider) with priority 0, health 'Healthy', version '1.0.0'."
+      ],
+      "middlewareTimings": {},
+      "hookTimings": {},
+      "eventCounts": {
+        "TaskStarted": 25,
+        "TaskProgress": 75,
+        "ArtifactProduced": 25,
+        "TaskCompleted": 25
+      },
+      "replayStatistics": {
+        "totalReplayed": 0,
+        "lastReplayedSession": ""
+      },
+      "snapshotStatistics": {
+        "totalSnapshotsWritten": 50,
+        "lastSnapshotId": "snapshot-1782505243302"
+      }
+    },
+    "executionSnapshotId": "snapshot-1782505243302"
+  },
+  "estimatedTokens": 12000
+}

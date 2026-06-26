@@ -28,6 +28,28 @@ export class ImportsService {
 
     ) { }
 
+    async extractFromFile(relativePath: string): Promise<ImportRecord[]> {
+
+        const fullPath = path.join(this.projectRoot, relativePath);
+
+        const parsed = await this.parser.parse(fullPath);
+
+        const output: ImportRecord[] = [];
+
+        this.extract(
+
+            parsed.ast,
+
+            fullPath,
+
+            output
+
+        );
+
+        return output;
+
+    }
+
     async index(): Promise<ImportIndex> {
 
         const imports: ImportRecord[] = [];

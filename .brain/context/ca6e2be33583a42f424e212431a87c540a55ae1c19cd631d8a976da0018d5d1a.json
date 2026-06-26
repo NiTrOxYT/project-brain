@@ -1,0 +1,3721 @@
+{
+  "generatedAt": "2026-06-26T19:46:28.389Z",
+  "query": "how does symbols service extract files",
+  "plan": {
+    "originalQuery": "how does symbols service extract files",
+    "normalizedQuery": "how does symbols service extract files",
+    "intent": "analysis",
+    "keywords": [
+      "how",
+      "does",
+      "symbols",
+      "service",
+      "extract",
+      "files"
+    ],
+    "targetModules": [
+      "packages/architecture-memory/service.ts",
+      "packages/ast/service.ts",
+      "packages/brain/service.ts",
+      "packages/cache/service.ts",
+      "packages/context-assembler/service.ts",
+      "packages/context-budget/service.ts",
+      "packages/context-loader/service.ts",
+      "packages/core/container.ts",
+      "packages/core/service.ts",
+      "packages/core/types.ts",
+      "packages/execution-graph/service.ts",
+      "packages/filesystem/service.ts"
+    ],
+    "contextBudget": 10,
+    "confidence": 0.95
+  },
+  "files": [
+    {
+      "path": "packages/synchronizer/service.ts",
+      "score": 465.2762210888078,
+      "estimatedTokens": 2840
+    },
+    {
+      "path": "packages/context-assembler/service.ts",
+      "score": 235.75209471324925,
+      "estimatedTokens": 3124
+    },
+    {
+      "path": "path",
+      "score": 150,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/filesystem/index.ts",
+      "score": 147.73869346733667,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "fs/promises",
+      "score": 134.92462311557793,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/relationship-analyzer/service.ts",
+      "score": 115.6507786537539,
+      "estimatedTokens": 2616
+    },
+    {
+      "path": "packages/semantic/index.ts",
+      "score": 108.54271356783921,
+      "estimatedTokens": 27
+    },
+    {
+      "path": "packages/relationship-analyzer/index.ts",
+      "score": 69.34673366834171,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/execution-graph/index.ts",
+      "score": 66.3316582914573,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/symbols/index.ts",
+      "score": 66.3316582914573,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/imports/index.ts",
+      "score": 63.31658291457287,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/indexer/index.ts",
+      "score": 60.30150753768845,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/synchronizer/index.ts",
+      "score": 60.30150753768845,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/runtime/index.ts",
+      "score": 56.532663316582926,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/synchronizer/errors.ts",
+      "score": 54.34463698910468,
+      "estimatedTokens": 40
+    },
+    {
+      "path": "packages/synchronizer/types.ts",
+      "score": 54.32137669925661,
+      "estimatedTokens": 53
+    },
+    {
+      "path": "packages/graph-builder/index.ts",
+      "score": 54.27135678391961,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/ast/index.ts",
+      "score": 45.22613065326633,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "typescript",
+      "score": 45.22613065326633,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/context-loader/service.ts",
+      "score": 40.11424816259975,
+      "estimatedTokens": 604
+    },
+    {
+      "path": "packages/knowledge-fusion/index.ts",
+      "score": 33.16582914572865,
+      "estimatedTokens": 27
+    },
+    {
+      "path": "packages/planner/index.ts",
+      "score": 33.16582914572865,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "crypto",
+      "score": 32.41206030150754,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/context-assembler/index.ts",
+      "score": 32.41206030150754,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/import-resolver/index.ts",
+      "score": 27.135678391959804,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/context-assembler/types.ts",
+      "score": 24.5074597162543,
+      "estimatedTokens": 324
+    },
+    {
+      "path": "packages/context-assembler/errors.ts",
+      "score": 24.193883220260453,
+      "estimatedTokens": 42
+    },
+    {
+      "path": "packages/context-budget/index.ts",
+      "score": 24.12060301507538,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "packages/graph-traversal/index.ts",
+      "score": 6.030150753768845,
+      "estimatedTokens": 20
+    },
+    {
+      "path": "process",
+      "score": 2.2613065326633164,
+      "estimatedTokens": 0
+    }
+  ],
+  "symbols": [
+    {
+      "name": "ContextAssemblerError",
+      "kind": "class",
+      "file": "packages/context-assembler/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/context-assembler/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "ContextAssemblerService",
+      "kind": "class",
+      "file": "packages/context-assembler/service.ts",
+      "line": 11
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/context-assembler/service.ts",
+      "line": 13
+    },
+    {
+      "name": "planner",
+      "kind": "property",
+      "file": "packages/context-assembler/service.ts",
+      "line": 14
+    },
+    {
+      "name": "budgeter",
+      "kind": "property",
+      "file": "packages/context-assembler/service.ts",
+      "line": 15
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/context-assembler/service.ts",
+      "line": 17
+    },
+    {
+      "name": "assemble",
+      "kind": "method",
+      "file": "packages/context-assembler/service.ts",
+      "line": 25
+    },
+    {
+      "name": "queryHashInput",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 40
+    },
+    {
+      "name": "queryHash",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 51
+    },
+    {
+      "name": "cacheDir",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 56
+    },
+    {
+      "name": "cachePath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 57
+    },
+    {
+      "name": "isCached",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 59
+    },
+    {
+      "name": "cached",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 63
+    },
+    {
+      "name": "symbolsPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 65
+    },
+    {
+      "name": "indexPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 66
+    },
+    {
+      "name": "relationshipsPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 67
+    },
+    {
+      "name": "graphPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 68
+    },
+    {
+      "name": "cachedTime",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 77
+    },
+    {
+      "name": "isValid",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 78
+    },
+    {
+      "name": "plan",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 92
+    },
+    {
+      "name": "fusedCandidates",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 95
+    },
+    {
+      "name": "fusionService",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 98
+    },
+    {
+      "name": "fusionResult",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 99
+    },
+    {
+      "name": "symbolsData",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 111
+    },
+    {
+      "name": "budgetCandidates",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 116
+    },
+    {
+      "name": "memoryEntriesList",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 117
+    },
+    {
+      "name": "cand",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 119
+    },
+    {
+      "name": "content",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 121
+    },
+    {
+      "name": "estimatedTokens",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 130
+    },
+    {
+      "name": "symbolCount",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 131
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 140
+    },
+    {
+      "name": "budgetResult",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 155
+    },
+    {
+      "name": "selectedFilesCandidate",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 160
+    },
+    {
+      "name": "selectedMemoryCandidates",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 161
+    },
+    {
+      "name": "selectedFiles",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 163
+    },
+    {
+      "name": "selectedFilesSet",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 164
+    },
+    {
+      "name": "selectedMemoryEntriesList",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 167
+    },
+    {
+      "name": "entryId",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 169
+    },
+    {
+      "name": "filteredSymbols",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 177
+    },
+    {
+      "name": "seenSymbols",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 178
+    },
+    {
+      "name": "sym",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 180
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 182
+    },
+    {
+      "name": "filteredRelationships",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 197
+    },
+    {
+      "name": "seenRels",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 198
+    },
+    {
+      "name": "relData",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 202
+    },
+    {
+      "name": "rel",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 204
+    },
+    {
+      "name": "filteredGraph",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 224
+    },
+    {
+      "name": "graphData",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 228
+    },
+    {
+      "name": "execPath",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 242
+    },
+    {
+      "name": "filteredExecutionGraph",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 243
+    },
+    {
+      "name": "execData",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 247
+    },
+    {
+      "name": "fromFile",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 255
+    },
+    {
+      "name": "toFile",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 256
+    },
+    {
+      "name": "contextPackage",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 264
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/context-assembler/service.ts",
+      "line": 290
+    },
+    {
+      "name": "ContextFile",
+      "kind": "interface",
+      "file": "packages/context-assembler/types.ts",
+      "line": 3
+    },
+    {
+      "name": "ContextSymbol",
+      "kind": "interface",
+      "file": "packages/context-assembler/types.ts",
+      "line": 13
+    },
+    {
+      "name": "ContextRelationship",
+      "kind": "interface",
+      "file": "packages/context-assembler/types.ts",
+      "line": 25
+    },
+    {
+      "name": "ContextGraphNode",
+      "kind": "interface",
+      "file": "packages/context-assembler/types.ts",
+      "line": 39
+    },
+    {
+      "name": "ContextGraphEdge",
+      "kind": "interface",
+      "file": "packages/context-assembler/types.ts",
+      "line": 47
+    },
+    {
+      "name": "ContextGraph",
+      "kind": "interface",
+      "file": "packages/context-assembler/types.ts",
+      "line": 57
+    },
+    {
+      "name": "ContextPackage",
+      "kind": "interface",
+      "file": "packages/context-assembler/types.ts",
+      "line": 65
+    },
+    {
+      "name": "ContextArchitectureEntry",
+      "kind": "interface",
+      "file": "packages/context-assembler/types.ts",
+      "line": 89
+    },
+    {
+      "name": "ContextLoaderService",
+      "kind": "class",
+      "file": "packages/context-loader/service.ts",
+      "line": 12
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/context-loader/service.ts",
+      "line": 14
+    },
+    {
+      "name": "retriever",
+      "kind": "property",
+      "file": "packages/context-loader/service.ts",
+      "line": 17
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/context-loader/service.ts",
+      "line": 19
+    },
+    {
+      "name": "load",
+      "kind": "method",
+      "file": "packages/context-loader/service.ts",
+      "line": 30
+    },
+    {
+      "name": "retrieval",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 34
+    },
+    {
+      "name": "expandedFiles",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 43
+    },
+    {
+      "name": "project",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 51
+    },
+    {
+      "name": "symbols",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 60
+    },
+    {
+      "name": "imports",
+      "kind": "variable",
+      "file": "packages/context-loader/service.ts",
+      "line": 69
+    },
+    {
+      "name": "RelationshipAnalyzerService",
+      "kind": "class",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 13
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 15
+    },
+    {
+      "name": "parser",
+      "kind": "property",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 16
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 18
+    },
+    {
+      "name": "extractFromFile",
+      "kind": "method",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 23
+    },
+    {
+      "name": "fullPath",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 25
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 27
+    },
+    {
+      "name": "output",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 29
+    },
+    {
+      "name": "analyze",
+      "kind": "method",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 47
+    },
+    {
+      "name": "symbolsPath",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 51
+    },
+    {
+      "name": "symbolsData",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 61
+    },
+    {
+      "name": "projectSymbols",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 62
+    },
+    {
+      "name": "indexPath",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 66
+    },
+    {
+      "name": "indexData",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 76
+    },
+    {
+      "name": "relationships",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 78
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 80
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 98
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 114
+    },
+    {
+      "name": "extractRelationships",
+      "kind": "method",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 126
+    },
+    {
+      "name": "scopeStack",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 133
+    },
+    {
+      "name": "visit",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 135
+    },
+    {
+      "name": "pushed",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 137
+    },
+    {
+      "name": "name",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 141
+    },
+    {
+      "name": "clause",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 147
+    },
+    {
+      "name": "type",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 149
+    },
+    {
+      "name": "typeNode",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 151
+    },
+    {
+      "name": "target",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 153
+    },
+    {
+      "name": "line",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 154
+    },
+    {
+      "name": "isModuleLevel",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 236
+    },
+    {
+      "name": "isDeclName",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 270
+    },
+    {
+      "name": "isHeritage",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 299
+    },
+    {
+      "name": "current",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 300
+    },
+    {
+      "name": "source",
+      "kind": "variable",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 317
+    },
+    {
+      "name": "SynchronizerError",
+      "kind": "class",
+      "file": "packages/synchronizer/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/synchronizer/errors.ts",
+      "line": 3
+    },
+    {
+      "name": "SynchronizerService",
+      "kind": "class",
+      "file": "packages/synchronizer/service.ts",
+      "line": 17
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/synchronizer/service.ts",
+      "line": 19
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/synchronizer/service.ts",
+      "line": 21
+    },
+    {
+      "name": "forceRebuild",
+      "kind": "method",
+      "file": "packages/synchronizer/service.ts",
+      "line": 26
+    },
+    {
+      "name": "runtime",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 28
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 32
+    },
+    {
+      "name": "synchronize",
+      "kind": "method",
+      "file": "packages/synchronizer/service.ts",
+      "line": 37
+    },
+    {
+      "name": "indexPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 41
+    },
+    {
+      "name": "existingIndex",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 48
+    },
+    {
+      "name": "existingFilesMap",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 49
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 50
+    },
+    {
+      "name": "currentFilesMap",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 54
+    },
+    {
+      "name": "addedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 56
+    },
+    {
+      "name": "removedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 57
+    },
+    {
+      "name": "changedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 58
+    },
+    {
+      "name": "extFile",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 61
+    },
+    {
+      "name": "relPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 72
+    },
+    {
+      "name": "stateDir",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 78
+    },
+    {
+      "name": "statePath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 79
+    },
+    {
+      "name": "state",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 84
+    },
+    {
+      "name": "updatedIndexes",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 102
+    },
+    {
+      "name": "updatedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 105
+    },
+    {
+      "name": "affectedSet",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 109
+    },
+    {
+      "name": "newlyAddedOrChanged",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 110
+    },
+    {
+      "name": "symbolsPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 113
+    },
+    {
+      "name": "symbolsList",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 114
+    },
+    {
+      "name": "symbolsData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 117
+    },
+    {
+      "name": "symbolsService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 121
+    },
+    {
+      "name": "addedSymbols",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 122
+    },
+    {
+      "name": "fileSyms",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 126
+    },
+    {
+      "name": "importsPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 139
+    },
+    {
+      "name": "importsList",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 140
+    },
+    {
+      "name": "importsData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 143
+    },
+    {
+      "name": "importsService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 147
+    },
+    {
+      "name": "addedImports",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 148
+    },
+    {
+      "name": "fileImps",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 152
+    },
+    {
+      "name": "relationshipsPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 165
+    },
+    {
+      "name": "relationshipsList",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 166
+    },
+    {
+      "name": "relData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 169
+    },
+    {
+      "name": "relService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 173
+    },
+    {
+      "name": "projectSymbols",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 174
+    },
+    {
+      "name": "addedRelationships",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 175
+    },
+    {
+      "name": "fileRels",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 179
+    },
+    {
+      "name": "execService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 192
+    },
+    {
+      "name": "graphService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 197
+    },
+    {
+      "name": "semanticPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 202
+    },
+    {
+      "name": "semanticEntries",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 203
+    },
+    {
+      "name": "semanticData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 206
+    },
+    {
+      "name": "sym",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 210
+    },
+    {
+      "name": "terms",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 211
+    },
+    {
+      "name": "scanProject",
+      "kind": "method",
+      "file": "packages/synchronizer/service.ts",
+      "line": 255
+    },
+    {
+      "name": "filesMap",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 257
+    },
+    {
+      "name": "walk",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 259
+    },
+    {
+      "name": "entries",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 261
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 263
+    },
+    {
+      "name": "fullPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 274
+    },
+    {
+      "name": "stat",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 282
+    },
+    {
+      "name": "SynchronizationState",
+      "kind": "interface",
+      "file": "packages/synchronizer/types.ts",
+      "line": 1
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ContextAssemblerError",
+      "target": "Error",
+      "type": "extends",
+      "file": "packages/context-assembler/errors.ts",
+      "line": 1
+    },
+    {
+      "source": "ContextAssemblerError.constructor",
+      "target": "name",
+      "type": "references",
+      "file": "packages/context-assembler/errors.ts",
+      "line": 7
+    },
+    {
+      "source": "ContextAssemblerService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 13
+    },
+    {
+      "source": "ContextAssemblerService.planner",
+      "target": "PlannerService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 14
+    },
+    {
+      "source": "ContextAssemblerService.budgeter",
+      "target": "ContextBudgetService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 15
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "planner",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 21
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "PlannerService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 21
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 21
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "budgeter",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 22
+    },
+    {
+      "source": "ContextAssemblerService.constructor",
+      "target": "ContextBudgetService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 22
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fusedCandidates",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 34
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextPackage",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 36
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "options",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 40
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "query",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 42
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "update",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 53
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "queryHashInput",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 53
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 56
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cacheDir",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 57
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "queryHash",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 57
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cachePath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "isCached",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 61
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 63
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 71
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "stat",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 71
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "symbolsPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 71
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "indexPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 72
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "relationshipsPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 73
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "graphPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 74
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cached",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 77
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cachedTime",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 80
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "isValid",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 80
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "planner",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 92
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "plan",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 92
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "KnowledgeFusionService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 97
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fusionService",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 99
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fuse",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 99
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fusionResult",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 108
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "candidates",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 108
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "symbols",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 111
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "cand",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 120
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "type",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 120
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "content",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 123
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "id",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 124
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "symbolsData",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 131
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "file",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 131
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "budgetCandidates",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 133
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "score",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 135
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "estimatedTokens",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 136
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "symbolCount",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 137
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "metadata",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 140
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 140
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "memoryEntriesList",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 149
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "budgeter",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 155
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "budget",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 155
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "contextBudget",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 157
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "budgetResult",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 160
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "files",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 160
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedFilesCandidate",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 163
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedFiles",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 164
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedMemoryCandidates",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 168
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "entryId",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 170
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedMemoryEntriesList",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 172
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextSymbol",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 177
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "selectedFilesSet",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 181
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "sym",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 181
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "name",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 182
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "kind",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 182
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "seenSymbols",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 183
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "key",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 183
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "add",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 184
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filteredSymbols",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 185
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "line",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 189
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextRelationship",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 197
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 202
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "relData",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 204
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "rel",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 205
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "source",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 206
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "target",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 206
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "seenRels",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 207
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filteredRelationships",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 209
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextGraph",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 224
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "nodes",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 224
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "edges",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 224
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filteredGraph",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 230
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "graphData",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 231
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "execPath",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 245
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "filteredExecutionGraph",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 249
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "execData",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 250
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "fromFile",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 257
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "toFile",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 257
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "graph",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 275
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "usedTokens",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 278
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "mkdir",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 283
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "writeJson",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 286
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "contextPackage",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 286
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "error",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 292
+    },
+    {
+      "source": "ContextAssemblerService.assemble",
+      "target": "ContextAssemblerError",
+      "type": "references",
+      "file": "packages/context-assembler/service.ts",
+      "line": 292
+    },
+    {
+      "source": "ContextFile",
+      "target": "score",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 7
+    },
+    {
+      "source": "ContextFile",
+      "target": "estimatedTokens",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 9
+    },
+    {
+      "source": "ContextSymbol",
+      "target": "name",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 15
+    },
+    {
+      "source": "ContextSymbol",
+      "target": "kind",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 17
+    },
+    {
+      "source": "ContextSymbol",
+      "target": "file",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 19
+    },
+    {
+      "source": "ContextSymbol",
+      "target": "line",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 21
+    },
+    {
+      "source": "ContextRelationship",
+      "target": "source",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 27
+    },
+    {
+      "source": "ContextRelationship",
+      "target": "target",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 29
+    },
+    {
+      "source": "ContextRelationship",
+      "target": "type",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 31
+    },
+    {
+      "source": "ContextRelationship",
+      "target": "file",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 33
+    },
+    {
+      "source": "ContextRelationship",
+      "target": "line",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 35
+    },
+    {
+      "source": "ContextGraphNode",
+      "target": "id",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 41
+    },
+    {
+      "source": "ContextGraphNode",
+      "target": "type",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 43
+    },
+    {
+      "source": "ContextGraphEdge",
+      "target": "type",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 53
+    },
+    {
+      "source": "ContextGraph",
+      "target": "nodes",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextGraph",
+      "target": "ContextGraphNode",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextGraph",
+      "target": "edges",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 61
+    },
+    {
+      "source": "ContextGraph",
+      "target": "ContextGraphEdge",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 61
+    },
+    {
+      "source": "ContextPackage",
+      "target": "query",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 69
+    },
+    {
+      "source": "ContextPackage",
+      "target": "plan",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 71
+    },
+    {
+      "source": "ContextPackage",
+      "target": "ExecutionPlan",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 71
+    },
+    {
+      "source": "ContextPackage",
+      "target": "files",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 73
+    },
+    {
+      "source": "ContextPackage",
+      "target": "ContextFile",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 73
+    },
+    {
+      "source": "ContextPackage",
+      "target": "symbols",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 75
+    },
+    {
+      "source": "ContextPackage",
+      "target": "ContextSymbol",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 75
+    },
+    {
+      "source": "ContextPackage",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 77
+    },
+    {
+      "source": "ContextPackage",
+      "target": "ContextRelationship",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 77
+    },
+    {
+      "source": "ContextPackage",
+      "target": "graph",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 79
+    },
+    {
+      "source": "ContextPackage",
+      "target": "ContextGraph",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 79
+    },
+    {
+      "source": "ContextPackage",
+      "target": "ContextArchitectureEntry",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 83
+    },
+    {
+      "source": "ContextPackage",
+      "target": "estimatedTokens",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 85
+    },
+    {
+      "source": "ContextArchitectureEntry",
+      "target": "id",
+      "type": "references",
+      "file": "packages/context-assembler/types.ts",
+      "line": 91
+    },
+    {
+      "source": "ContextLoaderService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 15
+    },
+    {
+      "source": "ContextLoaderService.constructor",
+      "target": "retriever",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 23
+    },
+    {
+      "source": "ContextLoaderService.constructor",
+      "target": "RetrieverService",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 24
+    },
+    {
+      "source": "ContextLoaderService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 25
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "ContextRequest",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 31
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "ContextBundle",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 32
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "retriever",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 35
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "retrieve",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 35
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "query",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 37
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "GraphTraversalService",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 44
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 45
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "traverse",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 46
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "retrieval",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 47
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "files",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 47
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "file",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 47
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 52
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 52
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "project",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 82
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 87
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "symbols",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 92
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "symbol",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 96
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "imports",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 100
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "edge",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 104
+    },
+    {
+      "source": "ContextLoaderService.load",
+      "target": "source",
+      "type": "references",
+      "file": "packages/context-loader/service.ts",
+      "line": 104
+    },
+    {
+      "source": "RelationshipAnalyzerService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 15
+    },
+    {
+      "source": "RelationshipAnalyzerService.parser",
+      "target": "AstService",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 16
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractFromFile",
+      "target": "RelationshipRecord",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 23
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractFromFile",
+      "target": "parser",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 27
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractFromFile",
+      "target": "parse",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 27
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractFromFile",
+      "target": "fullPath",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 27
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractFromFile",
+      "target": "extractRelationships",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 31
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractFromFile",
+      "target": "parsed",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 33
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractFromFile",
+      "target": "ast",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 33
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractFromFile",
+      "target": "projectSymbols",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 37
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractFromFile",
+      "target": "output",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 39
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "RelationshipIndex",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 47
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 52
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 57
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 57
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "symbolsPath",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 57
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "RelationshipAnalyzerError",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 58
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 61
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "symbols",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 61
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "symbolsData",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 63
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "sym",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 63
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "name",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 63
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "indexPath",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 72
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "files",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 76
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "RelationshipRecord",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 78
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "indexData",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 80
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "file",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 82
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "parser",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 87
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "parse",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 87
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "fullPath",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 87
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "extractRelationships",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 89
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "parsed",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 90
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "ast",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 90
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "projectSymbols",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 92
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 93
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "writeJson",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 103
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "result",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 109
+    },
+    {
+      "source": "RelationshipAnalyzerService.analyze",
+      "target": "error",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 116
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "RelationshipRecord",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 130
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "node",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 139
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "name",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 141
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "scopeStack",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 142
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "pushed",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 143
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "clause",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 149
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "typeNode",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 153
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "line",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 154
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 156
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "source",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 157
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "target",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 158
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "type",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 159
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "file",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 160
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "isModuleLevel",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 244
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "projectSymbols",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 268
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "isDeclName",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 291
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "current",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 302
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "kind",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 304
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "isHeritage",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 306
+    },
+    {
+      "source": "RelationshipAnalyzerService.extractRelationships",
+      "target": "visit",
+      "type": "references",
+      "file": "packages/relationship-analyzer/service.ts",
+      "line": 343
+    },
+    {
+      "source": "SynchronizerError",
+      "target": "Error",
+      "type": "extends",
+      "file": "packages/synchronizer/errors.ts",
+      "line": 1
+    },
+    {
+      "source": "SynchronizerError.constructor",
+      "target": "name",
+      "type": "references",
+      "file": "packages/synchronizer/errors.ts",
+      "line": 7
+    },
+    {
+      "source": "SynchronizerService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 19
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "RuntimeService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 28
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "runtime",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 31
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "initialize",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 31
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "SynchronizerError",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 33
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "error",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 33
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SynchronizationState",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 37
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 41
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 43
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 43
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "indexPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 43
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "forceRebuild",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 45
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 48
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "IndexResult",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 48
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "IndexedFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 49
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "existingIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 50
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "files",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 50
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "existingFilesMap",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 51
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "set",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 51
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "file",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 51
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "scanProject",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 54
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 60
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "currentFilesMap",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 60
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 60
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "get",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 61
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "extFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 62
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 63
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "changedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 68
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "removedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 74
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "stateDir",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 79
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "updatedIndexes",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 90
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "mkdir",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 94
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "writeJson",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 97
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "statePath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 97
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "state",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 97
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "updatedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 106
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SymbolRecord",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 114
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 116
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SymbolIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 117
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsList",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbols",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "affectedSet",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "sym",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SymbolsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 121
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "newlyAddedOrChanged",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 124
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 126
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "extractFromFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 126
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedSymbols",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 127
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "fileSyms",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 127
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ImportRecord",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 140
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 142
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ImportIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 143
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsList",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "imports",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "imp",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "source",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ImportsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 147
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 152
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedImports",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 153
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "fileImps",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 153
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "RelationshipRecord",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 166
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relationshipsPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 168
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "RelationshipIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 169
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relationshipsList",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "rel",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "RelationshipAnalyzerService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 173
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "name",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 174
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 179
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "projectSymbols",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 179
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedRelationships",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 180
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "fileRels",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 180
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ExecutionGraphService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 192
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "execService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 193
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "buildIncremental",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 193
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "GraphBuilderService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 197
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "graphService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 198
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "build",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 198
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "semanticPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 205
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "semanticEntries",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 207
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "semanticData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 207
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 207
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "normalize",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 211
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "id",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 213
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "terms",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 215
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "error",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 245
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SynchronizerError",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 245
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "IndexedFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 255
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 261
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 263
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 266
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "name",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 266
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "walk",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 278
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "fullPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 278
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "stat",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 282
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "filesMap",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 285
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "set",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 285
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "relPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 285
+    },
+    {
+      "source": "SynchronizationState",
+      "target": "changedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/types.ts",
+      "line": 7
+    },
+    {
+      "source": "SynchronizationState",
+      "target": "addedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/types.ts",
+      "line": 9
+    },
+    {
+      "source": "SynchronizationState",
+      "target": "removedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/types.ts",
+      "line": 11
+    },
+    {
+      "source": "SynchronizationState",
+      "target": "updatedIndexes",
+      "type": "references",
+      "file": "packages/synchronizer/types.ts",
+      "line": 13
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "packages/ast/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/context-assembler/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/context-assembler/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/context-assembler/types.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/context-budget/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/context-loader/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/execution-graph/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/filesystem/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/graph-builder/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/graph-traversal/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/import-resolver/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/imports/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/indexer/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/knowledge-fusion/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/planner/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/relationship-analyzer/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/relationship-analyzer/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/runtime/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/semantic/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/symbols/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/synchronizer/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/synchronizer/service.ts",
+        "type": "file"
+      }
+    ],
+    "edges": [
+      {
+        "from": "packages/context-assembler/index.ts",
+        "to": "packages/context-assembler/service.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/index.ts",
+        "to": "packages/context-assembler/types.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/index.ts",
+        "to": "packages/context-assembler/errors.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "fs/promises",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "crypto",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "packages/planner/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "packages/context-budget/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "packages/context-assembler/types.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "packages/context-assembler/errors.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/service.ts",
+        "to": "packages/knowledge-fusion/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-assembler/types.ts",
+        "to": "packages/planner/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-loader/service.ts",
+        "to": "packages/graph-traversal/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-loader/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/context-loader/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/relationship-analyzer/index.ts",
+        "to": "packages/relationship-analyzer/service.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/relationship-analyzer/service.ts",
+        "to": "fs/promises",
+        "type": "imports"
+      },
+      {
+        "from": "packages/relationship-analyzer/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/relationship-analyzer/service.ts",
+        "to": "typescript",
+        "type": "imports"
+      },
+      {
+        "from": "packages/relationship-analyzer/service.ts",
+        "to": "packages/ast/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/relationship-analyzer/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/index.ts",
+        "to": "packages/synchronizer/service.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/index.ts",
+        "to": "packages/synchronizer/types.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/index.ts",
+        "to": "packages/synchronizer/errors.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "fs/promises",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/indexer/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/symbols/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/imports/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/relationship-analyzer/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/execution-graph/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/graph-builder/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/semantic/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/runtime/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/semantic/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/synchronizer/types.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/synchronizer/errors.ts",
+        "type": "imports"
+      }
+    ]
+  },
+  "estimatedTokens": 9997
+}

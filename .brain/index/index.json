@@ -1,6 +1,762 @@
 {
   "files": [
     {
+      "path": ".agent/skills/brandkit/SKILL.md",
+      "extension": ".md",
+      "size": 15992,
+      "modifiedAt": "2026-06-26T19:14:53.429Z"
+    },
+    {
+      "path": ".agent/skills/cavecrew/README.md",
+      "extension": ".md",
+      "size": 2009,
+      "modifiedAt": "2026-06-26T19:14:53.424Z"
+    },
+    {
+      "path": ".agent/skills/cavecrew/SKILL.md",
+      "extension": ".md",
+      "size": 3936,
+      "modifiedAt": "2026-06-26T19:14:53.425Z"
+    },
+    {
+      "path": ".agent/skills/caveman/README.md",
+      "extension": ".md",
+      "size": 1891,
+      "modifiedAt": "2026-06-26T19:14:53.428Z"
+    },
+    {
+      "path": ".agent/skills/caveman/SKILL.md",
+      "extension": ".md",
+      "size": 5009,
+      "modifiedAt": "2026-06-26T19:14:53.428Z"
+    },
+    {
+      "path": ".agent/skills/caveman-commit/README.md",
+      "extension": ".md",
+      "size": 1226,
+      "modifiedAt": "2026-06-26T19:14:53.428Z"
+    },
+    {
+      "path": ".agent/skills/caveman-commit/SKILL.md",
+      "extension": ".md",
+      "size": 2588,
+      "modifiedAt": "2026-06-26T19:14:53.428Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/README.md",
+      "extension": ".md",
+      "size": 5305,
+      "modifiedAt": "2026-06-26T19:14:53.420Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/SECURITY.md",
+      "extension": ".md",
+      "size": 1557,
+      "modifiedAt": "2026-06-26T19:14:53.423Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/SKILL.md",
+      "extension": ".md",
+      "size": 4535,
+      "modifiedAt": "2026-06-26T19:14:53.422Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/scripts/__init__.py",
+      "extension": ".py",
+      "size": 224,
+      "modifiedAt": "2026-06-26T19:14:53.421Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/scripts/__main__.py",
+      "extension": ".py",
+      "size": 30,
+      "modifiedAt": "2026-06-26T19:14:53.422Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/scripts/benchmark.py",
+      "extension": ".py",
+      "size": 2425,
+      "modifiedAt": "2026-06-26T19:14:53.420Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/scripts/cli.py",
+      "extension": ".py",
+      "size": 2089,
+      "modifiedAt": "2026-06-26T19:14:53.421Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/scripts/compress.py",
+      "extension": ".py",
+      "size": 13146,
+      "modifiedAt": "2026-06-26T19:14:53.421Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/scripts/detect.py",
+      "extension": ".py",
+      "size": 4064,
+      "modifiedAt": "2026-06-26T19:14:53.422Z"
+    },
+    {
+      "path": ".agent/skills/caveman-compress/scripts/validate.py",
+      "extension": ".py",
+      "size": 5752,
+      "modifiedAt": "2026-06-26T19:14:53.421Z"
+    },
+    {
+      "path": ".agent/skills/caveman-help/README.md",
+      "extension": ".md",
+      "size": 976,
+      "modifiedAt": "2026-06-26T19:14:53.370Z"
+    },
+    {
+      "path": ".agent/skills/caveman-help/SKILL.md",
+      "extension": ".md",
+      "size": 2300,
+      "modifiedAt": "2026-06-26T19:14:53.371Z"
+    },
+    {
+      "path": ".agent/skills/caveman-review/README.md",
+      "extension": ".md",
+      "size": 1210,
+      "modifiedAt": "2026-06-26T19:14:53.418Z"
+    },
+    {
+      "path": ".agent/skills/caveman-review/SKILL.md",
+      "extension": ".md",
+      "size": 2739,
+      "modifiedAt": "2026-06-26T19:14:53.419Z"
+    },
+    {
+      "path": ".agent/skills/caveman-stats/README.md",
+      "extension": ".md",
+      "size": 936,
+      "modifiedAt": "2026-06-26T19:14:53.426Z"
+    },
+    {
+      "path": ".agent/skills/caveman-stats/SKILL.md",
+      "extension": ".md",
+      "size": 607,
+      "modifiedAt": "2026-06-26T19:14:53.426Z"
+    },
+    {
+      "path": ".agent/skills/design-taste-frontend/SKILL.md",
+      "extension": ".md",
+      "size": 87253,
+      "modifiedAt": "2026-06-26T19:14:53.425Z"
+    },
+    {
+      "path": ".agent/skills/design-taste-frontend-v1/SKILL.md",
+      "extension": ".md",
+      "size": 21195,
+      "modifiedAt": "2026-06-26T19:14:53.419Z"
+    },
+    {
+      "path": ".agent/skills/emil-design-eng/SKILL.md",
+      "extension": ".md",
+      "size": 27335,
+      "modifiedAt": "2026-06-26T19:14:53.427Z"
+    },
+    {
+      "path": ".agent/skills/full-output-enforcement/SKILL.md",
+      "extension": ".md",
+      "size": 2592,
+      "modifiedAt": "2026-06-26T19:14:53.419Z"
+    },
+    {
+      "path": ".agent/skills/gpt-taste/SKILL.md",
+      "extension": ".md",
+      "size": 7857,
+      "modifiedAt": "2026-06-26T19:14:53.427Z"
+    },
+    {
+      "path": ".agent/skills/high-end-visual-design/SKILL.md",
+      "extension": ".md",
+      "size": 10561,
+      "modifiedAt": "2026-06-26T19:14:53.427Z"
+    },
+    {
+      "path": ".agent/skills/image-to-code/SKILL.md",
+      "extension": ".md",
+      "size": 36442,
+      "modifiedAt": "2026-06-26T19:14:53.429Z"
+    },
+    {
+      "path": ".agent/skills/imagegen-frontend-mobile/SKILL.md",
+      "extension": ".md",
+      "size": 40326,
+      "modifiedAt": "2026-06-26T19:14:53.423Z"
+    },
+    {
+      "path": ".agent/skills/imagegen-frontend-web/SKILL.md",
+      "extension": ".md",
+      "size": 36854,
+      "modifiedAt": "2026-06-26T19:14:53.425Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/SKILL.md",
+      "extension": ".md",
+      "size": 20611,
+      "modifiedAt": "2026-06-26T19:14:53.408Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/agents/impeccable_asset_producer.toml",
+      "extension": ".toml",
+      "size": 8258,
+      "modifiedAt": "2026-06-26T19:14:53.373Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+      "extension": ".toml",
+      "size": 7116,
+      "modifiedAt": "2026-06-26T19:14:53.373Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/agents/openai.yaml",
+      "extension": ".yaml",
+      "size": 235,
+      "modifiedAt": "2026-06-26T19:14:53.372Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/adapt.md",
+      "extension": ".md",
+      "size": 10124,
+      "modifiedAt": "2026-06-26T19:14:53.410Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/animate.md",
+      "extension": ".md",
+      "size": 10466,
+      "modifiedAt": "2026-06-26T19:14:53.415Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/audit.md",
+      "extension": ".md",
+      "size": 7276,
+      "modifiedAt": "2026-06-26T19:14:53.414Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/bolder.md",
+      "extension": ".md",
+      "size": 6571,
+      "modifiedAt": "2026-06-26T19:14:53.410Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/brand.md",
+      "extension": ".md",
+      "size": 10477,
+      "modifiedAt": "2026-06-26T19:14:53.411Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/clarify.md",
+      "extension": ".md",
+      "size": 10646,
+      "modifiedAt": "2026-06-26T19:14:53.414Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/codex.md",
+      "extension": ".md",
+      "size": 7002,
+      "modifiedAt": "2026-06-26T19:14:53.415Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/colorize.md",
+      "extension": ".md",
+      "size": 13568,
+      "modifiedAt": "2026-06-26T19:14:53.413Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/craft.md",
+      "extension": ".md",
+      "size": 11944,
+      "modifiedAt": "2026-06-26T19:14:53.414Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/critique.md",
+      "extension": ".md",
+      "size": 39483,
+      "modifiedAt": "2026-06-26T19:14:53.413Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/delight.md",
+      "extension": ".md",
+      "size": 9827,
+      "modifiedAt": "2026-06-26T19:14:53.418Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/distill.md",
+      "extension": ".md",
+      "size": 5740,
+      "modifiedAt": "2026-06-26T19:14:53.409Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/document.md",
+      "extension": ".md",
+      "size": 27949,
+      "modifiedAt": "2026-06-26T19:14:53.408Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/extract.md",
+      "extension": ".md",
+      "size": 3431,
+      "modifiedAt": "2026-06-26T19:14:53.411Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/harden.md",
+      "extension": ".md",
+      "size": 8594,
+      "modifiedAt": "2026-06-26T19:14:53.411Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/init.md",
+      "extension": ".md",
+      "size": 13036,
+      "modifiedAt": "2026-06-26T19:14:53.413Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/interaction-design.md",
+      "extension": ".md",
+      "size": 6575,
+      "modifiedAt": "2026-06-26T19:14:53.417Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/layout.md",
+      "extension": ".md",
+      "size": 8675,
+      "modifiedAt": "2026-06-26T19:14:53.418Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/live.md",
+      "extension": ".md",
+      "size": 59904,
+      "modifiedAt": "2026-06-26T19:14:53.410Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/onboard.md",
+      "extension": ".md",
+      "size": 7740,
+      "modifiedAt": "2026-06-26T19:14:53.415Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/optimize.md",
+      "extension": ".md",
+      "size": 7599,
+      "modifiedAt": "2026-06-26T19:14:53.415Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/overdrive.md",
+      "extension": ".md",
+      "size": 9139,
+      "modifiedAt": "2026-06-26T19:14:53.417Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/polish.md",
+      "extension": ".md",
+      "size": 12955,
+      "modifiedAt": "2026-06-26T19:14:53.412Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/product.md",
+      "extension": ".md",
+      "size": 3758,
+      "modifiedAt": "2026-06-26T19:14:53.409Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/quieter.md",
+      "extension": ".md",
+      "size": 4911,
+      "modifiedAt": "2026-06-26T19:14:53.412Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/shape.md",
+      "extension": ".md",
+      "size": 11523,
+      "modifiedAt": "2026-06-26T19:14:53.409Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/reference/typeset.md",
+      "extension": ".md",
+      "size": 14276,
+      "modifiedAt": "2026-06-26T19:14:53.412Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/command-metadata.json",
+      "extension": ".json",
+      "size": 8003,
+      "modifiedAt": "2026-06-26T19:14:53.377Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/context-signals.mjs",
+      "extension": ".mjs",
+      "size": 8061,
+      "modifiedAt": "2026-06-26T19:14:53.375Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/context.mjs",
+      "extension": ".mjs",
+      "size": 9910,
+      "modifiedAt": "2026-06-26T19:14:53.376Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/critique-storage.mjs",
+      "extension": ".mjs",
+      "size": 9008,
+      "modifiedAt": "2026-06-26T19:14:53.380Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detect-csp.mjs",
+      "extension": ".mjs",
+      "size": 6761,
+      "modifiedAt": "2026-06-26T19:14:53.377Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detect.mjs",
+      "extension": ".mjs",
+      "size": 620,
+      "modifiedAt": "2026-06-26T19:14:53.405Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/browser/injected/index.mjs",
+      "extension": ".mjs",
+      "size": 68971,
+      "modifiedAt": "2026-06-26T19:14:53.387Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/cli/main.mjs",
+      "extension": ".mjs",
+      "size": 9728,
+      "modifiedAt": "2026-06-26T19:14:53.385Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/detect-antipatterns-browser.js",
+      "extension": ".js",
+      "size": 207429,
+      "modifiedAt": "2026-06-26T19:14:53.394Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/detect-antipatterns.mjs",
+      "extension": ".mjs",
+      "size": 1643,
+      "modifiedAt": "2026-06-26T19:14:53.382Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/engines/browser/detect-url.mjs",
+      "extension": ".mjs",
+      "size": 8840,
+      "modifiedAt": "2026-06-26T19:14:53.389Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/engines/regex/detect-text.mjs",
+      "extension": ".mjs",
+      "size": 23342,
+      "modifiedAt": "2026-06-26T19:14:53.389Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/engines/static-html/css-cascade.mjs",
+      "extension": ".mjs",
+      "size": 34335,
+      "modifiedAt": "2026-06-26T19:14:53.392Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/engines/static-html/detect-html.mjs",
+      "extension": ".mjs",
+      "size": 9162,
+      "modifiedAt": "2026-06-26T19:14:53.391Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/engines/visual/screenshot-contrast.mjs",
+      "extension": ".mjs",
+      "size": 6529,
+      "modifiedAt": "2026-06-26T19:14:53.390Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/findings.mjs",
+      "extension": ".mjs",
+      "size": 363,
+      "modifiedAt": "2026-06-26T19:14:53.381Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/node/file-system.mjs",
+      "extension": ".mjs",
+      "size": 6850,
+      "modifiedAt": "2026-06-26T19:14:53.395Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/profile/profiler.mjs",
+      "extension": ".mjs",
+      "size": 4550,
+      "modifiedAt": "2026-06-26T19:14:53.387Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/registry/antipatterns.mjs",
+      "extension": ".mjs",
+      "size": 17355,
+      "modifiedAt": "2026-06-26T19:14:53.393Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/rules/checks.mjs",
+      "extension": ".mjs",
+      "size": 115570,
+      "modifiedAt": "2026-06-26T19:14:53.393Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/shared/color.mjs",
+      "extension": ".mjs",
+      "size": 4512,
+      "modifiedAt": "2026-06-26T19:14:53.384Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/shared/constants.mjs",
+      "extension": ".mjs",
+      "size": 4156,
+      "modifiedAt": "2026-06-26T19:14:53.383Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/detector/shared/page.mjs",
+      "extension": ".mjs",
+      "size": 252,
+      "modifiedAt": "2026-06-26T19:14:53.384Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/lib/design-parser.mjs",
+      "extension": ".mjs",
+      "size": 25629,
+      "modifiedAt": "2026-06-26T19:14:53.403Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/lib/impeccable-paths.mjs",
+      "extension": ".mjs",
+      "size": 3921,
+      "modifiedAt": "2026-06-26T19:14:53.403Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/lib/is-generated.mjs",
+      "extension": ".mjs",
+      "size": 2269,
+      "modifiedAt": "2026-06-26T19:14:53.404Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/browser-script-parts.mjs",
+      "extension": ".mjs",
+      "size": 1717,
+      "modifiedAt": "2026-06-26T19:14:53.402Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/completion.mjs",
+      "extension": ".mjs",
+      "size": 969,
+      "modifiedAt": "2026-06-26T19:14:53.400Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/event-validation.mjs",
+      "extension": ".mjs",
+      "size": 6308,
+      "modifiedAt": "2026-06-26T19:14:53.399Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/insert-ui.mjs",
+      "extension": ".mjs",
+      "size": 15664,
+      "modifiedAt": "2026-06-26T19:14:53.399Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/manual-apply.mjs",
+      "extension": ".mjs",
+      "size": 34898,
+      "modifiedAt": "2026-06-26T19:14:53.400Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/manual-edit-routes.mjs",
+      "extension": ".mjs",
+      "size": 14933,
+      "modifiedAt": "2026-06-26T19:14:53.401Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/manual-edits-buffer.mjs",
+      "extension": ".mjs",
+      "size": 5112,
+      "modifiedAt": "2026-06-26T19:14:53.398Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/session-store.mjs",
+      "extension": ".mjs",
+      "size": 10692,
+      "modifiedAt": "2026-06-26T19:14:53.401Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/svelte-component.mjs",
+      "extension": ".mjs",
+      "size": 27899,
+      "modifiedAt": "2026-06-26T19:14:53.402Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/sveltekit-adapter.mjs",
+      "extension": ".mjs",
+      "size": 9366,
+      "modifiedAt": "2026-06-26T19:14:53.401Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/ui-core.mjs",
+      "extension": ".mjs",
+      "size": 5541,
+      "modifiedAt": "2026-06-26T19:14:53.399Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live/vocabulary.mjs",
+      "extension": ".mjs",
+      "size": 3307,
+      "modifiedAt": "2026-06-26T19:14:53.398Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-accept.mjs",
+      "extension": ".mjs",
+      "size": 30294,
+      "modifiedAt": "2026-06-26T19:14:53.376Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-browser-dom.js",
+      "extension": ".js",
+      "size": 4250,
+      "modifiedAt": "2026-06-26T19:14:53.407Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-browser-session.js",
+      "extension": ".js",
+      "size": 3297,
+      "modifiedAt": "2026-06-26T19:14:53.405Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-browser.js",
+      "extension": ".js",
+      "size": 426201,
+      "modifiedAt": "2026-06-26T19:14:53.396Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-commit-manual-edits.mjs",
+      "extension": ".mjs",
+      "size": 42136,
+      "modifiedAt": "2026-06-26T19:14:53.375Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-complete.mjs",
+      "extension": ".mjs",
+      "size": 2942,
+      "modifiedAt": "2026-06-26T19:14:53.378Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-copy-edit-agent.mjs",
+      "extension": ".mjs",
+      "size": 28868,
+      "modifiedAt": "2026-06-26T19:14:53.404Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-discard-manual-edits.mjs",
+      "extension": ".mjs",
+      "size": 1687,
+      "modifiedAt": "2026-06-26T19:14:53.407Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-inject.mjs",
+      "extension": ".mjs",
+      "size": 22527,
+      "modifiedAt": "2026-06-26T19:14:53.405Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-insert.mjs",
+      "extension": ".mjs",
+      "size": 9075,
+      "modifiedAt": "2026-06-26T19:14:53.406Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-manual-edit-evidence.mjs",
+      "extension": ".mjs",
+      "size": 11704,
+      "modifiedAt": "2026-06-26T19:14:53.397Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-poll.mjs",
+      "extension": ".mjs",
+      "size": 13554,
+      "modifiedAt": "2026-06-26T19:14:53.378Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-resume.mjs",
+      "extension": ".mjs",
+      "size": 4459,
+      "modifiedAt": "2026-06-26T19:14:53.397Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-server.mjs",
+      "extension": ".mjs",
+      "size": 42524,
+      "modifiedAt": "2026-06-26T19:14:53.407Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-status.mjs",
+      "extension": ".mjs",
+      "size": 2104,
+      "modifiedAt": "2026-06-26T19:14:53.379Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live-wrap.mjs",
+      "extension": ".mjs",
+      "size": 35991,
+      "modifiedAt": "2026-06-26T19:14:53.379Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/live.mjs",
+      "extension": ".mjs",
+      "size": 8546,
+      "modifiedAt": "2026-06-26T19:14:53.380Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "extension": ".js",
+      "size": 29290,
+      "modifiedAt": "2026-06-26T19:14:53.406Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/palette.mjs",
+      "extension": ".mjs",
+      "size": 58218,
+      "modifiedAt": "2026-06-26T19:14:53.395Z"
+    },
+    {
+      "path": ".agent/skills/impeccable/scripts/pin.mjs",
+      "extension": ".mjs",
+      "size": 6124,
+      "modifiedAt": "2026-06-26T19:14:53.404Z"
+    },
+    {
+      "path": ".agent/skills/industrial-brutalist-ui/SKILL.md",
+      "extension": ".md",
+      "size": 8456,
+      "modifiedAt": "2026-06-26T19:14:53.424Z"
+    },
+    {
+      "path": ".agent/skills/minimalist-ui/SKILL.md",
+      "extension": ".md",
+      "size": 7901,
+      "modifiedAt": "2026-06-26T19:14:53.426Z"
+    },
+    {
+      "path": ".agent/skills/redesign-existing-projects/SKILL.md",
+      "extension": ".md",
+      "size": 15060,
+      "modifiedAt": "2026-06-26T19:14:53.429Z"
+    },
+    {
+      "path": ".agent/skills/stitch-design-taste/DESIGN.md",
+      "extension": ".md",
+      "size": 12053,
+      "modifiedAt": "2026-06-26T19:14:53.424Z"
+    },
+    {
+      "path": ".agent/skills/stitch-design-taste/SKILL.md",
+      "extension": ".md",
+      "size": 11851,
+      "modifiedAt": "2026-06-26T19:14:53.423Z"
+    },
+    {
       "path": ".gitignore",
       "extension": "",
       "size": 0,
@@ -22,13 +778,133 @@
       "path": "package-lock.json",
       "extension": ".json",
       "size": 16739,
-      "modifiedAt": "2026-06-26T15:00:05.237Z"
+      "modifiedAt": "2026-06-26T18:58:54.171Z"
     },
     {
       "path": "package.json",
       "extension": ".json",
-      "size": 444,
-      "modifiedAt": "2026-06-26T14:58:43.000Z"
+      "size": 418,
+      "modifiedAt": "2026-06-26T18:58:54.168Z"
+    },
+    {
+      "path": "packages/agent-runtime/artifacts.ts",
+      "extension": ".ts",
+      "size": 338,
+      "modifiedAt": "2026-06-26T20:18:40.652Z"
+    },
+    {
+      "path": "packages/agent-runtime/errors.ts",
+      "extension": ".ts",
+      "size": 155,
+      "modifiedAt": "2026-06-26T20:12:41.901Z"
+    },
+    {
+      "path": "packages/agent-runtime/events.ts",
+      "extension": ".ts",
+      "size": 394,
+      "modifiedAt": "2026-06-26T20:18:35.890Z"
+    },
+    {
+      "path": "packages/agent-runtime/executor.ts",
+      "extension": ".ts",
+      "size": 10636,
+      "modifiedAt": "2026-06-26T20:19:24.609Z"
+    },
+    {
+      "path": "packages/agent-runtime/hooks.ts",
+      "extension": ".ts",
+      "size": 496,
+      "modifiedAt": "2026-06-26T20:17:41.101Z"
+    },
+    {
+      "path": "packages/agent-runtime/index.ts",
+      "extension": ".ts",
+      "size": 299,
+      "modifiedAt": "2026-06-26T20:18:17.732Z"
+    },
+    {
+      "path": "packages/agent-runtime/middleware.ts",
+      "extension": ".ts",
+      "size": 750,
+      "modifiedAt": "2026-06-26T20:17:37.146Z"
+    },
+    {
+      "path": "packages/agent-runtime/provider.ts",
+      "extension": ".ts",
+      "size": 755,
+      "modifiedAt": "2026-06-26T20:16:56.914Z"
+    },
+    {
+      "path": "packages/agent-runtime/registry.ts",
+      "extension": ".ts",
+      "size": 3293,
+      "modifiedAt": "2026-06-26T20:17:04.047Z"
+    },
+    {
+      "path": "packages/agent-runtime/runtime.ts",
+      "extension": ".ts",
+      "size": 1015,
+      "modifiedAt": "2026-06-26T20:12:57.430Z"
+    },
+    {
+      "path": "packages/agent-runtime/service.ts",
+      "extension": ".ts",
+      "size": 15515,
+      "modifiedAt": "2026-06-26T20:18:13.527Z"
+    },
+    {
+      "path": "packages/agent-runtime/types.ts",
+      "extension": ".ts",
+      "size": 2103,
+      "modifiedAt": "2026-06-26T20:16:50.445Z"
+    },
+    {
+      "path": "packages/architecture-memory/errors.ts",
+      "extension": ".ts",
+      "size": 172,
+      "modifiedAt": "2026-06-26T19:36:07.991Z"
+    },
+    {
+      "path": "packages/architecture-memory/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T19:36:12.640Z"
+    },
+    {
+      "path": "packages/architecture-memory/service.ts",
+      "extension": ".ts",
+      "size": 10555,
+      "modifiedAt": "2026-06-26T19:40:46.854Z"
+    },
+    {
+      "path": "packages/architecture-memory/types.ts",
+      "extension": ".ts",
+      "size": 794,
+      "modifiedAt": "2026-06-26T19:40:28.876Z"
+    },
+    {
+      "path": "packages/ast/errors.ts",
+      "extension": ".ts",
+      "size": 142,
+      "modifiedAt": "2026-06-26T18:59:45.147Z"
+    },
+    {
+      "path": "packages/ast/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T18:59:54.870Z"
+    },
+    {
+      "path": "packages/ast/service.ts",
+      "extension": ".ts",
+      "size": 723,
+      "modifiedAt": "2026-06-26T19:00:06.675Z"
+    },
+    {
+      "path": "packages/ast/types.ts",
+      "extension": ".ts",
+      "size": 134,
+      "modifiedAt": "2026-06-26T18:59:32.804Z"
     },
     {
       "path": "packages/brain/errors.ts",
@@ -95,6 +971,30 @@
       "extension": ".ts",
       "size": 49,
       "modifiedAt": "2026-06-26T14:59:44.847Z"
+    },
+    {
+      "path": "packages/context-assembler/errors.ts",
+      "extension": ".ts",
+      "size": 168,
+      "modifiedAt": "2026-06-26T19:24:07.438Z"
+    },
+    {
+      "path": "packages/context-assembler/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T19:24:19.488Z"
+    },
+    {
+      "path": "packages/context-assembler/service.ts",
+      "extension": ".ts",
+      "size": 13905,
+      "modifiedAt": "2026-06-26T20:06:22.494Z"
+    },
+    {
+      "path": "packages/context-assembler/types.ts",
+      "extension": ".ts",
+      "size": 1659,
+      "modifiedAt": "2026-06-26T20:06:03.549Z"
     },
     {
       "path": "packages/context-budget/errors.ts",
@@ -181,6 +1081,54 @@
       "modifiedAt": "2026-06-26T16:37:39.504Z"
     },
     {
+      "path": "packages/engineering-planner/errors.ts",
+      "extension": ".ts",
+      "size": 167,
+      "modifiedAt": "2026-06-26T19:58:54.341Z"
+    },
+    {
+      "path": "packages/engineering-planner/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T19:59:12.862Z"
+    },
+    {
+      "path": "packages/engineering-planner/service.ts",
+      "extension": ".ts",
+      "size": 26444,
+      "modifiedAt": "2026-06-26T20:08:04.666Z"
+    },
+    {
+      "path": "packages/engineering-planner/types.ts",
+      "extension": ".ts",
+      "size": 2095,
+      "modifiedAt": "2026-06-26T20:00:09.340Z"
+    },
+    {
+      "path": "packages/execution-graph/errors.ts",
+      "extension": ".ts",
+      "size": 164,
+      "modifiedAt": "2026-06-26T19:28:37.051Z"
+    },
+    {
+      "path": "packages/execution-graph/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T19:28:41.499Z"
+    },
+    {
+      "path": "packages/execution-graph/service.ts",
+      "extension": ".ts",
+      "size": 29924,
+      "modifiedAt": "2026-06-26T19:31:44.136Z"
+    },
+    {
+      "path": "packages/execution-graph/types.ts",
+      "extension": ".ts",
+      "size": 479,
+      "modifiedAt": "2026-06-26T19:28:32.603Z"
+    },
+    {
       "path": "packages/filesystem/errors.ts",
       "extension": ".ts",
       "size": 151,
@@ -243,8 +1191,8 @@
     {
       "path": "packages/graph-builder/service.ts",
       "extension": ".ts",
-      "size": 1403,
-      "modifiedAt": "2026-06-26T18:10:52.448Z"
+      "size": 1552,
+      "modifiedAt": "2026-06-26T18:48:14.425Z"
     },
     {
       "path": "packages/graph-builder/types.ts",
@@ -277,6 +1225,30 @@
       "modifiedAt": "2026-06-26T16:21:10.892Z"
     },
     {
+      "path": "packages/import-resolver/errors.ts",
+      "extension": ".ts",
+      "size": 164,
+      "modifiedAt": "2026-06-26T18:46:34.220Z"
+    },
+    {
+      "path": "packages/import-resolver/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T18:46:45.054Z"
+    },
+    {
+      "path": "packages/import-resolver/service.ts",
+      "extension": ".ts",
+      "size": 2510,
+      "modifiedAt": "2026-06-26T18:46:56.165Z"
+    },
+    {
+      "path": "packages/import-resolver/types.ts",
+      "extension": ".ts",
+      "size": 103,
+      "modifiedAt": "2026-06-26T18:46:22.971Z"
+    },
+    {
       "path": "packages/imports/errors.ts",
       "extension": ".ts",
       "size": 150,
@@ -291,8 +1263,8 @@
     {
       "path": "packages/imports/service.ts",
       "extension": ".ts",
-      "size": 2325,
-      "modifiedAt": "2026-06-26T16:04:18.342Z"
+      "size": 5541,
+      "modifiedAt": "2026-06-26T19:31:13.771Z"
     },
     {
       "path": "packages/imports/types.ts",
@@ -373,6 +1345,36 @@
       "modifiedAt": "2026-06-26T15:52:30.576Z"
     },
     {
+      "path": "packages/knowledge-fusion/errors.ts",
+      "extension": ".ts",
+      "size": 161,
+      "modifiedAt": "2026-06-26T19:44:55.528Z"
+    },
+    {
+      "path": "packages/knowledge-fusion/index.ts",
+      "extension": ".ts",
+      "size": 108,
+      "modifiedAt": "2026-06-26T19:45:16.688Z"
+    },
+    {
+      "path": "packages/knowledge-fusion/service.ts",
+      "extension": ".ts",
+      "size": 19298,
+      "modifiedAt": "2026-06-26T19:51:57.468Z"
+    },
+    {
+      "path": "packages/knowledge-fusion/strategies.ts",
+      "extension": ".ts",
+      "size": 849,
+      "modifiedAt": "2026-06-26T19:51:39.319Z"
+    },
+    {
+      "path": "packages/knowledge-fusion/types.ts",
+      "extension": ".ts",
+      "size": 1447,
+      "modifiedAt": "2026-06-26T19:51:31.806Z"
+    },
+    {
       "path": "packages/main.ts",
       "extension": ".ts",
       "size": 37,
@@ -411,26 +1413,38 @@
     {
       "path": "packages/orchestrator/errors.ts",
       "extension": ".ts",
-      "size": 160,
-      "modifiedAt": "2026-06-26T16:26:48.825Z"
+      "size": 155,
+      "modifiedAt": "2026-06-26T20:05:15.189Z"
+    },
+    {
+      "path": "packages/orchestrator/executor.ts",
+      "extension": ".ts",
+      "size": 12036,
+      "modifiedAt": "2026-06-26T20:18:27.396Z"
     },
     {
       "path": "packages/orchestrator/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T16:26:57.088Z"
+      "size": 135,
+      "modifiedAt": "2026-06-26T20:05:48.394Z"
+    },
+    {
+      "path": "packages/orchestrator/scheduler.ts",
+      "extension": ".ts",
+      "size": 3596,
+      "modifiedAt": "2026-06-26T20:05:28.039Z"
     },
     {
       "path": "packages/orchestrator/service.ts",
       "extension": ".ts",
-      "size": 751,
-      "modifiedAt": "2026-06-26T16:27:05.961Z"
+      "size": 2167,
+      "modifiedAt": "2026-06-26T20:14:08.757Z"
     },
     {
       "path": "packages/orchestrator/types.ts",
       "extension": ".ts",
-      "size": 113,
-      "modifiedAt": "2026-06-26T16:26:38.840Z"
+      "size": 1676,
+      "modifiedAt": "2026-06-26T20:17:18.540Z"
     },
     {
       "path": "packages/planner/errors.ts",
@@ -505,6 +1519,78 @@
       "modifiedAt": "2026-06-26T16:32:02.806Z"
     },
     {
+      "path": "packages/query-engine/errors.ts",
+      "extension": ".ts",
+      "size": 158,
+      "modifiedAt": "2026-06-26T19:33:56.813Z"
+    },
+    {
+      "path": "packages/query-engine/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T19:34:02.332Z"
+    },
+    {
+      "path": "packages/query-engine/service.ts",
+      "extension": ".ts",
+      "size": 11044,
+      "modifiedAt": "2026-06-26T20:17:29.091Z"
+    },
+    {
+      "path": "packages/query-engine/types.ts",
+      "extension": ".ts",
+      "size": 933,
+      "modifiedAt": "2026-06-26T20:17:23.078Z"
+    },
+    {
+      "path": "packages/relationship-analyzer/errors.ts",
+      "extension": ".ts",
+      "size": 176,
+      "modifiedAt": "2026-06-26T19:19:56.250Z"
+    },
+    {
+      "path": "packages/relationship-analyzer/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T19:20:00.178Z"
+    },
+    {
+      "path": "packages/relationship-analyzer/service.ts",
+      "extension": ".ts",
+      "size": 10462,
+      "modifiedAt": "2026-06-26T19:31:21.366Z"
+    },
+    {
+      "path": "packages/relationship-analyzer/types.ts",
+      "extension": ".ts",
+      "size": 428,
+      "modifiedAt": "2026-06-26T19:19:52.329Z"
+    },
+    {
+      "path": "packages/repository-evolution/errors.ts",
+      "extension": ".ts",
+      "size": 169,
+      "modifiedAt": "2026-06-26T19:50:59.634Z"
+    },
+    {
+      "path": "packages/repository-evolution/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T19:51:14.420Z"
+    },
+    {
+      "path": "packages/repository-evolution/service.ts",
+      "extension": ".ts",
+      "size": 12729,
+      "modifiedAt": "2026-06-26T19:51:09.824Z"
+    },
+    {
+      "path": "packages/repository-evolution/types.ts",
+      "extension": ".ts",
+      "size": 1098,
+      "modifiedAt": "2026-06-26T19:50:55.006Z"
+    },
+    {
       "path": "packages/retriever/errors.ts",
       "extension": ".ts",
       "size": 154,
@@ -549,8 +1635,8 @@
     {
       "path": "packages/runtime/service.ts",
       "extension": ".ts",
-      "size": 1906,
-      "modifiedAt": "2026-06-26T18:39:00.119Z"
+      "size": 2493,
+      "modifiedAt": "2026-06-26T19:28:54.493Z"
     },
     {
       "path": "packages/runtime/types.ts",
@@ -627,14 +1713,62 @@
     {
       "path": "packages/symbols/service.ts",
       "extension": ".ts",
-      "size": 3199,
-      "modifiedAt": "2026-06-26T16:01:34.540Z"
+      "size": 5525,
+      "modifiedAt": "2026-06-26T19:31:07.775Z"
     },
     {
       "path": "packages/symbols/types.ts",
       "extension": ".ts",
-      "size": 261,
-      "modifiedAt": "2026-06-26T16:00:48.337Z"
+      "size": 377,
+      "modifiedAt": "2026-06-26T19:04:32.801Z"
+    },
+    {
+      "path": "packages/synchronizer/errors.ts",
+      "extension": ".ts",
+      "size": 160,
+      "modifiedAt": "2026-06-26T19:31:54.682Z"
+    },
+    {
+      "path": "packages/synchronizer/index.ts",
+      "extension": ".ts",
+      "size": 78,
+      "modifiedAt": "2026-06-26T19:31:58.945Z"
+    },
+    {
+      "path": "packages/synchronizer/service.ts",
+      "extension": ".ts",
+      "size": 11360,
+      "modifiedAt": "2026-06-26T19:32:10.544Z"
+    },
+    {
+      "path": "packages/synchronizer/types.ts",
+      "extension": ".ts",
+      "size": 212,
+      "modifiedAt": "2026-06-26T19:31:50.757Z"
+    },
+    {
+      "path": "packages/test-agent-runtime-refinement.ts",
+      "extension": ".ts",
+      "size": 21067,
+      "modifiedAt": "2026-06-26T20:20:29.610Z"
+    },
+    {
+      "path": "packages/test-agent-runtime.ts",
+      "extension": ".ts",
+      "size": 13174,
+      "modifiedAt": "2026-06-26T20:14:47.730Z"
+    },
+    {
+      "path": "packages/test-architecture-memory.ts",
+      "extension": ".ts",
+      "size": 8390,
+      "modifiedAt": "2026-06-26T19:40:57.257Z"
+    },
+    {
+      "path": "packages/test-ast.ts",
+      "extension": ".ts",
+      "size": 827,
+      "modifiedAt": "2026-06-26T19:00:23.189Z"
     },
     {
       "path": "packages/test-brain.ts",
@@ -649,10 +1783,40 @@
       "modifiedAt": "2026-06-26T18:01:13.795Z"
     },
     {
+      "path": "packages/test-context-assembler.ts",
+      "extension": ".ts",
+      "size": 4208,
+      "modifiedAt": "2026-06-26T19:24:25.263Z"
+    },
+    {
       "path": "packages/test-context.ts",
       "extension": ".ts",
       "size": 515,
       "modifiedAt": "2026-06-26T16:20:15.455Z"
+    },
+    {
+      "path": "packages/test-engineering-planner.ts",
+      "extension": ".ts",
+      "size": 9304,
+      "modifiedAt": "2026-06-26T20:01:22.579Z"
+    },
+    {
+      "path": "packages/test-execution-graph.ts",
+      "extension": ".ts",
+      "size": 2692,
+      "modifiedAt": "2026-06-26T19:28:59.262Z"
+    },
+    {
+      "path": "packages/test-import-resolver.ts",
+      "extension": ".ts",
+      "size": 386,
+      "modifiedAt": "2026-06-26T18:48:31.143Z"
+    },
+    {
+      "path": "packages/test-knowledge-fusion.ts",
+      "extension": ".ts",
+      "size": 6629,
+      "modifiedAt": "2026-06-26T19:52:59.895Z"
     },
     {
       "path": "packages/test-normalizer.ts",
@@ -663,8 +1827,8 @@
     {
       "path": "packages/test-orchestrator.ts",
       "extension": ".ts",
-      "size": 406,
-      "modifiedAt": "2026-06-26T16:27:23.024Z"
+      "size": 7914,
+      "modifiedAt": "2026-06-26T20:07:22.539Z"
     },
     {
       "path": "packages/test-planner.ts",
@@ -673,10 +1837,28 @@
       "modifiedAt": "2026-06-26T17:54:13.557Z"
     },
     {
+      "path": "packages/test-query-engine.ts",
+      "extension": ".ts",
+      "size": 4736,
+      "modifiedAt": "2026-06-26T19:34:20.722Z"
+    },
+    {
       "path": "packages/test-query.ts",
       "extension": ".ts",
       "size": 216,
       "modifiedAt": "2026-06-26T16:33:28.278Z"
+    },
+    {
+      "path": "packages/test-relationship-analyzer.ts",
+      "extension": ".ts",
+      "size": 1894,
+      "modifiedAt": "2026-06-26T19:20:34.819Z"
+    },
+    {
+      "path": "packages/test-repository-evolution.ts",
+      "extension": ".ts",
+      "size": 5848,
+      "modifiedAt": "2026-06-26T19:52:22.260Z"
     },
     {
       "path": "packages/test-retriever.ts",
@@ -695,6 +1877,18 @@
       "extension": ".ts",
       "size": 352,
       "modifiedAt": "2026-06-26T17:26:23.476Z"
+    },
+    {
+      "path": "packages/test-symbols.ts",
+      "extension": ".ts",
+      "size": 346,
+      "modifiedAt": "2026-06-26T20:08:42.105Z"
+    },
+    {
+      "path": "packages/test-synchronizer.ts",
+      "extension": ".ts",
+      "size": 4374,
+      "modifiedAt": "2026-06-26T19:32:15.598Z"
     },
     {
       "path": "packages/workspace/errors.ts",

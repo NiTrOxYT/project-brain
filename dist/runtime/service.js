@@ -24,6 +24,12 @@ export class RuntimeService {
         await new IndexerService(this.context.root, workspaceRoot).index();
         await new SymbolsService(this.context.root, workspaceRoot).index();
         await new ImportsService(this.context.root, workspaceRoot).index();
+        const { ImportResolverService } = await import("../import-resolver");
+        await new ImportResolverService(workspaceRoot).resolve();
+        const { RelationshipAnalyzerService } = await import("../relationship-analyzer");
+        await new RelationshipAnalyzerService(this.context.root, workspaceRoot).analyze();
+        const { ExecutionGraphService } = await import("../execution-graph");
+        await new ExecutionGraphService(workspaceRoot).build();
         await new GraphBuilderService(workspaceRoot).build();
         const { SemanticService } = await import("../semantic");
         await new SemanticService(workspaceRoot).build();

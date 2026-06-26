@@ -50,6 +50,28 @@ export class RuntimeService {
             this.context.root,
             workspaceRoot
         ).index();
+
+        const { ImportResolverService } =
+            await import("../import-resolver");
+
+        await new ImportResolverService(
+            workspaceRoot
+        ).resolve();
+
+        const { RelationshipAnalyzerService } =
+            await import("../relationship-analyzer");
+
+        await new RelationshipAnalyzerService(
+            this.context.root,
+            workspaceRoot
+        ).analyze();
+
+        const { ExecutionGraphService } =
+            await import("../execution-graph");
+
+        await new ExecutionGraphService(
+            workspaceRoot
+        ).build();
         
         await new GraphBuilderService(
             workspaceRoot

@@ -28,6 +28,28 @@ export class SymbolsService {
 
     ) { }
 
+    async extractFromFile(relativePath: string): Promise<SymbolRecord[]> {
+
+        const fullPath = path.join(this.projectRoot, relativePath);
+
+        const parsed = await this.parser.parse(fullPath);
+
+        const output: SymbolRecord[] = [];
+
+        this.extract(
+
+            parsed.ast,
+
+            fullPath,
+
+            output
+
+        );
+
+        return output;
+
+    }
+
     async index(): Promise<SymbolIndex> {
 
         const symbols: SymbolRecord[] = [];

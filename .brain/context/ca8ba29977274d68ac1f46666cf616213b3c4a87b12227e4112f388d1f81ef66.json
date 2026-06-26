@@ -1,0 +1,3290 @@
+{
+  "generatedAt": "2026-06-26T20:08:43.975Z",
+  "query": "how does symbols service extract files",
+  "plan": {
+    "originalQuery": "how does symbols service extract files",
+    "normalizedQuery": "how does symbols service extract files",
+    "intent": "analysis",
+    "keywords": [
+      "how",
+      "does",
+      "symbols",
+      "service",
+      "extract",
+      "files"
+    ],
+    "targetModules": [
+      "packages/architecture-memory/service.ts",
+      "packages/ast/service.ts",
+      "packages/brain/service.ts",
+      "packages/cache/service.ts",
+      "packages/context-assembler/service.ts",
+      "packages/context-budget/service.ts",
+      "packages/context-loader/service.ts",
+      "packages/core/container.ts",
+      "packages/core/service.ts",
+      "packages/core/types.ts",
+      "packages/engineering-planner/service.ts",
+      "packages/execution-graph/service.ts"
+    ],
+    "contextBudget": 10,
+    "confidence": 0.95
+  },
+  "files": [
+    {
+      "path": "packages/synchronizer/service.ts",
+      "score": 365.2500498814091,
+      "estimatedTokens": 2840
+    },
+    {
+      "path": "packages/engineering-planner/service.ts",
+      "score": 292.5,
+      "estimatedTokens": 6611
+    },
+    {
+      "path": "packages/filesystem/index.ts",
+      "score": 150.71895424836606,
+      "estimatedTokens": 20,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "path",
+      "score": 135,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "fs/promises",
+      "score": 121.6666666666667,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "packages/semantic/index.ts",
+      "score": 113.33333333333337,
+      "estimatedTokens": 27,
+      "lastModified": "2026-06-26T23:03:01+05:30",
+      "commitCount": 2,
+      "churnScore": 2,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/runtime/service.js",
+      "score": 88.23529411764707,
+      "estimatedTokens": 499,
+      "lastModified": "2026-06-27T00:22:47+05:30",
+      "commitCount": 3,
+      "churnScore": 3,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/core/types.js",
+      "score": 56.37254901960786,
+      "estimatedTokens": 3,
+      "lastModified": "2026-06-26T22:53:38+05:30",
+      "commitCount": 2,
+      "churnScore": 2,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "typescript",
+      "score": 33.33333333333334,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "crypto",
+      "score": 23.888888888888896,
+      "estimatedTokens": 0
+    },
+    {
+      "path": ".brain/graph/dependencies.json",
+      "score": 19.607843137254907,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": ".gitignore",
+      "score": 19.607843137254907,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/errors.js",
+      "score": 19.607843137254907,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/indexer/error.js",
+      "score": 19.607843137254907,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "dist/service.js",
+      "score": 19.607843137254907,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "LICENSE",
+      "score": 19.607843137254907,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "packages/manifest/schema.ts",
+      "score": 19.607843137254907,
+      "estimatedTokens": 0,
+      "lastModified": "2026-06-26T21:55:50+05:30",
+      "commitCount": 1,
+      "churnScore": 1,
+      "primaryOwner": "Sourik <sourikaich7@gmail.com>"
+    },
+    {
+      "path": "child_process",
+      "score": 2.222222222222223,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "util",
+      "score": 2.222222222222223,
+      "estimatedTokens": 0
+    },
+    {
+      "path": "process",
+      "score": 1.6666666666666672,
+      "estimatedTokens": 0
+    }
+  ],
+  "symbols": [
+    {
+      "name": "SymbolRecord",
+      "kind": "interface",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 18
+    },
+    {
+      "name": "RelationshipRecord",
+      "kind": "interface",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 25
+    },
+    {
+      "name": "ExecutionNodeIdx",
+      "kind": "interface",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 33
+    },
+    {
+      "name": "ExecutionEdgeIdx",
+      "kind": "interface",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 40
+    },
+    {
+      "name": "EngineeringPlannerService",
+      "kind": "class",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 46
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 47
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 49
+    },
+    {
+      "name": "plan",
+      "kind": "method",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 54
+    },
+    {
+      "name": "startTime",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 55
+    },
+    {
+      "name": "fileCandidates",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 60
+    },
+    {
+      "name": "primaryFiles",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 65
+    },
+    {
+      "name": "affectedFiles",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 66
+    },
+    {
+      "name": "indexData",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 71
+    },
+    {
+      "name": "affectedSymbols",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 83
+    },
+    {
+      "name": "resolver",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 90
+    },
+    {
+      "name": "resolvedImports",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 91
+    },
+    {
+      "name": "dependencyMap",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 93
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 94
+    },
+    {
+      "name": "imp",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 99
+    },
+    {
+      "name": "relationshipsPath",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 108
+    },
+    {
+      "name": "relationshipsExists",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 109
+    },
+    {
+      "name": "relData",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 112
+    },
+    {
+      "name": "symbolsData",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 113
+    },
+    {
+      "name": "symbolToFile",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 117
+    },
+    {
+      "name": "s",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 118
+    },
+    {
+      "name": "r",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 122
+    },
+    {
+      "name": "sourceFile",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 123
+    },
+    {
+      "name": "targetFile",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 124
+    },
+    {
+      "name": "dependencyEdges",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 137
+    },
+    {
+      "name": "visited",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 138
+    },
+    {
+      "name": "recursionStack",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 139
+    },
+    {
+      "name": "addEdgeAcyclic",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 141
+    },
+    {
+      "name": "wouldCreateCycle",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 143
+    },
+    {
+      "name": "currentDeps",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 146
+    },
+    {
+      "name": "d",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 148
+    },
+    {
+      "name": "pathSet",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 156
+    },
+    {
+      "name": "computeDepth",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 169
+    },
+    {
+      "name": "maxD",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 170
+    },
+    {
+      "name": "deps",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 171
+    },
+    {
+      "name": "maxDependencyDepth",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 182
+    },
+    {
+      "name": "maxChurn",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 188
+    },
+    {
+      "name": "maxContributors",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 189
+    },
+    {
+      "name": "ownershipDispersionMax",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 190
+    },
+    {
+      "name": "evolutionPath",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 191
+    },
+    {
+      "name": "evolutionExists",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 192
+    },
+    {
+      "name": "evoData",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 195
+    },
+    {
+      "name": "f",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 196
+    },
+    {
+      "name": "dispersion",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 200
+    },
+    {
+      "name": "executionEdgesCount",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 209
+    },
+    {
+      "name": "executionInDegreeMax",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 210
+    },
+    {
+      "name": "execPath",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 211
+    },
+    {
+      "name": "execExists",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 212
+    },
+    {
+      "name": "execData",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 215
+    },
+    {
+      "name": "fileNodes",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 216
+    },
+    {
+      "name": "nodeIds",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 217
+    },
+    {
+      "name": "inDegree",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 219
+    },
+    {
+      "name": "edge",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 220
+    },
+    {
+      "name": "architectureScore",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 234
+    },
+    {
+      "name": "memoryService",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 236
+    },
+    {
+      "name": "memEntries",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 237
+    },
+    {
+      "name": "filename",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 239
+    },
+    {
+      "name": "matchesRule",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 240
+    },
+    {
+      "name": "riskApi",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 254
+    },
+    {
+      "name": "riskExecution",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 255
+    },
+    {
+      "name": "riskHistory",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 256
+    },
+    {
+      "name": "riskArchitecture",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 257
+    },
+    {
+      "name": "riskOwnership",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 258
+    },
+    {
+      "name": "averageRiskScore",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 260
+    },
+    {
+      "name": "riskOverall",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 261
+    },
+    {
+      "name": "complexityScore",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 267
+    },
+    {
+      "name": "complexityLabel",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 268
+    },
+    {
+      "name": "fusionConfidence",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 274
+    },
+    {
+      "name": "dependencyQuality",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 275
+    },
+    {
+      "name": "overallConfidence",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 276
+    },
+    {
+      "name": "missingInformation",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 279
+    },
+    {
+      "name": "queryLower",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 280
+    },
+    {
+      "name": "topCandidates",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 281
+    },
+    {
+      "name": "hasDbCandidates",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 283
+    },
+    {
+      "name": "hasApiCandidates",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 289
+    },
+    {
+      "name": "taskIdCounter",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 296
+    },
+    {
+      "name": "nextTaskId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 297
+    },
+    {
+      "name": "phases",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 299
+    },
+    {
+      "name": "phaseTasks",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 307
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 308
+    },
+    {
+      "name": "tasksList",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 312
+    },
+    {
+      "name": "fileToAnalyzeTaskId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 313
+    },
+    {
+      "name": "fileToModifyTaskId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 314
+    },
+    {
+      "name": "fileToTestTaskId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 315
+    },
+    {
+      "name": "fileToValidateTaskId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 316
+    },
+    {
+      "name": "tId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 320
+    },
+    {
+      "name": "fileSymbols",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 322
+    },
+    {
+      "name": "analyzeTask",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 324
+    },
+    {
+      "name": "taskType",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 350
+    },
+    {
+      "name": "fileExists",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 356
+    },
+    {
+      "name": "modifyTask",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 364
+    },
+    {
+      "name": "fromModId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 391
+    },
+    {
+      "name": "toModId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 392
+    },
+    {
+      "name": "toNode",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 394
+    },
+    {
+      "name": "valTask",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 407
+    },
+    {
+      "name": "projValId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 428
+    },
+    {
+      "name": "projectValTask",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 429
+    },
+    {
+      "name": "testTask",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 453
+    },
+    {
+      "name": "modifyId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 476
+    },
+    {
+      "name": "modifyNode",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 477
+    },
+    {
+      "name": "rollId",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 479
+    },
+    {
+      "name": "rollbackTask",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 482
+    },
+    {
+      "name": "graphNodes",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 510
+    },
+    {
+      "name": "graphEdges",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 511
+    },
+    {
+      "name": "node",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 512
+    },
+    {
+      "name": "prereq",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 514
+    },
+    {
+      "name": "estimatedDuration",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 520
+    },
+    {
+      "name": "estimatedTokens",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 521
+    },
+    {
+      "name": "estimatedLOC",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 522
+    },
+    {
+      "name": "validationChecklist",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 525
+    },
+    {
+      "name": "goal",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 533
+    },
+    {
+      "name": "summary",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 534
+    },
+    {
+      "name": "planningTimeMs",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 536
+    },
+    {
+      "name": "diagnostics",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 538
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 581
+    },
+    {
+      "name": "SynchronizerService",
+      "kind": "class",
+      "file": "packages/synchronizer/service.ts",
+      "line": 17
+    },
+    {
+      "name": "filesystem",
+      "kind": "property",
+      "file": "packages/synchronizer/service.ts",
+      "line": 19
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/synchronizer/service.ts",
+      "line": 21
+    },
+    {
+      "name": "forceRebuild",
+      "kind": "method",
+      "file": "packages/synchronizer/service.ts",
+      "line": 26
+    },
+    {
+      "name": "runtime",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 28
+    },
+    {
+      "name": "error",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 32
+    },
+    {
+      "name": "synchronize",
+      "kind": "method",
+      "file": "packages/synchronizer/service.ts",
+      "line": 37
+    },
+    {
+      "name": "indexPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 41
+    },
+    {
+      "name": "existingIndex",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 48
+    },
+    {
+      "name": "existingFilesMap",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 49
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 50
+    },
+    {
+      "name": "currentFilesMap",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 54
+    },
+    {
+      "name": "addedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 56
+    },
+    {
+      "name": "removedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 57
+    },
+    {
+      "name": "changedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 58
+    },
+    {
+      "name": "extFile",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 61
+    },
+    {
+      "name": "relPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 72
+    },
+    {
+      "name": "stateDir",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 78
+    },
+    {
+      "name": "statePath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 79
+    },
+    {
+      "name": "state",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 84
+    },
+    {
+      "name": "updatedIndexes",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 102
+    },
+    {
+      "name": "updatedFiles",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 105
+    },
+    {
+      "name": "affectedSet",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 109
+    },
+    {
+      "name": "newlyAddedOrChanged",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 110
+    },
+    {
+      "name": "symbolsPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 113
+    },
+    {
+      "name": "symbolsList",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 114
+    },
+    {
+      "name": "symbolsData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 117
+    },
+    {
+      "name": "symbolsService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 121
+    },
+    {
+      "name": "addedSymbols",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 122
+    },
+    {
+      "name": "fileSyms",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 126
+    },
+    {
+      "name": "importsPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 139
+    },
+    {
+      "name": "importsList",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 140
+    },
+    {
+      "name": "importsData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 143
+    },
+    {
+      "name": "importsService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 147
+    },
+    {
+      "name": "addedImports",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 148
+    },
+    {
+      "name": "fileImps",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 152
+    },
+    {
+      "name": "relationshipsPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 165
+    },
+    {
+      "name": "relationshipsList",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 166
+    },
+    {
+      "name": "relData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 169
+    },
+    {
+      "name": "relService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 173
+    },
+    {
+      "name": "projectSymbols",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 174
+    },
+    {
+      "name": "addedRelationships",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 175
+    },
+    {
+      "name": "fileRels",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 179
+    },
+    {
+      "name": "execService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 192
+    },
+    {
+      "name": "graphService",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 197
+    },
+    {
+      "name": "semanticPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 202
+    },
+    {
+      "name": "semanticEntries",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 203
+    },
+    {
+      "name": "semanticData",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 206
+    },
+    {
+      "name": "sym",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 210
+    },
+    {
+      "name": "terms",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 211
+    },
+    {
+      "name": "scanProject",
+      "kind": "method",
+      "file": "packages/synchronizer/service.ts",
+      "line": 255
+    },
+    {
+      "name": "filesMap",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 257
+    },
+    {
+      "name": "walk",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 259
+    },
+    {
+      "name": "entries",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 261
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 263
+    },
+    {
+      "name": "fullPath",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 274
+    },
+    {
+      "name": "stat",
+      "kind": "variable",
+      "file": "packages/synchronizer/service.ts",
+      "line": 282
+    }
+  ],
+  "relationships": [
+    {
+      "source": "SymbolRecord",
+      "target": "name",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 19
+    },
+    {
+      "source": "SymbolRecord",
+      "target": "kind",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 20
+    },
+    {
+      "source": "SymbolRecord",
+      "target": "file",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 21
+    },
+    {
+      "source": "SymbolRecord",
+      "target": "line",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 22
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "source",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 26
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "target",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 27
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "type",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 28
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "file",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 29
+    },
+    {
+      "source": "RelationshipRecord",
+      "target": "line",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 30
+    },
+    {
+      "source": "ExecutionNodeIdx",
+      "target": "id",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 34
+    },
+    {
+      "source": "ExecutionNodeIdx",
+      "target": "symbol",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 35
+    },
+    {
+      "source": "ExecutionNodeIdx",
+      "target": "file",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 36
+    },
+    {
+      "source": "ExecutionNodeIdx",
+      "target": "kind",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 37
+    },
+    {
+      "source": "ExecutionEdgeIdx",
+      "target": "type",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 43
+    },
+    {
+      "source": "EngineeringPlannerService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 47
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "EngineeringPlannerRequest",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 54
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "EngineeringPlan",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 54
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "now",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 55
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "query",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 56
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "intent",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 56
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "candidates",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 56
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "c",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 61
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "type",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 61
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "score",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 62
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fileCandidates",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 65
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "id",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 65
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "primaryFiles",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 66
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "affectedFiles",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 69
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 71
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 71
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "files",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 71
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 72
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "indexData",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 74
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "f",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 76
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "ImportResolverService",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 90
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "resolver",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 91
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "resolve",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 91
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "dependencyMap",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 95
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "set",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 95
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "file",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 95
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "resolvedImports",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 99
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "imp",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 100
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "resolved",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 100
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "source",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 100
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "target",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 100
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "get",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 102
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "add",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 102
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 109
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "relationshipsPath",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 109
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "relationshipsExists",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 110
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 112
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "RelationshipRecord",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 112
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "symbols",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 113
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "SymbolRecord",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 113
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "symbolsData",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 118
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "symbolToFile",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 119
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "s",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 119
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "name",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 119
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "relData",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 122
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "r",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 123
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "sourceFile",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 125
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "targetFile",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 125
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "pathSet",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 145
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "currentDeps",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 147
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "d",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 149
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "wouldCreateCycle",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 150
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "dependencyEdges",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 158
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 162
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "addEdgeAcyclic",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 164
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "deps",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 172
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "maxD",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 176
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "max",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 176
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "computeDepth",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 176
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "maxDependencyDepth",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 184
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "evolutionPath",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 192
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "evolutionExists",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 193
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fileHistory",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 195
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "evoData",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 196
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "maxChurn",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 198
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "churnScore",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 198
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "maxContributors",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 199
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "activeContributors",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 199
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "ownershipConfidence",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 200
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "ownershipDispersionMax",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 201
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "dispersion",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 201
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "execPath",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 212
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "execExists",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 213
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "nodes",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 215
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "ExecutionNodeIdx",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 215
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "edges",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 215
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "ExecutionEdgeIdx",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 215
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "execData",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 216
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fileNodes",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 217
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "nodeIds",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 221
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "edge",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 221
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "executionEdgesCount",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 222
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "inDegree",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 223
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "executionInDegreeMax",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 227
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "ArchitectureMemoryService",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 236
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "memoryService",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 237
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "list",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 237
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "memEntries",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 240
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 241
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "filename",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 241
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "matchesRule",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 244
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "architectureScore",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 245
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "min",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 254
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "riskApi",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 260
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "riskExecution",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 260
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "riskHistory",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 260
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "riskArchitecture",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 260
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "riskOwnership",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 260
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "RiskLevel",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 261
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "averageRiskScore",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 262
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "riskOverall",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 262
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "affectedSymbols",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 267
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "ComplexityLevel",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 268
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "complexityScore",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 269
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "complexityLabel",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 269
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fusionConfidence",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 276
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "dependencyQuality",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 276
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "queryLower",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 282
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "topCandidates",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 283
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "hasDbCandidates",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 284
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "missingInformation",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 285
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "hasApiCandidates",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 290
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "taskIdCounter",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 297
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "EngineeringPhase",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 299
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "phases",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 308
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "phaseTasks",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 309
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "p",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 309
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "ExecutionNode",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 312
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "nextTaskId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 320
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fileToAnalyzeTaskId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 321
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "tId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 321
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "phaseId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 329
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "estimatedTokens",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 333
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "estimatedLOC",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 334
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fileSymbols",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 338
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "tasksList",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 340
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "analyzeTask",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 340
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fileToModifyTaskId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 347
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "TaskType",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 350
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "taskType",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 351
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 358
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 358
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fileExists",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 360
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "modifyTask",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 382
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fromModId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 393
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "toModId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 393
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "t",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 394
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "toNode",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 395
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fileToValidateTaskId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 404
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "valTask",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 423
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "projValId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 430
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "projectValTask",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 444
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "fileToTestTaskId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 450
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "testTask",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 469
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "modifyId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 477
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "modifyNode",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 480
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "rollId",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 480
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "rollbackTask",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 500
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "node",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 513
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "graphEdges",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 515
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "prereq",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 515
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "estimatedDuration",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 534
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "startTime",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 536
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "PlannerDiagnostics",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 538
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "planningTimeMs",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 539
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "graphNodes",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 540
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "goal",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 549
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "summary",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 550
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "overallConfidence",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 552
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "history",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 560
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "validationChecklist",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 573
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "diagnostics",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 578
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "EngineeringPlannerError",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 582
+    },
+    {
+      "source": "EngineeringPlannerService.plan",
+      "target": "error",
+      "type": "references",
+      "file": "packages/engineering-planner/service.ts",
+      "line": 582
+    },
+    {
+      "source": "SynchronizerService.filesystem",
+      "target": "FileSystemService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 19
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "RuntimeService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 28
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 29
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "runtime",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 31
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "initialize",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 31
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "SynchronizerError",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 33
+    },
+    {
+      "source": "SynchronizerService.forceRebuild",
+      "target": "error",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 33
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SynchronizationState",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 37
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 41
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "filesystem",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 43
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "exists",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 43
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "indexPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 43
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "forceRebuild",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 45
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "readJson",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 48
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "IndexResult",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 48
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "IndexedFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 49
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "existingIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 50
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "files",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 50
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "existingFilesMap",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 51
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "set",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 51
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "file",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 51
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "scanProject",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 54
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 60
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "currentFilesMap",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 60
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 60
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "get",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 61
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "extFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 62
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 63
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "changedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 68
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "removedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 74
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "stateDir",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 79
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "updatedIndexes",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 90
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "mkdir",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 94
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "writeJson",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 97
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "statePath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 97
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "state",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 97
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "updatedFiles",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 106
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SymbolRecord",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 114
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 116
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SymbolIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 117
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsList",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbols",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "affectedSet",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "sym",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 118
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SymbolsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 121
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 121
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "newlyAddedOrChanged",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 124
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "symbolsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 126
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "extractFromFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 126
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedSymbols",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 127
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "fileSyms",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 127
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ImportRecord",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 140
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 142
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ImportIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 143
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsList",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "imports",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "imp",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "source",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 144
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ImportsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 147
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "importsService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 152
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedImports",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 153
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "fileImps",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 153
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "RelationshipRecord",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 166
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relationshipsPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 168
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "RelationshipIndex",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 169
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relationshipsList",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relationships",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "rel",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 170
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "RelationshipAnalyzerService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 173
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "s",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 174
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "name",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 174
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "relService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 179
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "projectSymbols",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 179
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "addedRelationships",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 180
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "fileRels",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 180
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "ExecutionGraphService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 192
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "execService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 193
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "buildIncremental",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 193
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "GraphBuilderService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 197
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "graphService",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 198
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "build",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 198
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "semanticPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 205
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "semanticEntries",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 207
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "semanticData",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 207
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 207
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "normalize",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 211
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "id",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 213
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "terms",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 215
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "error",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 245
+    },
+    {
+      "source": "SynchronizerService.synchronize",
+      "target": "SynchronizerError",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 245
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "IndexedFile",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 255
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "fs",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 261
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "dir",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 261
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "entries",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 263
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "entry",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 266
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "name",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 266
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "walk",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 278
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "fullPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 278
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "stat",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 282
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 283
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "filesMap",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 285
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "set",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 285
+    },
+    {
+      "source": "SynchronizerService.scanProject",
+      "target": "relPath",
+      "type": "references",
+      "file": "packages/synchronizer/service.ts",
+      "line": 285
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "packages/engineering-planner/service.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/filesystem/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/semantic/index.ts",
+        "type": "file"
+      },
+      {
+        "id": "packages/synchronizer/service.ts",
+        "type": "file"
+      }
+    ],
+    "edges": [
+      {
+        "from": "packages/engineering-planner/service.ts",
+        "to": "fs/promises",
+        "type": "imports"
+      },
+      {
+        "from": "packages/engineering-planner/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/engineering-planner/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "fs/promises",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "path",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/filesystem/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/semantic/index.ts",
+        "type": "imports"
+      },
+      {
+        "from": "packages/synchronizer/service.ts",
+        "to": "packages/semantic/index.ts",
+        "type": "imports"
+      }
+    ]
+  },
+  "estimatedTokens": 10000
+}

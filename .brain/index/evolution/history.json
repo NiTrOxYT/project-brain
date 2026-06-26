@@ -1,0 +1,2707 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-26T19:52:46.574Z",
+  "repositoryHash": "0d84df7228b15f7e60b30468f8c104e2d205b568",
+  "commits": [
+    {
+      "hash": "0d84df7228b15f7e60b30468f8c104e2d205b568",
+      "parentHashes": [
+        "f738715a1b409a513c206669e977a6112eb2263f"
+      ],
+      "authorName": "Sourik",
+      "authorEmail": "sourikaich7@gmail.com",
+      "date": "2026-06-27T00:41:20+05:30",
+      "message": "BUILD-036C AST import extractor completed",
+      "files": [
+        {
+          "path": ".brain/index/symbols.json",
+          "status": "M"
+        },
+        {
+          "path": "dist/ast/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/ast/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/ast/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/ast/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/import-resolver/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/imports/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/symbols/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/test-ast.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-symbols.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/.package-lock.json",
+          "status": "M"
+        },
+        {
+          "path": "node_modules/fsevents/LICENSE",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/fsevents/README.md",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/fsevents/fsevents.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/fsevents/fsevents.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/fsevents/fsevents.node",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/fsevents/package.json",
+          "status": "A"
+        },
+        {
+          "path": "package-lock.json",
+          "status": "M"
+        },
+        {
+          "path": "package.json",
+          "status": "M"
+        },
+        {
+          "path": "packages/ast/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/ast/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/ast/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/ast/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/imports/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/symbols/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/symbols/types.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/test-ast.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-symbols.ts",
+          "status": "A"
+        }
+      ]
+    },
+    {
+      "hash": "f738715a1b409a513c206669e977a6112eb2263f",
+      "parentHashes": [
+        "47ce5f9372a0e940e8ceff7bb81fa097251b2873"
+      ],
+      "authorName": "Sourik",
+      "authorEmail": "sourikaich7@gmail.com",
+      "date": "2026-06-27T00:22:47+05:30",
+      "message": "BUILD-035.5",
+      "files": [
+        {
+          "path": ".brain/graph/dependencies.json",
+          "status": "D"
+        },
+        {
+          "path": ".brain/graph/graph.json",
+          "status": "M"
+        },
+        {
+          "path": ".brain/index/imports.json",
+          "status": "M"
+        },
+        {
+          "path": ".brain/index/index.json",
+          "status": "M"
+        },
+        {
+          "path": ".brain/index/semantic.json",
+          "status": "M"
+        },
+        {
+          "path": ".brain/index/symbols.json",
+          "status": "M"
+        },
+        {
+          "path": ".brain/manifest.json",
+          "status": "M"
+        },
+        {
+          "path": "dist/context-budget/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/context-budget/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/context-budget/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/context-budget/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph-builder/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/graph-traversal/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/import-resolver/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/import-resolver/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/import-resolver/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/import-resolver/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/planner/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/planner/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/planner/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/planner/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/retriever/index.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/retriever/scorer.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/retriever/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/runtime/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/scanner/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/test-budget.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-import-resolver.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-planner.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-retriever.js",
+          "status": "M"
+        },
+        {
+          "path": "packages/context-budget/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/context-budget/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/context-budget/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/context-budget/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph-builder/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/graph-traversal/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/import-resolver/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/import-resolver/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/import-resolver/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/import-resolver/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/planner/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/planner/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/planner/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/planner/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/retriever/index.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/retriever/scorer.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/retriever/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/runtime/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/scanner/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/test-budget.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-import-resolver.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-planner.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-retriever.ts",
+          "status": "M"
+        }
+      ]
+    },
+    {
+      "hash": "47ce5f9372a0e940e8ceff7bb81fa097251b2873",
+      "parentHashes": [
+        "0b1b3066f81f8d5e25d1a57b8be3d80ea4475cfd"
+      ],
+      "authorName": "Sourik",
+      "authorEmail": "sourikaich7@gmail.com",
+      "date": "2026-06-26T23:03:01+05:30",
+      "message": "BUILD-031 — Semantic Normalizer",
+      "files": [
+        {
+          "path": ".brain/index/semantic.json",
+          "status": "M"
+        },
+        {
+          "path": "dist/semantic/index.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/semantic/normalizer.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/semantic/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/test-normalizer.js",
+          "status": "A"
+        },
+        {
+          "path": "packages/semantic/index.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/semantic/normalizer.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/semantic/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/test-normalizer.ts",
+          "status": "A"
+        }
+      ]
+    },
+    {
+      "hash": "0b1b3066f81f8d5e25d1a57b8be3d80ea4475cfd",
+      "parentHashes": [
+        "ef51e90d280ea654de646d6fd76ab98d3459dba5"
+      ],
+      "authorName": "Sourik",
+      "authorEmail": "sourikaich7@gmail.com",
+      "date": "2026-06-26T22:57:13+05:30",
+      "message": "BUILD-030 — Semantic Knowledge Engine v1",
+      "files": [
+        {
+          "path": ".brain/index/semantic.json",
+          "status": "A"
+        },
+        {
+          "path": "dist/runtime/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/semantic/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/semantic/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/semantic/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/semantic/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-semantic.js",
+          "status": "A"
+        },
+        {
+          "path": "packages/runtime/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/semantic/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/semantic/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/semantic/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/semantic/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-semantic.ts",
+          "status": "A"
+        }
+      ]
+    },
+    {
+      "hash": "ef51e90d280ea654de646d6fd76ab98d3459dba5",
+      "parentHashes": [
+        "7544689a70d809ec3147e1fdf69c6f947948de2c"
+      ],
+      "authorName": "Sourik",
+      "authorEmail": "sourikaich7@gmail.com",
+      "date": "2026-06-26T22:53:38+05:30",
+      "message": "BUILD-029 — Scanner",
+      "files": [
+        {
+          "path": "dist/core/container.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/core/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/core/kernel.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/core/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/core/types.js",
+          "status": "R100",
+          "oldPath": "dist/types.js"
+        },
+        {
+          "path": "dist/errors.js",
+          "status": "D"
+        },
+        {
+          "path": "dist/indexer/error.js",
+          "status": "D"
+        },
+        {
+          "path": "dist/manifest/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/scanner/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/scanner/index.js",
+          "status": "R100",
+          "oldPath": "dist/index.js"
+        },
+        {
+          "path": "dist/scanner/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/scanner/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/service.js",
+          "status": "D"
+        },
+        {
+          "path": "dist/test-scanner.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/workspace/service.js",
+          "status": "M"
+        },
+        {
+          "path": "packages/core/container.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/core/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/core/kernel.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/core/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/core/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/manifest/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/scanner/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/scanner/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/scanner/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/scanner/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-scanner.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/workspace/service.ts",
+          "status": "M"
+        }
+      ]
+    },
+    {
+      "hash": "7544689a70d809ec3147e1fdf69c6f947948de2c",
+      "parentHashes": [
+        "4147b5dad4e8cdee09b2ee3f3104796c40140aa5"
+      ],
+      "authorName": "Sourik",
+      "authorEmail": "sourikaich7@gmail.com",
+      "date": "2026-06-26T22:04:40+05:30",
+      "message": "IMPLEMENTATION-028 — Query Analyzer",
+      "files": [
+        {
+          "path": "dist/brain/service.js",
+          "status": "M"
+        },
+        {
+          "path": "dist/query-analyzer/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/query-analyzer/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/query-analyzer/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/query-analyzer/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-query.js",
+          "status": "A"
+        },
+        {
+          "path": "packages/brain/service.ts",
+          "status": "M"
+        },
+        {
+          "path": "packages/query-analyzer/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/query-analyzer/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/query-analyzer/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/query-analyzer/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-query.ts",
+          "status": "A"
+        }
+      ]
+    },
+    {
+      "hash": "4147b5dad4e8cdee09b2ee3f3104796c40140aa5",
+      "parentHashes": [
+        "0b96151e8ee00dbf89048be2296cb911da450671"
+      ],
+      "authorName": "Sourik",
+      "authorEmail": "sourikaich7@gmail.com",
+      "date": "2026-06-26T22:01:05+05:30",
+      "message": "IMPLEMENTATION-027 — Brain Engine v1",
+      "files": [
+        {
+          "path": "dist/brain/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/brain/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/brain/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/brain/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-brain.js",
+          "status": "A"
+        },
+        {
+          "path": "packages/brain/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/brain/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/brain/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/brain/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-brain.ts",
+          "status": "A"
+        }
+      ]
+    },
+    {
+      "hash": "0b96151e8ee00dbf89048be2296cb911da450671",
+      "parentHashes": [
+        "c3916d272d2018b95a3d404ab48a2ec2fcfe1763"
+      ],
+      "authorName": "Sourik",
+      "authorEmail": "sourikaich7@gmail.com",
+      "date": "2026-06-26T21:57:57+05:30",
+      "message": "IMPLEMENTATION-026 — Runtime Orchestrator v1",
+      "files": [
+        {
+          "path": "dist/orchestrator/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/orchestrator/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/orchestrator/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/orchestrator/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-orchestrator.js",
+          "status": "A"
+        },
+        {
+          "path": "packages/orchestrator/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/orchestrator/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/orchestrator/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/orchestrator/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-orchestrator.ts",
+          "status": "A"
+        }
+      ]
+    },
+    {
+      "hash": "c3916d272d2018b95a3d404ab48a2ec2fcfe1763",
+      "parentHashes": [],
+      "authorName": "Sourik",
+      "authorEmail": "sourikaich7@gmail.com",
+      "date": "2026-06-26T21:55:50+05:30",
+      "message": "V1",
+      "files": [
+        {
+          "path": ".brain/cache/runtime.json",
+          "status": "A"
+        },
+        {
+          "path": ".brain/graph/dependencies.json",
+          "status": "A"
+        },
+        {
+          "path": ".brain/graph/graph.json",
+          "status": "A"
+        },
+        {
+          "path": ".brain/index/imports.json",
+          "status": "A"
+        },
+        {
+          "path": ".brain/index/index.json",
+          "status": "A"
+        },
+        {
+          "path": ".brain/index/symbols.json",
+          "status": "A"
+        },
+        {
+          "path": ".brain/knowledge/index.json",
+          "status": "A"
+        },
+        {
+          "path": ".brain/knowledge/project.json",
+          "status": "A"
+        },
+        {
+          "path": ".brain/manifest.json",
+          "status": "A"
+        },
+        {
+          "path": ".gitignore",
+          "status": "A"
+        },
+        {
+          "path": "LICENSE",
+          "status": "A"
+        },
+        {
+          "path": "README.md",
+          "status": "A"
+        },
+        {
+          "path": "dist/cache/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/cache/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/cache/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/cache/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/cli/banner.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/cli/cli.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/cli/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/context-loader/assembler.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/context-loader/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/context-loader/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/context-loader/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/context-loader/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/filesystem/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/filesystem/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/filesystem/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/filesystem/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph-builder/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph-builder/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph-builder/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph-builder/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph-traversal/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph-traversal/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph-traversal/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph-traversal/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/graph/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/imports/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/imports/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/imports/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/imports/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/indexer/error.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/indexer/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/indexer/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/indexer/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/indexer/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/kernel/boot.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/kernel/constants.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/kernel/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/kernel/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/knowledge/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/knowledge/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/knowledge/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/knowledge/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/main.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/manifest/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/manifest/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/manifest/schema.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/manifest/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/manifest/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/project/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/project/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/project/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/project/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/retriever/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/retriever/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/retriever/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/retriever/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/runtime/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/runtime/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/runtime/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/runtime/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/symbols/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/symbols/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/symbols/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/symbols/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-context.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/test-retriever.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/types.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/workspace/errors.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/workspace/index.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/workspace/service.js",
+          "status": "A"
+        },
+        {
+          "path": "dist/workspace/types.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/.bin/esbuild",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/.bin/tsc",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/.bin/tsserver",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/.bin/tsx",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/.package-lock.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@esbuild/darwin-arm64/README.md",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@esbuild/darwin-arm64/bin/esbuild",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@esbuild/darwin-arm64/package.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/LICENSE",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/README.md",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/assert.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/assert/strict.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/async_hooks.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/buffer.buffer.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/buffer.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/child_process.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/cluster.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/compatibility/iterators.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/console.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/constants.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/crypto.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/dgram.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/diagnostics_channel.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/dns.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/dns/promises.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/domain.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/events.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/fs.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/fs/promises.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/globals.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/globals.typedarray.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/http.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/http2.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/https.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/index.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/inspector.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/inspector.generated.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/module.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/net.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/os.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/package.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/path.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/perf_hooks.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/process.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/punycode.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/querystring.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/readline.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/readline/promises.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/repl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/sea.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/sqlite.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/stream.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/stream/consumers.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/stream/promises.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/stream/web.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/string_decoder.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/test.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/timers.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/timers/promises.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/tls.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/trace_events.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/ts5.6/buffer.buffer.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/ts5.6/compatibility/float16array.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/ts5.6/globals.typedarray.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/ts5.6/index.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/ts5.7/compatibility/float16array.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/ts5.7/index.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/tty.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/url.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/util.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/v8.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/vm.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/wasi.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/web-globals/abortcontroller.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/web-globals/crypto.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/web-globals/domexception.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/web-globals/events.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/web-globals/fetch.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/web-globals/navigator.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/web-globals/storage.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/web-globals/streams.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/worker_threads.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/@types/node/zlib.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/esbuild/LICENSE.md",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/esbuild/README.md",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/esbuild/bin/esbuild",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/esbuild/install.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/esbuild/lib/main.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/esbuild/lib/main.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/esbuild/package.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/LICENSE",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/README.md",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/cjs/api/index.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/cjs/api/index.d.cts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/cjs/api/index.d.mts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/cjs/api/index.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/cjs/index.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/cjs/index.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/cli.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/cli.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/client-D3mGB526.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/client-D_mPDF5S.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/esm/api/index.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/esm/api/index.d.cts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/esm/api/index.d.mts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/esm/api/index.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/esm/index.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/esm/index.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/get-pipe-path-D4YM6rQt.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/get-pipe-path-_tAJyU_v.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/index-BWFBUo6r.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/index-D9F1FXzN.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/index-XurvG3JN.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/index-gbaejti9.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/lexer-DQCqS3nf.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/lexer-DgIbo0BU.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/loader.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/loader.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/node-features-B9BBLzwu.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/node-features-CQLdkVE6.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/package-Bj47PlGH.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/package-DMqO70yR.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/patch-repl.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/patch-repl.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/preflight.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/preflight.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/register-BOkp8V6j.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/register-BnTWPeIB.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/register-CKju0f8h.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/register-CqMfTiWi.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/repl.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/repl.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/require-CjvaJWEr.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/require-DzmC1hVr.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/suppress-warnings.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/suppress-warnings.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/temporary-directory-B83uKxJF.cjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/temporary-directory-BDDVQOvU.mjs",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/dist/types-Cxp8y2TL.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/tsx/package.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/LICENSE.txt",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/README.md",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/SECURITY.md",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/ThirdPartyNoticeText.txt",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/bin/tsc",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/bin/tsserver",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/_tsc.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/_tsserver.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/_typingsInstaller.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/cs/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/de/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/es/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/fr/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/it/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/ja/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/ko/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.decorators.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.decorators.legacy.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.dom.asynciterable.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.dom.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.dom.iterable.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.collection.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.core.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.generator.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.promise.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2016.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2016.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2016.intl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2017.arraybuffer.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2017.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2017.date.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2017.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2017.intl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2017.object.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2017.string.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2018.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2018.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2018.intl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2018.promise.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2019.array.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2019.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2019.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2019.intl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2019.object.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2019.string.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2019.symbol.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.bigint.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.date.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.intl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.number.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.promise.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.string.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2021.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2021.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2021.intl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2021.promise.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2021.string.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2021.weakref.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2022.array.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2022.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2022.error.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2022.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2022.intl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2022.object.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2022.regexp.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2022.string.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2023.array.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2023.collection.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2023.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2023.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2023.intl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2024.arraybuffer.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2024.collection.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2024.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2024.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2024.object.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2024.promise.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2024.regexp.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2024.sharedmemory.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es2024.string.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es5.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.es6.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.array.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.collection.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.decorators.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.disposable.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.error.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.float16.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.full.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.intl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.iterator.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.promise.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.esnext.sharedmemory.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.scripthost.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.webworker.asynciterable.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.webworker.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/lib.webworker.iterable.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/pl/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/pt-br/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/ru/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/tr/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/tsc.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/tsserver.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/tsserverlibrary.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/tsserverlibrary.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/typesMap.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/typescript.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/typescript.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/typingsInstaller.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/watchGuard.js",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/zh-cn/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/lib/zh-tw/diagnosticMessages.generated.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/typescript/package.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/LICENSE",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/README.md",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/agent.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/api.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/balanced-pool.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/cache-interceptor.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/cache.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/client-stats.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/client.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/connector.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/content-type.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/cookies.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/diagnostics-channel.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/dispatcher.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/env-http-proxy-agent.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/errors.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/eventsource.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/fetch.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/formdata.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/global-dispatcher.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/global-origin.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/h2c-client.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/handlers.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/header.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/index.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/interceptors.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/mock-agent.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/mock-call-history.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/mock-client.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/mock-errors.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/mock-interceptor.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/mock-pool.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/package.json",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/patch.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/pool-stats.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/pool.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/proxy-agent.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/readable.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/retry-agent.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/retry-handler.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/round-robin-pool.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/snapshot-agent.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/util.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/utility.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/webidl.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "node_modules/undici-types/websocket.d.ts",
+          "status": "A"
+        },
+        {
+          "path": "package-lock.json",
+          "status": "A"
+        },
+        {
+          "path": "package.json",
+          "status": "A"
+        },
+        {
+          "path": "packages/cache/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/cache/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/cache/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/cache/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/cli/banner.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/cli/cli.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/cli/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/context-loader/assembler.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/context-loader/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/context-loader/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/context-loader/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/context-loader/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/filesystem/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/filesystem/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/filesystem/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/filesystem/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph-builder/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph-builder/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph-builder/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph-builder/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph-traversal/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph-traversal/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph-traversal/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph-traversal/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/graph/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/imports/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/imports/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/imports/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/imports/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/indexer/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/indexer/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/indexer/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/indexer/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/kernel/boot.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/kernel/constants.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/kernel/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/kernel/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/knowledge/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/knowledge/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/knowledge/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/knowledge/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/main.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/manifest/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/manifest/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/manifest/schema.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/manifest/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/manifest/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/project/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/project/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/project/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/project/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/retriever/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/retriever/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/retriever/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/retriever/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/runtime/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/runtime/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/runtime/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/runtime/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/symbols/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/symbols/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/symbols/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/symbols/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-context.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/test-retriever.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/workspace/errors.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/workspace/index.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/workspace/service.ts",
+          "status": "A"
+        },
+        {
+          "path": "packages/workspace/types.ts",
+          "status": "A"
+        },
+        {
+          "path": "project-brain.json",
+          "status": "A"
+        },
+        {
+          "path": "spec/PBS-0001.md",
+          "status": "A"
+        },
+        {
+          "path": "spec/PBS-0002.md",
+          "status": "A"
+        },
+        {
+          "path": "spec/PBS-0003.md",
+          "status": "A"
+        },
+        {
+          "path": "tsconfig.json",
+          "status": "A"
+        }
+      ]
+    }
+  ]
+}
