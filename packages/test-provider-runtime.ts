@@ -814,34 +814,89 @@ async function main(): Promise<void> {
     console.log(" BUILD-049 — Provider Runtime & Native AI SDK — Test Suite    ");
     console.log("═══════════════════════════════════════════════════════════════");
 
-    await test01_ProviderRegistration();
-    await test02_ProviderOrdering();
-    await test03_CapabilityNegotiation();
-    await test04_ModelNegotiation();
-    await test05_HealthFiltering();
-    await test06_FallbackChain();
-    await test07_ProviderPriorities();
-    await test08_SessionCreation();
-    await test09_SessionReplay();
-    await test10_SessionPersistence();
-    await test11_StreamingEvents();
-    await test12_MiddlewareExecution();
-    await test13_RetryBehavior();
-    await test14_PermanentFailureFallback();
-    await test15_MetricsRecording();
-    await test16_CostAggregation();
-    await test17_MockProviderCompatibility();
-    await test18_ClaudeCodeAdapter();
-    await test19_CodexAdapter();
-    await test20_GeminiAdapter();
-    await test21_OllamaAdapter();
-    await test22_AiderAdapter();
-    await test23_OpenCodeAdapter();
-    await test24_AgentRuntimeIntegration();
-    await test25_WorkspaceEngineCompatibility();
-    await test26_OrchestratorIntegration();
-    await test27_QueryEngineDiagnostics();
-    await test28_DeterministicRepeatedExecution();
+    const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), "brain-runtime-mocks-"));
+    const writeMock = (name: string, bin: string, exitOnList = false) => {
+        const binPath = path.join(tempDir, bin);
+        const content = `#!/usr/bin/env node
+const args = process.argv.slice(2);
+if (args.includes('--version')) {
+    console.log('${name} version 1.2.3');
+    process.exit(0);
+}
+if (args.includes('status') || args.includes('auth')) {
+    console.log('authenticated');
+    process.exit(0);
+}
+if (args.includes('list')) {
+    if (${exitOnList}) {
+        console.error('No Ollama server running');
+        process.exit(1);
+    }
+    console.log('model-a\\nmodel-b');
+    process.exit(0);
+}
+console.log('---START_ARTIFACTS---');
+console.log(JSON.stringify({
+    artifacts: [{
+        id: '${bin}-art',
+        type: 'code',
+        path: 'output.txt',
+        content: 'hello'
+    }]
+}));
+console.log('---END_ARTIFACTS---');
+`;
+        fs.writeFileSync(binPath, content, { mode: 0o755 });
+        return binPath;
+    };
+
+    process.env.CLAUDE_BIN = writeMock("Claude Code", "claude");
+    process.env.CODEX_BIN = writeMock("Codex", "codex");
+    process.env.GEMINI_BIN = writeMock("Gemini CLI", "gemini");
+    process.env.OLLAMA_BIN = writeMock("Ollama", "ollama", true); // force health.status to be "Degraded"
+    process.env.AIDER_BIN = writeMock("Aider", "aider");
+    process.env.OPENCODE_BIN = writeMock("OpenCode", "opencode");
+
+    try {
+        await test01_ProviderRegistration();
+        await test02_ProviderOrdering();
+        await test03_CapabilityNegotiation();
+        await test04_ModelNegotiation();
+        await test05_HealthFiltering();
+        await test06_FallbackChain();
+        await test07_ProviderPriorities();
+        await test08_SessionCreation();
+        await test09_SessionReplay();
+        await test10_SessionPersistence();
+        await test11_StreamingEvents();
+        await test12_MiddlewareExecution();
+        await test13_RetryBehavior();
+        await test14_PermanentFailureFallback();
+        await test15_MetricsRecording();
+        await test16_CostAggregation();
+        await test17_MockProviderCompatibility();
+        await test18_ClaudeCodeAdapter();
+        await test19_CodexAdapter();
+        await test20_GeminiAdapter();
+        await test21_OllamaAdapter();
+        await test22_AiderAdapter();
+        await test23_OpenCodeAdapter();
+        await test24_AgentRuntimeIntegration();
+        await test25_WorkspaceEngineCompatibility();
+        await test26_OrchestratorIntegration();
+        await test27_QueryEngineDiagnostics();
+        await test28_DeterministicRepeatedExecution();
+    } finally {
+        delete process.env.CLAUDE_BIN;
+        delete process.env.CODEX_BIN;
+        delete process.env.GEMINI_BIN;
+        delete process.env.OLLAMA_BIN;
+        delete process.env.AIDER_BIN;
+        delete process.env.OPENCODE_BIN;
+        try {
+            fs.rmSync(tempDir, { recursive: true, force: true });
+        } catch {}
+    }
 
     console.log("\n═══════════════════════════════════════════════════════════════");
     console.log(` RESULTS: ${passed} passed, ${failed} failed`);

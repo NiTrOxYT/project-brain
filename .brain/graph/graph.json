@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T20:46:05.097Z",
+  "generatedAt": "2026-06-26T22:44:34.423Z",
   "nodes": [
     {
       "id": "packages/agent-runtime/executor.ts",
@@ -55,6 +55,46 @@
     },
     {
       "id": "packages/ast/types.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/checkpoint.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/failure-analyzer.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/journal.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/metrics.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/recovery.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/repair.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/types.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/autonomous-runtime/validator.ts",
       "type": "file"
     },
     {
@@ -270,6 +310,198 @@
       "type": "file"
     },
     {
+      "id": "packages/provider-execution/diagnostics.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-execution/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-execution/process.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-execution/retry.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-execution/sandbox.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-execution/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-execution/stream.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-execution/timeout.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/health.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/metrics.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/middleware.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/negotiation.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/registry.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/session.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/stream.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-runtime/types.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/aider/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/aider/prompt-builder.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/aider/provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/aider/response-parser.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/claude-code/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/claude-code/prompt-builder.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/claude-code/provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/claude-code/response-parser.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/codex/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/codex/prompt-builder.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/codex/provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/codex/response-parser.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/gemini-cli/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/gemini-cli/prompt-builder.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/gemini-cli/provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/gemini-cli/response-parser.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/mock/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/ollama/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/ollama/prompt-builder.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/ollama/provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/ollama/response-parser.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/opencode/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/opencode/prompt-builder.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/opencode/provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/opencode/response-parser.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/shared-executor.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/shared-parser.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/shared-prompt.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/providers/shared-resolver.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/query-analyzer/index.ts",
       "type": "file"
     },
@@ -370,11 +602,19 @@
       "type": "file"
     },
     {
+      "id": "packages/test-autonomous-runtime.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/test-brain.ts",
       "type": "file"
     },
     {
       "id": "packages/test-budget.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-claude-provider.ts",
       "type": "file"
     },
     {
@@ -402,6 +642,10 @@
       "type": "file"
     },
     {
+      "id": "packages/test-native-providers.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/test-normalizer.ts",
       "type": "file"
     },
@@ -411,6 +655,14 @@
     },
     {
       "id": "packages/test-planner.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-provider-execution.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-provider-runtime.ts",
       "type": "file"
     },
     {
@@ -680,6 +932,11 @@
       "type": "imports"
     },
     {
+      "from": "packages/agent-runtime/service.ts",
+      "to": "packages/provider-runtime/service.ts",
+      "type": "imports"
+    },
+    {
       "from": "packages/agent-runtime/types.ts",
       "to": "packages/agent-runtime/artifacts.ts",
       "type": "imports"
@@ -767,6 +1024,236 @@
     {
       "from": "packages/ast/types.ts",
       "to": "typescript",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/checkpoint.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/checkpoint.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/checkpoint.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/checkpoint.ts",
+      "to": "packages/autonomous-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/failure-analyzer.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/validator.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/failure-analyzer.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/repair.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/checkpoint.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/journal.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/recovery.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/metrics.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/index.ts",
+      "to": "packages/autonomous-runtime/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/journal.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/journal.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/journal.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/metrics.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/recovery.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/recovery.ts",
+      "to": "packages/autonomous-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/repair.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/repair.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/repair.ts",
+      "to": "packages/engineering-planner/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/autonomous-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/autonomous-runtime/validator.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/autonomous-runtime/failure-analyzer.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/autonomous-runtime/repair.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/autonomous-runtime/checkpoint.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/autonomous-runtime/journal.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/autonomous-runtime/recovery.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/autonomous-runtime/metrics.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/agent-runtime/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/workspace/workspace-engine.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/orchestrator/scheduler.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/service.ts",
+      "to": "packages/engineering-planner/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/types.ts",
+      "to": "packages/engineering-planner/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/types.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/validator.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/validator.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/validator.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/validator.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/validator.ts",
+      "to": "packages/workspace/workspace-engine.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/autonomous-runtime/validator.ts",
+      "to": "packages/provider-execution/types.ts",
       "type": "imports"
     },
     {
@@ -1725,6 +2212,981 @@
       "type": "imports"
     },
     {
+      "from": "packages/provider-execution/diagnostics.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/index.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/index.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/index.ts",
+      "to": "packages/provider-execution/stream.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/index.ts",
+      "to": "packages/provider-execution/timeout.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/index.ts",
+      "to": "packages/provider-execution/retry.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/index.ts",
+      "to": "packages/provider-execution/sandbox.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/index.ts",
+      "to": "packages/provider-execution/diagnostics.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/index.ts",
+      "to": "packages/provider-execution/process.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/index.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/process.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/process.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/process.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/process.ts",
+      "to": "packages/provider-execution/stream.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/process.ts",
+      "to": "packages/provider-execution/timeout.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/retry.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/retry.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/sandbox.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/sandbox.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/sandbox.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/sandbox.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/service.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/service.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/service.ts",
+      "to": "packages/provider-execution/process.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/service.ts",
+      "to": "packages/provider-execution/retry.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/service.ts",
+      "to": "packages/provider-execution/sandbox.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/service.ts",
+      "to": "packages/provider-execution/diagnostics.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/stream.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/stream.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/timeout.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-execution/timeout.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/health.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/health.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/registry.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/negotiation.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/health.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/session.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/stream.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/metrics.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/middleware.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/index.ts",
+      "to": "packages/provider-runtime/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/metrics.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/metrics.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/metrics.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/middleware.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/middleware.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/middleware.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/negotiation.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/negotiation.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/negotiation.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/negotiation.ts",
+      "to": "packages/provider-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/provider.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/provider.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/provider.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/registry.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/registry.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/registry.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/registry.ts",
+      "to": "packages/provider-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/registry.ts",
+      "to": "packages/provider-runtime/negotiation.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/registry.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/negotiation.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/health.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/session.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/metrics.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/stream.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/middleware.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "packages/provider-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/session.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/session.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/session.ts",
+      "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/session.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/session.ts",
+      "to": "packages/provider-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/stream.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/stream.ts",
+      "to": "packages/provider-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/types.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/index.ts",
+      "to": "packages/providers/aider/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/index.ts",
+      "to": "packages/providers/aider/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/index.ts",
+      "to": "packages/providers/aider/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/prompt-builder.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/prompt-builder.ts",
+      "to": "packages/providers/shared-prompt.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/provider.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/provider.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/provider.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/provider.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/provider.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/provider.ts",
+      "to": "packages/providers/shared-resolver.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/provider.ts",
+      "to": "packages/providers/shared-executor.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/provider.ts",
+      "to": "packages/providers/aider/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/provider.ts",
+      "to": "packages/providers/aider/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/response-parser.ts",
+      "to": "packages/agent-runtime/artifacts.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/aider/response-parser.ts",
+      "to": "packages/providers/shared-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/index.ts",
+      "to": "packages/providers/claude-code/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/index.ts",
+      "to": "packages/providers/claude-code/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/index.ts",
+      "to": "packages/providers/claude-code/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/prompt-builder.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "packages/provider-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "packages/providers/claude-code/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/provider.ts",
+      "to": "packages/providers/claude-code/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/claude-code/response-parser.ts",
+      "to": "packages/agent-runtime/artifacts.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/index.ts",
+      "to": "packages/providers/codex/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/index.ts",
+      "to": "packages/providers/codex/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/index.ts",
+      "to": "packages/providers/codex/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/prompt-builder.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/prompt-builder.ts",
+      "to": "packages/providers/shared-prompt.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/provider.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/provider.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/provider.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/provider.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/provider.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/provider.ts",
+      "to": "packages/providers/shared-resolver.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/provider.ts",
+      "to": "packages/providers/shared-executor.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/provider.ts",
+      "to": "packages/providers/codex/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/provider.ts",
+      "to": "packages/providers/codex/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/response-parser.ts",
+      "to": "packages/agent-runtime/artifacts.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/codex/response-parser.ts",
+      "to": "packages/providers/shared-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/index.ts",
+      "to": "packages/providers/gemini-cli/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/index.ts",
+      "to": "packages/providers/gemini-cli/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/index.ts",
+      "to": "packages/providers/gemini-cli/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/prompt-builder.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/prompt-builder.ts",
+      "to": "packages/providers/shared-prompt.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/provider.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/provider.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/provider.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/provider.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/provider.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/provider.ts",
+      "to": "packages/providers/shared-resolver.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/provider.ts",
+      "to": "packages/providers/shared-executor.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/provider.ts",
+      "to": "packages/providers/gemini-cli/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/provider.ts",
+      "to": "packages/providers/gemini-cli/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/response-parser.ts",
+      "to": "packages/agent-runtime/artifacts.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/gemini-cli/response-parser.ts",
+      "to": "packages/providers/shared-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/mock/index.ts",
+      "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/mock/index.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/mock/index.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/mock/index.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/index.ts",
+      "to": "packages/providers/ollama/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/index.ts",
+      "to": "packages/providers/ollama/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/index.ts",
+      "to": "packages/providers/ollama/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/prompt-builder.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/prompt-builder.ts",
+      "to": "packages/providers/shared-prompt.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/provider.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/provider.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/provider.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/provider.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/provider.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/provider.ts",
+      "to": "packages/providers/shared-resolver.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/provider.ts",
+      "to": "packages/providers/shared-executor.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/provider.ts",
+      "to": "packages/providers/ollama/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/provider.ts",
+      "to": "packages/providers/ollama/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/response-parser.ts",
+      "to": "packages/agent-runtime/artifacts.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/ollama/response-parser.ts",
+      "to": "packages/providers/shared-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/index.ts",
+      "to": "packages/providers/opencode/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/index.ts",
+      "to": "packages/providers/opencode/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/index.ts",
+      "to": "packages/providers/opencode/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/prompt-builder.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/prompt-builder.ts",
+      "to": "packages/providers/shared-prompt.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/provider.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/provider.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/provider.ts",
+      "to": "packages/provider-runtime/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/provider.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/provider.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/provider.ts",
+      "to": "packages/providers/shared-resolver.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/provider.ts",
+      "to": "packages/providers/shared-executor.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/provider.ts",
+      "to": "packages/providers/opencode/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/provider.ts",
+      "to": "packages/providers/opencode/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/response-parser.ts",
+      "to": "packages/agent-runtime/artifacts.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/opencode/response-parser.ts",
+      "to": "packages/providers/shared-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-executor.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-executor.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-executor.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-executor.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-executor.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-executor.ts",
+      "to": "packages/provider-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-executor.ts",
+      "to": "packages/agent-runtime/artifacts.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-parser.ts",
+      "to": "packages/agent-runtime/artifacts.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-prompt.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-resolver.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-resolver.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/providers/shared-resolver.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
       "from": "packages/query-analyzer/index.ts",
       "to": "packages/query-analyzer/service.ts",
       "type": "imports"
@@ -2415,6 +3877,91 @@
       "type": "imports"
     },
     {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/validator.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/failure-analyzer.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/repair.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/checkpoint.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/journal.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/recovery.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/metrics.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/autonomous-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/agent-runtime/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/workspace/workspace-engine.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-autonomous-runtime.ts",
+      "to": "packages/engineering-planner/types.ts",
+      "type": "imports"
+    },
+    {
       "from": "packages/test-brain.ts",
       "to": "process",
       "type": "imports"
@@ -2442,6 +3989,71 @@
     {
       "from": "packages/test-budget.ts",
       "to": "packages/context-budget/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/providers/claude-code/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/providers/claude-code/prompt-builder.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/providers/claude-code/response-parser.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/workspace/workspace-engine.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/workspace/workspace-journal.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/workspace/workspace-lock.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/providers/mock/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-claude-provider.ts",
+      "to": "packages/agent-runtime/types.ts",
       "type": "imports"
     },
     {
@@ -2600,6 +4212,66 @@
       "type": "imports"
     },
     {
+      "from": "packages/test-native-providers.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "packages/providers/codex/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "packages/providers/gemini-cli/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "packages/providers/ollama/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "packages/providers/aider/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "packages/providers/opencode/provider.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "packages/workspace/workspace-engine.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-native-providers.ts",
+      "to": "packages/agent-runtime/types.ts",
+      "type": "imports"
+    },
+    {
       "from": "packages/test-normalizer.ts",
       "to": "packages/semantic/index.ts",
       "type": "imports"
@@ -2647,6 +4319,206 @@
     {
       "from": "packages/test-planner.ts",
       "to": "packages/planner/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-execution/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-execution/process.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-execution/stream.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-execution/timeout.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-execution/retry.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-execution/sandbox.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-execution/diagnostics.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-execution/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-execution/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/providers/mock/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/providers/claude-code/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-execution.ts",
+      "to": "packages/provider-runtime/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/registry.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/negotiation.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/health.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/session.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/metrics.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/stream.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/middleware.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/errors.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/provider-runtime/types.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/providers/mock/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/providers/claude-code/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/providers/codex/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/providers/gemini-cli/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/providers/ollama/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/providers/aider/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/providers/opencode/index.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/agent-runtime/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/workspace/workspace-engine.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/orchestrator/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/engineering-planner/service.ts",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-runtime.ts",
+      "to": "packages/query-engine/service.ts",
       "type": "imports"
     },
     {

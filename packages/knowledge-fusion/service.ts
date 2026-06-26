@@ -68,18 +68,25 @@ export class KnowledgeFusionService {
             const graph = graphExists
                 ? await this.filesystem.readJson<{ nodes: any[]; edges: any[] }>(graphPath)
                 : { nodes: [], edges: [] };
+            if (!graph || !graph.nodes) (graph as any).nodes = [];
+            if (!graph || !graph.edges) (graph as any).edges = [];
 
             const execGraph = execExists
                 ? await this.filesystem.readJson<{ nodes: any[]; edges: any[] }>(execPath)
                 : { nodes: [], edges: [] };
+            if (!execGraph || !execGraph.nodes) (execGraph as any).nodes = [];
+            if (!execGraph || !execGraph.edges) (execGraph as any).edges = [];
 
             const relData = relExists
                 ? await this.filesystem.readJson<{ relationships: any[] }>(relPath)
                 : { relationships: [] };
+            if (!relData || !relData.relationships) (relData as any).relationships = [];
 
             const evolutionAnalytics = evolutionExists
                 ? await this.filesystem.readJson<{ fileHistory: any[]; coChangeRelationships: any[] }>(evolutionPath)
                 : { fileHistory: [], coChangeRelationships: [] };
+            if (!evolutionAnalytics || !evolutionAnalytics.fileHistory) (evolutionAnalytics as any).fileHistory = [];
+            if (!evolutionAnalytics || !evolutionAnalytics.coChangeRelationships) (evolutionAnalytics as any).coChangeRelationships = [];
 
             // 3. Process Signals
             const semanticSignals = this.normalizeScores(semanticRaw);
@@ -217,6 +224,22 @@ export class KnowledgeFusionService {
             }
             const evolutionSignals = this.normalizeScores(evolutionRaw);
 
+            // Learning Engine Signal
+            const learningRaw = new Map<string, number>();
+            if (options?.includeLearning !== false) {
+                try {
+                    const { LearningEngineService } = await import("../learning-engine");
+                    const learningEngine = new LearningEngineService(this.workspaceRoot);
+                    const scores = await learningEngine.getFileScores(query);
+                    for (const [file, score] of scores.entries()) {
+                        learningRaw.set(file, score);
+                    }
+                } catch {
+                    // Ignore learning signal errors
+                }
+            }
+            const learningSignals = this.normalizeScores(learningRaw);
+
             // 4. Gather & Merge Candidates
             const candidateMap = new Map<string, KnowledgeCandidate>();
 
@@ -235,7 +258,8 @@ export class KnowledgeFusionService {
                             relationships: 0,
                             graph: 0,
                             architecture: 0,
-                            evolution: 0
+                            evolution: 0,
+                            learning: 0
                         },
                         confidence: 0,
                         reasons: []
@@ -314,6 +338,13 @@ export class KnowledgeFusionService {
                 if (hadSignals > 0) duplicateCount++;
             }
 
+            // Add learning file candidates
+            for (const [fPath, val] of learningSignals.entries()) {
+                const hadSignals = candidateMap.get(fPath)?.provenance.length ?? 0;
+                addSignalValue(fPath, "file", "learning", val, { path: fPath });
+                if (hadSignals > 0) duplicateCount++;
+            }
+
             // 5. Score, Confidence, Explainability & deterministic sorting
             const finalCandidates: KnowledgeCandidate[] = [];
 
@@ -329,7 +360,8 @@ export class KnowledgeFusionService {
                     cand.signals.relationships,
                     cand.signals.graph,
                     cand.signals.architecture,
-                    cand.signals.evolution
+                    cand.signals.evolution,
+                    cand.signals.learning
                 ].filter(v => v > 0);
 
                 cand.confidence = activeVals.length > 0
@@ -356,6 +388,9 @@ export class KnowledgeFusionService {
                 if (cand.signals.evolution > 0.01) {
                     reasons.push("Significant historical churn, recency, or co-change activity");
                 }
+                if (cand.signals.learning > 0.01) {
+                    reasons.push("Relevant historical success correlation from Learning Engine");
+                }
                 cand.reasons = reasons;
 
                 finalCandidates.push(cand);
@@ -380,6 +415,7 @@ export class KnowledgeFusionService {
             let graphContribution = 0;
             let architectureContribution = 0;
             let evolutionContribution = 0;
+            let learningContribution = 0;
 
             for (const c of finalCandidates) {
                 if (c.provenance.includes("semantic")) semanticContribution++;
@@ -388,6 +424,7 @@ export class KnowledgeFusionService {
                 if (c.provenance.includes("graph")) graphContribution++;
                 if (c.provenance.includes("architecture")) architectureContribution++;
                 if (c.provenance.includes("evolution")) evolutionContribution++;
+                if (c.provenance.includes("learning")) learningContribution++;
             }
 
             const diagnostics: FusionDiagnostics = {
@@ -397,6 +434,7 @@ export class KnowledgeFusionService {
                 graphContribution,
                 architectureContribution,
                 evolutionContribution,
+                learningContribution,
                 mergedCandidates: finalCandidates.length,
                 duplicateEliminations: duplicateCount
             };

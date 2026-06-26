@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T20:46:03.872Z",
+  "generatedAt": "2026-06-26T22:44:31.686Z",
   "imports": [
     {
       "source": "packages/agent-runtime/executor.ts",
@@ -162,6 +162,10 @@
       "target": "../workspace/workspace-engine"
     },
     {
+      "source": "packages/agent-runtime/service.ts",
+      "target": "../provider-runtime/service"
+    },
+    {
       "source": "packages/agent-runtime/types.ts",
       "target": "./artifacts"
     },
@@ -232,6 +236,190 @@
     {
       "source": "packages/ast/types.ts",
       "target": "typescript"
+    },
+    {
+      "source": "packages/autonomous-runtime/checkpoint.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/autonomous-runtime/checkpoint.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/autonomous-runtime/checkpoint.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/autonomous-runtime/checkpoint.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/autonomous-runtime/failure-analyzer.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./validator"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./failure-analyzer"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./repair"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./checkpoint"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./journal"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./recovery"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./metrics"
+    },
+    {
+      "source": "packages/autonomous-runtime/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/autonomous-runtime/journal.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/autonomous-runtime/journal.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/autonomous-runtime/journal.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/autonomous-runtime/metrics.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/autonomous-runtime/recovery.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/autonomous-runtime/recovery.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/autonomous-runtime/repair.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/autonomous-runtime/repair.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/autonomous-runtime/repair.ts",
+      "target": "../engineering-planner/types"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "./validator"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "./failure-analyzer"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "./repair"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "./checkpoint"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "./journal"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "./recovery"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "./metrics"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "../agent-runtime"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "../workspace/workspace-engine"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "../provider-execution/service"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "../orchestrator/scheduler"
+    },
+    {
+      "source": "packages/autonomous-runtime/service.ts",
+      "target": "../engineering-planner/types"
+    },
+    {
+      "source": "packages/autonomous-runtime/types.ts",
+      "target": "../engineering-planner/types"
+    },
+    {
+      "source": "packages/autonomous-runtime/types.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/autonomous-runtime/validator.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/autonomous-runtime/validator.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/autonomous-runtime/validator.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/autonomous-runtime/validator.ts",
+      "target": "../provider-execution/service"
+    },
+    {
+      "source": "packages/autonomous-runtime/validator.ts",
+      "target": "../workspace/workspace-engine"
+    },
+    {
+      "source": "packages/autonomous-runtime/validator.ts",
+      "target": "../provider-execution/types"
     },
     {
       "source": "packages/brain/index.ts",
@@ -998,6 +1186,786 @@
       "target": "./types"
     },
     {
+      "source": "packages/provider-execution/diagnostics.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-execution/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-execution/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-execution/index.ts",
+      "target": "./stream"
+    },
+    {
+      "source": "packages/provider-execution/index.ts",
+      "target": "./timeout"
+    },
+    {
+      "source": "packages/provider-execution/index.ts",
+      "target": "./retry"
+    },
+    {
+      "source": "packages/provider-execution/index.ts",
+      "target": "./sandbox"
+    },
+    {
+      "source": "packages/provider-execution/index.ts",
+      "target": "./diagnostics"
+    },
+    {
+      "source": "packages/provider-execution/index.ts",
+      "target": "./process"
+    },
+    {
+      "source": "packages/provider-execution/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/provider-execution/process.ts",
+      "target": "child_process"
+    },
+    {
+      "source": "packages/provider-execution/process.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-execution/process.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-execution/process.ts",
+      "target": "./stream"
+    },
+    {
+      "source": "packages/provider-execution/process.ts",
+      "target": "./timeout"
+    },
+    {
+      "source": "packages/provider-execution/retry.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-execution/retry.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-execution/sandbox.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/provider-execution/sandbox.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/provider-execution/sandbox.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/provider-execution/sandbox.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-execution/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-execution/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-execution/service.ts",
+      "target": "./process"
+    },
+    {
+      "source": "packages/provider-execution/service.ts",
+      "target": "./retry"
+    },
+    {
+      "source": "packages/provider-execution/service.ts",
+      "target": "./sandbox"
+    },
+    {
+      "source": "packages/provider-execution/service.ts",
+      "target": "./diagnostics"
+    },
+    {
+      "source": "packages/provider-execution/stream.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-execution/stream.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-execution/timeout.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-execution/timeout.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-runtime/health.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/provider-runtime/health.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./registry"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./negotiation"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./health"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./session"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./stream"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./metrics"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./middleware"
+    },
+    {
+      "source": "packages/provider-runtime/index.ts",
+      "target": "./service"
+    },
+    {
+      "source": "packages/provider-runtime/metrics.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/provider-runtime/metrics.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/provider-runtime/metrics.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/middleware.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/provider-runtime/middleware.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/middleware.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/provider-runtime/negotiation.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/provider-runtime/negotiation.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/provider-runtime/negotiation.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/negotiation.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-runtime/provider.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/provider-runtime/provider.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/provider-runtime/provider.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/registry.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/provider-runtime/registry.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/provider-runtime/registry.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/registry.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-runtime/registry.ts",
+      "target": "./negotiation"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./registry"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./negotiation"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./health"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./session"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./metrics"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./stream"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./middleware"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/service.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-runtime/session.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/provider-runtime/session.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/provider-runtime/session.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "packages/provider-runtime/session.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/session.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-runtime/stream.ts",
+      "target": "./types"
+    },
+    {
+      "source": "packages/provider-runtime/stream.ts",
+      "target": "./errors"
+    },
+    {
+      "source": "packages/provider-runtime/types.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/aider/index.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/providers/aider/index.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/aider/index.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/aider/prompt-builder.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/aider/prompt-builder.ts",
+      "target": "../shared-prompt"
+    },
+    {
+      "source": "packages/providers/aider/provider.ts",
+      "target": "child_process"
+    },
+    {
+      "source": "packages/providers/aider/provider.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/aider/provider.ts",
+      "target": "../../provider-runtime/provider"
+    },
+    {
+      "source": "packages/providers/aider/provider.ts",
+      "target": "../../provider-runtime/types"
+    },
+    {
+      "source": "packages/providers/aider/provider.ts",
+      "target": "../../provider-execution/service"
+    },
+    {
+      "source": "packages/providers/aider/provider.ts",
+      "target": "../shared-resolver"
+    },
+    {
+      "source": "packages/providers/aider/provider.ts",
+      "target": "../shared-executor"
+    },
+    {
+      "source": "packages/providers/aider/provider.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/aider/provider.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/aider/response-parser.ts",
+      "target": "../../agent-runtime/artifacts"
+    },
+    {
+      "source": "packages/providers/aider/response-parser.ts",
+      "target": "../shared-parser"
+    },
+    {
+      "source": "packages/providers/claude-code/index.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/providers/claude-code/index.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/claude-code/index.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/claude-code/prompt-builder.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "child_process"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "../../provider-runtime/provider"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "../../provider-runtime/types"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "../../provider-execution/service"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "../../provider-execution/types"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "../../provider-execution/errors"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "../../provider-runtime/errors"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/claude-code/provider.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/claude-code/response-parser.ts",
+      "target": "../../agent-runtime/artifacts"
+    },
+    {
+      "source": "packages/providers/codex/index.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/providers/codex/index.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/codex/index.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/codex/prompt-builder.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/codex/prompt-builder.ts",
+      "target": "../shared-prompt"
+    },
+    {
+      "source": "packages/providers/codex/provider.ts",
+      "target": "child_process"
+    },
+    {
+      "source": "packages/providers/codex/provider.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/codex/provider.ts",
+      "target": "../../provider-runtime/provider"
+    },
+    {
+      "source": "packages/providers/codex/provider.ts",
+      "target": "../../provider-runtime/types"
+    },
+    {
+      "source": "packages/providers/codex/provider.ts",
+      "target": "../../provider-execution/service"
+    },
+    {
+      "source": "packages/providers/codex/provider.ts",
+      "target": "../shared-resolver"
+    },
+    {
+      "source": "packages/providers/codex/provider.ts",
+      "target": "../shared-executor"
+    },
+    {
+      "source": "packages/providers/codex/provider.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/codex/provider.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/codex/response-parser.ts",
+      "target": "../../agent-runtime/artifacts"
+    },
+    {
+      "source": "packages/providers/codex/response-parser.ts",
+      "target": "../shared-parser"
+    },
+    {
+      "source": "packages/providers/gemini-cli/index.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/providers/gemini-cli/index.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/gemini-cli/index.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/gemini-cli/prompt-builder.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/gemini-cli/prompt-builder.ts",
+      "target": "../shared-prompt"
+    },
+    {
+      "source": "packages/providers/gemini-cli/provider.ts",
+      "target": "child_process"
+    },
+    {
+      "source": "packages/providers/gemini-cli/provider.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/gemini-cli/provider.ts",
+      "target": "../../provider-runtime/provider"
+    },
+    {
+      "source": "packages/providers/gemini-cli/provider.ts",
+      "target": "../../provider-runtime/types"
+    },
+    {
+      "source": "packages/providers/gemini-cli/provider.ts",
+      "target": "../../provider-execution/service"
+    },
+    {
+      "source": "packages/providers/gemini-cli/provider.ts",
+      "target": "../shared-resolver"
+    },
+    {
+      "source": "packages/providers/gemini-cli/provider.ts",
+      "target": "../shared-executor"
+    },
+    {
+      "source": "packages/providers/gemini-cli/provider.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/gemini-cli/provider.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/gemini-cli/response-parser.ts",
+      "target": "../../agent-runtime/artifacts"
+    },
+    {
+      "source": "packages/providers/gemini-cli/response-parser.ts",
+      "target": "../shared-parser"
+    },
+    {
+      "source": "packages/providers/mock/index.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "packages/providers/mock/index.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/mock/index.ts",
+      "target": "../../provider-runtime/provider"
+    },
+    {
+      "source": "packages/providers/mock/index.ts",
+      "target": "../../provider-runtime/types"
+    },
+    {
+      "source": "packages/providers/ollama/index.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/providers/ollama/index.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/ollama/index.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/ollama/prompt-builder.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/ollama/prompt-builder.ts",
+      "target": "../shared-prompt"
+    },
+    {
+      "source": "packages/providers/ollama/provider.ts",
+      "target": "child_process"
+    },
+    {
+      "source": "packages/providers/ollama/provider.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/ollama/provider.ts",
+      "target": "../../provider-runtime/provider"
+    },
+    {
+      "source": "packages/providers/ollama/provider.ts",
+      "target": "../../provider-runtime/types"
+    },
+    {
+      "source": "packages/providers/ollama/provider.ts",
+      "target": "../../provider-execution/service"
+    },
+    {
+      "source": "packages/providers/ollama/provider.ts",
+      "target": "../shared-resolver"
+    },
+    {
+      "source": "packages/providers/ollama/provider.ts",
+      "target": "../shared-executor"
+    },
+    {
+      "source": "packages/providers/ollama/provider.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/ollama/provider.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/ollama/response-parser.ts",
+      "target": "../../agent-runtime/artifacts"
+    },
+    {
+      "source": "packages/providers/ollama/response-parser.ts",
+      "target": "../shared-parser"
+    },
+    {
+      "source": "packages/providers/opencode/index.ts",
+      "target": "./provider"
+    },
+    {
+      "source": "packages/providers/opencode/index.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/opencode/index.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/opencode/prompt-builder.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/opencode/prompt-builder.ts",
+      "target": "../shared-prompt"
+    },
+    {
+      "source": "packages/providers/opencode/provider.ts",
+      "target": "child_process"
+    },
+    {
+      "source": "packages/providers/opencode/provider.ts",
+      "target": "../../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/opencode/provider.ts",
+      "target": "../../provider-runtime/provider"
+    },
+    {
+      "source": "packages/providers/opencode/provider.ts",
+      "target": "../../provider-runtime/types"
+    },
+    {
+      "source": "packages/providers/opencode/provider.ts",
+      "target": "../../provider-execution/service"
+    },
+    {
+      "source": "packages/providers/opencode/provider.ts",
+      "target": "../shared-resolver"
+    },
+    {
+      "source": "packages/providers/opencode/provider.ts",
+      "target": "../shared-executor"
+    },
+    {
+      "source": "packages/providers/opencode/provider.ts",
+      "target": "./prompt-builder"
+    },
+    {
+      "source": "packages/providers/opencode/provider.ts",
+      "target": "./response-parser"
+    },
+    {
+      "source": "packages/providers/opencode/response-parser.ts",
+      "target": "../../agent-runtime/artifacts"
+    },
+    {
+      "source": "packages/providers/opencode/response-parser.ts",
+      "target": "../shared-parser"
+    },
+    {
+      "source": "packages/providers/shared-executor.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/shared-executor.ts",
+      "target": "../provider-runtime/types"
+    },
+    {
+      "source": "packages/providers/shared-executor.ts",
+      "target": "../provider-execution/service"
+    },
+    {
+      "source": "packages/providers/shared-executor.ts",
+      "target": "../provider-execution/types"
+    },
+    {
+      "source": "packages/providers/shared-executor.ts",
+      "target": "../provider-execution/errors"
+    },
+    {
+      "source": "packages/providers/shared-executor.ts",
+      "target": "../provider-runtime/errors"
+    },
+    {
+      "source": "packages/providers/shared-executor.ts",
+      "target": "../agent-runtime/artifacts"
+    },
+    {
+      "source": "packages/providers/shared-parser.ts",
+      "target": "../agent-runtime/artifacts"
+    },
+    {
+      "source": "packages/providers/shared-prompt.ts",
+      "target": "../agent-runtime/types"
+    },
+    {
+      "source": "packages/providers/shared-resolver.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/providers/shared-resolver.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/providers/shared-resolver.ts",
+      "target": "os"
+    },
+    {
       "source": "packages/query-analyzer/index.ts",
       "target": "./service"
     },
@@ -1550,6 +2518,74 @@
       "target": "./ast"
     },
     {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/service"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/validator"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/failure-analyzer"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/repair"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/checkpoint"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/journal"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/recovery"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/metrics"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/errors"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./autonomous-runtime/types"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./agent-runtime"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./workspace/workspace-engine"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./provider-execution/service"
+    },
+    {
+      "source": "packages/test-autonomous-runtime.ts",
+      "target": "./engineering-planner/types"
+    },
+    {
       "source": "packages/test-brain.ts",
       "target": "process"
     },
@@ -1572,6 +2608,58 @@
     {
       "source": "packages/test-budget.ts",
       "target": "./context-budget"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./providers/claude-code/provider"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./providers/claude-code/prompt-builder"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./providers/claude-code/response-parser"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./provider-execution/service"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./workspace/workspace-engine"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./workspace/workspace-journal"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./workspace/workspace-lock"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./providers/mock"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./provider-runtime/types"
+    },
+    {
+      "source": "packages/test-claude-provider.ts",
+      "target": "./agent-runtime/types"
     },
     {
       "source": "packages/test-context-assembler.ts",
@@ -1698,6 +2786,54 @@
       "target": "./knowledge-fusion/types"
     },
     {
+      "source": "packages/test-native-providers.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "./providers/codex/provider"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "./providers/gemini-cli/provider"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "./providers/ollama/provider"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "./providers/aider/provider"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "./providers/opencode/provider"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "./provider-execution/service"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "./workspace/workspace-engine"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "./provider-runtime/types"
+    },
+    {
+      "source": "packages/test-native-providers.ts",
+      "target": "./agent-runtime/types"
+    },
+    {
       "source": "packages/test-normalizer.ts",
       "target": "./semantic"
     },
@@ -1736,6 +2872,166 @@
     {
       "source": "packages/test-planner.ts",
       "target": "./planner"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-execution/service"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-execution/process"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-execution/stream"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-execution/timeout"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-execution/retry"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-execution/sandbox"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-execution/diagnostics"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-execution/types"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-execution/errors"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./providers/mock"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./providers/claude-code"
+    },
+    {
+      "source": "packages/test-provider-execution.ts",
+      "target": "./provider-runtime/service"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/service"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/registry"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/negotiation"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/health"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/session"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/metrics"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/stream"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/middleware"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/errors"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./provider-runtime/types"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./providers/mock"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./providers/claude-code"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./providers/codex"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./providers/gemini-cli"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./providers/ollama"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./providers/aider"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./providers/opencode"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./agent-runtime/service"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./workspace/workspace-engine"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./orchestrator/service"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./engineering-planner/service"
+    },
+    {
+      "source": "packages/test-provider-runtime.ts",
+      "target": "./query-engine/service"
     },
     {
       "source": "packages/test-query-engine.ts",

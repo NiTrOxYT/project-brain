@@ -101,6 +101,37 @@ export class ProviderRuntimeService {
 
         const healthReports = await this.healthMonitor.checkAll(candidates);
         const negotiation = this.negotiator.negotiate(candidates, ctx, healthReports);
+
+        // Learning Engine overrides selection if recommended provider is healthy/usable
+        try {
+            const { LearningEngineService } = await import("../learning-engine");
+            const learningEngine = new LearningEngineService(this.workspaceRoot);
+            const recommendation = await learningEngine.recommend({
+                taskType: request.task.type,
+                taskTitle: request.task.title
+            });
+
+            const recProvId = recommendation.recommendedProvider;
+            const recProv = candidates.find(c => c.id === recProvId);
+
+            if (recProv && recProvId !== negotiation.selectedProvider) {
+                const recHealth = healthReports.get(recProvId)?.status ?? "Healthy";
+                const isUsable = recHealth === "Healthy" || recHealth === "Busy";
+                if (isUsable) {
+                    const originalSelected = negotiation.selectedProvider;
+                    negotiation.selectedProvider = recProvId;
+                    negotiation.selectedModel = recProv.metadata().defaultModel;
+                    negotiation.selectionReason = `Learning override: selected '${recProvId}' based on historical evidence. Original selection was '${originalSelected}'.`;
+
+                    // Rebuild fallback chain
+                    const fullChain = [originalSelected, ...negotiation.fallbackChain];
+                    negotiation.fallbackChain = fullChain.filter(id => id !== recProvId);
+                }
+            }
+        } catch (err) {
+            // ignore learning override errors to keep provider runtime safe
+        }
+
         this.lastNegotiationResult = negotiation;
         this.totalExecutions++;
 

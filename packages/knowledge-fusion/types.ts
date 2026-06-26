@@ -5,6 +5,7 @@ export interface CandidateSignals {
     graph: number;
     architecture: number;
     evolution: number;
+    learning: number;
 }
 
 export interface KnowledgeCandidate {
@@ -25,6 +26,7 @@ export interface FusionWeights {
     graph: number;
     architecture: number;
     evolution: number;
+    learning: number;
 }
 
 export interface FusionStrategy {
@@ -38,6 +40,7 @@ export interface FusionRequest {
         includeRelationships?: boolean;
         includeGraph?: boolean;
         includeArchitectureMemory?: boolean;
+        includeLearning?: boolean;
     };
     semanticCandidates?: { path: string; score: number }[];
 }
@@ -49,6 +52,7 @@ export interface FusionDiagnostics {
     graphContribution: number;
     architectureContribution: number;
     evolutionContribution: number;
+    learningContribution: number;
     mergedCandidates: number;
     duplicateEliminations: number;
 }

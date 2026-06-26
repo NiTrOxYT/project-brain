@@ -189,6 +189,30 @@ export class QueryEngineService {
 
             const totalTimeMs = Date.now() - totalStart;
 
+            let learningRecommendation: any = undefined;
+            let optimizationRulesUsed: string[] = [];
+            let providerConfidence = 0.0;
+            let promptConfidence = 0.0;
+            let learningVersion = "1.0.0";
+
+            try {
+                const { LearningEngineService } = await import("../learning-engine");
+                const learningEngine = new LearningEngineService(this.workspaceRoot);
+                const rec = await learningEngine.recommend({
+                    taskType: "refactor",
+                    taskTitle: request.query
+                });
+                learningRecommendation = rec;
+                optimizationRulesUsed = rec.rulesApplied;
+                providerConfidence = rec.providerConfidence;
+                promptConfidence = rec.promptConfidence;
+
+                const snapshot = await learningEngine.snapshot();
+                learningVersion = snapshot.metadata?.version || "1.0.0";
+            } catch {
+                // ignore
+            }
+
             return {
                 generatedAt: new Date().toISOString(),
                 request,
@@ -227,7 +251,13 @@ export class QueryEngineService {
                     estimatedCost: context.executionDiagnostics?.estimatedCost,
                     fallbackChain: context.executionDiagnostics?.fallbackChain,
                     selectionReason: context.executionDiagnostics?.selectionReason,
-                    capabilityScore: context.executionDiagnostics?.capabilityScore
+                    capabilityScore: context.executionDiagnostics?.capabilityScore,
+                    // Learning diagnostics
+                    learningRecommendation,
+                    optimizationRulesUsed,
+                    providerConfidence,
+                    promptConfidence,
+                    learningVersion
                 }
             };
 

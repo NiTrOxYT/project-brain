@@ -3389,3 +3389,785 @@
 {"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T20:46:05.845Z","payload":{"progress":75},"sessionId":"session-1782506765838"}
 {"type":"ArtifactProduced","taskId":"TASK-000025","timestamp":"2026-06-26T20:46:05.845Z","payload":{"artifactId":"artifact-TASK-000025","artifact":{"id":"artifact-TASK-000025","taskId":"TASK-000025","type":"test","path":"packages/workspace/workspace-engine.ts","content":"Mock content generated for task: TASK-000025 (Test changes in workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T20:46:05.845Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782506765838"}
 {"type":"TaskCompleted","taskId":"TASK-000025","timestamp":"2026-06-26T20:46:05.845Z","sessionId":"session-1782506765838"}
+{"type":"TaskStarted","taskId":"NEGOTIATE-TASK-01","timestamp":"2026-06-26T22:44:24.424Z","sessionId":"session-1782513864423"}
+{"type":"ArtifactProduced","taskId":"NEGOTIATE-TASK-01","timestamp":"2026-06-26T22:44:24.424Z","payload":{"artifactId":"art-NEGOTIATE-TASK-01","artifact":{"id":"art-NEGOTIATE-TASK-01","taskId":"NEGOTIATE-TASK-01","type":"code","content":"hello world content"}},"sessionId":"session-1782513864423"}
+{"type":"TaskCompleted","taskId":"NEGOTIATE-TASK-01","timestamp":"2026-06-26T22:44:24.425Z","sessionId":"session-1782513864423"}
+{"type":"TaskStarted","taskId":"HOOKS-TASK-01","timestamp":"2026-06-26T22:44:24.425Z","sessionId":"session-1782513864425"}
+{"type":"TaskProgress","taskId":"HOOKS-TASK-01","timestamp":"2026-06-26T22:44:24.425Z","payload":{"progress":25},"sessionId":"session-1782513864425"}
+{"type":"TaskProgress","taskId":"HOOKS-TASK-01","timestamp":"2026-06-26T22:44:24.425Z","payload":{"progress":50},"sessionId":"session-1782513864425"}
+{"type":"TaskProgress","taskId":"HOOKS-TASK-01","timestamp":"2026-06-26T22:44:24.425Z","payload":{"progress":75},"sessionId":"session-1782513864425"}
+{"type":"ArtifactProduced","taskId":"HOOKS-TASK-01","timestamp":"2026-06-26T22:44:24.426Z","payload":{"artifactId":"artifact-HOOKS-TASK-01","artifact":{"id":"artifact-HOOKS-TASK-01","taskId":"HOOKS-TASK-01","type":"code","content":"Mock content generated for task: HOOKS-TASK-01 (Test hooks)","version":"1.0.0","createdAt":"2026-06-26T22:44:24.426Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864425"}
+{"type":"TaskCompleted","taskId":"HOOKS-TASK-01","timestamp":"2026-06-26T22:44:24.426Z","sessionId":"session-1782513864425"}
+{"type":"TaskStarted","taskId":"ART-DUP-TASK-1782513864426","timestamp":"2026-06-26T22:44:24.426Z","sessionId":"session-1782513864423"}
+{"type":"ArtifactProduced","taskId":"ART-DUP-TASK-1782513864426","timestamp":"2026-06-26T22:44:24.426Z","payload":{"artifactId":"art-ART-DUP-TASK-1782513864426","artifact":{"id":"art-ART-DUP-TASK-1782513864426","taskId":"ART-DUP-TASK-1782513864426","type":"code","content":"hello world content"}},"sessionId":"session-1782513864423"}
+{"type":"TaskCompleted","taskId":"ART-DUP-TASK-1782513864426","timestamp":"2026-06-26T22:44:24.426Z","sessionId":"session-1782513864423"}
+{"type":"TaskStarted","taskId":"TIMEOUT-TASK","timestamp":"2026-06-26T22:44:24.431Z","sessionId":"session-1782513864430"}
+{"type":"RetryStarted","taskId":"TIMEOUT-TASK","timestamp":"2026-06-26T22:44:24.442Z","payload":{"attempt":2},"sessionId":"session-1782513864430"}
+{"type":"TaskStarted","taskId":"TIMEOUT-TASK","timestamp":"2026-06-26T22:44:24.463Z","sessionId":"session-1782513864430"}
+{"type":"RetryStarted","taskId":"TIMEOUT-TASK","timestamp":"2026-06-26T22:44:24.474Z","payload":{"attempt":3},"sessionId":"session-1782513864430"}
+{"type":"TaskStarted","taskId":"TIMEOUT-TASK","timestamp":"2026-06-26T22:44:24.506Z","sessionId":"session-1782513864430"}
+{"type":"TaskStarted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:26.832Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:26.832Z","payload":{"artifactId":"artifact-TASK-000001","artifact":{"id":"artifact-TASK-000001","taskId":"TASK-000001","type":"log","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000001 (Analyze test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.832Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:26.832Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:26.832Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:26.832Z","payload":{"artifactId":"artifact-TASK-000002","artifact":{"id":"artifact-TASK-000002","taskId":"TASK-000002","type":"log","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000002 (Analyze test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.832Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:26.832Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:26.832Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:26.832Z","payload":{"artifactId":"artifact-TASK-000003","artifact":{"id":"artifact-TASK-000003","taskId":"TASK-000003","type":"log","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000003 (Analyze test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.832Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:26.832Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:26.832Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:26.832Z","payload":{"artifactId":"artifact-TASK-000004","artifact":{"id":"artifact-TASK-000004","taskId":"TASK-000004","type":"log","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000004 (Analyze service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.832Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:26.832Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:26.832Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:26.832Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:26.833Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:26.833Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:26.833Z","payload":{"artifactId":"artifact-TASK-000005","artifact":{"id":"artifact-TASK-000005","taskId":"TASK-000005","type":"log","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000005 (Analyze types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.833Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:26.833Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:26.833Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:26.833Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:26.833Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:26.833Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:26.833Z","payload":{"artifactId":"artifact-TASK-000006","artifact":{"id":"artifact-TASK-000006","taskId":"TASK-000006","type":"log","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000006 (Analyze test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.833Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:26.833Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:26.834Z","payload":{"artifactId":"artifact-TASK-000007","artifact":{"id":"artifact-TASK-000007","taskId":"TASK-000007","type":"code","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000007 (Modify test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.834Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:26.834Z","payload":{"artifactId":"artifact-TASK-000008","artifact":{"id":"artifact-TASK-000008","taskId":"TASK-000008","type":"code","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000008 (Modify test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.834Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:26.834Z","payload":{"artifactId":"artifact-TASK-000009","artifact":{"id":"artifact-TASK-000009","taskId":"TASK-000009","type":"code","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000009 (Modify test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.834Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:26.834Z","payload":{"artifactId":"artifact-TASK-000010","artifact":{"id":"artifact-TASK-000010","taskId":"TASK-000010","type":"code","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000010 (Modify service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.834Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:26.834Z","payload":{"artifactId":"artifact-TASK-000011","artifact":{"id":"artifact-TASK-000011","taskId":"TASK-000011","type":"code","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000011 (Modify types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.834Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:26.834Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:26.834Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:26.835Z","payload":{"artifactId":"artifact-TASK-000012","artifact":{"id":"artifact-TASK-000012","taskId":"TASK-000012","type":"code","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000012 (Modify test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.835Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:26.835Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:26.835Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:26.835Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:26.835Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:26.835Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:26.835Z","payload":{"artifactId":"artifact-TASK-000013","artifact":{"id":"artifact-TASK-000013","taskId":"TASK-000013","type":"diagnostic","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000013 (Validate API of test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.835Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:26.835Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:26.835Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:26.835Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:26.835Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:26.835Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:26.835Z","payload":{"artifactId":"artifact-TASK-000014","artifact":{"id":"artifact-TASK-000014","taskId":"TASK-000014","type":"diagnostic","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000014 (Validate API of test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.835Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:26.835Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:26.835Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:26.835Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:26.835Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:26.836Z","payload":{"artifactId":"artifact-TASK-000015","artifact":{"id":"artifact-TASK-000015","taskId":"TASK-000015","type":"diagnostic","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000015 (Validate API of test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.836Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:26.836Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:26.836Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:26.836Z","payload":{"artifactId":"artifact-TASK-000016","artifact":{"id":"artifact-TASK-000016","taskId":"TASK-000016","type":"diagnostic","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000016 (Validate API of service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.836Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:26.836Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:26.836Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:26.836Z","payload":{"artifactId":"artifact-TASK-000017","artifact":{"id":"artifact-TASK-000017","taskId":"TASK-000017","type":"diagnostic","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000017 (Validate API of types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.836Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:26.836Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:26.836Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:26.836Z","payload":{"artifactId":"artifact-TASK-000018","artifact":{"id":"artifact-TASK-000018","taskId":"TASK-000018","type":"diagnostic","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000018 (Validate API of test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.836Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:26.836Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:26.836Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:26.836Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:26.836Z","payload":{"artifactId":"artifact-TASK-000019","artifact":{"id":"artifact-TASK-000019","taskId":"TASK-000019","type":"diagnostic","content":"Mock content generated for task: TASK-000019 (Validate full build)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.836Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:26.836Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:26.837Z","payload":{"artifactId":"artifact-TASK-000020","artifact":{"id":"artifact-TASK-000020","taskId":"TASK-000020","type":"test","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000020 (Test changes in test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.837Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:26.837Z","payload":{"artifactId":"artifact-TASK-000021","artifact":{"id":"artifact-TASK-000021","taskId":"TASK-000021","type":"test","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000021 (Test changes in test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.837Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:26.837Z","payload":{"artifactId":"artifact-TASK-000022","artifact":{"id":"artifact-TASK-000022","taskId":"TASK-000022","type":"test","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000022 (Test changes in test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.837Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:26.837Z","payload":{"artifactId":"artifact-TASK-000023","artifact":{"id":"artifact-TASK-000023","taskId":"TASK-000023","type":"test","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000023 (Test changes in service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.837Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:26.837Z","payload":{"artifactId":"artifact-TASK-000024","artifact":{"id":"artifact-TASK-000024","taskId":"TASK-000024","type":"test","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000024 (Test changes in types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.837Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":25},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":50},"sessionId":"session-1782513864517"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:26.837Z","payload":{"progress":75},"sessionId":"session-1782513864517"}
+{"type":"ArtifactProduced","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:26.837Z","payload":{"artifactId":"artifact-TASK-000025","artifact":{"id":"artifact-TASK-000025","taskId":"TASK-000025","type":"test","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000025 (Test changes in test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:26.837Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513864517"}
+{"type":"TaskCompleted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:26.837Z","sessionId":"session-1782513864517"}
+{"type":"TaskStarted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:28.906Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:28.906Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:28.906Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:28.906Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:28.906Z","payload":{"artifactId":"artifact-TASK-000001","artifact":{"id":"artifact-TASK-000001","taskId":"TASK-000001","type":"log","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000001 (Analyze test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.906Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:28.906Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:28.906Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:28.906Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:28.906Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:28.906Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:28.906Z","payload":{"artifactId":"artifact-TASK-000002","artifact":{"id":"artifact-TASK-000002","taskId":"TASK-000002","type":"log","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000002 (Analyze test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.906Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:28.906Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:28.906Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:28.907Z","payload":{"artifactId":"artifact-TASK-000003","artifact":{"id":"artifact-TASK-000003","taskId":"TASK-000003","type":"log","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000003 (Analyze service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.907Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:28.907Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:28.907Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:28.907Z","payload":{"artifactId":"artifact-TASK-000004","artifact":{"id":"artifact-TASK-000004","taskId":"TASK-000004","type":"log","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000004 (Analyze test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.907Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:28.907Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:28.907Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:28.907Z","payload":{"artifactId":"artifact-TASK-000005","artifact":{"id":"artifact-TASK-000005","taskId":"TASK-000005","type":"log","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000005 (Analyze types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.907Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:28.907Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:28.907Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:28.907Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:28.907Z","payload":{"artifactId":"artifact-TASK-000006","artifact":{"id":"artifact-TASK-000006","taskId":"TASK-000006","type":"log","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000006 (Analyze test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.907Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:28.907Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:28.908Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:28.908Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:28.908Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:28.908Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:28.908Z","payload":{"artifactId":"artifact-TASK-000007","artifact":{"id":"artifact-TASK-000007","taskId":"TASK-000007","type":"code","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000007 (Modify test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.908Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:28.908Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:28.908Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:28.908Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:28.908Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:28.908Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:28.908Z","payload":{"artifactId":"artifact-TASK-000008","artifact":{"id":"artifact-TASK-000008","taskId":"TASK-000008","type":"code","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000008 (Modify test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.908Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:28.908Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:28.908Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:28.908Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:28.908Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:28.909Z","payload":{"artifactId":"artifact-TASK-000009","artifact":{"id":"artifact-TASK-000009","taskId":"TASK-000009","type":"code","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000009 (Modify service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.909Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:28.909Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:28.909Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:28.909Z","payload":{"artifactId":"artifact-TASK-000010","artifact":{"id":"artifact-TASK-000010","taskId":"TASK-000010","type":"code","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000010 (Modify test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.909Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:28.909Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:28.909Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:28.909Z","payload":{"artifactId":"artifact-TASK-000011","artifact":{"id":"artifact-TASK-000011","taskId":"TASK-000011","type":"code","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000011 (Modify types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.909Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:28.909Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:28.909Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:28.909Z","payload":{"artifactId":"artifact-TASK-000012","artifact":{"id":"artifact-TASK-000012","taskId":"TASK-000012","type":"code","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000012 (Modify test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.909Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:28.909Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:28.909Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:28.909Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:28.910Z","payload":{"artifactId":"artifact-TASK-000013","artifact":{"id":"artifact-TASK-000013","taskId":"TASK-000013","type":"diagnostic","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000013 (Validate API of test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.910Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:28.910Z","payload":{"artifactId":"artifact-TASK-000014","artifact":{"id":"artifact-TASK-000014","taskId":"TASK-000014","type":"diagnostic","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000014 (Validate API of test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.910Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:28.910Z","payload":{"artifactId":"artifact-TASK-000015","artifact":{"id":"artifact-TASK-000015","taskId":"TASK-000015","type":"diagnostic","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000015 (Validate API of service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.910Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:28.910Z","payload":{"artifactId":"artifact-TASK-000016","artifact":{"id":"artifact-TASK-000016","taskId":"TASK-000016","type":"diagnostic","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000016 (Validate API of test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.910Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:28.910Z","payload":{"artifactId":"artifact-TASK-000017","artifact":{"id":"artifact-TASK-000017","taskId":"TASK-000017","type":"diagnostic","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000017 (Validate API of types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.910Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:28.910Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:28.910Z","payload":{"artifactId":"artifact-TASK-000018","artifact":{"id":"artifact-TASK-000018","taskId":"TASK-000018","type":"diagnostic","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000018 (Validate API of test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.910Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:28.910Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:28.911Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:28.911Z","payload":{"artifactId":"artifact-TASK-000019","artifact":{"id":"artifact-TASK-000019","taskId":"TASK-000019","type":"diagnostic","content":"Mock content generated for task: TASK-000019 (Validate full build)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.911Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:28.911Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:28.911Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:28.911Z","payload":{"artifactId":"artifact-TASK-000020","artifact":{"id":"artifact-TASK-000020","taskId":"TASK-000020","type":"test","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000020 (Test changes in test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.911Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:28.911Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:28.911Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:28.911Z","payload":{"artifactId":"artifact-TASK-000021","artifact":{"id":"artifact-TASK-000021","taskId":"TASK-000021","type":"test","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000021 (Test changes in test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.911Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:28.911Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:28.911Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:28.911Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:28.911Z","payload":{"artifactId":"artifact-TASK-000022","artifact":{"id":"artifact-TASK-000022","taskId":"TASK-000022","type":"test","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000022 (Test changes in service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.911Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:28.911Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:28.911Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:28.912Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:28.912Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:28.912Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:28.912Z","payload":{"artifactId":"artifact-TASK-000023","artifact":{"id":"artifact-TASK-000023","taskId":"TASK-000023","type":"test","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000023 (Test changes in test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.912Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:28.912Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:28.912Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:28.912Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:28.912Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:28.912Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:28.912Z","payload":{"artifactId":"artifact-TASK-000024","artifact":{"id":"artifact-TASK-000024","taskId":"TASK-000024","type":"test","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000024 (Test changes in types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.912Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:28.912Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:28.912Z","sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:28.912Z","payload":{"progress":25},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:28.912Z","payload":{"progress":50},"sessionId":"session-1782513868905"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:28.912Z","payload":{"progress":75},"sessionId":"session-1782513868905"}
+{"type":"ArtifactProduced","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:28.912Z","payload":{"artifactId":"artifact-TASK-000025","artifact":{"id":"artifact-TASK-000025","taskId":"TASK-000025","type":"test","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000025 (Test changes in test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:28.912Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513868905"}
+{"type":"TaskCompleted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:28.912Z","sessionId":"session-1782513868905"}
+{"type":"TaskStarted","taskId":"TASK-TEST-01","timestamp":"2026-06-26T22:44:31.982Z","sessionId":"session-1782513871982"}
+{"type":"TaskProgress","taskId":"TASK-TEST-01","timestamp":"2026-06-26T22:44:31.983Z","payload":{"progress":25},"sessionId":"session-1782513871982"}
+{"type":"TaskProgress","taskId":"TASK-TEST-01","timestamp":"2026-06-26T22:44:31.983Z","payload":{"progress":50},"sessionId":"session-1782513871982"}
+{"type":"TaskProgress","taskId":"TASK-TEST-01","timestamp":"2026-06-26T22:44:31.983Z","payload":{"progress":75},"sessionId":"session-1782513871982"}
+{"type":"ArtifactProduced","taskId":"TASK-TEST-01","timestamp":"2026-06-26T22:44:31.983Z","payload":{"artifactId":"artifact-TASK-TEST-01","artifact":{"id":"artifact-TASK-TEST-01","taskId":"TASK-TEST-01","type":"code","content":"Mock content generated for task: TASK-TEST-01 (Test code creation)","version":"1.0.0","createdAt":"2026-06-26T22:44:31.983Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871982"}
+{"type":"TaskCompleted","taskId":"TASK-TEST-01","timestamp":"2026-06-26T22:44:31.983Z","sessionId":"session-1782513871982"}
+{"type":"TaskStarted","taskId":"TASK-TEST-02","timestamp":"2026-06-26T22:44:31.983Z","sessionId":"session-1782513871982"}
+{"type":"ArtifactProduced","taskId":"TASK-TEST-02","timestamp":"2026-06-26T22:44:31.983Z","payload":{"artifactId":"custom-art-TASK-TEST-02"},"sessionId":"session-1782513871982"}
+{"type":"TaskCompleted","taskId":"TASK-TEST-02","timestamp":"2026-06-26T22:44:31.983Z","sessionId":"session-1782513871982"}
+{"type":"TaskStarted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.378Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.378Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.379Z","payload":{"artifactId":"artifact-TASK-000001","artifact":{"id":"artifact-TASK-000001","taskId":"TASK-000001","type":"log","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000001 (Analyze test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.379Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.379Z","payload":{"artifactId":"artifact-TASK-000002","artifact":{"id":"artifact-TASK-000002","taskId":"TASK-000002","type":"log","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000002 (Analyze test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.379Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.379Z","payload":{"artifactId":"artifact-TASK-000003","artifact":{"id":"artifact-TASK-000003","taskId":"TASK-000003","type":"log","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000003 (Analyze test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.379Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.379Z","payload":{"artifactId":"artifact-TASK-000004","artifact":{"id":"artifact-TASK-000004","taskId":"TASK-000004","type":"log","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000004 (Analyze service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.379Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.379Z","payload":{"artifactId":"artifact-TASK-000005","artifact":{"id":"artifact-TASK-000005","taskId":"TASK-000005","type":"log","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000005 (Analyze types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.379Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.379Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.379Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.379Z","payload":{"artifactId":"artifact-TASK-000006","artifact":{"id":"artifact-TASK-000006","taskId":"TASK-000006","type":"log","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000006 (Analyze test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.379Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.380Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.380Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.380Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.380Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.380Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.380Z","payload":{"artifactId":"artifact-TASK-000007","artifact":{"id":"artifact-TASK-000007","taskId":"TASK-000007","type":"code","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000007 (Modify test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.380Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.380Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.380Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.380Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.381Z","payload":{"artifactId":"artifact-TASK-000008","artifact":{"id":"artifact-TASK-000008","taskId":"TASK-000008","type":"code","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000008 (Modify test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.381Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.381Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.381Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.381Z","payload":{"artifactId":"artifact-TASK-000009","artifact":{"id":"artifact-TASK-000009","taskId":"TASK-000009","type":"code","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000009 (Modify test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.381Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.381Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.381Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.381Z","payload":{"artifactId":"artifact-TASK-000010","artifact":{"id":"artifact-TASK-000010","taskId":"TASK-000010","type":"code","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000010 (Modify service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.381Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.381Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.381Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.381Z","payload":{"artifactId":"artifact-TASK-000011","artifact":{"id":"artifact-TASK-000011","taskId":"TASK-000011","type":"code","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000011 (Modify types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.381Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.381Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.381Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.381Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.381Z","payload":{"artifactId":"artifact-TASK-000012","artifact":{"id":"artifact-TASK-000012","taskId":"TASK-000012","type":"code","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000012 (Modify test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.381Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.381Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.382Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.382Z","payload":{"artifactId":"artifact-TASK-000013","artifact":{"id":"artifact-TASK-000013","taskId":"TASK-000013","type":"diagnostic","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000013 (Validate API of test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.382Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.382Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.382Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.382Z","payload":{"artifactId":"artifact-TASK-000014","artifact":{"id":"artifact-TASK-000014","taskId":"TASK-000014","type":"diagnostic","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000014 (Validate API of test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.382Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.382Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.382Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.382Z","payload":{"artifactId":"artifact-TASK-000015","artifact":{"id":"artifact-TASK-000015","taskId":"TASK-000015","type":"diagnostic","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000015 (Validate API of test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.382Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.382Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.382Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.382Z","payload":{"artifactId":"artifact-TASK-000016","artifact":{"id":"artifact-TASK-000016","taskId":"TASK-000016","type":"diagnostic","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000016 (Validate API of service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.382Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.382Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.382Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.382Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.383Z","payload":{"artifactId":"artifact-TASK-000017","artifact":{"id":"artifact-TASK-000017","taskId":"TASK-000017","type":"diagnostic","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000017 (Validate API of types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.383Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.383Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.383Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.383Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.383Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.383Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.383Z","payload":{"artifactId":"artifact-TASK-000018","artifact":{"id":"artifact-TASK-000018","taskId":"TASK-000018","type":"diagnostic","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000018 (Validate API of test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.383Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.383Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.383Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.383Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.383Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.383Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.383Z","payload":{"artifactId":"artifact-TASK-000019","artifact":{"id":"artifact-TASK-000019","taskId":"TASK-000019","type":"diagnostic","content":"Mock content generated for task: TASK-000019 (Validate full build)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.383Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.383Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.383Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.383Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.383Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.384Z","payload":{"artifactId":"artifact-TASK-000020","artifact":{"id":"artifact-TASK-000020","taskId":"TASK-000020","type":"test","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000020 (Test changes in test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.384Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.384Z","payload":{"artifactId":"artifact-TASK-000021","artifact":{"id":"artifact-TASK-000021","taskId":"TASK-000021","type":"test","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000021 (Test changes in test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.384Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.384Z","payload":{"artifactId":"artifact-TASK-000022","artifact":{"id":"artifact-TASK-000022","taskId":"TASK-000022","type":"test","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000022 (Test changes in test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.384Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.384Z","payload":{"artifactId":"artifact-TASK-000023","artifact":{"id":"artifact-TASK-000023","taskId":"TASK-000023","type":"test","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000023 (Test changes in service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.384Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.384Z","payload":{"artifactId":"artifact-TASK-000024","artifact":{"id":"artifact-TASK-000024","taskId":"TASK-000024","type":"test","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000024 (Test changes in types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.384Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.384Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.384Z","payload":{"artifactId":"artifact-TASK-000025","artifact":{"id":"artifact-TASK-000025","taskId":"TASK-000025","type":"test","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000025 (Test changes in test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.384Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.384Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.385Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.385Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.385Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.385Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"TaskFailed","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.385Z","payload":{"error":"Mock execution failure requested"},"sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.385Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.385Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.385Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.385Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.385Z","payload":{"artifactId":"artifact-TASK-000002","artifact":{"id":"artifact-TASK-000002","taskId":"TASK-000002","type":"log","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000002 (Analyze test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.385Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:34.385Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.385Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.385Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.385Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.385Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.386Z","payload":{"artifactId":"artifact-TASK-000003","artifact":{"id":"artifact-TASK-000003","taskId":"TASK-000003","type":"log","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000003 (Analyze test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.386Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:34.386Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.386Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.386Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.386Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.386Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.386Z","payload":{"artifactId":"artifact-TASK-000004","artifact":{"id":"artifact-TASK-000004","taskId":"TASK-000004","type":"log","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000004 (Analyze service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.386Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:34.386Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.386Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.386Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.386Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.386Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.386Z","payload":{"artifactId":"artifact-TASK-000005","artifact":{"id":"artifact-TASK-000005","taskId":"TASK-000005","type":"log","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000005 (Analyze types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.386Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:34.386Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.386Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.386Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.386Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.386Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.386Z","payload":{"artifactId":"artifact-TASK-000006","artifact":{"id":"artifact-TASK-000006","taskId":"TASK-000006","type":"log","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000006 (Analyze test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.386Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:34.386Z","sessionId":"session-1782513871983"}
+{"type":"RetryStarted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.386Z","payload":{"attempt":2},"sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.408Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.408Z","payload":{"artifactId":"artifact-TASK-000001","artifact":{"id":"artifact-TASK-000001","taskId":"TASK-000001","type":"log","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000001 (Analyze test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.408Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:34.408Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.408Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.408Z","payload":{"artifactId":"artifact-TASK-000007","artifact":{"id":"artifact-TASK-000007","taskId":"TASK-000007","type":"code","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000007 (Modify test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.408Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:34.408Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.408Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.408Z","payload":{"artifactId":"artifact-TASK-000008","artifact":{"id":"artifact-TASK-000008","taskId":"TASK-000008","type":"code","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000008 (Modify test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.408Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:34.408Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.408Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.408Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.409Z","payload":{"artifactId":"artifact-TASK-000009","artifact":{"id":"artifact-TASK-000009","taskId":"TASK-000009","type":"code","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000009 (Modify test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.409Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:34.409Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.409Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.409Z","payload":{"artifactId":"artifact-TASK-000010","artifact":{"id":"artifact-TASK-000010","taskId":"TASK-000010","type":"code","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000010 (Modify service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.409Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:34.409Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.409Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.409Z","payload":{"artifactId":"artifact-TASK-000011","artifact":{"id":"artifact-TASK-000011","taskId":"TASK-000011","type":"code","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000011 (Modify types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.409Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:34.409Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.409Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.409Z","payload":{"artifactId":"artifact-TASK-000012","artifact":{"id":"artifact-TASK-000012","taskId":"TASK-000012","type":"code","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000012 (Modify test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.409Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:34.409Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.409Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.409Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.409Z","payload":{"artifactId":"artifact-TASK-000013","artifact":{"id":"artifact-TASK-000013","taskId":"TASK-000013","type":"diagnostic","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000013 (Validate API of test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.409Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:34.409Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.410Z","payload":{"artifactId":"artifact-TASK-000014","artifact":{"id":"artifact-TASK-000014","taskId":"TASK-000014","type":"diagnostic","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000014 (Validate API of test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.410Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.410Z","payload":{"artifactId":"artifact-TASK-000015","artifact":{"id":"artifact-TASK-000015","taskId":"TASK-000015","type":"diagnostic","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000015 (Validate API of test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.410Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.410Z","payload":{"artifactId":"artifact-TASK-000016","artifact":{"id":"artifact-TASK-000016","taskId":"TASK-000016","type":"diagnostic","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000016 (Validate API of service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.410Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.410Z","payload":{"artifactId":"artifact-TASK-000017","artifact":{"id":"artifact-TASK-000017","taskId":"TASK-000017","type":"diagnostic","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000017 (Validate API of types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.410Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.410Z","payload":{"artifactId":"artifact-TASK-000018","artifact":{"id":"artifact-TASK-000018","taskId":"TASK-000018","type":"diagnostic","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000018 (Validate API of test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.410Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.410Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.410Z","payload":{"artifactId":"artifact-TASK-000019","artifact":{"id":"artifact-TASK-000019","taskId":"TASK-000019","type":"diagnostic","content":"Mock content generated for task: TASK-000019 (Validate full build)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.410Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:34.410Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.411Z","payload":{"artifactId":"artifact-TASK-000020","artifact":{"id":"artifact-TASK-000020","taskId":"TASK-000020","type":"test","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000020 (Test changes in test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.411Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.411Z","payload":{"artifactId":"artifact-TASK-000021","artifact":{"id":"artifact-TASK-000021","taskId":"TASK-000021","type":"test","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000021 (Test changes in test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.411Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.411Z","payload":{"artifactId":"artifact-TASK-000022","artifact":{"id":"artifact-TASK-000022","taskId":"TASK-000022","type":"test","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000022 (Test changes in test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.411Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.411Z","payload":{"artifactId":"artifact-TASK-000023","artifact":{"id":"artifact-TASK-000023","taskId":"TASK-000023","type":"test","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000023 (Test changes in service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.411Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.411Z","payload":{"artifactId":"artifact-TASK-000024","artifact":{"id":"artifact-TASK-000024","taskId":"TASK-000024","type":"test","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000024 (Test changes in types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.411Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":25},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":50},"sessionId":"session-1782513871983"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.411Z","payload":{"progress":75},"sessionId":"session-1782513871983"}
+{"type":"ArtifactProduced","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.411Z","payload":{"artifactId":"artifact-TASK-000025","artifact":{"id":"artifact-TASK-000025","taskId":"TASK-000025","type":"test","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000025 (Test changes in test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:34.411Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513871983"}
+{"type":"TaskCompleted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:34.411Z","sessionId":"session-1782513871983"}
+{"type":"TaskStarted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:36.515Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:36.515Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:36.515Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:36.515Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:36.515Z","payload":{"artifactId":"artifact-TASK-000001","artifact":{"id":"artifact-TASK-000001","taskId":"TASK-000001","type":"log","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000001 (Analyze test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.515Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000001","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:36.516Z","payload":{"artifactId":"artifact-TASK-000002","artifact":{"id":"artifact-TASK-000002","taskId":"TASK-000002","type":"log","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000002 (Analyze test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.516Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000002","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:36.516Z","payload":{"artifactId":"artifact-TASK-000003","artifact":{"id":"artifact-TASK-000003","taskId":"TASK-000003","type":"log","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000003 (Analyze service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.516Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000003","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:36.516Z","payload":{"artifactId":"artifact-TASK-000004","artifact":{"id":"artifact-TASK-000004","taskId":"TASK-000004","type":"log","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000004 (Analyze test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.516Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000004","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:36.516Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:36.516Z","payload":{"artifactId":"artifact-TASK-000005","artifact":{"id":"artifact-TASK-000005","taskId":"TASK-000005","type":"log","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000005 (Analyze types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.516Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000005","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:36.516Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:36.517Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:36.517Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:36.517Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:36.517Z","payload":{"artifactId":"artifact-TASK-000006","artifact":{"id":"artifact-TASK-000006","taskId":"TASK-000006","type":"log","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000006 (Analyze test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.517Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000006","timestamp":"2026-06-26T22:44:36.517Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:36.517Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:36.517Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:36.517Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:36.517Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:36.517Z","payload":{"artifactId":"artifact-TASK-000007","artifact":{"id":"artifact-TASK-000007","taskId":"TASK-000007","type":"code","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000007 (Modify test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.517Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000007","timestamp":"2026-06-26T22:44:36.517Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:36.517Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:36.517Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:36.517Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:36.517Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:36.517Z","payload":{"artifactId":"artifact-TASK-000008","artifact":{"id":"artifact-TASK-000008","taskId":"TASK-000008","type":"code","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000008 (Modify test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.517Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000008","timestamp":"2026-06-26T22:44:36.517Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:36.517Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:36.518Z","payload":{"artifactId":"artifact-TASK-000009","artifact":{"id":"artifact-TASK-000009","taskId":"TASK-000009","type":"code","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000009 (Modify service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.518Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000009","timestamp":"2026-06-26T22:44:36.518Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:36.518Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:36.518Z","payload":{"artifactId":"artifact-TASK-000010","artifact":{"id":"artifact-TASK-000010","taskId":"TASK-000010","type":"code","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000010 (Modify test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.518Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000010","timestamp":"2026-06-26T22:44:36.518Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:36.518Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:36.518Z","payload":{"artifactId":"artifact-TASK-000011","artifact":{"id":"artifact-TASK-000011","taskId":"TASK-000011","type":"code","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000011 (Modify types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.518Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000011","timestamp":"2026-06-26T22:44:36.518Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:36.518Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:36.518Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:36.518Z","payload":{"artifactId":"artifact-TASK-000012","artifact":{"id":"artifact-TASK-000012","taskId":"TASK-000012","type":"code","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000012 (Modify test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.518Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000012","timestamp":"2026-06-26T22:44:36.518Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:36.519Z","payload":{"artifactId":"artifact-TASK-000013","artifact":{"id":"artifact-TASK-000013","taskId":"TASK-000013","type":"diagnostic","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000013 (Validate API of test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.519Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000013","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:36.519Z","payload":{"artifactId":"artifact-TASK-000014","artifact":{"id":"artifact-TASK-000014","taskId":"TASK-000014","type":"diagnostic","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000014 (Validate API of test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.519Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000014","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:36.519Z","payload":{"artifactId":"artifact-TASK-000015","artifact":{"id":"artifact-TASK-000015","taskId":"TASK-000015","type":"diagnostic","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000015 (Validate API of service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.519Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000015","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:36.519Z","payload":{"artifactId":"artifact-TASK-000016","artifact":{"id":"artifact-TASK-000016","taskId":"TASK-000016","type":"diagnostic","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000016 (Validate API of test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.519Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000016","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:36.519Z","payload":{"artifactId":"artifact-TASK-000017","artifact":{"id":"artifact-TASK-000017","taskId":"TASK-000017","type":"diagnostic","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000017 (Validate API of types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.519Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000017","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:36.519Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:36.519Z","payload":{"artifactId":"artifact-TASK-000018","artifact":{"id":"artifact-TASK-000018","taskId":"TASK-000018","type":"diagnostic","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000018 (Validate API of test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.519Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000018","timestamp":"2026-06-26T22:44:36.519Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:36.520Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:36.520Z","payload":{"artifactId":"artifact-TASK-000019","artifact":{"id":"artifact-TASK-000019","taskId":"TASK-000019","type":"diagnostic","content":"Mock content generated for task: TASK-000019 (Validate full build)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.520Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000019","timestamp":"2026-06-26T22:44:36.520Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:36.520Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:36.520Z","payload":{"artifactId":"artifact-TASK-000020","artifact":{"id":"artifact-TASK-000020","taskId":"TASK-000020","type":"test","path":"packages/test-provider-runtime.ts","content":"Mock content generated for task: TASK-000020 (Test changes in test-provider-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.520Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000020","timestamp":"2026-06-26T22:44:36.520Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:36.520Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:36.520Z","payload":{"artifactId":"artifact-TASK-000021","artifact":{"id":"artifact-TASK-000021","taskId":"TASK-000021","type":"test","path":"packages/test-autonomous-runtime.ts","content":"Mock content generated for task: TASK-000021 (Test changes in test-autonomous-runtime.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.520Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000021","timestamp":"2026-06-26T22:44:36.520Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:36.520Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:36.520Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:36.521Z","payload":{"artifactId":"artifact-TASK-000022","artifact":{"id":"artifact-TASK-000022","taskId":"TASK-000022","type":"test","path":"packages/agent-runtime/service.ts","content":"Mock content generated for task: TASK-000022 (Test changes in service.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.521Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000022","timestamp":"2026-06-26T22:44:36.521Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:36.521Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:36.521Z","payload":{"artifactId":"artifact-TASK-000023","artifact":{"id":"artifact-TASK-000023","taskId":"TASK-000023","type":"test","path":"packages/test-agent-runtime-refinement.ts","content":"Mock content generated for task: TASK-000023 (Test changes in test-agent-runtime-refinement.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.521Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000023","timestamp":"2026-06-26T22:44:36.521Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:36.521Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:36.521Z","payload":{"artifactId":"artifact-TASK-000024","artifact":{"id":"artifact-TASK-000024","taskId":"TASK-000024","type":"test","path":"packages/agent-runtime/types.ts","content":"Mock content generated for task: TASK-000024 (Test changes in types.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.521Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000024","timestamp":"2026-06-26T22:44:36.521Z","sessionId":"session-1782513876515"}
+{"type":"TaskStarted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:36.521Z","sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":25},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":50},"sessionId":"session-1782513876515"}
+{"type":"TaskProgress","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:36.521Z","payload":{"progress":75},"sessionId":"session-1782513876515"}
+{"type":"ArtifactProduced","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:36.521Z","payload":{"artifactId":"artifact-TASK-000025","artifact":{"id":"artifact-TASK-000025","taskId":"TASK-000025","type":"test","path":"packages/test-workspace-engine.ts","content":"Mock content generated for task: TASK-000025 (Test changes in test-workspace-engine.ts)","version":"1.0.0","createdAt":"2026-06-26T22:44:36.521Z","provider":"mock-provider","checksum":"","hash":""}},"sessionId":"session-1782513876515"}
+{"type":"TaskCompleted","taskId":"TASK-000025","timestamp":"2026-06-26T22:44:36.521Z","sessionId":"session-1782513876515"}

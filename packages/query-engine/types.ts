@@ -55,7 +55,6 @@ export interface QueryDiagnostics {
         activeLocks: number;
     };
 
-    /** Provider SDK diagnostics */
     providerVersion?: string;
     selectedModel?: string;
     sessionId?: string;
@@ -66,6 +65,12 @@ export interface QueryDiagnostics {
     selectionReason?: string;
     capabilityScore?: number;
 
+    /** Learning Engine diagnostics */
+    learningRecommendation?: any;
+    optimizationRulesUsed?: string[];
+    providerConfidence?: number;
+    promptConfidence?: number;
+    learningVersion?: string;
 }
 
 export interface QueryResult {
