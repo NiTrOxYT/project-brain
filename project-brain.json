@@ -1,0 +1,35 @@
+{
+“$schema”: “https://projectbrain.dev/schema/v1”,
+“name”: “Project Brain”,
+“id”: “project-brain”,
+“version”: “0.1.0”,
+“description”: “Persistent AI Runtime for Software Engineering”,
+“author”: “Sourik Aich”,
+“license”: “MIT”,
+
+“runtime”: {
+“version”: “0.1.0”,
+“memory”: “v1”,
+“graph”: “v1”,
+“cache”: “v1”,
+“review”: “v1”
+},
+
+“features”: {
+“memory”: true,
+“graph”: true,
+“cache”: true,
+“planner”: true,
+“review”: false,
+“confidence”: false,
+“embeddings”: false
+},
+
+“directories”: {
+“brain”: “.brain”,
+“runtime”: “packages/runtime”,
+“core”: “packages/core”,
+“cli”: “packages/cli”,
+“templates”: “templates”
+}
+}

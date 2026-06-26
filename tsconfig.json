@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    "strict": true,
+
+    "rootDir": "./packages",
+    "outDir": "./dist",
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "resolveJsonModule": true,
+
+    "allowSyntheticDefaultImports": true
+  },
+
+  "include": [
+    "packages/**/*.ts"
+  ]
+}

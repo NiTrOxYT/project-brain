@@ -1,0 +1,359 @@
+{
+  "generatedAt": "2026-06-26T16:11:29.416Z",
+  "symbols": [
+    {
+      "name": "CacheError",
+      "kind": "class",
+      "file": "packages/cache/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "CacheService",
+      "kind": "class",
+      "file": "packages/cache/service.ts",
+      "line": 6
+    },
+    {
+      "name": "RuntimeCache",
+      "kind": "interface",
+      "file": "packages/cache/types.ts",
+      "line": 1
+    },
+    {
+      "name": "banner",
+      "kind": "function",
+      "file": "packages/cli/banner.ts",
+      "line": 1
+    },
+    {
+      "name": "FileSystemError",
+      "kind": "class",
+      "file": "packages/filesystem/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "FileSystemService",
+      "kind": "class",
+      "file": "packages/filesystem/service.ts",
+      "line": 3
+    },
+    {
+      "name": "WriteJsonOptions",
+      "kind": "interface",
+      "file": "packages/filesystem/types.ts",
+      "line": 1
+    },
+    {
+      "name": "ReadJsonOptions",
+      "kind": "interface",
+      "file": "packages/filesystem/types.ts",
+      "line": 5
+    },
+    {
+      "name": "GraphError",
+      "kind": "class",
+      "file": "packages/graph/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "GraphService",
+      "kind": "class",
+      "file": "packages/graph/service.ts",
+      "line": 6
+    },
+    {
+      "name": "GraphNode",
+      "kind": "interface",
+      "file": "packages/graph/types.ts",
+      "line": 1
+    },
+    {
+      "name": "GraphEdge",
+      "kind": "interface",
+      "file": "packages/graph/types.ts",
+      "line": 11
+    },
+    {
+      "name": "ProjectGraph",
+      "kind": "interface",
+      "file": "packages/graph/types.ts",
+      "line": 21
+    },
+    {
+      "name": "GraphBuilderError",
+      "kind": "class",
+      "file": "packages/graph-builder/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "GraphBuilderService",
+      "kind": "class",
+      "file": "packages/graph-builder/service.ts",
+      "line": 7
+    },
+    {
+      "name": "GraphNode",
+      "kind": "interface",
+      "file": "packages/graph-builder/types.ts",
+      "line": 1
+    },
+    {
+      "name": "GraphEdge",
+      "kind": "interface",
+      "file": "packages/graph-builder/types.ts",
+      "line": 9
+    },
+    {
+      "name": "DependencyGraph",
+      "kind": "interface",
+      "file": "packages/graph-builder/types.ts",
+      "line": 19
+    },
+    {
+      "name": "ImportsError",
+      "kind": "class",
+      "file": "packages/imports/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "ImportsService",
+      "kind": "class",
+      "file": "packages/imports/service.ts",
+      "line": 7
+    },
+    {
+      "name": "ImportRecord",
+      "kind": "interface",
+      "file": "packages/imports/types.ts",
+      "line": 1
+    },
+    {
+      "name": "ImportIndex",
+      "kind": "interface",
+      "file": "packages/imports/types.ts",
+      "line": 9
+    },
+    {
+      "name": "IndexerError",
+      "kind": "class",
+      "file": "packages/indexer/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "IndexerService",
+      "kind": "class",
+      "file": "packages/indexer/service.ts",
+      "line": 7
+    },
+    {
+      "name": "IndexedFile",
+      "kind": "interface",
+      "file": "packages/indexer/types.ts",
+      "line": 1
+    },
+    {
+      "name": "IndexResult",
+      "kind": "interface",
+      "file": "packages/indexer/types.ts",
+      "line": 13
+    },
+    {
+      "name": "BrainKernel",
+      "kind": "class",
+      "file": "packages/kernel/boot.ts",
+      "line": 13
+    },
+    {
+      "name": "PROJECT_BRAIN_NAME",
+      "kind": "variable",
+      "file": "packages/kernel/constants.ts",
+      "line": 1
+    },
+    {
+      "name": "PROJECT_BRAIN_VERSION",
+      "kind": "variable",
+      "file": "packages/kernel/constants.ts",
+      "line": 3
+    },
+    {
+      "name": "PROJECT_BRAIN_DIRECTORY_NAME",
+      "kind": "variable",
+      "file": "packages/kernel/constants.ts",
+      "line": 5
+    },
+    {
+      "name": "PROJECT_BRAIN_CONFIG",
+      "kind": "variable",
+      "file": "packages/kernel/constants.ts",
+      "line": 7
+    },
+    {
+      "name": "MEMORY_DIRECTORY",
+      "kind": "variable",
+      "file": "packages/kernel/constants.ts",
+      "line": 9
+    },
+    {
+      "name": "GRAPH_DIRECTORY",
+      "kind": "variable",
+      "file": "packages/kernel/constants.ts",
+      "line": 11
+    },
+    {
+      "name": "CACHE_DIRECTORY",
+      "kind": "variable",
+      "file": "packages/kernel/constants.ts",
+      "line": 13
+    },
+    {
+      "name": "TASK_DIRECTORY",
+      "kind": "variable",
+      "file": "packages/kernel/constants.ts",
+      "line": 15
+    },
+    {
+      "name": "BrainPaths",
+      "kind": "interface",
+      "file": "packages/kernel/types.ts",
+      "line": 1
+    },
+    {
+      "name": "RuntimeContext",
+      "kind": "interface",
+      "file": "packages/kernel/types.ts",
+      "line": 15
+    },
+    {
+      "name": "KnowledgeError",
+      "kind": "class",
+      "file": "packages/knowledge/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "KnowledgeService",
+      "kind": "class",
+      "file": "packages/knowledge/service.ts",
+      "line": 6
+    },
+    {
+      "name": "KnowledgeFile",
+      "kind": "interface",
+      "file": "packages/knowledge/types.ts",
+      "line": 1
+    },
+    {
+      "name": "KnowledgeIndex",
+      "kind": "interface",
+      "file": "packages/knowledge/types.ts",
+      "line": 11
+    },
+    {
+      "name": "ManifestError",
+      "kind": "class",
+      "file": "packages/manifest/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "ManifestService",
+      "kind": "class",
+      "file": "packages/manifest/service.ts",
+      "line": 7
+    },
+    {
+      "name": "Manifest",
+      "kind": "interface",
+      "file": "packages/manifest/types.ts",
+      "line": 1
+    },
+    {
+      "name": "ProjectError",
+      "kind": "class",
+      "file": "packages/project/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "ProjectService",
+      "kind": "class",
+      "file": "packages/project/service.ts",
+      "line": 7
+    },
+    {
+      "name": "ProjectInfo",
+      "kind": "interface",
+      "file": "packages/project/types.ts",
+      "line": 1
+    },
+    {
+      "name": "RuntimeError",
+      "kind": "class",
+      "file": "packages/runtime/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "RuntimeService",
+      "kind": "class",
+      "file": "packages/runtime/service.ts",
+      "line": 14
+    },
+    {
+      "name": "RuntimeContext",
+      "kind": "interface",
+      "file": "packages/runtime/types.ts",
+      "line": 1
+    },
+    {
+      "name": "SymbolsError",
+      "kind": "class",
+      "file": "packages/symbols/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "SymbolsService",
+      "kind": "class",
+      "file": "packages/symbols/service.ts",
+      "line": 7
+    },
+    {
+      "name": "SymbolRecord",
+      "kind": "interface",
+      "file": "packages/symbols/types.ts",
+      "line": 1
+    },
+    {
+      "name": "SymbolIndex",
+      "kind": "interface",
+      "file": "packages/symbols/types.ts",
+      "line": 13
+    },
+    {
+      "name": "WorkspaceError",
+      "kind": "class",
+      "file": "packages/workspace/errors.ts",
+      "line": 1
+    },
+    {
+      "name": "IWorkspaceService",
+      "kind": "interface",
+      "file": "packages/workspace/service.ts",
+      "line": 6
+    },
+    {
+      "name": "WorkspaceService",
+      "kind": "class",
+      "file": "packages/workspace/service.ts",
+      "line": 15
+    },
+    {
+      "name": "WorkspaceOptions",
+      "kind": "interface",
+      "file": "packages/workspace/types.ts",
+      "line": 1
+    },
+    {
+      "name": "WorkspaceResult",
+      "kind": "interface",
+      "file": "packages/workspace/types.ts",
+      "line": 7
+    }
+  ]
+}

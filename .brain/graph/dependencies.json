@@ -1,0 +1,337 @@
+{
+  "generatedAt": "2026-06-26T16:11:29.420Z",
+  "nodes": [
+    {
+      "id": "packages/cache/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/cli/cli.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/filesystem/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/graph/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/graph-builder/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/imports/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/indexer/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/kernel/boot.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/knowledge/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/main.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/manifest/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/project/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/runtime/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/symbols/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/workspace/service.ts",
+      "type": "file"
+    }
+  ],
+  "edges": [
+    {
+      "from": "packages/cache/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cache/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cache/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/cli.ts",
+      "to": "process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/cli.ts",
+      "to": "./banner",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/cli.ts",
+      "to": "../runtime",
+      "type": "imports"
+    },
+    {
+      "from": "packages/filesystem/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-builder/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-builder/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-builder/service.ts",
+      "to": "../imports",
+      "type": "imports"
+    },
+    {
+      "from": "packages/graph-builder/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/imports/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/imports/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/imports/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/imports/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/indexer/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/indexer/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/indexer/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/indexer/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/kernel/boot.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/kernel/boot.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/knowledge/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/knowledge/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/knowledge/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/main.ts",
+      "to": "./cli",
+      "type": "imports"
+    },
+    {
+      "from": "packages/manifest/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/manifest/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/manifest/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/manifest/service.ts",
+      "to": "./errors",
+      "type": "imports"
+    },
+    {
+      "from": "packages/project/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/project/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/project/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/project/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../workspace",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../manifest",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../project",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../indexer",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../symbols",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../imports",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../graph-builder",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../knowledge",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../graph",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "../cache",
+      "type": "imports"
+    },
+    {
+      "from": "packages/runtime/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/symbols/service.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/symbols/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/symbols/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/symbols/service.ts",
+      "to": "./types",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/service.ts",
+      "to": "../filesystem",
+      "type": "imports"
+    },
+    {
+      "from": "packages/workspace/service.ts",
+      "to": "./types",
+      "type": "imports"
+    }
+  ]
+}

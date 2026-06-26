@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "brainVersion": "0.1.0",
+  "project": {
+    "id": "",
+    "name": "",
+    "framework": "unknown",
+    "language": "unknown",
+    "createdAt": "2026-06-26T16:11:29.408Z",
+    "updatedAt": "2026-06-26T16:11:29.408Z"
+  },
+  "workspace": {
+    "knowledge": "knowledge",
+    "graph": "graph",
+    "index": "index",
+    "cache": "cache",
+    "history": "history",
+    "state": "state"
+  },
+  "features": {
+    "knowledge": true,
+    "graph": true,
+    "index": true,
+    "cache": true,
+    "history": true,
+    "state": true
+  }
+}
