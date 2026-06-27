@@ -2,7 +2,7 @@ import process from "process";
 import path from "path";
 import ts from "typescript";
 
-import { AstService } from "./ast";
+import { AstService } from "./ast/index.js";
 
 async function main() {
 

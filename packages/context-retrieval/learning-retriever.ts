@@ -1,4 +1,4 @@
-import { SemanticSnapshot, SnapshotLearningEntry } from "../context-compiler/types";
+import { SemanticSnapshot, SnapshotLearningEntry } from "../context-compiler/types.js";
 
 export class LearningRetriever {
     retrieve(snapshot: SemanticSnapshot, intent: string, targetFiles: string[]): SnapshotLearningEntry[] {

@@ -127,5 +127,16 @@ export async function runGatewayInstaller(
     return await installer.install(opts as InstallerRunOptions);
 }
 
+import { ProviderResolverService, type ProviderResolution } from "../ai-gateway/provider-resolver.js";
+export type { ProviderResolution };
+
+export async function resolveProvider(
+    ctx: KernelContext,
+    providerId: string
+): Promise<ProviderResolution> {
+    const resolver = new ProviderResolverService(ctx.globalPaths);
+    return await resolver.resolve(providerId);
+}
+
 export type { InstallerResult };
 

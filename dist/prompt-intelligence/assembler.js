@@ -1,4 +1,4 @@
-import { getTemplateForTaskType, renderTemplate } from "./templates";
+import { getTemplateForTaskType, renderTemplate } from "./templates.js";
 export class PromptAssembler {
     assemble(context, profile) {
         const { task, runtimeContext } = context;

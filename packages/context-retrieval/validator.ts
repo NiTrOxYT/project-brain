@@ -1,4 +1,4 @@
-import { RetrievalPackage, RetrievalValidation } from "./types";
+import { RetrievalPackage, RetrievalValidation } from "./types.js";
 
 export class RetrievalValidator {
     validate(pkg: RetrievalPackage, budgetLimit: number = 80000): RetrievalValidation {

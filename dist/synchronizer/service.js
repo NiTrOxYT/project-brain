@@ -1,14 +1,14 @@
 import fs from "fs/promises";
 import path from "path";
-import { FileSystemService } from "../filesystem";
-import { SymbolsService } from "../symbols";
-import { ImportsService } from "../imports";
-import { RelationshipAnalyzerService } from "../relationship-analyzer";
-import { ExecutionGraphService } from "../execution-graph";
-import { GraphBuilderService } from "../graph-builder";
-import { RuntimeService } from "../runtime";
-import { normalize } from "../semantic";
-import { SynchronizerError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { SymbolsService } from "../symbols/index.js";
+import { ImportsService } from "../imports/index.js";
+import { RelationshipAnalyzerService } from "../relationship-analyzer/index.js";
+import { ExecutionGraphService } from "../execution-graph/index.js";
+import { GraphBuilderService } from "../graph-builder/index.js";
+import { RuntimeService } from "../runtime/index.js";
+import { normalize } from "../semantic/index.js";
+import { SynchronizerError } from "./errors.js";
 export class SynchronizerService {
     projectRoot;
     workspaceRoot;

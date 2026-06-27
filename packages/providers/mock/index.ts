@@ -3,9 +3,9 @@
 // ──────────────────────────────────────────────────────────────────────────────
 
 import crypto from "crypto";
-import { RuntimeTask, RuntimeContext, RuntimeResponse, RuntimeEvent, AgentCapability } from "../../agent-runtime/types";
-import { BaseSDKProvider } from "../../provider-runtime/provider";
-import { ProviderMetadata, ProviderProfile, StreamEvent } from "../../provider-runtime/types";
+import { RuntimeTask, RuntimeContext, RuntimeResponse, RuntimeEvent, AgentCapability } from "../../agent-runtime/types.js";
+import { BaseSDKProvider } from "../../provider-runtime/provider.js";
+import { ProviderMetadata, ProviderProfile, StreamEvent } from "../../provider-runtime/types.js";
 
 const ALL_CAPS: AgentCapability[] = [
     "analyze", "create", "modify", "refactor", "delete",

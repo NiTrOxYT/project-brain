@@ -2,7 +2,7 @@
 // BUILD-051 — Autonomous Execution Loop — Failure Analysis
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { ExecutionFailure, ExecutionPhase } from "./types";
+import { ExecutionFailure, ExecutionPhase } from "./types.js";
 
 export class FailureAnalyzer {
     analyze(

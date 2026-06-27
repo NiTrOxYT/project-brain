@@ -1,8 +1,8 @@
-import { ContextSynchronizationService } from "../context-sync/service";
-import { ContextRetrievalService } from "../context-retrieval/service";
-import { EngineeringPlannerService } from "../engineering-planner/service";
-import { EngineeringPlan } from "../engineering-planner/types";
-import { PlanningError } from "./errors";
+import { ContextSynchronizationService } from "../context-sync/service.js";
+import { ContextRetrievalService } from "../context-retrieval/service.js";
+import { EngineeringPlannerService } from "../engineering-planner/service.js";
+import { EngineeringPlan } from "../engineering-planner/types.js";
+import { PlanningError } from "./errors.js";
 
 export class WorkflowPlanner {
     constructor(

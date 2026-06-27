@@ -1,4 +1,4 @@
-import { AgentRuntimeError } from "./errors";
+import { AgentRuntimeError } from "./errors.js";
 export class RuntimeEngine {
     registry;
     constructor(registry) {

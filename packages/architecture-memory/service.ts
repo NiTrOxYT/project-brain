@@ -1,10 +1,10 @@
 import fs from "fs/promises";
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { normalize } from "../semantic";
-import { ArchitectureMemory, ArchitectureEntry, MemoryMetadata, ArchitectureSource } from "./types";
-import { ArchitectureMemoryError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { normalize } from "../semantic/index.js";
+import { ArchitectureMemory, ArchitectureEntry, MemoryMetadata, ArchitectureSource } from "./types.js";
+import { ArchitectureMemoryError } from "./errors.js";
 
 export interface MemoryStorage {
     loadMemory(collectionName: string): Promise<ArchitectureMemory>;

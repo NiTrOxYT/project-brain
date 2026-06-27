@@ -6,21 +6,21 @@ import fs from "fs";
 import path from "path";
 import os from "os";
 
-import { AutonomousRuntimeService } from "./autonomous-runtime/service";
-import { ValidationService } from "./autonomous-runtime/validator";
-import { FailureAnalyzer } from "./autonomous-runtime/failure-analyzer";
-import { RepairService } from "./autonomous-runtime/repair";
-import { ExecutionCheckpointService } from "./autonomous-runtime/checkpoint";
-import { ExecutionJournalService } from "./autonomous-runtime/journal";
-import { ExecutionRecoveryService } from "./autonomous-runtime/recovery";
-import { ExecutionMetricsService } from "./autonomous-runtime/metrics";
-import { AutonomousRuntimeError } from "./autonomous-runtime/errors";
-import { ExecutionLoopRequest, ValidationResult } from "./autonomous-runtime/types";
+import { AutonomousRuntimeService } from "./autonomous-runtime/service.js";
+import { ValidationService } from "./autonomous-runtime/validator.js";
+import { FailureAnalyzer } from "./autonomous-runtime/failure-analyzer.js";
+import { RepairService } from "./autonomous-runtime/repair.js";
+import { ExecutionCheckpointService } from "./autonomous-runtime/checkpoint.js";
+import { ExecutionJournalService } from "./autonomous-runtime/journal.js";
+import { ExecutionRecoveryService } from "./autonomous-runtime/recovery.js";
+import { ExecutionMetricsService } from "./autonomous-runtime/metrics.js";
+import { AutonomousRuntimeError } from "./autonomous-runtime/errors.js";
+import { ExecutionLoopRequest, ValidationResult } from "./autonomous-runtime/types.js";
 
-import { AgentRuntimeService, RuntimeRequest } from "./agent-runtime";
-import { WorkspaceEngine } from "./workspace/workspace-engine";
-import { ProviderExecutionService } from "./provider-execution/service";
-import { EngineeringPlan, ExecutionNode } from "./engineering-planner/types";
+import { AgentRuntimeService, RuntimeRequest } from "./agent-runtime/index.js";
+import { WorkspaceEngine } from "./workspace/workspace-engine.js";
+import { ProviderExecutionService } from "./provider-execution/service.js";
+import { EngineeringPlan, ExecutionNode } from "./engineering-planner/types.js";
 
 let passed = 0;
 let failed = 0;

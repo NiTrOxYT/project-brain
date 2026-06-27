@@ -1,6 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
-import { SynchronizationStatistics, IncrementalCompilationMetrics } from "./types";
+import { SynchronizationStatistics, IncrementalCompilationMetrics } from "./types.js";
+import { StoragePaths } from "../kernel/paths.js";
 
 const DEFAULT_STATS: SynchronizationStatistics = {
     totalSyncs: 0,
@@ -20,9 +21,7 @@ export class SynchronizationMetricsTracker {
     private loaded = false;
 
     constructor(workspaceRoot: string) {
-        this.metricsPath = path.join(
-            workspaceRoot, ".brain", "context", "sync-metrics.json"
-        );
+        this.metricsPath = new StoragePaths(workspaceRoot).syncMetricsPath;
     }
 
     async load(): Promise<void> {

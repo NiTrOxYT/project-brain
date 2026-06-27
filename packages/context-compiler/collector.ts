@@ -6,14 +6,14 @@
 
 import fs from "fs/promises";
 import path from "path";
-import { SnapshotContext } from "./types";
-import { SnapshotCompilationError } from "./errors";
+import { SnapshotContext } from "./types.js";
+import { SnapshotCompilationError } from "./errors.js";
 
 export class SnapshotCollector {
     constructor(
         private readonly projectRoot: string,
         private readonly workspaceRoot: string
-    ) {}
+    ) { }
 
     async collect(): Promise<SnapshotContext> {
         const [
@@ -157,7 +157,9 @@ export class SnapshotCollector {
                 entry.name === ".brain" ||
                 entry.name === "dist" ||
                 entry.name === "build" ||
-                entry.name === ".cache"
+                entry.name === ".cache" ||
+                entry.name === "learning" ||
+                entry.name === "runtime"
             ) {
                 continue;
             }

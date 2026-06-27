@@ -29,21 +29,21 @@ import {
     SnapshotDependency,
     SnapshotRelationship,
     SnapshotGraph
-} from "./types";
-import { SnapshotCompilationError } from "./errors";
-import { SnapshotCollector } from "./collector";
-import { SnapshotNormalizer } from "./normalizer";
-import { DependencyAnalyzer } from "./dependency-analyzer";
-import { GraphCompiler } from "./graph-compiler";
-import { SnapshotBuilder } from "./snapshot-builder";
-import { SnapshotFingerprintEngine } from "./fingerprint";
-import { SnapshotCache } from "./cache";
-import { SnapshotDeltaEngine } from "./delta";
-import { SnapshotOptimizer } from "./optimizer";
-import { SnapshotValidator } from "./validator";
-import { SnapshotStorage } from "./storage";
-import { SnapshotMetricsTracker } from "./metrics";
-import { SnapshotDiagnosticsBuilder } from "./diagnostics";
+} from "./types.js";
+import { SnapshotCompilationError } from "./errors.js";
+import { SnapshotCollector } from "./collector.js";
+import { SnapshotNormalizer } from "./normalizer.js";
+import { DependencyAnalyzer } from "./dependency-analyzer.js";
+import { GraphCompiler } from "./graph-compiler.js";
+import { SnapshotBuilder } from "./snapshot-builder.js";
+import { SnapshotFingerprintEngine } from "./fingerprint.js";
+import { SnapshotCache } from "./cache.js";
+import { SnapshotDeltaEngine } from "./delta.js";
+import { SnapshotOptimizer } from "./optimizer.js";
+import { SnapshotValidator } from "./validator.js";
+import { SnapshotStorage } from "./storage.js";
+import { SnapshotMetricsTracker } from "./metrics.js";
+import { SnapshotDiagnosticsBuilder } from "./diagnostics.js";
 
 export class ContextCompilerService {
     /** Global emitter — external systems may listen for 'snapshot-compiled' events. */
@@ -467,7 +467,7 @@ export class ContextCompilerService {
     ): Promise<SemanticSnapshot> {
         const prev = await this.load(prevSnapshotId);
         if (!prev) throw new Error(`Parent snapshot ${prevSnapshotId} not found`);
-        const { PatchApplier } = await import("../context-sync/patch-applier");
+        const { PatchApplier } = await import("../context-sync/patch-applier.js");
         const applier = new PatchApplier();
         return applier.apply(prev, patch);
     }
@@ -475,7 +475,7 @@ export class ContextCompilerService {
     /**
      * Validate a snapshot without compiling a new one.
      */
-    async validate(snapshotId: string): Promise<import("./types").SnapshotValidationResult | null> {
+    async validate(snapshotId: string): Promise<import("./types.js").SnapshotValidationResult | null> {
         const snapshot = await this.storage.load(snapshotId);
         if (!snapshot) return null;
         return this.validator.validate(snapshot);

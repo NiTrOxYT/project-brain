@@ -1,6 +1,6 @@
 import crypto from "crypto";
-import { ContextCompilerService } from "../context-compiler/service";
-import { ContextSynchronizationService } from "../context-sync/service";
+import { ContextCompilerService } from "../context-compiler/service.js";
+import { ContextSynchronizationService } from "../context-sync/service.js";
 import {
     RetrievalRequest,
     RetrievalResult,
@@ -10,23 +10,23 @@ import {
     RetrievalStatistics,
     RetrievalDiagnostics,
     RetrievalStrategy
-} from "./types";
-import { QueryParser } from "./query-parser";
-import { RetrievalPlanner } from "./retrieval-planner";
-import { GraphTraverser } from "./graph-traverser";
-import { DependencyExpander } from "./dependency-expander";
-import { SymbolRetriever } from "./symbol-retriever";
-import { RelationshipRetriever } from "./relationship-retriever";
-import { ArchitectureRetriever } from "./architecture-retriever";
-import { LearningRetriever } from "./learning-retriever";
-import { RetrievalRanker } from "./ranking";
-import { RetrievalBudgeter } from "./budget";
-import { RetrievalCompressor } from "./compressor";
-import { RetrievalCache } from "./cache";
-import { RetrievalValidator } from "./validator";
-import { RetrievalMetricsTracker } from "./metrics";
-import { RetrievalDiagnosticsBuilder } from "./diagnostics";
-import { SemanticSnapshot, SnapshotSection, CompilationStage } from "../context-compiler/types";
+} from "./types.js";
+import { QueryParser } from "./query-parser.js";
+import { RetrievalPlanner } from "./retrieval-planner.js";
+import { GraphTraverser } from "./graph-traverser.js";
+import { DependencyExpander } from "./dependency-expander.js";
+import { SymbolRetriever } from "./symbol-retriever.js";
+import { RelationshipRetriever } from "./relationship-retriever.js";
+import { ArchitectureRetriever } from "./architecture-retriever.js";
+import { LearningRetriever } from "./learning-retriever.js";
+import { RetrievalRanker } from "./ranking.js";
+import { RetrievalBudgeter } from "./budget.js";
+import { RetrievalCompressor } from "./compressor.js";
+import { RetrievalCache } from "./cache.js";
+import { RetrievalValidator } from "./validator.js";
+import { RetrievalMetricsTracker } from "./metrics.js";
+import { RetrievalDiagnosticsBuilder } from "./diagnostics.js";
+import { SemanticSnapshot, SnapshotSection, CompilationStage } from "../context-compiler/types.js";
 
 export class ContextRetrievalService {
     private readonly syncService: ContextSynchronizationService;

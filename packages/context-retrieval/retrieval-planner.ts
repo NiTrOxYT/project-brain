@@ -1,5 +1,5 @@
-import { ParsedQuery } from "./query-parser";
-import { RetrievalStrategy } from "./types";
+import { ParsedQuery } from "./query-parser.js";
+import { RetrievalStrategy } from "./types.js";
 
 export interface RetrievalPlan {
     strategy: RetrievalStrategy;

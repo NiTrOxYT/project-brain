@@ -1,5 +1,5 @@
-import { PromptSection, PromptProviderProfile } from "./types";
-import { PromptRenderError } from "./errors";
+import { PromptSection, PromptProviderProfile } from "./types.js";
+import { PromptRenderError } from "./errors.js";
 
 export class PromptRenderer {
     render(sections: PromptSection[], profile: PromptProviderProfile): string {

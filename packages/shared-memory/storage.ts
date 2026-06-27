@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
-import { SharedMemorySnapshot, SharedMemoryState } from "./types";
-import { MemoryPersistenceError } from "./errors";
+import { SharedMemorySnapshot, SharedMemoryState } from "./types.js";
+import { MemoryPersistenceError } from "./errors.js";
 
 export class SharedMemoryStorage {
     private readonly rootDir: string;

@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
+import { StoragePaths } from "../kernel/paths.js";
 const DEFAULT_STATS = {
     totalSyncs: 0,
     totalDurationMs: 0,
@@ -16,7 +17,7 @@ export class SynchronizationMetricsTracker {
     stats = { ...DEFAULT_STATS };
     loaded = false;
     constructor(workspaceRoot) {
-        this.metricsPath = path.join(workspaceRoot, ".brain", "context", "sync-metrics.json");
+        this.metricsPath = new StoragePaths(workspaceRoot).syncMetricsPath;
     }
     async load() {
         try {

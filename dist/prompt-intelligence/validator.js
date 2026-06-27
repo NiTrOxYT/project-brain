@@ -1,4 +1,4 @@
-import { PromptValidationError, PromptBudgetError, PromptTemplateError } from "./errors";
+import { PromptValidationError, PromptBudgetError, PromptTemplateError } from "./errors.js";
 export class PromptValidator {
     validate(task, sections, profile, budget) {
         // 1. Missing task

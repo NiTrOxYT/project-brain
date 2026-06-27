@@ -1,7 +1,7 @@
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { RuntimeCache } from "./types";
+import { FileSystemService } from "../filesystem/index.js";
+import { RuntimeCache } from "./types.js";
 
 export class CacheService {
 

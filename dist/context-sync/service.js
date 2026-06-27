@@ -1,16 +1,16 @@
 import EventEmitter from "events";
-import { ContextCompilerService } from "../context-compiler/service";
-import { ChangeDetector } from "./change-detector";
-import { DependencyResolver } from "./dependency-resolver";
-import { DirtyRegionTracker } from "./dirty-region";
-import { PatchBuilder } from "./patch-builder";
-import { PatchApplier } from "./patch-applier";
-import { FingerprintUpdater } from "./fingerprint-updater";
-import { SnapshotValidator } from "./validator";
-import { SnapshotSyncStorage } from "./storage";
-import { SynchronizationMetricsTracker } from "./metrics";
-import { SynchronizationDiagnosticsBuilder } from "./diagnostics";
-import { WorkspaceListener } from "./workspace-listener";
+import { ContextCompilerService } from "../context-compiler/service.js";
+import { ChangeDetector } from "./change-detector.js";
+import { DependencyResolver } from "./dependency-resolver.js";
+import { DirtyRegionTracker } from "./dirty-region.js";
+import { PatchBuilder } from "./patch-builder.js";
+import { PatchApplier } from "./patch-applier.js";
+import { FingerprintUpdater } from "./fingerprint-updater.js";
+import { SnapshotValidator } from "./validator.js";
+import { SnapshotSyncStorage } from "./storage.js";
+import { SynchronizationMetricsTracker } from "./metrics.js";
+import { SynchronizationDiagnosticsBuilder } from "./diagnostics.js";
+import { WorkspaceListener } from "./workspace-listener.js";
 export class ContextSynchronizationService {
     projectRoot;
     workspaceRoot;

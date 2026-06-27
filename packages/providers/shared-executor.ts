@@ -2,10 +2,10 @@
 // BUILD-050C — Shared Provider Helpers — Shared Executor Pipeline
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { RuntimeTask, RuntimeContext, RuntimeResponse, RuntimeEvent } from "../agent-runtime/types";
-import { StreamEvent } from "../provider-runtime/types";
-import { ProviderExecutionService } from "../provider-execution/service";
-import { ExecutionRequest, StreamChunk } from "../provider-execution/types";
+import { RuntimeTask, RuntimeContext, RuntimeResponse, RuntimeEvent } from "../agent-runtime/types.js";
+import { StreamEvent } from "../provider-runtime/types.js";
+import { ProviderExecutionService } from "../provider-execution/service.js";
+import { ExecutionRequest, StreamChunk } from "../provider-execution/types.js";
 import {
     ProcessCancelledError,
     ProcessTimeoutError,
@@ -13,12 +13,12 @@ import {
     ProcessSpawnError,
     ProcessExitedError,
     isTransientExitCode
-} from "../provider-execution/errors";
+} from "../provider-execution/errors.js";
 import {
     TransientProviderError,
     PermanentProviderError
-} from "../provider-runtime/errors";
-import { RuntimeArtifact } from "../agent-runtime/artifacts";
+} from "../provider-runtime/errors.js";
+import { RuntimeArtifact } from "../agent-runtime/artifacts.js";
 
 export interface SharedExecutionConfig {
     providerId: string;

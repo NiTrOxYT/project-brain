@@ -1,11 +1,11 @@
 import process from "process";
 import path from "path";
-import { AgentRuntimeService } from "./agent-runtime/index";
-import { MultiAgentOrchestratorService } from "./orchestrator/index";
-import { QueryEngineService } from "./query-engine/index";
-import { RuntimeService } from "./runtime/index";
-import { KnowledgeFusionService } from "./knowledge-fusion/index";
-import { EngineeringPlannerService } from "./engineering-planner/index";
+import { AgentRuntimeService } from "./agent-runtime/index.js";
+import { MultiAgentOrchestratorService } from "./orchestrator/index.js";
+import { QueryEngineService } from "./query-engine/index.js";
+import { RuntimeService } from "./runtime/index.js";
+import { KnowledgeFusionService } from "./knowledge-fusion/index.js";
+import { EngineeringPlannerService } from "./engineering-planner/index.js";
 class CustomTestProvider {
     id = "custom-test-provider";
     name = "Custom Test Provider";

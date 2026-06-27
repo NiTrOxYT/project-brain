@@ -2,8 +2,8 @@
 // BUILD-051 — Autonomous Execution Loop — Types
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { EngineeringPlan, ExecutionNode } from "../engineering-planner/types";
-import { RuntimeRequest } from "../agent-runtime/types";
+import { EngineeringPlan, ExecutionNode } from "../engineering-planner/types.js";
+import { RuntimeRequest } from "../agent-runtime/types.js";
 
 export type ExecutionPhase =
     | "loading"

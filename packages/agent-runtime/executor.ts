@@ -1,10 +1,10 @@
 import crypto from "crypto";
-import { RuntimeEngine } from "./runtime";
-import { RuntimeRequest, RuntimeResponse, RuntimeEvent, RuntimeMetrics, TaskLifecycle } from "./types";
-import { AgentRuntimeError } from "./errors";
-import { RuntimeMiddleware } from "./middleware";
-import { RuntimeHooks } from "./hooks";
-import { RuntimeArtifact } from "./artifacts";
+import { RuntimeEngine } from "./runtime.js";
+import { RuntimeRequest, RuntimeResponse, RuntimeEvent, RuntimeMetrics, TaskLifecycle } from "./types.js";
+import { AgentRuntimeError } from "./errors.js";
+import { RuntimeMiddleware } from "./middleware.js";
+import { RuntimeHooks } from "./hooks.js";
+import { RuntimeArtifact } from "./artifacts.js";
 
 function calculateChecksum(content: string): string {
     return crypto.createHash("sha256").update(content).digest("hex");

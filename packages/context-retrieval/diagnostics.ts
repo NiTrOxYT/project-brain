@@ -1,4 +1,4 @@
-import { RetrievalDiagnostics, RetrievalMetrics, RetrievalBudget, RetrievalCandidate } from "./types";
+import { RetrievalDiagnostics, RetrievalMetrics, RetrievalBudget, RetrievalCandidate } from "./types.js";
 
 export class RetrievalDiagnosticsBuilder {
     build(params: {

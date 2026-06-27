@@ -1,8 +1,8 @@
 import path from "path";
 import ts from "typescript";
-import { AstService } from "../ast";
-import { FileSystemService } from "../filesystem";
-import { RelationshipAnalyzerError } from "./errors";
+import { AstService } from "../ast/index.js";
+import { FileSystemService } from "../filesystem/index.js";
+import { RelationshipAnalyzerError } from "./errors.js";
 export class RelationshipAnalyzerService {
     projectRoot;
     workspaceRoot;

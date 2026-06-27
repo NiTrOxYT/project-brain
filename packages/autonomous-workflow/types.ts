@@ -1,7 +1,7 @@
-import { EngineeringPlan, ExecutionNode, EngineeringPhase } from "../engineering-planner/types";
-import { ExecutionLoopResult, LoopMetrics, ExecutionCheckpoint, ExecutionFailure } from "../autonomous-runtime/types";
-import { RetrievalResult } from "../context-retrieval/types";
-import { PromptPackage } from "../prompt-intelligence/types";
+import { EngineeringPlan, ExecutionNode, EngineeringPhase } from "../engineering-planner/types.js";
+import { ExecutionLoopResult, LoopMetrics, ExecutionCheckpoint, ExecutionFailure } from "../autonomous-runtime/types.js";
+import { RetrievalResult } from "../context-retrieval/types.js";
+import { PromptPackage } from "../prompt-intelligence/types.js";
 
 export type WorkflowState =
     | "Pending"

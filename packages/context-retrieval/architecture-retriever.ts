@@ -1,4 +1,4 @@
-import { SemanticSnapshot, SnapshotArchitectureEntry } from "../context-compiler/types";
+import { SemanticSnapshot, SnapshotArchitectureEntry } from "../context-compiler/types.js";
 
 export class ArchitectureRetriever {
     retrieve(snapshot: SemanticSnapshot, keywords: string[]): SnapshotArchitectureEntry[] {

@@ -1,4 +1,4 @@
-import { ConflictError } from "./errors";
+import { ConflictError } from "./errors.js";
 export class ConflictResolver {
     model;
     constructor(model) {

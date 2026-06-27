@@ -20,9 +20,9 @@ import {
     SnapshotLearningEntry,
     SnapshotFingerprint,
     SnapshotContext
-} from "./types";
-import { SnapshotFingerprintEngine } from "./fingerprint";
-import { SnapshotNormalizer } from "./normalizer";
+} from "./types.js";
+import { SnapshotFingerprintEngine } from "./fingerprint.js";
+import { SnapshotNormalizer } from "./normalizer.js";
 
 const COMPILER_VERSION = "1.0.0";
 

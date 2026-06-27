@@ -10,6 +10,7 @@ import { logger } from "../utils/logger.js";
 import { printJson } from "../utils/json.js";
 import { brainDir } from "../utils/paths.js";
 import { bold, gray } from "../utils/colors.js";
+import { StoragePaths } from "../../kernel/paths.js";
 
 export interface CleanOptions {
     dryRun?: boolean;
@@ -18,18 +19,18 @@ export interface CleanOptions {
 interface CleanTarget { label: string; path: string; kind: "dir-contents" | "file" }
 
 export async function runClean(opts: GlobalOptions, cmdOpts: CleanOptions): Promise<void> {
-    const bd = brainDir(opts.workspace);
+    const paths = new StoragePaths(opts.workspace);
     const dry = cmdOpts.dryRun ?? false;
 
     const targets: CleanTarget[] = [
-        { label: "cache",                  path: path.join(bd, "cache"),          kind: "dir-contents" },
-        { label: "retrieval-cache",        path: path.join(bd, "retrieval-cache"), kind: "dir-contents" },
-        { label: "journal archives",       path: path.join(bd, "journal"),         kind: "dir-contents" },
-        { label: "checkpoints",            path: path.join(bd, "checkpoints"),     kind: "dir-contents" },
+        { label: "cache",                  path: paths.compilerCacheDir,          kind: "dir-contents" },
+        { label: "retrieval-cache",        path: paths.retrievalCacheDir,         kind: "dir-contents" },
+        { label: "journal archives",       path: paths.journalDir,                kind: "dir-contents" },
+        { label: "checkpoints",            path: paths.checkpointsDir,            kind: "dir-contents" },
     ];
 
     // old snapshots: keep 5 most recent
-    const snapDir = path.join(bd, "snapshots");
+    const snapDir = paths.snapshotsDir;
     const oldSnapshots: CleanTarget[] = [];
     if (fs.existsSync(snapDir)) {
         const snaps = fs.readdirSync(snapDir)

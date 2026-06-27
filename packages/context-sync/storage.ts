@@ -1,9 +1,10 @@
 import fs from "fs/promises";
 import path from "path";
-import { SemanticSnapshot } from "../context-compiler/types";
-import { SnapshotPatch } from "./types";
-import { SnapshotStorage } from "../context-compiler/storage";
-import { SnapshotStorageError } from "../context-compiler/errors";
+import { SemanticSnapshot } from "../context-compiler/types.js";
+import { SnapshotPatch } from "./types.js";
+import { SnapshotStorage } from "../context-compiler/storage.js";
+import { SnapshotStorageError } from "../context-compiler/errors.js";
+import { StoragePaths } from "../kernel/paths.js";
 
 export class SnapshotSyncStorage {
     private readonly patchesDir: string;
@@ -11,8 +12,9 @@ export class SnapshotSyncStorage {
     private readonly compilerStorage: SnapshotStorage;
 
     constructor(workspaceRoot: string) {
-        this.patchesDir = path.join(workspaceRoot, ".brain", "context", "patches");
-        this.historyDir = path.join(workspaceRoot, ".brain", "context", "history");
+        const paths = new StoragePaths(workspaceRoot);
+        this.patchesDir = paths.patchesDir;
+        this.historyDir = path.dirname(paths.lineagePath);
         this.compilerStorage = new SnapshotStorage(workspaceRoot);
     }
 

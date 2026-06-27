@@ -1,9 +1,9 @@
 import path from "path";
-import { RuntimeService } from "../core";
+import { RuntimeService } from "../core/index.js";
 
-import { FileSystemService } from "../filesystem";
-import { Manifest } from "./types";
-import { ManifestError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { Manifest } from "./types.js";
+import { ManifestError } from "./errors.js";
 
 export class ManifestService extends RuntimeService {
 

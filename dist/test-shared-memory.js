@@ -12,8 +12,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 // Dedicated temp test workspace
 const TEST_WORKSPACE = path.join(__dirname, "..", ".brain-test-shared-memory");
-import { SharedMemoryService } from "./shared-memory/service";
-import { AgentRegistrationError, AssignmentError, ConflictError, ConsensusError } from "./shared-memory/errors";
+import { SharedMemoryService } from "./shared-memory/service.js";
+import { AgentRegistrationError, AssignmentError, ConflictError, ConsensusError } from "./shared-memory/errors.js";
 let passed = 0;
 let failed = 0;
 async function test(name, fn) {
@@ -371,7 +371,7 @@ async function runSuite() {
     // INTEGRATION SCENARIOS (46-50)
     // ──────────────────────────────────────────────────────────────────────────
     await test("Test 46: WorkspaceEngine — blocks commit if open conflicts exist", async () => {
-        const { WorkspaceEngine } = await import("./workspace/workspace-engine");
+        const { WorkspaceEngine } = await import("./workspace/workspace-engine.js");
         const workspace = new WorkspaceEngine({ workspaceRoot: TEST_WORKSPACE });
         // Add an open conflict in shared memory
         const conflictsService = new SharedMemoryService(TEST_WORKSPACE, TEST_WORKSPACE);
@@ -392,7 +392,7 @@ async function runSuite() {
         await assert.rejects(workspace.commit(tx.id), Error);
     });
     await test("Test 47: WorkspaceEngine — blocks commit if unfinalized consensus proposals exist", async () => {
-        const { WorkspaceEngine } = await import("./workspace/workspace-engine");
+        const { WorkspaceEngine } = await import("./workspace/workspace-engine.js");
         const workspace = new WorkspaceEngine({ workspaceRoot: TEST_WORKSPACE });
         // Clear conflicts, keep open consensus proposal
         const conflictsService = new SharedMemoryService(TEST_WORKSPACE, TEST_WORKSPACE);
@@ -415,7 +415,7 @@ async function runSuite() {
         await assert.rejects(workspace.commit(tx.id), Error);
     });
     await test("Test 48: ProviderRuntimeService — claims and completes tasks in Shared Memory", async () => {
-        const { ProviderRuntimeService } = await import("./provider-runtime/service");
+        const { ProviderRuntimeService } = await import("./provider-runtime/service.js");
         const runtime = new ProviderRuntimeService(TEST_WORKSPACE);
         const mockProv = {
             id: "mock-provider",
@@ -457,7 +457,7 @@ async function runSuite() {
         assert.strictEqual(task.status, "Completed");
     });
     await test("Test 49: LearningEngineService — records shared memory statistics in metadata", async () => {
-        const { LearningEngineService } = await import("./learning-engine/service");
+        const { LearningEngineService } = await import("./learning-engine/service.js");
         const learning = new LearningEngineService(TEST_WORKSPACE);
         const res = await learning.learn([]);
         assert.ok(res.success);
@@ -465,7 +465,7 @@ async function runSuite() {
         assert.ok(metadata.collaborationEfficiency !== undefined);
     });
     await test("Test 50: QueryEngineService — returns collaboration diagnostics", async () => {
-        const { QueryEngineService } = await import("./query-engine/service");
+        const { QueryEngineService } = await import("./query-engine/service.js");
         const queryService = new QueryEngineService(TEST_WORKSPACE, TEST_WORKSPACE);
         const res = await queryService.query({ query: "fix main" });
         assert.ok(res.diagnostics);

@@ -1,4 +1,4 @@
-import { QueryAnalysis } from "./types";
+import { QueryAnalysis } from "./types.js";
 
 const STOP_WORDS = new Set([
     "add",

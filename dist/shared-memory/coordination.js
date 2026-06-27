@@ -1,4 +1,4 @@
-import { AssignmentError } from "./errors";
+import { AssignmentError } from "./errors.js";
 export class CoordinationEngine {
     model;
     constructor(model) {

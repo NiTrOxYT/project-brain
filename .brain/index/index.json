@@ -771,20 +771,32 @@
     {
       "path": "README.md",
       "extension": ".md",
-      "size": 6402,
-      "modifiedAt": "2026-06-26T20:50:54.714Z"
+      "size": 7839,
+      "modifiedAt": "2026-06-27T14:49:09.723Z"
+    },
+    {
+      "path": "WALKTHROUGH_CERTIFICATION.md",
+      "extension": ".md",
+      "size": 1417,
+      "modifiedAt": "2026-06-27T20:16:47.876Z"
+    },
+    {
+      "path": "learning/metadata.json",
+      "extension": ".json",
+      "size": 566,
+      "modifiedAt": "2026-06-27T20:16:46.299Z"
     },
     {
       "path": "package-lock.json",
       "extension": ".json",
-      "size": 16739,
-      "modifiedAt": "2026-06-26T18:58:54.171Z"
+      "size": 16743,
+      "modifiedAt": "2026-06-27T16:24:52.661Z"
     },
     {
       "path": "package.json",
       "extension": ".json",
-      "size": 418,
-      "modifiedAt": "2026-06-26T18:58:54.168Z"
+      "size": 506,
+      "modifiedAt": "2026-06-27T14:49:09.752Z"
     },
     {
       "path": "packages/agent-runtime/artifacts.ts",
@@ -807,56 +819,230 @@
     {
       "path": "packages/agent-runtime/executor.ts",
       "extension": ".ts",
-      "size": 10636,
-      "modifiedAt": "2026-06-26T20:19:24.609Z"
+      "size": 10654,
+      "modifiedAt": "2026-06-27T15:10:32.758Z"
     },
     {
       "path": "packages/agent-runtime/hooks.ts",
       "extension": ".ts",
-      "size": 496,
-      "modifiedAt": "2026-06-26T20:17:41.101Z"
+      "size": 502,
+      "modifiedAt": "2026-06-27T15:10:32.759Z"
     },
     {
       "path": "packages/agent-runtime/index.ts",
       "extension": ".ts",
-      "size": 299,
-      "modifiedAt": "2026-06-26T20:18:17.732Z"
+      "size": 332,
+      "modifiedAt": "2026-06-27T15:10:32.759Z"
     },
     {
       "path": "packages/agent-runtime/middleware.ts",
       "extension": ".ts",
-      "size": 750,
-      "modifiedAt": "2026-06-26T20:17:37.146Z"
+      "size": 756,
+      "modifiedAt": "2026-06-27T15:10:32.760Z"
     },
     {
       "path": "packages/agent-runtime/provider.ts",
       "extension": ".ts",
-      "size": 755,
-      "modifiedAt": "2026-06-26T20:16:56.914Z"
+      "size": 758,
+      "modifiedAt": "2026-06-27T15:10:32.760Z"
     },
     {
       "path": "packages/agent-runtime/registry.ts",
       "extension": ".ts",
-      "size": 3293,
-      "modifiedAt": "2026-06-26T20:17:04.047Z"
+      "size": 3302,
+      "modifiedAt": "2026-06-27T15:10:32.760Z"
     },
     {
       "path": "packages/agent-runtime/runtime.ts",
       "extension": ".ts",
-      "size": 1015,
-      "modifiedAt": "2026-06-26T20:12:57.430Z"
+      "size": 1024,
+      "modifiedAt": "2026-06-27T15:10:32.761Z"
     },
     {
       "path": "packages/agent-runtime/service.ts",
       "extension": ".ts",
-      "size": 18211,
-      "modifiedAt": "2026-06-26T21:04:21.389Z"
+      "size": 18241,
+      "modifiedAt": "2026-06-27T15:10:32.761Z"
     },
     {
       "path": "packages/agent-runtime/types.ts",
       "extension": ".ts",
-      "size": 2499,
-      "modifiedAt": "2026-06-26T21:03:27.074Z"
+      "size": 2505,
+      "modifiedAt": "2026-06-27T15:10:32.762Z"
+    },
+    {
+      "path": "packages/ai-gateway/adapter-registry.ts",
+      "extension": ".ts",
+      "size": 2195,
+      "modifiedAt": "2026-06-27T18:50:34.659Z"
+    },
+    {
+      "path": "packages/ai-gateway/adapters/aider.ts",
+      "extension": ".ts",
+      "size": 1509,
+      "modifiedAt": "2026-06-27T18:16:33.497Z"
+    },
+    {
+      "path": "packages/ai-gateway/adapters/base.ts",
+      "extension": ".ts",
+      "size": 6818,
+      "modifiedAt": "2026-06-27T20:59:32.404Z"
+    },
+    {
+      "path": "packages/ai-gateway/adapters/claude.ts",
+      "extension": ".ts",
+      "size": 1834,
+      "modifiedAt": "2026-06-27T18:16:17.223Z"
+    },
+    {
+      "path": "packages/ai-gateway/adapters/codex.ts",
+      "extension": ".ts",
+      "size": 1522,
+      "modifiedAt": "2026-06-27T18:16:25.538Z"
+    },
+    {
+      "path": "packages/ai-gateway/adapters/gemini.ts",
+      "extension": ".ts",
+      "size": 1534,
+      "modifiedAt": "2026-06-27T18:16:40.545Z"
+    },
+    {
+      "path": "packages/ai-gateway/adapters/index.ts",
+      "extension": ".ts",
+      "size": 1238,
+      "modifiedAt": "2026-06-27T17:08:04.383Z"
+    },
+    {
+      "path": "packages/ai-gateway/adapters/ollama.ts",
+      "extension": ".ts",
+      "size": 3540,
+      "modifiedAt": "2026-06-27T18:16:55.816Z"
+    },
+    {
+      "path": "packages/ai-gateway/adapters/opencode.ts",
+      "extension": ".ts",
+      "size": 1522,
+      "modifiedAt": "2026-06-27T18:16:48.287Z"
+    },
+    {
+      "path": "packages/ai-gateway/console.ts",
+      "extension": ".ts",
+      "size": 12100,
+      "modifiedAt": "2026-06-27T17:14:16.691Z"
+    },
+    {
+      "path": "packages/ai-gateway/errors.ts",
+      "extension": ".ts",
+      "size": 2760,
+      "modifiedAt": "2026-06-27T17:01:53.334Z"
+    },
+    {
+      "path": "packages/ai-gateway/event-bus.ts",
+      "extension": ".ts",
+      "size": 4554,
+      "modifiedAt": "2026-06-27T17:02:36.345Z"
+    },
+    {
+      "path": "packages/ai-gateway/global-paths.ts",
+      "extension": ".ts",
+      "size": 629,
+      "modifiedAt": "2026-06-27T17:46:26.754Z"
+    },
+    {
+      "path": "packages/ai-gateway/history.ts",
+      "extension": ".ts",
+      "size": 3770,
+      "modifiedAt": "2026-06-27T17:04:03.336Z"
+    },
+    {
+      "path": "packages/ai-gateway/index.ts",
+      "extension": ".ts",
+      "size": 3604,
+      "modifiedAt": "2026-06-27T17:41:56.886Z"
+    },
+    {
+      "path": "packages/ai-gateway/installer.ts",
+      "extension": ".ts",
+      "size": 9183,
+      "modifiedAt": "2026-06-27T17:18:05.895Z"
+    },
+    {
+      "path": "packages/ai-gateway/invocation-classifier.ts",
+      "extension": ".ts",
+      "size": 3392,
+      "modifiedAt": "2026-06-27T19:48:25.355Z"
+    },
+    {
+      "path": "packages/ai-gateway/launch-strategy.ts",
+      "extension": ".ts",
+      "size": 4588,
+      "modifiedAt": "2026-06-27T20:13:09.540Z"
+    },
+    {
+      "path": "packages/ai-gateway/metrics.ts",
+      "extension": ".ts",
+      "size": 7735,
+      "modifiedAt": "2026-06-27T17:04:41.458Z"
+    },
+    {
+      "path": "packages/ai-gateway/optimizer.ts",
+      "extension": ".ts",
+      "size": 13101,
+      "modifiedAt": "2026-06-27T17:42:53.155Z"
+    },
+    {
+      "path": "packages/ai-gateway/prompt-diff.ts",
+      "extension": ".ts",
+      "size": 4151,
+      "modifiedAt": "2026-06-27T17:10:27.084Z"
+    },
+    {
+      "path": "packages/ai-gateway/provider-resolver.ts",
+      "extension": ".ts",
+      "size": 12918,
+      "modifiedAt": "2026-06-27T19:50:09.542Z"
+    },
+    {
+      "path": "packages/ai-gateway/service.ts",
+      "extension": ".ts",
+      "size": 17432,
+      "modifiedAt": "2026-06-27T19:04:20.856Z"
+    },
+    {
+      "path": "packages/ai-gateway/session.ts",
+      "extension": ".ts",
+      "size": 6046,
+      "modifiedAt": "2026-06-27T17:03:15.254Z"
+    },
+    {
+      "path": "packages/ai-gateway/terminal-state.ts",
+      "extension": ".ts",
+      "size": 1368,
+      "modifiedAt": "2026-06-27T20:13:14.085Z"
+    },
+    {
+      "path": "packages/ai-gateway/timeline.ts",
+      "extension": ".ts",
+      "size": 2689,
+      "modifiedAt": "2026-06-27T17:20:35.280Z"
+    },
+    {
+      "path": "packages/ai-gateway/token-estimator.ts",
+      "extension": ".ts",
+      "size": 5211,
+      "modifiedAt": "2026-06-27T17:42:13.319Z"
+    },
+    {
+      "path": "packages/ai-gateway/types.ts",
+      "extension": ".ts",
+      "size": 3622,
+      "modifiedAt": "2026-06-27T20:59:23.941Z"
+    },
+    {
+      "path": "packages/ai-gateway/wrapper-dispatcher.ts",
+      "extension": ".ts",
+      "size": 7031,
+      "modifiedAt": "2026-06-27T19:48:58.107Z"
     },
     {
       "path": "packages/architecture-memory/errors.ts",
@@ -867,14 +1053,14 @@
     {
       "path": "packages/architecture-memory/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T19:36:12.640Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.762Z"
     },
     {
       "path": "packages/architecture-memory/service.ts",
       "extension": ".ts",
-      "size": 10555,
-      "modifiedAt": "2026-06-26T19:40:46.854Z"
+      "size": 10579,
+      "modifiedAt": "2026-06-27T15:10:32.762Z"
     },
     {
       "path": "packages/architecture-memory/types.ts",
@@ -891,14 +1077,14 @@
     {
       "path": "packages/ast/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T18:59:54.870Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.763Z"
     },
     {
       "path": "packages/ast/service.ts",
       "extension": ".ts",
-      "size": 723,
-      "modifiedAt": "2026-06-26T19:00:06.675Z"
+      "size": 726,
+      "modifiedAt": "2026-06-27T15:10:32.764Z"
     },
     {
       "path": "packages/ast/types.ts",
@@ -909,8 +1095,8 @@
     {
       "path": "packages/autonomous-runtime/checkpoint.ts",
       "extension": ".ts",
-      "size": 2136,
-      "modifiedAt": "2026-06-26T22:38:49.575Z"
+      "size": 2179,
+      "modifiedAt": "2026-06-27T16:14:01.341Z"
     },
     {
       "path": "packages/autonomous-runtime/errors.ts",
@@ -921,56 +1107,134 @@
     {
       "path": "packages/autonomous-runtime/failure-analyzer.ts",
       "extension": ".ts",
-      "size": 4819,
-      "modifiedAt": "2026-06-26T22:39:28.650Z"
+      "size": 4822,
+      "modifiedAt": "2026-06-27T15:10:32.765Z"
     },
     {
       "path": "packages/autonomous-runtime/index.ts",
       "extension": ".ts",
-      "size": 823,
-      "modifiedAt": "2026-06-26T22:40:06.099Z"
+      "size": 853,
+      "modifiedAt": "2026-06-27T15:10:32.765Z"
     },
     {
       "path": "packages/autonomous-runtime/journal.ts",
       "extension": ".ts",
-      "size": 2140,
-      "modifiedAt": "2026-06-26T22:38:44.045Z"
+      "size": 2191,
+      "modifiedAt": "2026-06-27T16:14:05.638Z"
     },
     {
       "path": "packages/autonomous-runtime/metrics.ts",
       "extension": ".ts",
-      "size": 3285,
-      "modifiedAt": "2026-06-26T22:38:55.120Z"
+      "size": 3288,
+      "modifiedAt": "2026-06-27T15:10:32.766Z"
     },
     {
       "path": "packages/autonomous-runtime/recovery.ts",
       "extension": ".ts",
-      "size": 1620,
-      "modifiedAt": "2026-06-26T22:39:00.034Z"
+      "size": 1626,
+      "modifiedAt": "2026-06-27T15:10:32.766Z"
     },
     {
       "path": "packages/autonomous-runtime/repair.ts",
       "extension": ".ts",
-      "size": 2712,
-      "modifiedAt": "2026-06-26T22:39:35.776Z"
+      "size": 2721,
+      "modifiedAt": "2026-06-27T15:10:32.766Z"
     },
     {
       "path": "packages/autonomous-runtime/service.ts",
       "extension": ".ts",
-      "size": 17389,
-      "modifiedAt": "2026-06-26T22:42:28.431Z"
+      "size": 22449,
+      "modifiedAt": "2026-06-27T16:21:39.434Z"
     },
     {
       "path": "packages/autonomous-runtime/types.ts",
       "extension": ".ts",
-      "size": 4597,
-      "modifiedAt": "2026-06-26T22:38:34.175Z"
+      "size": 4643,
+      "modifiedAt": "2026-06-27T15:10:32.767Z"
     },
     {
       "path": "packages/autonomous-runtime/validator.ts",
       "extension": ".ts",
-      "size": 4692,
-      "modifiedAt": "2026-06-26T22:42:41.509Z"
+      "size": 4704,
+      "modifiedAt": "2026-06-27T15:10:32.768Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/checkpoint.ts",
+      "extension": ".ts",
+      "size": 3043,
+      "modifiedAt": "2026-06-27T15:10:32.768Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/errors.ts",
+      "extension": ".ts",
+      "size": 1323,
+      "modifiedAt": "2026-06-27T13:21:14.497Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/executor.ts",
+      "extension": ".ts",
+      "size": 4520,
+      "modifiedAt": "2026-06-27T15:10:32.768Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/index.ts",
+      "extension": ".ts",
+      "size": 363,
+      "modifiedAt": "2026-06-27T15:10:32.769Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/journal.ts",
+      "extension": ".ts",
+      "size": 2904,
+      "modifiedAt": "2026-06-27T15:10:32.769Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/metrics.ts",
+      "extension": ".ts",
+      "size": 4063,
+      "modifiedAt": "2026-06-27T15:10:32.769Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/planner.ts",
+      "extension": ".ts",
+      "size": 1896,
+      "modifiedAt": "2026-06-27T15:10:32.769Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/repair.ts",
+      "extension": ".ts",
+      "size": 2085,
+      "modifiedAt": "2026-06-27T15:10:32.769Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/report.ts",
+      "extension": ".ts",
+      "size": 4169,
+      "modifiedAt": "2026-06-27T15:10:32.769Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/scheduler.ts",
+      "extension": ".ts",
+      "size": 3940,
+      "modifiedAt": "2026-06-27T15:10:32.769Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/service.ts",
+      "extension": ".ts",
+      "size": 15925,
+      "modifiedAt": "2026-06-27T15:10:32.770Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/types.ts",
+      "extension": ".ts",
+      "size": 4732,
+      "modifiedAt": "2026-06-27T15:10:32.770Z"
+    },
+    {
+      "path": "packages/autonomous-workflow/validator.ts",
+      "extension": ".ts",
+      "size": 1814,
+      "modifiedAt": "2026-06-27T15:10:32.770Z"
     },
     {
       "path": "packages/brain/errors.ts",
@@ -981,14 +1245,14 @@
     {
       "path": "packages/brain/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T16:29:32.405Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.770Z"
     },
     {
       "path": "packages/brain/service.ts",
       "extension": ".ts",
-      "size": 872,
-      "modifiedAt": "2026-06-26T16:33:55.769Z"
+      "size": 893,
+      "modifiedAt": "2026-06-27T15:10:32.770Z"
     },
     {
       "path": "packages/brain/types.ts",
@@ -1005,14 +1269,14 @@
     {
       "path": "packages/cache/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:56:46.390Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.771Z"
     },
     {
       "path": "packages/cache/service.ts",
       "extension": ".ts",
-      "size": 764,
-      "modifiedAt": "2026-06-26T15:56:57.388Z"
+      "size": 776,
+      "modifiedAt": "2026-06-27T15:10:32.771Z"
     },
     {
       "path": "packages/cache/types.ts",
@@ -1029,14 +1293,194 @@
     {
       "path": "packages/cli/cli.ts",
       "extension": ".ts",
-      "size": 566,
-      "modifiedAt": "2026-06-26T15:51:14.957Z"
+      "size": 791,
+      "modifiedAt": "2026-06-27T14:49:09.752Z"
+    },
+    {
+      "path": "packages/cli/commands/clean.ts",
+      "extension": ".ts",
+      "size": 3624,
+      "modifiedAt": "2026-06-27T16:14:31.707Z"
+    },
+    {
+      "path": "packages/cli/commands/compile.ts",
+      "extension": ".ts",
+      "size": 3350,
+      "modifiedAt": "2026-06-27T14:49:09.752Z"
+    },
+    {
+      "path": "packages/cli/commands/config.ts",
+      "extension": ".ts",
+      "size": 3520,
+      "modifiedAt": "2026-06-27T14:49:09.752Z"
+    },
+    {
+      "path": "packages/cli/commands/context.ts",
+      "extension": ".ts",
+      "size": 8799,
+      "modifiedAt": "2026-06-27T16:14:35.708Z"
+    },
+    {
+      "path": "packages/cli/commands/doctor.ts",
+      "extension": ".ts",
+      "size": 16006,
+      "modifiedAt": "2026-06-27T19:50:23.347Z"
+    },
+    {
+      "path": "packages/cli/commands/explain.ts",
+      "extension": ".ts",
+      "size": 5689,
+      "modifiedAt": "2026-06-27T17:45:00.821Z"
+    },
+    {
+      "path": "packages/cli/commands/gateway-diagnostics.ts",
+      "extension": ".ts",
+      "size": 3474,
+      "modifiedAt": "2026-06-27T21:00:46.501Z"
+    },
+    {
+      "path": "packages/cli/commands/gateway.ts",
+      "extension": ".ts",
+      "size": 13157,
+      "modifiedAt": "2026-06-27T21:00:24.784Z"
+    },
+    {
+      "path": "packages/cli/commands/init.ts",
+      "extension": ".ts",
+      "size": 2312,
+      "modifiedAt": "2026-06-27T16:14:24.334Z"
+    },
+    {
+      "path": "packages/cli/commands/install.ts",
+      "extension": ".ts",
+      "size": 8156,
+      "modifiedAt": "2026-06-27T18:22:34.424Z"
+    },
+    {
+      "path": "packages/cli/commands/learning.ts",
+      "extension": ".ts",
+      "size": 3326,
+      "modifiedAt": "2026-06-27T14:49:09.753Z"
+    },
+    {
+      "path": "packages/cli/commands/provider.ts",
+      "extension": ".ts",
+      "size": 4258,
+      "modifiedAt": "2026-06-27T14:49:09.753Z"
+    },
+    {
+      "path": "packages/cli/commands/query.ts",
+      "extension": ".ts",
+      "size": 2066,
+      "modifiedAt": "2026-06-27T14:49:09.753Z"
+    },
+    {
+      "path": "packages/cli/commands/retrieve.ts",
+      "extension": ".ts",
+      "size": 2953,
+      "modifiedAt": "2026-06-27T14:49:09.753Z"
+    },
+    {
+      "path": "packages/cli/commands/runtime.ts",
+      "extension": ".ts",
+      "size": 3246,
+      "modifiedAt": "2026-06-27T14:49:09.753Z"
+    },
+    {
+      "path": "packages/cli/commands/shared-memory.ts",
+      "extension": ".ts",
+      "size": 7850,
+      "modifiedAt": "2026-06-27T14:49:09.753Z"
+    },
+    {
+      "path": "packages/cli/commands/stats.ts",
+      "extension": ".ts",
+      "size": 4117,
+      "modifiedAt": "2026-06-27T16:15:27.014Z"
+    },
+    {
+      "path": "packages/cli/commands/sync.ts",
+      "extension": ".ts",
+      "size": 2356,
+      "modifiedAt": "2026-06-27T14:49:09.754Z"
+    },
+    {
+      "path": "packages/cli/commands/workflow.ts",
+      "extension": ".ts",
+      "size": 9091,
+      "modifiedAt": "2026-06-27T16:14:53.155Z"
+    },
+    {
+      "path": "packages/cli/commands/workspace.ts",
+      "extension": ".ts",
+      "size": 5988,
+      "modifiedAt": "2026-06-27T16:14:40.311Z"
     },
     {
       "path": "packages/cli/index.ts",
       "extension": ".ts",
-      "size": 49,
-      "modifiedAt": "2026-06-26T14:59:44.847Z"
+      "size": 34,
+      "modifiedAt": "2026-06-27T14:49:09.754Z"
+    },
+    {
+      "path": "packages/cli/main.ts",
+      "extension": ".ts",
+      "size": 23548,
+      "modifiedAt": "2026-06-27T21:00:01.135Z"
+    },
+    {
+      "path": "packages/cli/tests/test-cli.ts",
+      "extension": ".ts",
+      "size": 10474,
+      "modifiedAt": "2026-06-27T14:49:09.754Z"
+    },
+    {
+      "path": "packages/cli/utils/colors.ts",
+      "extension": ".ts",
+      "size": 1641,
+      "modifiedAt": "2026-06-27T14:49:09.754Z"
+    },
+    {
+      "path": "packages/cli/utils/errors.ts",
+      "extension": ".ts",
+      "size": 2060,
+      "modifiedAt": "2026-06-27T14:49:09.755Z"
+    },
+    {
+      "path": "packages/cli/utils/json.ts",
+      "extension": ".ts",
+      "size": 829,
+      "modifiedAt": "2026-06-27T14:49:09.755Z"
+    },
+    {
+      "path": "packages/cli/utils/logger.ts",
+      "extension": ".ts",
+      "size": 1815,
+      "modifiedAt": "2026-06-27T14:49:09.755Z"
+    },
+    {
+      "path": "packages/cli/utils/paths.ts",
+      "extension": ".ts",
+      "size": 2090,
+      "modifiedAt": "2026-06-27T14:49:09.755Z"
+    },
+    {
+      "path": "packages/cli/utils/progress.ts",
+      "extension": ".ts",
+      "size": 1710,
+      "modifiedAt": "2026-06-27T14:49:09.755Z"
+    },
+    {
+      "path": "packages/cli/utils/spinner.ts",
+      "extension": ".ts",
+      "size": 1832,
+      "modifiedAt": "2026-06-27T14:49:09.755Z"
+    },
+    {
+      "path": "packages/cli/utils/table.ts",
+      "extension": ".ts",
+      "size": 1860,
+      "modifiedAt": "2026-06-27T14:49:09.755Z"
     },
     {
       "path": "packages/context-assembler/errors.ts",
@@ -1047,20 +1491,20 @@
     {
       "path": "packages/context-assembler/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T19:24:19.488Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.773Z"
     },
     {
       "path": "packages/context-assembler/service.ts",
       "extension": ".ts",
-      "size": 13905,
-      "modifiedAt": "2026-06-26T20:06:22.494Z"
+      "size": 13965,
+      "modifiedAt": "2026-06-27T15:10:32.773Z"
     },
     {
       "path": "packages/context-assembler/types.ts",
       "extension": ".ts",
-      "size": 1659,
-      "modifiedAt": "2026-06-26T20:06:03.549Z"
+      "size": 1686,
+      "modifiedAt": "2026-06-27T15:10:32.773Z"
     },
     {
       "path": "packages/context-budget/errors.ts",
@@ -1071,14 +1515,14 @@
     {
       "path": "packages/context-budget/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T18:00:36.445Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.773Z"
     },
     {
       "path": "packages/context-budget/service.ts",
       "extension": ".ts",
-      "size": 942,
-      "modifiedAt": "2026-06-26T18:00:51.742Z"
+      "size": 945,
+      "modifiedAt": "2026-06-27T15:10:32.773Z"
     },
     {
       "path": "packages/context-budget/types.ts",
@@ -1087,10 +1531,112 @@
       "modifiedAt": "2026-06-26T18:00:07.304Z"
     },
     {
+      "path": "packages/context-compiler/cache.ts",
+      "extension": ".ts",
+      "size": 4989,
+      "modifiedAt": "2026-06-27T16:13:33.880Z"
+    },
+    {
+      "path": "packages/context-compiler/collector.ts",
+      "extension": ".ts",
+      "size": 7276,
+      "modifiedAt": "2026-06-27T17:53:08.742Z"
+    },
+    {
+      "path": "packages/context-compiler/delta.ts",
+      "extension": ".ts",
+      "size": 5645,
+      "modifiedAt": "2026-06-27T15:10:32.774Z"
+    },
+    {
+      "path": "packages/context-compiler/dependency-analyzer.ts",
+      "extension": ".ts",
+      "size": 5790,
+      "modifiedAt": "2026-06-27T15:10:32.775Z"
+    },
+    {
+      "path": "packages/context-compiler/diagnostics.ts",
+      "extension": ".ts",
+      "size": 4230,
+      "modifiedAt": "2026-06-27T15:10:32.775Z"
+    },
+    {
+      "path": "packages/context-compiler/errors.ts",
+      "extension": ".ts",
+      "size": 1759,
+      "modifiedAt": "2026-06-27T12:24:54.377Z"
+    },
+    {
+      "path": "packages/context-compiler/fingerprint.ts",
+      "extension": ".ts",
+      "size": 4735,
+      "modifiedAt": "2026-06-27T15:10:32.775Z"
+    },
+    {
+      "path": "packages/context-compiler/graph-compiler.ts",
+      "extension": ".ts",
+      "size": 5846,
+      "modifiedAt": "2026-06-27T15:10:32.775Z"
+    },
+    {
+      "path": "packages/context-compiler/index.ts",
+      "extension": ".ts",
+      "size": 1346,
+      "modifiedAt": "2026-06-27T15:10:32.776Z"
+    },
+    {
+      "path": "packages/context-compiler/metrics.ts",
+      "extension": ".ts",
+      "size": 3744,
+      "modifiedAt": "2026-06-27T16:13:37.270Z"
+    },
+    {
+      "path": "packages/context-compiler/normalizer.ts",
+      "extension": ".ts",
+      "size": 8679,
+      "modifiedAt": "2026-06-27T15:10:32.776Z"
+    },
+    {
+      "path": "packages/context-compiler/optimizer.ts",
+      "extension": ".ts",
+      "size": 3498,
+      "modifiedAt": "2026-06-27T15:10:32.776Z"
+    },
+    {
+      "path": "packages/context-compiler/service.ts",
+      "extension": ".ts",
+      "size": 19502,
+      "modifiedAt": "2026-06-27T15:10:32.776Z"
+    },
+    {
+      "path": "packages/context-compiler/snapshot-builder.ts",
+      "extension": ".ts",
+      "size": 16619,
+      "modifiedAt": "2026-06-27T15:10:32.777Z"
+    },
+    {
+      "path": "packages/context-compiler/storage.ts",
+      "extension": ".ts",
+      "size": 5386,
+      "modifiedAt": "2026-06-27T16:13:29.542Z"
+    },
+    {
+      "path": "packages/context-compiler/types.ts",
+      "extension": ".ts",
+      "size": 11553,
+      "modifiedAt": "2026-06-27T12:24:43.493Z"
+    },
+    {
+      "path": "packages/context-compiler/validator.ts",
+      "extension": ".ts",
+      "size": 4624,
+      "modifiedAt": "2026-06-27T15:10:32.777Z"
+    },
+    {
       "path": "packages/context-loader/assembler.ts",
       "extension": ".ts",
-      "size": 1338,
-      "modifiedAt": "2026-06-26T16:19:16.921Z"
+      "size": 1341,
+      "modifiedAt": "2026-06-27T15:10:32.777Z"
     },
     {
       "path": "packages/context-loader/errors.ts",
@@ -1101,20 +1647,224 @@
     {
       "path": "packages/context-loader/index.ts",
       "extension": ".ts",
-      "size": 107,
-      "modifiedAt": "2026-06-26T16:19:45.539Z"
+      "size": 119,
+      "modifiedAt": "2026-06-27T15:10:32.777Z"
     },
     {
       "path": "packages/context-loader/service.ts",
       "extension": ".ts",
-      "size": 2414,
-      "modifiedAt": "2026-06-26T16:24:59.564Z"
+      "size": 2444,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
     },
     {
       "path": "packages/context-loader/types.ts",
       "extension": ".ts",
       "size": 194,
       "modifiedAt": "2026-06-26T16:16:15.323Z"
+    },
+    {
+      "path": "packages/context-retrieval/architecture-retriever.ts",
+      "extension": ".ts",
+      "size": 1027,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "packages/context-retrieval/budget.ts",
+      "extension": ".ts",
+      "size": 3702,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "packages/context-retrieval/cache.ts",
+      "extension": ".ts",
+      "size": 3443,
+      "modifiedAt": "2026-06-27T16:13:40.670Z"
+    },
+    {
+      "path": "packages/context-retrieval/compressor.ts",
+      "extension": ".ts",
+      "size": 2429,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "packages/context-retrieval/dependency-expander.ts",
+      "extension": ".ts",
+      "size": 2527,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "packages/context-retrieval/diagnostics.ts",
+      "extension": ".ts",
+      "size": 2560,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "packages/context-retrieval/errors.ts",
+      "extension": ".ts",
+      "size": 1211,
+      "modifiedAt": "2026-06-27T12:50:21.883Z"
+    },
+    {
+      "path": "packages/context-retrieval/graph-traverser.ts",
+      "extension": ".ts",
+      "size": 5712,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "packages/context-retrieval/index.ts",
+      "extension": ".ts",
+      "size": 966,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "packages/context-retrieval/learning-retriever.ts",
+      "extension": ".ts",
+      "size": 855,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "packages/context-retrieval/metrics.ts",
+      "extension": ".ts",
+      "size": 2651,
+      "modifiedAt": "2026-06-27T16:13:49.545Z"
+    },
+    {
+      "path": "packages/context-retrieval/query-parser.ts",
+      "extension": ".ts",
+      "size": 3565,
+      "modifiedAt": "2026-06-27T12:59:13.291Z"
+    },
+    {
+      "path": "packages/context-retrieval/ranking.ts",
+      "extension": ".ts",
+      "size": 3128,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "packages/context-retrieval/relationship-retriever.ts",
+      "extension": ".ts",
+      "size": 1096,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "packages/context-retrieval/retrieval-planner.ts",
+      "extension": ".ts",
+      "size": 1660,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "packages/context-retrieval/service.ts",
+      "extension": ".ts",
+      "size": 13242,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    },
+    {
+      "path": "packages/context-retrieval/symbol-retriever.ts",
+      "extension": ".ts",
+      "size": 1114,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    },
+    {
+      "path": "packages/context-retrieval/types.ts",
+      "extension": ".ts",
+      "size": 4717,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    },
+    {
+      "path": "packages/context-retrieval/validator.ts",
+      "extension": ".ts",
+      "size": 2206,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    },
+    {
+      "path": "packages/context-sync/change-detector.ts",
+      "extension": ".ts",
+      "size": 3036,
+      "modifiedAt": "2026-06-27T15:10:22.492Z"
+    },
+    {
+      "path": "packages/context-sync/dependency-resolver.ts",
+      "extension": ".ts",
+      "size": 2128,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    },
+    {
+      "path": "packages/context-sync/diagnostics.ts",
+      "extension": ".ts",
+      "size": 2761,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    },
+    {
+      "path": "packages/context-sync/dirty-region.ts",
+      "extension": ".ts",
+      "size": 1532,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    },
+    {
+      "path": "packages/context-sync/errors.ts",
+      "extension": ".ts",
+      "size": 1125,
+      "modifiedAt": "2026-06-27T12:42:38.651Z"
+    },
+    {
+      "path": "packages/context-sync/fingerprint-updater.ts",
+      "extension": ".ts",
+      "size": 1606,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    },
+    {
+      "path": "packages/context-sync/index.ts",
+      "extension": ".ts",
+      "size": 802,
+      "modifiedAt": "2026-06-27T15:10:32.781Z"
+    },
+    {
+      "path": "packages/context-sync/metrics.ts",
+      "extension": ".ts",
+      "size": 2989,
+      "modifiedAt": "2026-06-27T16:13:57.910Z"
+    },
+    {
+      "path": "packages/context-sync/patch-applier.ts",
+      "extension": ".ts",
+      "size": 6480,
+      "modifiedAt": "2026-06-27T15:10:32.781Z"
+    },
+    {
+      "path": "packages/context-sync/patch-builder.ts",
+      "extension": ".ts",
+      "size": 7703,
+      "modifiedAt": "2026-06-27T15:10:32.781Z"
+    },
+    {
+      "path": "packages/context-sync/service.ts",
+      "extension": ".ts",
+      "size": 12639,
+      "modifiedAt": "2026-06-27T15:10:30.603Z"
+    },
+    {
+      "path": "packages/context-sync/storage.ts",
+      "extension": ".ts",
+      "size": 3813,
+      "modifiedAt": "2026-06-27T16:13:53.947Z"
+    },
+    {
+      "path": "packages/context-sync/types.ts",
+      "extension": ".ts",
+      "size": 4527,
+      "modifiedAt": "2026-06-27T15:10:32.781Z"
+    },
+    {
+      "path": "packages/context-sync/validator.ts",
+      "extension": ".ts",
+      "size": 2091,
+      "modifiedAt": "2026-06-27T15:10:32.781Z"
+    },
+    {
+      "path": "packages/context-sync/workspace-listener.ts",
+      "extension": ".ts",
+      "size": 2186,
+      "modifiedAt": "2026-06-27T15:10:32.781Z"
     },
     {
       "path": "packages/core/container.ts",
@@ -1125,14 +1875,14 @@
     {
       "path": "packages/core/index.ts",
       "extension": ".ts",
-      "size": 107,
-      "modifiedAt": "2026-06-26T16:38:28.364Z"
+      "size": 119,
+      "modifiedAt": "2026-06-27T15:10:32.782Z"
     },
     {
       "path": "packages/core/kernel.ts",
       "extension": ".ts",
-      "size": 132,
-      "modifiedAt": "2026-06-26T16:38:17.982Z"
+      "size": 135,
+      "modifiedAt": "2026-06-27T15:10:32.782Z"
     },
     {
       "path": "packages/core/service.ts",
@@ -1147,6 +1897,18 @@
       "modifiedAt": "2026-06-26T16:37:39.504Z"
     },
     {
+      "path": "packages/domain/index.ts",
+      "extension": ".ts",
+      "size": 28,
+      "modifiedAt": "2026-06-27T17:38:55.499Z"
+    },
+    {
+      "path": "packages/domain/types.ts",
+      "extension": ".ts",
+      "size": 6060,
+      "modifiedAt": "2026-06-27T17:39:29.537Z"
+    },
+    {
       "path": "packages/engineering-planner/errors.ts",
       "extension": ".ts",
       "size": 167,
@@ -1155,14 +1917,14 @@
     {
       "path": "packages/engineering-planner/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T19:59:12.862Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.782Z"
     },
     {
       "path": "packages/engineering-planner/service.ts",
       "extension": ".ts",
-      "size": 26444,
-      "modifiedAt": "2026-06-26T20:08:04.666Z"
+      "size": 26477,
+      "modifiedAt": "2026-06-27T15:10:32.782Z"
     },
     {
       "path": "packages/engineering-planner/types.ts",
@@ -1179,14 +1941,14 @@
     {
       "path": "packages/execution-graph/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T19:28:41.499Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.783Z"
     },
     {
       "path": "packages/execution-graph/service.ts",
       "extension": ".ts",
-      "size": 29924,
-      "modifiedAt": "2026-06-26T19:31:44.136Z"
+      "size": 29966,
+      "modifiedAt": "2026-06-27T15:10:32.783Z"
     },
     {
       "path": "packages/execution-graph/types.ts",
@@ -1203,8 +1965,8 @@
     {
       "path": "packages/filesystem/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:41:39.417Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.784Z"
     },
     {
       "path": "packages/filesystem/service.ts",
@@ -1227,14 +1989,14 @@
     {
       "path": "packages/graph/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:54:31.450Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.784Z"
     },
     {
       "path": "packages/graph/service.ts",
       "extension": ".ts",
-      "size": 701,
-      "modifiedAt": "2026-06-26T15:54:42.854Z"
+      "size": 713,
+      "modifiedAt": "2026-06-27T15:10:32.784Z"
     },
     {
       "path": "packages/graph/types.ts",
@@ -1251,14 +2013,14 @@
     {
       "path": "packages/graph-builder/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T16:06:35.111Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.784Z"
     },
     {
       "path": "packages/graph-builder/service.ts",
       "extension": ".ts",
-      "size": 1552,
-      "modifiedAt": "2026-06-26T18:48:14.425Z"
+      "size": 1582,
+      "modifiedAt": "2026-06-27T15:10:44.709Z"
     },
     {
       "path": "packages/graph-builder/types.ts",
@@ -1275,14 +2037,14 @@
     {
       "path": "packages/graph-traversal/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T16:21:32.116Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.784Z"
     },
     {
       "path": "packages/graph-traversal/service.ts",
       "extension": ".ts",
-      "size": 1209,
-      "modifiedAt": "2026-06-26T18:12:56.257Z"
+      "size": 1218,
+      "modifiedAt": "2026-06-27T15:10:32.785Z"
     },
     {
       "path": "packages/graph-traversal/types.ts",
@@ -1299,14 +2061,14 @@
     {
       "path": "packages/import-resolver/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T18:46:45.054Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.785Z"
     },
     {
       "path": "packages/import-resolver/service.ts",
       "extension": ".ts",
-      "size": 2510,
-      "modifiedAt": "2026-06-26T18:46:56.165Z"
+      "size": 2540,
+      "modifiedAt": "2026-06-27T15:10:32.785Z"
     },
     {
       "path": "packages/import-resolver/types.ts",
@@ -1323,14 +2085,14 @@
     {
       "path": "packages/imports/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T16:04:07.984Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.785Z"
     },
     {
       "path": "packages/imports/service.ts",
       "extension": ".ts",
-      "size": 5541,
-      "modifiedAt": "2026-06-26T19:31:13.771Z"
+      "size": 5562,
+      "modifiedAt": "2026-06-27T15:10:32.786Z"
     },
     {
       "path": "packages/imports/types.ts",
@@ -1347,14 +2109,14 @@
     {
       "path": "packages/indexer/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:46:54.051Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.786Z"
     },
     {
       "path": "packages/indexer/service.ts",
       "extension": ".ts",
-      "size": 2123,
-      "modifiedAt": "2026-06-26T15:58:51.665Z"
+      "size": 2135,
+      "modifiedAt": "2026-06-27T15:10:32.786Z"
     },
     {
       "path": "packages/indexer/types.ts",
@@ -1363,10 +2125,46 @@
       "modifiedAt": "2026-06-26T15:46:23.058Z"
     },
     {
+      "path": "packages/installer/index.ts",
+      "extension": ".ts",
+      "size": 1486,
+      "modifiedAt": "2026-06-27T18:21:19.502Z"
+    },
+    {
+      "path": "packages/installer/installer.ts",
+      "extension": ".ts",
+      "size": 24824,
+      "modifiedAt": "2026-06-27T19:49:22.747Z"
+    },
+    {
+      "path": "packages/installer/manifest.ts",
+      "extension": ".ts",
+      "size": 4971,
+      "modifiedAt": "2026-06-27T19:49:30.387Z"
+    },
+    {
+      "path": "packages/installer/path-manager.ts",
+      "extension": ".ts",
+      "size": 7218,
+      "modifiedAt": "2026-06-27T18:19:22.412Z"
+    },
+    {
+      "path": "packages/installer/shell-provider.ts",
+      "extension": ".ts",
+      "size": 15843,
+      "modifiedAt": "2026-06-27T18:18:52.182Z"
+    },
+    {
       "path": "packages/kernel/boot.ts",
       "extension": ".ts",
-      "size": 1041,
-      "modifiedAt": "2026-06-26T15:01:50.890Z"
+      "size": 1047,
+      "modifiedAt": "2026-06-27T15:10:32.786Z"
+    },
+    {
+      "path": "packages/kernel/config.ts",
+      "extension": ".ts",
+      "size": 1435,
+      "modifiedAt": "2026-06-27T17:38:15.217Z"
     },
     {
       "path": "packages/kernel/constants.ts",
@@ -1375,10 +2173,64 @@
       "modifiedAt": "2026-06-26T14:54:26.419Z"
     },
     {
+      "path": "packages/kernel/context.ts",
+      "extension": ".ts",
+      "size": 2615,
+      "modifiedAt": "2026-06-27T18:50:30.124Z"
+    },
+    {
+      "path": "packages/kernel/errors.ts",
+      "extension": ".ts",
+      "size": 3176,
+      "modifiedAt": "2026-06-27T17:38:37.460Z"
+    },
+    {
+      "path": "packages/kernel/event-bus.ts",
+      "extension": ".ts",
+      "size": 2530,
+      "modifiedAt": "2026-06-27T17:38:00.872Z"
+    },
+    {
+      "path": "packages/kernel/events.ts",
+      "extension": ".ts",
+      "size": 3713,
+      "modifiedAt": "2026-06-27T20:58:00.100Z"
+    },
+    {
       "path": "packages/kernel/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:04:34.997Z"
+      "size": 435,
+      "modifiedAt": "2026-06-27T17:38:45.116Z"
+    },
+    {
+      "path": "packages/kernel/lifecycle.ts",
+      "extension": ".ts",
+      "size": 1400,
+      "modifiedAt": "2026-06-27T17:38:20.634Z"
+    },
+    {
+      "path": "packages/kernel/paths.ts",
+      "extension": ".ts",
+      "size": 6475,
+      "modifiedAt": "2026-06-27T18:54:00.453Z"
+    },
+    {
+      "path": "packages/kernel/plugin-manager.ts",
+      "extension": ".ts",
+      "size": 2637,
+      "modifiedAt": "2026-06-27T18:55:14.484Z"
+    },
+    {
+      "path": "packages/kernel/registry.ts",
+      "extension": ".ts",
+      "size": 1499,
+      "modifiedAt": "2026-06-27T18:50:15.667Z"
+    },
+    {
+      "path": "packages/kernel/telemetry.ts",
+      "extension": ".ts",
+      "size": 1061,
+      "modifiedAt": "2026-06-27T17:38:25.670Z"
     },
     {
       "path": "packages/kernel/types.ts",
@@ -1395,14 +2247,14 @@
     {
       "path": "packages/knowledge/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:52:47.248Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.786Z"
     },
     {
       "path": "packages/knowledge/service.ts",
       "extension": ".ts",
-      "size": 754,
-      "modifiedAt": "2026-06-26T15:52:56.829Z"
+      "size": 766,
+      "modifiedAt": "2026-06-27T15:10:32.787Z"
     },
     {
       "path": "packages/knowledge/types.ts",
@@ -1419,32 +2271,110 @@
     {
       "path": "packages/knowledge-fusion/index.ts",
       "extension": ".ts",
-      "size": 108,
-      "modifiedAt": "2026-06-26T19:45:16.688Z"
+      "size": 120,
+      "modifiedAt": "2026-06-27T15:10:32.787Z"
     },
     {
       "path": "packages/knowledge-fusion/service.ts",
       "extension": ".ts",
-      "size": 19298,
-      "modifiedAt": "2026-06-26T19:51:57.468Z"
+      "size": 21504,
+      "modifiedAt": "2026-06-27T15:10:32.787Z"
     },
     {
       "path": "packages/knowledge-fusion/strategies.ts",
       "extension": ".ts",
-      "size": 849,
-      "modifiedAt": "2026-06-26T19:51:39.319Z"
+      "size": 933,
+      "modifiedAt": "2026-06-27T15:10:32.787Z"
     },
     {
       "path": "packages/knowledge-fusion/types.ts",
       "extension": ".ts",
-      "size": 1447,
-      "modifiedAt": "2026-06-26T19:51:31.806Z"
+      "size": 1560,
+      "modifiedAt": "2026-06-26T22:52:13.177Z"
+    },
+    {
+      "path": "packages/learning-engine/classifier.ts",
+      "extension": ".ts",
+      "size": 4156,
+      "modifiedAt": "2026-06-27T15:10:32.788Z"
+    },
+    {
+      "path": "packages/learning-engine/errors.ts",
+      "extension": ".ts",
+      "size": 1535,
+      "modifiedAt": "2026-06-26T22:49:25.115Z"
+    },
+    {
+      "path": "packages/learning-engine/extractor.ts",
+      "extension": ".ts",
+      "size": 6599,
+      "modifiedAt": "2026-06-27T15:10:32.788Z"
+    },
+    {
+      "path": "packages/learning-engine/index.ts",
+      "extension": ".ts",
+      "size": 929,
+      "modifiedAt": "2026-06-27T15:10:32.788Z"
+    },
+    {
+      "path": "packages/learning-engine/metrics.ts",
+      "extension": ".ts",
+      "size": 2511,
+      "modifiedAt": "2026-06-27T15:10:32.788Z"
+    },
+    {
+      "path": "packages/learning-engine/optimizer.ts",
+      "extension": ".ts",
+      "size": 6792,
+      "modifiedAt": "2026-06-27T15:10:32.789Z"
+    },
+    {
+      "path": "packages/learning-engine/prompt-library.ts",
+      "extension": ".ts",
+      "size": 2420,
+      "modifiedAt": "2026-06-27T15:10:32.789Z"
+    },
+    {
+      "path": "packages/learning-engine/provider-performance.ts",
+      "extension": ".ts",
+      "size": 5005,
+      "modifiedAt": "2026-06-27T15:10:32.789Z"
+    },
+    {
+      "path": "packages/learning-engine/recommender.ts",
+      "extension": ".ts",
+      "size": 5174,
+      "modifiedAt": "2026-06-27T15:10:32.789Z"
+    },
+    {
+      "path": "packages/learning-engine/repair-patterns.ts",
+      "extension": ".ts",
+      "size": 5318,
+      "modifiedAt": "2026-06-27T15:10:32.789Z"
+    },
+    {
+      "path": "packages/learning-engine/service.ts",
+      "extension": ".ts",
+      "size": 11658,
+      "modifiedAt": "2026-06-27T15:10:32.789Z"
+    },
+    {
+      "path": "packages/learning-engine/storage.ts",
+      "extension": ".ts",
+      "size": 6606,
+      "modifiedAt": "2026-06-27T15:10:32.789Z"
+    },
+    {
+      "path": "packages/learning-engine/types.ts",
+      "extension": ".ts",
+      "size": 5153,
+      "modifiedAt": "2026-06-27T12:11:47.152Z"
     },
     {
       "path": "packages/main.ts",
       "extension": ".ts",
-      "size": 37,
-      "modifiedAt": "2026-06-26T15:10:43.852Z"
+      "size": 47,
+      "modifiedAt": "2026-06-27T14:49:09.755Z"
     },
     {
       "path": "packages/manifest/errors.ts",
@@ -1455,8 +2385,8 @@
     {
       "path": "packages/manifest/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:45:00.608Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.790Z"
     },
     {
       "path": "packages/manifest/schema.ts",
@@ -1467,8 +2397,8 @@
     {
       "path": "packages/manifest/service.ts",
       "extension": ".ts",
-      "size": 996,
-      "modifiedAt": "2026-06-26T17:18:05.448Z"
+      "size": 1020,
+      "modifiedAt": "2026-06-27T15:10:32.790Z"
     },
     {
       "path": "packages/manifest/types.ts",
@@ -1485,32 +2415,32 @@
     {
       "path": "packages/orchestrator/executor.ts",
       "extension": ".ts",
-      "size": 12928,
-      "modifiedAt": "2026-06-26T20:50:54.747Z"
+      "size": 12955,
+      "modifiedAt": "2026-06-27T15:10:32.790Z"
     },
     {
       "path": "packages/orchestrator/index.ts",
       "extension": ".ts",
-      "size": 135,
-      "modifiedAt": "2026-06-26T20:05:48.394Z"
+      "size": 150,
+      "modifiedAt": "2026-06-27T15:10:32.791Z"
     },
     {
       "path": "packages/orchestrator/scheduler.ts",
       "extension": ".ts",
-      "size": 3596,
-      "modifiedAt": "2026-06-26T20:05:28.039Z"
+      "size": 3611,
+      "modifiedAt": "2026-06-27T15:10:32.791Z"
     },
     {
       "path": "packages/orchestrator/service.ts",
       "extension": ".ts",
-      "size": 2227,
-      "modifiedAt": "2026-06-26T21:13:19.458Z"
+      "size": 2257,
+      "modifiedAt": "2026-06-27T15:10:32.791Z"
     },
     {
       "path": "packages/orchestrator/types.ts",
       "extension": ".ts",
-      "size": 2551,
-      "modifiedAt": "2026-06-26T21:04:44.503Z"
+      "size": 2560,
+      "modifiedAt": "2026-06-27T15:10:32.791Z"
     },
     {
       "path": "packages/planner/errors.ts",
@@ -1521,14 +2451,14 @@
     {
       "path": "packages/planner/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T17:51:58.625Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.791Z"
     },
     {
       "path": "packages/planner/service.ts",
       "extension": ".ts",
-      "size": 3461,
-      "modifiedAt": "2026-06-26T17:52:19.875Z"
+      "size": 3482,
+      "modifiedAt": "2026-06-27T15:10:32.791Z"
     },
     {
       "path": "packages/planner/types.ts",
@@ -1545,14 +2475,14 @@
     {
       "path": "packages/project/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:49:20.286Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.791Z"
     },
     {
       "path": "packages/project/service.ts",
       "extension": ".ts",
-      "size": 3027,
-      "modifiedAt": "2026-06-26T16:09:45.544Z"
+      "size": 3039,
+      "modifiedAt": "2026-06-27T15:10:32.792Z"
     },
     {
       "path": "packages/project/types.ts",
@@ -1561,10 +2491,160 @@
       "modifiedAt": "2026-06-26T15:48:59.604Z"
     },
     {
+      "path": "packages/prompt-intelligence/assembler.ts",
+      "extension": ".ts",
+      "size": 6436,
+      "modifiedAt": "2026-06-27T15:10:32.792Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/budget.ts",
+      "extension": ".ts",
+      "size": 8888,
+      "modifiedAt": "2026-06-27T15:10:32.792Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/builder.ts",
+      "extension": ".ts",
+      "size": 9311,
+      "modifiedAt": "2026-06-27T15:10:32.792Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/cache.ts",
+      "extension": ".ts",
+      "size": 3234,
+      "modifiedAt": "2026-06-27T15:10:32.792Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/diagnostics.ts",
+      "extension": ".ts",
+      "size": 879,
+      "modifiedAt": "2026-06-27T15:10:32.793Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/diff.ts",
+      "extension": ".ts",
+      "size": 3390,
+      "modifiedAt": "2026-06-27T15:10:32.793Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/errors.ts",
+      "extension": ".ts",
+      "size": 1357,
+      "modifiedAt": "2026-06-27T11:43:09.361Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/fingerprint.ts",
+      "extension": ".ts",
+      "size": 1410,
+      "modifiedAt": "2026-06-27T15:10:32.793Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/index.ts",
+      "extension": ".ts",
+      "size": 1071,
+      "modifiedAt": "2026-06-27T15:10:32.793Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/metrics.ts",
+      "extension": ".ts",
+      "size": 2640,
+      "modifiedAt": "2026-06-27T15:10:32.793Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/optimizer.ts",
+      "extension": ".ts",
+      "size": 10004,
+      "modifiedAt": "2026-06-27T15:10:32.793Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/provider-profiles.ts",
+      "extension": ".ts",
+      "size": 3022,
+      "modifiedAt": "2026-06-27T15:10:32.793Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/ranking.ts",
+      "extension": ".ts",
+      "size": 1604,
+      "modifiedAt": "2026-06-27T15:10:32.794Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/renderer.ts",
+      "extension": ".ts",
+      "size": 3184,
+      "modifiedAt": "2026-06-27T15:10:32.794Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/service.ts",
+      "extension": ".ts",
+      "size": 8575,
+      "modifiedAt": "2026-06-27T15:10:32.794Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/snapshot.ts",
+      "extension": ".ts",
+      "size": 3274,
+      "modifiedAt": "2026-06-27T15:10:32.794Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/templates.ts",
+      "extension": ".ts",
+      "size": 4311,
+      "modifiedAt": "2026-06-27T15:10:32.794Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/types.ts",
+      "extension": ".ts",
+      "size": 4849,
+      "modifiedAt": "2026-06-27T15:10:32.794Z"
+    },
+    {
+      "path": "packages/prompt-intelligence/validator.ts",
+      "extension": ".ts",
+      "size": 4000,
+      "modifiedAt": "2026-06-27T15:10:32.794Z"
+    },
+    {
+      "path": "packages/provider-bridge/index.ts",
+      "extension": ".ts",
+      "size": 156,
+      "modifiedAt": "2026-06-27T20:58:42.380Z"
+    },
+    {
+      "path": "packages/provider-bridge/integration.ts",
+      "extension": ".ts",
+      "size": 3405,
+      "modifiedAt": "2026-06-27T20:58:16.125Z"
+    },
+    {
+      "path": "packages/provider-bridge/manager.ts",
+      "extension": ".ts",
+      "size": 3956,
+      "modifiedAt": "2026-06-27T20:58:34.605Z"
+    },
+    {
+      "path": "packages/provider-bridge/negotiator.ts",
+      "extension": ".ts",
+      "size": 893,
+      "modifiedAt": "2026-06-27T20:58:26.695Z"
+    },
+    {
+      "path": "packages/provider-bridge/registry.ts",
+      "extension": ".ts",
+      "size": 1568,
+      "modifiedAt": "2026-06-27T20:58:46.888Z"
+    },
+    {
+      "path": "packages/provider-bridge/types.ts",
+      "extension": ".ts",
+      "size": 1215,
+      "modifiedAt": "2026-06-27T20:58:10.240Z"
+    },
+    {
       "path": "packages/provider-execution/diagnostics.ts",
       "extension": ".ts",
-      "size": 2459,
-      "modifiedAt": "2026-06-26T21:45:07.390Z"
+      "size": 2462,
+      "modifiedAt": "2026-06-27T15:10:32.795Z"
     },
     {
       "path": "packages/provider-execution/errors.ts",
@@ -1575,44 +2655,44 @@
     {
       "path": "packages/provider-execution/index.ts",
       "extension": ".ts",
-      "size": 776,
-      "modifiedAt": "2026-06-26T21:46:11.674Z"
+      "size": 803,
+      "modifiedAt": "2026-06-27T15:10:32.795Z"
     },
     {
       "path": "packages/provider-execution/process.ts",
       "extension": ".ts",
-      "size": 9282,
-      "modifiedAt": "2026-06-26T21:58:21.142Z"
+      "size": 9297,
+      "modifiedAt": "2026-06-27T15:10:32.795Z"
     },
     {
       "path": "packages/provider-execution/retry.ts",
       "extension": ".ts",
-      "size": 3302,
-      "modifiedAt": "2026-06-26T21:44:32.979Z"
+      "size": 3308,
+      "modifiedAt": "2026-06-27T15:10:32.795Z"
     },
     {
       "path": "packages/provider-execution/sandbox.ts",
       "extension": ".ts",
-      "size": 3666,
-      "modifiedAt": "2026-06-26T21:44:52.116Z"
+      "size": 3669,
+      "modifiedAt": "2026-06-27T15:10:32.795Z"
     },
     {
       "path": "packages/provider-execution/service.ts",
       "extension": ".ts",
-      "size": 6825,
-      "modifiedAt": "2026-06-26T21:57:49.794Z"
+      "size": 6843,
+      "modifiedAt": "2026-06-27T15:10:32.795Z"
     },
     {
       "path": "packages/provider-execution/stream.ts",
       "extension": ".ts",
-      "size": 4950,
-      "modifiedAt": "2026-06-26T21:43:51.533Z"
+      "size": 4956,
+      "modifiedAt": "2026-06-27T15:10:32.796Z"
     },
     {
       "path": "packages/provider-execution/timeout.ts",
       "extension": ".ts",
-      "size": 4740,
-      "modifiedAt": "2026-06-26T21:44:14.909Z"
+      "size": 4746,
+      "modifiedAt": "2026-06-27T15:10:32.796Z"
     },
     {
       "path": "packages/provider-execution/types.ts",
@@ -1629,236 +2709,236 @@
     {
       "path": "packages/provider-runtime/health.ts",
       "extension": ".ts",
-      "size": 3333,
-      "modifiedAt": "2026-06-26T20:58:26.027Z"
+      "size": 3339,
+      "modifiedAt": "2026-06-27T15:10:32.796Z"
     },
     {
       "path": "packages/provider-runtime/index.ts",
       "extension": ".ts",
-      "size": 827,
-      "modifiedAt": "2026-06-26T21:00:36.480Z"
+      "size": 860,
+      "modifiedAt": "2026-06-27T15:10:32.796Z"
     },
     {
       "path": "packages/provider-runtime/metrics.ts",
       "extension": ".ts",
-      "size": 4283,
-      "modifiedAt": "2026-06-26T20:59:23.376Z"
+      "size": 4286,
+      "modifiedAt": "2026-06-27T15:10:32.796Z"
     },
     {
       "path": "packages/provider-runtime/middleware.ts",
       "extension": ".ts",
-      "size": 4219,
-      "modifiedAt": "2026-06-26T20:59:41.886Z"
+      "size": 4228,
+      "modifiedAt": "2026-06-27T15:10:32.797Z"
     },
     {
       "path": "packages/provider-runtime/negotiation.ts",
       "extension": ".ts",
-      "size": 5452,
-      "modifiedAt": "2026-06-26T20:58:06.576Z"
+      "size": 5594,
+      "modifiedAt": "2026-06-27T15:10:32.797Z"
     },
     {
       "path": "packages/provider-runtime/provider.ts",
       "extension": ".ts",
-      "size": 4178,
-      "modifiedAt": "2026-06-26T20:57:19.016Z"
+      "size": 4187,
+      "modifiedAt": "2026-06-27T15:10:32.797Z"
     },
     {
       "path": "packages/provider-runtime/registry.ts",
       "extension": ".ts",
-      "size": 4182,
-      "modifiedAt": "2026-06-26T20:57:41.630Z"
+      "size": 4197,
+      "modifiedAt": "2026-06-27T15:10:32.797Z"
     },
     {
       "path": "packages/provider-runtime/service.ts",
       "extension": ".ts",
-      "size": 12428,
-      "modifiedAt": "2026-06-26T21:00:26.660Z"
+      "size": 15870,
+      "modifiedAt": "2026-06-27T15:10:32.798Z"
     },
     {
       "path": "packages/provider-runtime/session.ts",
       "extension": ".ts",
-      "size": 6372,
-      "modifiedAt": "2026-06-26T20:58:50.604Z"
+      "size": 6378,
+      "modifiedAt": "2026-06-27T15:10:32.798Z"
     },
     {
       "path": "packages/provider-runtime/stream.ts",
       "extension": ".ts",
-      "size": 2453,
-      "modifiedAt": "2026-06-26T20:59:04.532Z"
+      "size": 2459,
+      "modifiedAt": "2026-06-27T15:10:32.798Z"
     },
     {
       "path": "packages/provider-runtime/types.ts",
       "extension": ".ts",
-      "size": 6625,
-      "modifiedAt": "2026-06-26T20:56:43.586Z"
+      "size": 6628,
+      "modifiedAt": "2026-06-27T15:10:32.798Z"
     },
     {
       "path": "packages/providers/aider/index.ts",
       "extension": ".ts",
-      "size": 622,
-      "modifiedAt": "2026-06-26T22:32:01.409Z"
+      "size": 631,
+      "modifiedAt": "2026-06-27T15:10:32.798Z"
     },
     {
       "path": "packages/providers/aider/prompt-builder.ts",
       "extension": ".ts",
-      "size": 228,
-      "modifiedAt": "2026-06-26T22:31:46.638Z"
+      "size": 234,
+      "modifiedAt": "2026-06-27T15:10:32.798Z"
     },
     {
       "path": "packages/providers/aider/provider.ts",
       "extension": ".ts",
-      "size": 5240,
-      "modifiedAt": "2026-06-26T22:31:56.878Z"
+      "size": 5264,
+      "modifiedAt": "2026-06-27T15:10:32.799Z"
     },
     {
       "path": "packages/providers/aider/response-parser.ts",
       "extension": ".ts",
-      "size": 287,
-      "modifiedAt": "2026-06-26T22:31:51.416Z"
+      "size": 293,
+      "modifiedAt": "2026-06-27T15:10:32.799Z"
     },
     {
       "path": "packages/providers/claude-code/index.ts",
       "extension": ".ts",
-      "size": 628,
-      "modifiedAt": "2026-06-26T22:18:10.782Z"
+      "size": 637,
+      "modifiedAt": "2026-06-27T15:10:32.799Z"
     },
     {
       "path": "packages/providers/claude-code/prompt-builder.ts",
       "extension": ".ts",
-      "size": 2620,
-      "modifiedAt": "2026-06-26T22:17:54.951Z"
+      "size": 2623,
+      "modifiedAt": "2026-06-27T15:10:32.799Z"
     },
     {
       "path": "packages/providers/claude-code/provider.ts",
       "extension": ".ts",
-      "size": 14185,
-      "modifiedAt": "2026-06-26T22:21:00.098Z"
+      "size": 14212,
+      "modifiedAt": "2026-06-27T15:10:32.799Z"
     },
     {
       "path": "packages/providers/claude-code/response-parser.ts",
       "extension": ".ts",
-      "size": 3126,
-      "modifiedAt": "2026-06-26T22:17:59.252Z"
+      "size": 3129,
+      "modifiedAt": "2026-06-27T15:10:32.799Z"
     },
     {
       "path": "packages/providers/codex/index.ts",
       "extension": ".ts",
-      "size": 622,
-      "modifiedAt": "2026-06-26T22:30:50.924Z"
+      "size": 631,
+      "modifiedAt": "2026-06-27T15:10:32.799Z"
     },
     {
       "path": "packages/providers/codex/prompt-builder.ts",
       "extension": ".ts",
-      "size": 228,
-      "modifiedAt": "2026-06-26T22:30:35.083Z"
+      "size": 234,
+      "modifiedAt": "2026-06-27T15:10:32.801Z"
     },
     {
       "path": "packages/providers/codex/provider.ts",
       "extension": ".ts",
-      "size": 6097,
-      "modifiedAt": "2026-06-26T22:30:46.266Z"
+      "size": 6121,
+      "modifiedAt": "2026-06-27T15:10:32.802Z"
     },
     {
       "path": "packages/providers/codex/response-parser.ts",
       "extension": ".ts",
-      "size": 287,
-      "modifiedAt": "2026-06-26T22:30:39.823Z"
+      "size": 293,
+      "modifiedAt": "2026-06-27T15:10:32.802Z"
     },
     {
       "path": "packages/providers/gemini-cli/index.ts",
       "extension": ".ts",
-      "size": 627,
-      "modifiedAt": "2026-06-26T22:31:15.913Z"
+      "size": 636,
+      "modifiedAt": "2026-06-27T15:10:32.803Z"
     },
     {
       "path": "packages/providers/gemini-cli/prompt-builder.ts",
       "extension": ".ts",
-      "size": 233,
-      "modifiedAt": "2026-06-26T22:30:57.700Z"
+      "size": 239,
+      "modifiedAt": "2026-06-27T15:10:32.803Z"
     },
     {
       "path": "packages/providers/gemini-cli/provider.ts",
       "extension": ".ts",
-      "size": 6356,
-      "modifiedAt": "2026-06-26T22:31:09.931Z"
+      "size": 6380,
+      "modifiedAt": "2026-06-27T15:10:32.803Z"
     },
     {
       "path": "packages/providers/gemini-cli/response-parser.ts",
       "extension": ".ts",
-      "size": 287,
-      "modifiedAt": "2026-06-26T22:31:03.229Z"
+      "size": 293,
+      "modifiedAt": "2026-06-27T15:10:32.803Z"
     },
     {
       "path": "packages/providers/mock/index.ts",
       "extension": ".ts",
-      "size": 5701,
-      "modifiedAt": "2026-06-26T21:01:18.596Z"
+      "size": 5710,
+      "modifiedAt": "2026-06-27T15:10:32.803Z"
     },
     {
       "path": "packages/providers/ollama/index.ts",
       "extension": ".ts",
-      "size": 623,
-      "modifiedAt": "2026-06-26T22:31:40.344Z"
+      "size": 632,
+      "modifiedAt": "2026-06-27T15:10:32.803Z"
     },
     {
       "path": "packages/providers/ollama/prompt-builder.ts",
       "extension": ".ts",
-      "size": 229,
-      "modifiedAt": "2026-06-26T22:31:23.414Z"
+      "size": 235,
+      "modifiedAt": "2026-06-27T15:10:32.803Z"
     },
     {
       "path": "packages/providers/ollama/provider.ts",
       "extension": ".ts",
-      "size": 6053,
-      "modifiedAt": "2026-06-26T22:31:35.779Z"
+      "size": 6077,
+      "modifiedAt": "2026-06-27T15:10:32.803Z"
     },
     {
       "path": "packages/providers/ollama/response-parser.ts",
       "extension": ".ts",
-      "size": 287,
-      "modifiedAt": "2026-06-26T22:31:28.050Z"
+      "size": 293,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/providers/opencode/index.ts",
       "extension": ".ts",
-      "size": 625,
-      "modifiedAt": "2026-06-26T22:32:53.510Z"
+      "size": 634,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/providers/opencode/prompt-builder.ts",
       "extension": ".ts",
-      "size": 231,
-      "modifiedAt": "2026-06-26T22:32:40.389Z"
+      "size": 237,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/providers/opencode/provider.ts",
       "extension": ".ts",
-      "size": 6013,
-      "modifiedAt": "2026-06-26T22:32:49.992Z"
+      "size": 6037,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/providers/opencode/response-parser.ts",
       "extension": ".ts",
-      "size": 287,
-      "modifiedAt": "2026-06-26T22:32:44.172Z"
+      "size": 293,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/providers/shared-executor.ts",
       "extension": ".ts",
-      "size": 6805,
-      "modifiedAt": "2026-06-26T22:30:29.303Z"
+      "size": 6826,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/providers/shared-parser.ts",
       "extension": ".ts",
-      "size": 3327,
-      "modifiedAt": "2026-06-26T22:30:18.635Z"
+      "size": 3330,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/providers/shared-prompt.ts",
       "extension": ".ts",
-      "size": 2675,
-      "modifiedAt": "2026-06-26T22:30:13.548Z"
+      "size": 2678,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/providers/shared-resolver.ts",
@@ -1875,14 +2955,14 @@
     {
       "path": "packages/query-analyzer/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T16:32:22.940Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/query-analyzer/service.ts",
       "extension": ".ts",
-      "size": 898,
-      "modifiedAt": "2026-06-26T16:32:34.109Z"
+      "size": 901,
+      "modifiedAt": "2026-06-27T15:10:32.804Z"
     },
     {
       "path": "packages/query-analyzer/types.ts",
@@ -1899,20 +2979,20 @@
     {
       "path": "packages/query-engine/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T19:34:02.332Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.805Z"
     },
     {
       "path": "packages/query-engine/service.ts",
       "extension": ".ts",
-      "size": 12570,
-      "modifiedAt": "2026-06-26T21:05:17.252Z"
+      "size": 19291,
+      "modifiedAt": "2026-06-27T15:10:32.805Z"
     },
     {
       "path": "packages/query-engine/types.ts",
       "extension": ".ts",
-      "size": 1543,
-      "modifiedAt": "2026-06-26T21:04:55.746Z"
+      "size": 2441,
+      "modifiedAt": "2026-06-27T15:10:32.805Z"
     },
     {
       "path": "packages/relationship-analyzer/errors.ts",
@@ -1923,14 +3003,14 @@
     {
       "path": "packages/relationship-analyzer/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T19:20:00.178Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.805Z"
     },
     {
       "path": "packages/relationship-analyzer/service.ts",
       "extension": ".ts",
-      "size": 10462,
-      "modifiedAt": "2026-06-26T19:31:21.366Z"
+      "size": 10486,
+      "modifiedAt": "2026-06-27T15:10:32.806Z"
     },
     {
       "path": "packages/relationship-analyzer/types.ts",
@@ -1947,14 +3027,14 @@
     {
       "path": "packages/repository-evolution/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T19:51:14.420Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.806Z"
     },
     {
       "path": "packages/repository-evolution/service.ts",
       "extension": ".ts",
-      "size": 12729,
-      "modifiedAt": "2026-06-26T19:51:09.824Z"
+      "size": 12744,
+      "modifiedAt": "2026-06-27T15:10:32.806Z"
     },
     {
       "path": "packages/repository-evolution/types.ts",
@@ -1971,8 +3051,8 @@
     {
       "path": "packages/retriever/index.ts",
       "extension": ".ts",
-      "size": 104,
-      "modifiedAt": "2026-06-26T17:34:03.897Z"
+      "size": 116,
+      "modifiedAt": "2026-06-27T15:10:32.806Z"
     },
     {
       "path": "packages/retriever/scorer.ts",
@@ -1983,8 +3063,8 @@
     {
       "path": "packages/retriever/service.ts",
       "extension": ".ts",
-      "size": 2686,
-      "modifiedAt": "2026-06-26T17:34:26.754Z"
+      "size": 2719,
+      "modifiedAt": "2026-06-27T15:10:32.806Z"
     },
     {
       "path": "packages/retriever/types.ts",
@@ -2001,14 +3081,14 @@
     {
       "path": "packages/runtime/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T15:50:42.415Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.807Z"
     },
     {
       "path": "packages/runtime/service.ts",
       "extension": ".ts",
-      "size": 2493,
-      "modifiedAt": "2026-06-26T19:28:54.493Z"
+      "size": 2622,
+      "modifiedAt": "2026-06-27T15:10:32.807Z"
     },
     {
       "path": "packages/runtime/types.ts",
@@ -2025,20 +3105,26 @@
     {
       "path": "packages/scanner/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T17:19:51.418Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.807Z"
     },
     {
       "path": "packages/scanner/service.ts",
       "extension": ".ts",
-      "size": 1770,
-      "modifiedAt": "2026-06-26T18:15:27.119Z"
+      "size": 1791,
+      "modifiedAt": "2026-06-27T15:10:32.807Z"
     },
     {
       "path": "packages/scanner/types.ts",
       "extension": ".ts",
       "size": 135,
       "modifiedAt": "2026-06-26T17:19:25.178Z"
+    },
+    {
+      "path": "packages/sdk/index.ts",
+      "extension": ".ts",
+      "size": 5248,
+      "modifiedAt": "2026-06-27T19:01:15.309Z"
     },
     {
       "path": "packages/semantic/errors.ts",
@@ -2049,8 +3135,8 @@
     {
       "path": "packages/semantic/index.ts",
       "extension": ".ts",
-      "size": 108,
-      "modifiedAt": "2026-06-26T17:28:49.797Z"
+      "size": 120,
+      "modifiedAt": "2026-06-27T15:10:32.807Z"
     },
     {
       "path": "packages/semantic/normalizer.ts",
@@ -2061,14 +3147,116 @@
     {
       "path": "packages/semantic/service.ts",
       "extension": ".ts",
-      "size": 1406,
-      "modifiedAt": "2026-06-26T17:30:20.939Z"
+      "size": 1430,
+      "modifiedAt": "2026-06-27T15:10:32.809Z"
     },
     {
       "path": "packages/semantic/types.ts",
       "extension": ".ts",
       "size": 209,
       "modifiedAt": "2026-06-26T17:24:36.115Z"
+    },
+    {
+      "path": "packages/shared-memory/agent-registry.ts",
+      "extension": ".ts",
+      "size": 2071,
+      "modifiedAt": "2026-06-27T15:10:32.809Z"
+    },
+    {
+      "path": "packages/shared-memory/artifact-store.ts",
+      "extension": ".ts",
+      "size": 989,
+      "modifiedAt": "2026-06-27T15:10:32.809Z"
+    },
+    {
+      "path": "packages/shared-memory/assignment-engine.ts",
+      "extension": ".ts",
+      "size": 2047,
+      "modifiedAt": "2026-06-27T15:10:32.809Z"
+    },
+    {
+      "path": "packages/shared-memory/blackboard.ts",
+      "extension": ".ts",
+      "size": 2461,
+      "modifiedAt": "2026-06-27T15:10:32.809Z"
+    },
+    {
+      "path": "packages/shared-memory/conflict-detector.ts",
+      "extension": ".ts",
+      "size": 2849,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/conflict-resolver.ts",
+      "extension": ".ts",
+      "size": 2049,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/consensus.ts",
+      "extension": ".ts",
+      "size": 2322,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/coordination.ts",
+      "extension": ".ts",
+      "size": 2425,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/diagnostics.ts",
+      "extension": ".ts",
+      "size": 1374,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/errors.ts",
+      "extension": ".ts",
+      "size": 1157,
+      "modifiedAt": "2026-06-27T13:01:04.986Z"
+    },
+    {
+      "path": "packages/shared-memory/index.ts",
+      "extension": ".ts",
+      "size": 821,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/memory.ts",
+      "extension": ".ts",
+      "size": 4513,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/metrics.ts",
+      "extension": ".ts",
+      "size": 986,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/service.ts",
+      "extension": ".ts",
+      "size": 9935,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/storage.ts",
+      "extension": ".ts",
+      "size": 3224,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/timeline.ts",
+      "extension": ".ts",
+      "size": 1619,
+      "modifiedAt": "2026-06-27T15:10:32.810Z"
+    },
+    {
+      "path": "packages/shared-memory/types.ts",
+      "extension": ".ts",
+      "size": 6003,
+      "modifiedAt": "2026-06-27T15:10:32.811Z"
     },
     {
       "path": "packages/symbols/errors.ts",
@@ -2079,14 +3267,14 @@
     {
       "path": "packages/symbols/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T16:01:06.749Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.811Z"
     },
     {
       "path": "packages/symbols/service.ts",
       "extension": ".ts",
-      "size": 5525,
-      "modifiedAt": "2026-06-26T19:31:07.775Z"
+      "size": 5546,
+      "modifiedAt": "2026-06-27T15:10:32.811Z"
     },
     {
       "path": "packages/symbols/types.ts",
@@ -2103,14 +3291,14 @@
     {
       "path": "packages/synchronizer/index.ts",
       "extension": ".ts",
-      "size": 78,
-      "modifiedAt": "2026-06-26T19:31:58.945Z"
+      "size": 87,
+      "modifiedAt": "2026-06-27T15:10:32.811Z"
     },
     {
       "path": "packages/synchronizer/service.ts",
       "extension": ".ts",
-      "size": 11360,
-      "modifiedAt": "2026-06-26T19:32:10.544Z"
+      "size": 11456,
+      "modifiedAt": "2026-06-27T15:10:32.811Z"
     },
     {
       "path": "packages/synchronizer/types.ts",
@@ -2121,182 +3309,278 @@
     {
       "path": "packages/test-agent-runtime-refinement.ts",
       "extension": ".ts",
-      "size": 21067,
-      "modifiedAt": "2026-06-26T20:20:29.610Z"
+      "size": 21085,
+      "modifiedAt": "2026-06-27T15:10:32.812Z"
     },
     {
       "path": "packages/test-agent-runtime.ts",
       "extension": ".ts",
-      "size": 13174,
-      "modifiedAt": "2026-06-26T20:14:47.730Z"
+      "size": 13192,
+      "modifiedAt": "2026-06-27T15:10:32.812Z"
+    },
+    {
+      "path": "packages/test-ai-gateway.ts",
+      "extension": ".ts",
+      "size": 17197,
+      "modifiedAt": "2026-06-27T19:48:47.837Z"
     },
     {
       "path": "packages/test-architecture-memory.ts",
       "extension": ".ts",
-      "size": 8390,
-      "modifiedAt": "2026-06-26T19:40:57.257Z"
+      "size": 8417,
+      "modifiedAt": "2026-06-27T15:10:32.812Z"
     },
     {
       "path": "packages/test-ast.ts",
       "extension": ".ts",
-      "size": 827,
-      "modifiedAt": "2026-06-26T19:00:23.189Z"
+      "size": 836,
+      "modifiedAt": "2026-06-27T15:10:32.812Z"
     },
     {
       "path": "packages/test-autonomous-runtime.ts",
       "extension": ".ts",
-      "size": 24251,
-      "modifiedAt": "2026-06-26T22:42:09.696Z"
+      "size": 24299,
+      "modifiedAt": "2026-06-27T15:10:32.812Z"
+    },
+    {
+      "path": "packages/test-autonomous-workflow.ts",
+      "extension": ".ts",
+      "size": 15070,
+      "modifiedAt": "2026-06-27T15:10:32.813Z"
     },
     {
       "path": "packages/test-brain.ts",
       "extension": ".ts",
-      "size": 420,
-      "modifiedAt": "2026-06-26T16:29:59.233Z"
+      "size": 429,
+      "modifiedAt": "2026-06-27T15:10:32.813Z"
     },
     {
       "path": "packages/test-budget.ts",
       "extension": ".ts",
-      "size": 1168,
-      "modifiedAt": "2026-06-26T18:01:13.795Z"
+      "size": 1195,
+      "modifiedAt": "2026-06-27T15:10:32.813Z"
     },
     {
       "path": "packages/test-claude-provider.ts",
       "extension": ".ts",
-      "size": 22754,
-      "modifiedAt": "2026-06-26T22:20:28.846Z"
+      "size": 22790,
+      "modifiedAt": "2026-06-27T15:10:32.813Z"
+    },
+    {
+      "path": "packages/test-cli.ts",
+      "extension": ".ts",
+      "size": 14855,
+      "modifiedAt": "2026-06-27T14:49:09.756Z"
     },
     {
       "path": "packages/test-context-assembler.ts",
       "extension": ".ts",
-      "size": 4208,
-      "modifiedAt": "2026-06-26T19:24:25.263Z"
+      "size": 4226,
+      "modifiedAt": "2026-06-27T15:10:32.814Z"
+    },
+    {
+      "path": "packages/test-context-compiler.ts",
+      "extension": ".ts",
+      "size": 30182,
+      "modifiedAt": "2026-06-27T15:10:32.814Z"
+    },
+    {
+      "path": "packages/test-context-retrieval.ts",
+      "extension": ".ts",
+      "size": 31401,
+      "modifiedAt": "2026-06-27T15:10:32.814Z"
+    },
+    {
+      "path": "packages/test-context-sync.ts",
+      "extension": ".ts",
+      "size": 29514,
+      "modifiedAt": "2026-06-27T15:10:32.814Z"
     },
     {
       "path": "packages/test-context.ts",
       "extension": ".ts",
-      "size": 515,
-      "modifiedAt": "2026-06-26T16:20:15.455Z"
+      "size": 524,
+      "modifiedAt": "2026-06-27T15:10:32.815Z"
     },
     {
       "path": "packages/test-engineering-planner.ts",
       "extension": ".ts",
-      "size": 9304,
-      "modifiedAt": "2026-06-26T20:01:22.579Z"
+      "size": 9349,
+      "modifiedAt": "2026-06-27T15:10:32.815Z"
     },
     {
       "path": "packages/test-execution-graph.ts",
       "extension": ".ts",
-      "size": 2692,
-      "modifiedAt": "2026-06-26T21:24:23.687Z"
+      "size": 2710,
+      "modifiedAt": "2026-06-27T15:10:32.815Z"
     },
     {
       "path": "packages/test-import-resolver.ts",
       "extension": ".ts",
-      "size": 386,
-      "modifiedAt": "2026-06-26T18:48:31.143Z"
+      "size": 395,
+      "modifiedAt": "2026-06-27T15:10:32.815Z"
+    },
+    {
+      "path": "packages/test-installer.ts",
+      "extension": ".ts",
+      "size": 28700,
+      "modifiedAt": "2026-06-27T19:06:12.831Z"
     },
     {
       "path": "packages/test-knowledge-fusion.ts",
       "extension": ".ts",
-      "size": 6629,
-      "modifiedAt": "2026-06-26T19:52:59.895Z"
+      "size": 6662,
+      "modifiedAt": "2026-06-27T15:10:32.815Z"
+    },
+    {
+      "path": "packages/test-learning-engine.ts",
+      "extension": ".ts",
+      "size": 25301,
+      "modifiedAt": "2026-06-27T15:10:32.815Z"
+    },
+    {
+      "path": "packages/test-litmus-plugin.ts",
+      "extension": ".ts",
+      "size": 4956,
+      "modifiedAt": "2026-06-27T18:17:04.624Z"
     },
     {
       "path": "packages/test-native-providers.ts",
       "extension": ".ts",
-      "size": 16959,
-      "modifiedAt": "2026-06-26T22:33:39.469Z"
+      "size": 16986,
+      "modifiedAt": "2026-06-27T15:10:32.816Z"
     },
     {
       "path": "packages/test-normalizer.ts",
       "extension": ".ts",
-      "size": 408,
-      "modifiedAt": "2026-06-26T17:30:35.087Z"
+      "size": 417,
+      "modifiedAt": "2026-06-27T15:10:32.816Z"
     },
     {
       "path": "packages/test-orchestrator.ts",
       "extension": ".ts",
-      "size": 7914,
-      "modifiedAt": "2026-06-26T20:07:22.539Z"
+      "size": 7959,
+      "modifiedAt": "2026-06-27T15:10:32.816Z"
     },
     {
       "path": "packages/test-planner.ts",
       "extension": ".ts",
-      "size": 850,
-      "modifiedAt": "2026-06-26T17:54:13.557Z"
+      "size": 859,
+      "modifiedAt": "2026-06-27T15:10:32.816Z"
+    },
+    {
+      "path": "packages/test-production-validation.ts",
+      "extension": ".ts",
+      "size": 24131,
+      "modifiedAt": "2026-06-27T19:09:37.562Z"
+    },
+    {
+      "path": "packages/test-prompt-intelligence.ts",
+      "extension": ".ts",
+      "size": 26228,
+      "modifiedAt": "2026-06-27T15:10:32.816Z"
+    },
+    {
+      "path": "packages/test-provider-bridge.ts",
+      "extension": ".ts",
+      "size": 8522,
+      "modifiedAt": "2026-06-27T21:01:00.092Z"
     },
     {
       "path": "packages/test-provider-execution.ts",
       "extension": ".ts",
-      "size": 31454,
-      "modifiedAt": "2026-06-26T21:58:49.487Z"
+      "size": 31502,
+      "modifiedAt": "2026-06-27T15:10:32.817Z"
+    },
+    {
+      "path": "packages/test-provider-resolution.ts",
+      "extension": ".ts",
+      "size": 12513,
+      "modifiedAt": "2026-06-27T19:50:48.883Z"
     },
     {
       "path": "packages/test-provider-runtime.ts",
       "extension": ".ts",
-      "size": 44350,
-      "modifiedAt": "2026-06-26T22:35:03.741Z"
+      "size": 44458,
+      "modifiedAt": "2026-06-27T15:10:32.817Z"
     },
     {
       "path": "packages/test-query-engine.ts",
       "extension": ".ts",
-      "size": 4736,
-      "modifiedAt": "2026-06-26T19:34:20.722Z"
+      "size": 4754,
+      "modifiedAt": "2026-06-27T15:10:32.817Z"
     },
     {
       "path": "packages/test-query.ts",
       "extension": ".ts",
-      "size": 216,
-      "modifiedAt": "2026-06-26T16:33:28.278Z"
+      "size": 225,
+      "modifiedAt": "2026-06-27T15:10:32.817Z"
     },
     {
       "path": "packages/test-relationship-analyzer.ts",
       "extension": ".ts",
-      "size": 1894,
-      "modifiedAt": "2026-06-26T19:20:34.819Z"
+      "size": 1912,
+      "modifiedAt": "2026-06-27T15:10:32.817Z"
     },
     {
       "path": "packages/test-repository-evolution.ts",
       "extension": ".ts",
-      "size": 5848,
-      "modifiedAt": "2026-06-26T19:52:22.260Z"
+      "size": 5875,
+      "modifiedAt": "2026-06-27T15:10:32.818Z"
     },
     {
       "path": "packages/test-retriever.ts",
       "extension": ".ts",
-      "size": 796,
-      "modifiedAt": "2026-06-26T17:34:48.948Z"
+      "size": 805,
+      "modifiedAt": "2026-06-27T15:10:32.818Z"
     },
     {
       "path": "packages/test-scanner.ts",
       "extension": ".ts",
-      "size": 351,
-      "modifiedAt": "2026-06-26T17:20:19.141Z"
+      "size": 360,
+      "modifiedAt": "2026-06-27T15:10:32.818Z"
     },
     {
       "path": "packages/test-semantic.ts",
       "extension": ".ts",
-      "size": 352,
-      "modifiedAt": "2026-06-26T17:26:23.476Z"
+      "size": 361,
+      "modifiedAt": "2026-06-27T15:10:32.818Z"
+    },
+    {
+      "path": "packages/test-shared-memory.ts",
+      "extension": ".ts",
+      "size": 29429,
+      "modifiedAt": "2026-06-27T15:10:32.818Z"
     },
     {
       "path": "packages/test-symbols.ts",
       "extension": ".ts",
-      "size": 346,
-      "modifiedAt": "2026-06-26T20:08:42.105Z"
+      "size": 355,
+      "modifiedAt": "2026-06-27T15:10:32.818Z"
     },
     {
       "path": "packages/test-synchronizer.ts",
       "extension": ".ts",
-      "size": 4374,
-      "modifiedAt": "2026-06-26T19:32:15.598Z"
+      "size": 4392,
+      "modifiedAt": "2026-06-27T15:10:32.818Z"
+    },
+    {
+      "path": "packages/test-terminal-parity.ts",
+      "extension": ".ts",
+      "size": 8545,
+      "modifiedAt": "2026-06-27T20:15:23.642Z"
     },
     {
       "path": "packages/test-workspace-engine.ts",
       "extension": ".ts",
-      "size": 34836,
-      "modifiedAt": "2026-06-26T20:50:54.748Z"
+      "size": 34854,
+      "modifiedAt": "2026-06-27T15:10:32.819Z"
+    },
+    {
+      "path": "packages/test-wrapper-compatibility.ts",
+      "extension": ".ts",
+      "size": 11284,
+      "modifiedAt": "2026-06-27T19:52:54.623Z"
     },
     {
       "path": "packages/workspace/errors.ts",
@@ -2307,14 +3591,14 @@
     {
       "path": "packages/workspace/index.ts",
       "extension": ".ts",
-      "size": 291,
-      "modifiedAt": "2026-06-26T20:50:54.748Z"
+      "size": 318,
+      "modifiedAt": "2026-06-27T15:10:32.819Z"
     },
     {
       "path": "packages/workspace/service.ts",
       "extension": ".ts",
-      "size": 2729,
-      "modifiedAt": "2026-06-26T17:18:16.003Z"
+      "size": 2750,
+      "modifiedAt": "2026-06-27T15:10:32.819Z"
     },
     {
       "path": "packages/workspace/types.ts",
@@ -2325,8 +3609,8 @@
     {
       "path": "packages/workspace/workspace-engine.ts",
       "extension": ".ts",
-      "size": 22266,
-      "modifiedAt": "2026-06-26T20:50:54.748Z"
+      "size": 24380,
+      "modifiedAt": "2026-06-27T16:14:19.903Z"
     },
     {
       "path": "packages/workspace/workspace-errors.ts",
@@ -2337,20 +3621,20 @@
     {
       "path": "packages/workspace/workspace-journal.ts",
       "extension": ".ts",
-      "size": 2858,
-      "modifiedAt": "2026-06-26T20:50:54.748Z"
+      "size": 2861,
+      "modifiedAt": "2026-06-27T15:10:32.820Z"
     },
     {
       "path": "packages/workspace/workspace-lock.ts",
       "extension": ".ts",
-      "size": 2760,
-      "modifiedAt": "2026-06-26T20:50:54.749Z"
+      "size": 2766,
+      "modifiedAt": "2026-06-27T15:10:32.820Z"
     },
     {
       "path": "packages/workspace/workspace-patch.ts",
       "extension": ".ts",
-      "size": 5480,
-      "modifiedAt": "2026-06-26T20:50:54.749Z"
+      "size": 5486,
+      "modifiedAt": "2026-06-27T15:10:32.820Z"
     },
     {
       "path": "packages/workspace/workspace-types.ts",
@@ -2363,6 +3647,12 @@
       "extension": ".json",
       "size": 785,
       "modifiedAt": "2026-06-26T14:50:51.444Z"
+    },
+    {
+      "path": "scratch/test-query.ts",
+      "extension": ".ts",
+      "size": 579,
+      "modifiedAt": "2026-06-27T13:03:59.900Z"
     },
     {
       "path": "spec/PBS-0001.md",
@@ -2385,8 +3675,8 @@
     {
       "path": "tsconfig.json",
       "extension": ".json",
-      "size": 363,
-      "modifiedAt": "2026-06-26T15:34:08.165Z"
+      "size": 359,
+      "modifiedAt": "2026-06-27T15:04:36.600Z"
     }
   ]
 }

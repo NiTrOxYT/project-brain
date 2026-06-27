@@ -9,7 +9,7 @@ import {
     SnapshotValidationResult,
     SnapshotStatistics,
     SemanticSnapshot
-} from "./types";
+} from "./types.js";
 
 export class SnapshotDiagnosticsBuilder {
     build(params: {

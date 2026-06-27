@@ -1,6 +1,6 @@
-import { WorkspaceEngine, WorkspaceChangedEvent } from "../workspace/workspace-engine";
-import { ContextSyncRequest, ContextSyncResult } from "./types";
-import { ContextSynchronizationError } from "./errors";
+import { WorkspaceEngine, WorkspaceChangedEvent } from "../workspace/workspace-engine.js";
+import { ContextSyncRequest, ContextSyncResult } from "./types.js";
+import { ContextSynchronizationError } from "./errors.js";
 
 export class WorkspaceListener {
     private active = false;

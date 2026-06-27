@@ -1,5 +1,5 @@
-import { ConflictRecord } from "./types";
-import { SharedMemoryModel } from "./memory";
+import { ConflictRecord } from "./types.js";
+import { SharedMemoryModel } from "./memory.js";
 
 export class ConflictDetector {
     constructor(private readonly model: SharedMemoryModel) {}

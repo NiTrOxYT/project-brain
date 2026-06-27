@@ -1,8 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
-import { SemanticSnapshot } from "../context-compiler/types";
-import { ContextChange, ChangedFile, ChangedSymbol } from "./types";
+import { SemanticSnapshot } from "../context-compiler/types.js";
+import { ContextChange, ChangedFile, ChangedSymbol } from "./types.js";
 
 export class ChangeDetector {
     async detect(

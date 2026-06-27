@@ -3,7 +3,7 @@
 // Merges execution graph + architecture entries + dependency graph into a
 // unified SnapshotGraph with topological ordering.
 // ──────────────────────────────────────────────────────────────────────────────
-import { SnapshotNormalizer } from "./normalizer";
+import { SnapshotNormalizer } from "./normalizer.js";
 export class GraphCompiler {
     normalizer = new SnapshotNormalizer();
     compile(context, dependencies) {

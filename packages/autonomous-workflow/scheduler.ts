@@ -1,4 +1,4 @@
-import { EngineeringPlan, ExecutionNode } from "../engineering-planner/types";
+import { EngineeringPlan, ExecutionNode } from "../engineering-planner/types.js";
 
 export interface WorkflowScheduleBatch {
     batchIndex: number;

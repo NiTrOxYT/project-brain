@@ -2,7 +2,7 @@
 // BUILD-051 — Autonomous Execution Loop — Metrics
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { LoopMetrics, ExecutionPhase } from "./types";
+import { LoopMetrics, ExecutionPhase } from "./types.js";
 
 export class ExecutionMetricsService {
     private readonly phaseStartTimes = new Map<ExecutionPhase, number>();

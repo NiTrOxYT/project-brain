@@ -4,17 +4,17 @@
 import fs from "fs/promises";
 import path from "path";
 import assert from "assert";
-import { LearningEngineService } from "./learning-engine/service";
-import { LearningStorage } from "./learning-engine/storage";
-import { LearningExtractor } from "./learning-engine/extractor";
-import { LearningClassifier } from "./learning-engine/classifier";
-import { RepairPatternsLearner } from "./learning-engine/repair-patterns";
-import { ProviderPerformanceTracker } from "./learning-engine/provider-performance";
-import { PromptLibrary } from "./learning-engine/prompt-library";
-import { LearningOptimizer } from "./learning-engine/optimizer";
-import { LearningRecommender } from "./learning-engine/recommender";
-import { KnowledgeFusionService } from "./knowledge-fusion/service";
-import { QueryEngineService } from "./query-engine/service";
+import { LearningEngineService } from "./learning-engine/service.js";
+import { LearningStorage } from "./learning-engine/storage.js";
+import { LearningExtractor } from "./learning-engine/extractor.js";
+import { LearningClassifier } from "./learning-engine/classifier.js";
+import { RepairPatternsLearner } from "./learning-engine/repair-patterns.js";
+import { ProviderPerformanceTracker } from "./learning-engine/provider-performance.js";
+import { PromptLibrary } from "./learning-engine/prompt-library.js";
+import { LearningOptimizer } from "./learning-engine/optimizer.js";
+import { LearningRecommender } from "./learning-engine/recommender.js";
+import { KnowledgeFusionService } from "./knowledge-fusion/service.js";
+import { QueryEngineService } from "./query-engine/service.js";
 const TEMP_DIR = path.resolve("temp-learning-test");
 async function setupTestDir() {
     await fs.mkdir(TEMP_DIR, { recursive: true });
@@ -398,7 +398,7 @@ async function test13_KnowledgeFusionIntegration() {
 async function test14_QueryEngineDiagnostics() {
     console.log("── 14. Query Engine Diagnostics ──────────────────────────────");
     // Mock Synchronizer to avoid git errors in temp dir
-    const { SynchronizerService } = await import("./synchronizer");
+    const { SynchronizerService } = await import("./synchronizer/index.js");
     const originalSync = SynchronizerService.prototype.synchronize;
     SynchronizerService.prototype.synchronize = async () => ({
         generatedAt: new Date().toISOString(),

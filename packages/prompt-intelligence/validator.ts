@@ -1,10 +1,10 @@
-import { PromptSection, PromptProviderProfile, PromptTokenBudget } from "./types";
+import { PromptSection, PromptProviderProfile, PromptTokenBudget } from "./types.js";
 import {
     PromptValidationError,
     PromptAssemblyError,
     PromptBudgetError,
     PromptTemplateError
-} from "./errors";
+} from "./errors.js";
 
 export class PromptValidator {
     validate(

@@ -1,6 +1,6 @@
 import path from "path";
-import { FileSystemService } from "../filesystem";
-import { normalize } from "../semantic";
+import { FileSystemService } from "../filesystem/index.js";
+import { normalize } from "../semantic/index.js";
 export class PlannerService {
     workspaceRoot;
     filesystem = new FileSystemService();

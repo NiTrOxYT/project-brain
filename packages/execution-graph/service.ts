@@ -2,15 +2,15 @@ import fs from "fs/promises";
 import path from "path";
 import ts from "typescript";
 
-import { AstService } from "../ast";
-import { FileSystemService } from "../filesystem";
+import { AstService } from "../ast/index.js";
+import { FileSystemService } from "../filesystem/index.js";
 import {
     ExecutionGraph,
     ExecutionNode,
     ExecutionEdge,
     ExecutionEdgeType
-} from "./types";
-import { ExecutionGraphError } from "./errors";
+} from "./types.js";
+import { ExecutionGraphError } from "./errors.js";
 
 interface SymbolInfo {
     qualifiedName: string;
@@ -47,7 +47,7 @@ export class ExecutionGraphService {
                 .map(file => file.path);
 
             // Import Resolution & Reachability Setup
-            const { ImportResolverService } = await import("../import-resolver");
+            const { ImportResolverService } = await import("../import-resolver/index.js");
             const resolvedImports = await new ImportResolverService(this.workspaceRoot).resolve();
 
             const importsMap = new Map<string, Set<string>>();
@@ -410,7 +410,7 @@ export class ExecutionGraphService {
                 .filter(file => file.path.endsWith(".ts") || file.path.endsWith(".tsx"))
                 .map(file => file.path);
 
-            const { ImportResolverService } = await import("../import-resolver");
+            const { ImportResolverService } = await import("../import-resolver/index.js");
             const resolvedImports = await new ImportResolverService(this.workspaceRoot).resolve();
 
             const importsMap = new Map<string, Set<string>>();

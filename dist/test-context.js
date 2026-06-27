@@ -1,5 +1,5 @@
 import process from "process";
-import { ContextLoaderService, ContextAssembler } from "./context-loader";
+import { ContextLoaderService, ContextAssembler } from "./context-loader/index.js";
 async function main() {
     const loader = new ContextLoaderService(process.cwd() + "/.brain");
     const bundle = await loader.load({

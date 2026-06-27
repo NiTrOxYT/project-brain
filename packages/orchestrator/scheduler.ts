@@ -1,6 +1,6 @@
-import { EngineeringPlan, ExecutionNode } from "../engineering-planner";
-import { ExecutionSchedule, ScheduleBatch } from "./types";
-import { OrchestratorError } from "./errors";
+import { EngineeringPlan, ExecutionNode } from "../engineering-planner/index.js";
+import { ExecutionSchedule, ScheduleBatch } from "./types.js";
+import { OrchestratorError } from "./errors.js";
 
 export class OrchestratorScheduler {
     schedule(plan: EngineeringPlan): ExecutionSchedule {

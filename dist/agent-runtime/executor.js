@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { AgentRuntimeError } from "./errors";
+import { AgentRuntimeError } from "./errors.js";
 function calculateChecksum(content) {
     return crypto.createHash("sha256").update(content).digest("hex");
 }

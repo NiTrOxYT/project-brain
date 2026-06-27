@@ -1,0 +1,65 @@
+{
+  "queryFingerprint": "f4bef01f0ef4233c0dd1ca6f8b54d1c5a5c4b47d68134c4b73b28bef75348554_bfa26658609eeb40b00881121b15cb3f303c33a685f82e56594092a7fe708f59",
+  "snapshotId": "f4bef01f0ef4233c0dd1ca6f8b54d1c5a5c4b47d68134c4b73b28bef75348554",
+  "retrievalPackage": {
+    "retrievalId": "retrieval-9845ac0469cb",
+    "snapshotId": "f4bef01f0ef4233c0dd1ca6f8b54d1c5a5c4b47d68134c4b73b28bef75348554",
+    "sections": [
+      {
+        "id": "filesystem-index",
+        "name": "Filesystem Index",
+        "kind": "filesystem-index",
+        "content": "[{\"path\":\"packages/context-retrieval/architecture-retriever.ts\",\"relativePath\":\"architecture-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/budget.ts\",\"relativePath\":\"budget.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/cache.ts\",\"relativePath\":\"cache.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/compressor.ts\",\"relativePath\":\"compressor.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/dependency-expander.ts\",\"relativePath\":\"dependency-expander.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/diagnostics.ts\",\"relativePath\":\"diagnostics.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/errors.ts\",\"relativePath\":\"errors.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/graph-traverser.ts\",\"relativePath\":\"graph-traverser.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/index.ts\",\"relativePath\":\"index.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/learning-retriever.ts\",\"relativePath\":\"learning-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/metrics.ts\",\"relativePath\":\"metrics.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/query-parser.ts\",\"relativePath\":\"query-parser.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/ranking.ts\",\"relativePath\":\"ranking.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/relationship-retriever.ts\",\"relativePath\":\"relationship-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/retrieval-planner.ts\",\"relativePath\":\"retrieval-planner.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/service.ts\",\"relativePath\":\"service.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/symbol-retriever.ts\",\"relativePath\":\"symbol-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/types.ts\",\"relativePath\":\"types.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/validator.ts\",\"relativePath\":\"validator.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0}]",
+        "priority": 10,
+        "estimatedTokens": 751,
+        "reason": "system-config"
+      },
+      {
+        "id": "knowledge-graph",
+        "name": "Knowledge Graph",
+        "kind": "knowledge-graph",
+        "content": "[]",
+        "priority": 40,
+        "estimatedTokens": 1,
+        "reason": "relationship-link"
+      },
+      {
+        "id": "dependency-graph",
+        "name": "Dependency Graph",
+        "kind": "dependency-graph",
+        "content": "[]",
+        "priority": 50,
+        "estimatedTokens": 1,
+        "reason": "relationship-link"
+      },
+      {
+        "id": "execution-graph",
+        "name": "Execution Graph",
+        "kind": "execution-graph",
+        "content": "{\"nodes\":[],\"edges\":[],\"topologicalOrder\":[]}",
+        "priority": 60,
+        "estimatedTokens": 12,
+        "reason": "graph-context"
+      },
+      {
+        "id": "repository-evolution",
+        "name": "Repository Evolution",
+        "kind": "repository-evolution",
+        "content": "[]",
+        "priority": 70,
+        "estimatedTokens": 1,
+        "reason": "evolution-history"
+      }
+    ],
+    "candidates": [],
+    "graph": {
+      "nodes": [],
+      "edges": [],
+      "topologicalOrder": []
+    },
+    "symbols": [],
+    "dependencies": [],
+    "relationships": []
+  },
+  "storedAt": "2026-06-27T21:14:08.373Z"
+}

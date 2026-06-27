@@ -1,8 +1,8 @@
 // ──────────────────────────────────────────────────────────────────────────────
 // BUILD-050C — Shared Provider Helpers — Shared Executor Pipeline
 // ──────────────────────────────────────────────────────────────────────────────
-import { ProcessCancelledError, ProcessTimeoutError, InvalidExecutableError, ProcessSpawnError, ProcessExitedError, isTransientExitCode } from "../provider-execution/errors";
-import { TransientProviderError, PermanentProviderError } from "../provider-runtime/errors";
+import { ProcessCancelledError, ProcessTimeoutError, InvalidExecutableError, ProcessSpawnError, ProcessExitedError, isTransientExitCode } from "../provider-execution/errors.js";
+import { TransientProviderError, PermanentProviderError } from "../provider-runtime/errors.js";
 export async function executeProviderTask(task, context, onEvent, onStream, config) {
     onEvent({ type: "TaskStarted", taskId: task.id, timestamp: new Date().toISOString(), payload: {} });
     const executionRequest = {

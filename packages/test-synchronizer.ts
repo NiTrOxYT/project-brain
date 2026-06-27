@@ -2,8 +2,8 @@ import process from "process";
 import path from "path";
 import fs from "fs/promises";
 
-import { RuntimeService } from "./runtime";
-import { SynchronizerService } from "./synchronizer";
+import { RuntimeService } from "./runtime/index.js";
+import { SynchronizerService } from "./synchronizer/index.js";
 
 async function main() {
 

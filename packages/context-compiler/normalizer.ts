@@ -15,7 +15,7 @@ import {
     SnapshotArchitectureEntry,
     SnapshotEvolutionEntry,
     SnapshotLearningEntry
-} from "./types";
+} from "./types.js";
 
 export class SnapshotNormalizer {
     /** Normalize a filesystem path to POSIX-style relative path. */

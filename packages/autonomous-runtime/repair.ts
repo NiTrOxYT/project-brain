@@ -2,9 +2,9 @@
 // BUILD-051 — Autonomous Execution Loop — Repair
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { ExecutionFailure, RepairAction } from "./types";
-import { RuntimeRequest, RuntimeTask } from "../agent-runtime/types";
-import { ExecutionNode } from "../engineering-planner/types";
+import { ExecutionFailure, RepairAction } from "./types.js";
+import { RuntimeRequest, RuntimeTask } from "../agent-runtime/types.js";
+import { ExecutionNode } from "../engineering-planner/types.js";
 
 export class RepairService {
     createRepairAction(

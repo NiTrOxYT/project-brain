@@ -4,13 +4,14 @@
 
 import fs from "fs";
 import path from "path";
-import { JournalEvent } from "./types";
+import { JournalEvent } from "./types.js";
+import { StoragePaths } from "../kernel/paths.js";
 
 export class ExecutionJournalService {
     private readonly journalPath: string;
 
     constructor(workspaceRoot: string, planId: string) {
-        const dir = path.join(workspaceRoot, ".brain", "runtime");
+        const dir = new StoragePaths(workspaceRoot).journalDir;
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
         }

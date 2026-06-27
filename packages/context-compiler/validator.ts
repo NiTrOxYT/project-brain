@@ -4,8 +4,8 @@
 // and token estimate consistency.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { SemanticSnapshot, SnapshotValidationResult } from "./types";
-import { SnapshotFingerprintEngine } from "./fingerprint";
+import { SemanticSnapshot, SnapshotValidationResult } from "./types.js";
+import { SnapshotFingerprintEngine } from "./fingerprint.js";
 
 export class SnapshotValidator {
     private readonly fpEngine = new SnapshotFingerprintEngine();

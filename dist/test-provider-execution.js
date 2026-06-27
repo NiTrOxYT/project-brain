@@ -5,12 +5,12 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { ProviderExecutionService } from "./provider-execution/service";
-import { ProcessRunner } from "./provider-execution/process";
-import { StreamProcessor } from "./provider-execution/stream";
-import { RetryEvaluator, DEFAULT_RETRY_POLICY, NO_RETRY_POLICY } from "./provider-execution/retry";
-import { ExecutionSandbox } from "./provider-execution/sandbox";
-import { ProcessTimeoutError, ProcessCancelledError, ProcessSpawnError, isTransientExitCode } from "./provider-execution/errors";
+import { ProviderExecutionService } from "./provider-execution/service.js";
+import { ProcessRunner } from "./provider-execution/process.js";
+import { StreamProcessor } from "./provider-execution/stream.js";
+import { RetryEvaluator, DEFAULT_RETRY_POLICY, NO_RETRY_POLICY } from "./provider-execution/retry.js";
+import { ExecutionSandbox } from "./provider-execution/sandbox.js";
+import { ProcessTimeoutError, ProcessCancelledError, ProcessSpawnError, isTransientExitCode } from "./provider-execution/errors.js";
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 let passed = 0;
 let failed = 0;
@@ -525,9 +525,9 @@ async function test29_RepeatedExecutionDeterminism() {
 async function test30_BuildRegression() {
     console.log("\n── 30. Build regression — BUILD-049 providers still work ─────");
     // Verify provider-execution does not interfere with the Provider Runtime
-    const { MockSDKProvider } = await import("./providers/mock");
-    const { ClaudeCodeProvider } = await import("./providers/claude-code");
-    const { ProviderRuntimeService } = await import("./provider-runtime/service");
+    const { MockSDKProvider } = await import("./providers/mock/index.js");
+    const { ClaudeCodeProvider } = await import("./providers/claude-code/index.js");
+    const { ProviderRuntimeService } = await import("./provider-runtime/service.js");
     const root = fs.mkdtempSync(path.join(os.tmpdir(), "brain-reg30-"));
     try {
         const prs = new ProviderRuntimeService(root);

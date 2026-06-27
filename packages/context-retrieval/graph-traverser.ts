@@ -1,6 +1,6 @@
-import { RetrievalGraph, RetrievalNode } from "./types";
-import { GraphTraversalError } from "./errors";
-import { SemanticSnapshot } from "../context-compiler/types";
+import { RetrievalGraph, RetrievalNode } from "./types.js";
+import { GraphTraversalError } from "./errors.js";
+import { SemanticSnapshot } from "../context-compiler/types.js";
 
 export class GraphTraverser {
     traverseBFS(

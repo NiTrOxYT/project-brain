@@ -1,4 +1,4 @@
-import { OrchestratorError } from "./errors";
+import { OrchestratorError } from "./errors.js";
 export class OrchestratorScheduler {
     schedule(plan) {
         const batches = [];

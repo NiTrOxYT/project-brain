@@ -2,7 +2,7 @@
 // BUILD-050B — Claude Code Provider — Prompt Builder
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { RuntimeRequest } from "../../agent-runtime/types";
+import { RuntimeRequest } from "../../agent-runtime/types.js";
 
 export function buildPrompt(request: RuntimeRequest): string {
     const { task, context } = request;

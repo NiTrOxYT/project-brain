@@ -19,6 +19,15 @@ export interface WrapperRecord {
     installerVersion: string;
     wrapperPath:      string;
     realBinaryPath:   string;
+
+    // BUILD-061E fields
+    wrapperVersion?:       string;
+    providerVersion?:      string;
+    providerBinary?:       string;
+    providerCapabilities?: string[];
+    passthroughCommands?:  string[];
+    gatewayCommands?:      string[];
+    generatedAt?:          string;
 }
 
 export interface WrapperManifest {

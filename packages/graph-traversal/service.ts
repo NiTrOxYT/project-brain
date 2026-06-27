@@ -1,6 +1,6 @@
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
+import { FileSystemService } from "../filesystem/index.js";
 
 export class GraphTraversalService {
 

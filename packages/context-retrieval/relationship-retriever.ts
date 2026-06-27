@@ -1,4 +1,4 @@
-import { SemanticSnapshot, SnapshotRelationship } from "../context-compiler/types";
+import { SemanticSnapshot, SnapshotRelationship } from "../context-compiler/types.js";
 
 export class RelationshipRetriever {
     retrieve(snapshot: SemanticSnapshot, targetFiles: string[]): SnapshotRelationship[] {

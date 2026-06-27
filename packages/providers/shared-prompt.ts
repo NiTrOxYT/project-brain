@@ -2,7 +2,7 @@
 // BUILD-050C — Shared Provider Helpers — Shared Prompt Builder
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { RuntimeRequest } from "../agent-runtime/types";
+import { RuntimeRequest } from "../agent-runtime/types.js";
 
 export function buildSharedPrompt(request: RuntimeRequest, providerName: string): string {
     const { task, context } = request;

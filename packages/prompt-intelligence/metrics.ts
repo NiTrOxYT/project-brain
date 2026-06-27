@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { PromptStatistics } from "./types";
+import { PromptStatistics } from "./types.js";
 
 export class PromptMetricsCollector {
     private readonly metricsPath: string;

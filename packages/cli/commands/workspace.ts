@@ -11,6 +11,7 @@ import { renderTable, renderKeyValue } from "../utils/table.js";
 import { requireBrainInitialized } from "../utils/paths.js";
 import { ValidationError } from "../utils/errors.js";
 import { bold } from "../utils/colors.js";
+import { StoragePaths } from "../../kernel/paths.js";
 
 type WorkspaceSubcmd = "status" | "transactions" | "locks" | "journal" | "rollback";
 
@@ -20,7 +21,7 @@ export async function runWorkspaceCmd(
     cmdOpts: Record<string, unknown>
 ): Promise<void> {
     requireBrainInitialized(opts.workspace);
-
+    const paths = new StoragePaths(opts.workspace);
     const { WorkspaceEngine } = await import("../../workspace/workspace-engine.js");
     const engine = new WorkspaceEngine({ workspaceRoot: opts.workspace });
 
@@ -91,7 +92,7 @@ export async function runWorkspaceCmd(
 
             case "journal": {
                 const { WorkspaceJournal } = await import("../../workspace/workspace-journal.js");
-                const journal = new WorkspaceJournal(opts.workspace);
+                const journal = new WorkspaceJournal(paths.journalDir);
                 const entries = journal.readAll().slice(-50);
                 spinner.stop();
                 if (opts.json) {

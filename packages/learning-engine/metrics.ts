@@ -2,7 +2,7 @@
 // BUILD-052 — Learning Engine — Metrics Tracker
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { LearningExperience, LearningStatistics, OptimizationRule } from "./types";
+import { LearningExperience, LearningStatistics, OptimizationRule } from "./types.js";
 
 export class LearningMetricsTracker {
     compute(

@@ -8,7 +8,7 @@ import {
     RepairPattern,
     OptimizationRule,
     EvidenceReference
-} from "./types";
+} from "./types.js";
 
 export class LearningOptimizer {
     generateRules(

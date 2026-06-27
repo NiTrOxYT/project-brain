@@ -14,6 +14,7 @@ import { renderTable, renderKeyValue } from "../utils/table.js";
 import { requireBrainInitialized, brainDir } from "../utils/paths.js";
 import { ValidationError } from "../utils/errors.js";
 import { bold, yellow, gray } from "../utils/colors.js";
+import { StoragePaths } from "../../kernel/paths.js";
 
 export interface WorkflowRunOptions    { issue?: string; }
 export interface WorkflowResumeOptions { workflowId?: string; }
@@ -140,7 +141,7 @@ async function workflowStatus(opts: GlobalOptions, cmdOpts: WorkflowStatusOption
 }
 
 async function workflowHistory(opts: GlobalOptions): Promise<void> {
-    const dir = path.join(brainDir(opts.workspace), "journal");
+    const dir = new StoragePaths(opts.workspace).journalDir;
     const entries: Array<{ id: string; status: string; startedAt: string }> = [];
 
     if (fs.existsSync(dir)) {

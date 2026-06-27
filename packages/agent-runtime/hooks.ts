@@ -1,5 +1,5 @@
-import { AgentProvider } from "./provider";
-import { RuntimeTask, RuntimeResponse } from "./types";
+import { AgentProvider } from "./provider.js";
+import { RuntimeTask, RuntimeResponse } from "./types.js";
 
 export interface RuntimeHooks {
     onProviderRegistered?(provider: AgentProvider): void;

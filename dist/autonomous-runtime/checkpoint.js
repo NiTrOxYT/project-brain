@@ -3,12 +3,13 @@
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs";
 import path from "path";
-import { CheckpointError } from "./errors";
+import { CheckpointError } from "./errors.js";
+import { StoragePaths } from "../kernel/paths.js";
 export class ExecutionCheckpointService {
     checkpointDir;
     checkpointPath;
     constructor(workspaceRoot, planId) {
-        this.checkpointDir = path.join(workspaceRoot, ".brain", "runtime", "checkpoints");
+        this.checkpointDir = new StoragePaths(workspaceRoot).checkpointsDir;
         if (!fs.existsSync(this.checkpointDir)) {
             fs.mkdirSync(this.checkpointDir, { recursive: true });
         }

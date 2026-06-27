@@ -3,9 +3,9 @@
 // Lifecycle hooks for provider execution.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { RuntimeRequest, RuntimeResponse } from "../agent-runtime/types";
-import { ProviderMetrics, NegotiationResult } from "./types";
-import { SDKProvider } from "./provider";
+import { RuntimeRequest, RuntimeResponse } from "../agent-runtime/types.js";
+import { ProviderMetrics, NegotiationResult } from "./types.js";
+import { SDKProvider } from "./provider.js";
 
 export interface ProviderMiddleware {
     /** Optional display name for diagnostics. */

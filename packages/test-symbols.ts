@@ -1,6 +1,6 @@
 import process from "process";
 
-import { SymbolsService } from "./symbols";
+import { SymbolsService } from "./symbols/index.js";
 
 async function main() {
 

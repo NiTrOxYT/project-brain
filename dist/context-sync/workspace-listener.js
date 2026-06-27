@@ -1,4 +1,4 @@
-import { WorkspaceEngine } from "../workspace/workspace-engine";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
 export class WorkspaceListener {
     active = false;
     queue = [];

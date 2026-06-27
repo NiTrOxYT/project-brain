@@ -1,8 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
-import { PromptPackage, PromptCacheEntry } from "./types";
-import { PromptCacheError } from "./errors";
+import { PromptPackage, PromptCacheEntry } from "./types.js";
+import { PromptCacheError } from "./errors.js";
 
 export class PromptCache {
     private readonly cacheDir: string;

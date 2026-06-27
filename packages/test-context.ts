@@ -3,7 +3,7 @@ import process from "process";
 import {
     ContextLoaderService,
     ContextAssembler
-} from "./context-loader";
+} from "./context-loader/index.js";
 
 async function main() {
 

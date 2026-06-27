@@ -2,7 +2,7 @@
 // BUILD-049 — Mock Provider (fully executable, deterministic)
 // ──────────────────────────────────────────────────────────────────────────────
 import crypto from "crypto";
-import { BaseSDKProvider } from "../../provider-runtime/provider";
+import { BaseSDKProvider } from "../../provider-runtime/provider.js";
 const ALL_CAPS = [
     "analyze", "create", "modify", "refactor", "delete",
     "validate", "document", "test", "cleanup"

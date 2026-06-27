@@ -4,7 +4,7 @@ import {
 
     RetrieverService
 
-} from "./retriever";
+} from "./retriever/index.js";
 
 async function main() {
 

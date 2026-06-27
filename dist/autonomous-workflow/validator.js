@@ -1,5 +1,5 @@
-import { ValidationService } from "../autonomous-runtime/validator";
-import { ValidationError } from "./errors";
+import { ValidationService } from "../autonomous-runtime/validator.js";
+import { ValidationError } from "./errors.js";
 export class WorkflowValidator {
     validationService;
     constructor() {

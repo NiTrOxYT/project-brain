@@ -5,7 +5,7 @@
 
 import fs from "fs";
 import path from "path";
-import { ProviderMetrics, CumulativeMetrics } from "./types";
+import { ProviderMetrics, CumulativeMetrics } from "./types.js";
 
 export class MetricsCollector {
     private readonly metricsRoot: string;

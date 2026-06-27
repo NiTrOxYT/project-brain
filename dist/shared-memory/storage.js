@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { MemoryPersistenceError } from "./errors";
+import { MemoryPersistenceError } from "./errors.js";
 export class SharedMemoryStorage {
     rootDir;
     snapshotDir;

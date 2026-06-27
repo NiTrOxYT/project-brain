@@ -2,11 +2,11 @@ import process from "process";
 import path from "path";
 import fs from "fs/promises";
 
-import { RuntimeService } from "./runtime";
-import { EngineeringPlannerService } from "./engineering-planner";
-import { QueryEngineService } from "./query-engine";
-import { KnowledgeFusionService } from "./knowledge-fusion";
-import { ContextAssemblerService } from "./context-assembler";
+import { RuntimeService } from "./runtime/index.js";
+import { EngineeringPlannerService } from "./engineering-planner/index.js";
+import { QueryEngineService } from "./query-engine/index.js";
+import { KnowledgeFusionService } from "./knowledge-fusion/index.js";
+import { ContextAssemblerService } from "./context-assembler/index.js";
 
 async function main() {
     const workspaceRoot = path.join(process.cwd(), ".brain");

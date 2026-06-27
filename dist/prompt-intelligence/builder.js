@@ -11,7 +11,7 @@ export class PromptContextBuilder {
         // Fast path: consume snapshot sections directly if available
         if (snapshot) {
             try {
-                const { ContextRetrievalService } = await import("../context-retrieval");
+                const { ContextRetrievalService } = await import("../context-retrieval/index.js");
                 const retrievalService = new ContextRetrievalService(this.workspaceRoot, this.workspaceRoot);
                 const res = await retrievalService.retrieve({
                     query: task.title || task.type,

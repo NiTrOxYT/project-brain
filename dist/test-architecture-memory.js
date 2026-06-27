@@ -1,9 +1,9 @@
 import process from "process";
 import path from "path";
 import fs from "fs/promises";
-import { RuntimeService } from "./runtime";
-import { ArchitectureMemoryService } from "./architecture-memory";
-import { QueryEngineService } from "./query-engine";
+import { RuntimeService } from "./runtime/index.js";
+import { ArchitectureMemoryService } from "./architecture-memory/index.js";
+import { QueryEngineService } from "./query-engine/index.js";
 async function main() {
     const workspaceRoot = path.join(process.cwd(), ".brain");
     const memoryPath = path.join(workspaceRoot, "memory", "architecture.json");

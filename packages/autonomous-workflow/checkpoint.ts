@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
-import { WorkflowCheckpoint } from "./types";
-import { CheckpointError } from "./errors";
-import { WorkspaceEngine } from "../workspace/workspace-engine";
+import { WorkflowCheckpoint } from "./types.js";
+import { CheckpointError } from "./errors.js";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
 
 export class WorkflowCheckpointService {
     private readonly checkpointDir: string;

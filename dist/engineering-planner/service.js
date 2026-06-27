@@ -1,9 +1,9 @@
 import fs from "fs/promises";
 import path from "path";
-import { FileSystemService } from "../filesystem";
-import { ImportResolverService } from "../import-resolver";
-import { ArchitectureMemoryService } from "../architecture-memory";
-import { EngineeringPlannerError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { ImportResolverService } from "../import-resolver/index.js";
+import { ArchitectureMemoryService } from "../architecture-memory/index.js";
+import { EngineeringPlannerError } from "./errors.js";
 export class EngineeringPlannerService {
     projectRoot;
     workspaceRoot;

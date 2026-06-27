@@ -2,11 +2,11 @@ import process from "process";
 import path from "path";
 import fs from "fs/promises";
 
-import { RuntimeService } from "./runtime";
-import { SynchronizerService } from "./synchronizer";
-import { KnowledgeFusionService } from "./knowledge-fusion";
-import { WeightedFusionStrategy, DEFAULT_WEIGHTS } from "./knowledge-fusion/strategies";
-import { FusionStrategy, KnowledgeCandidate } from "./knowledge-fusion/types";
+import { RuntimeService } from "./runtime/index.js";
+import { SynchronizerService } from "./synchronizer/index.js";
+import { KnowledgeFusionService } from "./knowledge-fusion/index.js";
+import { WeightedFusionStrategy, DEFAULT_WEIGHTS } from "./knowledge-fusion/strategies.js";
+import { FusionStrategy, KnowledgeCandidate } from "./knowledge-fusion/types.js";
 
 async function main() {
 

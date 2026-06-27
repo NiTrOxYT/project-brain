@@ -6,9 +6,9 @@ import fs from "fs";
 import path from "path";
 import { logger } from "../utils/logger.js";
 import { printJson } from "../utils/json.js";
-import { brainDir } from "../utils/paths.js";
 import { renderKeyValue } from "../utils/table.js";
 import { bold } from "../utils/colors.js";
+import { StoragePaths } from "../../kernel/paths.js";
 function readJsonFile(p) {
     try {
         if (fs.existsSync(p))
@@ -23,14 +23,16 @@ function dirFileCount(d) {
     return fs.readdirSync(d).length;
 }
 export async function runStats(opts) {
-    const bd = brainDir(opts.workspace);
-    const snapshots = dirFileCount(path.join(bd, "snapshots"));
-    const cacheFiles = dirFileCount(path.join(bd, "cache"));
-    const journalFiles = dirFileCount(path.join(bd, "journal"));
-    const checkpoints = dirFileCount(path.join(bd, "checkpoints"));
-    const learningFiles = dirFileCount(path.join(bd, "learning"));
+    const paths = new StoragePaths(opts.workspace);
+    const snapshots = fs.existsSync(paths.snapshotsDir)
+        ? fs.readdirSync(paths.snapshotsDir).filter(f => f.endsWith(".json") && f !== "index.json").length
+        : 0;
+    const cacheFiles = dirFileCount(paths.compilerCacheDir);
+    const journalFiles = dirFileCount(paths.journalDir);
+    const checkpoints = dirFileCount(paths.checkpointsDir);
+    const learningFiles = dirFileCount(paths.learningDir);
     // Load latest snapshot for context stats
-    const snapDir = path.join(bd, "snapshots");
+    const snapDir = paths.snapshotsDir;
     let latestSnap = null;
     if (fs.existsSync(snapDir)) {
         const snaps = fs.readdirSync(snapDir)
@@ -62,7 +64,7 @@ export async function runStats(opts) {
             checkpoints,
         },
         workspace: {
-            brainDir: bd,
+            brainDir: paths.brainDir,
         },
     };
     if (opts.json) {

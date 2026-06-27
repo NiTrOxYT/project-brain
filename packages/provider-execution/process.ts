@@ -5,14 +5,14 @@
 // ──────────────────────────────────────────────────────────────────────────────
 
 import { spawn, ChildProcess } from "child_process";
-import { ExecutionRequest, ExecutionResult, ProcessHandle, ProcessOutput, ExecutionMetrics, ProcessState } from "./types";
-import { ProcessSpawnError, ProcessCancelledError, ProcessExitedError, InvalidExecutableError, ProcessTimeoutError } from "./errors";
+import { ExecutionRequest, ExecutionResult, ProcessHandle, ProcessOutput, ExecutionMetrics, ProcessState } from "./types.js";
+import { ProcessSpawnError, ProcessCancelledError, ProcessExitedError, InvalidExecutableError, ProcessTimeoutError } from "./errors.js";
 
-import { StreamProcessor } from "./stream";
-import { TimeoutManager } from "./timeout";
+import { StreamProcessor } from "./stream.js";
+import { TimeoutManager } from "./timeout.js";
 
 export interface ProcessRunnerOptions {
-    onChunk?: (chunk: import("./types").StreamChunk) => void;
+    onChunk?: (chunk: import("./types.js").StreamChunk) => void;
     onLine?: (line: string, channel: "stdout" | "stderr") => void;
 }
 

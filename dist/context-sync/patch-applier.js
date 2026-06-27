@@ -1,4 +1,4 @@
-import { SnapshotPatchError } from "./errors";
+import { SnapshotPatchError } from "./errors.js";
 export class PatchApplier {
     apply(prev, patch) {
         try {

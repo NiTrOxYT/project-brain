@@ -1,11 +1,11 @@
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { PlannerService } from "../planner";
-import { RetrieverService } from "../retriever";
-import { ArchitectureMemoryService } from "../architecture-memory";
-import { WeightedFusionStrategy } from "./strategies";
-import { KnowledgeFusionError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { PlannerService } from "../planner/index.js";
+import { RetrieverService } from "../retriever/index.js";
+import { ArchitectureMemoryService } from "../architecture-memory/index.js";
+import { WeightedFusionStrategy } from "./strategies.js";
+import { KnowledgeFusionError } from "./errors.js";
 import {
     FusionRequest,
     FusionResult,
@@ -13,7 +13,7 @@ import {
     KnowledgeCandidate,
     CandidateSignals,
     FusionDiagnostics
-} from "./types";
+} from "./types.js";
 
 export class KnowledgeFusionService {
 
@@ -228,7 +228,7 @@ export class KnowledgeFusionService {
             const learningRaw = new Map<string, number>();
             if (options?.includeLearning !== false) {
                 try {
-                    const { LearningEngineService } = await import("../learning-engine");
+                    const { LearningEngineService } = await import("../learning-engine/index.js");
                     const learningEngine = new LearningEngineService(this.workspaceRoot);
                     const scores = await learningEngine.getFileScores(query);
                     for (const [file, score] of scores.entries()) {

@@ -4,10 +4,10 @@
 import assert from "assert";
 import fs from "fs/promises";
 import path from "path";
-import { PromptIntelligenceService } from "./prompt-intelligence/service";
-import { MockSDKProvider } from "./providers/mock";
-import { getProviderProfile } from "./prompt-intelligence/provider-profiles";
-import { PromptDiffEngine } from "./prompt-intelligence/diff";
+import { PromptIntelligenceService } from "./prompt-intelligence/service.js";
+import { MockSDKProvider } from "./providers/mock/index.js";
+import { getProviderProfile } from "./prompt-intelligence/provider-profiles.js";
+import { PromptDiffEngine } from "./prompt-intelligence/diff.js";
 import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -227,7 +227,7 @@ async function runSuite() {
     // Test 13: Prompt fingerprint generation
     // ──────────────────────────────────────────────────────────────────────────
     await test("Test 13: Fingerprint generates deterministic sha256 hash", async () => {
-        const { PromptFingerprinter } = await import("./prompt-intelligence/fingerprint");
+        const { PromptFingerprinter } = await import("./prompt-intelligence/fingerprint.js");
         const fingerprinter = new PromptFingerprinter();
         const payload = {
             promptContent: "hello",

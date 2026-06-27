@@ -4,9 +4,9 @@
 // Uses only Node's built-in child_process APIs. No external libraries.
 // ──────────────────────────────────────────────────────────────────────────────
 import { spawn } from "child_process";
-import { ProcessSpawnError, ProcessCancelledError, InvalidExecutableError, ProcessTimeoutError } from "./errors";
-import { StreamProcessor } from "./stream";
-import { TimeoutManager } from "./timeout";
+import { ProcessSpawnError, ProcessCancelledError, InvalidExecutableError, ProcessTimeoutError } from "./errors.js";
+import { StreamProcessor } from "./stream.js";
+import { TimeoutManager } from "./timeout.js";
 export class ProcessRunner {
     activeProcesses = new Map();
     cancelled = new Set();

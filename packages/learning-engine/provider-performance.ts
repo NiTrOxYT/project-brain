@@ -2,7 +2,7 @@
 // BUILD-052 — Learning Engine — Provider Performance Tracker
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { LearningExperience, ProviderPerformance } from "./types";
+import { LearningExperience, ProviderPerformance } from "./types.js";
 
 export class ProviderPerformanceTracker {
     update(experiences: LearningExperience[]): ProviderPerformance[] {

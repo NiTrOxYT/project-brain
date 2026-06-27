@@ -3,8 +3,8 @@
 // In-memory, deterministic file-level locking. No OS-level locks.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { WorkspaceLock } from "./workspace-types";
-import { WorkspaceLockError } from "./workspace-errors";
+import { WorkspaceLock } from "./workspace-types.js";
+import { WorkspaceLockError } from "./workspace-errors.js";
 
 export class WorkspaceLockManager {
     /** Canonical path → active lock */

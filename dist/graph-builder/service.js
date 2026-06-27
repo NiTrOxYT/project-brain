@@ -1,5 +1,5 @@
 import path from "path";
-import { FileSystemService } from "../filesystem";
+import { FileSystemService } from "../filesystem/index.js";
 export class GraphBuilderService {
     workspaceRoot;
     filesystem = new FileSystemService();
@@ -7,7 +7,7 @@ export class GraphBuilderService {
         this.workspaceRoot = workspaceRoot;
     }
     async build() {
-        const { ImportResolverService } = await import("../import-resolver");
+        const { ImportResolverService } = await import("../import-resolver/index.js");
         const imports = {
             imports: await new ImportResolverService(this.workspaceRoot).resolve()
         };

@@ -1,4 +1,4 @@
-import { SnapshotValidator as CompilerValidator } from "../context-compiler/validator";
+import { SnapshotValidator as CompilerValidator } from "../context-compiler/validator.js";
 export class SnapshotValidator {
     compilerValidator = new CompilerValidator();
     validate(snapshot) {

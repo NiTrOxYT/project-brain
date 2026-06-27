@@ -1,8 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
-import { FileSystemService } from "../filesystem";
-import { SynchronizerService } from "../synchronizer";
+import { FileSystemService } from "../filesystem/index.js";
+import { SynchronizerService } from "../synchronizer/index.js";
 export class QueryEngineService {
     projectRoot;
     workspaceRoot;
@@ -109,7 +109,7 @@ export class QueryEngineService {
             }
             // 3. Execution flow if cache missed
             if (!hasContext) {
-                const { ContextRetrievalService } = await import("../context-retrieval");
+                const { ContextRetrievalService } = await import("../context-retrieval/index.js");
                 const retrievalService = new ContextRetrievalService(this.projectRoot, this.workspaceRoot);
                 const retrieveStart = Date.now();
                 const res = await retrievalService.retrieve({
@@ -188,7 +188,7 @@ export class QueryEngineService {
             let promptConfidence = 0.0;
             let learningVersion = "1.0.0";
             try {
-                const { LearningEngineService } = await import("../learning-engine");
+                const { LearningEngineService } = await import("../learning-engine/index.js");
                 const learningEngine = new LearningEngineService(this.workspaceRoot);
                 const rec = await learningEngine.recommend({
                     taskType: "refactor",
@@ -236,7 +236,7 @@ export class QueryEngineService {
             let snapshotSymbolCount;
             let snapshotCompilationMs;
             try {
-                const { ContextSynchronizationService } = await import("../context-sync");
+                const { ContextSynchronizationService } = await import("../context-sync/index.js");
                 const syncService = new ContextSynchronizationService(this.projectRoot, this.workspaceRoot);
                 const latestSnap = await syncService.latestSnapshot();
                 if (latestSnap) {

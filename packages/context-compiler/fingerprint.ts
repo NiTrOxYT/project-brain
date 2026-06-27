@@ -5,8 +5,8 @@
 // ──────────────────────────────────────────────────────────────────────────────
 
 import crypto from "crypto";
-import { SnapshotContext, SnapshotFingerprint } from "./types";
-import { SnapshotFingerprintError } from "./errors";
+import { SnapshotContext, SnapshotFingerprint } from "./types.js";
+import { SnapshotFingerprintError } from "./errors.js";
 
 export class SnapshotFingerprintEngine {
     /**

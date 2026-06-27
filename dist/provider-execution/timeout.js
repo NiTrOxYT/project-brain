@@ -2,7 +2,7 @@
 // BUILD-050A — Provider Execution Layer — Timeout Manager
 // Multi-layer timeout: startup → idle → execution → graceful shutdown.
 // ──────────────────────────────────────────────────────────────────────────────
-import { ProcessTimeoutError } from "./errors";
+import { ProcessTimeoutError } from "./errors.js";
 /**
  * Manages multi-layer timeouts for a single process.
  * Graceful shutdown sequence: SIGINT → SIGTERM → SIGKILL.

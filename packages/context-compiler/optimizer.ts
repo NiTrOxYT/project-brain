@@ -4,8 +4,8 @@
 // Does NOT modify snapshot structure — returns optimized content string per section.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { SemanticSnapshot, SnapshotSection } from "./types";
-import { SnapshotFingerprintEngine } from "./fingerprint";
+import { SemanticSnapshot, SnapshotSection } from "./types.js";
+import { SnapshotFingerprintEngine } from "./fingerprint.js";
 
 export interface SnapshotOptimizerResult {
     sections: SnapshotSection[];

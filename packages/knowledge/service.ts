@@ -1,7 +1,7 @@
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { KnowledgeIndex } from "./types";
+import { FileSystemService } from "../filesystem/index.js";
+import { KnowledgeIndex } from "./types.js";
 
 export class KnowledgeService {
 

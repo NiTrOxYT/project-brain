@@ -3,7 +3,7 @@
 // Performs summary compression and duplicate pruning on snapshot sections.
 // Does NOT modify snapshot structure — returns optimized content string per section.
 // ──────────────────────────────────────────────────────────────────────────────
-import { SnapshotFingerprintEngine } from "./fingerprint";
+import { SnapshotFingerprintEngine } from "./fingerprint.js";
 export class SnapshotOptimizer {
     fpEngine = new SnapshotFingerprintEngine();
     optimize(snapshot) {

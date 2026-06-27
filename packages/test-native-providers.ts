@@ -6,16 +6,16 @@ import fs from "fs";
 import path from "path";
 import os from "os";
 
-import { CodexProvider } from "./providers/codex/provider";
-import { GeminiCLIProvider } from "./providers/gemini-cli/provider";
-import { OllamaProvider } from "./providers/ollama/provider";
-import { AiderProvider } from "./providers/aider/provider";
-import { OpenCodeProvider } from "./providers/opencode/provider";
+import { CodexProvider } from "./providers/codex/provider.js";
+import { GeminiCLIProvider } from "./providers/gemini-cli/provider.js";
+import { OllamaProvider } from "./providers/ollama/provider.js";
+import { AiderProvider } from "./providers/aider/provider.js";
+import { OpenCodeProvider } from "./providers/opencode/provider.js";
 
-import { ProviderExecutionService } from "./provider-execution/service";
-import { WorkspaceEngine } from "./workspace/workspace-engine";
-import { StreamEvent } from "./provider-runtime/types";
-import { RuntimeTask, RuntimeContext } from "./agent-runtime/types";
+import { ProviderExecutionService } from "./provider-execution/service.js";
+import { WorkspaceEngine } from "./workspace/workspace-engine.js";
+import { StreamEvent } from "./provider-runtime/types.js";
+import { RuntimeTask, RuntimeContext } from "./agent-runtime/types.js";
 
 let passed = 0;
 let failed = 0;

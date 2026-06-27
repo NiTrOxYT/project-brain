@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { CheckpointError } from "./errors";
+import { CheckpointError } from "./errors.js";
 export class WorkflowCheckpointService {
     workspaceRoot;
     workflowId;

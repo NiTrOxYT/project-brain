@@ -1,4 +1,4 @@
-import { PromptProviderProfile } from "./types";
+import { PromptProviderProfile } from "./types.js";
 
 export const PROVIDER_PROFILES: Record<string, PromptProviderProfile> = {
     "claude-code": {

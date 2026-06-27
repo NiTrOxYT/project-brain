@@ -3,7 +3,7 @@
 // Validates snapshot integrity: priorities, fingerprints, graph connectivity,
 // and token estimate consistency.
 // ──────────────────────────────────────────────────────────────────────────────
-import { SnapshotFingerprintEngine } from "./fingerprint";
+import { SnapshotFingerprintEngine } from "./fingerprint.js";
 export class SnapshotValidator {
     fpEngine = new SnapshotFingerprintEngine();
     validate(snapshot) {

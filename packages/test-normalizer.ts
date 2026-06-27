@@ -1,4 +1,4 @@
-import { normalize } from "./semantic";
+import { normalize } from "./semantic/index.js";
 
 const samples = [
 

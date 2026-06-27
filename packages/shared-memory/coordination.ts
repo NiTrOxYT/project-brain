@@ -1,6 +1,6 @@
-import { CollaborationTask, AgentAssignment } from "./types";
-import { SharedMemoryModel } from "./memory";
-import { AssignmentError } from "./errors";
+import { CollaborationTask, AgentAssignment } from "./types.js";
+import { SharedMemoryModel } from "./memory.js";
+import { AssignmentError } from "./errors.js";
 
 export class CoordinationEngine {
     constructor(private readonly model: SharedMemoryModel) {}

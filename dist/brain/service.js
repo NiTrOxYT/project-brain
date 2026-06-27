@@ -1,5 +1,5 @@
-import { OrchestratorService } from "../orchestrator";
-import { QueryAnalyzerService } from "../query-analyzer";
+import { OrchestratorService } from "../orchestrator/index.js";
+import { QueryAnalyzerService } from "../query-analyzer/index.js";
 export class BrainService {
     workspaceRoot;
     constructor(workspaceRoot) {

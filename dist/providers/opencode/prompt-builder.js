@@ -1,4 +1,4 @@
-import { buildSharedPrompt } from "../shared-prompt";
+import { buildSharedPrompt } from "../shared-prompt.js";
 export function buildPrompt(request) {
     return buildSharedPrompt(request, "OpenCode");
 }

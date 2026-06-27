@@ -1,7 +1,7 @@
 import path from "path";
-import { RuntimeService } from "../core";
-import { FileSystemService } from "../filesystem";
-import { ManifestError } from "./errors";
+import { RuntimeService } from "../core/index.js";
+import { FileSystemService } from "../filesystem/index.js";
+import { ManifestError } from "./errors.js";
 export class ManifestService extends RuntimeService {
     workspace;
     fs = new FileSystemService();

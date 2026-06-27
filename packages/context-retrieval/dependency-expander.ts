@@ -1,4 +1,4 @@
-import { SemanticSnapshot } from "../context-compiler/types";
+import { SemanticSnapshot } from "../context-compiler/types.js";
 
 export class DependencyExpander {
     expand(snapshot: SemanticSnapshot, filePaths: string[], maxDepth: number = 2): string[] {

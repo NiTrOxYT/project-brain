@@ -1,4 +1,4 @@
-import { SemanticSnapshot, SnapshotSymbol } from "../context-compiler/types";
+import { SemanticSnapshot, SnapshotSymbol } from "../context-compiler/types.js";
 
 export class SymbolRetriever {
     retrieve(snapshot: SemanticSnapshot, querySymbols: string[], targetFiles: string[]): SnapshotSymbol[] {

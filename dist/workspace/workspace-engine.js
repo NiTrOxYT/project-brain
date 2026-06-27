@@ -7,10 +7,11 @@ import fs from "fs";
 import EventEmitter from "events";
 import path from "path";
 import crypto from "crypto";
-import { WorkspaceEngineError, WorkspaceTransactionError, WorkspaceLockError } from "./workspace-errors";
-import { WorkspaceJournal } from "./workspace-journal";
-import { WorkspaceLockManager } from "./workspace-lock";
-import { WorkspacePatchEngine } from "./workspace-patch";
+import { StoragePaths } from "../kernel/paths.js";
+import { WorkspaceEngineError, WorkspaceTransactionError, WorkspaceLockError } from "./workspace-errors.js";
+import { WorkspaceJournal } from "./workspace-journal.js";
+import { WorkspaceLockManager } from "./workspace-lock.js";
+import { WorkspacePatchEngine } from "./workspace-patch.js";
 function generateTxId() {
     return `tx-${Date.now()}-${crypto.randomBytes(4).toString("hex")}`;
 }
@@ -32,13 +33,14 @@ export class WorkspaceEngine {
     totalChanges = 0;
     constructor(options) {
         this.options = {
-            stateDirectory: "workspace",
+            stateDirectory: "journal",
             maxConcurrentTransactions: 8,
             dryRun: false,
             rollbackOnError: true,
             ...options
         };
-        this.stateDir = path.join(this.options.workspaceRoot, ".brain", this.options.stateDirectory);
+        const paths = new StoragePaths(this.options.workspaceRoot);
+        this.stateDir = paths.journalDir;
         this.ensureStateDirectory();
         this.journal = new WorkspaceJournal(this.stateDir);
         this.locks = new WorkspaceLockManager();
@@ -134,7 +136,7 @@ export class WorkspaceEngine {
         const startTime = Date.now();
         // Enforce Shared Memory validation rules: consensus reached, conflicts resolved
         try {
-            const { SharedMemoryService } = await import("../shared-memory");
+            const { SharedMemoryService } = await import("../shared-memory/index.js");
             const sharedMem = new SharedMemoryService(this.options.workspaceRoot, this.options.workspaceRoot);
             await sharedMem.restoreLatest().catch(() => { });
             const conflicts = sharedMem.detectConflicts();

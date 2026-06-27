@@ -9,19 +9,19 @@ import {
     ExecutionDiagnostics,
     ProcessState,
     StreamChunk
-} from "./types";
+} from "./types.js";
 import {
     ProcessCancelledError,
     ProcessTimeoutError,
     InvalidExecutableError,
     ProcessSpawnError,
     ProviderExecutionError
-} from "./errors";
+} from "./errors.js";
 
-import { ProcessRunner } from "./process";
-import { RetryEvaluator, DEFAULT_RETRY_POLICY } from "./retry";
-import { ExecutionSandbox } from "./sandbox";
-import { DiagnosticsCollector } from "./diagnostics";
+import { ProcessRunner } from "./process.js";
+import { RetryEvaluator, DEFAULT_RETRY_POLICY } from "./retry.js";
+import { ExecutionSandbox } from "./sandbox.js";
+import { DiagnosticsCollector } from "./diagnostics.js";
 
 export interface ExecutionServiceOptions {
     maxConcurrentProcesses?: number;

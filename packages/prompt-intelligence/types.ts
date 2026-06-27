@@ -1,5 +1,5 @@
-import { RuntimeTask, RuntimeContext } from "../agent-runtime/types";
-import { ProviderMetadata, ProviderProfile } from "../provider-runtime/types";
+import { RuntimeTask, RuntimeContext } from "../agent-runtime/types.js";
+import { ProviderMetadata, ProviderProfile } from "../provider-runtime/types.js";
 
 export interface PromptSection {
     id: string;

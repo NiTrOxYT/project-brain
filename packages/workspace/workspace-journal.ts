@@ -5,7 +5,7 @@
 
 import fs from "fs";
 import path from "path";
-import { WorkspaceJournalEntry, WorkspaceJournalAction } from "./workspace-types";
+import { WorkspaceJournalEntry, WorkspaceJournalAction } from "./workspace-types.js";
 
 export class WorkspaceJournal {
     private readonly journalPath: string;

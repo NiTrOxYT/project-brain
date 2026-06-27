@@ -18,20 +18,20 @@ import {
     MemoryStatistics,
     MemoryDiagnostics,
     CollaborationPhase
-} from "./types";
-import { SharedMemoryModel } from "./memory";
-import { AgentRegistry } from "./agent-registry";
-import { AssignmentEngine } from "./assignment-engine";
-import { Blackboard } from "./blackboard";
-import { ArtifactStore } from "./artifact-store";
-import { CoordinationEngine } from "./coordination";
-import { ConflictDetector } from "./conflict-detector";
-import { ConflictResolver } from "./conflict-resolver";
-import { ConsensusEngine } from "./consensus";
-import { CollaborationTimeline } from "./timeline";
-import { SharedMemoryStorage } from "./storage";
-import { SharedMemoryMetricsTracker } from "./metrics";
-import { CollaborationDiagnostics } from "./diagnostics";
+} from "./types.js";
+import { SharedMemoryModel } from "./memory.js";
+import { AgentRegistry } from "./agent-registry.js";
+import { AssignmentEngine } from "./assignment-engine.js";
+import { Blackboard } from "./blackboard.js";
+import { ArtifactStore } from "./artifact-store.js";
+import { CoordinationEngine } from "./coordination.js";
+import { ConflictDetector } from "./conflict-detector.js";
+import { ConflictResolver } from "./conflict-resolver.js";
+import { ConsensusEngine } from "./consensus.js";
+import { CollaborationTimeline } from "./timeline.js";
+import { SharedMemoryStorage } from "./storage.js";
+import { SharedMemoryMetricsTracker } from "./metrics.js";
+import { CollaborationDiagnostics } from "./diagnostics.js";
 
 export class SharedMemoryService {
     private readonly model = new SharedMemoryModel();

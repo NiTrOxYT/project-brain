@@ -2,15 +2,15 @@
 // BUILD-052 — Learning Engine — Entrypoint Exports
 // ──────────────────────────────────────────────────────────────────────────────
 
-export * from "./types";
-export * from "./errors";
-export * from "./storage";
-export * from "./service";
-export * from "./extractor";
-export * from "./classifier";
-export * from "./repair-patterns";
-export * from "./provider-performance";
-export * from "./prompt-library";
-export * from "./optimizer";
-export * from "./recommender";
-export * from "./metrics";
+export * from "./types.js";
+export * from "./errors.js";
+export * from "./storage.js";
+export * from "./service.js";
+export * from "./extractor.js";
+export * from "./classifier.js";
+export * from "./repair-patterns.js";
+export * from "./provider-performance.js";
+export * from "./prompt-library.js";
+export * from "./optimizer.js";
+export * from "./recommender.js";
+export * from "./metrics.js";

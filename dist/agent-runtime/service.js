@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
-import { AgentRegistry } from "./registry";
-import { RuntimeEngine } from "./runtime";
-import { RuntimeExecutor } from "./executor";
+import { AgentRegistry } from "./registry.js";
+import { RuntimeEngine } from "./runtime.js";
+import { RuntimeExecutor } from "./executor.js";
 // Mock Provider Implementation
 export class MockAgentProvider {
     id = "mock-provider";

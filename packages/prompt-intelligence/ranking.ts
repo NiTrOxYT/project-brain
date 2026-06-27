@@ -1,4 +1,4 @@
-import { PromptRanking } from "./types";
+import { PromptRanking } from "./types.js";
 
 export class PromptSectionRanker {
     private static readonly SECTION_SCORES: Record<string, number> = {

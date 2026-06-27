@@ -1,18 +1,18 @@
 import fs from "fs/promises";
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { IndexResult, IndexedFile } from "../indexer";
-import { SymbolsService, SymbolIndex, SymbolRecord } from "../symbols";
-import { ImportsService, ImportIndex, ImportRecord } from "../imports";
-import { RelationshipAnalyzerService, RelationshipIndex, RelationshipRecord } from "../relationship-analyzer";
-import { ExecutionGraphService } from "../execution-graph";
-import { GraphBuilderService } from "../graph-builder";
-import { SemanticService } from "../semantic";
-import { RuntimeService } from "../runtime";
-import { normalize } from "../semantic";
-import { SynchronizationState } from "./types";
-import { SynchronizerError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { IndexResult, IndexedFile } from "../indexer/index.js";
+import { SymbolsService, SymbolIndex, SymbolRecord } from "../symbols/index.js";
+import { ImportsService, ImportIndex, ImportRecord } from "../imports/index.js";
+import { RelationshipAnalyzerService, RelationshipIndex, RelationshipRecord } from "../relationship-analyzer/index.js";
+import { ExecutionGraphService } from "../execution-graph/index.js";
+import { GraphBuilderService } from "../graph-builder/index.js";
+import { SemanticService } from "../semantic/index.js";
+import { RuntimeService } from "../runtime/index.js";
+import { normalize } from "../semantic/index.js";
+import { SynchronizationState } from "./types.js";
+import { SynchronizerError } from "./errors.js";
 
 export class SynchronizerService {
 

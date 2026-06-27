@@ -1,10 +1,10 @@
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
-import { FileSystemService } from "../filesystem";
-import { PlannerService } from "../planner";
-import { ContextBudgetService } from "../context-budget";
-import { ContextAssemblerError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { PlannerService } from "../planner/index.js";
+import { ContextBudgetService } from "../context-budget/index.js";
+import { ContextAssemblerError } from "./errors.js";
 export class ContextAssemblerService {
     projectRoot;
     workspaceRoot;
@@ -67,7 +67,7 @@ export class ContextAssemblerService {
             // Get fused candidates, falling back to internal fusion if not provided
             let fusedCandidates = options?.fusedCandidates;
             if (!fusedCandidates) {
-                const { KnowledgeFusionService } = await import("../knowledge-fusion");
+                const { KnowledgeFusionService } = await import("../knowledge-fusion/index.js");
                 const fusionService = new KnowledgeFusionService(this.workspaceRoot);
                 const fusionResult = await fusionService.fuse({
                     query,

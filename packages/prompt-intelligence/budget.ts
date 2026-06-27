@@ -1,5 +1,5 @@
-import { PromptSection, PromptTokenBudget, PromptProviderProfile } from "./types";
-import { PromptRenderer } from "./renderer";
+import { PromptSection, PromptTokenBudget, PromptProviderProfile } from "./types.js";
+import { PromptRenderer } from "./renderer.js";
 
 export class PromptBudgeter {
     private readonly renderer = new PromptRenderer();

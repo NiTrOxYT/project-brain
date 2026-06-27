@@ -2,7 +2,7 @@
 // BUILD-049 — Provider Runtime — Capability & Model Negotiation
 // Pure, stateless, deterministic. Same inputs → same outputs always.
 // ──────────────────────────────────────────────────────────────────────────────
-import { ProviderNegotiationError } from "./errors";
+import { ProviderNegotiationError } from "./errors.js";
 // Healthy-or-degraded providers are usable; Busy is usable with lower score
 const HEALTH_SCORE = {
     "Healthy": 10,

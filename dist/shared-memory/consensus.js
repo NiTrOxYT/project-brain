@@ -1,4 +1,4 @@
-import { ConsensusError } from "./errors";
+import { ConsensusError } from "./errors.js";
 export class ConsensusEngine {
     model;
     constructor(model) {

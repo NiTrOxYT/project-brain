@@ -7,26 +7,26 @@ import fs from "fs";
 import path from "path";
 import os from "os";
 
-import { ProviderExecutionService } from "./provider-execution/service";
-import { ProcessRunner } from "./provider-execution/process";
-import { StreamProcessor, ChannelProcessor } from "./provider-execution/stream";
-import { TimeoutManager } from "./provider-execution/timeout";
-import { RetryEvaluator, DEFAULT_RETRY_POLICY, NO_RETRY_POLICY } from "./provider-execution/retry";
-import { ExecutionSandbox } from "./provider-execution/sandbox";
-import { DiagnosticsCollector } from "./provider-execution/diagnostics";
+import { ProviderExecutionService } from "./provider-execution/service.js";
+import { ProcessRunner } from "./provider-execution/process.js";
+import { StreamProcessor, ChannelProcessor } from "./provider-execution/stream.js";
+import { TimeoutManager } from "./provider-execution/timeout.js";
+import { RetryEvaluator, DEFAULT_RETRY_POLICY, NO_RETRY_POLICY } from "./provider-execution/retry.js";
+import { ExecutionSandbox } from "./provider-execution/sandbox.js";
+import { DiagnosticsCollector } from "./provider-execution/diagnostics.js";
 import {
     ExecutionRequest,
     ExecutionMetrics,
     StreamChunk,
     RetryPolicy
-} from "./provider-execution/types";
+} from "./provider-execution/types.js";
 import {
     ProcessTimeoutError,
     ProcessCancelledError,
     InvalidExecutableError,
     ProcessSpawnError,
     isTransientExitCode
-} from "./provider-execution/errors";
+} from "./provider-execution/errors.js";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -641,9 +641,9 @@ async function test29_RepeatedExecutionDeterminism(): Promise<void> {
 async function test30_BuildRegression(): Promise<void> {
     console.log("\n── 30. Build regression — BUILD-049 providers still work ─────");
     // Verify provider-execution does not interfere with the Provider Runtime
-    const { MockSDKProvider } = await import("./providers/mock");
-    const { ClaudeCodeProvider } = await import("./providers/claude-code");
-    const { ProviderRuntimeService } = await import("./provider-runtime/service");
+    const { MockSDKProvider } = await import("./providers/mock/index.js");
+    const { ClaudeCodeProvider } = await import("./providers/claude-code/index.js");
+    const { ProviderRuntimeService } = await import("./provider-runtime/service.js");
 
     const root = fs.mkdtempSync(path.join(os.tmpdir(), "brain-reg30-"));
     try {

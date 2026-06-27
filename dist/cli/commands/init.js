@@ -3,22 +3,11 @@
 // brain init  →  Initialize .brain workspace
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs";
-import path from "path";
 import { logger } from "../utils/logger.js";
 import { printJson } from "../utils/json.js";
-import { brainDir, isBrainInitialized, saveConfig } from "../utils/paths.js";
+import { isBrainInitialized, saveConfig } from "../utils/paths.js";
 import { success, warn } from "../utils/colors.js";
-const SUBDIRS = [
-    "snapshots",
-    "patches",
-    "cache",
-    "retrieval-cache",
-    "journal",
-    "checkpoints",
-    "learning",
-    "shared-memory",
-    "locks",
-];
+import { StoragePaths } from "../../kernel/paths.js";
 export async function runInit(opts) {
     const workspace = opts.workspace;
     if (isBrainInitialized(workspace)) {
@@ -30,10 +19,23 @@ export async function runInit(opts) {
         }
         return;
     }
-    const dir = brainDir(workspace);
+    const paths = new StoragePaths(workspace);
+    const subdirs = [
+        paths.snapshotsDir,
+        paths.patchesDir,
+        paths.compilerCacheDir,
+        paths.retrievalCacheDir,
+        paths.journalDir,
+        paths.checkpointsDir,
+        paths.learningDir,
+        paths.sharedMemoryDir,
+        paths.locksDir,
+        paths.workflowsDir,
+    ];
+    const dir = paths.brainDir;
     fs.mkdirSync(dir, { recursive: true });
-    for (const sub of SUBDIRS) {
-        fs.mkdirSync(path.join(dir, sub), { recursive: true });
+    for (const sub of subdirs) {
+        fs.mkdirSync(sub, { recursive: true });
     }
     const config = {
         version: "1",

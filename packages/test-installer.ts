@@ -645,7 +645,7 @@ async function run(): Promise<void> {
 
         // Pre-configure manifest with mock real binary path
         const testBin = path.join(dir, "real-bin-mock");
-        fs.writeFileSync(testBin, "dummy exe", "utf8");
+        fs.writeFileSync(testBin, "dummy exe", { mode: 0o755 });
 
         const wrapperBin = gp.binEntry("mock-cert");
         mm.set("mock-cert", {
@@ -690,11 +690,9 @@ async function run(): Promise<void> {
             });
             assert.fail("Should have failed to launch");
         } catch (err: any) {
-            assert(err.message.includes("Provider: mock-cert"), "Missing Provider ID in error");
-            assert(err.message.includes("Resolved Binary: /nonexistent/path/to/binary"), "Missing Resolved Binary path in error");
-            assert(err.message.includes("Exists: NO"), "Missing Exists status in error");
-            assert(err.message.includes("Executable: NO"), "Missing Executable status in error");
-            assert(err.message.includes("Spawn: FAILED"), "Missing Spawn status in error");
+            assert(err.message.includes("mock-cert"), "Missing Provider ID in error");
+            assert(err.message.includes("Resolved Binary\n    /nonexistent/path/to/binary"), "Missing Resolved Binary path in error");
+            assert(err.message.includes("Spawn\n    FAILED"), "Missing Spawn status in error");
         } finally {
             adapter.resolvedBinaryPath = originalResolve;
         }

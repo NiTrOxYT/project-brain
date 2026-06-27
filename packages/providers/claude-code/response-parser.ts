@@ -2,7 +2,7 @@
 // BUILD-050B — Claude Code Provider — Response Parser
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { RuntimeArtifact } from "../../agent-runtime/artifacts";
+import { RuntimeArtifact } from "../../agent-runtime/artifacts.js";
 
 export function parseResponse(stdout: string, taskId: string, providerId: string): RuntimeArtifact[] {
     const startMarker = "---START_ARTIFACTS---";

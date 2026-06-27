@@ -2,7 +2,7 @@
 // BUILD-052 — Learning Engine — Repair Patterns Learner
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { LearningExperience, RepairPattern, EvidenceReference } from "./types";
+import { LearningExperience, RepairPattern, EvidenceReference } from "./types.js";
 
 export class RepairPatternsLearner {
     learn(experiences: LearningExperience[], existing: RepairPattern[]): RepairPattern[] {

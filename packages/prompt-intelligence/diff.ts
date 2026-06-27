@@ -1,4 +1,4 @@
-import { PromptPackage } from "./types";
+import { PromptPackage } from "./types.js";
 
 export interface PromptDiffResult {
     addedSections: string[];

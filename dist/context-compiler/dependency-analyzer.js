@@ -4,7 +4,7 @@
 // Produces a normalized SnapshotDependency[] for the snapshot.
 // ──────────────────────────────────────────────────────────────────────────────
 import path from "path";
-import { SnapshotNormalizer } from "./normalizer";
+import { SnapshotNormalizer } from "./normalizer.js";
 export class DependencyAnalyzer {
     normalizer = new SnapshotNormalizer();
     analyze(context) {

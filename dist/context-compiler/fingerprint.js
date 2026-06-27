@@ -4,7 +4,7 @@
 // Byte-identical inputs → byte-identical outputs.
 // ──────────────────────────────────────────────────────────────────────────────
 import crypto from "crypto";
-import { SnapshotFingerprintError } from "./errors";
+import { SnapshotFingerprintError } from "./errors.js";
 export class SnapshotFingerprintEngine {
     /**
      * Compute a deterministic fingerprint for the given snapshot context.

@@ -4,10 +4,10 @@
 
 import fs from "fs/promises";
 import path from "path";
-import { ExecutionLoopResult, JournalEvent } from "../autonomous-runtime/types";
-import { LearningExperience } from "./types";
-import { WorkspaceJournal } from "../workspace/workspace-journal";
-import { ProviderMetrics } from "../provider-runtime/types";
+import { ExecutionLoopResult, JournalEvent } from "../autonomous-runtime/types.js";
+import { LearningExperience } from "./types.js";
+import { WorkspaceJournal } from "../workspace/workspace-journal.js";
+import { ProviderMetrics } from "../provider-runtime/types.js";
 
 export class LearningExtractor {
     constructor(private readonly workspaceRoot: string) {}

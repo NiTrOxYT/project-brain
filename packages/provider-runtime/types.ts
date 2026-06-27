@@ -2,7 +2,7 @@
 // BUILD-049 — Provider Runtime — Types
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { AgentCapability } from "../agent-runtime/types";
+import { AgentCapability } from "../agent-runtime/types.js";
 
 // ─── Health ───────────────────────────────────────────────────────────────────
 

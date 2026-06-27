@@ -1,20 +1,20 @@
 // ──────────────────────────────────────────────────────────────────────────────
 // BUILD-051 — Autonomous Execution Loop — Core Service
 // ──────────────────────────────────────────────────────────────────────────────
-import { SharedMemoryService } from "../shared-memory";
-import { AutonomousRuntimeError } from "./errors";
-import { ValidationService } from "./validator";
-import { FailureAnalyzer } from "./failure-analyzer";
-import { RepairService } from "./repair";
-import { ExecutionCheckpointService } from "./checkpoint";
-import { ExecutionJournalService } from "./journal";
-import { ExecutionRecoveryService } from "./recovery";
-import { ExecutionMetricsService } from "./metrics";
-import { AgentRuntimeService } from "../agent-runtime";
-import { WorkspaceEngine } from "../workspace/workspace-engine";
-import { ProviderExecutionService } from "../provider-execution/service";
-import { OrchestratorScheduler } from "../orchestrator/scheduler";
-import { ContextSynchronizationService } from "../context-sync";
+import { SharedMemoryService } from "../shared-memory/index.js";
+import { AutonomousRuntimeError } from "./errors.js";
+import { ValidationService } from "./validator.js";
+import { FailureAnalyzer } from "./failure-analyzer.js";
+import { RepairService } from "./repair.js";
+import { ExecutionCheckpointService } from "./checkpoint.js";
+import { ExecutionJournalService } from "./journal.js";
+import { ExecutionRecoveryService } from "./recovery.js";
+import { ExecutionMetricsService } from "./metrics.js";
+import { AgentRuntimeService } from "../agent-runtime/index.js";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
+import { ProviderExecutionService } from "../provider-execution/service.js";
+import { OrchestratorScheduler } from "../orchestrator/scheduler.js";
+import { ContextSynchronizationService } from "../context-sync/index.js";
 function getPlanId(plan) {
     return plan.goal.toLowerCase().replace(/[^a-z0-9]+/g, "-").substring(0, 50);
 }
@@ -128,7 +128,7 @@ export class AutonomousRuntimeService {
                     id: t.id,
                     title: t.title,
                     type: t.type,
-                    status: "Pending",
+                    status: this.state.completedTasks.has(t.id) ? "Completed" : "Pending",
                     prerequisites: t.prerequisites
                 });
             }
@@ -240,7 +240,7 @@ export class AutonomousRuntimeService {
             journal: this.journalService.read()
         };
         try {
-            const { LearningEngineService } = await import("../learning-engine");
+            const { LearningEngineService } = await import("../learning-engine/index.js");
             const learningEngine = new LearningEngineService(this.workspaceRoot);
             await learningEngine.learn(result);
         }
@@ -384,7 +384,7 @@ export class AutonomousRuntimeService {
             try {
                 // Retrieve fresh context for the repair action using current snapshot, task, and failure details
                 try {
-                    const { ContextRetrievalService } = await import("../context-retrieval");
+                    const { ContextRetrievalService } = await import("../context-retrieval/index.js");
                     const retrievalService = new ContextRetrievalService(this.projectRoot, this.workspaceRoot);
                     const res = await retrievalService.retrieve({
                         query: `${repairAction.newRequest.task.title} due to ${failure.category}: ${failure.message}`,

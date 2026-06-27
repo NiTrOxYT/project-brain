@@ -1,4 +1,4 @@
-import { PromptRenderer } from "./renderer";
+import { PromptRenderer } from "./renderer.js";
 export class PromptBudgeter {
     renderer = new PromptRenderer();
     budget(sections, profile) {

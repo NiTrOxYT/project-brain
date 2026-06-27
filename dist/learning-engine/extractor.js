@@ -3,7 +3,7 @@
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs/promises";
 import path from "path";
-import { WorkspaceJournal } from "../workspace/workspace-journal";
+import { WorkspaceJournal } from "../workspace/workspace-journal.js";
 export class LearningExtractor {
     workspaceRoot;
     constructor(workspaceRoot) {

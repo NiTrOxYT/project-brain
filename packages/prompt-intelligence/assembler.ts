@@ -1,5 +1,5 @@
-import { PromptSection, PromptContext, PromptProviderProfile } from "./types";
-import { getTemplateForTaskType, renderTemplate } from "./templates";
+import { PromptSection, PromptContext, PromptProviderProfile } from "./types.js";
+import { getTemplateForTaskType, renderTemplate } from "./templates.js";
 
 export class PromptAssembler {
     assemble(context: PromptContext, profile: PromptProviderProfile): PromptSection[] {

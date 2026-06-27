@@ -4,10 +4,10 @@
 
 import fs from "fs";
 import path from "path";
-import { ValidatorConfig, ValidationResult } from "./types";
-import { ProviderExecutionService } from "../provider-execution/service";
-import { WorkspaceEngine } from "../workspace/workspace-engine";
-import { ExecutionRequest } from "../provider-execution/types";
+import { ValidatorConfig, ValidationResult } from "./types.js";
+import { ProviderExecutionService } from "../provider-execution/service.js";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
+import { ExecutionRequest } from "../provider-execution/types.js";
 
 export class ValidationService {
     private readonly execService: ProviderExecutionService;

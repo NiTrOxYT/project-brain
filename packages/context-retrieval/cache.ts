@@ -1,7 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
-import { RetrievalPackage, RetrievalCacheEntry } from "./types";
+import { RetrievalPackage, RetrievalCacheEntry } from "./types.js";
+import { StoragePaths } from "../kernel/paths.js";
 
 export class RetrievalCache {
     private readonly cacheDir: string;
@@ -9,7 +10,7 @@ export class RetrievalCache {
     private readonly maxItems = 50;
 
     constructor(workspaceRoot: string) {
-        this.cacheDir = path.join(workspaceRoot, ".brain", "context", "retrieval-cache");
+        this.cacheDir = new StoragePaths(workspaceRoot).retrievalCacheDir;
     }
 
     async ensureDirectory(): Promise<void> {

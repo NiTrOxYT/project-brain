@@ -8,6 +8,7 @@ import fs from "fs";
 import EventEmitter from "events";
 import path from "path";
 import crypto from "crypto";
+import { StoragePaths } from "../kernel/paths.js";
 import {
     WorkspaceOperation,
     WorkspaceTransaction,
@@ -18,15 +19,15 @@ import {
     WorkspaceEngineOptions,
     WorkspaceEngineDiagnostics,
     TransactionStatus
-} from "./workspace-types";
+} from "./workspace-types.js";
 import {
     WorkspaceEngineError,
     WorkspaceTransactionError,
     WorkspaceLockError
-} from "./workspace-errors";
-import { WorkspaceJournal } from "./workspace-journal";
-import { WorkspaceLockManager } from "./workspace-lock";
-import { WorkspacePatchEngine } from "./workspace-patch";
+} from "./workspace-errors.js";
+import { WorkspaceJournal } from "./workspace-journal.js";
+import { WorkspaceLockManager } from "./workspace-lock.js";
+import { WorkspacePatchEngine } from "./workspace-patch.js";
 
 // Minimal RuntimeArtifact interface — mirrors agent-runtime without importing it
 // (keeps workspace-engine provider-agnostic and avoids circular deps)
@@ -88,18 +89,15 @@ export class WorkspaceEngine {
 
     constructor(options: WorkspaceEngineOptions) {
         this.options = {
-            stateDirectory: "workspace",
+            stateDirectory: "journal",
             maxConcurrentTransactions: 8,
             dryRun: false,
             rollbackOnError: true,
             ...options
         };
 
-        this.stateDir = path.join(
-            this.options.workspaceRoot,
-            ".brain",
-            this.options.stateDirectory
-        );
+        const paths = new StoragePaths(this.options.workspaceRoot);
+        this.stateDir = paths.journalDir;
 
         this.ensureStateDirectory();
         this.journal = new WorkspaceJournal(this.stateDir);
@@ -207,7 +205,7 @@ export class WorkspaceEngine {
 
         // Enforce Shared Memory validation rules: consensus reached, conflicts resolved
         try {
-            const { SharedMemoryService } = await import("../shared-memory");
+            const { SharedMemoryService } = await import("../shared-memory/index.js");
             const sharedMem = new SharedMemoryService(this.options.workspaceRoot, this.options.workspaceRoot);
             await sharedMem.restoreLatest().catch(() => {});
             

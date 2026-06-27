@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
-import { PromptCacheError } from "./errors";
+import { PromptCacheError } from "./errors.js";
 export class PromptCache {
     workspaceRoot;
     cacheDir;

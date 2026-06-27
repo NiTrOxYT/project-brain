@@ -4,8 +4,8 @@ import {
     SharedFact,
     SharedWarning,
     SharedIssue
-} from "./types";
-import { SharedMemoryModel } from "./memory";
+} from "./types.js";
+import { SharedMemoryModel } from "./memory.js";
 
 export class Blackboard {
     constructor(private readonly model: SharedMemoryModel) {}

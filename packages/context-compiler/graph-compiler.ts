@@ -10,8 +10,8 @@ import {
     SnapshotGraphEdge,
     SnapshotDependency,
     SnapshotContext
-} from "./types";
-import { SnapshotNormalizer } from "./normalizer";
+} from "./types.js";
+import { SnapshotNormalizer } from "./normalizer.js";
 
 export class GraphCompiler {
     private readonly normalizer = new SnapshotNormalizer();

@@ -5,7 +5,7 @@
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
-import { ProviderSessionError } from "./errors";
+import { ProviderSessionError } from "./errors.js";
 export class SessionManager {
     sessionsRoot;
     /** In-memory map of sessionId → ProviderSession */

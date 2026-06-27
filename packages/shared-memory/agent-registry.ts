@@ -1,6 +1,6 @@
-import { AgentIdentity, AgentSession } from "./types";
-import { AgentRegistrationError } from "./errors";
-import { SharedMemoryModel } from "./memory";
+import { AgentIdentity, AgentSession } from "./types.js";
+import { AgentRegistrationError } from "./errors.js";
+import { SharedMemoryModel } from "./memory.js";
 
 export class AgentRegistry {
     constructor(private readonly model: SharedMemoryModel) {}

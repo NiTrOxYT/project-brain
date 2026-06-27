@@ -3,7 +3,7 @@
 // ──────────────────────────────────────────────────────────────────────────────
 
 import crypto from "crypto";
-import { PromptPerformance } from "./types";
+import { PromptPerformance } from "./types.js";
 
 export class PromptLibrary {
     record(

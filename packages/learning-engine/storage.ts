@@ -12,8 +12,8 @@ import {
     PromptPerformance,
     OptimizationRule,
     LearningSnapshot
-} from "./types";
-import { LearningStorageError } from "./errors";
+} from "./types.js";
+import { LearningStorageError } from "./errors.js";
 
 export class LearningStorage {
     private readonly learningDir: string;

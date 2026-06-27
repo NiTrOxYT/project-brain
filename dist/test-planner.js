@@ -1,5 +1,5 @@
 import process from "process";
-import { PlannerService } from "./planner";
+import { PlannerService } from "./planner/index.js";
 async function main() {
     const planner = new PlannerService(process.cwd() + "/.brain");
     const prompts = [

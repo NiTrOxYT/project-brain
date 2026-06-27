@@ -1,5 +1,5 @@
-import { AgentArtifact } from "./types";
-import { SharedMemoryModel } from "./memory";
+import { AgentArtifact } from "./types.js";
+import { SharedMemoryModel } from "./memory.js";
 
 export class ArtifactStore {
     constructor(private readonly model: SharedMemoryModel) {}

@@ -1,8 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
-import { FileSystemService } from "../filesystem";
-import { ImportResolverService } from "../import-resolver";
-import { ArchitectureMemoryService } from "../architecture-memory";
+import { FileSystemService } from "../filesystem/index.js";
+import { ImportResolverService } from "../import-resolver/index.js";
+import { ArchitectureMemoryService } from "../architecture-memory/index.js";
 import {
     EngineeringPlan,
     EngineeringPlannerRequest,
@@ -12,8 +12,8 @@ import {
     RiskLevel,
     ComplexityLevel,
     PlannerDiagnostics
-} from "./types";
-import { EngineeringPlannerError } from "./errors";
+} from "./types.js";
+import { EngineeringPlannerError } from "./errors.js";
 
 interface SymbolRecord {
     name: string;

@@ -1,5 +1,5 @@
-import { RuntimeArtifact } from "./artifacts";
-export type { RuntimeEvent } from "./events";
+import { RuntimeArtifact } from "./artifacts.js";
+export type { RuntimeEvent } from "./events.js";
 
 export type AgentCapability =
     | "analyze"

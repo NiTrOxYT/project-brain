@@ -1,8 +1,8 @@
 import path from "path";
-import { GraphBuilderService } from "../graph-builder";
+import { GraphBuilderService } from "../graph-builder/index.js";
 
-import { FileSystemService } from "../filesystem";
-import { ProjectSnapshot } from "./types";
+import { FileSystemService } from "../filesystem/index.js";
+import { ProjectSnapshot } from "./types.js";
 
 export class ScannerService {
 

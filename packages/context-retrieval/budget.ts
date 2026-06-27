@@ -1,5 +1,5 @@
-import { RetrievalSection, RetrievalBudget } from "./types";
-import { RetrievalBudgetError } from "./errors";
+import { RetrievalSection, RetrievalBudget } from "./types.js";
+import { RetrievalBudgetError } from "./errors.js";
 
 export class RetrievalBudgeter {
     private readonly providerBudgets: Record<string, number> = {

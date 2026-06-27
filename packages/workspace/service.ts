@@ -1,8 +1,8 @@
 import path from "path";
-import { RuntimeService } from "../core";
+import { RuntimeService } from "../core/index.js";
 
-import { FileSystemService } from "../filesystem";
-import { WorkspaceOptions, WorkspaceResult } from "./types";
+import { FileSystemService } from "../filesystem/index.js";
+import { WorkspaceOptions, WorkspaceResult } from "./types.js";
 
 export interface IWorkspaceService {
     initialize(): Promise<WorkspaceResult>;

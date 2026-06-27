@@ -1,7 +1,7 @@
-import { OrchestratorScheduler } from "./scheduler";
-import { OrchestratorExecutor } from "./executor";
-import { OrchestratorError } from "./errors";
-import { AgentRuntimeService } from "../agent-runtime";
+import { OrchestratorScheduler } from "./scheduler.js";
+import { OrchestratorExecutor } from "./executor.js";
+import { OrchestratorError } from "./errors.js";
+import { AgentRuntimeService } from "../agent-runtime/index.js";
 export class MultiAgentOrchestratorService {
     workspaceRoot;
     runtime;
@@ -39,7 +39,7 @@ export class OrchestratorService {
     }
     async execute(request) {
         const projectRoot = path.dirname(this.workspaceRoot);
-        const { QueryEngineService } = await import("../query-engine");
+        const { QueryEngineService } = await import("../query-engine/index.js");
         const engine = new QueryEngineService(projectRoot, this.workspaceRoot);
         const result = await engine.query({
             query: request.query,

@@ -3,10 +3,11 @@
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs";
 import path from "path";
+import { StoragePaths } from "../kernel/paths.js";
 export class ExecutionJournalService {
     journalPath;
     constructor(workspaceRoot, planId) {
-        const dir = path.join(workspaceRoot, ".brain", "runtime");
+        const dir = new StoragePaths(workspaceRoot).journalDir;
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
         }

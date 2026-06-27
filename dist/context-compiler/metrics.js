@@ -5,6 +5,7 @@
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs/promises";
 import path from "path";
+import { StoragePaths } from "../kernel/paths.js";
 const DEFAULT_STATS = {
     totalSnapshots: 0,
     totalCompilations: 0,
@@ -23,7 +24,7 @@ export class SnapshotMetricsTracker {
     stats = { ...DEFAULT_STATS };
     loaded = false;
     constructor(workspaceRoot) {
-        this.statsPath = path.join(workspaceRoot, ".brain", "context", "metrics.json");
+        this.statsPath = new StoragePaths(workspaceRoot).compilerMetricsPath;
     }
     async load() {
         try {

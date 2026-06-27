@@ -1,6 +1,6 @@
 import process from "process";
 
-import { PlannerService } from "./planner";
+import { PlannerService } from "./planner/index.js";
 
 async function main() {
 

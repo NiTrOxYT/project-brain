@@ -5,12 +5,12 @@ import { spawnSync } from "child_process";
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { BaseSDKProvider } from "../../provider-runtime/provider";
-import { ProviderExecutionService } from "../../provider-execution/service";
-import { ProcessCancelledError, ProcessTimeoutError, InvalidExecutableError, ProcessSpawnError, ProcessExitedError, isTransientExitCode } from "../../provider-execution/errors";
-import { TransientProviderError, PermanentProviderError } from "../../provider-runtime/errors";
-import { buildPrompt } from "./prompt-builder";
-import { parseResponse } from "./response-parser";
+import { BaseSDKProvider } from "../../provider-runtime/provider.js";
+import { ProviderExecutionService } from "../../provider-execution/service.js";
+import { ProcessCancelledError, ProcessTimeoutError, InvalidExecutableError, ProcessSpawnError, ProcessExitedError, isTransientExitCode } from "../../provider-execution/errors.js";
+import { TransientProviderError, PermanentProviderError } from "../../provider-runtime/errors.js";
+import { buildPrompt } from "./prompt-builder.js";
+import { parseResponse } from "./response-parser.js";
 const CAPABILITIES = [
     "analyze", "create", "modify", "refactor", "validate", "document", "test", "cleanup"
 ];

@@ -1,12 +1,12 @@
 // ──────────────────────────────────────────────────────────────────────────────
 // BUILD-050A — Provider Execution Layer — Public API
 // ──────────────────────────────────────────────────────────────────────────────
-export * from "./types";
-export * from "./errors";
-export * from "./stream";
-export * from "./timeout";
-export * from "./retry";
-export * from "./sandbox";
-export * from "./diagnostics";
-export * from "./process";
-export * from "./service";
+export * from "./types.js";
+export * from "./errors.js";
+export * from "./stream.js";
+export * from "./timeout.js";
+export * from "./retry.js";
+export * from "./sandbox.js";
+export * from "./diagnostics.js";
+export * from "./process.js";
+export * from "./service.js";

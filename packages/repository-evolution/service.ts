@@ -1,9 +1,9 @@
 import fs from "fs/promises";
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { GitCommit, EvolutionHistory, FileAnalytics, CoChangeAnalytics, EvolutionAnalytics } from "./types";
-import { RepositoryEvolutionError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { GitCommit, EvolutionHistory, FileAnalytics, CoChangeAnalytics, EvolutionAnalytics } from "./types.js";
+import { RepositoryEvolutionError } from "./errors.js";
 
 export class RepositoryEvolutionService {
 

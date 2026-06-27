@@ -1,7 +1,7 @@
 import process from "process";
-import { PlannerService } from "./planner";
-import { RetrieverService } from "./retriever";
-import { ContextBudgetService } from "./context-budget";
+import { PlannerService } from "./planner/index.js";
+import { RetrieverService } from "./retriever/index.js";
+import { ContextBudgetService } from "./context-budget/index.js";
 async function main() {
     const workspace = process.cwd() + "/.brain";
     const planner = new PlannerService(workspace);

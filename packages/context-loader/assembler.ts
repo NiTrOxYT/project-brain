@@ -1,4 +1,4 @@
-import { ContextBundle } from "./types";
+import { ContextBundle } from "./types.js";
 
 export interface ExecutionContext {
 

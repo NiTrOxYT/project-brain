@@ -15,18 +15,18 @@ const __dirname = path.dirname(__filename);
 // Dedicated temp test workspace
 const TEST_WORKSPACE = path.join(__dirname, "..", ".brain-test-context-sync");
 
-import { ContextSynchronizationService } from "./context-sync/service";
-import { ChangeDetector } from "./context-sync/change-detector";
-import { DependencyResolver } from "./context-sync/dependency-resolver";
-import { DirtyRegionTracker } from "./context-sync/dirty-region";
-import { PatchBuilder } from "./context-sync/patch-builder";
-import { PatchApplier } from "./context-sync/patch-applier";
-import { FingerprintUpdater } from "./context-sync/fingerprint-updater";
-import { SnapshotValidator } from "./context-sync/validator";
-import { SnapshotSyncStorage } from "./context-sync/storage";
-import { SynchronizationMetricsTracker } from "./context-sync/metrics";
-import { SnapshotFingerprintEngine } from "./context-compiler/fingerprint";
-import type { SemanticSnapshot, SnapshotSection } from "./context-compiler/types";
+import { ContextSynchronizationService } from "./context-sync/service.js";
+import { ChangeDetector } from "./context-sync/change-detector.js";
+import { DependencyResolver } from "./context-sync/dependency-resolver.js";
+import { DirtyRegionTracker } from "./context-sync/dirty-region.js";
+import { PatchBuilder } from "./context-sync/patch-builder.js";
+import { PatchApplier } from "./context-sync/patch-applier.js";
+import { FingerprintUpdater } from "./context-sync/fingerprint-updater.js";
+import { SnapshotValidator } from "./context-sync/validator.js";
+import { SnapshotSyncStorage } from "./context-sync/storage.js";
+import { SynchronizationMetricsTracker } from "./context-sync/metrics.js";
+import { SnapshotFingerprintEngine } from "./context-compiler/fingerprint.js";
+import type { SemanticSnapshot, SnapshotSection } from "./context-compiler/types.js";
 
 let passed = 0;
 let failed = 0;
@@ -529,7 +529,7 @@ async function runSuite() {
         await fs.writeFile(path.join(TEST_WORKSPACE, "src/main.ts"), "console.log('init');").catch(() => {});
 
         // Trigger fake workspace engine commit
-        const { WorkspaceEngine } = await import("./workspace/workspace-engine");
+        const { WorkspaceEngine } = await import("./workspace/workspace-engine.js");
         const engine = new WorkspaceEngine({ workspaceRoot: TEST_WORKSPACE });
         const tx = engine.beginTransaction();
         engine.stage(tx.id, {
@@ -546,7 +546,7 @@ async function runSuite() {
     });
 
     await test("Test 35: QueryEngine service uses latest synchronized snapshot", async () => {
-        const { QueryEngineService } = await import("./query-engine/service");
+        const { QueryEngineService } = await import("./query-engine/service.js");
         const queryService = new QueryEngineService(TEST_WORKSPACE, TEST_WORKSPACE);
         // Trigger a minimal query evaluation
         const res = await queryService.query({ query: "find main" });

@@ -1,4 +1,4 @@
-import { WorkflowMetrics } from "./types";
+import { WorkflowMetrics } from "./types.js";
 
 export class WorkflowMetricsTracker {
     private readonly startTime: number;

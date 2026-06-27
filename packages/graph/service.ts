@@ -1,7 +1,7 @@
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { ProjectGraph } from "./types";
+import { FileSystemService } from "../filesystem/index.js";
+import { ProjectGraph } from "./types.js";
 
 export class GraphService {
 

@@ -1,8 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { ProjectInfo } from "./types";
+import { FileSystemService } from "../filesystem/index.js";
+import { ProjectInfo } from "./types.js";
 
 export class ProjectService {
 

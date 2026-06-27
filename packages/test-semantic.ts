@@ -1,6 +1,6 @@
 import process from "process";
 
-import { SemanticService } from "./semantic";
+import { SemanticService } from "./semantic/index.js";
 
 async function main() {
 

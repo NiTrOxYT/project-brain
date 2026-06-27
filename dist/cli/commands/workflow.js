@@ -9,9 +9,10 @@ import { logger } from "../utils/logger.js";
 import { printJson } from "../utils/json.js";
 import { Spinner } from "../utils/spinner.js";
 import { renderTable, renderKeyValue } from "../utils/table.js";
-import { requireBrainInitialized, brainDir } from "../utils/paths.js";
+import { requireBrainInitialized } from "../utils/paths.js";
 import { ValidationError } from "../utils/errors.js";
 import { bold, yellow, gray } from "../utils/colors.js";
+import { StoragePaths } from "../../kernel/paths.js";
 export async function runWorkflow(opts, sub, cmdOpts) {
     requireBrainInitialized(opts.workspace);
     switch (sub) {
@@ -116,7 +117,7 @@ async function workflowStatus(opts, cmdOpts) {
     }
 }
 async function workflowHistory(opts) {
-    const dir = path.join(brainDir(opts.workspace), "journal");
+    const dir = new StoragePaths(opts.workspace).journalDir;
     const entries = [];
     if (fs.existsSync(dir)) {
         const files = fs.readdirSync(dir).filter(f => f.endsWith(".jsonl"));

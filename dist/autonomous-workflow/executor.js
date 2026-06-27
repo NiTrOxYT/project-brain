@@ -1,5 +1,5 @@
-import { AutonomousRuntimeService } from "../autonomous-runtime/service";
-import { ExecutionError } from "./errors";
+import { AutonomousRuntimeService } from "../autonomous-runtime/service.js";
+import { ExecutionError } from "./errors.js";
 export class WorkflowExecutor {
     projectRoot;
     workspaceRoot;

@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { SnapshotFingerprint, SnapshotSection } from "../context-compiler/types";
+import { SnapshotFingerprint, SnapshotSection } from "../context-compiler/types.js";
 
 export class FingerprintUpdater {
     update(

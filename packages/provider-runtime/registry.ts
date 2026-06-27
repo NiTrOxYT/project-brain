@@ -3,11 +3,11 @@
 // Deterministic provider registry with ordered registration and discovery.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { AgentCapability } from "../agent-runtime/types";
-import { SDKProvider } from "./provider";
-import { ProviderProfile, NegotiationResult, NegotiationContext } from "./types";
-import { ProviderNotFoundError, ProviderRuntimeError } from "./errors";
-import { CapabilityNegotiator } from "./negotiation";
+import { AgentCapability } from "../agent-runtime/types.js";
+import { SDKProvider } from "./provider.js";
+import { ProviderProfile, NegotiationResult, NegotiationContext } from "./types.js";
+import { ProviderNotFoundError, ProviderRuntimeError } from "./errors.js";
+import { CapabilityNegotiator } from "./negotiation.js";
 
 interface RegistrationRecord {
     provider: SDKProvider;

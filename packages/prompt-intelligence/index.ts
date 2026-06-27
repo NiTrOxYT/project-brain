@@ -2,20 +2,20 @@
 // BUILD-053 — Prompt Intelligence Engine — Entrypoint Exports
 // ──────────────────────────────────────────────────────────────────────────────
 
-export * from "./types";
-export * from "./errors";
-export * from "./provider-profiles";
-export * from "./templates";
-export * from "./builder";
-export * from "./ranking";
-export * from "./optimizer";
-export * from "./budget";
-export * from "./validator";
-export * from "./renderer";
-export * from "./fingerprint";
-export * from "./cache";
-export * from "./diff";
-export * from "./snapshot";
-export * from "./metrics";
-export * from "./diagnostics";
-export * from "./service";
+export * from "./types.js";
+export * from "./errors.js";
+export * from "./provider-profiles.js";
+export * from "./templates.js";
+export * from "./builder.js";
+export * from "./ranking.js";
+export * from "./optimizer.js";
+export * from "./budget.js";
+export * from "./validator.js";
+export * from "./renderer.js";
+export * from "./fingerprint.js";
+export * from "./cache.js";
+export * from "./diff.js";
+export * from "./snapshot.js";
+export * from "./metrics.js";
+export * from "./diagnostics.js";
+export * from "./service.js";

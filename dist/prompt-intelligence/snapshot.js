@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { PromptEngineError } from "./errors";
+import { PromptEngineError } from "./errors.js";
 export class PromptSnapshotManager {
     workspaceRoot;
     promptsDir;
@@ -77,7 +77,7 @@ export class PromptSnapshotManager {
     async compare(id1, id2) {
         const p1 = await this.load(id1);
         const p2 = await this.load(id2);
-        const { PromptDiffEngine } = await import("./diff");
+        const { PromptDiffEngine } = await import("./diff.js");
         return new PromptDiffEngine().diff(p1, p2);
     }
 }

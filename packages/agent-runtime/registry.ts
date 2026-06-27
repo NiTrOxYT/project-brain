@@ -1,6 +1,6 @@
-import { AgentProvider } from "./provider";
-import { AgentDescriptor, AgentCapability } from "./types";
-import { AgentRuntimeError } from "./errors";
+import { AgentProvider } from "./provider.js";
+import { AgentDescriptor, AgentCapability } from "./types.js";
+import { AgentRuntimeError } from "./errors.js";
 
 const RUNTIME_VERSION = "1.0.0";
 

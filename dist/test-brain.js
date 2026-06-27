@@ -1,5 +1,5 @@
 import process from "process";
-import { BrainService } from "./brain";
+import { BrainService } from "./brain/index.js";
 async function main() {
     const brain = new BrainService(process.cwd() + "/.brain");
     const result = await brain.execute({

@@ -1,8 +1,8 @@
 import process from "process";
 import path from "path";
 import fs from "fs/promises";
-import { RuntimeService } from "./runtime";
-import { QueryEngineService } from "./query-engine";
+import { RuntimeService } from "./runtime/index.js";
+import { QueryEngineService } from "./query-engine/index.js";
 async function main() {
     const workspaceRoot = path.join(process.cwd(), ".brain");
     console.log("Setting up workspace database...");

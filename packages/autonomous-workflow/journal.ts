@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
-import { JournalEvent } from "./types";
-import { WorkspaceEngine } from "../workspace/workspace-engine";
+import { JournalEvent } from "./types.js";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
 
 export class WorkflowJournalService {
     private readonly journalPath: string;

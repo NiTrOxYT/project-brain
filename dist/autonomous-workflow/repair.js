@@ -1,6 +1,6 @@
-import { PromptIntelligenceService } from "../prompt-intelligence/service";
-import { LearningEngineService } from "../learning-engine/service";
-import { RepairError } from "./errors";
+import { PromptIntelligenceService } from "../prompt-intelligence/service.js";
+import { LearningEngineService } from "../learning-engine/service.js";
+import { RepairError } from "./errors.js";
 export class WorkflowRepair {
     projectRoot;
     workspaceRoot;

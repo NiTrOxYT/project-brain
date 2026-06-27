@@ -1,7 +1,7 @@
-import { GraphTraversalService } from "../graph-traversal";
+import { GraphTraversalService } from "../graph-traversal/index.js";
 import path from "path";
-import { FileSystemService } from "../filesystem";
-import { RetrieverService } from "../retriever";
+import { FileSystemService } from "../filesystem/index.js";
+import { RetrieverService } from "../retriever/index.js";
 export class ContextLoaderService {
     workspaceRoot;
     filesystem = new FileSystemService();

@@ -5,12 +5,13 @@
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs/promises";
 import path from "path";
-import { SnapshotCacheError } from "./errors";
+import { SnapshotCacheError } from "./errors.js";
+import { StoragePaths } from "../kernel/paths.js";
 export class SnapshotCache {
     cacheDir;
     memoryCache = new Map();
     constructor(workspaceRoot) {
-        this.cacheDir = path.join(workspaceRoot, ".brain", "context", "cache");
+        this.cacheDir = new StoragePaths(workspaceRoot).compilerCacheDir;
     }
     async ensureDirectory() {
         await fs.mkdir(this.cacheDir, { recursive: true });

@@ -1,4 +1,4 @@
-import { RetrievalPackage } from "./types";
+import { RetrievalPackage } from "./types.js";
 
 export class RetrievalCompressor {
     compress(pkg: RetrievalPackage): RetrievalPackage {

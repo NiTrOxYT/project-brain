@@ -1,13 +1,13 @@
 // ──────────────────────────────────────────────────────────────────────────────
 // BUILD-051 — Autonomous Execution Loop — Public Entrypoint
 // ──────────────────────────────────────────────────────────────────────────────
-export * from "./types";
-export * from "./errors";
-export * from "./validator";
-export * from "./failure-analyzer";
-export * from "./repair";
-export * from "./checkpoint";
-export * from "./journal";
-export * from "./recovery";
-export * from "./metrics";
-export * from "./service";
+export * from "./types.js";
+export * from "./errors.js";
+export * from "./validator.js";
+export * from "./failure-analyzer.js";
+export * from "./repair.js";
+export * from "./checkpoint.js";
+export * from "./journal.js";
+export * from "./recovery.js";
+export * from "./metrics.js";
+export * from "./service.js";

@@ -1,4 +1,4 @@
-import { SemanticSnapshot, SnapshotDependency } from "../context-compiler/types";
+import { SemanticSnapshot, SnapshotDependency } from "../context-compiler/types.js";
 
 export class DependencyResolver {
     /**

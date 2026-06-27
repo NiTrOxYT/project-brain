@@ -3,7 +3,7 @@
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs";
 import path from "path";
-import { ProviderExecutionService } from "../provider-execution/service";
+import { ProviderExecutionService } from "../provider-execution/service.js";
 export class ValidationService {
     execService;
     constructor(execService) {

@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import ts from "typescript";
 
-import { ParsedSourceFile } from "./types";
+import { ParsedSourceFile } from "./types.js";
 
 export class AstService {
 

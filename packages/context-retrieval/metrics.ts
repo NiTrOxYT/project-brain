@@ -1,6 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
-import { RetrievalStatistics, RetrievalMetrics } from "./types";
+import { RetrievalStatistics, RetrievalMetrics } from "./types.js";
+import { StoragePaths } from "../kernel/paths.js";
 
 const DEFAULT_STATS: RetrievalStatistics = {
     totalRetrievals: 0,
@@ -18,9 +19,7 @@ export class RetrievalMetricsTracker {
     private loaded = false;
 
     constructor(workspaceRoot: string) {
-        this.statsPath = path.join(
-            workspaceRoot, ".brain", "context", "retrieval-metrics.json"
-        );
+        this.statsPath = new StoragePaths(workspaceRoot).retrievalMetricsPath;
     }
 
     async load(): Promise<void> {

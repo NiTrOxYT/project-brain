@@ -1,4 +1,4 @@
-import { ServiceContainer } from "./container";
+import { ServiceContainer } from "./container.js";
 
 export class Kernel {
 

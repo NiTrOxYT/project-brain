@@ -2,7 +2,7 @@
 // BUILD-048 — Workspace Execution Engine — Lock Manager
 // In-memory, deterministic file-level locking. No OS-level locks.
 // ──────────────────────────────────────────────────────────────────────────────
-import { WorkspaceLockError } from "./workspace-errors";
+import { WorkspaceLockError } from "./workspace-errors.js";
 export class WorkspaceLockManager {
     /** Canonical path → active lock */
     locks = new Map();

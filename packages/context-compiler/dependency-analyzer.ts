@@ -5,8 +5,8 @@
 // ──────────────────────────────────────────────────────────────────────────────
 
 import path from "path";
-import { SnapshotDependency, SnapshotContext } from "./types";
-import { SnapshotNormalizer } from "./normalizer";
+import { SnapshotDependency, SnapshotContext } from "./types.js";
+import { SnapshotNormalizer } from "./normalizer.js";
 
 export class DependencyAnalyzer {
     private readonly normalizer = new SnapshotNormalizer();

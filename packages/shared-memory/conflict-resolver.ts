@@ -1,6 +1,6 @@
-import { ConflictRecord, ConflictResolution } from "./types";
-import { SharedMemoryModel } from "./memory";
-import { ConflictError } from "./errors";
+import { ConflictRecord, ConflictResolution } from "./types.js";
+import { SharedMemoryModel } from "./memory.js";
+import { ConflictError } from "./errors.js";
 
 export class ConflictResolver {
     constructor(private readonly model: SharedMemoryModel) {}

@@ -8,11 +8,13 @@ import { logger } from "../utils/logger.js";
 import { printJson } from "../utils/json.js";
 import { Spinner } from "../utils/spinner.js";
 import { renderTable, renderKeyValue } from "../utils/table.js";
-import { requireBrainInitialized, brainDir } from "../utils/paths.js";
+import { requireBrainInitialized } from "../utils/paths.js";
 import { ValidationError } from "../utils/errors.js";
 import { bold, gray } from "../utils/colors.js";
+import { StoragePaths } from "../../kernel/paths.js";
 export async function runContext(opts, sub, cmdOpts) {
     requireBrainInitialized(opts.workspace);
+    const paths = new StoragePaths(opts.workspace);
     const { ContextSynchronizationService } = await import("../../context-sync/service.js");
     const svc = new ContextSynchronizationService(opts.project, opts.workspace);
     const spinner = new Spinner("Loading context...");
@@ -44,7 +46,7 @@ export async function runContext(opts, sub, cmdOpts) {
             }
             case "list": {
                 // Read snapshots from .brain/snapshots directory
-                const snapDir = path.join(brainDir(opts.workspace), "snapshots");
+                const snapDir = paths.snapshotsDir;
                 const refs = [];
                 if (fs.existsSync(snapDir)) {
                     const files = fs.readdirSync(snapDir).filter(f => f.endsWith(".json") && f !== "index.json");
@@ -104,7 +106,7 @@ export async function runContext(opts, sub, cmdOpts) {
             }
             case "compact": {
                 // Compact: remove old snapshots except 5 most recent
-                const snapDir = path.join(brainDir(opts.workspace), "snapshots");
+                const snapDir = paths.snapshotsDir;
                 let removed = 0;
                 if (fs.existsSync(snapDir)) {
                     const files = fs.readdirSync(snapDir)
@@ -143,7 +145,7 @@ export async function runContext(opts, sub, cmdOpts) {
                 if (!fromId || !toId)
                     throw new ValidationError("--from and --to are required");
                 // Load both snapshots and compute basic delta
-                const snapDir = path.join(brainDir(opts.workspace), "snapshots");
+                const snapDir = paths.snapshotsDir;
                 const loadSnap = (id) => {
                     const candidates = fs.existsSync(snapDir)
                         ? fs.readdirSync(snapDir).filter(f => f.includes(id))

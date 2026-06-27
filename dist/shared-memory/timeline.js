@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import { TimelineError } from "./errors";
+import { TimelineError } from "./errors.js";
 export class CollaborationTimeline {
     timelinePath;
     events = [];

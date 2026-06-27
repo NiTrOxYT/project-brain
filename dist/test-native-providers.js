@@ -4,12 +4,12 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { CodexProvider } from "./providers/codex/provider";
-import { GeminiCLIProvider } from "./providers/gemini-cli/provider";
-import { OllamaProvider } from "./providers/ollama/provider";
-import { AiderProvider } from "./providers/aider/provider";
-import { OpenCodeProvider } from "./providers/opencode/provider";
-import { WorkspaceEngine } from "./workspace/workspace-engine";
+import { CodexProvider } from "./providers/codex/provider.js";
+import { GeminiCLIProvider } from "./providers/gemini-cli/provider.js";
+import { OllamaProvider } from "./providers/ollama/provider.js";
+import { AiderProvider } from "./providers/aider/provider.js";
+import { OpenCodeProvider } from "./providers/opencode/provider.js";
+import { WorkspaceEngine } from "./workspace/workspace-engine.js";
 let passed = 0;
 let failed = 0;
 const errors = [];

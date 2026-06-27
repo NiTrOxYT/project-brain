@@ -1,5 +1,5 @@
-import { EngineeringPlan } from "../engineering-planner/types";
-import { WorkflowSummary, JournalEvent, WorkflowMetrics, WorkflowDiagnostics, WorkflowRecommendation } from "./types";
+import { EngineeringPlan } from "../engineering-planner/types.js";
+import { WorkflowSummary, JournalEvent, WorkflowMetrics, WorkflowDiagnostics, WorkflowRecommendation } from "./types.js";
 
 export class WorkflowReportGenerator {
     generate(

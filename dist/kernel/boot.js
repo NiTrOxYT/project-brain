@@ -1,5 +1,5 @@
 import path from "path";
-import { CACHE_DIRECTORY, GRAPH_DIRECTORY, MEMORY_DIRECTORY, PROJECT_BRAIN_DIRECTORY_NAME, TASK_DIRECTORY } from "./constants";
+import { CACHE_DIRECTORY, GRAPH_DIRECTORY, MEMORY_DIRECTORY, PROJECT_BRAIN_DIRECTORY_NAME, TASK_DIRECTORY } from "./constants.js";
 export class BrainKernel {
     static boot(cwd) {
         const brain = path.join(cwd, PROJECT_BRAIN_DIRECTORY_NAME);

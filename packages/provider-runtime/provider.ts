@@ -2,14 +2,14 @@
 // BUILD-049 — Provider Runtime — Provider Interface & Base Class
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { RuntimeTask, RuntimeContext, RuntimeResponse, RuntimeEvent } from "../agent-runtime/types";
-import { AgentCapability } from "../agent-runtime/types";
+import { RuntimeTask, RuntimeContext, RuntimeResponse, RuntimeEvent } from "../agent-runtime/types.js";
+import { AgentCapability } from "../agent-runtime/types.js";
 import {
     ProviderMetadata,
     ProviderProfile,
     ProviderHealthReport,
     StreamEvent
-} from "./types";
+} from "./types.js";
 
 // ─── SDKProvider Interface ────────────────────────────────────────────────────
 

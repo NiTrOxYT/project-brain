@@ -1,6 +1,6 @@
 import process from "process";
 
-import { ScannerService } from "./scanner";
+import { ScannerService } from "./scanner/index.js";
 
 async function main() {
 

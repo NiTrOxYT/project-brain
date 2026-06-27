@@ -1,4 +1,4 @@
-import { PromptTemplate } from "./types";
+import { PromptTemplate } from "./types.js";
 
 export const TEMPLATES: Record<PromptTemplate["type"], string> = {
     Feature: `Task Type: Feature Implementation

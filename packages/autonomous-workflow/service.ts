@@ -10,21 +10,21 @@ import {
     WorkflowDiagnostics,
     WorkflowRecommendation,
     JournalEvent
-} from "./types";
-import { WorkflowError, PlanningError, ExecutionError, ValidationError, RepairError, RecoveryError } from "./errors";
-import { WorkflowPlanner } from "./planner";
-import { WorkflowScheduler } from "./scheduler";
-import { WorkflowExecutor } from "./executor";
-import { WorkflowValidator } from "./validator";
-import { WorkflowRepair } from "./repair";
-import { WorkflowJournalService } from "./journal";
-import { WorkflowCheckpointService } from "./checkpoint";
-import { WorkflowMetricsTracker } from "./metrics";
-import { WorkflowReportGenerator } from "./report";
+} from "./types.js";
+import { WorkflowError, PlanningError, ExecutionError, ValidationError, RepairError, RecoveryError } from "./errors.js";
+import { WorkflowPlanner } from "./planner.js";
+import { WorkflowScheduler } from "./scheduler.js";
+import { WorkflowExecutor } from "./executor.js";
+import { WorkflowValidator } from "./validator.js";
+import { WorkflowRepair } from "./repair.js";
+import { WorkflowJournalService } from "./journal.js";
+import { WorkflowCheckpointService } from "./checkpoint.js";
+import { WorkflowMetricsTracker } from "./metrics.js";
+import { WorkflowReportGenerator } from "./report.js";
 
-import { WorkspaceEngine } from "../workspace/workspace-engine";
-import { LearningEngineService } from "../learning-engine/service";
-import { QueryEngineService } from "../query-engine/service";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
+import { LearningEngineService } from "../learning-engine/service.js";
+import { QueryEngineService } from "../query-engine/service.js";
 
 export class AutonomousWorkflowService {
     private readonly workspaceEngine: WorkspaceEngine;

@@ -6,9 +6,9 @@ import {
     MEMORY_DIRECTORY,
     PROJECT_BRAIN_DIRECTORY_NAME,
     TASK_DIRECTORY
-} from "./constants";
+} from "./constants.js";
 
-import { RuntimeContext } from "./types";
+import { RuntimeContext } from "./types.js";
 
 export class BrainKernel {
 

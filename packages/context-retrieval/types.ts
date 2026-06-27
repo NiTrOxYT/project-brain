@@ -9,7 +9,7 @@ import {
     SnapshotGraphEdge,
     SnapshotFingerprint,
     CompilationStage
-} from "../context-compiler/types";
+} from "../context-compiler/types.js";
 
 export interface RetrievalRequest {
     query: string;

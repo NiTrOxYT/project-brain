@@ -1,6 +1,6 @@
 import path from "path";
-import { FileSystemService } from "../filesystem";
-import { RepositoryEvolutionError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { RepositoryEvolutionError } from "./errors.js";
 export class RepositoryEvolutionService {
     workspaceRoot;
     filesystem = new FileSystemService();

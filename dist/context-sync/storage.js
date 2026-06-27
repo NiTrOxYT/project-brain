@@ -1,14 +1,16 @@
 import fs from "fs/promises";
 import path from "path";
-import { SnapshotStorage } from "../context-compiler/storage";
-import { SnapshotStorageError } from "../context-compiler/errors";
+import { SnapshotStorage } from "../context-compiler/storage.js";
+import { SnapshotStorageError } from "../context-compiler/errors.js";
+import { StoragePaths } from "../kernel/paths.js";
 export class SnapshotSyncStorage {
     patchesDir;
     historyDir;
     compilerStorage;
     constructor(workspaceRoot) {
-        this.patchesDir = path.join(workspaceRoot, ".brain", "context", "patches");
-        this.historyDir = path.join(workspaceRoot, ".brain", "context", "history");
+        const paths = new StoragePaths(workspaceRoot);
+        this.patchesDir = paths.patchesDir;
+        this.historyDir = path.dirname(paths.lineagePath);
         this.compilerStorage = new SnapshotStorage(workspaceRoot);
     }
     async ensureDirectories() {

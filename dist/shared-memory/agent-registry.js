@@ -1,4 +1,4 @@
-import { AgentRegistrationError } from "./errors";
+import { AgentRegistrationError } from "./errors.js";
 export class AgentRegistry {
     model;
     constructor(model) {

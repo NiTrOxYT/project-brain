@@ -5,16 +5,18 @@
 
 import fs from "fs/promises";
 import path from "path";
-import { SemanticSnapshot, SnapshotReference } from "./types";
-import { SnapshotStorageError } from "./errors";
+import { SemanticSnapshot, SnapshotReference } from "./types.js";
+import { SnapshotStorageError } from "./errors.js";
+import { StoragePaths } from "../kernel/paths.js";
 
 export class SnapshotStorage {
     private readonly snapshotsDir: string;
     private readonly indexPath: string;
 
     constructor(workspaceRoot: string) {
-        this.snapshotsDir = path.join(workspaceRoot, ".brain", "context", "snapshots");
-        this.indexPath = path.join(workspaceRoot, ".brain", "context", "snapshots", "index.json");
+        const paths = new StoragePaths(workspaceRoot);
+        this.snapshotsDir = paths.snapshotsDir;
+        this.indexPath = paths.indexPath;
     }
 
     async ensureDirectory(): Promise<void> {

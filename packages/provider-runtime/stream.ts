@@ -3,8 +3,8 @@
 // Unified streaming interface. Provider-independent.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { StreamEvent, StreamEventType } from "./types";
-import { ProviderStreamError } from "./errors";
+import { StreamEvent, StreamEventType } from "./types.js";
+import { ProviderStreamError } from "./errors.js";
 
 type StreamHandler = (event: StreamEvent) => void;
 

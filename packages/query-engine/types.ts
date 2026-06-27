@@ -1,4 +1,4 @@
-import { ContextPackage } from "../context-assembler";
+import { ContextPackage } from "../context-assembler/index.js";
 
 export interface QueryRequest {
 

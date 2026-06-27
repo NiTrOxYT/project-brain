@@ -1,4 +1,4 @@
-import { RuntimeTask, RuntimeContext, RuntimeResponse, AgentCapability, RuntimeEvent } from "./types";
+import { RuntimeTask, RuntimeContext, RuntimeResponse, AgentCapability, RuntimeEvent } from "./types.js";
 
 export interface AgentProvider {
     id: string;

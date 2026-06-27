@@ -3,7 +3,7 @@
 // Tracks execution metadata per request. No provider-specific fields.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { ExecutionMetrics, ExecutionDiagnostics } from "./types";
+import { ExecutionMetrics, ExecutionDiagnostics } from "./types.js";
 
 interface MetricsRecord {
     metrics: ExecutionMetrics;

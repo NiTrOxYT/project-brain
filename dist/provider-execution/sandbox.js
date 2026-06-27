@@ -6,7 +6,7 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { SandboxError } from "./errors";
+import { SandboxError } from "./errors.js";
 /**
  * Manages isolated temporary execution directories.
  * Each sandbox is a unique temp directory that is cleaned up after use.

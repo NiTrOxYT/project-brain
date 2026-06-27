@@ -3,7 +3,7 @@
 // Stateful line-reconstructing stream processor for stdout/stderr.
 // Provider-agnostic: does not parse any provider-specific output.
 // ──────────────────────────────────────────────────────────────────────────────
-import { StreamError } from "./errors";
+import { StreamError } from "./errors.js";
 /**
  * Processes a single channel (stdout or stderr).
  * Reconstructs complete lines from incoming data buffers.

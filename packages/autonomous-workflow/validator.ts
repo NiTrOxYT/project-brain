@@ -1,7 +1,7 @@
-import { ValidationService } from "../autonomous-runtime/validator";
-import { WorkspaceEngine } from "../workspace/workspace-engine";
-import { WorkflowValidationResult } from "./types";
-import { ValidationError } from "./errors";
+import { ValidationService } from "../autonomous-runtime/validator.js";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
+import { WorkflowValidationResult } from "./types.js";
+import { ValidationError } from "./errors.js";
 
 export class WorkflowValidator {
     private readonly validationService: ValidationService;

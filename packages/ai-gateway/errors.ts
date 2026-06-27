@@ -1,0 +1,78 @@
+// ──────────────────────────────────────────────────────────────────────────────
+// BUILD-061A — AI Gateway — Errors
+// ──────────────────────────────────────────────────────────────────────────────
+
+export class GatewayError extends Error {
+    constructor(message: string, public readonly code = "GATEWAY_ERROR") {
+        super(message);
+        this.name = "GatewayError";
+    }
+}
+
+export class ProviderNotInstalledError extends GatewayError {
+    constructor(providerId: string) {
+        super(
+            `Provider "${providerId}" is not installed or not registered. Run: brain install`,
+            "PROVIDER_NOT_INSTALLED"
+        );
+        this.name = "ProviderNotInstalledError";
+    }
+}
+
+export class ProviderDetectionError extends GatewayError {
+    constructor(providerId: string, cause: string) {
+        super(
+            `Failed to detect provider "${providerId}": ${cause}`,
+            "PROVIDER_DETECTION_ERROR"
+        );
+        this.name = "ProviderDetectionError";
+    }
+}
+
+export class ProviderLaunchError extends GatewayError {
+    constructor(providerId: string, cause: string) {
+        super(
+            `Failed to launch provider "${providerId}": ${cause}`,
+            "PROVIDER_LAUNCH_ERROR"
+        );
+        this.name = "ProviderLaunchError";
+    }
+}
+
+export class InstallationError extends GatewayError {
+    constructor(message: string) {
+        super(message, "INSTALLATION_ERROR");
+        this.name = "InstallationError";
+    }
+}
+
+export class WrapperLoopError extends InstallationError {
+    constructor(providerId: string, path: string) {
+        super(
+            `Loop detected for provider "${providerId}": resolved binary path "${path}" is inside the Project Brain bin directory. ` +
+            `This would cause infinite recursion. Run \`brain install --repair\` to fix.`
+        );
+        this.name = "WrapperLoopError";
+    }
+}
+
+export class SessionStoreError extends GatewayError {
+    constructor(message: string) {
+        super(message, "SESSION_STORE_ERROR");
+        this.name = "SessionStoreError";
+    }
+}
+
+export class MetricsStoreError extends GatewayError {
+    constructor(message: string) {
+        super(message, "METRICS_STORE_ERROR");
+        this.name = "MetricsStoreError";
+    }
+}
+
+export class GlobalConfigError extends GatewayError {
+    constructor(message: string) {
+        super(message, "GLOBAL_CONFIG_ERROR");
+        this.name = "GlobalConfigError";
+    }
+}

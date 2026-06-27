@@ -6,16 +6,16 @@ import fs from "fs";
 import path from "path";
 import os from "os";
 
-import { ClaudeCodeProvider, resolveClaudePath } from "./providers/claude-code/provider";
-import { buildPrompt } from "./providers/claude-code/prompt-builder";
-import { parseResponse } from "./providers/claude-code/response-parser";
-import { ProviderExecutionService } from "./provider-execution/service";
-import { WorkspaceEngine } from "./workspace/workspace-engine";
-import { WorkspaceJournal } from "./workspace/workspace-journal";
-import { WorkspaceLockManager } from "./workspace/workspace-lock";
-import { MockSDKProvider } from "./providers/mock";
-import { StreamEvent } from "./provider-runtime/types";
-import { RuntimeTask, RuntimeContext, RuntimeEvent } from "./agent-runtime/types";
+import { ClaudeCodeProvider, resolveClaudePath } from "./providers/claude-code/provider.js";
+import { buildPrompt } from "./providers/claude-code/prompt-builder.js";
+import { parseResponse } from "./providers/claude-code/response-parser.js";
+import { ProviderExecutionService } from "./provider-execution/service.js";
+import { WorkspaceEngine } from "./workspace/workspace-engine.js";
+import { WorkspaceJournal } from "./workspace/workspace-journal.js";
+import { WorkspaceLockManager } from "./workspace/workspace-lock.js";
+import { MockSDKProvider } from "./providers/mock/index.js";
+import { StreamEvent } from "./provider-runtime/types.js";
+import { RuntimeTask, RuntimeContext, RuntimeEvent } from "./agent-runtime/types.js";
 
 let passed = 0;
 let failed = 0;

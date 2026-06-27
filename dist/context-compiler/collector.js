@@ -142,7 +142,9 @@ export class SnapshotCollector {
                 entry.name === ".brain" ||
                 entry.name === "dist" ||
                 entry.name === "build" ||
-                entry.name === ".cache") {
+                entry.name === ".cache" ||
+                entry.name === "learning" ||
+                entry.name === "runtime") {
                 continue;
             }
             if (entry.isDirectory()) {

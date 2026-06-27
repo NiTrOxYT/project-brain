@@ -1,8 +1,8 @@
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { ImportIndex } from "../imports";
-import { DependencyGraph } from "./types";
+import { FileSystemService } from "../filesystem/index.js";
+import { ImportIndex } from "../imports/index.js";
+import { DependencyGraph } from "./types.js";
 
 export class GraphBuilderService {
 
@@ -19,7 +19,7 @@ export class GraphBuilderService {
             ImportResolverService
         
         } = await import(
-            "../import-resolver"
+            "../import-resolver/index.js"
         );
         
         const imports = {

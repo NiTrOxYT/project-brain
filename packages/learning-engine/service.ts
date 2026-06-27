@@ -2,15 +2,15 @@
 // BUILD-052 — Learning Engine — Main Service
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { LearningStorage } from "./storage";
-import { LearningExtractor } from "./extractor";
-import { LearningClassifier } from "./classifier";
-import { RepairPatternsLearner } from "./repair-patterns";
-import { ProviderPerformanceTracker } from "./provider-performance";
-import { PromptLibrary } from "./prompt-library";
-import { LearningOptimizer } from "./optimizer";
-import { LearningRecommender } from "./recommender";
-import { LearningMetricsTracker } from "./metrics";
+import { LearningStorage } from "./storage.js";
+import { LearningExtractor } from "./extractor.js";
+import { LearningClassifier } from "./classifier.js";
+import { RepairPatternsLearner } from "./repair-patterns.js";
+import { ProviderPerformanceTracker } from "./provider-performance.js";
+import { PromptLibrary } from "./prompt-library.js";
+import { LearningOptimizer } from "./optimizer.js";
+import { LearningRecommender } from "./recommender.js";
+import { LearningMetricsTracker } from "./metrics.js";
 import {
     LearningRequest,
     LearningRecommendation,
@@ -19,8 +19,8 @@ import {
     LearningStatistics,
     OptimizationRule,
     LearningExperience
-} from "./types";
-import { ExecutionLoopResult } from "../autonomous-runtime/types";
+} from "./types.js";
+import { ExecutionLoopResult } from "../autonomous-runtime/types.js";
 
 export class LearningEngineService {
     private readonly storage: LearningStorage;
@@ -113,7 +113,7 @@ export class LearningEngineService {
         let consensusQuality: number | undefined;
 
         try {
-            const { ContextSynchronizationService } = await import("../context-sync");
+            const { ContextSynchronizationService } = await import("../context-sync/index.js");
             const syncService = new ContextSynchronizationService(this.workspaceRoot, this.workspaceRoot);
             const latestSnap = await syncService.latestSnapshot();
             if (latestSnap) {
@@ -129,7 +129,7 @@ export class LearningEngineService {
         } catch { /* best-effort */ }
 
         try {
-            const { ContextRetrievalService } = await import("../context-retrieval");
+            const { ContextRetrievalService } = await import("../context-retrieval/index.js");
             const retrievalService = new ContextRetrievalService(this.workspaceRoot, this.workspaceRoot);
             const retrievalStats = await retrievalService.statistics();
             if (retrievalStats) {
@@ -142,7 +142,7 @@ export class LearningEngineService {
         } catch { /* best-effort */ }
 
         try {
-            const { SharedMemoryService } = await import("../shared-memory");
+            const { SharedMemoryService } = await import("../shared-memory/index.js");
             const sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
             const stats = await sharedMem.statistics();
             if (stats) {

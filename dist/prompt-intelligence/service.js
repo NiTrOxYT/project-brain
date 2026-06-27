@@ -1,16 +1,16 @@
 import fs from "fs/promises";
 import path from "path";
-import { PromptContextBuilder } from "./builder";
-import { PromptAssembler } from "./assembler";
-import { PromptOptimizer } from "./optimizer";
-import { PromptBudgeter } from "./budget";
-import { PromptValidator } from "./validator";
-import { PromptRenderer } from "./renderer";
-import { PromptFingerprinter } from "./fingerprint";
-import { PromptCache } from "./cache";
-import { PromptSnapshotManager } from "./snapshot";
-import { PromptMetricsCollector } from "./metrics";
-import { getProviderProfile } from "./provider-profiles";
+import { PromptContextBuilder } from "./builder.js";
+import { PromptAssembler } from "./assembler.js";
+import { PromptOptimizer } from "./optimizer.js";
+import { PromptBudgeter } from "./budget.js";
+import { PromptValidator } from "./validator.js";
+import { PromptRenderer } from "./renderer.js";
+import { PromptFingerprinter } from "./fingerprint.js";
+import { PromptCache } from "./cache.js";
+import { PromptSnapshotManager } from "./snapshot.js";
+import { PromptMetricsCollector } from "./metrics.js";
+import { getProviderProfile } from "./provider-profiles.js";
 export class PromptIntelligenceService {
     workspaceRoot;
     builder;
@@ -58,7 +58,7 @@ export class PromptIntelligenceService {
         stages.push("Builder");
         let snapshot = null;
         try {
-            const { ContextSynchronizationService } = await import("../context-sync");
+            const { ContextSynchronizationService } = await import("../context-sync/index.js");
             const syncService = new ContextSynchronizationService(this.workspaceRoot, this.workspaceRoot);
             snapshot = await syncService.latestSnapshot();
         }

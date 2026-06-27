@@ -1,6 +1,6 @@
-import { ConsensusProposal, ConsensusDecision } from "./types";
-import { ConsensusError } from "./errors";
-import { SharedMemoryModel } from "./memory";
+import { ConsensusProposal, ConsensusDecision } from "./types.js";
+import { ConsensusError } from "./errors.js";
+import { SharedMemoryModel } from "./memory.js";
 
 export class ConsensusEngine {
     constructor(private readonly model: SharedMemoryModel) {}

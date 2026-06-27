@@ -5,6 +5,7 @@
 
 import type { AgentCapability } from "../agent-runtime/types.js";
 import type { GatewaySession, ProviderHealthStatus } from "../domain/index.js";
+import type { ProviderCapabilities } from "../provider-bridge/types.js";
 
 // Re-export Event types from Kernel
 export type {
@@ -39,12 +40,19 @@ export interface ExitResult {
     signal: NodeJS.Signals | null;
 }
 
+import { InvocationMode, type InvocationDecision } from "./invocation-classifier.js";
+export { InvocationMode };
+export type { InvocationDecision };
+
 export interface ProviderAdapterMetadata {
     id:           string;
     displayName:  string;
     version:      string;
     capabilities: AgentCapability[];
     supportsStreaming: boolean;
+    passthroughCommands?: string[];
+    gatewayCommands?:      string[];
+    supportsInteractiveTTY?: boolean;
 }
 
 export interface LaunchOptions {
@@ -52,6 +60,26 @@ export interface LaunchOptions {
     optimizedPrompt: string;
     extraArgs:       string[];
     env?:            NodeJS.ProcessEnv;
+    resolvedBinary?: string;
+}
+
+export interface LaunchReport {
+    provider:          string;
+    wrapperPath?:      string;
+    manifestPath?:     string;
+    storedBinary?:     string;
+    resolvedBinary?:   string;
+    executableExists:  boolean;
+    executable:        boolean;
+    cwd:               string;
+    command:           string[];
+    envPath:           string[];
+    spawnSucceeded:    boolean;
+    error?: {
+        code:    string;
+        message: string;
+        stack?:  string;
+    };
 }
 
 export interface ProviderProcess {
@@ -73,4 +101,9 @@ export interface ProviderAdapter {
     metadata():  ProviderAdapterMetadata;
     health():    Promise<ProviderHealthStatus>;
     capabilities(): AgentCapability[];
+    classifyInvocation(argv: string[]): InvocationDecision;
+    providerCapabilities(): ProviderCapabilities;
+    passthroughCommands(): string[];
+    gatewayCommands(): string[];
+    supportsInteractiveTTY(): boolean;
 }

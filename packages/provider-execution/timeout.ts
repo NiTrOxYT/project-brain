@@ -3,8 +3,8 @@
 // Multi-layer timeout: startup → idle → execution → graceful shutdown.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { TimeoutPolicy } from "./types";
-import { ProcessTimeoutError } from "./errors";
+import { TimeoutPolicy } from "./types.js";
+import { ProcessTimeoutError } from "./errors.js";
 
 export type TimeoutKind = "startup" | "idle" | "execution";
 

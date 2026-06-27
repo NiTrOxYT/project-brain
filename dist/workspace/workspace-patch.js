@@ -3,7 +3,7 @@
 // Pure string-based unified diff generation and application.
 // No external diff libraries. Deterministic output.
 // ──────────────────────────────────────────────────────────────────────────────
-import { WorkspacePatchError } from "./workspace-errors";
+import { WorkspacePatchError } from "./workspace-errors.js";
 export class WorkspacePatchEngine {
     /**
      * Generate a WorkspacePatch representing the change from oldContent to newContent.

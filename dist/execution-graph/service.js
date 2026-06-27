@@ -1,8 +1,8 @@
 import path from "path";
 import ts from "typescript";
-import { AstService } from "../ast";
-import { FileSystemService } from "../filesystem";
-import { ExecutionGraphError } from "./errors";
+import { AstService } from "../ast/index.js";
+import { FileSystemService } from "../filesystem/index.js";
+import { ExecutionGraphError } from "./errors.js";
 export class ExecutionGraphService {
     workspaceRoot;
     filesystem = new FileSystemService();
@@ -21,7 +21,7 @@ export class ExecutionGraphService {
                 .filter(file => file.path.endsWith(".ts") || file.path.endsWith(".tsx"))
                 .map(file => file.path);
             // Import Resolution & Reachability Setup
-            const { ImportResolverService } = await import("../import-resolver");
+            const { ImportResolverService } = await import("../import-resolver/index.js");
             const resolvedImports = await new ImportResolverService(this.workspaceRoot).resolve();
             const importsMap = new Map();
             for (const imp of resolvedImports) {
@@ -355,7 +355,7 @@ export class ExecutionGraphService {
             const tsFiles = indexData.files
                 .filter(file => file.path.endsWith(".ts") || file.path.endsWith(".tsx"))
                 .map(file => file.path);
-            const { ImportResolverService } = await import("../import-resolver");
+            const { ImportResolverService } = await import("../import-resolver/index.js");
             const resolvedImports = await new ImportResolverService(this.workspaceRoot).resolve();
             const importsMap = new Map();
             for (const imp of resolvedImports) {

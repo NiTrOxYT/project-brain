@@ -2,8 +2,8 @@
 // BUILD-049 — Provider Runtime — Registry
 // Deterministic provider registry with ordered registration and discovery.
 // ──────────────────────────────────────────────────────────────────────────────
-import { ProviderRuntimeError } from "./errors";
-import { CapabilityNegotiator } from "./negotiation";
+import { ProviderRuntimeError } from "./errors.js";
+import { CapabilityNegotiator } from "./negotiation.js";
 export class ProviderRegistry {
     records = new Map();
     nextIndex = 0;

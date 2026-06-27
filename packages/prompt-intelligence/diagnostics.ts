@@ -1,4 +1,4 @@
-import { PromptDiagnostics, PromptTokenBudget, PromptOptimization } from "./types";
+import { PromptDiagnostics, PromptTokenBudget, PromptOptimization } from "./types.js";
 
 export class PromptDiagnosticsTracker {
     create(params: {

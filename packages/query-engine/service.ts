@@ -2,13 +2,13 @@ import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
 
-import { FileSystemService } from "../filesystem";
-import { SynchronizerService } from "../synchronizer";
-import { PlannerService } from "../planner";
-import { RetrieverService } from "../retriever";
-import { ContextAssemblerService, ContextPackage } from "../context-assembler";
-import { QueryRequest, QueryResult, QueryDiagnostics } from "./types";
-import { QueryEngineError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { SynchronizerService } from "../synchronizer/index.js";
+import { PlannerService } from "../planner/index.js";
+import { RetrieverService } from "../retriever/index.js";
+import { ContextAssemblerService, ContextPackage } from "../context-assembler/index.js";
+import { QueryRequest, QueryResult, QueryDiagnostics } from "./types.js";
+import { QueryEngineError } from "./errors.js";
 
 export class QueryEngineService {
 
@@ -132,7 +132,7 @@ export class QueryEngineService {
 
             // 3. Execution flow if cache missed
             if (!hasContext) {
-                const { ContextRetrievalService } = await import("../context-retrieval");
+                const { ContextRetrievalService } = await import("../context-retrieval/index.js");
                 const retrievalService = new ContextRetrievalService(this.projectRoot, this.workspaceRoot);
                 const retrieveStart = Date.now();
                 const res = await retrievalService.retrieve({
@@ -215,7 +215,7 @@ export class QueryEngineService {
             let learningVersion = "1.0.0";
 
             try {
-                const { LearningEngineService } = await import("../learning-engine");
+                const { LearningEngineService } = await import("../learning-engine/index.js");
                 const learningEngine = new LearningEngineService(this.workspaceRoot);
                 const rec = await learningEngine.recommend({
                     taskType: "refactor",
@@ -266,7 +266,7 @@ export class QueryEngineService {
             let snapshotCompilationMs: number | undefined;
 
             try {
-                const { ContextSynchronizationService } = await import("../context-sync");
+                const { ContextSynchronizationService } = await import("../context-sync/index.js");
                 const syncService = new ContextSynchronizationService(this.projectRoot, this.workspaceRoot);
                 const latestSnap = await syncService.latestSnapshot();
                 if (latestSnap) {

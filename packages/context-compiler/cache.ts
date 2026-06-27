@@ -6,15 +6,16 @@
 
 import fs from "fs/promises";
 import path from "path";
-import { SemanticSnapshot, SnapshotCacheEntry, SnapshotFingerprint } from "./types";
-import { SnapshotCacheError } from "./errors";
+import { SemanticSnapshot, SnapshotCacheEntry, SnapshotFingerprint } from "./types.js";
+import { SnapshotCacheError } from "./errors.js";
+import { StoragePaths } from "../kernel/paths.js";
 
 export class SnapshotCache {
     private readonly cacheDir: string;
     private readonly memoryCache = new Map<string, SemanticSnapshot>();
 
     constructor(workspaceRoot: string) {
-        this.cacheDir = path.join(workspaceRoot, ".brain", "context", "cache");
+        this.cacheDir = new StoragePaths(workspaceRoot).compilerCacheDir;
     }
 
     async ensureDirectory(): Promise<void> {

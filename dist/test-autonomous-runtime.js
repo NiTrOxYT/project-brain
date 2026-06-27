@@ -4,10 +4,10 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { AutonomousRuntimeService } from "./autonomous-runtime/service";
-import { ExecutionCheckpointService } from "./autonomous-runtime/checkpoint";
-import { ExecutionJournalService } from "./autonomous-runtime/journal";
-import { AgentRuntimeService } from "./agent-runtime";
+import { AutonomousRuntimeService } from "./autonomous-runtime/service.js";
+import { ExecutionCheckpointService } from "./autonomous-runtime/checkpoint.js";
+import { ExecutionJournalService } from "./autonomous-runtime/journal.js";
+import { AgentRuntimeService } from "./agent-runtime/index.js";
 let passed = 0;
 let failed = 0;
 const errors = [];

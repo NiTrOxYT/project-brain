@@ -7,15 +7,15 @@ import path from "path";
 import os from "os";
 
 // Import engine under test
-import { WorkspaceEngine } from "./workspace/workspace-engine";
-import { WorkspaceJournal } from "./workspace/workspace-journal";
-import { WorkspaceLockManager } from "./workspace/workspace-lock";
-import { WorkspacePatchEngine } from "./workspace/workspace-patch";
+import { WorkspaceEngine } from "./workspace/workspace-engine.js";
+import { WorkspaceJournal } from "./workspace/workspace-journal.js";
+import { WorkspaceLockManager } from "./workspace/workspace-lock.js";
+import { WorkspacePatchEngine } from "./workspace/workspace-patch.js";
 import {
     WorkspaceLockError,
     WorkspaceTransactionError,
     WorkspaceEngineError
-} from "./workspace/workspace-errors";
+} from "./workspace/workspace-errors.js";
 
 // ─── Test Helpers ─────────────────────────────────────────────────────────────
 
@@ -676,7 +676,7 @@ async function testRegressionAgentRuntime(): Promise<void> {
         const engine = new WorkspaceEngine({ workspaceRoot: root });
 
         // Import AgentRuntimeService (with WorkspaceEngine)
-        const { AgentRuntimeService } = await import("./agent-runtime/service");
+        const { AgentRuntimeService } = await import("./agent-runtime/service.js");
         const runtime = new AgentRuntimeService(root, engine);
 
         const response = await runtime.execute({

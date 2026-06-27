@@ -2,8 +2,8 @@ import process from "process";
 import path from "path";
 import fs from "fs/promises";
 import crypto from "crypto";
-import { RuntimeService } from "./runtime";
-import { ContextAssemblerService } from "./context-assembler";
+import { RuntimeService } from "./runtime/index.js";
+import { ContextAssemblerService } from "./context-assembler/index.js";
 async function main() {
     const workspaceRoot = path.join(process.cwd(), ".brain");
     console.log("Setting up workspace database...");

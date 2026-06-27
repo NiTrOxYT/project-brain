@@ -2,8 +2,8 @@
 // BUILD-051 — Autonomous Execution Loop — Recovery
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { ExecutionCheckpoint, ExecutionState } from "./types";
-import { RecoveryError } from "./errors";
+import { ExecutionCheckpoint, ExecutionState } from "./types.js";
+import { RecoveryError } from "./errors.js";
 
 export class ExecutionRecoveryService {
     recover(checkpoint: ExecutionCheckpoint): ExecutionState {

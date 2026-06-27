@@ -1,6 +1,6 @@
 import path from "path";
-import { RuntimeService } from "../core";
-import { FileSystemService } from "../filesystem";
+import { RuntimeService } from "../core/index.js";
+import { FileSystemService } from "../filesystem/index.js";
 export class WorkspaceService extends RuntimeService {
     options;
     fs = new FileSystemService();

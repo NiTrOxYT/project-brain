@@ -1,7 +1,7 @@
-import { ContextSynchronizationService } from "../context-sync/service";
-import { ContextRetrievalService } from "../context-retrieval/service";
-import { EngineeringPlannerService } from "../engineering-planner/service";
-import { PlanningError } from "./errors";
+import { ContextSynchronizationService } from "../context-sync/service.js";
+import { ContextRetrievalService } from "../context-retrieval/service.js";
+import { EngineeringPlannerService } from "../engineering-planner/service.js";
+import { PlanningError } from "./errors.js";
 export class WorkflowPlanner {
     projectRoot;
     workspaceRoot;

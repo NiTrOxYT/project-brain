@@ -1,5 +1,5 @@
-import { SemanticSnapshot } from "../context-compiler/types";
-import { RetrievalCandidate } from "./types";
+import { SemanticSnapshot } from "../context-compiler/types.js";
+import { RetrievalCandidate } from "./types.js";
 
 export class RetrievalRanker {
     rank(

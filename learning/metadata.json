@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "lastLearnAt": "2026-06-27T21:01:31.946Z",
+  "snapshotFingerprint": "56c0dc5708fb0ec56ffd8772aba07d7292a5d4f32ae34debf23fd915c96190d8",
+  "syncLatency": 78.46666666666667,
+  "syncPatchSize": 138518,
+  "syncDirtyRegionSize": 587,
+  "syncSnapshotReuseRatio": 0,
+  "retrievalAvgFiles": 0,
+  "retrievalAvgSymbols": 0,
+  "retrievalAvgCompressionRatio": 0.999927571221632,
+  "retrievalAvgTokens": 31047,
+  "collaborationEfficiency": 0.8,
+  "conflictFrequency": 0,
+  "providerCooperation": 0.5,
+  "artifactReuseRate": 0,
+  "consensusQuality": 0
+}

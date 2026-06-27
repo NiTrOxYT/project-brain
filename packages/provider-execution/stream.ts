@@ -4,8 +4,8 @@
 // Provider-agnostic: does not parse any provider-specific output.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { StreamChunk, StreamChannel } from "./types";
-import { StreamError } from "./errors";
+import { StreamChunk, StreamChannel } from "./types.js";
+import { StreamError } from "./errors.js";
 
 export type ChunkHandler = (chunk: StreamChunk) => void;
 export type LineHandler = (line: string, channel: StreamChannel) => void;

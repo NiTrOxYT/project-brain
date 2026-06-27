@@ -1,6 +1,6 @@
 import path from "path";
-import { GraphBuilderService } from "../graph-builder";
-import { FileSystemService } from "../filesystem";
+import { GraphBuilderService } from "../graph-builder/index.js";
+import { FileSystemService } from "../filesystem/index.js";
 export class ScannerService {
     workspaceRoot;
     fs = new FileSystemService();

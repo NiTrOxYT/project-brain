@@ -2,13 +2,13 @@ import fs from "fs/promises";
 import path from "path";
 import ts from "typescript";
 
-import { AstService } from "../ast";
-import { FileSystemService } from "../filesystem";
+import { AstService } from "../ast/index.js";
+import { FileSystemService } from "../filesystem/index.js";
 import {
     RelationshipIndex,
     RelationshipRecord
-} from "./types";
-import { RelationshipAnalyzerError } from "./errors";
+} from "./types.js";
+import { RelationshipAnalyzerError } from "./errors.js";
 
 export class RelationshipAnalyzerService {
 

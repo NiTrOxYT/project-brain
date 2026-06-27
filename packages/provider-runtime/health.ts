@@ -3,8 +3,8 @@
 // TTL-cached health checks. Offline providers skipped in negotiation.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { SDKProvider } from "./provider";
-import { ProviderHealthReport } from "./types";
+import { SDKProvider } from "./provider.js";
+import { ProviderHealthReport } from "./types.js";
 
 const DEFAULT_TTL_MS = 30_000; // 30 seconds
 

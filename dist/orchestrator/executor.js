@@ -1,4 +1,4 @@
-import { AgentRuntimeService } from "../agent-runtime";
+import { AgentRuntimeService } from "../agent-runtime/index.js";
 export class OrchestratorExecutor {
     plan;
     schedule;

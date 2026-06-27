@@ -15,25 +15,25 @@ const __dirname = path.dirname(__filename);
 // Use a dedicated temp workspace for tests
 const TEST_WORKSPACE = path.join(__dirname, "..", ".brain-test-context-compiler");
 
-import { ContextCompilerService } from "./context-compiler/service";
-import { SnapshotCollector } from "./context-compiler/collector";
-import { SnapshotNormalizer } from "./context-compiler/normalizer";
-import { DependencyAnalyzer } from "./context-compiler/dependency-analyzer";
-import { GraphCompiler } from "./context-compiler/graph-compiler";
-import { SnapshotBuilder } from "./context-compiler/snapshot-builder";
-import { SnapshotFingerprintEngine } from "./context-compiler/fingerprint";
-import { SnapshotCache } from "./context-compiler/cache";
-import { SnapshotDeltaEngine } from "./context-compiler/delta";
-import { SnapshotOptimizer } from "./context-compiler/optimizer";
-import { SnapshotValidator } from "./context-compiler/validator";
-import { SnapshotStorage } from "./context-compiler/storage";
-import { SnapshotMetricsTracker } from "./context-compiler/metrics";
-import { SnapshotDiagnosticsBuilder } from "./context-compiler/diagnostics";
+import { ContextCompilerService } from "./context-compiler/service.js";
+import { SnapshotCollector } from "./context-compiler/collector.js";
+import { SnapshotNormalizer } from "./context-compiler/normalizer.js";
+import { DependencyAnalyzer } from "./context-compiler/dependency-analyzer.js";
+import { GraphCompiler } from "./context-compiler/graph-compiler.js";
+import { SnapshotBuilder } from "./context-compiler/snapshot-builder.js";
+import { SnapshotFingerprintEngine } from "./context-compiler/fingerprint.js";
+import { SnapshotCache } from "./context-compiler/cache.js";
+import { SnapshotDeltaEngine } from "./context-compiler/delta.js";
+import { SnapshotOptimizer } from "./context-compiler/optimizer.js";
+import { SnapshotValidator } from "./context-compiler/validator.js";
+import { SnapshotStorage } from "./context-compiler/storage.js";
+import { SnapshotMetricsTracker } from "./context-compiler/metrics.js";
+import { SnapshotDiagnosticsBuilder } from "./context-compiler/diagnostics.js";
 import {
     SnapshotCompilationError,
     SnapshotValidationError,
     SnapshotFingerprintError
-} from "./context-compiler/errors";
+} from "./context-compiler/errors.js";
 import type {
     SemanticSnapshot,
     SnapshotContext,
@@ -43,7 +43,7 @@ import type {
     SnapshotGraphNode,
     SnapshotGraphEdge,
     SnapshotSection
-} from "./context-compiler/types";
+} from "./context-compiler/types.js";
 
 // ─── Test Harness ────────────────────────────────────────────────────────────
 

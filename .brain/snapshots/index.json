@@ -1,0 +1,33 @@
+[
+  {
+    "snapshotId": "56c0dc5708fb0ec56ffd8772aba07d7292a5d4f32ae34debf23fd915c96190d8",
+    "createdAt": "2026-06-27T17:45:34.028Z",
+    "fingerprint": {
+      "hash": "56c0dc5708fb0ec56ffd8772aba07d7292a5d4f32ae34debf23fd915c96190d8",
+      "filesystemHash": "61b4bd92b63288596d82182e31274dc91e238e7f3350f1d8794895bc656efd15",
+      "graphHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
+      "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
+      "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
+      "version": "208.407.299"
+    },
+    "estimatedTokens": 31065,
+    "incremental": true,
+    "parentSnapshotId": "56c0dc5708fb0ec56ffd8772aba07d7292a5d4f32ae34debf23fd915c96190d8"
+  },
+  {
+    "snapshotId": "53302a96a637ba3c30de63afb5784a878f6fc62223a366490c68ddf961cbbcb4",
+    "createdAt": "2026-06-27T17:45:34.028Z",
+    "fingerprint": {
+      "hash": "53302a96a637ba3c30de63afb5784a878f6fc62223a366490c68ddf961cbbcb4",
+      "filesystemHash": "01ffef70bc568c06168e45a22c7595f9af4547ab45e5f55896ea3bddd22152eb",
+      "graphHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
+      "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
+      "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
+      "version": "296.902.551"
+    },
+    "estimatedTokens": 31065,
+    "incremental": false
+  }
+]

@@ -4,13 +4,13 @@
 // metrics, sessions, streaming, and diagnostics.
 // Providers never know about workspace internals.
 // ──────────────────────────────────────────────────────────────────────────────
-import { ProviderRegistry } from "./registry";
-import { CapabilityNegotiator } from "./negotiation";
-import { HealthMonitor } from "./health";
-import { SessionManager } from "./session";
-import { MetricsCollector } from "./metrics";
-import { MiddlewareChain } from "./middleware";
-import { ProviderNegotiationError, PermanentProviderError } from "./errors";
+import { ProviderRegistry } from "./registry.js";
+import { CapabilityNegotiator } from "./negotiation.js";
+import { HealthMonitor } from "./health.js";
+import { SessionManager } from "./session.js";
+import { MetricsCollector } from "./metrics.js";
+import { MiddlewareChain } from "./middleware.js";
+import { ProviderNegotiationError, PermanentProviderError } from "./errors.js";
 const MAX_RETRIES = 2;
 export class ProviderRuntimeService {
     workspaceRoot;
@@ -64,7 +64,7 @@ export class ProviderRuntimeService {
         const negotiation = this.negotiator.negotiate(candidates, ctx, healthReports);
         // Learning Engine overrides selection if recommended provider is healthy/usable
         try {
-            const { LearningEngineService } = await import("../learning-engine");
+            const { LearningEngineService } = await import("../learning-engine/index.js");
             const learningEngine = new LearningEngineService(this.workspaceRoot);
             const recommendation = await learningEngine.recommend({
                 taskType: request.task.type,

@@ -1,9 +1,9 @@
-import { AutonomousRuntimeService } from "../autonomous-runtime/service";
-import { EngineeringPlan } from "../engineering-planner/types";
-import { ExecutionError } from "./errors";
-import { WorkflowMetricsTracker } from "./metrics";
-import { JournalEvent } from "./types";
-import { WorkspaceEngine } from "../workspace/workspace-engine";
+import { AutonomousRuntimeService } from "../autonomous-runtime/service.js";
+import { EngineeringPlan } from "../engineering-planner/types.js";
+import { ExecutionError } from "./errors.js";
+import { WorkflowMetricsTracker } from "./metrics.js";
+import { JournalEvent } from "./types.js";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
 
 export class WorkflowExecutor {
     private activeRuntimeService: AutonomousRuntimeService | null = null;

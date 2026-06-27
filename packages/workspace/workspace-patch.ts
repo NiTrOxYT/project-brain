@@ -4,8 +4,8 @@
 // No external diff libraries. Deterministic output.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { WorkspacePatch, PatchHunk } from "./workspace-types";
-import { WorkspacePatchError } from "./workspace-errors";
+import { WorkspacePatch, PatchHunk } from "./workspace-types.js";
+import { WorkspacePatchError } from "./workspace-errors.js";
 
 export class WorkspacePatchEngine {
     /**

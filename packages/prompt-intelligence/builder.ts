@@ -1,9 +1,9 @@
 import fs from "fs/promises";
 import path from "path";
-import { RuntimeTask, RuntimeContext } from "../agent-runtime/types";
-import { PromptContext } from "./types";
-import { SemanticSnapshot } from "../context-compiler/types";
-import { RetrievalPackage } from "../context-retrieval/types";
+import { RuntimeTask, RuntimeContext } from "../agent-runtime/types.js";
+import { PromptContext } from "./types.js";
+import { SemanticSnapshot } from "../context-compiler/types.js";
+import { RetrievalPackage } from "../context-retrieval/types.js";
 
 export class PromptContextBuilder {
     constructor(private readonly workspaceRoot: string) {}
@@ -19,7 +19,7 @@ export class PromptContextBuilder {
         // Fast path: consume snapshot sections directly if available
         if (snapshot) {
             try {
-                const { ContextRetrievalService } = await import("../context-retrieval");
+                const { ContextRetrievalService } = await import("../context-retrieval/index.js");
                 const retrievalService = new ContextRetrievalService(this.workspaceRoot, this.workspaceRoot);
                 const res = await retrievalService.retrieve({
                     query: task.title || task.type,

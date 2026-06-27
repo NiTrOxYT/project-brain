@@ -1,6 +1,6 @@
-import { AgentRegistry } from "./registry";
-import { RuntimeRequest, RuntimeResponse, RuntimeEvent } from "./types";
-import { AgentRuntimeError } from "./errors";
+import { AgentRegistry } from "./registry.js";
+import { RuntimeRequest, RuntimeResponse, RuntimeEvent } from "./types.js";
+import { AgentRuntimeError } from "./errors.js";
 
 export class RuntimeEngine {
     constructor(private readonly registry: AgentRegistry) {}

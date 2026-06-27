@@ -1,9 +1,9 @@
 import process from "process";
 import path from "path";
 import fs from "fs/promises";
-import { RuntimeService } from "./runtime";
-import { SynchronizerService } from "./synchronizer";
-import { KnowledgeFusionService } from "./knowledge-fusion";
+import { RuntimeService } from "./runtime/index.js";
+import { SynchronizerService } from "./synchronizer/index.js";
+import { KnowledgeFusionService } from "./knowledge-fusion/index.js";
 async function main() {
     const workspaceRoot = path.join(process.cwd(), ".brain");
     console.log("Setting up workspace database...");

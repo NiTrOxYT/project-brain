@@ -1,5 +1,5 @@
-import { RuntimeRequest, RuntimeResponse } from "./types";
-import { RuntimeArtifact } from "./artifacts";
+import { RuntimeRequest, RuntimeResponse } from "./types.js";
+import { RuntimeArtifact } from "./artifacts.js";
 
 export interface RuntimeMiddleware {
     name?: string;

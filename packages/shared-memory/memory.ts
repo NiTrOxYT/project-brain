@@ -16,7 +16,7 @@ import {
     ConflictResolution,
     CollaborationTask,
     CollaborationPhase
-} from "./types";
+} from "./types.js";
 
 export class SharedMemoryModel {
     private readonly state: SharedMemoryState = {

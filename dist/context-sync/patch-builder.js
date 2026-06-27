@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { SnapshotFingerprintEngine } from "../context-compiler/fingerprint";
+import { SnapshotFingerprintEngine } from "../context-compiler/fingerprint.js";
 export class PatchBuilder {
     fpEngine = new SnapshotFingerprintEngine();
     build(params) {

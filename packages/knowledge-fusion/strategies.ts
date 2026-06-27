@@ -1,4 +1,4 @@
-import { FusionStrategy, FusionWeights, KnowledgeCandidate } from "./types";
+import { FusionStrategy, FusionWeights, KnowledgeCandidate } from "./types.js";
 
 export const DEFAULT_WEIGHTS: FusionWeights = {
     semantic: 0.28,

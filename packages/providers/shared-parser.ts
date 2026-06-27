@@ -2,7 +2,7 @@
 // BUILD-050C — Shared Provider Helpers — Shared Response Parser
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { RuntimeArtifact } from "../agent-runtime/artifacts";
+import { RuntimeArtifact } from "../agent-runtime/artifacts.js";
 
 export function parseSharedResponse(stdout: string, taskId: string, providerId: string): RuntimeArtifact[] {
     const startMarker = "---START_ARTIFACTS---";

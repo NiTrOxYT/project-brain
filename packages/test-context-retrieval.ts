@@ -15,25 +15,25 @@ const __dirname = path.dirname(__filename);
 // Dedicated temp test workspace
 const TEST_WORKSPACE = path.join(__dirname, "..", ".brain-test-context-retrieval");
 
-import { ContextRetrievalService } from "./context-retrieval/service";
-import { QueryParser } from "./context-retrieval/query-parser";
-import { RetrievalPlanner } from "./context-retrieval/retrieval-planner";
-import { GraphTraverser } from "./context-retrieval/graph-traverser";
-import { DependencyExpander } from "./context-retrieval/dependency-expander";
-import { SymbolRetriever } from "./context-retrieval/symbol-retriever";
-import { RelationshipRetriever } from "./context-retrieval/relationship-retriever";
-import { ArchitectureRetriever } from "./context-retrieval/architecture-retriever";
-import { LearningRetriever } from "./context-retrieval/learning-retriever";
-import { RetrievalRanker } from "./context-retrieval/ranking";
-import { RetrievalBudgeter } from "./context-retrieval/budget";
-import { RetrievalCompressor } from "./context-retrieval/compressor";
-import { RetrievalCache } from "./context-retrieval/cache";
-import { RetrievalValidator } from "./context-retrieval/validator";
-import { RetrievalMetricsTracker } from "./context-retrieval/metrics";
-import { RetrievalDiagnosticsBuilder } from "./context-retrieval/diagnostics";
-import { SemanticSnapshot } from "./context-compiler/types";
-import { SnapshotFingerprintEngine } from "./context-compiler/fingerprint";
-import { RetrievalPackage, RetrievalSection } from "./context-retrieval/types";
+import { ContextRetrievalService } from "./context-retrieval/service.js";
+import { QueryParser } from "./context-retrieval/query-parser.js";
+import { RetrievalPlanner } from "./context-retrieval/retrieval-planner.js";
+import { GraphTraverser } from "./context-retrieval/graph-traverser.js";
+import { DependencyExpander } from "./context-retrieval/dependency-expander.js";
+import { SymbolRetriever } from "./context-retrieval/symbol-retriever.js";
+import { RelationshipRetriever } from "./context-retrieval/relationship-retriever.js";
+import { ArchitectureRetriever } from "./context-retrieval/architecture-retriever.js";
+import { LearningRetriever } from "./context-retrieval/learning-retriever.js";
+import { RetrievalRanker } from "./context-retrieval/ranking.js";
+import { RetrievalBudgeter } from "./context-retrieval/budget.js";
+import { RetrievalCompressor } from "./context-retrieval/compressor.js";
+import { RetrievalCache } from "./context-retrieval/cache.js";
+import { RetrievalValidator } from "./context-retrieval/validator.js";
+import { RetrievalMetricsTracker } from "./context-retrieval/metrics.js";
+import { RetrievalDiagnosticsBuilder } from "./context-retrieval/diagnostics.js";
+import { SemanticSnapshot } from "./context-compiler/types.js";
+import { SnapshotFingerprintEngine } from "./context-compiler/fingerprint.js";
+import { RetrievalPackage, RetrievalSection } from "./context-retrieval/types.js";
 
 let passed = 0;
 let failed = 0;
@@ -516,7 +516,7 @@ async function runSuite() {
     });
 
     await test("Test 42: PromptContextBuilder — integrates with context retrieval", async () => {
-        const { PromptContextBuilder } = await import("./prompt-intelligence/builder");
+        const { PromptContextBuilder } = await import("./prompt-intelligence/builder.js");
         const builder = new PromptContextBuilder(TEST_WORKSPACE);
         // Setup mock snapshot on disk or pass it in
         const res = await builder.collect(
@@ -528,11 +528,11 @@ async function runSuite() {
     });
 
     await test("Test 43: PromptIntelligenceService compiles prompts using retrieval package", async () => {
-        const { PromptIntelligenceService } = await import("./prompt-intelligence/service");
+        const { PromptIntelligenceService } = await import("./prompt-intelligence/service.js");
         const promptService = new PromptIntelligenceService(TEST_WORKSPACE);
 
         // Force synchronizer and context compiling mocks so latest snapshot can be found
-        const { ContextSynchronizationService } = await import("./context-sync");
+        const { ContextSynchronizationService } = await import("./context-sync/index.js");
         const syncService = new ContextSynchronizationService(TEST_WORKSPACE, TEST_WORKSPACE);
         await syncService.syncFull();
 
@@ -545,7 +545,7 @@ async function runSuite() {
     });
 
     await test("Test 44: QueryEngineService includes retrieval diagnostic fields", async () => {
-        const { QueryEngineService } = await import("./query-engine/service");
+        const { QueryEngineService } = await import("./query-engine/service.js");
         const queryService = new QueryEngineService(TEST_WORKSPACE, TEST_WORKSPACE);
         const res = await queryService.query({ query: "fix main" });
         if (res.diagnostics.retrievalDuration === undefined) {
@@ -556,7 +556,7 @@ async function runSuite() {
     });
 
     await test("Test 45: ContextSynchronizationService exposes latest snapshot for retrieval", async () => {
-        const { ContextSynchronizationService } = await import("./context-sync");
+        const { ContextSynchronizationService } = await import("./context-sync/index.js");
         const syncService = new ContextSynchronizationService(TEST_WORKSPACE, TEST_WORKSPACE);
         const latest = await syncService.latestSnapshot();
         assert.ok(latest);

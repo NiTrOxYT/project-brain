@@ -2,14 +2,14 @@
 // BUILD-049 — Provider Runtime — Public API
 // ──────────────────────────────────────────────────────────────────────────────
 
-export * from "./types";
-export * from "./errors";
-export * from "./provider";
-export * from "./registry";
-export * from "./negotiation";
-export * from "./health";
-export * from "./session";
-export * from "./stream";
-export * from "./metrics";
-export * from "./middleware";
-export * from "./service";
+export * from "./types.js";
+export * from "./errors.js";
+export * from "./provider.js";
+export * from "./registry.js";
+export * from "./negotiation.js";
+export * from "./health.js";
+export * from "./session.js";
+export * from "./stream.js";
+export * from "./metrics.js";
+export * from "./middleware.js";
+export * from "./service.js";

@@ -1,7 +1,7 @@
 import path from "path";
-import { FileSystemService } from "../filesystem";
-import { normalize } from "../semantic";
-import { ArchitectureMemoryError } from "./errors";
+import { FileSystemService } from "../filesystem/index.js";
+import { normalize } from "../semantic/index.js";
+import { ArchitectureMemoryError } from "./errors.js";
 export class FileSystemMemoryStorage {
     memoryDir;
     filesystem = new FileSystemService();

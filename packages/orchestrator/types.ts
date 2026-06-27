@@ -1,4 +1,4 @@
-import { EngineeringPlan } from "../engineering-planner";
+import { EngineeringPlan } from "../engineering-planner/index.js";
 
 export type AgentCapability = "analyze" | "code" | "test" | "validate" | "cleanup";
 export type AgentStatus = "idle" | "busy" | "offline";

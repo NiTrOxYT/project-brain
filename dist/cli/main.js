@@ -17,6 +17,10 @@ function parseArgs(argv) {
     let i = 0;
     while (i < argv.length) {
         const arg = argv[i];
+        if (arg === "--") {
+            positionals.push(...argv.slice(i));
+            break;
+        }
         if (arg.startsWith("--")) {
             const key = arg.slice(2);
             // boolean flags
@@ -92,6 +96,10 @@ const HELP = `
   clean                   Remove cache/temp/old data
   stats                   Display aggregated metrics
   config   <sub>          Configuration        (show/set/reset)
+  install                 Install Project Brain transparent wrappers
+  gateway  <sub>          Orchestrates and manages AI gateway runs, history, metrics, diagnostics, integration
+  explain  <session-id>   Describe deterministic session pipeline execution and savings
+
 
 \x1b[1mGlobal Options:\x1b[0m
   --workspace <path>      Workspace directory  (default: cwd)
@@ -347,7 +355,7 @@ Examples:
 // ── Main ──────────────────────────────────────────────────────────────────────
 export async function main(argv = process.argv.slice(2)) {
     const parsed = parseArgs(argv);
-    const { command, subcommand, flags } = parsed;
+    const { command, subcommand, flags, positionals } = parsed;
     // Apply global options immediately
     if (flag(flags, "no-color"))
         setColorEnabled(false);
@@ -498,7 +506,7 @@ export async function main(argv = process.argv.slice(2)) {
             }
             case "doctor": {
                 const { runDoctor } = await import("./commands/doctor.js");
-                await runDoctor(opts);
+                await runDoctor(opts, subcommand);
                 break;
             }
             case "clean": {
@@ -521,6 +529,55 @@ export async function main(argv = process.argv.slice(2)) {
                     key: flagStr(flags, "key"),
                     value: flagStr(flags, "value"),
                 });
+                break;
+            }
+            case "install": {
+                const { runInstall } = await import("./commands/install.js");
+                await runInstall(opts, {
+                    dryRun: flag(flags, "dry-run"),
+                    repair: flag(flags, "repair"),
+                    uninstall: flag(flags, "uninstall"),
+                    providerId: flagStr(flags, "provider"),
+                    binDir: flagStr(flags, "bin-dir"),
+                });
+                break;
+            }
+            case "dispatch": {
+                const { WrapperDispatcher } = await import("../ai-gateway/wrapper-dispatcher.js");
+                const providerId = flagStr(flags, "provider") || "";
+                const passThroughArgs = [];
+                const doubleDashIdx = process.argv.indexOf("--");
+                if (doubleDashIdx !== -1) {
+                    passThroughArgs.push(...process.argv.slice(doubleDashIdx + 1));
+                }
+                const dispatcher = new WrapperDispatcher(providerId, passThroughArgs);
+                await dispatcher.dispatch();
+                break;
+            }
+            case "gateway": {
+                if (!subcommand) {
+                    process.stdout.write("Usage: brain gateway <run|status|history|metrics|session|diagnostics|integration> [options]\n");
+                    process.exit(EXIT_VALIDATION);
+                }
+                const { runGateway } = await import("./commands/gateway.js");
+                const passThroughArgs = [];
+                // Gather any args after --
+                const doubleDashIdx = process.argv.indexOf("--");
+                if (doubleDashIdx !== -1) {
+                    passThroughArgs.push(...process.argv.slice(doubleDashIdx + 1));
+                }
+                await runGateway(opts, subcommand, {
+                    provider: flagStr(flags, "provider"),
+                    limit: flagNum(flags, "limit"),
+                    id: flagStr(flags, "id") ?? (positionals[2] || undefined),
+                    args: passThroughArgs,
+                });
+                break;
+            }
+            case "explain": {
+                const sessionId = positionals[1];
+                const { runExplain } = await import("./commands/explain.js");
+                await runExplain(opts, sessionId);
                 break;
             }
             default: {

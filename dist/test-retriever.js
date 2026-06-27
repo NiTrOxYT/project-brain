@@ -1,5 +1,5 @@
 import process from "process";
-import { RetrieverService } from "./retriever";
+import { RetrieverService } from "./retriever/index.js";
 async function main() {
     const retriever = new RetrieverService(process.cwd() + "/.brain");
     const queries = [

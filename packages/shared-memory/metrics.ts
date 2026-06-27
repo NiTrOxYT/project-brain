@@ -1,4 +1,4 @@
-import { MemoryStatistics, SharedMemoryState } from "./types";
+import { MemoryStatistics, SharedMemoryState } from "./types.js";
 
 export class SharedMemoryMetricsTracker {
     compute(state: SharedMemoryState, eventsCount: number): MemoryStatistics {

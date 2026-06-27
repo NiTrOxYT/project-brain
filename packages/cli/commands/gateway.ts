@@ -67,68 +67,47 @@ export async function runGateway(
         }
 
         case "status": {
-            const adapters = AdapterRegistry.list();
-
-            // Load manifest for wrapper info
-            let manifest: any = null;
-            try {
-                const { ManifestManager } = await import("../../installer/index.js");
-                const { GlobalPaths } = await import("../../kernel/paths.js");
-                const gp = new GlobalPaths();
-                manifest = new ManifestManager(gp.wrappersDir);
-            } catch { /* manifest not available */ }
+            const { ProviderResolverService } = await import("../../ai-gateway/provider-resolver.js");
+            const resolver = new ProviderResolverService();
+            const resolutions = await resolver.discover();
 
             if (opts.json) {
-                const list = [];
-                for (const a of adapters) {
-                    const detected = await a.detect();
-                    const healthVal = await a.health();
-                    const meta = a.metadata();
-                    let realBinary = "";
-                    try { realBinary = await a.resolvedBinaryPath(); } catch { /* not found */ }
-                    const wrapperRecord = manifest?.get(a.id);
-                    list.push({
-                        id: a.id,
-                        displayName: a.displayName,
-                        detected,
-                        health: healthVal,
-                        realBinary,
-                        wrapperPath: wrapperRecord?.wrapperPath ?? "",
-                        wrapperHealth: wrapperRecord ? "installed" : "none",
-                        supportsStreaming: meta.supportsStreaming,
-                        capabilities: meta.capabilities,
-                        version: a.version,
-                    });
-                }
-                printJson({ ok: true, providers: list });
+                printJson({ ok: true, resolutions });
                 return;
             }
 
             logger.log("🧠 \x1b[1mProject Brain — Provider Status\x1b[0m\n");
-            for (const a of adapters) {
-                const detected = await a.detect();
-                const healthVal = await a.health();
-                const meta = a.metadata();
-                const statusStr = detected
-                    ? (healthVal === "healthy" ? success("healthy") : warn(healthVal))
-                    : "not found";
+            for (const res of resolutions) {
+                const adapter = AdapterRegistry.lookup(res.providerId);
+                const meta = adapter.metadata();
+                const healthVal = res.executableExists && res.executable ? "healthy" : "offline";
+                const statusStr = healthVal === "healthy" ? success("healthy") : failure("offline");
 
-                logger.log(`  ${a.displayName.padEnd(24)} : ${statusStr}`);
+                logger.log(`  ${adapter.displayName.padEnd(24)} : ${statusStr}`);
 
-                if (detected) {
-                    try {
-                        const realBin = await a.resolvedBinaryPath();
-                        logger.log(`    Real binary:       ${realBin}`);
-                    } catch { /* skip */ }
-
-                    const wrapperRecord = manifest?.get(a.id);
-                    if (wrapperRecord) {
-                        logger.log(`    Wrapper binary:    ${wrapperRecord.wrapperPath}`);
-                        logger.log(`    Wrapper version:   ${wrapperRecord.installerVersion}`);
+                if (opts.verbose) {
+                    const manifestState = res.wrapperPath ? (fs.existsSync(res.wrapperPath) ? "valid" : "missing") : "untracked";
+                    const wrapperHealth = manifestState === "valid" ? "healthy" : "offline";
+                    
+                    logger.log(`    Wrapper Version:   ${res.wrapperVersion || "1.0.0"}`);
+                    logger.log(`    Provider Version:  ${res.providerVersion || res.version || "Unknown"}`);
+                    logger.log(`    Dispatch Mode:     Gateway (default) / Passthrough (on utility commands)`);
+                    logger.log(`    Gateway Commands:  ${adapter.gatewayCommands().join(", ") || "None"}`);
+                    logger.log(`    Passthrough Commands: ${adapter.passthroughCommands().join(", ")}`);
+                    logger.log(`    TTY Support:       ${adapter.supportsInteractiveTTY() ? "yes" : "no"}`);
+                    logger.log(`    Wrapper Health:    ${wrapperHealth}`);
+                    logger.log(`    Binary Resolution Source: ${res.source}`);
+                    logger.log(`    Manifest State:    ${manifestState}`);
+                    logger.log(`    Binary:            ${res.resolvedBinary || "None"}`);
+                } else {
+                    if (res.resolvedBinary) {
+                        logger.log(`    Real binary:       ${res.resolvedBinary}`);
+                    }
+                    if (res.wrapperPath && fs.existsSync(res.wrapperPath)) {
+                        logger.log(`    Wrapper binary:    ${res.wrapperPath}`);
                     } else {
                         logger.log(`    Wrapper:           not installed`);
                     }
-
                     logger.log(`    Streaming:         ${meta.supportsStreaming ? "yes" : "no"}`);
                     logger.log(`    Capabilities:      ${meta.capabilities.join(", ")}`);
                 }
@@ -243,9 +222,15 @@ export async function runGateway(
             break;
         }
 
+        case "integration": {
+            const { runGatewayIntegrationDiagnostics } = await import("./gateway-diagnostics.js");
+            await runGatewayIntegrationDiagnostics(ctx, opts);
+            break;
+        }
+
         default:
             logger.log(`Unknown subcommand: ${subcommand}`);
-            logger.log("Usage: brain gateway <run|status|history|metrics|session|diagnostics>");
+            logger.log("Usage: brain gateway <run|status|history|metrics|session|diagnostics|integration>");
             process.exit(1);
     }
 }

@@ -2,11 +2,11 @@
 // BUILD-050A — Provider Execution Layer — ProviderExecutionService
 // Orchestrates: process, timeout, retry, stream, sandbox, diagnostics.
 // ──────────────────────────────────────────────────────────────────────────────
-import { ProcessCancelledError, ProcessTimeoutError, InvalidExecutableError, ProcessSpawnError, ProviderExecutionError } from "./errors";
-import { ProcessRunner } from "./process";
-import { RetryEvaluator, DEFAULT_RETRY_POLICY } from "./retry";
-import { ExecutionSandbox } from "./sandbox";
-import { DiagnosticsCollector } from "./diagnostics";
+import { ProcessCancelledError, ProcessTimeoutError, InvalidExecutableError, ProcessSpawnError, ProviderExecutionError } from "./errors.js";
+import { ProcessRunner } from "./process.js";
+import { RetryEvaluator, DEFAULT_RETRY_POLICY } from "./retry.js";
+import { ExecutionSandbox } from "./sandbox.js";
+import { DiagnosticsCollector } from "./diagnostics.js";
 export class ProviderExecutionService {
     runner;
     sandbox;

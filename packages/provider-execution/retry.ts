@@ -3,8 +3,8 @@
 // Deterministic retry logic. Same error + policy = same decision.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { RetryPolicy } from "./types";
-import { isTransientExitCode } from "./errors";
+import { RetryPolicy } from "./types.js";
+import { isTransientExitCode } from "./errors.js";
 
 export interface RetryDecision {
     shouldRetry: boolean;

@@ -1,16 +1,16 @@
 {
-  "averagePromptSize": 1125,
-  "compressionRatio": 0.9894,
+  "averagePromptSize": 1131,
+  "compressionRatio": 0.9921,
   "tokenSavings": 70,
   "assemblyTime": 3,
   "optimizationCount": 7,
   "providerUtilization": {
-    "claude-code": 21,
-    "mock-sdk-provider": 3
+    "claude-code": 28,
+    "mock-sdk-provider": 4
   },
   "templateUsage": {
-    "tpl-create": 18,
-    "tpl-modify": 6
+    "tpl-create": 24,
+    "tpl-modify": 8
   },
   "promptSuccessRate": 100
 }

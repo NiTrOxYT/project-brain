@@ -1,9 +1,9 @@
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { ScannerService } from "../scanner";
-import { normalize } from "../semantic";
-import { RetrieverScorer } from "./scorer";
+import { FileSystemService } from "../filesystem/index.js";
+import { ScannerService } from "../scanner/index.js";
+import { normalize } from "../semantic/index.js";
+import { RetrieverScorer } from "./scorer.js";
 
 import {
 
@@ -11,7 +11,7 @@ import {
 
     RetrieveResult
 
-} from "./types";
+} from "./types.js";
 
 export class RetrieverService {
 

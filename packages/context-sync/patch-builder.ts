@@ -8,9 +8,9 @@ import {
     SnapshotGraph,
     SnapshotSection,
     SnapshotFingerprint
-} from "../context-compiler/types";
-import { SnapshotPatch, SectionPatch } from "./types";
-import { SnapshotFingerprintEngine } from "../context-compiler/fingerprint";
+} from "../context-compiler/types.js";
+import { SnapshotPatch, SectionPatch } from "./types.js";
+import { SnapshotFingerprintEngine } from "../context-compiler/fingerprint.js";
 
 export class PatchBuilder {
     private readonly fpEngine = new SnapshotFingerprintEngine();

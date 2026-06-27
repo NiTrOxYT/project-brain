@@ -1,0 +1,352 @@
+{
+  "snapshotId": "f4bef01f0ef4233c0dd1ca6f8b54d1c5a5c4b47d68134c4b73b28bef75348554",
+  "metadata": {
+    "snapshotId": "f4bef01f0ef4233c0dd1ca6f8b54d1c5a5c4b47d68134c4b73b28bef75348554",
+    "projectRoot": "packages/context-retrieval",
+    "workspaceRoot": "packages/context-retrieval",
+    "createdAt": "2026-06-27T21:13:53.000Z",
+    "compiledAt": "2026-06-27T21:13:53.000Z",
+    "compilerVersion": "1.0.0",
+    "fingerprint": {
+      "hash": "f4bef01f0ef4233c0dd1ca6f8b54d1c5a5c4b47d68134c4b73b28bef75348554",
+      "filesystemHash": "8401a3d9207426913744cfc632ee765567220454d82933e6dccf6881a4ab6768",
+      "graphHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
+      "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
+      "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
+      "version": "654.471.828"
+    },
+    "stageCount": 12,
+    "compilationDurationMs": 6,
+    "fileCount": 19,
+    "symbolCount": 0,
+    "dependencyEdgeCount": 0,
+    "graphNodeCount": 0,
+    "estimatedTokens": 769,
+    "incremental": false
+  },
+  "sections": [
+    {
+      "id": "filesystem-index",
+      "name": "Filesystem Index",
+      "kind": "filesystem-index",
+      "content": "[{\"path\":\"packages/context-retrieval/architecture-retriever.ts\",\"relativePath\":\"architecture-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/budget.ts\",\"relativePath\":\"budget.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/cache.ts\",\"relativePath\":\"cache.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/compressor.ts\",\"relativePath\":\"compressor.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/dependency-expander.ts\",\"relativePath\":\"dependency-expander.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/diagnostics.ts\",\"relativePath\":\"diagnostics.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/errors.ts\",\"relativePath\":\"errors.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/graph-traverser.ts\",\"relativePath\":\"graph-traverser.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/index.ts\",\"relativePath\":\"index.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/learning-retriever.ts\",\"relativePath\":\"learning-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/metrics.ts\",\"relativePath\":\"metrics.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/query-parser.ts\",\"relativePath\":\"query-parser.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/ranking.ts\",\"relativePath\":\"ranking.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/relationship-retriever.ts\",\"relativePath\":\"relationship-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/retrieval-planner.ts\",\"relativePath\":\"retrieval-planner.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/service.ts\",\"relativePath\":\"service.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/symbol-retriever.ts\",\"relativePath\":\"symbol-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/types.ts\",\"relativePath\":\"types.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/validator.ts\",\"relativePath\":\"validator.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0}]",
+      "priority": 10,
+      "contentHash": "5baa32f5210255f167cc03aabe80b52ccce4876123e944b71ead6f92c4d7b59a",
+      "estimatedTokens": 751,
+      "sourcePaths": [
+        "packages/context-retrieval/architecture-retriever.ts",
+        "packages/context-retrieval/budget.ts",
+        "packages/context-retrieval/cache.ts",
+        "packages/context-retrieval/compressor.ts",
+        "packages/context-retrieval/dependency-expander.ts",
+        "packages/context-retrieval/diagnostics.ts",
+        "packages/context-retrieval/errors.ts",
+        "packages/context-retrieval/graph-traverser.ts",
+        "packages/context-retrieval/index.ts",
+        "packages/context-retrieval/learning-retriever.ts",
+        "packages/context-retrieval/metrics.ts",
+        "packages/context-retrieval/query-parser.ts",
+        "packages/context-retrieval/ranking.ts",
+        "packages/context-retrieval/relationship-retriever.ts",
+        "packages/context-retrieval/retrieval-planner.ts",
+        "packages/context-retrieval/service.ts",
+        "packages/context-retrieval/symbol-retriever.ts",
+        "packages/context-retrieval/types.ts",
+        "packages/context-retrieval/validator.ts"
+      ]
+    },
+    {
+      "id": "symbol-index",
+      "name": "Symbol Index",
+      "kind": "symbol-index",
+      "content": "[]",
+      "priority": 20,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "architecture-memory",
+      "name": "Architecture Memory",
+      "kind": "architecture-memory",
+      "content": "[]",
+      "priority": 30,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "Knowledge Graph",
+      "kind": "knowledge-graph",
+      "content": "[]",
+      "priority": 40,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "dependency-graph",
+      "name": "Dependency Graph",
+      "kind": "dependency-graph",
+      "content": "[]",
+      "priority": 50,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "execution-graph",
+      "name": "Execution Graph",
+      "kind": "execution-graph",
+      "content": "{\"nodes\":[],\"edges\":[],\"topologicalOrder\":[]}",
+      "priority": 60,
+      "contentHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "estimatedTokens": 12,
+      "sourcePaths": []
+    },
+    {
+      "id": "repository-evolution",
+      "name": "Repository Evolution",
+      "kind": "repository-evolution",
+      "content": "[]",
+      "priority": 70,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "learning-summary",
+      "name": "Learning Summary",
+      "kind": "learning-summary",
+      "content": "[]",
+      "priority": 80,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    }
+  ],
+  "files": [
+    {
+      "path": "packages/context-retrieval/architecture-retriever.ts",
+      "relativePath": "architecture-retriever.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/budget.ts",
+      "relativePath": "budget.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/cache.ts",
+      "relativePath": "cache.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/compressor.ts",
+      "relativePath": "compressor.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/dependency-expander.ts",
+      "relativePath": "dependency-expander.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/diagnostics.ts",
+      "relativePath": "diagnostics.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/errors.ts",
+      "relativePath": "errors.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/graph-traverser.ts",
+      "relativePath": "graph-traverser.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/index.ts",
+      "relativePath": "index.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/learning-retriever.ts",
+      "relativePath": "learning-retriever.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/metrics.ts",
+      "relativePath": "metrics.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/query-parser.ts",
+      "relativePath": "query-parser.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/ranking.ts",
+      "relativePath": "ranking.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/relationship-retriever.ts",
+      "relativePath": "relationship-retriever.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/retrieval-planner.ts",
+      "relativePath": "retrieval-planner.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/service.ts",
+      "relativePath": "service.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/symbol-retriever.ts",
+      "relativePath": "symbol-retriever.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/types.ts",
+      "relativePath": "types.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/validator.ts",
+      "relativePath": "validator.ts",
+      "extension": ".ts",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    }
+  ],
+  "symbols": [],
+  "dependencies": [],
+  "relationships": [],
+  "graph": {
+    "nodes": [],
+    "edges": [],
+    "topologicalOrder": []
+  },
+  "architecture": [],
+  "evolution": [],
+  "learning": []
+}

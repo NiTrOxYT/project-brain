@@ -1,6 +1,6 @@
-import { SemanticSnapshot, SnapshotSection } from "../context-compiler/types";
-import { SnapshotPatch } from "./types";
-import { SnapshotPatchError } from "./errors";
+import { SemanticSnapshot, SnapshotSection } from "../context-compiler/types.js";
+import { SnapshotPatch } from "./types.js";
+import { SnapshotPatchError } from "./errors.js";
 
 export class PatchApplier {
     apply(prev: SemanticSnapshot, patch: SnapshotPatch): SemanticSnapshot {

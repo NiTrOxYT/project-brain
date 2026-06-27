@@ -2,7 +2,7 @@
 // BUILD-052 — Learning Engine — Classifier
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { LearningCategory, LearningExperience } from "./types";
+import { LearningCategory, LearningExperience } from "./types.js";
 
 export class LearningClassifier {
     classify(exp: LearningExperience): LearningCategory {

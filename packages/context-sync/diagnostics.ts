@@ -1,4 +1,4 @@
-import { SynchronizationDiagnostics } from "./types";
+import { SynchronizationDiagnostics } from "./types.js";
 
 export class SynchronizationDiagnosticsBuilder {
     build(params: {

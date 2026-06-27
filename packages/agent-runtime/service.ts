@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
-import { AgentProvider } from "./provider";
-import { AgentRegistry } from "./registry";
-import { RuntimeEngine } from "./runtime";
-import { RuntimeExecutor } from "./executor";
+import { AgentProvider } from "./provider.js";
+import { AgentRegistry } from "./registry.js";
+import { RuntimeEngine } from "./runtime.js";
+import { RuntimeExecutor } from "./executor.js";
 import {
     RuntimeRequest,
     RuntimeResponse,
@@ -14,12 +14,12 @@ import {
     RuntimeContext,
     RuntimeDiagnostics,
     TaskLifecycle
-} from "./types";
-import { RuntimeArtifact } from "./artifacts";
-import { RuntimeMiddleware } from "./middleware";
-import { RuntimeHooks } from "./hooks";
-import { WorkspaceEngine } from "../workspace/workspace-engine";
-import type { ProviderRuntimeService } from "../provider-runtime/service";
+} from "./types.js";
+import { RuntimeArtifact } from "./artifacts.js";
+import { RuntimeMiddleware } from "./middleware.js";
+import { RuntimeHooks } from "./hooks.js";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
+import type { ProviderRuntimeService } from "../provider-runtime/service.js";
 
 // Mock Provider Implementation
 export class MockAgentProvider implements AgentProvider {

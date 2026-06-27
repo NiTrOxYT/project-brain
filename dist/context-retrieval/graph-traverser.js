@@ -1,4 +1,4 @@
-import { GraphTraversalError } from "./errors";
+import { GraphTraversalError } from "./errors.js";
 export class GraphTraverser {
     traverseBFS(snapshot, startNodes, maxDepth = 2) {
         try {

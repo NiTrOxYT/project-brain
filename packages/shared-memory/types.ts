@@ -1,4 +1,4 @@
-import { SemanticSnapshot } from "../context-compiler/types";
+import { SemanticSnapshot } from "../context-compiler/types.js";
 
 export interface AgentIdentity {
     id: string;

@@ -4,7 +4,7 @@ import {
 
     ImportResolverService
 
-} from "./import-resolver";
+} from "./import-resolver/index.js";
 
 async function main() {
 

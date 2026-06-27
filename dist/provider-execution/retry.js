@@ -2,7 +2,7 @@
 // BUILD-050A — Provider Execution Layer — Retry Policy
 // Deterministic retry logic. Same error + policy = same decision.
 // ──────────────────────────────────────────────────────────────────────────────
-import { isTransientExitCode } from "./errors";
+import { isTransientExitCode } from "./errors.js";
 /**
  * Stateless retry policy evaluator.
  * Given an error and attempt number, returns a deterministic decision.

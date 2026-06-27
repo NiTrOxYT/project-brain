@@ -2,12 +2,12 @@
 // BUILD-050C — Gemini CLI Provider — Provider Implementation
 // ──────────────────────────────────────────────────────────────────────────────
 import { spawnSync } from "child_process";
-import { BaseSDKProvider } from "../../provider-runtime/provider";
-import { ProviderExecutionService } from "../../provider-execution/service";
-import { resolveExecutablePath, getStandardMockContent } from "../shared-resolver";
-import { executeProviderTask } from "../shared-executor";
-import { buildPrompt } from "./prompt-builder";
-import { parseResponse } from "./response-parser";
+import { BaseSDKProvider } from "../../provider-runtime/provider.js";
+import { ProviderExecutionService } from "../../provider-execution/service.js";
+import { resolveExecutablePath, getStandardMockContent } from "../shared-resolver.js";
+import { executeProviderTask } from "../shared-executor.js";
+import { buildPrompt } from "./prompt-builder.js";
+import { parseResponse } from "./response-parser.js";
 const CAPABILITIES = [
     "analyze", "create", "modify", "refactor", "validate", "document", "test", "cleanup"
 ];

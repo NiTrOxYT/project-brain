@@ -1,8 +1,8 @@
-import { EngineeringPlan, ExecutionNode } from "../engineering-planner";
-import { ExecutionSchedule, ExecutionResult, WorkerAssignment, TaskStatus, ExecutionStage, ExecutionReport } from "./types";
-import { OrchestratorError } from "./errors";
-import { AgentRuntimeService, RuntimeRequest } from "../agent-runtime";
-import { WorkspaceEngine } from "../workspace/workspace-engine";
+import { EngineeringPlan, ExecutionNode } from "../engineering-planner/index.js";
+import { ExecutionSchedule, ExecutionResult, WorkerAssignment, TaskStatus, ExecutionStage, ExecutionReport } from "./types.js";
+import { OrchestratorError } from "./errors.js";
+import { AgentRuntimeService, RuntimeRequest } from "../agent-runtime/index.js";
+import { WorkspaceEngine } from "../workspace/workspace-engine.js";
 
 export class OrchestratorExecutor {
     private stage: ExecutionStage = "init";

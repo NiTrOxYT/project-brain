@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { PromptFingerprint } from "./types";
+import { PromptFingerprint } from "./types.js";
 
 export class PromptFingerprinter {
     generate(params: {

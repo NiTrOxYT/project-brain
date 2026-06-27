@@ -6,8 +6,8 @@
 import fs from "fs";
 import path from "path";
 import crypto from "crypto";
-import { ProviderSession, SessionCheckpoint, SessionStatus } from "./types";
-import { ProviderSessionError } from "./errors";
+import { ProviderSession, SessionCheckpoint, SessionStatus } from "./types.js";
+import { ProviderSessionError } from "./errors.js";
 
 export class SessionManager {
     private readonly sessionsRoot: string;

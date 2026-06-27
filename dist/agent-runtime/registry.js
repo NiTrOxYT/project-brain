@@ -1,4 +1,4 @@
-import { AgentRuntimeError } from "./errors";
+import { AgentRuntimeError } from "./errors.js";
 const RUNTIME_VERSION = "1.0.0";
 function isCompatible(providerVersion, runtimeVersion = RUNTIME_VERSION) {
     if (!providerVersion)

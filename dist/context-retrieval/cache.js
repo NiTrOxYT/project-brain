@@ -1,12 +1,13 @@
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
+import { StoragePaths } from "../kernel/paths.js";
 export class RetrievalCache {
     cacheDir;
     memoryCache = new Map();
     maxItems = 50;
     constructor(workspaceRoot) {
-        this.cacheDir = path.join(workspaceRoot, ".brain", "context", "retrieval-cache");
+        this.cacheDir = new StoragePaths(workspaceRoot).retrievalCacheDir;
     }
     async ensureDirectory() {
         await fs.mkdir(this.cacheDir, { recursive: true });

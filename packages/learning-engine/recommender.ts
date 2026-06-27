@@ -9,7 +9,7 @@ import {
     ProviderPerformance,
     PromptPerformance,
     RepairPattern
-} from "./types";
+} from "./types.js";
 
 export class LearningRecommender {
     recommend(

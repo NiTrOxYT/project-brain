@@ -1,8 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { IndexResult, IndexedFile } from "./types";
+import { FileSystemService } from "../filesystem/index.js";
+import { IndexResult, IndexedFile } from "./types.js";
 
 export class IndexerService {
 

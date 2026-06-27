@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
-import { MemoryEvent, MemoryTimeline } from "./types";
-import { TimelineError } from "./errors";
+import { MemoryEvent, MemoryTimeline } from "./types.js";
+import { TimelineError } from "./errors.js";
 
 export class CollaborationTimeline {
     private readonly timelinePath: string;

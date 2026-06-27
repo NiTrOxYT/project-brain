@@ -4,11 +4,11 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { ClaudeCodeProvider, resolveClaudePath } from "./providers/claude-code/provider";
-import { buildPrompt } from "./providers/claude-code/prompt-builder";
-import { parseResponse } from "./providers/claude-code/response-parser";
-import { WorkspaceEngine } from "./workspace/workspace-engine";
-import { MockSDKProvider } from "./providers/mock";
+import { ClaudeCodeProvider, resolveClaudePath } from "./providers/claude-code/provider.js";
+import { buildPrompt } from "./providers/claude-code/prompt-builder.js";
+import { parseResponse } from "./providers/claude-code/response-parser.js";
+import { WorkspaceEngine } from "./workspace/workspace-engine.js";
+import { MockSDKProvider } from "./providers/mock/index.js";
 let passed = 0;
 let failed = 0;
 const errors = [];

@@ -1,10 +1,10 @@
-import { OrchestratorService } from "../orchestrator";
-import { QueryAnalyzerService } from "../query-analyzer";
+import { OrchestratorService } from "../orchestrator/index.js";
+import { QueryAnalyzerService } from "../query-analyzer/index.js";
 
 import {
     BrainRequest,
     BrainResponse
-} from "./types";
+} from "./types.js";
 
 export class BrainService {
 

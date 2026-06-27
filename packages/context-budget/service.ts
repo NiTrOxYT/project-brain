@@ -6,7 +6,7 @@ import {
 
     ContextCandidate
 
-} from "./types";
+} from "./types.js";
 
 export class ContextBudgetService {
 

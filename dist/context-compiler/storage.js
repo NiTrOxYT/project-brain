@@ -4,13 +4,15 @@
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs/promises";
 import path from "path";
-import { SnapshotStorageError } from "./errors";
+import { SnapshotStorageError } from "./errors.js";
+import { StoragePaths } from "../kernel/paths.js";
 export class SnapshotStorage {
     snapshotsDir;
     indexPath;
     constructor(workspaceRoot) {
-        this.snapshotsDir = path.join(workspaceRoot, ".brain", "context", "snapshots");
-        this.indexPath = path.join(workspaceRoot, ".brain", "context", "snapshots", "index.json");
+        const paths = new StoragePaths(workspaceRoot);
+        this.snapshotsDir = paths.snapshotsDir;
+        this.indexPath = paths.indexPath;
     }
     async ensureDirectory() {
         await fs.mkdir(this.snapshotsDir, { recursive: true });

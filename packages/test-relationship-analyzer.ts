@@ -1,8 +1,8 @@
 import process from "process";
 import path from "path";
 import fs from "fs/promises";
-import { RelationshipAnalyzerService } from "./relationship-analyzer";
-import { RuntimeService } from "./runtime";
+import { RelationshipAnalyzerService } from "./relationship-analyzer/index.js";
+import { RuntimeService } from "./runtime/index.js";
 
 async function main() {
 

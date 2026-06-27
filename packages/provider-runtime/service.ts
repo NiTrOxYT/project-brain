@@ -5,27 +5,27 @@
 // Providers never know about workspace internals.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { RuntimeRequest, RuntimeResponse, RuntimeEvent } from "../agent-runtime/types";
-import { SDKProvider } from "./provider";
-import { ProviderRegistry } from "./registry";
-import { CapabilityNegotiator } from "./negotiation";
-import { HealthMonitor } from "./health";
-import { SessionManager } from "./session";
-import { MetricsCollector } from "./metrics";
-import { StreamEmitter } from "./stream";
-import { MiddlewareChain, ProviderMiddleware } from "./middleware";
+import { RuntimeRequest, RuntimeResponse, RuntimeEvent } from "../agent-runtime/types.js";
+import { SDKProvider } from "./provider.js";
+import { ProviderRegistry } from "./registry.js";
+import { CapabilityNegotiator } from "./negotiation.js";
+import { HealthMonitor } from "./health.js";
+import { SessionManager } from "./session.js";
+import { MetricsCollector } from "./metrics.js";
+import { StreamEmitter } from "./stream.js";
+import { MiddlewareChain, ProviderMiddleware } from "./middleware.js";
 import {
     NegotiationResult,
     NegotiationContext,
     ProviderMetrics,
     ProviderSDKDiagnostics,
     StreamEvent
-} from "./types";
+} from "./types.js";
 import {
     ProviderNegotiationError,
     TransientProviderError,
     PermanentProviderError
-} from "./errors";
+} from "./errors.js";
 
 const MAX_RETRIES = 2;
 
@@ -104,7 +104,7 @@ export class ProviderRuntimeService {
 
         // Learning Engine overrides selection if recommended provider is healthy/usable
         try {
-            const { LearningEngineService } = await import("../learning-engine");
+            const { LearningEngineService } = await import("../learning-engine/index.js");
             const learningEngine = new LearningEngineService(this.workspaceRoot);
             const recommendation = await learningEngine.recommend({
                 taskType: request.task.type,

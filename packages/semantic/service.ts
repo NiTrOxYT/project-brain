@@ -1,13 +1,13 @@
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { ScannerService } from "../scanner";
-import { normalize } from "./normalizer";
+import { FileSystemService } from "../filesystem/index.js";
+import { ScannerService } from "../scanner/index.js";
+import { normalize } from "./normalizer.js";
 
 import {
     SemanticEntry,
     SemanticIndex
-} from "./types";
+} from "./types.js";
 
 export class SemanticService {
 

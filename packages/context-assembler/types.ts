@@ -1,6 +1,6 @@
-import { ExecutionPlan } from "../planner";
-import { EngineeringPlan } from "../engineering-planner";
-import { ExecutionSchedule, ExecutionReport } from "../orchestrator";
+import { ExecutionPlan } from "../planner/index.js";
+import { EngineeringPlan } from "../engineering-planner/index.js";
+import { ExecutionSchedule, ExecutionReport } from "../orchestrator/index.js";
 
 export interface ContextFile {
 

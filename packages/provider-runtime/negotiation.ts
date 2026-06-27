@@ -3,10 +3,10 @@
 // Pure, stateless, deterministic. Same inputs → same outputs always.
 // ──────────────────────────────────────────────────────────────────────────────
 
-import { AgentCapability } from "../agent-runtime/types";
-import { SDKProvider } from "./provider";
-import { NegotiationResult, NegotiationContext, ProviderHealthReport, ProviderHealth } from "./types";
-import { ProviderNegotiationError } from "./errors";
+import { AgentCapability } from "../agent-runtime/types.js";
+import { SDKProvider } from "./provider.js";
+import { NegotiationResult, NegotiationContext, ProviderHealthReport, ProviderHealth } from "./types.js";
+import { ProviderNegotiationError } from "./errors.js";
 
 // Healthy-or-degraded providers are usable; Busy is usable with lower score
 const HEALTH_SCORE: Record<ProviderHealth, number> = {

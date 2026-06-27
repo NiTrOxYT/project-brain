@@ -1,4 +1,4 @@
-import { PromptSection, PromptOptimization } from "./types";
+import { PromptSection, PromptOptimization } from "./types.js";
 import crypto from "crypto";
 
 export class PromptOptimizer {

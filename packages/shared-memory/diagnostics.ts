@@ -1,4 +1,4 @@
-import { MemoryDiagnostics, SharedMemoryState } from "./types";
+import { MemoryDiagnostics, SharedMemoryState } from "./types.js";
 
 export class CollaborationDiagnostics {
     build(state: SharedMemoryState): MemoryDiagnostics {

@@ -1,5 +1,5 @@
 import process from "process";
-import { SymbolsService } from "./symbols";
+import { SymbolsService } from "./symbols/index.js";
 async function main() {
     const service = new SymbolsService(process.cwd(), ".brain");
     const result = await service.index();

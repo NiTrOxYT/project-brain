@@ -8,7 +8,7 @@ import {
     SnapshotDelta,
     SnapshotFileDelta,
     SnapshotSymbolDelta
-} from "./types";
+} from "./types.js";
 
 export class SnapshotDeltaEngine {
     compute(from: SemanticSnapshot, to: SemanticSnapshot): SnapshotDelta {

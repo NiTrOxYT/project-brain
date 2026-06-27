@@ -1,5 +1,5 @@
-import { SemanticSnapshot, SnapshotValidationResult } from "../context-compiler/types";
-import { SnapshotValidator as CompilerValidator } from "../context-compiler/validator";
+import { SemanticSnapshot, SnapshotValidationResult } from "../context-compiler/types.js";
+import { SnapshotValidator as CompilerValidator } from "../context-compiler/validator.js";
 
 export class SnapshotValidator {
     private readonly compilerValidator = new CompilerValidator();

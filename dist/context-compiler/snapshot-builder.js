@@ -4,8 +4,8 @@
 // Token estimation is deterministic: Math.ceil(characters / 4).
 // ──────────────────────────────────────────────────────────────────────────────
 import path from "path";
-import { SnapshotFingerprintEngine } from "./fingerprint";
-import { SnapshotNormalizer } from "./normalizer";
+import { SnapshotFingerprintEngine } from "./fingerprint.js";
+import { SnapshotNormalizer } from "./normalizer.js";
 const COMPILER_VERSION = "1.0.0";
 export class SnapshotBuilder {
     fpEngine = new SnapshotFingerprintEngine();

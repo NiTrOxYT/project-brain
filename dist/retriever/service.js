@@ -1,8 +1,8 @@
 import path from "path";
-import { FileSystemService } from "../filesystem";
-import { ScannerService } from "../scanner";
-import { normalize } from "../semantic";
-import { RetrieverScorer } from "./scorer";
+import { FileSystemService } from "../filesystem/index.js";
+import { ScannerService } from "../scanner/index.js";
+import { normalize } from "../semantic/index.js";
+import { RetrieverScorer } from "./scorer.js";
 export class RetrieverService {
     workspaceRoot;
     filesystem = new FileSystemService();

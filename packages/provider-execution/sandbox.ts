@@ -7,7 +7,7 @@
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { SandboxError } from "./errors";
+import { SandboxError } from "./errors.js";
 
 export interface SandboxOptions {
     /** Base directory under which sandboxes are created */

@@ -1,9 +1,9 @@
 import process from "process";
 import path from "path";
 import fs from "fs/promises";
-import { RuntimeService } from "./runtime";
-import { RepositoryEvolutionService } from "./repository-evolution";
-import { KnowledgeFusionService } from "./knowledge-fusion";
+import { RuntimeService } from "./runtime/index.js";
+import { RepositoryEvolutionService } from "./repository-evolution/index.js";
+import { KnowledgeFusionService } from "./knowledge-fusion/index.js";
 async function main() {
     const workspaceRoot = path.join(process.cwd(), ".brain");
     const evolutionDir = path.join(workspaceRoot, "index", "evolution");

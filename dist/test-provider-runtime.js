@@ -6,24 +6,24 @@ import fs from "fs";
 import path from "path";
 import os from "os";
 // Provider Runtime
-import { ProviderRuntimeService } from "./provider-runtime/service";
-import { ProviderRegistry } from "./provider-runtime/registry";
-import { CapabilityNegotiator } from "./provider-runtime/negotiation";
-import { SessionManager } from "./provider-runtime/session";
-import { MetricsCollector } from "./provider-runtime/metrics";
-import { StreamEmitter } from "./provider-runtime/stream";
-import { MiddlewareChain } from "./provider-runtime/middleware";
-import { TransientProviderError, PermanentProviderError } from "./provider-runtime/errors";
+import { ProviderRuntimeService } from "./provider-runtime/service.js";
+import { ProviderRegistry } from "./provider-runtime/registry.js";
+import { CapabilityNegotiator } from "./provider-runtime/negotiation.js";
+import { SessionManager } from "./provider-runtime/session.js";
+import { MetricsCollector } from "./provider-runtime/metrics.js";
+import { StreamEmitter } from "./provider-runtime/stream.js";
+import { MiddlewareChain } from "./provider-runtime/middleware.js";
+import { TransientProviderError, PermanentProviderError } from "./provider-runtime/errors.js";
 // Native providers
-import { MockSDKProvider } from "./providers/mock";
-import { ClaudeCodeProvider } from "./providers/claude-code";
-import { CodexProvider } from "./providers/codex";
-import { GeminiCLIProvider } from "./providers/gemini-cli";
-import { OllamaProvider } from "./providers/ollama";
-import { AiderProvider } from "./providers/aider";
-import { OpenCodeProvider } from "./providers/opencode";
+import { MockSDKProvider } from "./providers/mock/index.js";
+import { ClaudeCodeProvider } from "./providers/claude-code/index.js";
+import { CodexProvider } from "./providers/codex/index.js";
+import { GeminiCLIProvider } from "./providers/gemini-cli/index.js";
+import { OllamaProvider } from "./providers/ollama/index.js";
+import { AiderProvider } from "./providers/aider/index.js";
+import { OpenCodeProvider } from "./providers/opencode/index.js";
 // Agent Runtime
-import { AgentRuntimeService } from "./agent-runtime/service";
+import { AgentRuntimeService } from "./agent-runtime/service.js";
 // ─── Test Helpers ─────────────────────────────────────────────────────────────
 let passed = 0;
 let failed = 0;
@@ -561,7 +561,7 @@ async function test25_WorkspaceEngineCompatibility() {
     console.log("\n── 25. Workspace Engine Compatibility ────────────────────────");
     const root = makeTempDir();
     try {
-        const { WorkspaceEngine } = await import("./workspace/workspace-engine");
+        const { WorkspaceEngine } = await import("./workspace/workspace-engine.js");
         const wsEngine = new WorkspaceEngine({ workspaceRoot: root });
         const providerRuntime = new ProviderRuntimeService(root);
         providerRuntime.register(new MockSDKProvider());
@@ -591,12 +591,12 @@ async function test26_OrchestratorIntegration() {
     console.log("\n── 26. Orchestrator Integration ──────────────────────────────");
     const root = makeTempDir();
     try {
-        const { OrchestratorService } = await import("./orchestrator/service");
+        const { OrchestratorService } = await import("./orchestrator/service.js");
         const providerRuntime = new ProviderRuntimeService(root);
         providerRuntime.register(new MockSDKProvider());
         const agentRuntime = new AgentRuntimeService(root, undefined, providerRuntime);
         const orchestrator = new OrchestratorService(root);
-        const { EngineeringPlannerService } = await import("./engineering-planner/service");
+        const { EngineeringPlannerService } = await import("./engineering-planner/service.js");
         const planner = new EngineeringPlannerService(root, root);
         const plan = await planner.plan({
             query: "Add a new feature to src/main.ts",
@@ -616,7 +616,7 @@ async function test27_QueryEngineDiagnostics() {
     console.log("\n── 27. Query Engine Diagnostics ──────────────────────────────");
     const root = makeTempDir();
     try {
-        const { QueryEngineService } = await import("./query-engine/service");
+        const { QueryEngineService } = await import("./query-engine/service.js");
         const qe = new QueryEngineService(root, root);
         const result = await qe.query({ query: "add authentication middleware", useCache: false });
         assert(result.diagnostics.totalTimeMs >= 0, "totalTimeMs present");

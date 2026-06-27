@@ -3,7 +3,7 @@
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs/promises";
 import path from "path";
-import { LearningStorageError } from "./errors";
+import { LearningStorageError } from "./errors.js";
 export class LearningStorage {
     workspaceRoot;
     learningDir;

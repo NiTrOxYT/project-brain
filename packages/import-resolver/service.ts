@@ -1,14 +1,14 @@
 import path from "path";
 
-import { FileSystemService } from "../filesystem";
-import { IndexResult } from "../indexer";
-import { ImportIndex } from "../imports";
+import { FileSystemService } from "../filesystem/index.js";
+import { IndexResult } from "../indexer/index.js";
+import { ImportIndex } from "../imports/index.js";
 
 import {
 
     ResolvedImport
 
-} from "./types";
+} from "./types.js";
 
 export class ImportResolverService {
 
