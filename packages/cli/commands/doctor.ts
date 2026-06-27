@@ -10,6 +10,7 @@ import { logger } from "../utils/logger.js";
 import { printJson } from "../utils/json.js";
 import { brainDir, isBrainInitialized } from "../utils/paths.js";
 import { pass, fail, warnTag, bold } from "../utils/colors.js";
+import { StoragePaths } from "../../kernel/paths.js";
 
 interface CheckResult {
     name:   string;
@@ -26,24 +27,32 @@ async function checkExists(name: string, filePath: string, warn = false): Promis
 export async function runDoctor(opts: GlobalOptions): Promise<void> {
     const results: CheckResult[] = [];
     const ws = opts.workspace;
-    const bd = brainDir(ws);
+    const paths = new StoragePaths(ws);
 
     // ── Workspace ──────────────────────────────────────────────
     results.push({
         name: "Workspace initialized",
         status: isBrainInitialized(ws) ? "PASS" : "FAIL",
-        detail: isBrainInitialized(ws) ? bd : `Missing .brain dir in ${ws}`,
+        detail: isBrainInitialized(ws) ? paths.brainDir : `Missing .brain dir in ${ws}`,
     });
 
-    const subdirs = ["snapshots", "patches", "cache", "journal", "checkpoints", "learning", "shared-memory"];
+    const subdirs = [
+        { label: "snapshots", path: paths.snapshotsDir },
+        { label: "patches", path: paths.patchesDir },
+        { label: "cache", path: paths.compilerCacheDir },
+        { label: "journal", path: paths.journalDir },
+        { label: "checkpoints", path: paths.checkpointsDir },
+        { label: "learning", path: paths.learningDir },
+        { label: "shared-memory", path: paths.sharedMemoryDir }
+    ];
     for (const sub of subdirs) {
-        results.push(await checkExists(`Directory: .brain/${sub}`, path.join(bd, sub), true));
+        results.push(await checkExists(`Directory: .brain/${sub.label}`, sub.path, true));
     }
 
     // ── Snapshots ──────────────────────────────────────────────
-    const snapshotDir = path.join(bd, "snapshots");
+    const snapshotDir = paths.snapshotsDir;
     const snapshots = fs.existsSync(snapshotDir)
-        ? fs.readdirSync(snapshotDir).filter(f => f.endsWith(".json"))
+        ? fs.readdirSync(snapshotDir).filter(f => f.endsWith(".json") && f !== "index.json")
         : [];
     results.push({
         name: "Snapshots exist",
@@ -52,10 +61,10 @@ export async function runDoctor(opts: GlobalOptions): Promise<void> {
     });
 
     // ── Indexes ────────────────────────────────────────────────
-    results.push(await checkExists("Index file", path.join(bd, "snapshots", "index.json"), true));
+    results.push(await checkExists("Index file", paths.indexPath, true));
 
     // ── Cache ──────────────────────────────────────────────────
-    const cacheDir = path.join(bd, "cache");
+    const cacheDir = paths.compilerCacheDir;
     const cacheFiles = fs.existsSync(cacheDir) ? fs.readdirSync(cacheDir).length : 0;
     results.push({
         name: "Cache directory",
@@ -64,7 +73,7 @@ export async function runDoctor(opts: GlobalOptions): Promise<void> {
     });
 
     // ── Journal ────────────────────────────────────────────────
-    const journalDir = path.join(bd, "journal");
+    const journalDir = paths.journalDir;
     const journalFiles = fs.existsSync(journalDir) ? fs.readdirSync(journalDir).length : 0;
     results.push({
         name: "Journal",
@@ -73,7 +82,7 @@ export async function runDoctor(opts: GlobalOptions): Promise<void> {
     });
 
     // ── Locks ──────────────────────────────────────────────────
-    const locksDir = path.join(bd, "locks");
+    const locksDir = paths.locksDir;
     const lockFiles = fs.existsSync(locksDir) ? fs.readdirSync(locksDir).length : 0;
     results.push({
         name: "Active locks",
@@ -133,12 +142,73 @@ export async function runDoctor(opts: GlobalOptions): Promise<void> {
     }
 
     // ── Shared memory ──────────────────────────────────────────
-    const smDir = path.join(bd, "shared-memory");
+    const smDir = paths.sharedMemoryDir;
     results.push({
         name: "Shared memory storage",
         status: fs.existsSync(smDir) ? "PASS" : "WARN",
         detail: fs.existsSync(smDir) ? smDir : "Directory missing",
     });
+
+    // ── Installer checks (BUILD-061D) ─────────────────────────
+    try {
+        const { GlobalPaths } = await import("../../kernel/paths.js");
+        const { PathManager } = await import("../../installer/path-manager.js");
+        const { ManifestManager, INSTALLER_VERSION } = await import("../../installer/index.js");
+        const { AdapterRegistry } = await import("../../ai-gateway/adapter-registry.js");
+        await import("../../ai-gateway/adapters/index.js");
+
+        const gp = new GlobalPaths();
+
+        // Global directories
+        const allDirsExist = gp.allDirs().every((d: string) => fs.existsSync(d));
+        results.push({
+            name: "Global directories",
+            status: allDirsExist ? "PASS" : "WARN",
+            detail: allDirsExist ? gp.root : "Some global dirs missing — run brain install",
+        });
+
+        // PATH configured
+        const pm = new PathManager(gp.binDir);
+        const pathCheck = pm.check();
+        results.push({
+            name: "PATH configured",
+            status: pathCheck.inPath ? "PASS" : (pathCheck.inConfig ? "WARN" : "WARN"),
+            detail: pathCheck.inPath
+                ? `bin/ in PATH (${pathCheck.shellInfo.shell})`
+                : pathCheck.inConfig
+                    ? "Configured but shell restart needed"
+                    : "Not configured — run brain install",
+        });
+
+        // Wrapper integrity
+        const manifest = new ManifestManager(gp.wrappersDir);
+        const providers = manifest.listProviders();
+        for (const pid of providers) {
+            const status = manifest.verifyWrapper(pid, INSTALLER_VERSION);
+            results.push({
+                name: `Wrapper: ${pid}`,
+                status: status === "ok" ? "PASS" : "WARN",
+                detail: status,
+            });
+        }
+
+        // Installer version
+        results.push({
+            name: "Installer version",
+            status: "PASS",
+            detail: `v${INSTALLER_VERSION}`,
+        });
+
+        // Plugin registry
+        const adapters = AdapterRegistry.list();
+        results.push({
+            name: "Provider plugins",
+            status: adapters.length > 0 ? "PASS" : "WARN",
+            detail: `${adapters.length} adapter(s) registered`,
+        });
+    } catch {
+        results.push({ name: "Installer checks", status: "WARN", detail: "Could not load installer module" });
+    }
 
     // ── Output ─────────────────────────────────────────────────
     const totals = results.reduce(
