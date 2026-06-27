@@ -153,6 +153,23 @@ export class AutonomousRuntimeService {
             taskMap.set(t.id, t);
         }
 
+        // Initialize Shared Memory and register tasks
+        let sharedMem: any = null;
+        try {
+            const { SharedMemoryService } = await import("../shared-memory");
+            sharedMem = new SharedMemoryService(this.projectRoot, this.workspaceRoot);
+            sharedMem.setPhase("Execution");
+            for (const t of this.plan.tasks) {
+                sharedMem.addTask({
+                    id: t.id,
+                    title: t.title,
+                    type: t.type,
+                    status: "Pending",
+                    prerequisites: t.prerequisites
+                });
+            }
+        } catch { /* best-effort */ }
+
         const scheduler = new OrchestratorScheduler();
         const schedule = scheduler.schedule(this.plan);
 
@@ -188,6 +205,20 @@ export class AutonomousRuntimeService {
             // Run tasks in parallel
             const batchPromises = runnableTasks.map(async (tId) => {
                 const node = taskMap.get(tId)!;
+
+                // Wait on Shared Memory dependency barriers
+                if (sharedMem) {
+                    try {
+                        let ready = false;
+                        while (!ready) {
+                            ready = await sharedMem.coordination.waitBarrier(node.prerequisites);
+                            if (!ready) {
+                                await new Promise(resolve => setTimeout(resolve, 50));
+                            }
+                        }
+                    } catch { /* best-effort */ }
+                }
+
                 await this.executeTaskAndRepair(node);
             });
 

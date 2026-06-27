@@ -13,24 +13,24 @@ export class QueryParser {
 
         // 1. Detect Intent
         let intent: ParsedQuery["intent"] = "Feature"; // default
-        if (lower.includes("fix") || lower.includes("bug") || lower.includes("error") || lower.includes("fail") || lower.includes("issue")) {
-            intent = "Bug";
-        } else if (lower.includes("refactor") || lower.includes("rewrite") || lower.includes("clean")) {
-            intent = "Refactor";
-        } else if (lower.includes("doc") || lower.includes("readme") || lower.includes("comment")) {
-            intent = "Documentation";
-        } else if (lower.includes("test") || lower.includes("spec") || lower.includes("suite")) {
-            intent = "Test";
+        if (lower.includes("repair") || lower.includes("reconstruct")) {
+            intent = "Repair";
         } else if (lower.includes("validate") || lower.includes("verify") || lower.includes("check")) {
             intent = "Validation";
+        } else if (lower.includes("refactor") || lower.includes("rewrite")) {
+            intent = "Refactor";
+        } else if (lower.includes("cleanup") || lower.includes("prune") || lower.includes("remove")) {
+            intent = "Cleanup";
+        } else if (lower.includes("test") || lower.includes("spec") || lower.includes("suite")) {
+            intent = "Test";
+        } else if (lower.includes("fix") || lower.includes("bug") || lower.includes("error") || lower.includes("fail") || lower.includes("issue")) {
+            intent = "Bug";
+        } else if (lower.includes("doc") || lower.includes("readme") || lower.includes("comment")) {
+            intent = "Documentation";
         } else if (lower.includes("architecture") || lower.includes("design") || lower.includes("memory")) {
             intent = "Architecture";
         } else if (lower.includes("dependency") || lower.includes("import") || lower.includes("export")) {
             intent = "Dependency";
-        } else if (lower.includes("repair") || lower.includes("reconstruct")) {
-            intent = "Repair";
-        } else if (lower.includes("cleanup") || lower.includes("prune") || lower.includes("remove")) {
-            intent = "Cleanup";
         }
 
         // 2. Extract target files (paths ending in file extensions or containing slashes)

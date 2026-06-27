@@ -44,6 +44,13 @@ export interface QueryDiagnostics {
     compressionRatio?: number;
     retrievalCacheHit?: boolean;
     tokenEstimate?: number;
+    activeAgents?: number;
+    completedAgents?: number;
+    collaborationEfficiency?: number;
+    consensusDuration?: number;
+    conflictsDetected?: number;
+    conflictsResolved?: number;
+    artifactReuseRate?: number;
 
     selectedProvider?: string;
     providerHealth?: string;

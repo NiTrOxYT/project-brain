@@ -177,7 +177,12 @@ export class ProviderRuntimeService {
             for (let attempt = 1; attempt <= MAX_RETRIES + 1; attempt++) {
                 const startTime = Date.now();
                 try {
-                    await this.middleware.runBeforeExecute(request, provider, negotiation);
+                    let sharedMem: any = null;
+                    try {
+                        const { SharedMemoryService } = await import("../shared-memory");
+                        sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
+                        await sharedMem.claimTask(request.task.id, provider.id);
+                    } catch { /* best-effort fallback */ }
 
                     const response = await provider.execute(
                         request.task,
@@ -185,6 +190,22 @@ export class ProviderRuntimeService {
                         onEvent,
                         onStream
                     );
+
+                    // Publish artifact and complete task in Shared Memory
+                    if (sharedMem) {
+                        try {
+                            if (response.workspaceTransactionId) {
+                                await sharedMem.publishArtifact(provider.id, {
+                                    taskId: request.task.id,
+                                    type: "patch",
+                                    filePath: request.task.file || "workspace",
+                                    content: response.workspaceTransactionId,
+                                    metadata: { transactionId: response.workspaceTransactionId }
+                                });
+                            }
+                            await sharedMem.completeTask(request.task.id, response.status === "Completed");
+                        } catch { /* ignore */ }
+                    }
 
                     const duration = Date.now() - startTime;
                     const provMetrics = this.buildMetrics(

@@ -41,9 +41,10 @@ export class RetrievalRanker {
             }
 
             // Signal 3: Symbol relevance
-            const hasMatchingSymbol = snapshot.symbols.some(s =>
-                s.filePath === p && symbolSet.has(s.name.toLowerCase())
-            );
+            const hasMatchingSymbol = snapshot.symbols.some(s => {
+                const normSymPath = s.filePath.replace(/\\/g, "/");
+                return (normSymPath === normalized || normSymPath.endsWith("/" + normalized) || normalized.endsWith("/" + normSymPath)) && symbolSet.has(s.name.toLowerCase());
+            });
             if (hasMatchingSymbol) {
                 score += 40;
                 reasons.push("symbol-relevance");

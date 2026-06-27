@@ -1,0 +1,172 @@
+{
+  "snapshotId": "a549e1fa4bbfcae5956b5e9ed10ad9d6e48349ce68ac48731f5048407d086e85",
+  "metadata": {
+    "snapshotId": "a549e1fa4bbfcae5956b5e9ed10ad9d6e48349ce68ac48731f5048407d086e85",
+    "projectRoot": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval",
+    "workspaceRoot": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval",
+    "createdAt": "2026-06-27T13:04:32.684Z",
+    "compiledAt": "2026-06-27T13:04:32.684Z",
+    "compilerVersion": "1.0.0",
+    "fingerprint": {
+      "hash": "a549e1fa4bbfcae5956b5e9ed10ad9d6e48349ce68ac48731f5048407d086e85",
+      "filesystemHash": "019d8b439774502777dd07a0d5812f46e36b80c7784b468738544b6332081f01",
+      "graphHash": "57501e5c6808b3e14852a4ea21dc7873abf9409032a06f9b740c973e83f62cf7",
+      "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
+      "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
+      "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
+      "version": "313.850.391"
+    },
+    "stageCount": 12,
+    "compilationDurationMs": 1,
+    "fileCount": 4,
+    "symbolCount": 0,
+    "dependencyEdgeCount": 0,
+    "graphNodeCount": 0,
+    "estimatedTokens": 221,
+    "incremental": false
+  },
+  "sections": [
+    {
+      "id": "filesystem-index",
+      "name": "Filesystem Index",
+      "kind": "filesystem-index",
+      "content": "[{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-retrieval/graph/graph.json\",\"relativePath\":\"graph/graph.json\",\"extension\":\".json\",\"sizeBytes\":0,\"language\":\"JSON\",\"linesOfCode\":0},{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/index.json\",\"relativePath\":\"index/index.json\",\"extension\":\".json\",\"sizeBytes\":0,\"language\":\"JSON\",\"linesOfCode\":0},{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/relationships.json\",\"relativePath\":\"index/relationships.json\",\"extension\":\".json\",\"sizeBytes\":0,\"language\":\"JSON\",\"linesOfCode\":0},{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/symbols.json\",\"relativePath\":\"index/symbols.json\",\"extension\":\".json\",\"sizeBytes\":0,\"language\":\"JSON\",\"linesOfCode\":0}]",
+      "priority": 10,
+      "contentHash": "00cb4216b1b8d9704747d761a50cf308f2651e334b046c8fd915306ab9bfe600",
+      "estimatedTokens": 203,
+      "sourcePaths": [
+        "/Users/sourik/projects/project-brain/.brain-test-context-retrieval/graph/graph.json",
+        "/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/index.json",
+        "/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/relationships.json",
+        "/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/symbols.json"
+      ]
+    },
+    {
+      "id": "symbol-index",
+      "name": "Symbol Index",
+      "kind": "symbol-index",
+      "content": "[]",
+      "priority": 20,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "architecture-memory",
+      "name": "Architecture Memory",
+      "kind": "architecture-memory",
+      "content": "[]",
+      "priority": 30,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "Knowledge Graph",
+      "kind": "knowledge-graph",
+      "content": "[]",
+      "priority": 40,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "dependency-graph",
+      "name": "Dependency Graph",
+      "kind": "dependency-graph",
+      "content": "[]",
+      "priority": 50,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "execution-graph",
+      "name": "Execution Graph",
+      "kind": "execution-graph",
+      "content": "{\"nodes\":[],\"edges\":[],\"topologicalOrder\":[]}",
+      "priority": 60,
+      "contentHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "estimatedTokens": 12,
+      "sourcePaths": []
+    },
+    {
+      "id": "repository-evolution",
+      "name": "Repository Evolution",
+      "kind": "repository-evolution",
+      "content": "[]",
+      "priority": 70,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "learning-summary",
+      "name": "Learning Summary",
+      "kind": "learning-summary",
+      "content": "[]",
+      "priority": 80,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    }
+  ],
+  "files": [
+    {
+      "path": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval/graph/graph.json",
+      "relativePath": "graph/graph.json",
+      "extension": ".json",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "JSON",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/index.json",
+      "relativePath": "index/index.json",
+      "extension": ".json",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "JSON",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/relationships.json",
+      "relativePath": "index/relationships.json",
+      "extension": ".json",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "JSON",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/symbols.json",
+      "relativePath": "index/symbols.json",
+      "extension": ".json",
+      "sizeBytes": 0,
+      "linesOfCode": 0,
+      "language": "JSON",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    }
+  ],
+  "symbols": [],
+  "dependencies": [],
+  "relationships": [],
+  "graph": {
+    "nodes": [],
+    "edges": [],
+    "topologicalOrder": []
+  },
+  "architecture": [],
+  "evolution": [],
+  "learning": []
+}

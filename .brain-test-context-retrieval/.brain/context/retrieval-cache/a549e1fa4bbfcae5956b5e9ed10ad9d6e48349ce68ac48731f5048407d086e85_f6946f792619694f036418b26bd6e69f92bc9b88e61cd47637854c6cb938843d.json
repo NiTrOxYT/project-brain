@@ -1,17 +1,17 @@
 {
-  "queryFingerprint": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a_f6946f792619694f036418b26bd6e69f92bc9b88e61cd47637854c6cb938843d",
-  "snapshotId": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a",
+  "queryFingerprint": "a549e1fa4bbfcae5956b5e9ed10ad9d6e48349ce68ac48731f5048407d086e85_f6946f792619694f036418b26bd6e69f92bc9b88e61cd47637854c6cb938843d",
+  "snapshotId": "a549e1fa4bbfcae5956b5e9ed10ad9d6e48349ce68ac48731f5048407d086e85",
   "retrievalPackage": {
-    "retrievalId": "retrieval-aa82aa17eb50",
-    "snapshotId": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a",
+    "retrievalId": "retrieval-45e1c8b73c3c",
+    "snapshotId": "a549e1fa4bbfcae5956b5e9ed10ad9d6e48349ce68ac48731f5048407d086e85",
     "sections": [
       {
         "id": "filesystem-index",
         "name": "Filesystem Index",
         "kind": "filesystem-index",
-        "content": "[]",
+        "content": "[{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-retrieval/graph/graph.json\",\"relativePath\":\"graph/graph.json\",\"extension\":\".json\",\"sizeBytes\":0,\"language\":\"JSON\",\"linesOfCode\":0},{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/index.json\",\"relativePath\":\"index/index.json\",\"extension\":\".json\",\"sizeBytes\":0,\"language\":\"JSON\",\"linesOfCode\":0},{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/relationships.json\",\"relativePath\":\"index/relationships.json\",\"extension\":\".json\",\"sizeBytes\":0,\"language\":\"JSON\",\"linesOfCode\":0},{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-retrieval/index/symbols.json\",\"relativePath\":\"index/symbols.json\",\"extension\":\".json\",\"sizeBytes\":0,\"language\":\"JSON\",\"linesOfCode\":0}]",
         "priority": 10,
-        "estimatedTokens": 1,
+        "estimatedTokens": 203,
         "reason": "system-config"
       },
       {
@@ -61,5 +61,5 @@
     "dependencies": [],
     "relationships": []
   },
-  "storedAt": "2026-06-27T12:55:34.262Z"
+  "storedAt": "2026-06-27T13:04:32.674Z"
 }

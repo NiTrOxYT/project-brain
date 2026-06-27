@@ -167,6 +167,12 @@ async function setup() {
     await fs.mkdir(path.join(TEST_WORKSPACE, "graph"), { recursive: true });
     await fs.mkdir(path.join(TEST_WORKSPACE, "memory"), { recursive: true });
     await fs.mkdir(path.join(TEST_WORKSPACE, "learning"), { recursive: true });
+
+    // Write dummy files for Synchronizer check
+    await fs.writeFile(path.join(TEST_WORKSPACE, "index", "index.json"), JSON.stringify({ files: [] }), "utf8");
+    await fs.writeFile(path.join(TEST_WORKSPACE, "index", "symbols.json"), JSON.stringify({}), "utf8");
+    await fs.writeFile(path.join(TEST_WORKSPACE, "index", "relationships.json"), JSON.stringify({}), "utf8");
+    await fs.writeFile(path.join(TEST_WORKSPACE, "graph", "graph.json"), JSON.stringify({ nodes: [], edges: [] }), "utf8");
 }
 
 async function teardown() {

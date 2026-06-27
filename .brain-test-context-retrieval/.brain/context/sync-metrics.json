@@ -1,8 +1,8 @@
 {
   "totalSyncs": 1,
-  "totalDurationMs": 1,
-  "averageSyncDurationMs": 1,
-  "averageDirtyFiles": 0,
+  "totalDurationMs": 2,
+  "averageSyncDurationMs": 2,
+  "averageDirtyFiles": 4,
   "averageRebuiltSymbols": 0,
   "averageRebuiltGraphNodes": 0,
   "averagePatchSizeBytes": 0,
