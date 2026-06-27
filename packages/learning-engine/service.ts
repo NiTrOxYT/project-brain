@@ -39,66 +39,59 @@ export class LearningEngineService {
     }
 
     async learn(execution: ExecutionLoopResult): Promise<LearningResult> {
-        if (!execution || !execution.journal || execution.journal.length === 0) {
-            return { success: false, recordsAdded: 0 };
-        }
-
-        // Extract experiences
-        const newExps = await this.extractor.extract(execution);
-        if (newExps.length === 0) {
-            return { success: false, recordsAdded: 0 };
-        }
+        const hasJournal = execution && execution.journal && execution.journal.length > 0;
+        const newExps = hasJournal ? await this.extractor.extract(execution) : [];
 
         // Load current db
         const experiences = await this.storage.loadExperiences();
-        const providers = await this.storage.loadProviders();
-        const repairs = await this.storage.loadRepairs();
-        const failures = await this.storage.loadFailures();
-        const prompts = await this.storage.loadPrompts();
+        let providers = await this.storage.loadProviders();
+        let repairs = await this.storage.loadRepairs();
+        let prompts = await this.storage.loadPrompts();
         let optimizations = await this.storage.loadOptimizations();
         const metadata = await this.storage.loadMetadata();
 
-        // Update experiences
-        experiences.push(...newExps);
+        if (newExps.length > 0) {
+            // Update experiences
+            experiences.push(...newExps);
 
-        // Learn repair patterns
-        const updatedRepairs = this.repairLearner.learn(newExps, repairs);
+            // Learn repair patterns
+            repairs = this.repairLearner.learn(newExps, repairs);
 
-        // Update provider performance
-        const updatedProviders = this.providerTracker.update(experiences);
+            // Update provider performance
+            providers = this.providerTracker.update(experiences);
 
-        // Record prompts if present in the execution journal/responses
-        let updatedPrompts = prompts;
-        for (const exp of newExps) {
-            // Find prompt bodies in task journal payloads if any
-            const taskEvents = execution.journal.filter(e => e.payload?.taskId === exp.id.split("-").slice(-2)[0]);
-            const startedEvent = taskEvents.find(e => e.type === "TaskStarted");
-            
-            const promptBody = startedEvent?.payload?.promptBody || startedEvent?.payload?.prompt || startedEvent?.payload?.taskTitle;
-            if (promptBody) {
-                updatedPrompts = this.promptLib.record(
-                    updatedPrompts,
-                    exp.providerId,
-                    exp.taskType,
-                    promptBody,
-                    exp.outcome === "success" ? "success" : "failure",
-                    exp.validationScore,
-                    exp.repairCycles,
-                    exp.tokensUsed,
-                    exp.cost
-                );
+            // Record prompts if present in the execution journal/responses
+            for (const exp of newExps) {
+                // Find prompt bodies in task journal payloads if any
+                const taskEvents = execution.journal.filter(e => e.payload?.taskId === exp.id.split("-").slice(-2)[0]);
+                const startedEvent = taskEvents.find(e => e.type === "TaskStarted");
+                
+                const promptBody = startedEvent?.payload?.promptBody || startedEvent?.payload?.prompt || startedEvent?.payload?.taskTitle;
+                if (promptBody) {
+                    prompts = this.promptLib.record(
+                        prompts,
+                        exp.providerId,
+                        exp.taskType,
+                        promptBody,
+                        exp.outcome === "success" ? "success" : "failure",
+                        exp.validationScore,
+                        exp.repairCycles,
+                        exp.tokensUsed,
+                        exp.cost
+                    );
+                }
             }
+
+            // Regenerate optimization rules
+            optimizations = this.optimizerService.generateRules(experiences, providers, repairs);
+
+            // Save experiences/rules
+            await this.storage.saveExperiences(experiences);
+            await this.storage.saveProviders(providers);
+            await this.storage.saveRepairs(repairs);
+            await this.storage.savePrompts(prompts);
+            await this.storage.saveOptimizations(optimizations);
         }
-
-        // Regenerate optimization rules
-        optimizations = this.optimizerService.generateRules(experiences, updatedProviders, updatedRepairs);
-
-        // Save everything
-        await this.storage.saveExperiences(experiences);
-        await this.storage.saveProviders(updatedProviders);
-        await this.storage.saveRepairs(updatedRepairs);
-        await this.storage.savePrompts(updatedPrompts);
-        await this.storage.saveOptimizations(optimizations);
 
         // Record latest snapshot fingerprint and sync metrics in metadata for traceability
         let snapshotFingerprint: string | undefined;

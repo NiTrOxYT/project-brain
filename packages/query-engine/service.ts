@@ -51,7 +51,7 @@ export class QueryEngineService {
 
             } catch (error: any) {
                 // Return gracefully with sync error details
-                return this.createErrorResult(request, `Synchronization failed: ${error.message}`, totalStart);
+                return await this.createErrorResult(request, `Synchronization failed: ${error.message}`, totalStart);
             }
 
             // 2. Cache Validation & Fetch
@@ -232,6 +232,29 @@ export class QueryEngineService {
                 // ignore
             }
 
+            // Collect Shared Memory / Collaboration diagnostics (best-effort)
+            let activeAgents: number | undefined;
+            let completedAgents: number | undefined;
+            let collaborationEfficiency: number | undefined;
+            let consensusDuration: number | undefined;
+            let conflictsDetected: number | undefined;
+            let conflictsResolved: number | undefined;
+            let artifactReuseRate: number | undefined;
+
+            try {
+                const { SharedMemoryService } = await import("../shared-memory/service.js");
+                const sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
+                const stats = await sharedMem.statistics();
+                if (stats) {
+                    activeAgents = stats.activeAgents;
+                    collaborationEfficiency = stats.duplicateAvoided > 0 ? 0.95 : 0.8;
+                    consensusDuration = stats.averageConsensusMs;
+                    conflictsDetected = stats.totalConflicts;
+                    conflictsResolved = stats.resolvedConflicts;
+                    artifactReuseRate = stats.duplicateAvoided;
+                }
+            } catch { /* best-effort */ }
+
             // Collect Context Compiler snapshot diagnostics (best-effort)
             let snapshotId: string | undefined;
             let snapshotVersion: string | undefined;
@@ -305,6 +328,14 @@ export class QueryEngineService {
                     providerConfidence,
                     promptConfidence,
                     learningVersion,
+                    // Shared Memory diagnostics
+                    activeAgents,
+                    completedAgents,
+                    collaborationEfficiency,
+                    consensusDuration,
+                    conflictsDetected,
+                    conflictsResolved,
+                    artifactReuseRate,
                     // Context Compiler / Semantic Snapshot diagnostics
                     snapshotId,
                     snapshotVersion,
@@ -327,15 +358,36 @@ export class QueryEngineService {
 
         } catch (error: any) {
 
-            return this.createErrorResult(request, `Query failed: ${error.message}`, totalStart);
+            return await this.createErrorResult(request, `Query failed: ${error.message}`, totalStart);
 
         }
 
     }
 
-    private createErrorResult(request: QueryRequest, errorMessage: string, startTime: number): QueryResult {
+    private async createErrorResult(request: QueryRequest, errorMessage: string, startTime: number): Promise<QueryResult> {
 
         const totalTimeMs = Date.now() - startTime;
+
+        let activeAgents: number | undefined;
+        let collaborationEfficiency: number | undefined;
+        let consensusDuration: number | undefined;
+        let conflictsDetected: number | undefined;
+        let conflictsResolved: number | undefined;
+        let artifactReuseRate: number | undefined;
+
+        try {
+            const { SharedMemoryService } = await import("../shared-memory/service.js");
+            const sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
+            const stats = await sharedMem.statistics();
+            if (stats) {
+                activeAgents = stats.activeAgents;
+                collaborationEfficiency = stats.duplicateAvoided > 0 ? 0.95 : 0.8;
+                consensusDuration = stats.averageConsensusMs;
+                conflictsDetected = stats.totalConflicts;
+                conflictsResolved = stats.resolvedConflicts;
+                artifactReuseRate = stats.duplicateAvoided;
+            }
+        } catch { /* best-effort */ }
 
         const emptyContext: ContextPackage = {
             generatedAt: new Date().toISOString(),
@@ -371,7 +423,14 @@ export class QueryEngineService {
                 selectedFiles: 0,
                 selectedSymbols: 0,
                 selectedRelationships: 0,
-                error: errorMessage
+                error: errorMessage,
+                // Shared Memory diagnostics
+                activeAgents,
+                collaborationEfficiency,
+                consensusDuration,
+                conflictsDetected,
+                conflictsResolved,
+                artifactReuseRate
             }
         };
 

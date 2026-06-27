@@ -1,2 +1,2 @@
-import { run } from "./cli";
-run();
+import { main } from "./cli/main.js";
+main();

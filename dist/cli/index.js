@@ -1,2 +1,1 @@
-export * from "./cli";
-export * from "./banner";
+export { main } from "./main.js";

@@ -134,6 +134,11 @@ export class SharedMemoryService {
         await this.timeline.append("TaskCompleted", undefined, { taskId, success });
     }
 
+    /** Public delegation to coordination barrier — avoids exposing private field. */
+    async waitBarrier(taskIds: string[]): Promise<boolean> {
+        return this.coordination.waitBarrier(taskIds);
+    }
+
     detectConflicts(): ConflictRecord[] {
         return this.conflictDetector.detect();
     }

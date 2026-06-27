@@ -220,7 +220,7 @@ export class AutonomousRuntimeService {
                         console.log(`DEBUG: waitBarrier calling for node ${tId}`);
                         let ready = false;
                         while (!ready) {
-                            ready = await this.sharedMem.coordination.waitBarrier(node.prerequisites);
+                            ready = await this.sharedMem.waitBarrier(node.prerequisites);
                             if (!ready) {
                                 console.log(`DEBUG: waitBarrier not ready for node ${tId}, waiting...`);
                                 await new Promise(resolve => setTimeout(resolve, 50));

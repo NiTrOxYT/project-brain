@@ -1,6 +1,7 @@
 // ──────────────────────────────────────────────────────────────────────────────
 // BUILD-051 — Autonomous Execution Loop — Core Service
 // ──────────────────────────────────────────────────────────────────────────────
+import { SharedMemoryService } from "../shared-memory";
 import { AutonomousRuntimeError } from "./errors";
 import { ValidationService } from "./validator";
 import { FailureAnalyzer } from "./failure-analyzer";
@@ -18,6 +19,7 @@ function getPlanId(plan) {
     return plan.goal.toLowerCase().replace(/[^a-z0-9]+/g, "-").substring(0, 50);
 }
 export class AutonomousRuntimeService {
+    sharedMem = null;
     projectRoot;
     workspaceRoot;
     validators;
@@ -119,11 +121,10 @@ export class AutonomousRuntimeService {
         // Initialize Shared Memory and register tasks
         let sharedMem = null;
         try {
-            const { SharedMemoryService } = await import("../shared-memory");
-            sharedMem = new SharedMemoryService(this.projectRoot, this.workspaceRoot);
-            sharedMem.setPhase("Execution");
+            this.sharedMem = new SharedMemoryService(this.projectRoot, this.workspaceRoot);
+            this.sharedMem.setPhase("Execution");
             for (const t of this.plan.tasks) {
-                sharedMem.addTask({
+                this.sharedMem.addTask({
                     id: t.id,
                     title: t.title,
                     type: t.type,
@@ -132,7 +133,9 @@ export class AutonomousRuntimeService {
                 });
             }
         }
-        catch { /* best-effort */ }
+        catch {
+            this.sharedMem = null;
+        }
         const scheduler = new OrchestratorScheduler();
         const schedule = scheduler.schedule(this.plan);
         // Execute schedule batches
@@ -168,12 +171,12 @@ export class AutonomousRuntimeService {
             const batchPromises = runnableTasks.map(async (tId) => {
                 const node = taskMap.get(tId);
                 // Wait on Shared Memory dependency barriers
-                if (sharedMem) {
+                if (this.sharedMem) {
                     try {
                         console.log(`DEBUG: waitBarrier calling for node ${tId}`);
                         let ready = false;
                         while (!ready) {
-                            ready = await sharedMem.coordination.waitBarrier(node.prerequisites);
+                            ready = await this.sharedMem.waitBarrier(node.prerequisites);
                             if (!ready) {
                                 console.log(`DEBUG: waitBarrier not ready for node ${tId}, waiting...`);
                                 await new Promise(resolve => setTimeout(resolve, 50));
@@ -315,7 +318,13 @@ export class AutonomousRuntimeService {
                 }
                 this.state.failures.push(failure);
                 this.state.failedTasks.add(taskId);
-                await this.journalService.log("TaskFailed", { taskId, reason: failure.message });
+                if (this.sharedMem) {
+                    await this.sharedMem.completeTask(taskId, false);
+                }
+                await this.journalService.log("TaskFailed", {
+                    taskId,
+                    reason: failure.message
+                });
                 this.checkpointService.save(this.getCheckpoint());
                 return;
             }
@@ -324,6 +333,9 @@ export class AutonomousRuntimeService {
         const isModifying = ["create", "modify", "refactor", "delete"].includes(node.type);
         if (!isModifying) {
             this.state.completedTasks.add(taskId);
+            if (this.sharedMem) {
+                await this.sharedMem.completeTask(taskId, true);
+            }
             await this.journalService.log("TaskCompleted", { taskId });
             this.checkpointService.save(this.getCheckpoint());
             return;
@@ -337,6 +349,9 @@ export class AutonomousRuntimeService {
             const allPassed = validationResults.every(r => r.success);
             if (allPassed) {
                 this.state.completedTasks.add(taskId);
+                if (this.sharedMem) {
+                    await this.sharedMem.completeTask(taskId, true);
+                }
                 await this.journalService.log("ValidationPassed", { taskId });
                 await this.journalService.log("TaskCompleted", { taskId });
                 this.checkpointService.save(this.getCheckpoint());
@@ -351,7 +366,13 @@ export class AutonomousRuntimeService {
             });
             if (repairAttempts >= this.maxRepairs) {
                 this.state.failedTasks.add(taskId);
-                await this.journalService.log("TaskFailed", { taskId, reason: "Repair attempts exhausted" });
+                if (this.sharedMem) {
+                    await this.sharedMem.completeTask(taskId, false);
+                }
+                await this.journalService.log("TaskFailed", {
+                    taskId,
+                    reason: "Repair attempts exhausted"
+                });
                 this.checkpointService.save(this.getCheckpoint());
                 return;
             }

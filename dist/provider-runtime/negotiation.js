@@ -58,14 +58,14 @@ export class CapabilityNegotiator {
                 return b.meta.priority - a.meta.priority;
             if (a.versionScore !== b.versionScore)
                 return b.versionScore - a.versionScore;
-            return a.meta.id.localeCompare(b.meta.id);
+            return (a.meta.id || a.provider.id).localeCompare(b.meta.id || b.provider.id);
         });
         const winner = usable[0];
         const selectedModel = this.negotiateModel(winner.provider, ctx);
-        const fallbackChain = usable.slice(1).map(s => s.meta.id);
+        const fallbackChain = usable.slice(1).map(s => s.meta.id || s.provider.id);
         const capabilityScore = this.computeCapabilityScore(winner.provider, ctx);
         const selectionReason = [
-            `Selected '${winner.meta.displayName}' (${winner.meta.id})`,
+            `Selected '${winner.meta.displayName}' (${winner.meta.id || winner.provider.id})`,
             `health=${winner.health}`,
             `priority=${winner.meta.priority}`,
             `version=${winner.meta.version}`,
@@ -73,7 +73,7 @@ export class CapabilityNegotiator {
             `capability='${ctx.capability}'`
         ].join(", ");
         return {
-            selectedProvider: winner.meta.id,
+            selectedProvider: winner.meta.id || winner.provider.id,
             selectedModel,
             fallbackChain,
             selectionReason,
@@ -94,6 +94,8 @@ export class CapabilityNegotiator {
         return meta.defaultModel;
     }
     versionScore(version) {
+        if (!version)
+            return 0;
         const parts = version.replace(/^[v~^]/, "").split(".").map(Number);
         const [major = 0, minor = 0, patch = 0] = parts;
         return major * 10000 + minor * 100 + patch;

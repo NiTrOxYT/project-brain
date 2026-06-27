@@ -32,7 +32,7 @@ async function test(name: string, fn: () => void | Promise<void>) {
         console.log(`  [PASS] ${name}`);
         passed++;
     } catch (err: any) {
-        console.error(`  [FAIL] ${name}: ${err.message || err}`);
+        console.error(`  [FAIL] ${name}:`, err.stack || err);
         failed++;
     }
 }
@@ -520,6 +520,7 @@ async function runSuite() {
             status: "Pending",
             prerequisites: []
         });
+        await conflictsService.snapshot("latest");
 
         const res = await runtime.execute({
             task: { id: "runtime-t1", type: "modify", title: "Task 1", status: "Running", prerequisites: [] },
@@ -528,6 +529,7 @@ async function runSuite() {
         assert.ok(res);
 
         // Check that task is marked completed in Shared Memory
+        await conflictsService.restoreLatest();
         const state = (conflictsService as any).model.getState();
         const task = state.tasks.get("runtime-t1");
         assert.strictEqual(task.status, "Completed");

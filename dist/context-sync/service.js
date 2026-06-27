@@ -37,6 +37,12 @@ export class ContextSynchronizationService {
         this.listener = new WorkspaceListener(req => this.sync(req));
         this.listener.start();
     }
+    startListening() {
+        this.listener.start();
+    }
+    stopListening() {
+        this.listener.stop();
+    }
     destroy() {
         this.listener.stop();
     }

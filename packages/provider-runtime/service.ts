@@ -135,9 +135,18 @@ export class ProviderRuntimeService {
         this.lastNegotiationResult = negotiation;
         this.totalExecutions++;
 
+        const selected = this.registry.get(negotiation.selectedProvider);
+        if (!selected) {
+            console.error("DEBUG EXEC ORDER ERROR:", {
+                selectedProvider: negotiation.selectedProvider,
+                registryIds: this.registry.list().map(p => p.id),
+                candidates: candidates.map(p => p.id)
+            });
+        }
+
         // Build ordered execution list: winner + fallback chain
         const executionOrder: SDKProvider[] = [
-            this.registry.get(negotiation.selectedProvider)!,
+            selected!,
             ...negotiation.fallbackChain
                 .map(id => this.registry.get(id))
                 .filter((p): p is SDKProvider => !!p)
@@ -179,10 +188,12 @@ export class ProviderRuntimeService {
                 try {
                     let sharedMem: any = null;
                     try {
-                        const { SharedMemoryService } = await import("../shared-memory");
+                        const { SharedMemoryService } = await import("../shared-memory/service.js");
                         sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
+                        await sharedMem.restoreLatest();
                         await sharedMem.claimTask(request.task.id, provider.id);
-                    } catch { /* best-effort fallback */ }
+                        await sharedMem.snapshot("latest");
+                    } catch (e: any) { console.error("DEBUG CLAIM ERR:", e); }
 
                     const response = await provider.execute(
                         request.task,
@@ -204,7 +215,8 @@ export class ProviderRuntimeService {
                                 });
                             }
                             await sharedMem.completeTask(request.task.id, response.status === "Completed");
-                        } catch { /* ignore */ }
+                            await sharedMem.snapshot("latest");
+                        } catch (e: any) { console.error("DEBUG COMPLETE ERR:", e); }
                     }
 
                     const duration = Date.now() - startTime;

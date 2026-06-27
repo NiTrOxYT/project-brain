@@ -91,9 +91,17 @@ export class ProviderRuntimeService {
         }
         this.lastNegotiationResult = negotiation;
         this.totalExecutions++;
+        const selected = this.registry.get(negotiation.selectedProvider);
+        if (!selected) {
+            console.error("DEBUG EXEC ORDER ERROR:", {
+                selectedProvider: negotiation.selectedProvider,
+                registryIds: this.registry.list().map(p => p.id),
+                candidates: candidates.map(p => p.id)
+            });
+        }
         // Build ordered execution list: winner + fallback chain
         const executionOrder = [
-            this.registry.get(negotiation.selectedProvider),
+            selected,
             ...negotiation.fallbackChain
                 .map(id => this.registry.get(id))
                 .filter((p) => !!p)
@@ -119,11 +127,15 @@ export class ProviderRuntimeService {
                 try {
                     let sharedMem = null;
                     try {
-                        const { SharedMemoryService } = await import("../shared-memory");
+                        const { SharedMemoryService } = await import("../shared-memory/service.js");
                         sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
+                        await sharedMem.restoreLatest();
                         await sharedMem.claimTask(request.task.id, provider.id);
+                        await sharedMem.snapshot("latest");
                     }
-                    catch { /* best-effort fallback */ }
+                    catch (e) {
+                        console.error("DEBUG CLAIM ERR:", e);
+                    }
                     const response = await provider.execute(request.task, { ...request.context, selectedModel: negotiation.selectedModel }, onEvent, onStream);
                     // Publish artifact and complete task in Shared Memory
                     if (sharedMem) {
@@ -138,8 +150,11 @@ export class ProviderRuntimeService {
                                 });
                             }
                             await sharedMem.completeTask(request.task.id, response.status === "Completed");
+                            await sharedMem.snapshot("latest");
                         }
-                        catch { /* ignore */ }
+                        catch (e) {
+                            console.error("DEBUG COMPLETE ERR:", e);
+                        }
                     }
                     const duration = Date.now() - startTime;
                     const provMetrics = this.buildMetrics(provider, negotiation, request.task.id, response, duration, attempt - 1, provIdx);

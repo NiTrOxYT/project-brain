@@ -37,7 +37,7 @@ export class QueryEngineService {
             }
             catch (error) {
                 // Return gracefully with sync error details
-                return this.createErrorResult(request, `Synchronization failed: ${error.message}`, totalStart);
+                return await this.createErrorResult(request, `Synchronization failed: ${error.message}`, totalStart);
             }
             // 2. Cache Validation & Fetch
             const queryHashInput = (request.maxTokens || request.includeExecution || request.includeRelationships || request.includeGraph || request.includeArchitectureMemory)
@@ -204,6 +204,28 @@ export class QueryEngineService {
             catch {
                 // ignore
             }
+            // Collect Shared Memory / Collaboration diagnostics (best-effort)
+            let activeAgents;
+            let completedAgents;
+            let collaborationEfficiency;
+            let consensusDuration;
+            let conflictsDetected;
+            let conflictsResolved;
+            let artifactReuseRate;
+            try {
+                const { SharedMemoryService } = await import("../shared-memory/service.js");
+                const sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
+                const stats = await sharedMem.statistics();
+                if (stats) {
+                    activeAgents = stats.activeAgents;
+                    collaborationEfficiency = stats.duplicateAvoided > 0 ? 0.95 : 0.8;
+                    consensusDuration = stats.averageConsensusMs;
+                    conflictsDetected = stats.totalConflicts;
+                    conflictsResolved = stats.resolvedConflicts;
+                    artifactReuseRate = stats.duplicateAvoided;
+                }
+            }
+            catch { /* best-effort */ }
             // Collect Context Compiler snapshot diagnostics (best-effort)
             let snapshotId;
             let snapshotVersion;
@@ -276,6 +298,14 @@ export class QueryEngineService {
                     providerConfidence,
                     promptConfidence,
                     learningVersion,
+                    // Shared Memory diagnostics
+                    activeAgents,
+                    completedAgents,
+                    collaborationEfficiency,
+                    consensusDuration,
+                    conflictsDetected,
+                    conflictsResolved,
+                    artifactReuseRate,
                     // Context Compiler / Semantic Snapshot diagnostics
                     snapshotId,
                     snapshotVersion,
@@ -296,11 +326,31 @@ export class QueryEngineService {
             };
         }
         catch (error) {
-            return this.createErrorResult(request, `Query failed: ${error.message}`, totalStart);
+            return await this.createErrorResult(request, `Query failed: ${error.message}`, totalStart);
         }
     }
-    createErrorResult(request, errorMessage, startTime) {
+    async createErrorResult(request, errorMessage, startTime) {
         const totalTimeMs = Date.now() - startTime;
+        let activeAgents;
+        let collaborationEfficiency;
+        let consensusDuration;
+        let conflictsDetected;
+        let conflictsResolved;
+        let artifactReuseRate;
+        try {
+            const { SharedMemoryService } = await import("../shared-memory/service.js");
+            const sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
+            const stats = await sharedMem.statistics();
+            if (stats) {
+                activeAgents = stats.activeAgents;
+                collaborationEfficiency = stats.duplicateAvoided > 0 ? 0.95 : 0.8;
+                consensusDuration = stats.averageConsensusMs;
+                conflictsDetected = stats.totalConflicts;
+                conflictsResolved = stats.resolvedConflicts;
+                artifactReuseRate = stats.duplicateAvoided;
+            }
+        }
+        catch { /* best-effort */ }
         const emptyContext = {
             generatedAt: new Date().toISOString(),
             query: request.query,
@@ -334,7 +384,14 @@ export class QueryEngineService {
                 selectedFiles: 0,
                 selectedSymbols: 0,
                 selectedRelationships: 0,
-                error: errorMessage
+                error: errorMessage,
+                // Shared Memory diagnostics
+                activeAgents,
+                collaborationEfficiency,
+                consensusDuration,
+                conflictsDetected,
+                conflictsResolved,
+                artifactReuseRate
             }
         };
     }

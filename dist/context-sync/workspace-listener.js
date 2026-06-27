@@ -46,6 +46,7 @@ export class WorkspaceListener {
                 resolve(result);
             }
             catch (err) {
+                console.error("WorkspaceListener sync failed:", err);
                 item.reject(err);
             }
         }

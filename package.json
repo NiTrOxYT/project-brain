@@ -5,12 +5,14 @@
   "type": "module",
   "private": true,
   "bin": {
-    "brain": "./dist/cli.js"
+    "brain": "./dist/cli/cli.js"
   },
   "scripts": {
     "build": "tsc",
     "dev": "tsx packages/main.ts",
-    "start": "node dist/main.js"
+    "start": "node dist/main.js",
+    "brain": "tsx packages/cli/cli.ts",
+    "test-cli": "tsx packages/test-cli.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
