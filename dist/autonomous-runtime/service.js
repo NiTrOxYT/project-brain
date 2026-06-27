@@ -116,6 +116,23 @@ export class AutonomousRuntimeService {
         for (const t of this.plan.tasks) {
             taskMap.set(t.id, t);
         }
+        // Initialize Shared Memory and register tasks
+        let sharedMem = null;
+        try {
+            const { SharedMemoryService } = await import("../shared-memory");
+            sharedMem = new SharedMemoryService(this.projectRoot, this.workspaceRoot);
+            sharedMem.setPhase("Execution");
+            for (const t of this.plan.tasks) {
+                sharedMem.addTask({
+                    id: t.id,
+                    title: t.title,
+                    type: t.type,
+                    status: "Pending",
+                    prerequisites: t.prerequisites
+                });
+            }
+        }
+        catch { /* best-effort */ }
         const scheduler = new OrchestratorScheduler();
         const schedule = scheduler.schedule(this.plan);
         // Execute schedule batches
@@ -147,11 +164,33 @@ export class AutonomousRuntimeService {
             if (runnableTasks.length === 0)
                 continue;
             // Run tasks in parallel
+            console.log("DEBUG: Running runnableTasks:", runnableTasks);
             const batchPromises = runnableTasks.map(async (tId) => {
                 const node = taskMap.get(tId);
+                // Wait on Shared Memory dependency barriers
+                if (sharedMem) {
+                    try {
+                        console.log(`DEBUG: waitBarrier calling for node ${tId}`);
+                        let ready = false;
+                        while (!ready) {
+                            ready = await sharedMem.coordination.waitBarrier(node.prerequisites);
+                            if (!ready) {
+                                console.log(`DEBUG: waitBarrier not ready for node ${tId}, waiting...`);
+                                await new Promise(resolve => setTimeout(resolve, 50));
+                            }
+                        }
+                        console.log(`DEBUG: waitBarrier ready for node ${tId}`);
+                    }
+                    catch (err) {
+                        console.log(`DEBUG: waitBarrier error for node ${tId}:`, err.message);
+                    }
+                }
+                console.log(`DEBUG: executeTaskAndRepair calling for node ${tId}`);
                 await this.executeTaskAndRepair(node);
+                console.log(`DEBUG: executeTaskAndRepair finished for node ${tId}`);
             });
             await Promise.all(batchPromises);
+            console.log("DEBUG: runnableTasks finished");
             // Check failures in batch
             const hasFailures = runnableTasks.some(tId => this.state.failedTasks.has(tId));
             if (hasFailures) {
@@ -322,6 +361,17 @@ export class AutonomousRuntimeService {
             await this.journalService.log("RepairStarted", { taskId, attempt: repairAttempts });
             const repairAction = this.repairService.createRepairAction(failure, node, this.workspaceRoot);
             try {
+                // Retrieve fresh context for the repair action using current snapshot, task, and failure details
+                try {
+                    const { ContextRetrievalService } = await import("../context-retrieval");
+                    const retrievalService = new ContextRetrievalService(this.projectRoot, this.workspaceRoot);
+                    const res = await retrievalService.retrieve({
+                        query: `${repairAction.newRequest.task.title} due to ${failure.category}: ${failure.message}`,
+                        providerId: "claude-code"
+                    });
+                    repairAction.newRequest.context.retrievalPackage = res.retrievalPackage;
+                }
+                catch { /* best-effort */ }
                 this.metricsService.incrementProviderExecutions();
                 const repairRes = await this.runtimeService.execute(repairAction.newRequest, () => { });
                 if (repairRes.workspaceTransactionId) {

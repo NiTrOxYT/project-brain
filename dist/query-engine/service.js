@@ -3,9 +3,6 @@ import path from "path";
 import crypto from "crypto";
 import { FileSystemService } from "../filesystem";
 import { SynchronizerService } from "../synchronizer";
-import { PlannerService } from "../planner";
-import { RetrieverService } from "../retriever";
-import { ContextAssemblerService } from "../context-assembler";
 export class QueryEngineService {
     projectRoot;
     workspaceRoot;
@@ -22,6 +19,12 @@ export class QueryEngineService {
         let assemblyTimeMs = 0;
         let cacheHit = false;
         let retrievedFilesCount = 0;
+        let retrievalDuration = 0;
+        let retrievedSymbols = 0;
+        let retrievedRules = 0;
+        let compressionRatio = 1.0;
+        let retrievalCacheHit = false;
+        let tokenEstimate = 0;
         try {
             // 1. Run Synchronizer Check
             try {
@@ -52,7 +55,25 @@ export class QueryEngineService {
                 .update(queryHashInput)
                 .digest("hex");
             const cachePath = path.join(this.workspaceRoot, "context", `${queryHash}.json`);
-            let context = null;
+            const context = {
+                generatedAt: new Date().toISOString(),
+                query: request.query,
+                plan: {
+                    originalQuery: request.query,
+                    normalizedQuery: request.query.toLowerCase(),
+                    intent: "analysis",
+                    keywords: [],
+                    targetModules: [],
+                    contextBudget: 10,
+                    confidence: 0.0
+                },
+                files: [],
+                symbols: [],
+                relationships: [],
+                graph: { nodes: [], edges: [] },
+                estimatedTokens: 0
+            };
+            let hasContext = false;
             if (request.useCache !== false && await this.filesystem.exists(cachePath)) {
                 try {
                     const cached = await this.filesystem.readJson(cachePath);
@@ -78,7 +99,8 @@ export class QueryEngineService {
                         isValid = false;
                     if (isValid) {
                         cacheHit = true;
-                        context = cached;
+                        Object.assign(context, cached);
+                        hasContext = true;
                     }
                 }
                 catch {
@@ -86,70 +108,75 @@ export class QueryEngineService {
                 }
             }
             // 3. Execution flow if cache missed
-            if (!context) {
-                const planStart = Date.now();
-                const planner = new PlannerService(this.workspaceRoot);
-                const plan = await planner.plan(request.query);
-                planningTimeMs = Date.now() - planStart;
+            if (!hasContext) {
+                const { ContextRetrievalService } = await import("../context-retrieval");
+                const retrievalService = new ContextRetrievalService(this.projectRoot, this.workspaceRoot);
                 const retrieveStart = Date.now();
-                const retriever = new RetrieverService(this.workspaceRoot);
-                const retrieval = await retriever.retrieve({
-                    query: plan.keywords.join(" "),
-                    limit: 20
-                });
-                retrievalTimeMs = Date.now() - retrieveStart;
-                retrievedFilesCount = retrieval.files.length;
-                // Call Knowledge Fusion Engine
-                const { KnowledgeFusionService } = await import("../knowledge-fusion");
-                const fusion = new KnowledgeFusionService(this.workspaceRoot);
-                const semanticCandidates = retrieval.files.map(f => ({ path: f.path, score: f.score }));
-                const fusionResult = await fusion.fuse({
+                const res = await retrievalService.retrieve({
                     query: request.query,
-                    options: {
-                        includeExecution: request.includeExecution,
-                        includeRelationships: request.includeRelationships,
-                        includeGraph: request.includeGraph,
-                        includeArchitectureMemory: request.includeArchitectureMemory
-                    },
-                    semanticCandidates
-                });
-                let engineeringPlan = undefined;
-                let executionSchedule = undefined;
-                let executionDiagnostics = undefined;
-                if (plan.intent !== "analysis") {
-                    const engPlannerStart = Date.now();
-                    const { EngineeringPlannerService } = await import("../engineering-planner");
-                    const engPlanner = new EngineeringPlannerService(this.projectRoot, this.workspaceRoot);
-                    engineeringPlan = await engPlanner.plan({
-                        query: request.query,
-                        intent: plan.intent,
-                        candidates: fusionResult.candidates
-                    });
-                    planningTimeMs += Date.now() - engPlannerStart;
-                    const orchestratorStart = Date.now();
-                    const { MultiAgentOrchestratorService } = await import("../orchestrator");
-                    const orchestrator = new MultiAgentOrchestratorService(this.workspaceRoot);
-                    const orchestratorResponse = await orchestrator.orchestrate({
-                        plan: engineeringPlan
-                    });
-                    executionSchedule = orchestratorResponse.schedule;
-                    executionDiagnostics = orchestratorResponse.report;
-                    planningTimeMs += Date.now() - orchestratorStart;
-                }
-                const assembleStart = Date.now();
-                const assembler = new ContextAssemblerService(this.projectRoot, this.workspaceRoot);
-                context = await assembler.assemble(request.query, request.maxTokens, {
+                    maxTokens: request.maxTokens,
                     includeExecution: request.includeExecution,
                     includeRelationships: request.includeRelationships,
                     includeGraph: request.includeGraph,
-                    includeArchitectureMemory: request.includeArchitectureMemory,
-                    fusedCandidates: fusionResult.candidates,
-                    engineeringPlan,
-                    executionSchedule,
-                    executionDiagnostics,
-                    bypassCache: true // query engine already handles caching/invalidation
+                    includeArchitectureMemory: request.includeArchitectureMemory
                 });
-                assemblyTimeMs = Date.now() - assembleStart;
+                retrievalTimeMs = Date.now() - retrieveStart;
+                retrievedFilesCount = res.retrievalPackage.candidates.length;
+                retrievalDuration = res.metrics.retrievalDurationMs;
+                retrievedFilesCount = res.metrics.retrievedFilesCount;
+                retrievedSymbols = res.metrics.retrievedSymbolsCount;
+                retrievedRules = res.metrics.retrievedRulesCount;
+                compressionRatio = res.metrics.compressionRatio;
+                retrievalCacheHit = res.cacheHit;
+                tokenEstimate = res.metrics.tokenEstimate;
+                // Map to ContextPackage
+                const tempContext = {
+                    generatedAt: new Date().toISOString(),
+                    query: request.query,
+                    plan: {
+                        originalQuery: request.query,
+                        normalizedQuery: request.query.toLowerCase(),
+                        intent: "analysis",
+                        keywords: [],
+                        targetModules: [],
+                        contextBudget: 10,
+                        confidence: 1.0
+                    },
+                    files: res.retrievalPackage.candidates.map(c => ({
+                        path: c.path,
+                        score: c.score,
+                        estimatedTokens: 0
+                    })),
+                    symbols: res.retrievalPackage.symbols.map(s => ({
+                        name: s.name,
+                        kind: s.kind,
+                        file: s.filePath,
+                        line: s.line
+                    })),
+                    relationships: res.retrievalPackage.relationships.map(r => ({
+                        source: r.subject,
+                        target: r.object,
+                        type: r.predicate,
+                        file: "",
+                        line: 0
+                    })),
+                    graph: {
+                        nodes: res.retrievalPackage.graph.nodes.map(n => ({
+                            id: n.id,
+                            type: n.type
+                        })),
+                        edges: res.retrievalPackage.graph.edges.map(e => ({
+                            from: e.fromId,
+                            to: e.toId,
+                            type: e.kind
+                        }))
+                    },
+                    architecture: [],
+                    evolution: [],
+                    learning: [],
+                    estimatedTokens: res.metrics.tokenEstimate
+                };
+                Object.assign(context, tempContext);
             }
             else {
                 retrievedFilesCount = context.files.length;
@@ -257,7 +284,14 @@ export class QueryEngineService {
                     snapshotCacheHit,
                     snapshotFileCount,
                     snapshotSymbolCount,
-                    snapshotCompilationMs
+                    snapshotCompilationMs,
+                    // Context Retrieval diagnostics
+                    retrievalDuration,
+                    retrievedSymbols,
+                    retrievedRules,
+                    compressionRatio,
+                    retrievalCacheHit,
+                    tokenEstimate
                 }
             };
         }

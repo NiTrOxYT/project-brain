@@ -33,7 +33,7 @@ import { RetrievalMetricsTracker } from "./context-retrieval/metrics";
 import { RetrievalDiagnosticsBuilder } from "./context-retrieval/diagnostics";
 import { SemanticSnapshot } from "./context-compiler/types";
 import { SnapshotFingerprintEngine } from "./context-compiler/fingerprint";
-import { RetrievalPackage } from "./context-retrieval/types";
+import { RetrievalPackage, RetrievalSection } from "./context-retrieval/types";
 
 let passed = 0;
 let failed = 0;
@@ -118,7 +118,7 @@ function makeMockSnapshot(): SemanticSnapshot {
             { fromPath: "src/main.ts", toPath: "src/utils.ts", kind: "import", importNames: ["helperFunc"] }
         ],
         relationships: [
-            { subject: "src/main.ts", predicate: "imports", object: "src/utils.ts", details: {} }
+            { subject: "src/main.ts", predicate: "imports", object: "src/utils.ts", weight: 1 }
         ],
         graph: {
             nodes: [
@@ -131,11 +131,11 @@ function makeMockSnapshot(): SemanticSnapshot {
             topologicalOrder: ["file::src/main.ts", "file::src/utils.ts"]
         },
         architecture: [
-            { category: "Framework", title: "Use TypeScript", description: "All code must be TS", tags: ["ts"], ruleCount: 1 }
+            { category: "Framework", title: "Use TypeScript", description: "All code must be TS", tags: ["ts"] }
         ],
         evolution: [],
         learning: [
-            { timestamp: new Date().toISOString(), taskType: "modify", query: "fix main", filesModified: ["src/main.ts"], steps: [], rulesApplied: [], providerConfidence: 1, promptConfidence: 1 }
+            { timestamp: new Date().toISOString(), taskType: "modify", id: "learn-1", outcome: "success", validationScore: 1, filesModified: ["src/main.ts"] }
         ]
     };
 }
@@ -170,8 +170,10 @@ async function setup() {
 
     // Write dummy files for Synchronizer check
     await fs.writeFile(path.join(TEST_WORKSPACE, "index", "index.json"), JSON.stringify({ files: [] }), "utf8");
-    await fs.writeFile(path.join(TEST_WORKSPACE, "index", "symbols.json"), JSON.stringify({}), "utf8");
-    await fs.writeFile(path.join(TEST_WORKSPACE, "index", "relationships.json"), JSON.stringify({}), "utf8");
+    await fs.writeFile(path.join(TEST_WORKSPACE, "index", "symbols.json"), JSON.stringify({ symbols: [] }), "utf8");
+    await fs.writeFile(path.join(TEST_WORKSPACE, "index", "imports.json"), JSON.stringify({ imports: [] }), "utf8");
+    await fs.writeFile(path.join(TEST_WORKSPACE, "index", "relationships.json"), JSON.stringify({ relationships: [] }), "utf8");
+    await fs.writeFile(path.join(TEST_WORKSPACE, "index", "semantic.json"), JSON.stringify({ entries: [] }), "utf8");
     await fs.writeFile(path.join(TEST_WORKSPACE, "graph", "graph.json"), JSON.stringify({ nodes: [], edges: [] }), "utf8");
 }
 
@@ -546,6 +548,9 @@ async function runSuite() {
         const { QueryEngineService } = await import("./query-engine/service");
         const queryService = new QueryEngineService(TEST_WORKSPACE, TEST_WORKSPACE);
         const res = await queryService.query({ query: "fix main" });
+        if (res.diagnostics.retrievalDuration === undefined) {
+            console.log("TEST 44 DIAGNOSTICS FAILURE DETAILED RESULT:", JSON.stringify(res, null, 2));
+        }
         assert.ok(res.diagnostics);
         assert.ok(res.diagnostics.retrievalDuration !== undefined);
     });

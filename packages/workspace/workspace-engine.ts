@@ -209,6 +209,7 @@ export class WorkspaceEngine {
         try {
             const { SharedMemoryService } = await import("../shared-memory");
             const sharedMem = new SharedMemoryService(this.options.workspaceRoot, this.options.workspaceRoot);
+            await sharedMem.restoreLatest().catch(() => {});
             
             const conflicts = sharedMem.detectConflicts();
             if (conflicts.some(c => c.status === "open")) {

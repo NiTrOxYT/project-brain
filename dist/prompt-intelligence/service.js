@@ -56,7 +56,14 @@ export class PromptIntelligenceService {
         }
         // 2. Build Context
         stages.push("Builder");
-        const context = await this.builder.collect(request.task, request.context);
+        let snapshot = null;
+        try {
+            const { ContextSynchronizationService } = await import("../context-sync");
+            const syncService = new ContextSynchronizationService(this.workspaceRoot, this.workspaceRoot);
+            snapshot = await syncService.latestSnapshot();
+        }
+        catch { /* ignore */ }
+        const context = await this.builder.collect(request.task, request.context, snapshot);
         // 3. Assemble sections
         stages.push("Assembler");
         const sections = this.assembler.assemble(context, profile);

@@ -8,7 +8,8 @@ import {
     RetrievalSection,
     RetrievalMetrics,
     RetrievalStatistics,
-    RetrievalDiagnostics
+    RetrievalDiagnostics,
+    RetrievalStrategy
 } from "./types";
 import { QueryParser } from "./query-parser";
 import { RetrievalPlanner } from "./retrieval-planner";

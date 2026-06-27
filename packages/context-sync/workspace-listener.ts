@@ -52,6 +52,7 @@ export class WorkspaceListener {
                 const result = await this.callback(req);
                 resolve(result);
             } catch (err) {
+                console.error("WorkspaceListener sync failed:", err);
                 item.reject(err);
             }
         }

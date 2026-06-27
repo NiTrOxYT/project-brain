@@ -1,0 +1,49 @@
+export class WorkflowError extends Error {
+    constructor(message: string, public readonly details?: any) {
+        super(message);
+        this.name = "WorkflowError";
+        Object.setPrototypeOf(this, new.target.prototype);
+    }
+}
+
+export class PlanningError extends WorkflowError {
+    constructor(message: string, details?: any) {
+        super(message, details);
+        this.name = "PlanningError";
+    }
+}
+
+export class ExecutionError extends WorkflowError {
+    constructor(message: string, details?: any) {
+        super(message, details);
+        this.name = "ExecutionError";
+    }
+}
+
+export class ValidationError extends WorkflowError {
+    constructor(message: string, details?: any) {
+        super(message, details);
+        this.name = "ValidationError";
+    }
+}
+
+export class RepairError extends WorkflowError {
+    constructor(message: string, details?: any) {
+        super(message, details);
+        this.name = "RepairError";
+    }
+}
+
+export class RecoveryError extends WorkflowError {
+    constructor(message: string, details?: any) {
+        super(message, details);
+        this.name = "RecoveryError";
+    }
+}
+
+export class CheckpointError extends WorkflowError {
+    constructor(message: string, details?: any) {
+        super(message, details);
+        this.name = "CheckpointError";
+    }
+}

@@ -463,13 +463,21 @@ async function runSuite() {
         service.subscribe(() => {
             syncCount++;
         });
+        // Create src/main.ts first
+        await fs.mkdir(path.join(TEST_WORKSPACE, "src"), { recursive: true }).catch(() => { });
+        await fs.writeFile(path.join(TEST_WORKSPACE, "src/main.ts"), "console.log('init');").catch(() => { });
         // Trigger fake workspace engine commit
         const { WorkspaceEngine } = await import("./workspace/workspace-engine");
         const engine = new WorkspaceEngine({ workspaceRoot: TEST_WORKSPACE });
         const tx = engine.beginTransaction();
+        engine.stage(tx.id, {
+            kind: "WriteFile",
+            path: path.join(TEST_WORKSPACE, "src/main.ts"),
+            content: "console.log('modified');"
+        });
         await engine.commit(tx.id);
         // Wait a brief moment for async queue delivery
-        await new Promise(resolve => setTimeout(resolve, 50));
+        await new Promise(resolve => setTimeout(resolve, 100));
         assert.ok(syncCount > 0);
         service.destroy();
     });

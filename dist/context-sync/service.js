@@ -15,6 +15,7 @@ export class ContextSynchronizationService {
     projectRoot;
     workspaceRoot;
     static emitter = new EventEmitter();
+    static cachedLatestSnapshot = null;
     compiler;
     changeDetector = new ChangeDetector();
     depResolver = new DependencyResolver();
@@ -68,6 +69,7 @@ export class ContextSynchronizationService {
                 snapshotId: fullResult.snapshot.snapshotId,
                 metrics
             });
+            ContextSynchronizationService.cachedLatestSnapshot = fullResult.snapshot;
             return {
                 snapshot: fullResult.snapshot,
                 metrics,
@@ -161,6 +163,7 @@ export class ContextSynchronizationService {
             snapshotId: updatedSnapshot.snapshotId,
             metrics: finalMetrics
         });
+        ContextSynchronizationService.cachedLatestSnapshot = updatedSnapshot;
         return {
             snapshot: updatedSnapshot,
             patch,
@@ -186,7 +189,9 @@ export class ContextSynchronizationService {
         return this.patchApplier.apply(prev, patch);
     }
     async rollback(targetSnapshotId) {
-        return this.storage.rollback(targetSnapshotId);
+        const snap = await this.storage.rollback(targetSnapshotId);
+        ContextSynchronizationService.cachedLatestSnapshot = snap;
+        return snap;
     }
     async validate(snapshotId) {
         const snap = await this.storage.loadSnapshot(snapshotId);
@@ -208,7 +213,12 @@ export class ContextSynchronizationService {
         });
     }
     async latestSnapshot() {
-        return this.storage.latestSnapshot();
+        if (ContextSynchronizationService.cachedLatestSnapshot) {
+            return ContextSynchronizationService.cachedLatestSnapshot;
+        }
+        const snap = await this.storage.latestSnapshot();
+        ContextSynchronizationService.cachedLatestSnapshot = snap;
+        return snap;
     }
     subscribe(callback) {
         ContextSynchronizationService.emitter.on("SynchronizationCompleted", callback);

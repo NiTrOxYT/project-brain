@@ -72,7 +72,25 @@ export class QueryEngineService {
                 .digest("hex");
 
             const cachePath = path.join(this.workspaceRoot, "context", `${queryHash}.json`);
-            let context: ContextPackage | null = null;
+            const context: ContextPackage = {
+                generatedAt: new Date().toISOString(),
+                query: request.query,
+                plan: {
+                    originalQuery: request.query,
+                    normalizedQuery: request.query.toLowerCase(),
+                    intent: "analysis",
+                    keywords: [],
+                    targetModules: [],
+                    contextBudget: 10,
+                    confidence: 0.0
+                },
+                files: [],
+                symbols: [],
+                relationships: [],
+                graph: { nodes: [], edges: [] },
+                estimatedTokens: 0
+            };
+            let hasContext = false;
 
             if (request.useCache !== false && await this.filesystem.exists(cachePath)) {
 
@@ -102,7 +120,8 @@ export class QueryEngineService {
 
                     if (isValid) {
                         cacheHit = true;
-                        context = cached;
+                        Object.assign(context, cached);
+                        hasContext = true;
                     }
 
                 } catch {
@@ -112,7 +131,7 @@ export class QueryEngineService {
             }
 
             // 3. Execution flow if cache missed
-            if (!context) {
+            if (!hasContext) {
                 const { ContextRetrievalService } = await import("../context-retrieval");
                 const retrievalService = new ContextRetrievalService(this.projectRoot, this.workspaceRoot);
                 const retrieveStart = Date.now();
@@ -128,7 +147,7 @@ export class QueryEngineService {
                 retrievedFilesCount = res.retrievalPackage.candidates.length;
 
                 retrievalDuration = res.metrics.retrievalDurationMs;
-                retrievedFiles = res.metrics.retrievedFilesCount;
+                retrievedFilesCount = res.metrics.retrievedFilesCount;
                 retrievedSymbols = res.metrics.retrievedSymbolsCount;
                 retrievedRules = res.metrics.retrievedRulesCount;
                 compressionRatio = res.metrics.compressionRatio;
@@ -136,29 +155,53 @@ export class QueryEngineService {
                 tokenEstimate = res.metrics.tokenEstimate;
 
                 // Map to ContextPackage
-                context = {
+                const tempContext = {
                     generatedAt: new Date().toISOString(),
                     query: request.query,
                     plan: {
-                        steps: [],
-                        intent: "analysis",
-                        keywords: []
+                        originalQuery: request.query,
+                        normalizedQuery: request.query.toLowerCase(),
+                        intent: "analysis" as any,
+                        keywords: [],
+                        targetModules: [],
+                        contextBudget: 10,
+                        confidence: 1.0
                     },
                     files: res.retrievalPackage.candidates.map(c => ({
                         path: c.path,
-                        relativePath: c.path,
-                        content: "",
                         score: c.score,
-                        symbols: [],
-                        dependencies: []
+                        estimatedTokens: 0
                     })),
-                    symbols: res.retrievalPackage.symbols,
-                    relationships: res.retrievalPackage.relationships,
-                    graph: res.retrievalPackage.graph,
+                    symbols: res.retrievalPackage.symbols.map(s => ({
+                        name: s.name,
+                        kind: s.kind,
+                        file: s.filePath,
+                        line: s.line
+                    })),
+                    relationships: res.retrievalPackage.relationships.map(r => ({
+                        source: r.subject,
+                        target: r.object,
+                        type: r.predicate,
+                        file: "",
+                        line: 0
+                    })),
+                    graph: {
+                        nodes: res.retrievalPackage.graph.nodes.map(n => ({
+                            id: n.id,
+                            type: n.type
+                        })),
+                        edges: res.retrievalPackage.graph.edges.map(e => ({
+                            from: e.fromId,
+                            to: e.toId,
+                            type: e.kind
+                        }))
+                    },
                     architecture: [],
                     evolution: [],
-                    learning: []
+                    learning: [],
+                    estimatedTokens: res.metrics.tokenEstimate
                 };
+                Object.assign(context, tempContext);
             } else {
                 retrievedFilesCount = context.files.length;
             }

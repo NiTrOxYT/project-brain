@@ -132,6 +132,26 @@ export class WorkspaceEngine {
     async commit(transactionId) {
         const staged = this.requireStaged(transactionId, "commit");
         const startTime = Date.now();
+        // Enforce Shared Memory validation rules: consensus reached, conflicts resolved
+        try {
+            const { SharedMemoryService } = await import("../shared-memory");
+            const sharedMem = new SharedMemoryService(this.options.workspaceRoot, this.options.workspaceRoot);
+            await sharedMem.restoreLatest().catch(() => { });
+            const conflicts = sharedMem.detectConflicts();
+            if (conflicts.some(c => c.status === "open")) {
+                throw new Error("Cannot commit transaction: Open unresolved conflicts exist in Shared Memory.");
+            }
+            const state = sharedMem.model.getState();
+            const openProposals = state.proposals.filter((p) => p.status === "propose" || p.status === "review" || p.status === "reject");
+            if (openProposals.length > 0) {
+                throw new Error("Cannot commit transaction: Consensus not reached or proposals rejected/unfinalized.");
+            }
+        }
+        catch (err) {
+            if (err.message.includes("Cannot commit transaction")) {
+                throw new WorkspaceTransactionError(err.message, transactionId);
+            }
+        }
         this.journal.record(transactionId, "commit", { details: { operationCount: staged.tx.operations.length } });
         try {
             for (const op of staged.tx.operations) {

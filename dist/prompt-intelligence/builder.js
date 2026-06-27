@@ -10,27 +10,18 @@ export class PromptContextBuilder {
     async collect(task, runtimeContext, snapshot) {
         // Fast path: consume snapshot sections directly if available
         if (snapshot) {
-            if (this.lastContext && this.lastSnapshotId === snapshot.snapshotId) {
-                return this.lastContext;
+            try {
+                const { ContextRetrievalService } = await import("../context-retrieval");
+                const retrievalService = new ContextRetrievalService(this.workspaceRoot, this.workspaceRoot);
+                const res = await retrievalService.retrieve({
+                    query: task.title || task.type,
+                    providerId: "claude-code"
+                });
+                return this.collectFromRetrievalPackage(task, runtimeContext, res.retrievalPackage);
             }
-            if (this.lastContext && snapshot.metadata.incremental && snapshot.metadata.parentSnapshotId === this.lastSnapshotId) {
-                // Read only updated sections and patch the last context
-                const updated = this.collectFromSnapshot(task, runtimeContext, snapshot);
-                this.lastContext = {
-                    ...this.lastContext,
-                    ...updated,
-                    workspaceMetadata: {
-                        ...this.lastContext.workspaceMetadata,
-                        ...updated.workspaceMetadata
-                    }
-                };
-                this.lastSnapshotId = snapshot.snapshotId;
-                return this.lastContext;
+            catch {
+                return this.collectFromSnapshot(task, runtimeContext, snapshot);
             }
-            const context = this.collectFromSnapshot(task, runtimeContext, snapshot);
-            this.lastContext = context;
-            this.lastSnapshotId = snapshot.snapshotId;
-            return context;
         }
         let knowledgeFusion = null;
         if (runtimeContext.fusedCandidates) {
@@ -162,6 +153,52 @@ export class PromptContextBuilder {
             snapshotVersion: snapshot.metadata.fingerprint.version
         };
         const executionHistory = snapshot.learning;
+        return {
+            task,
+            runtimeContext,
+            knowledgeFusion,
+            architectureMemory,
+            repositoryEvolution,
+            learningEngine,
+            workspaceMetadata,
+            executionGraph,
+            relationshipGraph,
+            executionHistory
+        };
+    }
+    collectFromRetrievalPackage(task, runtimeContext, pkg) {
+        const archSection = pkg.sections.find(s => s.id === "architecture-memory");
+        const architectureMemory = archSection
+            ? JSON.parse(archSection.content)
+            : { entries: [] };
+        const evoSection = pkg.sections.find(s => s.id === "repository-evolution");
+        const repositoryEvolution = evoSection
+            ? JSON.parse(evoSection.content)
+            : { fileHistory: [], coChangeRelationships: [] };
+        const learnSection = pkg.sections.find(s => s.id === "learning-summary");
+        const learningEngine = learnSection
+            ? { experiences: JSON.parse(learnSection.content), optimizations: [] }
+            : { experiences: [], optimizations: [] };
+        const executionGraph = {
+            nodes: pkg.graph.nodes,
+            edges: pkg.graph.edges
+        };
+        const relSection = pkg.sections.find(s => s.id === "knowledge-graph");
+        const relationshipGraph = relSection ? JSON.parse(relSection.content) : {};
+        const knowledgeFusion = pkg.candidates.map(c => ({
+            path: c.path,
+            score: c.score
+        }));
+        const workspaceMetadata = {
+            workspaceRoot: this.workspaceRoot,
+            os: process.platform,
+            nodeVersion: process.version,
+            snapshotId: pkg.snapshotId,
+            retrievalId: pkg.retrievalId
+        };
+        const executionHistory = pkg.sections.find(s => s.id === "learning-summary")
+            ? JSON.parse(pkg.sections.find(s => s.id === "learning-summary").content)
+            : [];
         return {
             task,
             runtimeContext,

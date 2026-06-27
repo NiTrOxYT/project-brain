@@ -133,7 +133,9 @@ export class LearningEngineService {
                 syncDirtyRegionSize = syncStats.averageDirtyFiles;
                 syncSnapshotReuseRatio = syncStats.cacheHitRatio;
             }
+        } catch { /* best-effort */ }
 
+        try {
             const { ContextRetrievalService } = await import("../context-retrieval");
             const retrievalService = new ContextRetrievalService(this.workspaceRoot, this.workspaceRoot);
             const retrievalStats = await retrievalService.statistics();
@@ -144,22 +146,20 @@ export class LearningEngineService {
                 retrievalAvgTokens = retrievalStats.averageTokens;
                 retrievalSuccessRate = retrievalStats.cacheHitRate;
             }
+        } catch { /* best-effort */ }
 
-            try {
-                const { SharedMemoryService } = await import("../shared-memory");
-                const sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
-                const stats = await sharedMem.statistics();
-                if (stats) {
-                    collaborationEfficiency = stats.duplicateAvoided > 0 ? 0.95 : 0.8;
-                    conflictFrequency = stats.totalConflicts;
-                    providerCooperation = stats.activeAgents > 1 ? 0.9 : 0.5;
-                    artifactReuseRate = stats.duplicateAvoided;
-                    consensusQuality = stats.averageConsensusMs > 0 ? 0.99 : 0.0;
-                }
-            } catch { /* best-effort */ }
-        } catch {
-            // best-effort
-        }
+        try {
+            const { SharedMemoryService } = await import("../shared-memory");
+            const sharedMem = new SharedMemoryService(this.workspaceRoot, this.workspaceRoot);
+            const stats = await sharedMem.statistics();
+            if (stats) {
+                collaborationEfficiency = stats.duplicateAvoided > 0 ? 0.95 : 0.8;
+                conflictFrequency = stats.totalConflicts;
+                providerCooperation = stats.activeAgents > 1 ? 0.9 : 0.5;
+                artifactReuseRate = stats.duplicateAvoided;
+                consensusQuality = stats.averageConsensusMs > 0 ? 0.99 : 0.0;
+            }
+        } catch { /* best-effort */ }
 
         const updatedMetadata = {
             ...metadata,

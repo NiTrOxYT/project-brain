@@ -30,7 +30,7 @@ export class AssignmentEngine {
         // 3. Learning Recommendation Override
         let selectedAgent: AgentIdentity = candidates[0];
         if (learningRecommendation) {
-            const matched = candidates.find(c => c.id === learningRecommendation);
+            const matched = agents.find(c => c.id === learningRecommendation);
             if (matched) {
                 selectedAgent = matched;
             }
