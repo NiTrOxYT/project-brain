@@ -1,0 +1,92 @@
+{
+  "patchId": "patch-6a4be79ccfc6",
+  "fromSnapshotId": "de3e5466f9287286c1165e384de07b5b4de60b1cd2be9d53be886fae40682073",
+  "toSnapshotId": "48c295f337e6514fc68fdd5149bd10019d38f6b1abd9866ff91cacb8c33e079c",
+  "createdAt": "2026-06-27T12:46:41.283Z",
+  "sectionPatches": [
+    {
+      "sectionId": "filesystem-index",
+      "op": "update",
+      "content": "[{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts\",\"relativePath\":\"src/a.ts\",\"extension\":\".ts\",\"sizeBytes\":100,\"language\":\"TypeScript\",\"linesOfCode\":5},{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-sync/src/b.ts\",\"relativePath\":\"src/b.ts\",\"extension\":\".ts\",\"sizeBytes\":150,\"language\":\"TypeScript\",\"linesOfCode\":8}]",
+      "priority": 10,
+      "contentHash": "feafa28d160e1776a45b897858cea4f108f0b93edba691d4989a37fef06c9e40",
+      "estimatedTokens": 92
+    },
+    {
+      "sectionId": "symbol-index",
+      "op": "update",
+      "content": "[{\"name\":\"funcA\",\"kind\":\"function\",\"filePath\":\"/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts\",\"line\":2,\"exported\":true}]",
+      "priority": 20,
+      "contentHash": "8701ef73482e993ae7803211b9be1f65eb5ad6a736b3cd8819a46cd4266f97b3",
+      "estimatedTokens": 37
+    },
+    {
+      "sectionId": "dependency-graph",
+      "op": "update",
+      "content": "[{\"fromPath\":\"src/b.ts\",\"toPath\":\"src/a.ts\",\"kind\":\"import\",\"importNames\":[\"funcA\"]}]",
+      "priority": 50,
+      "contentHash": "491daf6afa4c99f690d12dc23c74f3ebe3987195d68af62e9221e79d4b778377",
+      "estimatedTokens": 22
+    },
+    {
+      "sectionId": "knowledge-graph",
+      "op": "update",
+      "content": "[]",
+      "priority": 40,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1
+    },
+    {
+      "sectionId": "execution-graph",
+      "op": "update",
+      "content": "{\"nodes\":[{\"id\":\"node-1\",\"type\":\"task\",\"title\":\"Task 1\",\"filePath\":\"/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts\",\"status\":\"pending\",\"priority\":50}],\"edges\":[],\"topologicalOrder\":[\"node-1\"]}",
+      "priority": 60,
+      "contentHash": "5d6c64c738556b20f48e03608a3eb56e24b72dd40479d2febe52482006540737",
+      "estimatedTokens": 54
+    }
+  ],
+  "graphPatch": {
+    "nodesAdded": [],
+    "nodesUpdated": [
+      {
+        "id": "node-1",
+        "type": "task",
+        "title": "Task 1",
+        "filePath": "/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts",
+        "status": "pending",
+        "priority": 50
+      }
+    ],
+    "nodesDeleted": [],
+    "edgesAdded": [],
+    "edgesDeleted": [],
+    "topologicalOrder": [
+      "node-1"
+    ]
+  },
+  "dependencyPatch": {
+    "added": [],
+    "deleted": []
+  },
+  "symbolPatch": {
+    "added": [],
+    "modified": [],
+    "deleted": []
+  },
+  "metadataUpdate": {
+    "fileCount": 2,
+    "symbolCount": 1,
+    "dependencyEdgeCount": 1,
+    "graphNodeCount": 1,
+    "estimatedTokens": 206,
+    "fingerprint": {
+      "hash": "48c295f337e6514fc68fdd5149bd10019d38f6b1abd9866ff91cacb8c33e079c",
+      "filesystemHash": "feafa28d160e1776a45b897858cea4f108f0b93edba691d4989a37fef06c9e40",
+      "graphHash": "5d6c64c738556b20f48e03608a3eb56e24b72dd40479d2febe52482006540737",
+      "architectureHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "evolutionHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "learningHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "version": "626.387.310"
+    }
+  }
+}

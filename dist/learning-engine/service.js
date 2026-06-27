@@ -68,6 +68,40 @@ export class LearningEngineService {
         await this.storage.saveRepairs(updatedRepairs);
         await this.storage.savePrompts(updatedPrompts);
         await this.storage.saveOptimizations(optimizations);
+        // Record latest snapshot fingerprint and sync metrics in metadata for traceability
+        let snapshotFingerprint;
+        let syncLatency;
+        let syncPatchSize;
+        let syncDirtyRegionSize;
+        let syncSnapshotReuseRatio;
+        try {
+            const { ContextSynchronizationService } = await import("../context-sync");
+            const syncService = new ContextSynchronizationService(this.workspaceRoot, this.workspaceRoot);
+            const latestSnap = await syncService.latestSnapshot();
+            if (latestSnap) {
+                snapshotFingerprint = latestSnap.metadata.fingerprint.hash;
+            }
+            const syncStats = await syncService.statistics();
+            if (syncStats) {
+                syncLatency = syncStats.averageSyncDurationMs;
+                syncPatchSize = syncStats.averagePatchSizeBytes;
+                syncDirtyRegionSize = syncStats.averageDirtyFiles;
+                syncSnapshotReuseRatio = syncStats.cacheHitRatio;
+            }
+        }
+        catch {
+            // best-effort
+        }
+        const updatedMetadata = {
+            ...metadata,
+            lastLearnAt: new Date().toISOString(),
+            snapshotFingerprint,
+            syncLatency,
+            syncPatchSize,
+            syncDirtyRegionSize,
+            syncSnapshotReuseRatio
+        };
+        await this.storage.saveMetadata(updatedMetadata);
         const stats = this.metricsTracker.compute(experiences, optimizations);
         return {
             success: true,

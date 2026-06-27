@@ -177,6 +177,33 @@ export class QueryEngineService {
             catch {
                 // ignore
             }
+            // Collect Context Compiler snapshot diagnostics (best-effort)
+            let snapshotId;
+            let snapshotVersion;
+            let snapshotTokens;
+            let snapshotIncremental;
+            let snapshotCacheHit;
+            let snapshotFileCount;
+            let snapshotSymbolCount;
+            let snapshotCompilationMs;
+            try {
+                const { ContextSynchronizationService } = await import("../context-sync");
+                const syncService = new ContextSynchronizationService(this.projectRoot, this.workspaceRoot);
+                const latestSnap = await syncService.latestSnapshot();
+                if (latestSnap) {
+                    snapshotId = latestSnap.snapshotId;
+                    snapshotVersion = latestSnap.metadata.fingerprint.version;
+                    snapshotTokens = latestSnap.metadata.estimatedTokens;
+                    snapshotIncremental = latestSnap.metadata.incremental;
+                    snapshotCacheHit = true;
+                    snapshotFileCount = latestSnap.metadata.fileCount;
+                    snapshotSymbolCount = latestSnap.metadata.symbolCount;
+                    snapshotCompilationMs = latestSnap.metadata.compilationDurationMs;
+                }
+            }
+            catch {
+                // ignore — snapshot is optional
+            }
             return {
                 generatedAt: new Date().toISOString(),
                 request,
@@ -221,7 +248,16 @@ export class QueryEngineService {
                     optimizationRulesUsed,
                     providerConfidence,
                     promptConfidence,
-                    learningVersion
+                    learningVersion,
+                    // Context Compiler / Semantic Snapshot diagnostics
+                    snapshotId,
+                    snapshotVersion,
+                    snapshotTokens,
+                    snapshotIncremental,
+                    snapshotCacheHit,
+                    snapshotFileCount,
+                    snapshotSymbolCount,
+                    snapshotCompilationMs
                 }
             };
         }

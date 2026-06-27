@@ -5,6 +5,7 @@
 // ──────────────────────────────────────────────────────────────────────────────
 
 import fs from "fs";
+import EventEmitter from "events";
 import path from "path";
 import crypto from "crypto";
 import {
@@ -60,7 +61,16 @@ function generateTxId(): string {
 
 // ─── WorkspaceEngine ──────────────────────────────────────────────────────────
 
+export interface WorkspaceChangedEvent {
+    transactionId: string;
+    workspaceRoot: string;
+    affectedFiles: { path: string; operation: string; oldPath?: string }[];
+    timestamp: string;
+}
+
 export class WorkspaceEngine {
+    /** Static event bus — emit 'WorkspaceChangedEvent' after successful commits. */
+    static readonly emitter = new EventEmitter();
     private readonly journal: WorkspaceJournal;
     private readonly locks: WorkspaceLockManager;
     private readonly patcher: WorkspacePatchEngine;
@@ -210,7 +220,21 @@ export class WorkspaceEngine {
             this.totalChanges += staged.changes.length;
             this.totalPatchesApplied += staged.patches.length;
 
-            return this.buildResult(transactionId, staged, false, undefined, startTime);
+            const result = this.buildResult(transactionId, staged, false, undefined, startTime);
+
+            const event: WorkspaceChangedEvent = {
+                transactionId,
+                workspaceRoot: this.options.workspaceRoot,
+                affectedFiles: staged.changes.map(c => ({
+                    path: c.path,
+                    operation: c.kind,
+                    oldPath: c.oldPath
+                })),
+                timestamp: staged.tx.committedAt!
+            };
+            WorkspaceEngine.emitter.emit("WorkspaceChangedEvent", event);
+
+            return result;
         } catch (err: any) {
             if (this.options.rollbackOnError) {
                 await this.rollbackInternal(transactionId, staged);

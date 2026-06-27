@@ -1,0 +1,13 @@
+{
+  "totalSnapshots": 2,
+  "totalCompilations": 2,
+  "cacheHits": 0,
+  "cacheMisses": 2,
+  "incrementalCompiles": 0,
+  "fullCompiles": 2,
+  "averageCompilationMs": 1.5,
+  "averageTokens": 19,
+  "tokenSavings": 0,
+  "lastCompilationAt": "2026-06-27T12:55:34.284Z",
+  "lastSnapshotId": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a"
+}

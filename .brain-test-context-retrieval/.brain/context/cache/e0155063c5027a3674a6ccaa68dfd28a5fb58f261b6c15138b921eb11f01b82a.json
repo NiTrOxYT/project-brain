@@ -1,0 +1,122 @@
+{
+  "snapshotId": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a",
+  "metadata": {
+    "snapshotId": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a",
+    "projectRoot": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval",
+    "workspaceRoot": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval",
+    "createdAt": "2026-06-27T12:55:34.283Z",
+    "compiledAt": "2026-06-27T12:55:34.283Z",
+    "compilerVersion": "1.0.0",
+    "fingerprint": {
+      "hash": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a",
+      "filesystemHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "graphHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
+      "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
+      "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
+      "version": "365.579.434"
+    },
+    "stageCount": 12,
+    "compilationDurationMs": 0,
+    "fileCount": 0,
+    "symbolCount": 0,
+    "dependencyEdgeCount": 0,
+    "graphNodeCount": 0,
+    "estimatedTokens": 19,
+    "incremental": false
+  },
+  "sections": [
+    {
+      "id": "filesystem-index",
+      "name": "Filesystem Index",
+      "kind": "filesystem-index",
+      "content": "[]",
+      "priority": 10,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "symbol-index",
+      "name": "Symbol Index",
+      "kind": "symbol-index",
+      "content": "[]",
+      "priority": 20,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "architecture-memory",
+      "name": "Architecture Memory",
+      "kind": "architecture-memory",
+      "content": "[]",
+      "priority": 30,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "Knowledge Graph",
+      "kind": "knowledge-graph",
+      "content": "[]",
+      "priority": 40,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "dependency-graph",
+      "name": "Dependency Graph",
+      "kind": "dependency-graph",
+      "content": "[]",
+      "priority": 50,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "execution-graph",
+      "name": "Execution Graph",
+      "kind": "execution-graph",
+      "content": "{\"nodes\":[],\"edges\":[],\"topologicalOrder\":[]}",
+      "priority": 60,
+      "contentHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "estimatedTokens": 12,
+      "sourcePaths": []
+    },
+    {
+      "id": "repository-evolution",
+      "name": "Repository Evolution",
+      "kind": "repository-evolution",
+      "content": "[]",
+      "priority": 70,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "learning-summary",
+      "name": "Learning Summary",
+      "kind": "learning-summary",
+      "content": "[]",
+      "priority": 80,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    }
+  ],
+  "files": [],
+  "symbols": [],
+  "dependencies": [],
+  "relationships": [],
+  "graph": {
+    "nodes": [],
+    "edges": [],
+    "topologicalOrder": []
+  },
+  "architecture": [],
+  "evolution": [],
+  "learning": []
+}

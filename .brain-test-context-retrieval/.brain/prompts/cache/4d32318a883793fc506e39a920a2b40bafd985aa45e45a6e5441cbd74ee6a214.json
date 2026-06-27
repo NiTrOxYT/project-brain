@@ -1,0 +1,107 @@
+{
+  "key": "4d32318a883793fc506e39a920a2b40bafd985aa45e45a6e5441cbd74ee6a214",
+  "promptPackage": {
+    "id": "f770623a370a9434",
+    "task": {
+      "id": "task-1",
+      "type": "modify",
+      "title": "fix main",
+      "status": "Running",
+      "prerequisites": []
+    },
+    "context": {
+      "task": {
+        "id": "task-1",
+        "type": "modify",
+        "title": "fix main",
+        "status": "Running",
+        "prerequisites": []
+      },
+      "runtimeContext": {
+        "workspaceRoot": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval"
+      },
+      "knowledgeFusion": [],
+      "architectureMemory": {
+        "entries": []
+      },
+      "repositoryEvolution": [],
+      "learningEngine": {
+        "experiences": [],
+        "optimizations": []
+      },
+      "workspaceMetadata": {
+        "workspaceRoot": "/Users/sourik/projects/project-brain/.brain-test-context-retrieval",
+        "os": "darwin",
+        "nodeVersion": "v20.20.2",
+        "snapshotId": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a",
+        "retrievalId": "retrieval-aa82aa17eb50"
+      },
+      "executionGraph": {
+        "nodes": [],
+        "edges": []
+      },
+      "relationshipGraph": [],
+      "executionHistory": []
+    },
+    "renderedPrompt": "[System Rules]\nYou are an expert autonomous AI software engineering agent working on behalf of the user.\n\n[Provider Rules]\nCRITICAL EXECUTION RULES:\n1. You MUST NEVER modify any files on the filesystem directly. Do NOT write, delete, or create files on disk.\n2. You only propose changes by returning them in a structured machine-readable format.\n3. You MUST format your proposed changes and artifacts in a single JSON block wrapped inside ---START_ARTIFACTS--- and ---END_ARTIFACTS---.\n4. Any conversational output or explanation must come BEFORE or AFTER the artifacts block.\n5. The JSON format must adhere strictly to the following schema:\n{\n\"artifacts\": [\n\"id\": \"unique-id\",\n\"type\": \"code\" | \"patch\" | \"test\" | \"documentation\" | \"log\" | \"diagnostic\",\n\"path\": \"relative/file/path\",\n\"content\": \"raw content or patch/diff content\"\n}\n]\n\n[Task Instructions]\nTask Type: Feature Implementation\nTitle: fix main\nTarget File: none\nTarget Symbol: none\n\nPlease implement the requested feature. Ensure all code is clean, robust, and matches the engineering plan. Expose appropriate unit tests and documentation as necessary.",
+    "metadata": {
+      "timestamp": "2026-06-27T12:55:34.286Z",
+      "providerId": "mock-sdk-provider",
+      "templateId": "tpl-modify",
+      "hash": "f770623a370a9434f75b97b8ec97f39f50cf6b61dd933ebb30e94e222b8988f9",
+      "version": "1.0.0"
+    },
+    "diagnostics": {
+      "assemblyDurationMs": 2,
+      "originalSize": 1098,
+      "optimizedSize": 1058,
+      "compressionRatio": 0.9636,
+      "tokenBudget": {
+        "maxTokens": 200000,
+        "allocatedTokens": {
+          "systemPrompt": 23,
+          "architecture": 0,
+          "relevantFiles": 0,
+          "relationships": 0,
+          "executionGraph": 0,
+          "memory": 0,
+          "learning": 0,
+          "taskInstructions": 65,
+          "validationRules": 178
+        },
+        "actualTokens": 279,
+        "originalTokens": 279,
+        "providerLimit": 200000,
+        "compressionRatio": 1,
+        "removedSections": [],
+        "truncatedSections": [],
+        "remainingBudget": 199721
+      },
+      "optimizationsApplied": [
+        {
+          "id": "opt-normalize",
+          "type": "whitespace-normalization",
+          "description": "Normalized whitespace and line endings across sections.",
+          "tokensSaved": 9
+        },
+        {
+          "id": "opt-collapse",
+          "type": "instruction-merging",
+          "description": "Collapsed duplicate instructional lines within rules.",
+          "tokensSaved": 1
+        }
+      ],
+      "stages": [
+        "Cache Check",
+        "Builder",
+        "Assembler",
+        "Optimizer",
+        "Budgeter",
+        "Validator",
+        "Renderer",
+        "Fingerprinter"
+      ]
+    }
+  },
+  "timestamp": "2026-06-27T12:55:34.286Z"
+}

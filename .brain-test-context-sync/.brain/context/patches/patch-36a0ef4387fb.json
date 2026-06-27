@@ -1,0 +1,101 @@
+{
+  "patchId": "patch-36a0ef4387fb",
+  "fromSnapshotId": "latest-id",
+  "toSnapshotId": "7262556057bb66408975d55491f8c1245a244b81fdf44f425ddeb3c4d4b2a25a",
+  "createdAt": "2026-06-27T12:45:43.808Z",
+  "sectionPatches": [
+    {
+      "sectionId": "filesystem-index",
+      "op": "update",
+      "content": "[{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts\",\"relativePath\":\"src/a.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-sync/src/b.ts\",\"relativePath\":\"src/b.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0}]",
+      "priority": 10,
+      "contentHash": "0c8502ae653f24a7d6de1503112a1904e3b91b84a84299b40687029ede991e35",
+      "estimatedTokens": 91
+    },
+    {
+      "sectionId": "symbol-index",
+      "op": "update",
+      "content": "[]",
+      "priority": 20,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1
+    },
+    {
+      "sectionId": "dependency-graph",
+      "op": "update",
+      "content": "[]",
+      "priority": 50,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1
+    },
+    {
+      "sectionId": "knowledge-graph",
+      "op": "update",
+      "content": "[]",
+      "priority": 40,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1
+    },
+    {
+      "sectionId": "execution-graph",
+      "op": "update",
+      "content": "{\"nodes\":[],\"edges\":[],\"topologicalOrder\":[]}",
+      "priority": 60,
+      "contentHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "estimatedTokens": 12
+    }
+  ],
+  "graphPatch": {
+    "nodesAdded": [],
+    "nodesUpdated": [],
+    "nodesDeleted": [
+      "node-1"
+    ],
+    "edgesAdded": [],
+    "edgesDeleted": [],
+    "topologicalOrder": []
+  },
+  "dependencyPatch": {
+    "added": [],
+    "deleted": [
+      {
+        "fromPath": "src/b.ts",
+        "toPath": "src/a.ts",
+        "kind": "import",
+        "importNames": [
+          "funcA"
+        ]
+      }
+    ]
+  },
+  "symbolPatch": {
+    "added": [],
+    "modified": [],
+    "deleted": [
+      {
+        "name": "funcA",
+        "kind": "function",
+        "filePath": "/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts",
+        "line": 2,
+        "exported": true,
+        "contentHash": "hash-a-f"
+      }
+    ]
+  },
+  "metadataUpdate": {
+    "fileCount": 2,
+    "symbolCount": 0,
+    "dependencyEdgeCount": 0,
+    "graphNodeCount": 0,
+    "estimatedTokens": 106,
+    "fingerprint": {
+      "hash": "7262556057bb66408975d55491f8c1245a244b81fdf44f425ddeb3c4d4b2a25a",
+      "filesystemHash": "0c8502ae653f24a7d6de1503112a1904e3b91b84a84299b40687029ede991e35",
+      "graphHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "architectureHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "evolutionHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "learningHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "version": "282.856.459"
+    }
+  }
+}

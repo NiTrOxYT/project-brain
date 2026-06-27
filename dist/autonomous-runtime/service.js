@@ -13,6 +13,7 @@ import { AgentRuntimeService } from "../agent-runtime";
 import { WorkspaceEngine } from "../workspace/workspace-engine";
 import { ProviderExecutionService } from "../provider-execution/service";
 import { OrchestratorScheduler } from "../orchestrator/scheduler";
+import { ContextSynchronizationService } from "../context-sync";
 function getPlanId(plan) {
     return plan.goal.toLowerCase().replace(/[^a-z0-9]+/g, "-").substring(0, 50);
 }
@@ -243,6 +244,13 @@ export class AutonomousRuntimeService {
                         taskId,
                         transactionId: response.workspaceTransactionId
                     });
+                    // Trigger incremental context synchronization after each workspace commit
+                    // Fire-and-forget — does not block execution loop
+                    try {
+                        const syncService = new ContextSynchronizationService(this.projectRoot, this.workspaceRoot);
+                        syncService.syncIncremental().catch(() => { });
+                    }
+                    catch { /* best-effort */ }
                 }
                 if (response.status === "Completed") {
                     executionResponse = response;

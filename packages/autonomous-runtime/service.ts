@@ -28,6 +28,7 @@ import { WorkspaceEngine } from "../workspace/workspace-engine";
 import { ProviderExecutionService } from "../provider-execution/service";
 import { OrchestratorScheduler } from "../orchestrator/scheduler";
 import { EngineeringPlan, ExecutionNode } from "../engineering-planner/types";
+import { ContextSynchronizationService } from "../context-sync";
 
 function getPlanId(plan: EngineeringPlan): string {
     return plan.goal.toLowerCase().replace(/[^a-z0-9]+/g, "-").substring(0, 50);
@@ -300,6 +301,16 @@ export class AutonomousRuntimeService {
                         taskId,
                         transactionId: response.workspaceTransactionId
                     });
+
+                    // Trigger incremental context synchronization after each workspace commit
+                    // Fire-and-forget — does not block execution loop
+                    try {
+                        const syncService = new ContextSynchronizationService(
+                            this.projectRoot,
+                            this.workspaceRoot
+                        );
+                        syncService.syncIncremental().catch(() => { /* best-effort */ });
+                    } catch { /* best-effort */ }
                 }
 
                 if (response.status === "Completed") {
@@ -389,6 +400,17 @@ export class AutonomousRuntimeService {
             const repairAction = this.repairService.createRepairAction(failure, node, this.workspaceRoot);
 
             try {
+                // Retrieve fresh context for the repair action using current snapshot, task, and failure details
+                try {
+                    const { ContextRetrievalService } = await import("../context-retrieval");
+                    const retrievalService = new ContextRetrievalService(this.projectRoot, this.workspaceRoot);
+                    const res = await retrievalService.retrieve({
+                        query: `${repairAction.newRequest.task.title} due to ${failure.category}: ${failure.message}`,
+                        providerId: "claude-code"
+                    });
+                    (repairAction.newRequest.context as any).retrievalPackage = res.retrievalPackage;
+                } catch { /* best-effort */ }
+
                 this.metricsService.incrementProviderExecutions();
                 const repairRes = await this.runtimeService.execute(repairAction.newRequest, () => {});
                 if (repairRes.workspaceTransactionId) {

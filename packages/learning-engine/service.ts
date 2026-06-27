@@ -100,6 +100,63 @@ export class LearningEngineService {
         await this.storage.savePrompts(updatedPrompts);
         await this.storage.saveOptimizations(optimizations);
 
+        // Record latest snapshot fingerprint and sync metrics in metadata for traceability
+        let snapshotFingerprint: string | undefined;
+        let syncLatency: number | undefined;
+        let syncPatchSize: number | undefined;
+        let syncDirtyRegionSize: number | undefined;
+        let syncSnapshotReuseRatio: number | undefined;
+
+        let retrievalAvgFiles: number | undefined;
+        let retrievalAvgSymbols: number | undefined;
+        let retrievalAvgCompressionRatio: number | undefined;
+        let retrievalAvgTokens: number | undefined;
+        let retrievalSuccessRate: number | undefined;
+
+        try {
+            const { ContextSynchronizationService } = await import("../context-sync");
+            const syncService = new ContextSynchronizationService(this.workspaceRoot, this.workspaceRoot);
+            const latestSnap = await syncService.latestSnapshot();
+            if (latestSnap) {
+                snapshotFingerprint = latestSnap.metadata.fingerprint.hash;
+            }
+            const syncStats = await syncService.statistics();
+            if (syncStats) {
+                syncLatency = syncStats.averageSyncDurationMs;
+                syncPatchSize = syncStats.averagePatchSizeBytes;
+                syncDirtyRegionSize = syncStats.averageDirtyFiles;
+                syncSnapshotReuseRatio = syncStats.cacheHitRatio;
+            }
+
+            const { ContextRetrievalService } = await import("../context-retrieval");
+            const retrievalService = new ContextRetrievalService(this.workspaceRoot, this.workspaceRoot);
+            const retrievalStats = await retrievalService.statistics();
+            if (retrievalStats) {
+                retrievalAvgFiles = retrievalStats.averageFilesRetrieved;
+                retrievalAvgSymbols = retrievalStats.averageSymbolsRetrieved;
+                retrievalAvgCompressionRatio = retrievalStats.compressionRatioAverage;
+                retrievalAvgTokens = retrievalStats.averageTokens;
+                retrievalSuccessRate = retrievalStats.cacheHitRate;
+            }
+        } catch {
+            // best-effort
+        }
+
+        const updatedMetadata = {
+            ...metadata,
+            lastLearnAt: new Date().toISOString(),
+            snapshotFingerprint,
+            syncLatency,
+            syncPatchSize,
+            syncDirtyRegionSize,
+            syncSnapshotReuseRatio,
+            retrievalAvgFiles,
+            retrievalAvgSymbols,
+            retrievalAvgCompressionRatio,
+            retrievalAvgTokens,
+        };
+        await this.storage.saveMetadata(updatedMetadata);
+
         const stats = this.metricsTracker.compute(experiences, optimizations);
 
         return {

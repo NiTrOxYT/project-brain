@@ -1,0 +1,65 @@
+{
+  "queryFingerprint": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a_f6946f792619694f036418b26bd6e69f92bc9b88e61cd47637854c6cb938843d",
+  "snapshotId": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a",
+  "retrievalPackage": {
+    "retrievalId": "retrieval-aa82aa17eb50",
+    "snapshotId": "e0155063c5027a3674a6ccaa68dfd28a5fb58f261b6c15138b921eb11f01b82a",
+    "sections": [
+      {
+        "id": "filesystem-index",
+        "name": "Filesystem Index",
+        "kind": "filesystem-index",
+        "content": "[]",
+        "priority": 10,
+        "estimatedTokens": 1,
+        "reason": "system-config"
+      },
+      {
+        "id": "knowledge-graph",
+        "name": "Knowledge Graph",
+        "kind": "knowledge-graph",
+        "content": "[]",
+        "priority": 40,
+        "estimatedTokens": 1,
+        "reason": "relationship-link"
+      },
+      {
+        "id": "dependency-graph",
+        "name": "Dependency Graph",
+        "kind": "dependency-graph",
+        "content": "[]",
+        "priority": 50,
+        "estimatedTokens": 1,
+        "reason": "relationship-link"
+      },
+      {
+        "id": "execution-graph",
+        "name": "Execution Graph",
+        "kind": "execution-graph",
+        "content": "{\"nodes\":[],\"edges\":[],\"topologicalOrder\":[]}",
+        "priority": 60,
+        "estimatedTokens": 12,
+        "reason": "graph-context"
+      },
+      {
+        "id": "repository-evolution",
+        "name": "Repository Evolution",
+        "kind": "repository-evolution",
+        "content": "[]",
+        "priority": 70,
+        "estimatedTokens": 1,
+        "reason": "evolution-history"
+      }
+    ],
+    "candidates": [],
+    "graph": {
+      "nodes": [],
+      "edges": [],
+      "topologicalOrder": []
+    },
+    "symbols": [],
+    "dependencies": [],
+    "relationships": []
+  },
+  "storedAt": "2026-06-27T12:55:34.262Z"
+}

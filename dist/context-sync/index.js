@@ -1,0 +1,15 @@
+export { ContextSynchronizationService } from "./service";
+export { WorkspaceListener } from "./workspace-listener";
+export { ChangeDetector } from "./change-detector";
+export { DependencyResolver } from "./dependency-resolver";
+export { DirtyRegionTracker } from "./dirty-region";
+export { PatchBuilder } from "./patch-builder";
+export { PatchApplier } from "./patch-applier";
+export { FingerprintUpdater } from "./fingerprint-updater";
+export { SnapshotValidator } from "./validator";
+export { SnapshotSyncStorage } from "./storage";
+export { SynchronizationMetricsTracker } from "./metrics";
+export { SynchronizationDiagnosticsBuilder } from "./diagnostics";
+export * from "./types";
+export * from "./errors";
+export * from "../context-compiler/types";

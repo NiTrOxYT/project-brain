@@ -1,0 +1,37 @@
+{
+  "queryFingerprint": "snap-1_6b1738e91118de009919bafbfbe09550eff9a4e051e7906bbeacb97e8557558d",
+  "snapshotId": "snap-1",
+  "retrievalPackage": {
+    "retrievalId": "retrieval-1",
+    "snapshotId": "snap-1",
+    "sections": [
+      {
+        "id": "filesystem-index",
+        "name": "Filesystem Index",
+        "kind": "filesystem-index",
+        "content": "[]",
+        "priority": 10,
+        "estimatedTokens": 10,
+        "reason": "system-config"
+      }
+    ],
+    "candidates": [
+      {
+        "path": "src/main.ts",
+        "score": 80,
+        "reasons": [
+          "primary-target"
+        ]
+      }
+    ],
+    "graph": {
+      "nodes": [],
+      "edges": [],
+      "topologicalOrder": []
+    },
+    "symbols": [],
+    "dependencies": [],
+    "relationships": []
+  },
+  "storedAt": "2026-06-27T12:55:34.256Z"
+}

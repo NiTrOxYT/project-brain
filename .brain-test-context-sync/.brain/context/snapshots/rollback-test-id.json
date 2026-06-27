@@ -1,0 +1,112 @@
+{
+  "snapshotId": "rollback-test-id",
+  "metadata": {
+    "snapshotId": "rollback-test-id",
+    "projectRoot": "/Users/sourik/projects/project-brain/.brain-test-context-sync",
+    "workspaceRoot": "/Users/sourik/projects/project-brain/.brain-test-context-sync",
+    "createdAt": "2026-06-27T12:46:41.284Z",
+    "compiledAt": "2026-06-27T12:46:41.284Z",
+    "compilerVersion": "1.0.0",
+    "fingerprint": {
+      "hash": "de3e5466f9287286c1165e384de07b5b4de60b1cd2be9d53be886fae40682073",
+      "filesystemHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "graphHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "architectureHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "evolutionHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "learningHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "version": "894.606.784"
+    },
+    "stageCount": 1,
+    "compilationDurationMs": 15,
+    "fileCount": 2,
+    "symbolCount": 0,
+    "dependencyEdgeCount": 0,
+    "graphNodeCount": 0,
+    "estimatedTokens": 100,
+    "incremental": false
+  },
+  "sections": [
+    {
+      "id": "filesystem-index",
+      "name": "Filesystem Index",
+      "kind": "filesystem-index",
+      "content": "[]",
+      "priority": 10,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "symbol-index",
+      "name": "Symbol Index",
+      "kind": "symbol-index",
+      "content": "[]",
+      "priority": 20,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    }
+  ],
+  "files": [
+    {
+      "path": "/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts",
+      "relativePath": "src/a.ts",
+      "extension": ".ts",
+      "sizeBytes": 100,
+      "linesOfCode": 5,
+      "language": "TypeScript",
+      "lastModified": "2026-06-27T12:46:41.284Z",
+      "contentHash": "hash-a"
+    },
+    {
+      "path": "/Users/sourik/projects/project-brain/.brain-test-context-sync/src/b.ts",
+      "relativePath": "src/b.ts",
+      "extension": ".ts",
+      "sizeBytes": 150,
+      "linesOfCode": 8,
+      "language": "TypeScript",
+      "lastModified": "2026-06-27T12:46:41.284Z",
+      "contentHash": "hash-b"
+    }
+  ],
+  "symbols": [
+    {
+      "name": "funcA",
+      "kind": "function",
+      "filePath": "/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts",
+      "line": 2,
+      "exported": true,
+      "contentHash": "hash-a-f"
+    }
+  ],
+  "dependencies": [
+    {
+      "fromPath": "src/b.ts",
+      "toPath": "src/a.ts",
+      "kind": "import",
+      "importNames": [
+        "funcA"
+      ]
+    }
+  ],
+  "relationships": [],
+  "graph": {
+    "nodes": [
+      {
+        "id": "node-1",
+        "type": "task",
+        "title": "Task 1",
+        "filePath": "/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts",
+        "status": "pending",
+        "priority": 50
+      }
+    ],
+    "edges": [],
+    "topologicalOrder": [
+      "node-1"
+    ]
+  },
+  "architecture": [],
+  "evolution": [],
+  "learning": []
+}

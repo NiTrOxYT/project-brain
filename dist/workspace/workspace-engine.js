@@ -4,6 +4,7 @@
 // Provider-agnostic. Integrates with AgentRuntime via RuntimeArtifact[].
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs";
+import EventEmitter from "events";
 import path from "path";
 import crypto from "crypto";
 import { WorkspaceEngineError, WorkspaceTransactionError, WorkspaceLockError } from "./workspace-errors";
@@ -13,8 +14,9 @@ import { WorkspacePatchEngine } from "./workspace-patch";
 function generateTxId() {
     return `tx-${Date.now()}-${crypto.randomBytes(4).toString("hex")}`;
 }
-// ─── WorkspaceEngine ──────────────────────────────────────────────────────────
 export class WorkspaceEngine {
+    /** Static event bus — emit 'WorkspaceChangedEvent' after successful commits. */
+    static emitter = new EventEmitter();
     journal;
     locks;
     patcher;
@@ -142,7 +144,19 @@ export class WorkspaceEngine {
             this.committedTransactions++;
             this.totalChanges += staged.changes.length;
             this.totalPatchesApplied += staged.patches.length;
-            return this.buildResult(transactionId, staged, false, undefined, startTime);
+            const result = this.buildResult(transactionId, staged, false, undefined, startTime);
+            const event = {
+                transactionId,
+                workspaceRoot: this.options.workspaceRoot,
+                affectedFiles: staged.changes.map(c => ({
+                    path: c.path,
+                    operation: c.kind,
+                    oldPath: c.oldPath
+                })),
+                timestamp: staged.tx.committedAt
+            };
+            WorkspaceEngine.emitter.emit("WorkspaceChangedEvent", event);
+            return result;
         }
         catch (err) {
             if (this.options.rollbackOnError) {

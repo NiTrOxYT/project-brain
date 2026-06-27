@@ -1,0 +1,11 @@
+{
+  "totalSyncs": 1,
+  "totalDurationMs": 1,
+  "averageSyncDurationMs": 1,
+  "averageDirtyFiles": 0,
+  "averageRebuiltSymbols": 0,
+  "averageRebuiltGraphNodes": 0,
+  "averagePatchSizeBytes": 0,
+  "cacheHitRatio": 0,
+  "rebuildPercentageAverage": 100
+}

@@ -37,8 +37,13 @@ export interface QueryDiagnostics {
     selectedSymbols: number;
 
     selectedRelationships: number;
-
     error?: string;
+    retrievalDuration?: number;
+    retrievedSymbols?: number;
+    retrievedRules?: number;
+    compressionRatio?: number;
+    retrievalCacheHit?: boolean;
+    tokenEstimate?: number;
 
     selectedProvider?: string;
     providerHealth?: string;
@@ -71,6 +76,16 @@ export interface QueryDiagnostics {
     providerConfidence?: number;
     promptConfidence?: number;
     learningVersion?: string;
+
+    /** Context Compiler / Semantic Snapshot diagnostics */
+    snapshotId?: string;
+    snapshotVersion?: string;
+    snapshotTokens?: number;
+    snapshotIncremental?: boolean;
+    snapshotCacheHit?: boolean;
+    snapshotFileCount?: number;
+    snapshotSymbolCount?: number;
+    snapshotCompilationMs?: number;
 }
 
 export interface QueryResult {

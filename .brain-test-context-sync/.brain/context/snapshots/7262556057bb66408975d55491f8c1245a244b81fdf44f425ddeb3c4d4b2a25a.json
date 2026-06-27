@@ -1,0 +1,114 @@
+{
+  "snapshotId": "7262556057bb66408975d55491f8c1245a244b81fdf44f425ddeb3c4d4b2a25a",
+  "metadata": {
+    "snapshotId": "7262556057bb66408975d55491f8c1245a244b81fdf44f425ddeb3c4d4b2a25a",
+    "projectRoot": "/Users/sourik/projects/project-brain/.brain-test-context-sync",
+    "workspaceRoot": "/Users/sourik/projects/project-brain/.brain-test-context-sync",
+    "createdAt": "2026-06-27T12:46:41.285Z",
+    "compiledAt": "2026-06-27T12:46:41.300Z",
+    "compilerVersion": "1.0.0",
+    "fingerprint": {
+      "hash": "7262556057bb66408975d55491f8c1245a244b81fdf44f425ddeb3c4d4b2a25a",
+      "filesystemHash": "0c8502ae653f24a7d6de1503112a1904e3b91b84a84299b40687029ede991e35",
+      "graphHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "architectureHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "evolutionHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "learningHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "version": "282.856.459"
+    },
+    "stageCount": 1,
+    "compilationDurationMs": 15,
+    "fileCount": 2,
+    "symbolCount": 0,
+    "dependencyEdgeCount": 0,
+    "graphNodeCount": 0,
+    "estimatedTokens": 106,
+    "incremental": true,
+    "parentSnapshotId": "7262556057bb66408975d55491f8c1245a244b81fdf44f425ddeb3c4d4b2a25a"
+  },
+  "sections": [
+    {
+      "id": "filesystem-index",
+      "name": "Filesystem Index",
+      "kind": "filesystem-index",
+      "content": "[{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts\",\"relativePath\":\"src/a.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"/Users/sourik/projects/project-brain/.brain-test-context-sync/src/b.ts\",\"relativePath\":\"src/b.ts\",\"extension\":\".ts\",\"sizeBytes\":0,\"language\":\"TypeScript\",\"linesOfCode\":0}]",
+      "priority": 10,
+      "contentHash": "0c8502ae653f24a7d6de1503112a1904e3b91b84a84299b40687029ede991e35",
+      "estimatedTokens": 91,
+      "sourcePaths": []
+    },
+    {
+      "id": "symbol-index",
+      "name": "Symbol Index",
+      "kind": "symbol-index",
+      "content": "[]",
+      "priority": 20,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "Knowledge Graph",
+      "kind": "knowledge-graph",
+      "content": "[]",
+      "priority": 40,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "dependency-graph",
+      "name": "Dependency Graph",
+      "kind": "dependency-graph",
+      "content": "[]",
+      "priority": 50,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "execution-graph",
+      "name": "Execution Graph",
+      "kind": "execution-graph",
+      "content": "{\"nodes\":[],\"edges\":[],\"topologicalOrder\":[]}",
+      "priority": 60,
+      "contentHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "estimatedTokens": 12,
+      "sourcePaths": []
+    }
+  ],
+  "files": [
+    {
+      "path": "/Users/sourik/projects/project-brain/.brain-test-context-sync/src/a.ts",
+      "relativePath": "src/a.ts",
+      "extension": ".ts",
+      "sizeBytes": 100,
+      "linesOfCode": 5,
+      "language": "TypeScript",
+      "lastModified": "2026-06-27T12:46:41.285Z",
+      "contentHash": "hash-a"
+    },
+    {
+      "path": "/Users/sourik/projects/project-brain/.brain-test-context-sync/src/b.ts",
+      "relativePath": "src/b.ts",
+      "extension": ".ts",
+      "sizeBytes": 150,
+      "linesOfCode": 8,
+      "language": "TypeScript",
+      "lastModified": "2026-06-27T12:46:41.285Z",
+      "contentHash": "hash-b"
+    }
+  ],
+  "symbols": [],
+  "dependencies": [],
+  "relationships": [],
+  "graph": {
+    "nodes": [],
+    "edges": [],
+    "topologicalOrder": []
+  },
+  "architecture": [],
+  "evolution": [],
+  "learning": []
+}

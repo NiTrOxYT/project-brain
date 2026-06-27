@@ -5,7 +5,33 @@ export class PromptContextBuilder {
     constructor(workspaceRoot) {
         this.workspaceRoot = workspaceRoot;
     }
-    async collect(task, runtimeContext) {
+    lastContext;
+    lastSnapshotId;
+    async collect(task, runtimeContext, snapshot) {
+        // Fast path: consume snapshot sections directly if available
+        if (snapshot) {
+            if (this.lastContext && this.lastSnapshotId === snapshot.snapshotId) {
+                return this.lastContext;
+            }
+            if (this.lastContext && snapshot.metadata.incremental && snapshot.metadata.parentSnapshotId === this.lastSnapshotId) {
+                // Read only updated sections and patch the last context
+                const updated = this.collectFromSnapshot(task, runtimeContext, snapshot);
+                this.lastContext = {
+                    ...this.lastContext,
+                    ...updated,
+                    workspaceMetadata: {
+                        ...this.lastContext.workspaceMetadata,
+                        ...updated.workspaceMetadata
+                    }
+                };
+                this.lastSnapshotId = snapshot.snapshotId;
+                return this.lastContext;
+            }
+            const context = this.collectFromSnapshot(task, runtimeContext, snapshot);
+            this.lastContext = context;
+            this.lastSnapshotId = snapshot.snapshotId;
+            return context;
+        }
         let knowledgeFusion = null;
         if (runtimeContext.fusedCandidates) {
             knowledgeFusion = runtimeContext.fusedCandidates;
@@ -86,6 +112,56 @@ export class PromptContextBuilder {
             nodeVersion: process.version
         };
         const executionHistory = learningEngine?.experiences || [];
+        return {
+            task,
+            runtimeContext,
+            knowledgeFusion,
+            architectureMemory,
+            repositoryEvolution,
+            learningEngine,
+            workspaceMetadata,
+            executionGraph,
+            relationshipGraph,
+            executionHistory
+        };
+    }
+    collectFromSnapshot(task, runtimeContext, snapshot) {
+        // Extract architecture memory from snapshot
+        const archSection = snapshot.sections.find(s => s.id === "architecture-memory");
+        const architectureMemory = archSection
+            ? { entries: snapshot.architecture }
+            : { entries: [] };
+        // Extract evolution data
+        const evoSection = snapshot.sections.find(s => s.id === "repository-evolution");
+        const repositoryEvolution = evoSection
+            ? { fileHistory: snapshot.evolution }
+            : { fileHistory: [], coChangeRelationships: [] };
+        // Extract learning data
+        const learnSection = snapshot.sections.find(s => s.id === "learning-summary");
+        const learningEngine = learnSection
+            ? { experiences: snapshot.learning, optimizations: [] }
+            : { experiences: [], optimizations: [] };
+        // Extract graph data
+        const graphSection = snapshot.sections.find(s => s.id === "execution-graph");
+        const executionGraph = graphSection
+            ? { nodes: snapshot.graph.nodes, edges: snapshot.graph.edges }
+            : { nodes: [], edges: [] };
+        // Extract relationships
+        const relSection = snapshot.sections.find(s => s.id === "knowledge-graph");
+        const relationshipGraph = relSection ? JSON.parse(relSection.content) : {};
+        // Build fused candidates from file index
+        const knowledgeFusion = snapshot.files.map(f => ({
+            path: f.path,
+            score: 1.0
+        }));
+        const workspaceMetadata = {
+            workspaceRoot: this.workspaceRoot,
+            os: process.platform,
+            nodeVersion: process.version,
+            snapshotId: snapshot.snapshotId,
+            snapshotVersion: snapshot.metadata.fingerprint.version
+        };
+        const executionHistory = snapshot.learning;
         return {
             task,
             runtimeContext,
