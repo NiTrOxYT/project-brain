@@ -1,11 +1,20 @@
 {
   "opencode": {
     "providerId": "opencode",
+    "installationVerified": false,
+    "configurationVerified": false,
+    "connectivityVerified": false,
+    "toolVerificationPassed": false,
+    "behaviorVerificationPassed": false,
+    "verificationTimestamp": "2026-06-28T17:03:59.999Z"
+  },
+  "antigravity": {
+    "providerId": "antigravity",
     "installationVerified": true,
     "configurationVerified": true,
     "connectivityVerified": false,
     "toolVerificationPassed": false,
     "behaviorVerificationPassed": false,
-    "verificationTimestamp": "2026-06-28T14:09:16.205Z"
+    "verificationTimestamp": "2026-06-28T17:11:35.978Z"
   }
 }

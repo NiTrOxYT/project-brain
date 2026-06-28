@@ -128,10 +128,8 @@ export class PatchBuilder {
 
         const combined = [
             filesystemHash,
-            graphHashVal,
             prev.metadata.fingerprint.architectureHash || "",
-            prev.metadata.fingerprint.evolutionHash || "",
-            prev.metadata.fingerprint.learningHash || ""
+            prev.metadata.fingerprint.evolutionHash || ""
         ].join("|");
 
         const finalHash = crypto.createHash("sha256").update(combined).digest("hex");

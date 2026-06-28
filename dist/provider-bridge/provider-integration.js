@@ -49,7 +49,7 @@ export class McpStrategy {
                 };
                 newContent = JSON.stringify(parsed, null, 2);
             }
-            else if (schema === "claude" || schema === "claude-code") {
+            else if (schema === "claude" || schema === "claude-code" || schema === "antigravity") {
                 let parsed = {};
                 if (originalContent) {
                     try {
@@ -111,7 +111,7 @@ export class McpStrategy {
             const originalContent = fs.readFileSync(configPath, "utf-8");
             let newContent = "";
             const schema = manifest.configurationSchema;
-            if (schema === "opencode" || schema === "claude" || schema === "claude-code" || schema === "continue") {
+            if (schema === "opencode" || schema === "claude" || schema === "claude-code" || schema === "continue" || schema === "antigravity") {
                 if (configPath.endsWith(".json")) {
                     const parsed = JSON.parse(originalContent);
                     if (schema === "opencode" && parsed.mcp?.brain) {

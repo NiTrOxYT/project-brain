@@ -1,10 +1,10 @@
 {
-  "totalSyncs": 1,
-  "totalDurationMs": 1296,
-  "averageSyncDurationMs": 1296,
-  "averageDirtyFiles": 675,
-  "averageRebuiltSymbols": 13937,
-  "averageRebuiltGraphNodes": 1411,
+  "totalSyncs": 5,
+  "totalDurationMs": 6696,
+  "averageSyncDurationMs": 1339.2,
+  "averageDirtyFiles": 681.4,
+  "averageRebuiltSymbols": 13993.8,
+  "averageRebuiltGraphNodes": 1418.6,
   "averagePatchSizeBytes": 0,
   "cacheHitRatio": 0,
   "rebuildPercentageAverage": 100

@@ -39,7 +39,6 @@ export class ContextSynchronizationService {
         this.storage = new SnapshotSyncStorage(this.workspaceRoot);
         this.metricsTracker = new SynchronizationMetricsTracker(this.workspaceRoot);
         this.listener = new WorkspaceListener(req => this.sync(req));
-        this.listener.start();
     }
     startListening() {
         this.listener.start();

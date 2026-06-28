@@ -14,12 +14,13 @@ import {
     LearningSnapshot
 } from "./types.js";
 import { LearningStorageError } from "./errors.js";
+import { StoragePaths } from "../kernel/paths.js";
 
 export class LearningStorage {
     private readonly learningDir: string;
 
     constructor(private readonly workspaceRoot: string) {
-        this.learningDir = path.join(workspaceRoot, "learning");
+        this.learningDir = new StoragePaths(workspaceRoot).learningDir;
     }
 
     private getPath(filename: string): string {

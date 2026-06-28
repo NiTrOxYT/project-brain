@@ -1,3 +1,24 @@
 {"timestamp":"2026-06-28T12:20:28.143Z","providerId":"opencode","event":"migrated","details":{"from":"1.0.0"}}
 {"timestamp":"2026-06-28T12:20:30.157Z","providerId":"opencode","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
 {"timestamp":"2026-06-28T14:09:16.205Z","providerId":"opencode","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:02:03.718Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:02:03.720Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:02:03.721Z","providerId":"antigravity","event":"configuration restored","details":{}}
+{"timestamp":"2026-06-28T17:02:32.290Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:02:32.292Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:02:32.293Z","providerId":"antigravity","event":"configuration restored","details":{}}
+{"timestamp":"2026-06-28T17:02:42.344Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:02:42.345Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:02:42.346Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:02:42.347Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:02:42.348Z","providerId":"antigravity","event":"configuration restored","details":{}}
+{"timestamp":"2026-06-28T17:03:52.094Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:04:00.000Z","providerId":"opencode","event":"version changed","details":{"reason":"Executable path changed from /Users/sourik/.project-brain/bin/opencode to /Users/sourik/.opencode/bin/opencode."}}
+{"timestamp":"2026-06-28T17:04:00.224Z","providerId":"opencode","event":"audit failed","details":{"errors":["Verification invalidated: Executable path changed from /Users/sourik/.project-brain/bin/opencode to /Users/sourik/.opencode/bin/opencode.","Required brain.get_context tool missing in registry."]}}
+{"timestamp":"2026-06-28T17:04:06.053Z","providerId":"antigravity","event":"verified","details":{"state":"Brain Enabled"}}
+{"timestamp":"2026-06-28T17:04:09.698Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:04:09.700Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:04:09.701Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:04:09.702Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:04:09.702Z","providerId":"antigravity","event":"configuration restored","details":{}}
+{"timestamp":"2026-06-28T17:11:35.978Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}

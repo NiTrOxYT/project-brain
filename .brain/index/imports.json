@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T12:31:09.636Z",
+  "generatedAt": "2026-06-28T17:11:25.820Z",
   "imports": [
     {
       "source": "packages/agent-runtime/executor.ts",
@@ -212,6 +212,38 @@
     {
       "source": "packages/ai-gateway/adapters/aider.ts",
       "target": "os"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/antigravity.ts",
+      "target": "../types.js"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/antigravity.ts",
+      "target": "../adapter-registry.js"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/antigravity.ts",
+      "target": "./base.js"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/antigravity.ts",
+      "target": "../../provider-bridge/schema-registry.js"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/antigravity.ts",
+      "target": "../../provider-bridge/provider-manifest.js"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/antigravity.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/antigravity.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/antigravity.ts",
+      "target": "fs"
     },
     {
       "source": "packages/ai-gateway/adapters/base.ts",
@@ -427,6 +459,10 @@
     },
     {
       "source": "packages/ai-gateway/adapters/index.ts",
+      "target": "./antigravity.js"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/index.ts",
       "target": "./claude.js"
     },
     {
@@ -456,6 +492,10 @@
     {
       "source": "packages/ai-gateway/adapters/index.ts",
       "target": "./continue.js"
+    },
+    {
+      "source": "packages/ai-gateway/adapters/index.ts",
+      "target": "./antigravity.js"
     },
     {
       "source": "packages/ai-gateway/adapters/index.ts",
@@ -4330,6 +4370,10 @@
       "target": "./errors.js"
     },
     {
+      "source": "packages/learning-engine/storage.ts",
+      "target": "../kernel/paths.js"
+    },
+    {
       "source": "packages/main.ts",
       "target": "./cli/main.js"
     },
@@ -4980,6 +5024,10 @@
     {
       "source": "packages/provider-bridge/discovery.ts",
       "target": "path"
+    },
+    {
+      "source": "packages/provider-bridge/discovery.ts",
+      "target": "os"
     },
     {
       "source": "packages/provider-bridge/discovery.ts",
@@ -7136,6 +7184,38 @@
     {
       "source": "packages/test-ai-gateway.ts",
       "target": "./ai-gateway/types.js"
+    },
+    {
+      "source": "packages/test-antigravity-integration.ts",
+      "target": "assert"
+    },
+    {
+      "source": "packages/test-antigravity-integration.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/test-antigravity-integration.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-antigravity-integration.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/test-antigravity-integration.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "packages/test-antigravity-integration.ts",
+      "target": "./ai-gateway/adapters/index.js"
+    },
+    {
+      "source": "packages/test-antigravity-integration.ts",
+      "target": "./provider-bridge/provider-configurator.js"
+    },
+    {
+      "source": "packages/test-antigravity-integration.ts",
+      "target": "./ai-gateway/adapter-registry.js"
     },
     {
       "source": "packages/test-architecture-memory.ts",

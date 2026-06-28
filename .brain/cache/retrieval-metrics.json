@@ -1,9 +1,9 @@
 {
-  "totalRetrievals": 17,
-  "averageDurationMs": 45.470588235294116,
-  "averageFilesRetrieved": 50,
-  "averageSymbolsRetrieved": 0,
-  "averageTokens": 21679.70588235294,
-  "cacheHitRate": 0.6470588235294118,
-  "compressionRatioAverage": 0.6639970922186916
+  "totalRetrievals": 36,
+  "averageDurationMs": 54.5,
+  "averageFilesRetrieved": 50.083333333333336,
+  "averageSymbolsRetrieved": 12.472222222222221,
+  "averageTokens": 22580.86111111111,
+  "cacheHitRate": 0.5555555555555556,
+  "compressionRatioAverage": 0.5795138646197122
 }

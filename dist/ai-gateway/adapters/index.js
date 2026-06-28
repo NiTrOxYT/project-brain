@@ -12,6 +12,7 @@ import "./gemini.js";
 import "./ollama.js";
 import "./claude-code.js";
 import "./continue.js";
+import "./antigravity.js";
 // Re-export adapter classes for use in tests.
 export { ClaudeAdapter } from "./claude.js";
 export { CodexAdapter } from "./codex.js";
@@ -21,4 +22,5 @@ export { GeminiAdapter } from "./gemini.js";
 export { OllamaAdapter } from "./ollama.js";
 export { ClaudeCodeAdapter } from "./claude-code.js";
 export { ContinueAdapter } from "./continue.js";
+export { AntigravityAdapter } from "./antigravity.js";
 export { BaseProviderAdapter } from "./base.js";

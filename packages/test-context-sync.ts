@@ -519,6 +519,7 @@ async function runSuite() {
 
     await test("Test 34: WorkspaceEngine commits trigger context sync listener", async () => {
         const service = new ContextSynchronizationService(TEST_WORKSPACE, TEST_WORKSPACE);
+        service.startListening();
         let syncCount = 0;
         service.subscribe(() => {
             syncCount++;

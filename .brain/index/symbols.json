@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T12:31:09.507Z",
+  "generatedAt": "2026-06-28T17:11:25.694Z",
   "symbols": [
     {
       "name": "hasCode",
@@ -47504,6 +47504,162 @@
       "line": 96
     },
     {
+      "name": "AntigravityAdapter",
+      "kind": "class",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 14
+    },
+    {
+      "name": "id",
+      "kind": "property",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 15
+    },
+    {
+      "name": "displayName",
+      "kind": "property",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 16
+    },
+    {
+      "name": "version",
+      "kind": "property",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 17
+    },
+    {
+      "name": "binaryName",
+      "kind": "property",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 19
+    },
+    {
+      "name": "providerId",
+      "kind": "property",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 21
+    },
+    {
+      "name": "manifest",
+      "kind": "property",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 23
+    },
+    {
+      "name": "validate",
+      "kind": "method",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 55
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 58
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 66
+    },
+    {
+      "name": "buildMcpConfiguration",
+      "kind": "method",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 71
+    },
+    {
+      "name": "migrateConfiguration",
+      "kind": "method",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 78
+    },
+    {
+      "name": "providerCapabilities",
+      "kind": "method",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 82
+    },
+    {
+      "name": "detect",
+      "kind": "method",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 99
+    },
+    {
+      "name": "home",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 100
+    },
+    {
+      "name": "configDir",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 101
+    },
+    {
+      "name": "ideDir",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 102
+    },
+    {
+      "name": "mcpConfig",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 103
+    },
+    {
+      "name": "resolvedBinaryPath",
+      "kind": "method",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 107
+    },
+    {
+      "name": "home",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 108
+    },
+    {
+      "name": "configDir",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 109
+    },
+    {
+      "name": "ideDir",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 110
+    },
+    {
+      "name": "mcpConfig",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 111
+    },
+    {
+      "name": "buildArgs",
+      "kind": "method",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 118
+    },
+    {
+      "name": "metadata",
+      "kind": "method",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 122
+    },
+    {
+      "name": "adapter",
+      "kind": "variable",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "line": 133
+    },
+    {
       "name": "execFileAsync",
       "kind": "variable",
       "file": "packages/ai-gateway/adapters/base.ts",
@@ -56210,88 +56366,94 @@
       "line": 66
     },
     {
-      "name": "polRes",
+      "name": "instructionsPath",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
       "line": 72
     },
     {
+      "name": "polRes",
+      "kind": "variable",
+      "file": "packages/cli/commands/install.ts",
+      "line": 74
+    },
+    {
       "name": "isValid",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 78
+      "line": 81
     },
     {
       "name": "shellInfo",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 96
+      "line": 99
     },
     {
       "name": "platformCheck",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 100
+      "line": 103
     },
     {
       "name": "d",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 113
+      "line": 116
     },
     {
       "name": "tag",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 114
+      "line": 117
     },
     {
       "name": "g",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 124
+      "line": 127
     },
     {
       "name": "icon",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 125
+      "line": 128
     },
     {
       "name": "d",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 151
+      "line": 154
     },
     {
       "name": "icon",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 152
+      "line": 155
     },
     {
       "name": "r",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 159
+      "line": 162
     },
     {
       "name": "w",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 167
+      "line": 170
     },
     {
       "name": "wrapperCount",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 174
+      "line": 177
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/cli/commands/install.ts",
-      "line": 187
+      "line": 190
     },
     {
       "name": "LearningSubcmd",
@@ -60431,85 +60593,85 @@
       "name": "hash",
       "kind": "variable",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 48
+      "line": 46
     },
     {
       "name": "version",
       "kind": "variable",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 51
+      "line": 49
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 62
+      "line": 60
     },
     {
       "name": "hashContent",
       "kind": "method",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 72
+      "line": 70
     },
     {
       "name": "verify",
       "kind": "method",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 79
+      "line": 77
     },
     {
       "name": "current",
       "kind": "variable",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 81
+      "line": 79
     },
     {
       "name": "hashData",
       "kind": "method",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 90
+      "line": 88
     },
     {
       "name": "stableStringify",
       "kind": "method",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 99
+      "line": 97
     },
     {
       "name": "keys",
       "kind": "variable",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 109
+      "line": 107
     },
     {
       "name": "pairs",
       "kind": "variable",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 110
+      "line": 108
     },
     {
       "name": "deriveVersion",
       "kind": "method",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 114
+      "line": 112
     },
     {
       "name": "seg1",
       "kind": "variable",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 116
+      "line": 114
     },
     {
       "name": "seg2",
       "kind": "variable",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 117
+      "line": 115
     },
     {
       "name": "seg3",
       "kind": "variable",
       "file": "packages/context-compiler/fingerprint.ts",
-      "line": 118
+      "line": 116
     },
     {
       "name": "GraphCompiler",
@@ -65891,37 +66053,37 @@
       "name": "hash",
       "kind": "variable",
       "file": "packages/context-sync/fingerprint-updater.ts",
-      "line": 25
+      "line": 23
     },
     {
       "name": "version",
       "kind": "variable",
       "file": "packages/context-sync/fingerprint-updater.ts",
-      "line": 26
+      "line": 24
     },
     {
       "name": "deriveVersion",
       "kind": "method",
       "file": "packages/context-sync/fingerprint-updater.ts",
-      "line": 39
+      "line": 37
     },
     {
       "name": "seg1",
       "kind": "variable",
       "file": "packages/context-sync/fingerprint-updater.ts",
-      "line": 40
+      "line": 38
     },
     {
       "name": "seg2",
       "kind": "variable",
       "file": "packages/context-sync/fingerprint-updater.ts",
-      "line": 41
+      "line": 39
     },
     {
       "name": "seg3",
       "kind": "variable",
       "file": "packages/context-sync/fingerprint-updater.ts",
-      "line": 42
+      "line": 40
     },
     {
       "name": "DEFAULT_STATS",
@@ -66323,49 +66485,49 @@
       "name": "finalHash",
       "kind": "variable",
       "file": "packages/context-sync/patch-builder.ts",
-      "line": 137
+      "line": 135
     },
     {
       "name": "version",
       "kind": "variable",
       "file": "packages/context-sync/patch-builder.ts",
-      "line": 138
+      "line": 136
     },
     {
       "name": "fingerprint",
       "kind": "variable",
       "file": "packages/context-sync/patch-builder.ts",
-      "line": 140
+      "line": 138
     },
     {
       "name": "totalTokens",
       "kind": "variable",
       "file": "packages/context-sync/patch-builder.ts",
-      "line": 150
+      "line": 148
     },
     {
       "name": "deriveVersion",
       "kind": "method",
       "file": "packages/context-sync/patch-builder.ts",
-      "line": 187
+      "line": 185
     },
     {
       "name": "seg1",
       "kind": "variable",
       "file": "packages/context-sync/patch-builder.ts",
-      "line": 188
+      "line": 186
     },
     {
       "name": "seg2",
       "kind": "variable",
       "file": "packages/context-sync/patch-builder.ts",
-      "line": 189
+      "line": 187
     },
     {
       "name": "seg3",
       "kind": "variable",
       "file": "packages/context-sync/patch-builder.ts",
-      "line": 190
+      "line": 188
     },
     {
       "name": "ContextSynchronizationService",
@@ -66485,307 +66647,307 @@
       "name": "startListening",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 63
+      "line": 61
     },
     {
       "name": "stopListening",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 67
+      "line": 65
     },
     {
       "name": "destroy",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 71
+      "line": 69
     },
     {
       "name": "sync",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 75
+      "line": 73
     },
     {
       "name": "start",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 76
+      "line": 74
     },
     {
       "name": "stages",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 77
+      "line": 75
     },
     {
       "name": "synchronizer",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 81
+      "line": 79
     },
     {
       "name": "latest",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 85
+      "line": 83
     },
     {
       "name": "compStart",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 91
+      "line": 89
     },
     {
       "name": "fullResult",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 92
+      "line": 90
     },
     {
       "name": "duration",
+      "kind": "variable",
+      "file": "packages/context-sync/service.ts",
+      "line": 95
+    },
+    {
+      "name": "metrics",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
       "line": 97
     },
     {
-      "name": "metrics",
-      "kind": "variable",
-      "file": "packages/context-sync/service.ts",
-      "line": 99
-    },
-    {
       "name": "changes",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 128
+      "line": 126
     },
     {
       "name": "duration",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 134
+      "line": 132
     },
     {
       "name": "metrics",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 135
+      "line": 133
     },
     {
       "name": "resolvedDirty",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 153
+      "line": 151
     },
     {
       "name": "dirtyRegion",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 158
+      "line": 156
     },
     {
       "name": "partialCompileStart",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 163
+      "line": 161
     },
     {
       "name": "dirtyFiles",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 164
+      "line": 162
     },
     {
       "name": "compiledSymbols",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 165
+      "line": 163
     },
     {
       "name": "compiledDeps",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 166
+      "line": 164
     },
     {
       "name": "compiledRels",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 167
+      "line": 165
     },
     {
       "name": "compiledGraph",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 168
+      "line": 166
     },
     {
       "name": "patch",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 181
+      "line": 179
     },
     {
       "name": "updatedSnapshot",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 194
+      "line": 192
     },
     {
       "name": "updatedFp",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 199
+      "line": 197
     },
     {
       "name": "validation",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 208
+      "line": 206
     },
     {
       "name": "totalDuration",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 223
+      "line": 221
     },
     {
       "name": "speedupRatio",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 224
+      "line": 222
     },
     {
       "name": "incrementalRebuildPercentage",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 225
+      "line": 223
     },
     {
       "name": "finalMetrics",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 227
+      "line": 225
     },
     {
       "name": "syncIncremental",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 256
+      "line": 254
     },
     {
       "name": "syncFull",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 264
+      "line": 262
     },
     {
       "name": "applyPatch",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 272
+      "line": 270
     },
     {
       "name": "rollback",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 276
+      "line": 274
     },
     {
       "name": "snap",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 277
+      "line": 275
     },
     {
       "name": "validate",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 283
+      "line": 281
     },
     {
       "name": "snap",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 284
+      "line": 282
     },
     {
       "name": "statistics",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 289
+      "line": 287
     },
     {
       "name": "diagnostics",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 293
+      "line": 291
     },
     {
       "name": "latestSnapshot",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 304
+      "line": 302
     },
     {
       "name": "snap",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 308
+      "line": 306
     },
     {
       "name": "loadSnapshot",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 314
+      "line": 312
     },
     {
       "name": "subscribe",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 321
+      "line": 319
     },
     {
       "name": "unsubscribe",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 325
+      "line": 323
     },
     {
       "name": "runStage",
       "kind": "method",
       "file": "packages/context-sync/service.ts",
-      "line": 331
+      "line": 329
     },
     {
       "name": "startedAt",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 336
+      "line": 334
     },
     {
       "name": "result",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 338
+      "line": 336
     },
     {
       "name": "completedAt",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 339
+      "line": 337
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 350
+      "line": 348
     },
     {
       "name": "completedAt",
       "kind": "variable",
       "file": "packages/context-sync/service.ts",
-      "line": 351
+      "line": 349
     },
     {
       "name": "SnapshotSyncStorage",
@@ -70034,262 +70196,268 @@
       "line": 287
     },
     {
-      "name": "genResult",
+      "name": "adapter",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
       "line": 288
     },
     {
+      "name": "genResult",
+      "kind": "variable",
+      "file": "packages/installer/installer.ts",
+      "line": 290
+    },
+    {
       "name": "manifestProviders",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 295
+      "line": 300
     },
     {
       "name": "discoveredIds",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 296
+      "line": 301
     },
     {
       "name": "existing",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 297
+      "line": 302
     },
     {
       "name": "pathManager",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 306
+      "line": 311
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 324
+      "line": 329
     },
     {
       "name": "generateWrapper",
       "kind": "method",
       "file": "packages/installer/installer.ts",
-      "line": 337
+      "line": 342
     },
     {
       "name": "wrapperPath",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 343
+      "line": 348
     },
     {
       "name": "binPath",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 344
+      "line": 349
     },
     {
       "name": "action",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 352
+      "line": 357
     },
     {
       "name": "content",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 358
+      "line": 363
     },
     {
       "name": "tmpPath",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 361
+      "line": 366
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 369
+      "line": 374
     },
     {
       "name": "adapter",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 388
+      "line": 393
     },
     {
       "name": "record",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 389
+      "line": 394
     },
     {
       "name": "action",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 409
+      "line": 414
     },
     {
       "name": "generateWrapperContent",
       "kind": "method",
       "file": "packages/installer/installer.ts",
-      "line": 414
+      "line": 419
     },
     {
       "name": "generateWrapperContentWin",
       "kind": "method",
       "file": "packages/installer/installer.ts",
-      "line": 430
+      "line": 435
     },
     {
       "name": "handleRemovedProvider",
       "kind": "method",
       "file": "packages/installer/installer.ts",
-      "line": 441
+      "line": 446
     },
     {
       "name": "wrapperPath",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 449
+      "line": 454
     },
     {
       "name": "binPath",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 450
+      "line": 455
     },
     {
       "name": "handleUninstall",
       "kind": "method",
       "file": "packages/installer/installer.ts",
-      "line": 467
+      "line": 472
     },
     {
       "name": "providers",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 472
+      "line": 477
     },
     {
       "name": "id",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 473
+      "line": 478
     },
     {
       "name": "removed",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 474
+      "line": 479
     },
     {
       "name": "pathManager",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 479
+      "line": 484
     },
     {
       "name": "runDiagnostics",
       "kind": "method",
       "file": "packages/installer/installer.ts",
-      "line": 486
+      "line": 491
     },
     {
       "name": "checks",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 487
+      "line": 492
     },
     {
       "name": "allDirsExist",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 490
+      "line": 495
     },
     {
       "name": "pathManager",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 498
+      "line": 503
     },
     {
       "name": "pathCheck",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 499
+      "line": 504
     },
     {
       "name": "disc",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 511
+      "line": 516
     },
     {
       "name": "status",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 512
+      "line": 517
     },
     {
       "name": "gen",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 521
+      "line": 526
     },
     {
       "name": "execCheck",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 523
+      "line": 528
     },
     {
       "name": "validateWrapperExecution",
       "kind": "method",
       "file": "packages/installer/installer.ts",
-      "line": 534
+      "line": 539
     },
     {
       "name": "binPath",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 535
+      "line": 540
     },
     {
       "name": "cmd",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 542
+      "line": 547
     },
     {
       "name": "resolved",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 543
+      "line": 548
     },
     {
       "name": "checkInstallerVersionUpgrade",
       "kind": "method",
       "file": "packages/installer/installer.ts",
-      "line": 560
+      "line": 565
     },
     {
       "name": "config",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 563
+      "line": 568
     },
     {
       "name": "previousVersion",
       "kind": "variable",
       "file": "packages/installer/installer.ts",
-      "line": 564
+      "line": 569
     },
     {
       "name": "migrateWrappers",
       "kind": "method",
       "file": "packages/installer/installer.ts",
-      "line": 576
+      "line": 581
     },
     {
       "name": "WrapperRecord",
@@ -74315,223 +74483,223 @@
       "name": "LearningStorage",
       "kind": "class",
       "file": "packages/learning-engine/storage.ts",
-      "line": 18
+      "line": 19
     },
     {
       "name": "learningDir",
       "kind": "property",
       "file": "packages/learning-engine/storage.ts",
-      "line": 19
+      "line": 20
     },
     {
       "name": "constructor",
       "kind": "constructor",
       "file": "packages/learning-engine/storage.ts",
-      "line": 21
+      "line": 22
     },
     {
       "name": "getPath",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 25
+      "line": 26
     },
     {
       "name": "ensureDirectory",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 29
+      "line": 30
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 32
+      "line": 33
     },
     {
       "name": "loadExperiences",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 37
+      "line": 38
     },
     {
       "name": "saveExperiences",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 41
+      "line": 42
     },
     {
       "name": "loadProviders",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 45
+      "line": 46
     },
     {
       "name": "saveProviders",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 49
+      "line": 50
     },
     {
       "name": "loadRepairs",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 53
+      "line": 54
     },
     {
       "name": "saveRepairs",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 57
+      "line": 58
     },
     {
       "name": "loadFailures",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 61
+      "line": 62
     },
     {
       "name": "saveFailures",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 65
+      "line": 66
     },
     {
       "name": "loadPrompts",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 69
+      "line": 70
     },
     {
       "name": "savePrompts",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 73
+      "line": 74
     },
     {
       "name": "loadOptimizations",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 77
+      "line": 78
     },
     {
       "name": "saveOptimizations",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 81
+      "line": 82
     },
     {
       "name": "loadMetadata",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 85
+      "line": 86
     },
     {
       "name": "saveMetadata",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 89
+      "line": 90
     },
     {
       "name": "loadJson",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 93
+      "line": 94
     },
     {
       "name": "filePath",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 95
+      "line": 96
     },
     {
       "name": "raw",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 97
+      "line": 98
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 99
+      "line": 100
     },
     {
       "name": "saveJson",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 107
+      "line": 108
     },
     {
       "name": "filePath",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 109
+      "line": 110
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 112
+      "line": 113
     },
     {
       "name": "exportSnapshot",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 117
+      "line": 118
     },
     {
       "name": "importSnapshot",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 140
+      "line": 141
     },
     {
       "name": "compaction",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 153
+      "line": 154
     },
     {
       "name": "experiences",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 155
+      "line": 156
     },
     {
       "name": "truncated",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 157
+      "line": 158
     },
     {
       "name": "metadata",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 161
+      "line": 162
     },
     {
       "name": "reset",
       "kind": "method",
       "file": "packages/learning-engine/storage.ts",
-      "line": 166
+      "line": 167
     },
     {
       "name": "files",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 168
+      "line": 169
     },
     {
       "name": "file",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 177
+      "line": 178
     },
     {
       "name": "err",
       "kind": "variable",
       "file": "packages/learning-engine/storage.ts",
-      "line": 180
+      "line": 181
     },
     {
       "name": "ExecutionOutcome",
@@ -78941,229 +79109,235 @@
       "name": "ProviderConfiguration",
       "kind": "interface",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 15
+      "line": 16
     },
     {
       "name": "resolveBinarySync",
       "kind": "function",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 32
+      "line": 33
     },
     {
       "name": "pathEnv",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 33
+      "line": 34
     },
     {
       "name": "delimiter",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 34
+      "line": 35
     },
     {
       "name": "entries",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 35
+      "line": 36
     },
     {
       "name": "extensions",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 36
+      "line": 37
     },
     {
       "name": "binaryName",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 38
+      "line": 39
     },
     {
       "name": "entry",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 39
+      "line": 40
     },
     {
       "name": "ext",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 41
+      "line": 42
     },
     {
       "name": "fullPath",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 42
+      "line": 43
     },
     {
       "name": "ProviderDiscoveryEngine",
       "kind": "class",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 57
+      "line": 58
     },
     {
       "name": "getBinaryVersion",
       "kind": "method",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 58
+      "line": 59
     },
     {
       "name": "args",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 59
+      "line": 60
     },
     {
       "name": "stdout",
-      "kind": "variable",
-      "file": "packages/provider-bridge/discovery.ts",
-      "line": 61
-    },
-    {
-      "name": "match",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
       "line": 62
     },
     {
-      "name": "stdout",
+      "name": "match",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 66
+      "line": 63
     },
     {
-      "name": "match",
+      "name": "stdout",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
       "line": 67
     },
     {
+      "name": "match",
+      "kind": "variable",
+      "file": "packages/provider-bridge/discovery.ts",
+      "line": 68
+    },
+    {
       "name": "discover",
       "kind": "method",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 75
+      "line": 76
     },
     {
       "name": "schema",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 76
+      "line": 77
     },
     {
       "name": "manifest",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 81
+      "line": 82
     },
     {
       "name": "resolvedBinary",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 82
+      "line": 83
     },
     {
       "name": "installed",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 83
+      "line": 84
     },
     {
       "name": "executablePath",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 84
+      "line": 85
     },
     {
       "name": "version",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 85
+      "line": 86
     },
     {
       "name": "globalPaths",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 93
+      "line": 94
     },
     {
       "name": "workspacePaths",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 96
+      "line": 97
     },
     {
       "name": "pathCheck",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 99
+      "line": 100
+    },
+    {
+      "name": "home",
+      "kind": "variable",
+      "file": "packages/provider-bridge/discovery.ts",
+      "line": 102
     },
     {
       "name": "globalConfigs",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 106
+      "line": 112
     },
     {
       "name": "workspaceConfigs",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 109
+      "line": 115
     },
     {
       "name": "globalExists",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 113
+      "line": 119
     },
     {
       "name": "workspaceExists",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 114
+      "line": 120
     },
     {
       "name": "activeConfiguration",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 116
+      "line": 122
     },
     {
       "name": "selectedIntegrationMode",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 125
+      "line": 131
     },
     {
       "name": "availableModes",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 126
+      "line": 132
     },
     {
       "name": "supportedTransports",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 133
+      "line": 139
     },
     {
       "name": "compatRes",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 136
+      "line": 142
     },
     {
       "name": "versionSupport",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 137
+      "line": 143
     },
     {
       "name": "legacyCapabilities",
       "kind": "variable",
       "file": "packages/provider-bridge/discovery.ts",
-      "line": 145
+      "line": 151
     },
     {
       "name": "IntelligentFallbackEngine",
@@ -92342,6 +92516,162 @@
       "line": 476
     },
     {
+      "name": "originalHomedir",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 12
+    },
+    {
+      "name": "tempHome",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 13
+    },
+    {
+      "name": "testsPassed",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 22
+    },
+    {
+      "name": "testsFailed",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 23
+    },
+    {
+      "name": "test",
+      "kind": "function",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 25
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 30
+    },
+    {
+      "name": "main",
+      "kind": "function",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 37
+    },
+    {
+      "name": "adapter",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 40
+    },
+    {
+      "name": "geminiDir",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 44
+    },
+    {
+      "name": "configDir",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 45
+    },
+    {
+      "name": "mcpConfigPath",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 46
+    },
+    {
+      "name": "detected",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 49
+    },
+    {
+      "name": "detected",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 55
+    },
+    {
+      "name": "binPath",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 60
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 70
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 74
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 88
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 91
+    },
+    {
+      "name": "existingConfig",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 104
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 114
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 117
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 136
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 139
+    },
+    {
+      "name": "testConfig",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 145
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 159
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/test-antigravity-integration.ts",
+      "line": 162
+    },
+    {
       "name": "main",
       "kind": "function",
       "file": "packages/test-architecture-memory.ts",
@@ -97211,31 +97541,31 @@
       "name": "syncCount",
       "kind": "variable",
       "file": "packages/test-context-sync.ts",
-      "line": 522
+      "line": 523
     },
     {
       "name": "engine",
       "kind": "variable",
       "file": "packages/test-context-sync.ts",
-      "line": 533
+      "line": 534
     },
     {
       "name": "tx",
       "kind": "variable",
       "file": "packages/test-context-sync.ts",
-      "line": 534
+      "line": 535
     },
     {
       "name": "queryService",
       "kind": "variable",
       "file": "packages/test-context-sync.ts",
-      "line": 550
+      "line": 551
     },
     {
       "name": "res",
       "kind": "variable",
       "file": "packages/test-context-sync.ts",
-      "line": 552
+      "line": 553
     },
     {
       "name": "main",

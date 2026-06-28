@@ -55,7 +55,7 @@ export class McpStrategy implements ProviderIntegrationStrategy {
                     brain: entry
                 };
                 newContent = JSON.stringify(parsed, null, 2);
-            } else if (schema === "claude" || schema === "claude-code") {
+            } else if (schema === "claude" || schema === "claude-code" || schema === "antigravity") {
                 let parsed: Record<string, any> = {};
                 if (originalContent) {
                     try { parsed = JSON.parse(originalContent); } catch {}
@@ -110,7 +110,7 @@ export class McpStrategy implements ProviderIntegrationStrategy {
             let newContent = "";
             const schema = manifest.configurationSchema;
 
-            if (schema === "opencode" || schema === "claude" || schema === "claude-code" || schema === "continue") {
+            if (schema === "opencode" || schema === "claude" || schema === "claude-code" || schema === "continue" || schema === "antigravity") {
                 if (configPath.endsWith(".json")) {
                     const parsed = JSON.parse(originalContent);
                     if (schema === "opencode" && parsed.mcp?.brain) {

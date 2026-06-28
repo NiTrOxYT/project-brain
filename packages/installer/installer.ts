@@ -285,10 +285,15 @@ export class BrainInstaller {
 
             // ── Step 3: Generate / Repair wrappers ───────────────────────
             for (const disc of result.discovered) {
-                const genResult = await this.generateWrapper(
-                    disc, dryRun, opts.repair ?? false, journal
-                );
-                result.generated.push(genResult);
+                const adapter = AdapterRegistry.lookup(disc.id);
+                if (adapter.providerCapabilities().launchWrapper) {
+                    const genResult = await this.generateWrapper(
+                        disc, dryRun, opts.repair ?? false, journal
+                    );
+                    result.generated.push(genResult);
+                } else {
+                    result.generated.push({ id: disc.id, wrapperPath: "", action: "skipped" });
+                }
             }
 
             // ── Step 4: Detect removed providers ─────────────────────────

@@ -16,10 +16,8 @@ export class FingerprintUpdater {
         // Combine component hashes
         const combined = [
             filesystemHash,
-            graphHash,
             prev.architectureHash || "",
-            prev.evolutionHash || "",
-            prev.learningHash || ""
+            prev.evolutionHash || ""
         ].join("|");
 
         const hash = crypto.createHash("sha256").update(combined).digest("hex");

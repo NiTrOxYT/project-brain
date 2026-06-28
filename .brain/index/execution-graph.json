@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T12:31:10.383Z",
+  "generatedAt": "2026-06-28T17:11:26.501Z",
   "nodes": [
     {
       "id": "packages/agent-runtime/artifacts.ts#RuntimeArtifact",
@@ -1019,6 +1019,120 @@
       "id": "packages/ai-gateway/adapters/aider.ts#adapter",
       "symbol": "adapter",
       "file": "packages/ai-gateway/adapters/aider.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter",
+      "symbol": "AntigravityAdapter",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.id",
+      "symbol": "AntigravityAdapter.id",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.displayName",
+      "symbol": "AntigravityAdapter.displayName",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.version",
+      "symbol": "AntigravityAdapter.version",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.binaryName",
+      "symbol": "AntigravityAdapter.binaryName",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.providerId",
+      "symbol": "AntigravityAdapter.providerId",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.manifest",
+      "symbol": "AntigravityAdapter.manifest",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.validate",
+      "symbol": "AntigravityAdapter.validate",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#isArray",
+      "symbol": "isArray",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.buildMcpConfiguration",
+      "symbol": "AntigravityAdapter.buildMcpConfiguration",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.migrateConfiguration",
+      "symbol": "AntigravityAdapter.migrateConfiguration",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.providerCapabilities",
+      "symbol": "AntigravityAdapter.providerCapabilities",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.detect",
+      "symbol": "AntigravityAdapter.detect",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#homedir",
+      "symbol": "homedir",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.resolvedBinaryPath",
+      "symbol": "AntigravityAdapter.resolvedBinaryPath",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#Error",
+      "symbol": "Error",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.buildArgs",
+      "symbol": "AntigravityAdapter.buildArgs",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.metadata",
+      "symbol": "AntigravityAdapter.metadata",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts#adapter",
+      "symbol": "adapter",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
       "kind": "variable"
     },
     {
@@ -3022,12 +3136,6 @@
     {
       "id": "external#optimize",
       "symbol": "optimize",
-      "file": "external",
-      "kind": "external"
-    },
-    {
-      "id": "external#Error",
-      "symbol": "Error",
       "file": "external",
       "kind": "external"
     },
@@ -5942,12 +6050,6 @@
       "kind": "external"
     },
     {
-      "id": "external#isArray",
-      "symbol": "isArray",
-      "file": "external",
-      "kind": "external"
-    },
-    {
       "id": "packages/installer/path-manager.ts#PathManager",
       "symbol": "PathManager",
       "file": "packages/installer/path-manager.ts",
@@ -6257,6 +6359,12 @@
       "id": "packages/provider-bridge/provider-configurator.ts#ProviderConfigurator.configure",
       "symbol": "ProviderConfigurator.configure",
       "file": "packages/provider-bridge/provider-configurator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/provider-bridge/provider-policy.ts#ProviderPolicyInstaller.getInstructionsPath",
+      "symbol": "ProviderPolicyInstaller.getInstructionsPath",
+      "file": "packages/provider-bridge/provider-policy.ts",
       "kind": "method"
     },
     {
@@ -11540,6 +11648,12 @@
       "kind": "method"
     },
     {
+      "id": "external#providerCapabilities",
+      "symbol": "providerCapabilities",
+      "file": "external",
+      "kind": "external"
+    },
+    {
       "id": "packages/installer/installer.ts#BrainInstaller.generateWrapper",
       "symbol": "BrainInstaller.generateWrapper",
       "file": "packages/installer/installer.ts",
@@ -11832,12 +11946,6 @@
       "symbol": "HOME",
       "file": "packages/installer/shell-provider.ts",
       "kind": "variable"
-    },
-    {
-      "id": "external#homedir",
-      "symbol": "homedir",
-      "file": "external",
-      "kind": "external"
     },
     {
       "id": "packages/installer/shell-provider.ts#MARKER",
@@ -16146,12 +16254,6 @@
       "symbol": "ProviderPolicyInstaller",
       "file": "packages/provider-bridge/provider-policy.ts",
       "kind": "class"
-    },
-    {
-      "id": "packages/provider-bridge/provider-policy.ts#ProviderPolicyInstaller.getInstructionsPath",
-      "symbol": "ProviderPolicyInstaller.getInstructionsPath",
-      "file": "packages/provider-bridge/provider-policy.ts",
-      "kind": "method"
     },
     {
       "id": "packages/provider-bridge/provider-policy.ts#ProviderPolicyInstaller.getPolicyText",
@@ -21164,6 +21266,54 @@
       "kind": "external"
     },
     {
+      "id": "packages/test-antigravity-integration.ts#originalHomedir",
+      "symbol": "originalHomedir",
+      "file": "packages/test-antigravity-integration.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts#tempHome",
+      "symbol": "tempHome",
+      "file": "packages/test-antigravity-integration.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts#testsPassed",
+      "symbol": "testsPassed",
+      "file": "packages/test-antigravity-integration.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts#testsFailed",
+      "symbol": "testsFailed",
+      "file": "packages/test-antigravity-integration.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts#test",
+      "symbol": "test",
+      "file": "packages/test-antigravity-integration.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts#main",
+      "symbol": "main",
+      "file": "packages/test-antigravity-integration.ts",
+      "kind": "function"
+    },
+    {
+      "id": "external#assert",
+      "symbol": "assert",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#deepStrictEqual",
+      "symbol": "deepStrictEqual",
+      "file": "external",
+      "kind": "external"
+    },
+    {
       "id": "packages/test-architecture-memory.ts#main",
       "symbol": "main",
       "file": "packages/test-architecture-memory.ts",
@@ -21668,12 +21818,6 @@
       "kind": "external"
     },
     {
-      "id": "external#deepStrictEqual",
-      "symbol": "deepStrictEqual",
-      "file": "external",
-      "kind": "external"
-    },
-    {
       "id": "packages/test-context-pipeline-retrieval.ts#__filename",
       "symbol": "__filename",
       "file": "packages/test-context-pipeline-retrieval.ts",
@@ -21726,12 +21870,6 @@
       "symbol": "runTests",
       "file": "packages/test-context-provider.ts",
       "kind": "function"
-    },
-    {
-      "id": "external#assert",
-      "symbol": "assert",
-      "file": "external",
-      "kind": "external"
     },
     {
       "id": "external#clearTelemetry",
@@ -25410,6 +25548,61 @@
     {
       "from": "packages/ai-gateway/adapters/aider.ts#adapter",
       "to": "packages/ai-gateway/adapters/aider.ts#AiderAdapter",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.validate",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.validate",
+      "to": "external#parse",
+      "type": "calls"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.validate",
+      "to": "external#isArray",
+      "type": "calls"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.detect",
+      "to": "external#homedir",
+      "type": "calls"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.detect",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.detect",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.resolvedBinaryPath",
+      "to": "external#homedir",
+      "type": "calls"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.resolvedBinaryPath",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.resolvedBinaryPath",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter.resolvedBinaryPath",
+      "to": "external#Error",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts#adapter",
+      "to": "packages/ai-gateway/adapters/antigravity.ts#AntigravityAdapter",
       "type": "constructs"
     },
     {
@@ -31991,6 +32184,11 @@
       "from": "packages/cli/commands/install.ts#runInstall",
       "to": "external#Error",
       "type": "constructs"
+    },
+    {
+      "from": "packages/cli/commands/install.ts#runInstall",
+      "to": "packages/provider-bridge/provider-policy.ts#ProviderPolicyInstaller.getInstructionsPath",
+      "type": "calls"
     },
     {
       "from": "packages/cli/commands/install.ts#runInstall",
@@ -40253,11 +40451,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/context-sync/service.ts#ContextSynchronizationService.constructor",
-      "to": "external#start",
-      "type": "calls"
-    },
-    {
       "from": "packages/context-sync/service.ts#ContextSynchronizationService.startListening",
       "to": "external#start",
       "type": "calls"
@@ -42560,6 +42753,11 @@
     {
       "from": "packages/installer/installer.ts#BrainInstaller.install",
       "to": "packages/installer/manifest.ts#ManifestManager.verifyWrapper",
+      "type": "calls"
+    },
+    {
+      "from": "packages/installer/installer.ts#BrainInstaller.install",
+      "to": "external#providerCapabilities",
       "type": "calls"
     },
     {
@@ -45379,8 +45577,8 @@
     },
     {
       "from": "packages/learning-engine/storage.ts#LearningStorage.constructor",
-      "to": "external#join",
-      "type": "calls"
+      "to": "packages/kernel/paths.ts#StoragePaths",
+      "type": "constructs"
     },
     {
       "from": "packages/learning-engine/storage.ts#LearningStorage.getPath",
@@ -48685,6 +48883,16 @@
     {
       "from": "packages/provider-bridge/discovery.ts#ProviderDiscoveryEngine.discover",
       "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts#ProviderDiscoveryEngine.discover",
+      "to": "external#homedir",
+      "type": "calls"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts#ProviderDiscoveryEngine.discover",
+      "to": "external#join",
       "type": "calls"
     },
     {
@@ -59023,6 +59231,176 @@
       "type": "calls"
     },
     {
+      "from": "packages/test-antigravity-integration.ts#tempHome",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#tempHome",
+      "to": "external#tmpdir",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#tempHome",
+      "to": "external#toString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#tempHome",
+      "to": "external#randomBytes",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#test",
+      "to": "external#fn",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#test",
+      "to": "external#fn",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#test",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#test",
+      "to": "packages/cli/utils/logger.ts#logger.error",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#lookup",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "packages/test-antigravity-integration.ts#test",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "packages/test-antigravity-integration.ts#test",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#detect",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#detect",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#strictEqual",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#mkdirSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#resolvedBinaryPath",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#resolvedBinaryPath",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#rmSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "packages/provider-bridge/provider-configurator.ts#ProviderConfigurator.configure",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "packages/provider-bridge/provider-configurator.ts#ProviderConfigurator.configure",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#parse",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#deepStrictEqual",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "packages/provider-bridge/provider-configurator.ts#ProviderConfigurator.isConfigured",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#writeFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#stringify",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "packages/provider-bridge/provider-configurator.ts#ProviderConfigurator.unconfigure",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "packages/provider-bridge/provider-configurator.ts#ProviderConfigurator.unconfigure",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#validate",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts#main",
+      "to": "external#exit",
+      "type": "calls"
+    },
+    {
       "from": "packages/test-architecture-memory.ts#main",
       "to": "external#join",
       "type": "calls"
@@ -63005,6 +63383,11 @@
     {
       "from": "packages/test-context-sync.ts#runSuite",
       "to": "packages/context-sync/service.ts#ContextSynchronizationService.subscribe",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-context-sync.ts#runSuite",
+      "to": "packages/context-sync/service.ts#ContextSynchronizationService.startListening",
       "type": "calls"
     },
     {

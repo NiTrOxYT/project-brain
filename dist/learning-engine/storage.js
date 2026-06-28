@@ -4,12 +4,13 @@
 import fs from "fs/promises";
 import path from "path";
 import { LearningStorageError } from "./errors.js";
+import { StoragePaths } from "../kernel/paths.js";
 export class LearningStorage {
     workspaceRoot;
     learningDir;
     constructor(workspaceRoot) {
         this.workspaceRoot = workspaceRoot;
-        this.learningDir = path.join(workspaceRoot, "learning");
+        this.learningDir = new StoragePaths(workspaceRoot).learningDir;
     }
     getPath(filename) {
         return path.join(this.learningDir, filename);

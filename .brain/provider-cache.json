@@ -1,0 +1,22 @@
+{
+  "antigravity": {
+    "providerVersion": "1.0.0",
+    "brainVersion": "0.1.0",
+    "configurationChecksum": "646b4e0e026b764ea7e150f1864de2263d6d15da",
+    "schemaVersion": "antigravity-v1",
+    "verificationResult": {
+      "level1": true,
+      "level2": true,
+      "level3": true,
+      "level4": true,
+      "state": "Brain Enabled",
+      "stages": {
+        "installation": "Passed",
+        "configuration": "Passed",
+        "connectivity": "Passed",
+        "behavioral": "Skipped"
+      },
+      "errors": []
+    }
+  }
+}

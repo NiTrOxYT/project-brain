@@ -1,0 +1,18 @@
+{
+  "opencode": {
+    "lastSuccessfulVerification": null,
+    "lastSuccessfulMcpHandshake": "2026-06-28T17:04:00.223Z",
+    "lastSuccessfulToolInvocation": null,
+    "consecutiveFailures": 1,
+    "lastConfigurationMigration": null,
+    "lastRepairExecution": null
+  },
+  "antigravity": {
+    "lastSuccessfulVerification": "2026-06-28T17:04:06.053Z",
+    "lastSuccessfulMcpHandshake": "2026-06-28T17:04:06.052Z",
+    "lastSuccessfulToolInvocation": null,
+    "consecutiveFailures": 0,
+    "lastConfigurationMigration": null,
+    "lastRepairExecution": null
+  }
+}

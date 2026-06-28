@@ -4,6 +4,7 @@
 
 import fs from "fs";
 import path from "path";
+import os from "os";
 import { execFileSync } from "child_process";
 import { ProviderSchemaRegistry } from "./schema-registry.js";
 import type { ProviderCapabilities, ProviderVersionSupport } from "./provider-capabilities.js";
@@ -96,7 +97,12 @@ export class ProviderDiscoveryEngine {
             const workspacePaths = manifest.configurationLocations
                 .filter(l => l.type === "workspace")
                 .map(l => resolvePathPattern(l.pathPattern, workspaceRoot));
-            const pathCheck = [...globalPaths, ...workspacePaths].some(p => fs.existsSync(p));
+            let pathCheck = [...globalPaths, ...workspacePaths].some(p => fs.existsSync(p));
+            if (!pathCheck && providerId === "antigravity") {
+                const home = os.homedir();
+                pathCheck = fs.existsSync(path.join(home, ".gemini", "config")) ||
+                            fs.existsSync(path.join(home, ".gemini", "antigravity-ide"));
+            }
             if (pathCheck) {
                 installed = true;
                 version = "1.0.0";

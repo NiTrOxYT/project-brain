@@ -39,10 +39,8 @@ export class SnapshotFingerprintEngine {
             // Combine all component hashes into a single stable hash
             const combined = [
                 filesystemHash,
-                graphHash,
                 architectureHash,
-                evolutionHash,
-                learningHash
+                evolutionHash
             ].join("|");
 
             const hash = this.hashData(combined);

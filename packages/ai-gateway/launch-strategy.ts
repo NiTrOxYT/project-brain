@@ -58,7 +58,7 @@ export class InheritStrategy implements LaunchStrategy {
             },
             wait: (): Promise<ExitResult> =>
                 new Promise(resolve => {
-                    child.once("close", (code, signal) => {
+                    child.once("exit", (code, signal) => {
                         resolve({ code, signal });
                     });
                 }),
@@ -118,7 +118,7 @@ export class NativeSpawnStrategy implements LaunchStrategy {
             },
             wait: (): Promise<ExitResult> =>
                 new Promise(resolve => {
-                    child.once("close", (code, signal) => {
+                    child.once("exit", (code, signal) => {
                         resolve({ code, signal });
                     });
                 }),

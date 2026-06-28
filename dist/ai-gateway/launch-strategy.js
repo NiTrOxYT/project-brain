@@ -33,7 +33,7 @@ export class InheritStrategy {
                 child.kill("SIGTERM");
             },
             wait: () => new Promise(resolve => {
-                child.once("close", (code, signal) => {
+                child.once("exit", (code, signal) => {
                     resolve({ code, signal });
                 });
             }),
@@ -78,7 +78,7 @@ export class NativeSpawnStrategy {
                 child.kill("SIGTERM");
             },
             wait: () => new Promise(resolve => {
-                child.once("close", (code, signal) => {
+                child.once("exit", (code, signal) => {
                     resolve({ code, signal });
                 });
             }),

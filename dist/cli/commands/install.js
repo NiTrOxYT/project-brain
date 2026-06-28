@@ -40,7 +40,7 @@ export async function runInstall(opts, cmdOpts) {
         }
         // Configure all discovered supported providers
         for (const disc of result.discovered) {
-            if (disc.id === "opencode" || disc.id === "claude") {
+            if (disc.id === "opencode" || disc.id === "claude" || disc.id === "antigravity") {
                 if (!opts.quiet) {
                     logger.log(`Configuring Brain MCP for provider: ${disc.id}...`);
                 }
@@ -48,10 +48,13 @@ export async function runInstall(opts, cmdOpts) {
                 if (!confRes.success) {
                     throw new Error(`Failed to configure MCP registration for ${disc.id}: ${confRes.error}`);
                 }
-                // Install policy instructions file
-                const polRes = ProviderPolicyInstaller.installPolicy(disc.id);
-                if (!polRes.success) {
-                    throw new Error(`Failed to install policy instructions for ${disc.id}: ${polRes.error}`);
+                // Install policy instructions file if supported
+                const instructionsPath = ProviderPolicyInstaller.getInstructionsPath(disc.id);
+                if (instructionsPath) {
+                    const polRes = ProviderPolicyInstaller.installPolicy(disc.id);
+                    if (!polRes.success) {
+                        throw new Error(`Failed to install policy instructions for ${disc.id}: ${polRes.error}`);
+                    }
                 }
                 // Immediately validate configuration by reading it back from disk
                 const isValid = ProviderConfigurator.isConfigured(disc.id);

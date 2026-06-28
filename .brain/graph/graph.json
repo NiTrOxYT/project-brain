@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T12:31:10.394Z",
+  "generatedAt": "2026-06-28T17:11:26.512Z",
   "nodes": [
     {
       "id": "packages/agent-runtime/executor.ts",
@@ -43,6 +43,10 @@
     },
     {
       "id": "packages/ai-gateway/adapters/aider.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts",
       "type": "file"
     },
     {
@@ -1442,6 +1446,10 @@
       "type": "file"
     },
     {
+      "id": "packages/test-antigravity-integration.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/test-architecture-memory.ts",
       "type": "file"
     },
@@ -1961,6 +1969,46 @@
       "type": "imports"
     },
     {
+      "from": "packages/ai-gateway/adapters/antigravity.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts",
+      "to": "../adapter-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts",
+      "to": "./base.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts",
+      "to": "../../provider-bridge/schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts",
+      "to": "../../provider-bridge/provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/antigravity.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
       "from": "packages/ai-gateway/adapters/base.ts",
       "to": "child_process",
       "type": "imports"
@@ -2227,6 +2275,11 @@
     },
     {
       "from": "packages/ai-gateway/adapters/index.ts",
+      "to": "./antigravity.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/index.ts",
       "to": "./claude.js",
       "type": "imports"
     },
@@ -2263,6 +2316,11 @@
     {
       "from": "packages/ai-gateway/adapters/index.ts",
       "to": "./continue.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/index.ts",
+      "to": "./antigravity.js",
       "type": "imports"
     },
     {
@@ -7106,6 +7164,11 @@
       "type": "imports"
     },
     {
+      "from": "packages/learning-engine/storage.ts",
+      "to": "../kernel/paths.js",
+      "type": "imports"
+    },
+    {
       "from": "packages/main.ts",
       "to": "./cli/main.js",
       "type": "imports"
@@ -7918,6 +7981,11 @@
     {
       "from": "packages/provider-bridge/discovery.ts",
       "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "os",
       "type": "imports"
     },
     {
@@ -10613,6 +10681,46 @@
     {
       "from": "packages/test-ai-gateway.ts",
       "to": "./ai-gateway/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts",
+      "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts",
+      "to": "./ai-gateway/adapters/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts",
+      "to": "./provider-bridge/provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-antigravity-integration.ts",
+      "to": "./ai-gateway/adapter-registry.js",
       "type": "imports"
     },
     {

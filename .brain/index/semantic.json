@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T12:31:10.408Z",
+  "generatedAt": "2026-06-28T17:11:26.526Z",
   "entries": [
     {
       "id": ".agent/skills/impeccable/scripts/context-signals.mjs::hasCode",
@@ -69760,6 +69760,231 @@
       "weight": 100
     },
     {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::AntigravityAdapter",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "antigravity",
+        "adapter"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::id",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::displayName",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "display",
+        "name"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::version",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "version"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::binaryName",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "binary",
+        "name"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::providerId",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "provider",
+        "id"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::manifest",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "manifest"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::validate",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "validate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::parsed",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "parsed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::err",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::buildMcpConfiguration",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "build",
+        "mcp",
+        "configuration"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::migrateConfiguration",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "migrate",
+        "configuration"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::providerCapabilities",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "provider",
+        "capabilities"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::detect",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "detect"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::home",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "home"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::configDir",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "config",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::ideDir",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "ide",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::mcpConfig",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "mcp",
+        "config"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::resolvedBinaryPath",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "resolved",
+        "binary",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::home",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "home"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::configDir",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "config",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::ideDir",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "ide",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::mcpConfig",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "mcp",
+        "config"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::buildArgs",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "build",
+        "args"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::metadata",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "metadata"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/ai-gateway/adapters/antigravity.ts::adapter",
+      "file": "packages/ai-gateway/adapters/antigravity.ts",
+      "terms": [
+        "adapter"
+      ],
+      "weight": 100
+    },
+    {
       "id": "packages/ai-gateway/adapters/base.ts::execFileAsync",
       "file": "packages/ai-gateway/adapters/base.ts",
       "terms": [
@@ -82251,6 +82476,15 @@
       "terms": [
         "conf",
         "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/install.ts::instructionsPath",
+      "file": "packages/cli/commands/install.ts",
+      "terms": [
+        "instructions",
+        "path"
       ],
       "weight": 100
     },
@@ -102046,6 +102280,14 @@
       "weight": 100
     },
     {
+      "id": "packages/installer/installer.ts::adapter",
+      "file": "packages/installer/installer.ts",
+      "terms": [
+        "adapter"
+      ],
+      "weight": 100
+    },
+    {
       "id": "packages/installer/installer.ts::genResult",
       "file": "packages/installer/installer.ts",
       "terms": [
@@ -115199,6 +115441,14 @@
       "terms": [
         "path",
         "check"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/provider-bridge/discovery.ts::home",
+      "file": "packages/provider-bridge/discovery.ts",
+      "terms": [
+        "home"
       ],
       "weight": 100
     },
@@ -134148,6 +134398,225 @@
       "terms": [
         "dev",
         "null"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::originalHomedir",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "original",
+        "homedir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::tempHome",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "temp",
+        "home"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::testsPassed",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "tests",
+        "passed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::testsFailed",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "tests",
+        "failed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::test",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "test"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::err",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::main",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "main"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::adapter",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "adapter"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::geminiDir",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "gemini",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::configDir",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "config",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::mcpConfigPath",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "mcp",
+        "config",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::detected",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "detected"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::detected",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "detected"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::binPath",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "bin",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::res",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::parsed",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "parsed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::res",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::parsed",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "parsed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::existingConfig",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "existing",
+        "config"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::res",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::parsed",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "parsed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::res",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::parsed",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "parsed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::testConfig",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "test",
+        "config"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::res",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-antigravity-integration.ts::parsed",
+      "file": "packages/test-antigravity-integration.ts",
+      "terms": [
+        "parsed"
       ],
       "weight": 100
     },

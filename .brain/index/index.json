@@ -1,6 +1,12 @@
 {
   "files": [
     {
+      "path": ".DS_Store",
+      "extension": "",
+      "size": 6148,
+      "modifiedAt": "2026-06-28T13:55:02.850Z"
+    },
+    {
       "path": ".agent/skills/brandkit/SKILL.md",
       "extension": ".md",
       "size": 15992,
@@ -772,7 +778,25 @@
       "path": ".opencode/opencode.json",
       "extension": ".json",
       "size": 208,
-      "modifiedAt": "2026-06-28T12:20:34.048Z"
+      "modifiedAt": "2026-06-28T14:09:16.205Z"
+    },
+    {
+      "path": ".opencode/opencode.json.backup-1782655755785",
+      "extension": ".backup-1782655755785",
+      "size": 208,
+      "modifiedAt": "2026-06-28T14:09:15.786Z"
+    },
+    {
+      "path": ".opencode/package-lock.json",
+      "extension": ".json",
+      "size": 14632,
+      "modifiedAt": "2026-06-28T13:33:37.810Z"
+    },
+    {
+      "path": ".opencode/package.json",
+      "extension": ".json",
+      "size": 65,
+      "modifiedAt": "2026-06-28T13:33:37.808Z"
     },
     {
       "path": ".test-codex-config.toml.backup-1782640394594",
@@ -801,14 +825,14 @@
     {
       "path": "WALKTHROUGH_CERTIFICATION.md",
       "extension": ".md",
-      "size": 1417,
-      "modifiedAt": "2026-06-27T20:16:47.876Z"
+      "size": 1418,
+      "modifiedAt": "2026-06-28T17:03:48.420Z"
     },
     {
-      "path": "learning/metadata.json",
-      "extension": ".json",
-      "size": 560,
-      "modifiedAt": "2026-06-28T12:20:36.198Z"
+      "path": "docs/antigravity-ide.md",
+      "extension": ".md",
+      "size": 1902,
+      "modifiedAt": "2026-06-28T17:02:48.034Z"
     },
     {
       "path": "package-lock.json",
@@ -907,6 +931,12 @@
       "modifiedAt": "2026-06-28T09:46:31.184Z"
     },
     {
+      "path": "packages/ai-gateway/adapters/antigravity.ts",
+      "extension": ".ts",
+      "size": 5629,
+      "modifiedAt": "2026-06-28T17:02:26.732Z"
+    },
+    {
       "path": "packages/ai-gateway/adapters/base.ts",
       "extension": ".ts",
       "size": 7002,
@@ -945,8 +975,8 @@
     {
       "path": "packages/ai-gateway/adapters/index.ts",
       "extension": ".ts",
-      "size": 1394,
-      "modifiedAt": "2026-06-28T08:33:49.883Z"
+      "size": 1476,
+      "modifiedAt": "2026-06-28T17:01:15.039Z"
     },
     {
       "path": "packages/ai-gateway/adapters/ollama.ts",
@@ -1011,8 +1041,8 @@
     {
       "path": "packages/ai-gateway/launch-strategy.ts",
       "extension": ".ts",
-      "size": 4588,
-      "modifiedAt": "2026-06-27T20:13:09.540Z"
+      "size": 4586,
+      "modifiedAt": "2026-06-28T14:36:29.978Z"
     },
     {
       "path": "packages/ai-gateway/metrics.ts",
@@ -1395,8 +1425,8 @@
     {
       "path": "packages/cli/commands/install.ts",
       "extension": ".ts",
-      "size": 10155,
-      "modifiedAt": "2026-06-28T09:50:55.673Z"
+      "size": 10366,
+      "modifiedAt": "2026-06-28T17:01:28.809Z"
     },
     {
       "path": "packages/cli/commands/learning.ts",
@@ -1623,8 +1653,8 @@
     {
       "path": "packages/context-compiler/fingerprint.ts",
       "extension": ".ts",
-      "size": 4735,
-      "modifiedAt": "2026-06-27T15:10:32.775Z"
+      "size": 4678,
+      "modifiedAt": "2026-06-28T14:42:29.255Z"
     },
     {
       "path": "packages/context-compiler/graph-compiler.ts",
@@ -1911,8 +1941,8 @@
     {
       "path": "packages/context-sync/fingerprint-updater.ts",
       "extension": ".ts",
-      "size": 1606,
-      "modifiedAt": "2026-06-27T15:10:32.780Z"
+      "size": 1546,
+      "modifiedAt": "2026-06-28T14:42:33.971Z"
     },
     {
       "path": "packages/context-sync/index.ts",
@@ -1935,14 +1965,14 @@
     {
       "path": "packages/context-sync/patch-builder.ts",
       "extension": ".ts",
-      "size": 7703,
-      "modifiedAt": "2026-06-27T15:10:32.781Z"
+      "size": 7619,
+      "modifiedAt": "2026-06-28T14:42:39.111Z"
     },
     {
       "path": "packages/context-sync/service.ts",
       "extension": ".ts",
-      "size": 13660,
-      "modifiedAt": "2026-06-28T11:46:18.225Z"
+      "size": 13628,
+      "modifiedAt": "2026-06-28T14:38:03.335Z"
     },
     {
       "path": "packages/context-sync/storage.ts",
@@ -2235,8 +2265,8 @@
     {
       "path": "packages/installer/installer.ts",
       "extension": ".ts",
-      "size": 24824,
-      "modifiedAt": "2026-06-27T19:49:22.747Z"
+      "size": 25112,
+      "modifiedAt": "2026-06-28T17:01:42.205Z"
     },
     {
       "path": "packages/installer/manifest.ts",
@@ -2463,8 +2493,8 @@
     {
       "path": "packages/learning-engine/storage.ts",
       "extension": ".ts",
-      "size": 6606,
-      "modifiedAt": "2026-06-27T15:10:32.789Z"
+      "size": 6664,
+      "modifiedAt": "2026-06-28T14:39:26.116Z"
     },
     {
       "path": "packages/learning-engine/types.ts",
@@ -2584,13 +2614,19 @@
       "path": "packages/mcp-server/transports/stdio.ts",
       "extension": ".ts",
       "size": 1793,
-      "modifiedAt": "2026-06-28T08:16:53.769Z"
+      "modifiedAt": "2026-06-28T13:42:48.724Z"
     },
     {
       "path": "packages/mcp-server/types.ts",
       "extension": ".ts",
       "size": 696,
       "modifiedAt": "2026-06-28T08:14:50.477Z"
+    },
+    {
+      "path": "packages/mcp-server.zip",
+      "extension": ".zip",
+      "size": 19091,
+      "modifiedAt": "2026-06-28T13:54:33.490Z"
     },
     {
       "path": "packages/orchestrator/errors.ts",
@@ -2793,8 +2829,8 @@
     {
       "path": "packages/provider-bridge/discovery.ts",
       "extension": ".ts",
-      "size": 8137,
-      "modifiedAt": "2026-06-28T09:47:16.471Z"
+      "size": 8448,
+      "modifiedAt": "2026-06-28T17:02:38.231Z"
     },
     {
       "path": "packages/provider-bridge/fallback.ts",
@@ -2865,8 +2901,8 @@
     {
       "path": "packages/provider-bridge/provider-integration.ts",
       "extension": ".ts",
-      "size": 23997,
-      "modifiedAt": "2026-06-28T11:09:29.584Z"
+      "size": 24053,
+      "modifiedAt": "2026-06-28T17:01:03.959Z"
     },
     {
       "path": "packages/provider-bridge/provider-lock.ts",
@@ -3631,6 +3667,12 @@
       "modifiedAt": "2026-06-27T19:48:47.837Z"
     },
     {
+      "path": "packages/test-antigravity-integration.ts",
+      "extension": ".ts",
+      "size": 7919,
+      "modifiedAt": "2026-06-28T17:03:09.118Z"
+    },
+    {
       "path": "packages/test-architecture-memory.ts",
       "extension": ".ts",
       "size": 8417,
@@ -3717,8 +3759,8 @@
     {
       "path": "packages/test-context-sync.ts",
       "extension": ".ts",
-      "size": 29514,
-      "modifiedAt": "2026-06-27T15:10:32.814Z"
+      "size": 29548,
+      "modifiedAt": "2026-06-28T14:38:07.967Z"
     },
     {
       "path": "packages/test-context.ts",
@@ -3826,7 +3868,7 @@
       "path": "packages/test-production-validation.ts",
       "extension": ".ts",
       "size": 24131,
-      "modifiedAt": "2026-06-27T19:09:37.562Z"
+      "modifiedAt": "2026-06-28T14:43:28.255Z"
     },
     {
       "path": "packages/test-prompt-intelligence.ts",
