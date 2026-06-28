@@ -1,390 +1,293 @@
-# Project Brain
+<div align="center">
 
-> A provider-agnostic autonomous software engineering framework that understands, plans, executes, validates, repairs, learns, and continuously improves software projects.
+# 🧠 Project Brain
 
-Project Brain is an AI-native engineering platform that transforms a codebase into a structured semantic knowledge graph, enabling autonomous software development without coupling to any single LLM provider.
+### Semantic Context Engine for AI Coding Agents
 
----
-
-# Vision
-
-Instead of sending raw source code to an LLM every time, Project Brain builds a continuously synchronized semantic representation of an entire repository.
-
-The platform can:
-
-- Understand a project
-- Retrieve only relevant context
-- Execute engineering tasks
-- Validate results
-- Repair failures
-- Learn from previous executions
-- Coordinate multiple AI agents
-- Persist engineering knowledge
+Compile your codebase into a semantic knowledge graph that AI assistants can query instantly using MCP instead of repeatedly exploring your repository.
 
 ---
 
-# Current Architecture
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![Node.js](https://img.shields.io/badge/Node.js-20+-green)
+![MCP](https://img.shields.io/badge/MCP-Compatible-purple)
+![License](https://img.shields.io/github/license/USERNAME/project-brain)
+![Tests](https://img.shields.io/github/actions/workflow/status/USERNAME/project-brain/test.yml)
+
+[Documentation](#documentation) •
+[Quick Start](#quick-start) •
+[Features](#features) •
+[Architecture](#architecture) •
+[Roadmap](#roadmap)
+
+</div>
+
+---
+
+# What is Project Brain?
+
+Project Brain is a **semantic context compiler** for software projects.
+
+Instead of forcing AI assistants to repeatedly:
+
+- browse folders
+- grep the repository
+- inspect dozens of files
+- rebuild project understanding every conversation
+
+Project Brain compiles your repository into a semantic index that AI agents can retrieve instantly through the **Model Context Protocol (MCP).**
+
+Think of it as:
+
+> **Language Server + Semantic Search + AI Memory + MCP Server**
+
+for your codebase.
+
+---
+
+# Why?
+
+Current AI IDEs waste thousands of tokens every session.
+
+Typical workflow:
 
 ```
-                    User / CLI
-                         │
-                         ▼
-              Autonomous Workflow
-                         │
-                         ▼
-             Engineering Planner
-                         │
-                         ▼
-             Autonomous Runtime
-                         │
-     ┌───────────────────┼───────────────────┐
-     ▼                   ▼                   ▼
-Provider Runtime    Workspace Engine   Shared Memory
-     │                   │                   │
-     ▼                   ▼                   ▼
- Context Retrieval  Context Sync      Multi-Agent State
-         │
-         ▼
-   Context Compiler
-         │
-         ▼
- Semantic Snapshot Database
+User Question
+      ↓
+AI lists folders
+      ↓
+Reads files
+      ↓
+Greps repository
+      ↓
+Builds context
+      ↓
+Finally answers
 ```
 
----
-
-# Major Components
-
-## Context Compiler
-
-Transforms an entire repository into a deterministic semantic snapshot.
-
-Features
-
-- Repository indexing
-- Symbol extraction
-- Dependency analysis
-- Relationship graph generation
-- Architecture extraction
-- Learning index generation
-- Snapshot fingerprinting
-- Delta generation
-- Incremental compilation
-- Snapshot storage
-- Validation
-- Snapshot optimization
-
-Produces immutable semantic snapshots.
-
----
-
-## Incremental Context Synchronization
-
-Keeps snapshots synchronized after workspace changes.
-
-Features
-
-- File change detection
-- Dirty region tracking
-- Dependency resolution
-- Incremental rebuilds
-- Patch generation
-- Patch application
-- Snapshot validation
-- Rollback support
-- Metrics
-- Synchronization diagnostics
-- Workspace event integration
-
----
-
-## Context Retrieval Engine
-
-Retrieves only the relevant context required by an AI provider.
-
-Capabilities
-
-- Symbol retrieval
-- Dependency expansion
-- Graph traversal
-- Architecture retrieval
-- Learning retrieval
-- Relationship retrieval
-- Ranking
-- Context compression
-- Token budgeting
-- Retrieval validation
-- Diagnostics
-- Caching
-
----
-
-## Query Engine
-
-Natural language querying over semantic snapshots.
-
-Supports
-
-- Symbol lookup
-- Architecture queries
-- Dependency analysis
-- Relationship exploration
-- Semantic search
-- Context-aware diagnostics
-
----
-
-## Autonomous Workflow Engine
-
-High-level orchestration engine.
-
-Workflow lifecycle
+Project Brain changes the workflow:
 
 ```
-Planning
-    ↓
-Scheduling
-    ↓
-Execution
-    ↓
-Validation
-    ↓
-Repair
-    ↓
-Learning
-    ↓
-Reporting
+User Question
+      ↓
+Brain MCP
+      ↓
+Semantic Retrieval
+      ↓
+Answer
 ```
 
-Capabilities
+No repository exploration.
 
-- Workflow planning
-- Dependency scheduling
-- Execution orchestration
-- Checkpointing
-- Journaling
-- Recovery
-- Cancellation
-- Resume
-- Diagnostics
-- Metrics
-- Final reports
+No wasted tokens.
+
+Much faster responses.
 
 ---
 
-## Autonomous Runtime
+# Features
 
-Low-level execution engine responsible for running engineering tasks.
+✅ Semantic indexing
 
-Features
+✅ Dependency graph generation
 
-- Dependency-aware execution
-- Parallel execution
-- Automatic retries
-- Automatic validation
-- Automatic repair loops
-- Incremental synchronization
-- Workspace transactions
-- Checkpoint recovery
-- Metrics tracking
-- Failure analysis
+✅ Symbol analysis
 
-Execution loop
+✅ Architecture extraction
 
+✅ Semantic memory
+
+✅ Context retrieval
+
+✅ MCP server
+
+✅ Automatic workspace instructions
+
+✅ AI IDE integration
+
+---
+
+# Supported AI IDEs
+
+| IDE | Status |
+|------|--------|
+| Antigravity IDE | ✅ |
+| OpenCode | ✅ |
+| Claude Code | ✅ |
+| Continue | ✅ |
+| Cursor | 🚧 |
+| VS Code MCP | 🚧 |
+
+---
+
+# Installation
+
+```bash
+npm install -g project-brain
 ```
-Execute
-   ↓
-Validate
-   ↓
-Repair
-   ↓
-Retry
-   ↓
-Complete
+
+or
+
+```bash
+git clone https://github.com/YOUR_USERNAME/project-brain
+
+cd project-brain
+
+npm install
+
+npm run build
 ```
 
 ---
 
-## Workspace Engine
+# Quick Start
 
-Atomic transactional filesystem layer.
+## 1. Initialize Brain
 
-Features
+Inside your project:
 
-- Atomic commits
-- Rollback
-- Patch generation
-- File validation
-- Transaction journals
-- Lock manager
-- Workspace events
-- Runtime artifact application
-- Diagnostics
-
----
-
-## Shared Memory
-
-Persistent collaborative memory shared between autonomous agents.
-
-Supports
-
-### Agent Registry
-
-- Registration
-- Sessions
-- Lifecycle management
-
-### Blackboard
-
-- Observations
-- Findings
-- Facts
-- Warnings
-- Issues
-
-### Collaboration
-
-- Task assignment
-- Task claiming
-- Task completion
-- Dependency barriers
-
-### Consensus
-
-- Proposal creation
-- Voting
-- Finalization
-
-### Conflict Resolution
-
-- Conflict detection
-- Resolution engine
-
-### Persistence
-
-- Snapshots
-- Restore
-- Timeline
-- Diagnostics
-- Metrics
-
----
-
-## Learning Engine
-
-Continuously improves future executions.
-
-Stores
-
-- Successful repairs
-- Failed executions
-- Provider effectiveness
-- Prompt evolution
-- Repair strategies
-
-Provides
-
-- Recommendations
-- Provider selection
-- Repair strategy suggestions
-
----
-
-## Provider Runtime
-
-Provider-independent execution layer.
-
-Designed for
-
-- Claude Code
-- OpenAI
-- Gemini
-- Local models
-- Future providers
-
-Project Brain itself contains no provider-specific engineering logic.
-
----
-
-# Core Features
-
-- Semantic repository understanding
-- Autonomous engineering workflows
-- Incremental context synchronization
-- Intelligent context retrieval
-- Dependency graph generation
-- Knowledge graph
-- Workspace transactions
-- Automatic validation
-- Automatic repair loops
-- Multi-agent collaboration
-- Shared memory
-- Consensus engine
-- Conflict detection
-- Learning engine
-- Recovery checkpoints
-- Journaling
-- Diagnostics
-- Metrics
-- Snapshot versioning
-- Rollback support
-- Incremental compilation
-- Provider abstraction
-
----
-
-# Build Progress
-
-| Build | Module | Status |
-|--------|--------|--------|
-| BUILD-048 | Workspace Engine | ✅ |
-| BUILD-049 | Query Engine | ✅ |
-| BUILD-050 | Shared Memory | ✅ |
-| BUILD-051 | Autonomous Runtime | ✅ |
-| BUILD-052 | Context Retrieval | ✅ |
-| BUILD-053 | Learning Engine | ✅ |
-| BUILD-054 | Context Compiler | ✅ |
-| BUILD-055 | Context Synchronization | ✅ |
-| BUILD-056 | Engineering Planner | ✅ |
-| BUILD-057 | Provider Runtime | ✅ |
-| BUILD-058 | Autonomous Workflow | ✅ |
-| BUILD-059 | CLI | 🚧 Planned |
-
----
-
-# Testing
-
-Current implemented test suites include:
-
-- Context Compiler
-- Context Synchronization
-- Context Retrieval
-- Shared Memory
-- Autonomous Workflow
-
-Latest milestone
-
-```
-35 / 35 Context Synchronization tests passed
+```bash
+brain init
 ```
 
-Additional suites validate individual subsystems and integration behavior.
+Creates:
+
+```
+.brain/
+```
+
+including the automatically generated
+
+```
+.brain/SKILL.md
+```
+
+used by AI IDEs.
 
 ---
 
-# Design Principles
+## 2. Compile Context
 
-- Provider agnostic
-- Deterministic
-- Incremental
-- Atomic
-- Event driven
-- Recoverable
-- Testable
-- Extensible
-- Zero hidden global state
-- Production-first architecture
+```bash
+brain compile
+```
+
+Brain analyzes:
+
+- files
+- imports
+- exports
+- symbols
+- architecture
+- dependencies
+- semantic relationships
+
+and generates the workspace index.
+
+---
+
+## 3. Install into your AI IDE
+
+Example:
+
+```bash
+brain install antigravity
+```
+
+or
+
+```bash
+brain install opencode
+```
+
+Brain automatically configures the MCP server.
+
+---
+
+## 4. Start Coding
+
+Your AI can now retrieve repository knowledge using Brain instead of repeatedly reading your code.
+
+---
+
+# MCP Tools
+
+Project Brain exposes high-level semantic tools.
+
+| Tool | Purpose |
+|------|----------|
+| get_context | Answer repository questions |
+| get_architecture | Explain the project architecture |
+| explain_file | Explain a file without reading it |
+| find_symbol | Find symbol usage |
+| find_dependencies | Dependency analysis |
+| search_memory | Semantic memory search |
+
+---
+
+# Example
+
+Instead of asking your AI:
+
+> "Read my project."
+
+Ask:
+
+> Explain the architecture.
+
+The AI calls:
+
+```
+brain.get_architecture
+```
+
+instead of scanning hundreds of files.
+
+---
+
+# AI Workflow
+
+Project Brain teaches AI assistants to follow this workflow:
+
+```
+User Question
+      │
+      ▼
+Brain MCP
+      │
+      ▼
+Semantic Context
+      │
+      ▼
+Need implementation?
+      │
+      ├── No → Answer immediately
+      │
+      └── Yes
+             │
+             ▼
+Read only the relevant files
+```
+
+---
+
+# Architecture
+
+```
+Repository
+     │
+     ▼
+brain compile
+     │
+     ▼
+Semantic Index
+     │
+     ▼
+MCP Server
+     │
+     ▼
+AI IDE
+```
 
 ---
 
@@ -392,57 +295,92 @@ Additional suites validate individual subsystems and integration behavior.
 
 ```
 packages/
-├── autonomous-workflow/
-├── context-compiler/
-├── context-retrieval/
-├── context-sync/
-├── engineering-planner/
-├── learning-engine/
-├── provider-execution/
-├── query-engine/
-├── shared-memory/
-├── workspace/
-└── ...
+    ai-gateway/
+    cli/
+    compiler/
+    context-retrieval/
+    dependency/
+    filesystem/
+    mcp-server/
+    provider-bridge/
+    runtime/
+    workspace/
+```
 
-dist/
-├── autonomous-workflow/
-├── context-retrieval/
-├── shared-memory/
-└── ...
+---
 
-.brain/
-├── context/
-├── workspace/
-├── workflows/
-├── knowledge/
-├── cache/
-└── ...
+# Commands
+
+Initialize
+
+```bash
+brain init
+```
+
+Compile
+
+```bash
+brain compile
+```
+
+Install
+
+```bash
+brain install antigravity
+```
+
+Inspect
+
+```bash
+brain inspect
+```
+
+Doctor
+
+```bash
+brain doctor
+```
+
+Stats
+
+```bash
+brain stats
 ```
 
 ---
 
 # Roadmap
 
-Upcoming milestones include:
-
-- BUILD-059 — Production CLI
-- Provider plugins
-- Distributed execution
-- Remote workspaces
-- Multi-repository knowledge graphs
-- IDE integrations
-- Web dashboard
-- Agent marketplace
-- Distributed multi-agent execution
-
----
-
-# Philosophy
-
-Project Brain is designed to become the operating system for autonomous software engineering—one that enables AI agents to understand, modify, validate, and evolve software systems safely, incrementally, and collaboratively.
+- [x] Context compiler
+- [x] MCP server
+- [x] Semantic retrieval
+- [x] Dependency graph
+- [x] Automatic SKILL.md
+- [x] Antigravity integration
+- [ ] VS Code extension
+- [ ] Cursor integration
+- [ ] Incremental indexing
+- [ ] Remote semantic index
+- [ ] Team knowledge sharing
 
 ---
 
-## License
+# Contributing
 
-MIT License
+Contributions are welcome.
+
+Please open an issue before submitting major changes.
+
+---
+
+# License
+
+MIT
+
+---
+
+<div align="center">
+
+Built with ❤️ for AI-assisted software development.
+
+</div>
