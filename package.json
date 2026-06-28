@@ -12,7 +12,8 @@
     "dev": "tsx packages/main.ts",
     "start": "node dist/main.js",
     "brain": "tsx packages/cli/cli.ts",
-    "test-cli": "tsx packages/test-cli.ts"
+    "test-cli": "tsx packages/test-cli.ts",
+    "test-skill": "tsx packages/test-skill-generation.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

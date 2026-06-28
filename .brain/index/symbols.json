@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T17:11:25.694Z",
+  "generatedAt": "2026-06-28T18:09:51.377Z",
   "symbols": [
     {
       "name": "hasCode",
@@ -55046,66 +55046,6 @@
       "line": 82
     },
     {
-      "name": "CompileOptions",
-      "kind": "interface",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 12
-    },
-    {
-      "name": "runCompile",
-      "kind": "function",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 18
-    },
-    {
-      "name": "compile",
-      "kind": "variable",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 23
-    },
-    {
-      "name": "spinner",
-      "kind": "variable",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 24
-    },
-    {
-      "name": "t0",
-      "kind": "variable",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 26
-    },
-    {
-      "name": "svc",
-      "kind": "variable",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 29
-    },
-    {
-      "name": "result",
-      "kind": "variable",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 30
-    },
-    {
-      "name": "ms",
-      "kind": "variable",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 35
-    },
-    {
-      "name": "err",
-      "kind": "variable",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 55
-    },
-    {
-      "name": "listener",
-      "kind": "variable",
-      "file": "packages/cli/commands/compile.ts",
-      "line": 66
-    },
-    {
       "name": "ConfigSubcmd",
       "kind": "type",
       "file": "packages/cli/commands/config.ts",
@@ -69276,42 +69216,6 @@
       "kind": "constructor",
       "file": "packages/filesystem/errors.ts",
       "line": 2
-    },
-    {
-      "name": "FileSystemService",
-      "kind": "class",
-      "file": "packages/filesystem/service.ts",
-      "line": 3
-    },
-    {
-      "name": "exists",
-      "kind": "method",
-      "file": "packages/filesystem/service.ts",
-      "line": 5
-    },
-    {
-      "name": "mkdir",
-      "kind": "method",
-      "file": "packages/filesystem/service.ts",
-      "line": 14
-    },
-    {
-      "name": "writeJson",
-      "kind": "method",
-      "file": "packages/filesystem/service.ts",
-      "line": 20
-    },
-    {
-      "name": "readJson",
-      "kind": "method",
-      "file": "packages/filesystem/service.ts",
-      "line": 28
-    },
-    {
-      "name": "raw",
-      "kind": "variable",
-      "file": "packages/filesystem/service.ts",
-      "line": 29
     },
     {
       "name": "WriteJsonOptions",
@@ -99544,174 +99448,6 @@
     {
       "name": "test",
       "kind": "function",
-      "file": "packages/test-mcp-server.ts",
-      "line": 6
-    },
-    {
-      "name": "err",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 10
-    },
-    {
-      "name": "runTests",
-      "kind": "function",
-      "file": "packages/test-mcp-server.ts",
-      "line": 17
-    },
-    {
-      "name": "tools",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 21
-    },
-    {
-      "name": "session",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 34
-    },
-    {
-      "name": "transport",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 45
-    },
-    {
-      "name": "server",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 46
-    },
-    {
-      "name": "response",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 48
-    },
-    {
-      "name": "res",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 55
-    },
-    {
-      "name": "transport",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 72
-    },
-    {
-      "name": "server",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 73
-    },
-    {
-      "name": "res",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 75
-    },
-    {
-      "name": "tel",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 90
-    },
-    {
-      "name": "token",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 98
-    },
-    {
-      "name": "transport",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 99
-    },
-    {
-      "name": "server",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 100
-    },
-    {
-      "name": "reqData",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 105
-    },
-    {
-      "name": "resPromise",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 121
-    },
-    {
-      "name": "req",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 122
-    },
-    {
-      "name": "data",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 132
-    },
-    {
-      "name": "res",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 141
-    },
-    {
-      "name": "err",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 145
-    },
-    {
-      "name": "tel",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 151
-    },
-    {
-      "name": "transport",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 159
-    },
-    {
-      "name": "server",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 160
-    },
-    {
-      "name": "initRes",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 163
-    },
-    {
-      "name": "initializedRes",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 174
-    },
-    {
-      "name": "shutdownRes",
-      "kind": "variable",
-      "file": "packages/test-mcp-server.ts",
-      "line": 181
-    },
-    {
-      "name": "test",
-      "kind": "function",
       "file": "packages/test-mcp-stdio-compliance.ts",
       "line": 7
     },
@@ -103332,66 +103068,6 @@
       "kind": "variable",
       "file": "packages/test-provider-installation-pipeline.ts",
       "line": 67
-    },
-    {
-      "name": "test",
-      "kind": "function",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 9
-    },
-    {
-      "name": "err",
-      "kind": "variable",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 13
-    },
-    {
-      "name": "runTests",
-      "kind": "function",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 20
-    },
-    {
-      "name": "claude",
-      "kind": "variable",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 25
-    },
-    {
-      "name": "aider",
-      "kind": "variable",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 32
-    },
-    {
-      "name": "claudeSession",
-      "kind": "variable",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 38
-    },
-    {
-      "name": "aiderSession",
-      "kind": "variable",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 44
-    },
-    {
-      "name": "provider",
-      "kind": "variable",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 51
-    },
-    {
-      "name": "req",
-      "kind": "variable",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 53
-    },
-    {
-      "name": "tel",
-      "kind": "variable",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "line": 64
     },
     {
       "name": "test",
@@ -107480,84 +107156,6 @@
       "line": 3
     },
     {
-      "name": "IWorkspaceService",
-      "kind": "interface",
-      "file": "packages/workspace/service.ts",
-      "line": 7
-    },
-    {
-      "name": "WorkspaceService",
-      "kind": "class",
-      "file": "packages/workspace/service.ts",
-      "line": 16
-    },
-    {
-      "name": "fs",
-      "kind": "property",
-      "file": "packages/workspace/service.ts",
-      "line": 18
-    },
-    {
-      "name": "constructor",
-      "kind": "constructor",
-      "file": "packages/workspace/service.ts",
-      "line": 20
-    },
-    {
-      "name": "exists",
-      "kind": "method",
-      "file": "packages/workspace/service.ts",
-      "line": 34
-    },
-    {
-      "name": "create",
-      "kind": "method",
-      "file": "packages/workspace/service.ts",
-      "line": 38
-    },
-    {
-      "name": "directories",
-      "kind": "variable",
-      "file": "packages/workspace/service.ts",
-      "line": 40
-    },
-    {
-      "name": "directory",
-      "kind": "variable",
-      "file": "packages/workspace/service.ts",
-      "line": 51
-    },
-    {
-      "name": "initialize",
-      "kind": "method",
-      "file": "packages/workspace/service.ts",
-      "line": 90
-    },
-    {
-      "name": "created",
-      "kind": "variable",
-      "file": "packages/workspace/service.ts",
-      "line": 92
-    },
-    {
-      "name": "validate",
-      "kind": "method",
-      "file": "packages/workspace/service.ts",
-      "line": 104
-    },
-    {
-      "name": "load",
-      "kind": "method",
-      "file": "packages/workspace/service.ts",
-      "line": 108
-    },
-    {
-      "name": "dispose",
-      "kind": "method",
-      "file": "packages/workspace/service.ts",
-      "line": 110
-    },
-    {
       "name": "WorkspaceOptions",
       "kind": "interface",
       "file": "packages/workspace/types.ts",
@@ -108702,6 +108300,900 @@
       "kind": "variable",
       "file": "scratch/test-query.ts",
       "line": 11
+    },
+    {
+      "name": "CompileOptions",
+      "kind": "interface",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 12
+    },
+    {
+      "name": "runCompile",
+      "kind": "function",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 18
+    },
+    {
+      "name": "ws",
+      "kind": "variable",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 23
+    },
+    {
+      "name": "compile",
+      "kind": "variable",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 28
+    },
+    {
+      "name": "spinner",
+      "kind": "variable",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 29
+    },
+    {
+      "name": "t0",
+      "kind": "variable",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 31
+    },
+    {
+      "name": "svc",
+      "kind": "variable",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 34
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 35
+    },
+    {
+      "name": "ms",
+      "kind": "variable",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 40
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 60
+    },
+    {
+      "name": "listener",
+      "kind": "variable",
+      "file": "packages/cli/commands/compile.ts",
+      "line": 71
+    },
+    {
+      "name": "FileSystemService",
+      "kind": "class",
+      "file": "packages/filesystem/service.ts",
+      "line": 3
+    },
+    {
+      "name": "exists",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 5
+    },
+    {
+      "name": "mkdir",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 14
+    },
+    {
+      "name": "writeJson",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 20
+    },
+    {
+      "name": "readJson",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 28
+    },
+    {
+      "name": "raw",
+      "kind": "variable",
+      "file": "packages/filesystem/service.ts",
+      "line": 29
+    },
+    {
+      "name": "readText",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 33
+    },
+    {
+      "name": "writeText",
+      "kind": "method",
+      "file": "packages/filesystem/service.ts",
+      "line": 37
+    },
+    {
+      "name": "test",
+      "kind": "function",
+      "file": "packages/test-mcp-server.ts",
+      "line": 6
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 10
+    },
+    {
+      "name": "runTests",
+      "kind": "function",
+      "file": "packages/test-mcp-server.ts",
+      "line": 17
+    },
+    {
+      "name": "tools",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 21
+    },
+    {
+      "name": "session",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 34
+    },
+    {
+      "name": "transport",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 45
+    },
+    {
+      "name": "server",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 46
+    },
+    {
+      "name": "response",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 48
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 55
+    },
+    {
+      "name": "transport",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 72
+    },
+    {
+      "name": "server",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 73
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 75
+    },
+    {
+      "name": "tel",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 90
+    },
+    {
+      "name": "token",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 98
+    },
+    {
+      "name": "transport",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 99
+    },
+    {
+      "name": "server",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 100
+    },
+    {
+      "name": "reqData",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 105
+    },
+    {
+      "name": "resPromise",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 121
+    },
+    {
+      "name": "req",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 122
+    },
+    {
+      "name": "data",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 132
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 141
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 145
+    },
+    {
+      "name": "data",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 149
+    },
+    {
+      "name": "tel",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 152
+    },
+    {
+      "name": "transport",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 160
+    },
+    {
+      "name": "server",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 161
+    },
+    {
+      "name": "initRes",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 164
+    },
+    {
+      "name": "initializedRes",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 175
+    },
+    {
+      "name": "shutdownRes",
+      "kind": "variable",
+      "file": "packages/test-mcp-server.ts",
+      "line": 182
+    },
+    {
+      "name": "test",
+      "kind": "function",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 9
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 13
+    },
+    {
+      "name": "runTests",
+      "kind": "function",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 20
+    },
+    {
+      "name": "claude",
+      "kind": "variable",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 25
+    },
+    {
+      "name": "aider",
+      "kind": "variable",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 32
+    },
+    {
+      "name": "claudeSession",
+      "kind": "variable",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 38
+    },
+    {
+      "name": "aiderSession",
+      "kind": "variable",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 44
+    },
+    {
+      "name": "provider",
+      "kind": "variable",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 51
+    },
+    {
+      "name": "req",
+      "kind": "variable",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 53
+    },
+    {
+      "name": "tel",
+      "kind": "variable",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "line": 64
+    },
+    {
+      "name": "IWorkspaceService",
+      "kind": "interface",
+      "file": "packages/workspace/service.ts",
+      "line": 7
+    },
+    {
+      "name": "WorkspaceService",
+      "kind": "class",
+      "file": "packages/workspace/service.ts",
+      "line": 16
+    },
+    {
+      "name": "fs",
+      "kind": "property",
+      "file": "packages/workspace/service.ts",
+      "line": 18
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/service.ts",
+      "line": 20
+    },
+    {
+      "name": "exists",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 34
+    },
+    {
+      "name": "create",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 38
+    },
+    {
+      "name": "directories",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 40
+    },
+    {
+      "name": "directory",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 51
+    },
+    {
+      "name": "ensureSkillFile",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 90
+    },
+    {
+      "name": "generator",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 92
+    },
+    {
+      "name": "initialize",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 96
+    },
+    {
+      "name": "created",
+      "kind": "variable",
+      "file": "packages/workspace/service.ts",
+      "line": 98
+    },
+    {
+      "name": "validate",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 112
+    },
+    {
+      "name": "load",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 116
+    },
+    {
+      "name": "dispose",
+      "kind": "method",
+      "file": "packages/workspace/service.ts",
+      "line": 118
+    },
+    {
+      "name": "CLI",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 7
+    },
+    {
+      "name": "run",
+      "kind": "function",
+      "file": "packages/test-skill-generation.ts",
+      "line": 9
+    },
+    {
+      "name": "runJson",
+      "kind": "function",
+      "file": "packages/test-skill-generation.ts",
+      "line": 13
+    },
+    {
+      "name": "out",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 14
+    },
+    {
+      "name": "test",
+      "kind": "function",
+      "file": "packages/test-skill-generation.ts",
+      "line": 18
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 22
+    },
+    {
+      "name": "runTests",
+      "kind": "function",
+      "file": "packages/test-skill-generation.ts",
+      "line": 29
+    },
+    {
+      "name": "tmpDir",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 32
+    },
+    {
+      "name": "skillPath",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 33
+    },
+    {
+      "name": "content",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 43
+    },
+    {
+      "name": "initialContent",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 63
+    },
+    {
+      "name": "firstCompileContent",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 66
+    },
+    {
+      "name": "secondCompileContent",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 70
+    },
+    {
+      "name": "content",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 82
+    },
+    {
+      "name": "userEdit",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 88
+    },
+    {
+      "name": "content",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 100
+    },
+    {
+      "name": "fsSvc",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 110
+    },
+    {
+      "name": "generator",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 111
+    },
+    {
+      "name": "body",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 113
+    },
+    {
+      "name": "tools",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 116
+    },
+    {
+      "name": "tool",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 117
+    },
+    {
+      "name": "tool",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 122
+    },
+    {
+      "name": "baseName",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 123
+    },
+    {
+      "name": "mockTool",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 137
+    },
+    {
+      "name": "execute",
+      "kind": "method",
+      "file": "packages/test-skill-generation.ts",
+      "line": 141
+    },
+    {
+      "name": "fsSvc",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 146
+    },
+    {
+      "name": "generator",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 147
+    },
+    {
+      "name": "localSkillPath",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 150
+    },
+    {
+      "name": "content",
+      "kind": "variable",
+      "file": "packages/test-skill-generation.ts",
+      "line": 157
+    },
+    {
+      "name": "ToolDoc",
+      "kind": "interface",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 5
+    },
+    {
+      "name": "TOOL_DOCS",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 14
+    },
+    {
+      "name": "WorkspaceSkillGenerator",
+      "kind": "class",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 83
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 84
+    },
+    {
+      "name": "generateHeaderSection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 93
+    },
+    {
+      "name": "generateOverviewSection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 103
+    },
+    {
+      "name": "generateOperatingProcedureSection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 110
+    },
+    {
+      "name": "getToolLink",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 111
+    },
+    {
+      "name": "found",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 112
+    },
+    {
+      "name": "generateRulesSection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 200
+    },
+    {
+      "name": "generateRepositoryPolicySection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 211
+    },
+    {
+      "name": "generateMCPToolsSection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 220
+    },
+    {
+      "name": "md",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 221
+    },
+    {
+      "name": "tool",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 224
+    },
+    {
+      "name": "meta",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 225
+    },
+    {
+      "name": "item",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 239
+    },
+    {
+      "name": "item",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 244
+    },
+    {
+      "name": "generateDecisionTreeSection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 253
+    },
+    {
+      "name": "getToolLink",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 254
+    },
+    {
+      "name": "found",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 255
+    },
+    {
+      "name": "generateWorkflowExamplesSection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 274
+    },
+    {
+      "name": "getToolLink",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 275
+    },
+    {
+      "name": "found",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 276
+    },
+    {
+      "name": "generateEfficiencySection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 309
+    },
+    {
+      "name": "getToolLink",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 310
+    },
+    {
+      "name": "found",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 311
+    },
+    {
+      "name": "generateFAQSection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 333
+    },
+    {
+      "name": "generateFooterSection",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 347
+    },
+    {
+      "name": "getTemplateBody",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 351
+    },
+    {
+      "name": "tools",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 353
+    },
+    {
+      "name": "body",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 355
+    },
+    {
+      "name": "calculateHash",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 369
+    },
+    {
+      "name": "ensureSkillFile",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 373
+    },
+    {
+      "name": "targetPath",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 374
+    },
+    {
+      "name": "body",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 375
+    },
+    {
+      "name": "currentHash",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 376
+    },
+    {
+      "name": "newFileContent",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 377
+    },
+    {
+      "name": "fileExists",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 379
+    },
+    {
+      "name": "existingContent",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 385
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 386
+    },
+    {
+      "name": "calculatedExistingHash",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 393
+    },
+    {
+      "name": "parseFrontmatter",
+      "kind": "method",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 400
+    },
+    {
+      "name": "trimmed",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 401
+    },
+    {
+      "name": "parts",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 405
+    },
+    {
+      "name": "yaml",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 409
+    },
+    {
+      "name": "body",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 410
+    },
+    {
+      "name": "hashMatch",
+      "kind": "variable",
+      "file": "packages/workspace/skill-generator.ts",
+      "line": 411
     }
   ]
 }

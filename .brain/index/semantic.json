@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T17:11:26.526Z",
+  "generatedAt": "2026-06-28T18:09:51.667Z",
   "entries": [
     {
       "id": ".agent/skills/impeccable/scripts/context-signals.mjs::hasCode",
@@ -80620,88 +80620,6 @@
       "weight": 100
     },
     {
-      "id": "packages/cli/commands/compile.ts::CompileOptions",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "compile",
-        "options"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/cli/commands/compile.ts::runCompile",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "run",
-        "compile"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/cli/commands/compile.ts::compile",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "compile"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/cli/commands/compile.ts::spinner",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "spinner"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/cli/commands/compile.ts::t0",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "t0"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/cli/commands/compile.ts::svc",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "svc"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/cli/commands/compile.ts::result",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "result"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/cli/commands/compile.ts::ms",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "ms"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/cli/commands/compile.ts::err",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "err"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/cli/commands/compile.ts::listener",
-      "file": "packages/cli/commands/compile.ts",
-      "terms": [
-        "listener"
-      ],
-      "weight": 100
-    },
-    {
       "id": "packages/cli/commands/config.ts::ConfigSubcmd",
       "file": "packages/cli/commands/config.ts",
       "terms": [
@@ -100976,58 +100894,6 @@
       "file": "packages/filesystem/errors.ts",
       "terms": [
         "constructor"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/filesystem/service.ts::FileSystemService",
-      "file": "packages/filesystem/service.ts",
-      "terms": [
-        "file",
-        "system",
-        "service"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/filesystem/service.ts::exists",
-      "file": "packages/filesystem/service.ts",
-      "terms": [
-        "exists"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/filesystem/service.ts::mkdir",
-      "file": "packages/filesystem/service.ts",
-      "terms": [
-        "mkdir"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/filesystem/service.ts::writeJson",
-      "file": "packages/filesystem/service.ts",
-      "terms": [
-        "write",
-        "json"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/filesystem/service.ts::readJson",
-      "file": "packages/filesystem/service.ts",
-      "terms": [
-        "read",
-        "json"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/filesystem/service.ts::raw",
-      "file": "packages/filesystem/service.ts",
-      "terms": [
-        "raw"
       ],
       "weight": 100
     },
@@ -144204,236 +144070,6 @@
       "weight": 100
     },
     {
-      "id": "packages/test-mcp-server.ts::test",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "test"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::err",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "err"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::runTests",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "run",
-        "tests"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::tools",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "tools"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::session",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "session"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::transport",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "transport"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::server",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "server"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::response",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "response"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::res",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "res"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::transport",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "transport"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::server",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "server"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::res",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "res"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::tel",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "tel"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::token",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "token"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::transport",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "transport"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::server",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "server"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::reqData",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "req",
-        "data"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::resPromise",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "res",
-        "promise"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::req",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "req"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::data",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "data"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::res",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "res"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::err",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "err"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::tel",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "tel"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::transport",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "transport"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::server",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "server"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::initRes",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "init",
-        "res"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::initializedRes",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "initialized",
-        "res"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-mcp-server.ts::shutdownRes",
-      "file": "packages/test-mcp-server.ts",
-      "terms": [
-        "shutdown",
-        "res"
-      ],
-      "weight": 100
-    },
-    {
       "id": "packages/test-mcp-stdio-compliance.ts::test",
       "file": "packages/test-mcp-stdio-compliance.ts",
       "terms": [
@@ -149591,89 +149227,6 @@
       "file": "packages/test-provider-installation-pipeline.ts",
       "terms": [
         "diag"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::test",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "test"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::err",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "err"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::runTests",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "run",
-        "tests"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::claude",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "claude"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::aider",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "aider"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::claudeSession",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "claude",
-        "session"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::aiderSession",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "aider",
-        "session"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::provider",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "provider"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::req",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "req"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts::tel",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "terms": [
-        "tel"
       ],
       "weight": 100
     },
@@ -155422,112 +154975,6 @@
       "weight": 100
     },
     {
-      "id": "packages/workspace/service.ts::IWorkspaceService",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "workspace",
-        "service"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::WorkspaceService",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "workspace",
-        "service"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::fs",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "fs"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::constructor",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "constructor"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::exists",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "exists"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::create",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "create"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::directories",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "directories"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::directory",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "directory"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::initialize",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "initialize"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::created",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "created"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::validate",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "validate"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::load",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "load"
-      ],
-      "weight": 100
-    },
-    {
-      "id": "packages/workspace/service.ts::dispose",
-      "file": "packages/workspace/service.ts",
-      "terms": [
-        "dispose"
-      ],
-      "weight": 100
-    },
-    {
       "id": "packages/workspace/types.ts::WorkspaceOptions",
       "file": "packages/workspace/types.ts",
       "terms": [
@@ -157174,6 +156621,1289 @@
       "file": "scratch/test-query.ts",
       "terms": [
         "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::CompileOptions",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "compile",
+        "options"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::runCompile",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "run",
+        "compile"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::ws",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "ws"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::compile",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "compile"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::spinner",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "spinner"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::t0",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "t0"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::svc",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "svc"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::result",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::ms",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "ms"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::err",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/cli/commands/compile.ts::listener",
+      "file": "packages/cli/commands/compile.ts",
+      "terms": [
+        "listener"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/service.ts::FileSystemService",
+      "file": "packages/filesystem/service.ts",
+      "terms": [
+        "file",
+        "system",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/service.ts::exists",
+      "file": "packages/filesystem/service.ts",
+      "terms": [
+        "exists"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/service.ts::mkdir",
+      "file": "packages/filesystem/service.ts",
+      "terms": [
+        "mkdir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/service.ts::writeJson",
+      "file": "packages/filesystem/service.ts",
+      "terms": [
+        "write",
+        "json"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/service.ts::readJson",
+      "file": "packages/filesystem/service.ts",
+      "terms": [
+        "read",
+        "json"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/service.ts::raw",
+      "file": "packages/filesystem/service.ts",
+      "terms": [
+        "raw"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/service.ts::readText",
+      "file": "packages/filesystem/service.ts",
+      "terms": [
+        "read",
+        "text"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/filesystem/service.ts::writeText",
+      "file": "packages/filesystem/service.ts",
+      "terms": [
+        "write",
+        "text"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::test",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "test"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::err",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::runTests",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "run",
+        "tests"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::tools",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "tools"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::session",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "session"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::transport",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "transport"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::server",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "server"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::response",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "response"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::res",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::transport",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "transport"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::server",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "server"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::res",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::tel",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "tel"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::token",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "token"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::transport",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "transport"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::server",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "server"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::reqData",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "req",
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::resPromise",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "res",
+        "promise"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::req",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "req"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::data",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::res",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::err",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::data",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "data"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::tel",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "tel"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::transport",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "transport"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::server",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "server"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::initRes",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "init",
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::initializedRes",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "initialized",
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-mcp-server.ts::shutdownRes",
+      "file": "packages/test-mcp-server.ts",
+      "terms": [
+        "shutdown",
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::test",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "test"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::err",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::runTests",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "run",
+        "tests"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::claude",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "claude"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::aider",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "aider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::claudeSession",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "claude",
+        "session"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::aiderSession",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "aider",
+        "session"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::provider",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "provider"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::req",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "req"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts::tel",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "terms": [
+        "tel"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::IWorkspaceService",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "workspace",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::WorkspaceService",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "workspace",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::fs",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "fs"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::constructor",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::exists",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "exists"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::create",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "create"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::directories",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "directories"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::directory",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "directory"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::ensureSkillFile",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "ensure",
+        "skill",
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::generator",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "generator"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::initialize",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "initialize"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::created",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "created"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::validate",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "validate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::load",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "load"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/service.ts::dispose",
+      "file": "packages/workspace/service.ts",
+      "terms": [
+        "dispose"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::CLI",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "cli"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::run",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "run"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::runJson",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "run",
+        "json"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::out",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "out"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::test",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "test"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::err",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::runTests",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "run",
+        "tests"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::tmpDir",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "tmp",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::skillPath",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "skill",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::content",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::initialContent",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "initial",
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::firstCompileContent",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "first",
+        "compile",
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::secondCompileContent",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "second",
+        "compile",
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::content",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::userEdit",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "user",
+        "edit"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::content",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::fsSvc",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "fs",
+        "svc"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::generator",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "generator"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::body",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "body"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::tools",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "tools"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::tool",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "tool"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::tool",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "tool"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::baseName",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "base",
+        "name"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::mockTool",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "mock",
+        "tool"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::execute",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "execute"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::fsSvc",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "fs",
+        "svc"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::generator",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "generator"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::localSkillPath",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "local",
+        "skill",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/test-skill-generation.ts::content",
+      "file": "packages/test-skill-generation.ts",
+      "terms": [
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::ToolDoc",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "tool",
+        "doc"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::TOOL_DOCS",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "tool",
+        "docs"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::WorkspaceSkillGenerator",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "workspace",
+        "skill",
+        "generator"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::constructor",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateHeaderSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "header",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateOverviewSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "overview",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateOperatingProcedureSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "operating",
+        "procedure",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::getToolLink",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "get",
+        "tool",
+        "link"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::found",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "found"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateRulesSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "rules",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateRepositoryPolicySection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "repository",
+        "policy",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateMCPToolsSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "mcp",
+        "tools",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::md",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "md"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::tool",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "tool"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::meta",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "meta"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::item",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "item"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::item",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "item"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateDecisionTreeSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "decision",
+        "tree",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::getToolLink",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "get",
+        "tool",
+        "link"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::found",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "found"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateWorkflowExamplesSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "workflow",
+        "examples",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::getToolLink",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "get",
+        "tool",
+        "link"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::found",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "found"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateEfficiencySection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "efficiency",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::getToolLink",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "get",
+        "tool",
+        "link"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::found",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "found"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateFAQSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "faq",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::generateFooterSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "generate",
+        "footer",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::getTemplateBody",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "get",
+        "template",
+        "body"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::tools",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "tools"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::body",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "body"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::calculateHash",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "calculate",
+        "hash"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::ensureSkillFile",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "ensure",
+        "skill",
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::targetPath",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "target",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::body",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "body"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::currentHash",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "current",
+        "hash"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::newFileContent",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "new",
+        "file",
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::fileExists",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "file",
+        "exists"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::existingContent",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "existing",
+        "content"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::parsed",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "parsed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::calculatedExistingHash",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "calculated",
+        "existing",
+        "hash"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::parseFrontmatter",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "parse",
+        "frontmatter"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::trimmed",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "trimmed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::parts",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "parts"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::yaml",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "yaml"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::body",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "body"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts::hashMatch",
+      "file": "packages/workspace/skill-generator.ts",
+      "terms": [
+        "hash",
+        "match"
       ],
       "weight": 100
     }

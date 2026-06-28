@@ -126,7 +126,8 @@ async function runTests() {
             console.error("MCP HTTP Response was:", res);
             throw err;
         }
-        assert(res.result.confidence > 0.5);
+        const data = JSON.parse(res.result.content[1].text);
+        assert(data.confidence > 0.5);
         const tel = McpServer.getTelemetry();
         assert(tel.requestsServed === 1);
         assert(tel.authenticationFailures === 0);

@@ -9,8 +9,8 @@
     {
       "path": "budget.ts",
       "extension": ".ts",
-      "size": 3702,
-      "modifiedAt": "2026-06-27T15:10:32.778Z"
+      "size": 3623,
+      "modifiedAt": "2026-06-28T11:58:47.270Z"
     },
     {
       "path": "cache.ts",
@@ -69,8 +69,8 @@
     {
       "path": "packages/context-retrieval/.opencode/opencode.json",
       "extension": ".json",
-      "size": 160,
-      "modifiedAt": "2026-06-28T11:15:15.775Z"
+      "size": 15,
+      "modifiedAt": "2026-06-28T11:15:24.236Z"
     },
     {
       "path": "packages/context-retrieval/.opencode/opencode.json.backup-1782645237438",
@@ -111,8 +111,8 @@
     {
       "path": "service.ts",
       "extension": ".ts",
-      "size": 13718,
-      "modifiedAt": "2026-06-28T10:50:33.275Z"
+      "size": 14382,
+      "modifiedAt": "2026-06-28T11:51:21.782Z"
     },
     {
       "path": "symbol-retriever.ts",

@@ -10,11 +10,38 @@
   },
   "antigravity": {
     "providerId": "antigravity",
+    "installationVerified": false,
+    "configurationVerified": false,
+    "connectivityVerified": false,
+    "toolVerificationPassed": false,
+    "behaviorVerificationPassed": false,
+    "verificationTimestamp": "2026-06-28T18:05:46.341Z"
+  },
+  "claude": {
+    "providerId": "claude",
     "installationVerified": true,
     "configurationVerified": true,
     "connectivityVerified": false,
     "toolVerificationPassed": false,
     "behaviorVerificationPassed": false,
-    "verificationTimestamp": "2026-06-28T17:11:35.978Z"
+    "verificationTimestamp": "2026-06-28T17:43:30.690Z"
+  },
+  "codex": {
+    "providerId": "codex",
+    "installationVerified": true,
+    "configurationVerified": true,
+    "connectivityVerified": false,
+    "toolVerificationPassed": false,
+    "behaviorVerificationPassed": false,
+    "verificationTimestamp": "2026-06-28T17:43:30.694Z"
+  },
+  "continue": {
+    "providerId": "continue",
+    "installationVerified": true,
+    "configurationVerified": true,
+    "connectivityVerified": false,
+    "toolVerificationPassed": false,
+    "behaviorVerificationPassed": false,
+    "verificationTimestamp": "2026-06-28T17:43:30.695Z"
   }
 }

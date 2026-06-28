@@ -8,6 +8,10 @@ import { Spinner } from "../utils/spinner.js";
 import { requireBrainInitialized } from "../utils/paths.js";
 export async function runCompile(opts, cmdOpts) {
     requireBrainInitialized(opts.workspace);
+    // Ensure SKILL.md exists
+    const { WorkspaceService } = await import("../../workspace/service.js");
+    const ws = new WorkspaceService({ root: opts.workspace });
+    await ws.ensureSkillFile();
     const { ContextCompilerService } = await import("../../context-compiler/service.js");
     const compile = async () => {
         const spinner = new Spinner("Compiling context...");

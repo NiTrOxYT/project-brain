@@ -22,3 +22,17 @@
 {"timestamp":"2026-06-28T17:04:09.702Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
 {"timestamp":"2026-06-28T17:04:09.702Z","providerId":"antigravity","event":"configuration restored","details":{}}
 {"timestamp":"2026-06-28T17:11:35.978Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:43:30.690Z","providerId":"claude","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:43:30.692Z","providerId":"claude","event":"configuration restored","details":{"rollback":true}}
+{"timestamp":"2026-06-28T17:43:30.694Z","providerId":"codex","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:43:30.695Z","providerId":"continue","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:43:42.089Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:43:42.091Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:43:42.092Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:43:42.093Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T17:43:42.094Z","providerId":"antigravity","event":"configuration restored","details":{}}
+{"timestamp":"2026-06-28T18:05:46.336Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T18:05:46.338Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T18:05:46.339Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T18:05:46.340Z","providerId":"antigravity","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T18:05:46.341Z","providerId":"antigravity","event":"configuration restored","details":{}}

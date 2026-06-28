@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T11:15:20.181Z",
+  "generatedAt": "2026-06-28T18:05:46.050Z",
   "relationships": [
     {
       "source": "ArchitectureRetriever.retrieve",
@@ -381,21 +381,63 @@
     },
     {
       "source": "RetrievalBudgeter.allocate",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 64
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 64
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
       "target": "allocatedSections",
       "type": "references",
       "file": "budget.ts",
-      "line": 66
+      "line": 65
     },
     {
       "source": "RetrievalBudgeter.allocate",
       "target": "s",
       "type": "references",
       "file": "budget.ts",
-      "line": 66
+      "line": 65
     },
     {
       "source": "RetrievalBudgeter.allocate",
       "target": "runningTokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 66
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 66
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "addActual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 67
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 67
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "s",
       "type": "references",
       "file": "budget.ts",
       "line": 67
@@ -409,87 +451,59 @@
     },
     {
       "source": "RetrievalBudgeter.allocate",
-      "target": "addActual",
-      "type": "references",
-      "file": "budget.ts",
-      "line": 68
-    },
-    {
-      "source": "RetrievalBudgeter.allocate",
-      "target": "actual",
-      "type": "references",
-      "file": "budget.ts",
-      "line": 68
-    },
-    {
-      "source": "RetrievalBudgeter.allocate",
-      "target": "s",
-      "type": "references",
-      "file": "budget.ts",
-      "line": 68
-    },
-    {
-      "source": "RetrievalBudgeter.allocate",
-      "target": "tokens",
-      "type": "references",
-      "file": "budget.ts",
-      "line": 68
-    },
-    {
-      "source": "RetrievalBudgeter.allocate",
       "target": "allocatedSections",
       "type": "references",
       "file": "budget.ts",
-      "line": 74
+      "line": 73
     },
     {
       "source": "RetrievalBudgeter.allocate",
       "target": "s",
       "type": "references",
       "file": "budget.ts",
-      "line": 74
+      "line": 73
     },
     {
       "source": "RetrievalBudgeter.allocate",
       "target": "runningTokens",
       "type": "references",
       "file": "budget.ts",
-      "line": 75
+      "line": 74
     },
     {
       "source": "RetrievalBudgeter.allocate",
       "target": "tokens",
       "type": "references",
       "file": "budget.ts",
-      "line": 75
+      "line": 74
     },
     {
       "source": "RetrievalBudgeter.allocate",
       "target": "addActual",
       "type": "references",
       "file": "budget.ts",
-      "line": 76
+      "line": 75
     },
     {
       "source": "RetrievalBudgeter.allocate",
       "target": "actual",
       "type": "references",
       "file": "budget.ts",
-      "line": 76
+      "line": 75
     },
     {
       "source": "RetrievalBudgeter.allocate",
       "target": "s",
       "type": "references",
       "file": "budget.ts",
-      "line": 76
+      "line": 75
     },
     {
       "source": "RetrievalBudgeter.allocate",
       "target": "tokens",
       "type": "references",
       "file": "budget.ts",
-      "line": 76
+      "line": 75
     },
     {
       "source": "RetrievalBudgeter.allocate",
@@ -6121,21 +6135,7 @@
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "ranker",
-      "type": "references",
-      "file": "service.ts",
-      "line": 202
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "rank",
-      "type": "references",
-      "file": "service.ts",
-      "line": 202
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "snapshot",
+      "target": "expandedFiles",
       "type": "references",
       "file": "service.ts",
       "line": 203
@@ -6149,126 +6149,119 @@
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "parsed",
+      "target": "snapshot",
       "type": "references",
       "file": "service.ts",
       "line": 205
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "targetFiles",
+      "target": "files",
       "type": "references",
       "file": "service.ts",
       "line": 205
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "parsed",
+      "target": "ranker",
       "type": "references",
       "file": "service.ts",
       "line": 206
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "targetSymbols",
+      "target": "rank",
       "type": "references",
       "file": "service.ts",
       "line": 206
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "learning",
+      "target": "snapshot",
       "type": "references",
       "file": "service.ts",
       "line": 207
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "stages",
+      "target": "filesToRank",
+      "type": "references",
+      "file": "service.ts",
+      "line": 208
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
       "type": "references",
       "file": "service.ts",
       "line": 209
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "rankStart",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 209
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
+      "type": "references",
+      "file": "service.ts",
+      "line": 210
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 210
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "learning",
       "type": "references",
       "file": "service.ts",
       "line": 211
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "RetrievalSection",
+      "target": "stages",
       "type": "references",
       "file": "service.ts",
-      "line": 216
+      "line": 213
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "snapshot",
+      "target": "rankStart",
       "type": "references",
       "file": "service.ts",
-      "line": 217
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "snapshot",
-      "type": "references",
-      "file": "service.ts",
-      "line": 220
+      "line": 215
     },
     {
       "source": "ContextRetrievalService.retrieve",
       "target": "RetrievalSection",
+      "type": "references",
+      "file": "service.ts",
+      "line": 221
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
       "type": "references",
       "file": "service.ts",
       "line": 222
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "sec",
-      "type": "references",
-      "file": "service.ts",
-      "line": 224
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "matches",
-      "type": "references",
-      "file": "service.ts",
-      "line": 225
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "reason",
-      "type": "references",
-      "file": "service.ts",
-      "line": 226
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "sec",
+      "target": "snapshot",
       "type": "references",
       "file": "service.ts",
       "line": 227
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "symbols",
-      "type": "references",
-      "file": "service.ts",
-      "line": 227
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "matches",
-      "type": "references",
-      "file": "service.ts",
-      "line": 228
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "reason",
+      "target": "RetrievalSection",
       "type": "references",
       "file": "service.ts",
       "line": 229
@@ -6278,91 +6271,56 @@
       "target": "sec",
       "type": "references",
       "file": "service.ts",
-      "line": 230
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "architecture",
-      "type": "references",
-      "file": "service.ts",
-      "line": 230
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "matches",
-      "type": "references",
-      "file": "service.ts",
       "line": 231
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "reason",
+      "target": "matches",
       "type": "references",
       "file": "service.ts",
       "line": 232
     },
     {
       "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
+      "type": "references",
+      "file": "service.ts",
+      "line": 233
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
       "target": "sec",
-      "type": "references",
-      "file": "service.ts",
-      "line": 233
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "learning",
-      "type": "references",
-      "file": "service.ts",
-      "line": 233
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "matches",
       "type": "references",
       "file": "service.ts",
       "line": 234
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "reason",
-      "type": "references",
-      "file": "service.ts",
-      "line": 235
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "sec",
-      "type": "references",
-      "file": "service.ts",
-      "line": 236
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "sec",
-      "type": "references",
-      "file": "service.ts",
-      "line": 236
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
       "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 236
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
       "type": "references",
       "file": "service.ts",
       "line": 237
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "reason",
+      "target": "symbols",
       "type": "references",
       "file": "service.ts",
-      "line": 238
+      "line": 237
     },
     {
       "source": "ContextRetrievalService.retrieve",
       "target": "sec",
       "type": "references",
       "file": "service.ts",
-      "line": 239
+      "line": 238
     },
     {
       "source": "ContextRetrievalService.retrieve",
@@ -6380,7 +6338,21 @@
     },
     {
       "source": "ContextRetrievalService.retrieve",
+      "target": "architecture",
+      "type": "references",
+      "file": "service.ts",
+      "line": 241
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
       "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 242
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "learning",
       "type": "references",
       "file": "service.ts",
       "line": 242
@@ -6401,28 +6373,49 @@
     },
     {
       "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 245
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 245
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
       "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 246
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
       "type": "references",
       "file": "service.ts",
       "line": 247
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "rawSections",
+      "target": "sec",
       "type": "references",
       "file": "service.ts",
       "line": 248
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "sec",
+      "target": "matches",
       "type": "references",
       "file": "service.ts",
       "line": 249
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "sec",
+      "target": "reason",
       "type": "references",
       "file": "service.ts",
       "line": 250
@@ -6436,682 +6429,731 @@
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "sec",
+      "target": "matches",
       "type": "references",
       "file": "service.ts",
       "line": 252
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "sec",
+      "target": "reason",
       "type": "references",
       "file": "service.ts",
       "line": 253
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "sec",
+      "target": "matches",
       "type": "references",
       "file": "service.ts",
-      "line": 254
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "reason",
-      "type": "references",
-      "file": "service.ts",
-      "line": 255
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "allocatedSections",
-      "type": "references",
-      "file": "service.ts",
-      "line": 262
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "budget",
-      "type": "references",
-      "file": "service.ts",
-      "line": 262
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "budgeter",
-      "type": "references",
-      "file": "service.ts",
-      "line": 262
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "allocate",
-      "type": "references",
-      "file": "service.ts",
-      "line": 262
+      "line": 256
     },
     {
       "source": "ContextRetrievalService.retrieve",
       "target": "rawSections",
       "type": "references",
       "file": "service.ts",
+      "line": 257
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 258
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 259
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 260
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 261
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 262
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
       "line": 263
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "stages",
+      "target": "reason",
       "type": "references",
       "file": "service.ts",
-      "line": 267
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "budgetStart",
-      "type": "references",
-      "file": "service.ts",
-      "line": 269
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "RetrievalPackage",
-      "type": "references",
-      "file": "service.ts",
-      "line": 274
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "snapshot",
-      "type": "references",
-      "file": "service.ts",
-      "line": 276
+      "line": 264
     },
     {
       "source": "ContextRetrievalService.retrieve",
       "target": "allocatedSections",
       "type": "references",
       "file": "service.ts",
-      "line": 277
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "candidates",
-      "type": "references",
-      "file": "service.ts",
-      "line": 278
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "graph",
-      "type": "references",
-      "file": "service.ts",
-      "line": 279
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "symbols",
-      "type": "references",
-      "file": "service.ts",
-      "line": 280
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "dependencies",
-      "type": "references",
-      "file": "service.ts",
-      "line": 281
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "snapshot",
-      "type": "references",
-      "file": "service.ts",
-      "line": 281
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "dependencies",
-      "type": "references",
-      "file": "service.ts",
-      "line": 281
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "expandedFiles",
-      "type": "references",
-      "file": "service.ts",
-      "line": 282
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "expandedFiles",
-      "type": "references",
-      "file": "service.ts",
-      "line": 282
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "relationships",
-      "type": "references",
-      "file": "service.ts",
-      "line": 284
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "compressor",
-      "type": "references",
-      "file": "service.ts",
-      "line": 289
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "compress",
-      "type": "references",
-      "file": "service.ts",
-      "line": 289
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "uncompressedPkg",
-      "type": "references",
-      "file": "service.ts",
-      "line": 289
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "stages",
-      "type": "references",
-      "file": "service.ts",
-      "line": 290
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "compressStart",
-      "type": "references",
-      "file": "service.ts",
-      "line": 292
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "validator",
-      "type": "references",
-      "file": "service.ts",
-      "line": 298
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "validate",
-      "type": "references",
-      "file": "service.ts",
-      "line": 298
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "compressedPkg",
-      "type": "references",
-      "file": "service.ts",
-      "line": 298
+      "line": 272
     },
     {
       "source": "ContextRetrievalService.retrieve",
       "target": "budget",
       "type": "references",
       "file": "service.ts",
-      "line": 298
+      "line": 272
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "budgeter",
+      "type": "references",
+      "file": "service.ts",
+      "line": 272
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "allocate",
+      "type": "references",
+      "file": "service.ts",
+      "line": 272
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "rawSections",
+      "type": "references",
+      "file": "service.ts",
+      "line": 273
     },
     {
       "source": "ContextRetrievalService.retrieve",
       "target": "stages",
       "type": "references",
       "file": "service.ts",
-      "line": 299
+      "line": 277
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "valStart",
+      "target": "budgetStart",
       "type": "references",
       "file": "service.ts",
-      "line": 301
+      "line": 279
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "validation",
+      "target": "RetrievalPackage",
       "type": "references",
       "file": "service.ts",
-      "line": 302
+      "line": 284
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "start",
+      "target": "snapshot",
       "type": "references",
       "file": "service.ts",
-      "line": 305
+      "line": 286
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "compressedPkg",
+      "target": "allocatedSections",
       "type": "references",
       "file": "service.ts",
-      "line": 306
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "s",
-      "type": "references",
-      "file": "service.ts",
-      "line": 306
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "RetrievalMetrics",
-      "type": "references",
-      "file": "service.ts",
-      "line": 308
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "duration",
-      "type": "references",
-      "file": "service.ts",
-      "line": 309
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "stages",
-      "type": "references",
-      "file": "service.ts",
-      "line": 310
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "expandedFiles",
-      "type": "references",
-      "file": "service.ts",
-      "line": 311
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "originalTokens",
-      "type": "references",
-      "file": "service.ts",
-      "line": 312
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "finalTokens",
-      "type": "references",
-      "file": "service.ts",
-      "line": 312
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "originalTokens",
-      "type": "references",
-      "file": "service.ts",
-      "line": 312
+      "line": 287
     },
     {
       "source": "ContextRetrievalService.retrieve",
       "target": "candidates",
       "type": "references",
       "file": "service.ts",
-      "line": 313
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "symbols",
-      "type": "references",
-      "file": "service.ts",
-      "line": 314
+      "line": 288
     },
     {
       "source": "ContextRetrievalService.retrieve",
       "target": "graph",
       "type": "references",
       "file": "service.ts",
-      "line": 315
+      "line": 289
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "edges",
+      "target": "symbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 290
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "dependencies",
+      "type": "references",
+      "file": "service.ts",
+      "line": 291
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 291
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "dependencies",
+      "type": "references",
+      "file": "service.ts",
+      "line": 291
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 292
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 292
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "relationships",
+      "type": "references",
+      "file": "service.ts",
+      "line": 294
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressor",
+      "type": "references",
+      "file": "service.ts",
+      "line": 299
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compress",
+      "type": "references",
+      "file": "service.ts",
+      "line": 299
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "uncompressedPkg",
+      "type": "references",
+      "file": "service.ts",
+      "line": 299
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 300
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 302
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "validator",
+      "type": "references",
+      "file": "service.ts",
+      "line": 308
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "validate",
+      "type": "references",
+      "file": "service.ts",
+      "line": 308
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressedPkg",
+      "type": "references",
+      "file": "service.ts",
+      "line": 308
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "budget",
+      "type": "references",
+      "file": "service.ts",
+      "line": 308
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 309
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "valStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 311
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "validation",
+      "type": "references",
+      "file": "service.ts",
+      "line": 312
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "start",
       "type": "references",
       "file": "service.ts",
       "line": 315
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "architecture",
+      "target": "compressedPkg",
       "type": "references",
       "file": "service.ts",
       "line": 316
     },
     {
       "source": "ContextRetrievalService.retrieve",
+      "target": "s",
+      "type": "references",
+      "file": "service.ts",
+      "line": 316
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "RetrievalMetrics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 318
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "duration",
+      "type": "references",
+      "file": "service.ts",
+      "line": 319
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 320
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 321
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "service.ts",
+      "line": 322
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
       "target": "finalTokens",
       "type": "references",
       "file": "service.ts",
-      "line": 317
+      "line": 322
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "cache",
-      "type": "references",
-      "file": "service.ts",
-      "line": 321
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "put",
-      "type": "references",
-      "file": "service.ts",
-      "line": 321
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "snapshot",
-      "type": "references",
-      "file": "service.ts",
-      "line": 321
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "compressedPkg",
-      "type": "references",
-      "file": "service.ts",
-      "line": 321
-    },
-    {
-      "source": "ContextRetrievalService.retrieve",
-      "target": "metricsTracker",
+      "target": "originalTokens",
       "type": "references",
       "file": "service.ts",
       "line": 322
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "record",
+      "target": "candidates",
       "type": "references",
       "file": "service.ts",
-      "line": 322
+      "line": 323
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "metrics",
+      "target": "symbols",
       "type": "references",
       "file": "service.ts",
-      "line": 322
+      "line": 324
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "compressedPkg",
+      "target": "graph",
       "type": "references",
       "file": "service.ts",
       "line": 325
     },
     {
       "source": "ContextRetrievalService.retrieve",
-      "target": "metrics",
+      "target": "edges",
+      "type": "references",
+      "file": "service.ts",
+      "line": 325
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "architecture",
       "type": "references",
       "file": "service.ts",
       "line": 326
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "finalTokens",
+      "type": "references",
+      "file": "service.ts",
+      "line": 327
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "cache",
+      "type": "references",
+      "file": "service.ts",
+      "line": 331
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "put",
+      "type": "references",
+      "file": "service.ts",
+      "line": 331
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 331
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressedPkg",
+      "type": "references",
+      "file": "service.ts",
+      "line": 331
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "metricsTracker",
+      "type": "references",
+      "file": "service.ts",
+      "line": 332
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "record",
+      "type": "references",
+      "file": "service.ts",
+      "line": 332
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "metrics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 332
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressedPkg",
+      "type": "references",
+      "file": "service.ts",
+      "line": 335
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "metrics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 336
     },
     {
       "source": "ContextRetrievalService.retrieveFiles",
       "target": "RetrievalStrategy",
       "type": "references",
       "file": "service.ts",
-      "line": 331
+      "line": 341
     },
     {
       "source": "ContextRetrievalService.retrieveFiles",
-      "target": "retrieve",
-      "type": "references",
-      "file": "service.ts",
-      "line": 332
-    },
-    {
-      "source": "ContextRetrievalService.retrieveFiles",
-      "target": "strategy",
-      "type": "references",
-      "file": "service.ts",
-      "line": 332
-    },
-    {
-      "source": "ContextRetrievalService.retrieveFiles",
-      "target": "res",
-      "type": "references",
-      "file": "service.ts",
-      "line": 333
-    },
-    {
-      "source": "ContextRetrievalService.retrieveFiles",
-      "target": "candidates",
-      "type": "references",
-      "file": "service.ts",
-      "line": 333
-    },
-    {
-      "source": "ContextRetrievalService.retrieveFiles",
-      "target": "c",
-      "type": "references",
-      "file": "service.ts",
-      "line": 333
-    },
-    {
-      "source": "ContextRetrievalService.retrieveSymbols",
-      "target": "retrieve",
-      "type": "references",
-      "file": "service.ts",
-      "line": 337
-    },
-    {
-      "source": "ContextRetrievalService.retrieveSymbols",
-      "target": "res",
-      "type": "references",
-      "file": "service.ts",
-      "line": 338
-    },
-    {
-      "source": "ContextRetrievalService.retrieveSymbols",
-      "target": "symbols",
-      "type": "references",
-      "file": "service.ts",
-      "line": 338
-    },
-    {
-      "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "retrieve",
       "type": "references",
       "file": "service.ts",
       "line": 342
     },
     {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "strategy",
+      "type": "references",
+      "file": "service.ts",
+      "line": 342
+    },
+    {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "res",
+      "type": "references",
+      "file": "service.ts",
+      "line": 343
+    },
+    {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "candidates",
+      "type": "references",
+      "file": "service.ts",
+      "line": 343
+    },
+    {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "c",
+      "type": "references",
+      "file": "service.ts",
+      "line": 343
+    },
+    {
+      "source": "ContextRetrievalService.retrieveSymbols",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 347
+    },
+    {
+      "source": "ContextRetrievalService.retrieveSymbols",
+      "target": "res",
+      "type": "references",
+      "file": "service.ts",
+      "line": 348
+    },
+    {
+      "source": "ContextRetrievalService.retrieveSymbols",
+      "target": "symbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 348
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 352
+    },
+    {
       "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "syncService",
       "type": "references",
       "file": "service.ts",
-      "line": 344
+      "line": 354
     },
     {
       "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "latestSnapshot",
       "type": "references",
       "file": "service.ts",
-      "line": 344
+      "line": 354
     },
     {
       "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "snapshot",
       "type": "references",
       "file": "service.ts",
-      "line": 345
+      "line": 355
     },
     {
       "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "architectureRetriever",
       "type": "references",
       "file": "service.ts",
-      "line": 346
+      "line": 356
     },
     {
       "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "retrieve",
       "type": "references",
       "file": "service.ts",
-      "line": 346
+      "line": 356
     },
     {
       "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "snapshot",
       "type": "references",
       "file": "service.ts",
-      "line": 346
+      "line": 356
     },
     {
       "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "parser",
       "type": "references",
       "file": "service.ts",
-      "line": 346
+      "line": 356
     },
     {
       "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "parse",
       "type": "references",
       "file": "service.ts",
-      "line": 346
+      "line": 356
     },
     {
       "source": "ContextRetrievalService.retrieveArchitecture",
       "target": "keywords",
       "type": "references",
       "file": "service.ts",
-      "line": 346
+      "line": 356
     },
     {
       "source": "ContextRetrievalService.retrieveLearning",
       "target": "retrieve",
       "type": "references",
       "file": "service.ts",
-      "line": 350
+      "line": 360
     },
     {
       "source": "ContextRetrievalService.retrieveLearning",
       "target": "res",
       "type": "references",
       "file": "service.ts",
-      "line": 351
+      "line": 361
     },
     {
       "source": "ContextRetrievalService.retrieveLearning",
       "target": "s",
       "type": "references",
       "file": "service.ts",
-      "line": 351
+      "line": 361
     },
     {
       "source": "ContextRetrievalService.expand",
       "target": "expander",
       "type": "references",
       "file": "service.ts",
-      "line": 355
+      "line": 365
     },
     {
       "source": "ContextRetrievalService.expand",
       "target": "expand",
       "type": "references",
       "file": "service.ts",
-      "line": 355
+      "line": 365
     },
     {
       "source": "ContextRetrievalService.expand",
       "target": "snapshot",
       "type": "references",
       "file": "service.ts",
-      "line": 355
+      "line": 365
     },
     {
       "source": "ContextRetrievalService.compress",
       "target": "RetrievalPackage",
       "type": "references",
       "file": "service.ts",
-      "line": 358
+      "line": 368
     },
     {
       "source": "ContextRetrievalService.compress",
       "target": "RetrievalPackage",
       "type": "references",
       "file": "service.ts",
-      "line": 358
+      "line": 368
     },
     {
       "source": "ContextRetrievalService.compress",
       "target": "compressor",
       "type": "references",
       "file": "service.ts",
-      "line": 359
+      "line": 369
     },
     {
       "source": "ContextRetrievalService.compress",
       "target": "compress",
       "type": "references",
       "file": "service.ts",
-      "line": 359
+      "line": 369
     },
     {
       "source": "ContextRetrievalService.validate",
       "target": "RetrievalPackage",
       "type": "references",
       "file": "service.ts",
-      "line": 362
+      "line": 372
     },
     {
       "source": "ContextRetrievalService.validate",
       "target": "validator",
       "type": "references",
       "file": "service.ts",
-      "line": 363
+      "line": 373
     },
     {
       "source": "ContextRetrievalService.validate",
       "target": "validate",
       "type": "references",
       "file": "service.ts",
-      "line": 363
+      "line": 373
     },
     {
       "source": "ContextRetrievalService.statistics",
       "target": "RetrievalStatistics",
       "type": "references",
       "file": "service.ts",
-      "line": 366
+      "line": 376
     },
     {
       "source": "ContextRetrievalService.statistics",
       "target": "metricsTracker",
       "type": "references",
       "file": "service.ts",
-      "line": 367
+      "line": 377
     },
     {
       "source": "ContextRetrievalService.statistics",
       "target": "get",
       "type": "references",
       "file": "service.ts",
-      "line": 367
+      "line": 377
     },
     {
       "source": "ContextRetrievalService.latestSnapshot",
       "target": "syncService",
       "type": "references",
       "file": "service.ts",
-      "line": 371
+      "line": 381
     },
     {
       "source": "ContextRetrievalService.latestSnapshot",
       "target": "latestSnapshot",
       "type": "references",
       "file": "service.ts",
-      "line": 371
+      "line": 381
     },
     {
       "source": "SymbolRetriever.retrieve",

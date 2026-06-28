@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T17:11:25.820Z",
+  "generatedAt": "2026-06-28T18:09:51.387Z",
   "imports": [
     {
       "source": "packages/agent-runtime/executor.ts",
@@ -1552,34 +1552,6 @@
     {
       "source": "packages/cli/commands/clean.ts",
       "target": "../../kernel/paths.js"
-    },
-    {
-      "source": "packages/cli/commands/compile.ts",
-      "target": "../main.js"
-    },
-    {
-      "source": "packages/cli/commands/compile.ts",
-      "target": "../utils/logger.js"
-    },
-    {
-      "source": "packages/cli/commands/compile.ts",
-      "target": "../utils/json.js"
-    },
-    {
-      "source": "packages/cli/commands/compile.ts",
-      "target": "../utils/spinner.js"
-    },
-    {
-      "source": "packages/cli/commands/compile.ts",
-      "target": "../utils/paths.js"
-    },
-    {
-      "source": "packages/cli/commands/compile.ts",
-      "target": "../../context-compiler/service.js"
-    },
-    {
-      "source": "packages/cli/commands/compile.ts",
-      "target": "../../context-sync/workspace-listener.js"
     },
     {
       "source": "packages/cli/commands/config.ts",
@@ -3744,10 +3716,6 @@
     {
       "source": "packages/filesystem/index.ts",
       "target": "./errors.js"
-    },
-    {
-      "source": "packages/filesystem/service.ts",
-      "target": "fs/promises"
     },
     {
       "source": "packages/graph/index.ts",
@@ -8166,18 +8134,6 @@
       "target": "./ai-gateway/types.js"
     },
     {
-      "source": "packages/test-mcp-server.ts",
-      "target": "assert"
-    },
-    {
-      "source": "packages/test-mcp-server.ts",
-      "target": "http"
-    },
-    {
-      "source": "packages/test-mcp-server.ts",
-      "target": "./mcp-server/index.js"
-    },
-    {
       "source": "packages/test-mcp-stdio-compliance.ts",
       "target": "assert"
     },
@@ -8564,30 +8520,6 @@
     {
       "source": "packages/test-provider-installation-pipeline.ts",
       "target": "./provider-runtime/service.js"
-    },
-    {
-      "source": "packages/test-provider-mcp-integration.ts",
-      "target": "assert"
-    },
-    {
-      "source": "packages/test-provider-mcp-integration.ts",
-      "target": "./provider-bridge/discovery.js"
-    },
-    {
-      "source": "packages/test-provider-mcp-integration.ts",
-      "target": "./provider-bridge/session-instructions.js"
-    },
-    {
-      "source": "packages/test-provider-mcp-integration.ts",
-      "target": "./context-provider/provider.js"
-    },
-    {
-      "source": "packages/test-provider-mcp-integration.ts",
-      "target": "./context-provider/types.js"
-    },
-    {
-      "source": "packages/test-provider-mcp-integration.ts",
-      "target": "./ai-gateway/adapters/index.js"
     },
     {
       "source": "packages/test-provider-registration.ts",
@@ -9122,58 +9054,6 @@
       "target": "./ai-gateway/adapters/base.js"
     },
     {
-      "source": "packages/workspace/index.ts",
-      "target": "./service.js"
-    },
-    {
-      "source": "packages/workspace/index.ts",
-      "target": "./types.js"
-    },
-    {
-      "source": "packages/workspace/index.ts",
-      "target": "./errors.js"
-    },
-    {
-      "source": "packages/workspace/index.ts",
-      "target": "./workspace-types.js"
-    },
-    {
-      "source": "packages/workspace/index.ts",
-      "target": "./workspace-errors.js"
-    },
-    {
-      "source": "packages/workspace/index.ts",
-      "target": "./workspace-journal.js"
-    },
-    {
-      "source": "packages/workspace/index.ts",
-      "target": "./workspace-lock.js"
-    },
-    {
-      "source": "packages/workspace/index.ts",
-      "target": "./workspace-patch.js"
-    },
-    {
-      "source": "packages/workspace/index.ts",
-      "target": "./workspace-engine.js"
-    },
-    {
-      "source": "packages/workspace/service.ts",
-      "target": "path"
-    },
-    {
-      "source": "packages/workspace/service.ts",
-      "target": "../core/index.js"
-    },
-    {
-      "source": "packages/workspace/service.ts",
-      "target": "../filesystem/index.js"
-    },
-    {
-      "source": "packages/workspace/service.ts",
-      "target": "./types.js"
-    },
-    {
       "source": "packages/workspace/workspace-engine.ts",
       "target": "fs"
     },
@@ -9256,6 +9136,198 @@
     {
       "source": "scratch/test-query.ts",
       "target": "url"
+    },
+    {
+      "source": "packages/cli/commands/compile.ts",
+      "target": "../main.js"
+    },
+    {
+      "source": "packages/cli/commands/compile.ts",
+      "target": "../utils/logger.js"
+    },
+    {
+      "source": "packages/cli/commands/compile.ts",
+      "target": "../utils/json.js"
+    },
+    {
+      "source": "packages/cli/commands/compile.ts",
+      "target": "../utils/spinner.js"
+    },
+    {
+      "source": "packages/cli/commands/compile.ts",
+      "target": "../utils/paths.js"
+    },
+    {
+      "source": "packages/cli/commands/compile.ts",
+      "target": "../../workspace/service.js"
+    },
+    {
+      "source": "packages/cli/commands/compile.ts",
+      "target": "../../context-compiler/service.js"
+    },
+    {
+      "source": "packages/cli/commands/compile.ts",
+      "target": "../../context-sync/workspace-listener.js"
+    },
+    {
+      "source": "packages/filesystem/service.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "packages/test-mcp-server.ts",
+      "target": "assert"
+    },
+    {
+      "source": "packages/test-mcp-server.ts",
+      "target": "http"
+    },
+    {
+      "source": "packages/test-mcp-server.ts",
+      "target": "./mcp-server/index.js"
+    },
+    {
+      "source": "packages/test-provider-mcp-integration.ts",
+      "target": "assert"
+    },
+    {
+      "source": "packages/test-provider-mcp-integration.ts",
+      "target": "./provider-bridge/discovery.js"
+    },
+    {
+      "source": "packages/test-provider-mcp-integration.ts",
+      "target": "./provider-bridge/session-instructions.js"
+    },
+    {
+      "source": "packages/test-provider-mcp-integration.ts",
+      "target": "./context-provider/provider.js"
+    },
+    {
+      "source": "packages/test-provider-mcp-integration.ts",
+      "target": "./context-provider/types.js"
+    },
+    {
+      "source": "packages/test-provider-mcp-integration.ts",
+      "target": "./ai-gateway/adapters/index.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./service.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./errors.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-types.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-errors.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-journal.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-lock.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-patch.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./workspace-engine.js"
+    },
+    {
+      "source": "packages/workspace/index.ts",
+      "target": "./skill-generator.js"
+    },
+    {
+      "source": "packages/workspace/service.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/workspace/service.ts",
+      "target": "../core/index.js"
+    },
+    {
+      "source": "packages/workspace/service.ts",
+      "target": "../filesystem/index.js"
+    },
+    {
+      "source": "packages/workspace/service.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "packages/workspace/service.ts",
+      "target": "./skill-generator.js"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "assert"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "child_process"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "fs"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "os"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "./filesystem/index.js"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "./workspace/skill-generator.js"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "./mcp-server/index.js"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "./filesystem/index.js"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "./workspace/skill-generator.js"
+    },
+    {
+      "source": "packages/test-skill-generation.ts",
+      "target": "./mcp-server/index.js"
+    },
+    {
+      "source": "packages/workspace/skill-generator.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "packages/workspace/skill-generator.ts",
+      "target": "path"
+    },
+    {
+      "source": "packages/workspace/skill-generator.ts",
+      "target": "../filesystem/index.js"
+    },
+    {
+      "source": "packages/workspace/skill-generator.ts",
+      "target": "../mcp-server/index.js"
     }
   ]
 }

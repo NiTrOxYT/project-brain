@@ -18,6 +18,11 @@ export interface CompileOptions {
 export async function runCompile(opts: GlobalOptions, cmdOpts: CompileOptions): Promise<void> {
     requireBrainInitialized(opts.workspace);
 
+    // Ensure SKILL.md exists
+    const { WorkspaceService } = await import("../../workspace/service.js");
+    const ws = new WorkspaceService({ root: opts.workspace });
+    await ws.ensureSkillFile();
+
     const { ContextCompilerService } = await import("../../context-compiler/service.js");
 
     const compile = async () => {

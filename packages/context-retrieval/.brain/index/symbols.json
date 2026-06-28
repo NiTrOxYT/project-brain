@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T11:15:20.158Z",
+  "generatedAt": "2026-06-28T18:05:46.027Z",
   "symbols": [
     {
       "name": "ArchitectureRetriever",
@@ -1607,124 +1607,106 @@
       "name": "rankStart",
       "kind": "variable",
       "file": "service.ts",
-      "line": 201
+      "line": 202
+    },
+    {
+      "name": "filesToRank",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 203
     },
     {
       "name": "candidates",
       "kind": "variable",
       "file": "service.ts",
-      "line": 202
+      "line": 206
     },
     {
       "name": "rawSections",
       "kind": "variable",
       "file": "service.ts",
-      "line": 216
+      "line": 221
     },
     {
       "name": "originalTokens",
       "kind": "variable",
       "file": "service.ts",
-      "line": 217
+      "line": 222
     },
     {
       "name": "sec",
       "kind": "variable",
       "file": "service.ts",
-      "line": 220
+      "line": 227
     },
     {
       "name": "matches",
       "kind": "variable",
       "file": "service.ts",
-      "line": 221
+      "line": 228
     },
     {
       "name": "reason",
       "kind": "variable",
       "file": "service.ts",
-      "line": 222
+      "line": 229
     },
     {
       "name": "budgetStart",
       "kind": "variable",
       "file": "service.ts",
-      "line": 261
+      "line": 271
     },
     {
       "name": "uncompressedPkg",
       "kind": "variable",
       "file": "service.ts",
-      "line": 274
+      "line": 284
     },
     {
       "name": "compressStart",
       "kind": "variable",
       "file": "service.ts",
-      "line": 288
+      "line": 298
     },
     {
       "name": "compressedPkg",
       "kind": "variable",
       "file": "service.ts",
-      "line": 289
+      "line": 299
     },
     {
       "name": "valStart",
       "kind": "variable",
       "file": "service.ts",
-      "line": 297
+      "line": 307
     },
     {
       "name": "validation",
       "kind": "variable",
       "file": "service.ts",
-      "line": 298
+      "line": 308
     },
     {
       "name": "duration",
       "kind": "variable",
       "file": "service.ts",
-      "line": 305
+      "line": 315
     },
     {
       "name": "finalTokens",
       "kind": "variable",
       "file": "service.ts",
-      "line": 306
+      "line": 316
     },
     {
       "name": "metrics",
       "kind": "variable",
       "file": "service.ts",
-      "line": 308
+      "line": 318
     },
     {
       "name": "retrieveFiles",
-      "kind": "method",
-      "file": "service.ts",
-      "line": 331
-    },
-    {
-      "name": "res",
-      "kind": "variable",
-      "file": "service.ts",
-      "line": 332
-    },
-    {
-      "name": "retrieveSymbols",
-      "kind": "method",
-      "file": "service.ts",
-      "line": 336
-    },
-    {
-      "name": "res",
-      "kind": "variable",
-      "file": "service.ts",
-      "line": 337
-    },
-    {
-      "name": "retrieveArchitecture",
       "kind": "method",
       "file": "service.ts",
       "line": 341
@@ -1736,52 +1718,76 @@
       "line": 342
     },
     {
-      "name": "snapshot",
-      "kind": "variable",
-      "file": "service.ts",
-      "line": 344
-    },
-    {
-      "name": "retrieveLearning",
+      "name": "retrieveSymbols",
       "kind": "method",
       "file": "service.ts",
-      "line": 349
+      "line": 346
     },
     {
       "name": "res",
       "kind": "variable",
       "file": "service.ts",
-      "line": 350
+      "line": 347
+    },
+    {
+      "name": "retrieveArchitecture",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 351
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 352
+    },
+    {
+      "name": "snapshot",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 354
+    },
+    {
+      "name": "retrieveLearning",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 359
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 360
     },
     {
       "name": "expand",
       "kind": "method",
       "file": "service.ts",
-      "line": 354
+      "line": 364
     },
     {
       "name": "compress",
       "kind": "method",
       "file": "service.ts",
-      "line": 358
+      "line": 368
     },
     {
       "name": "validate",
       "kind": "method",
       "file": "service.ts",
-      "line": 362
+      "line": 372
     },
     {
       "name": "statistics",
       "kind": "method",
       "file": "service.ts",
-      "line": 366
+      "line": 376
     },
     {
       "name": "latestSnapshot",
       "kind": "method",
       "file": "service.ts",
-      "line": 370
+      "line": 380
     },
     {
       "name": "SymbolRetriever",

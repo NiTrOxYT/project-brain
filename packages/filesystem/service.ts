@@ -29,4 +29,12 @@ export class FileSystemService {
         const raw = await fs.readFile(path, "utf8");
         return JSON.parse(raw) as T;
     }
+
+    async readText(path: string): Promise<string> {
+        return await fs.readFile(path, "utf8");
+    }
+
+    async writeText(path: string, content: string): Promise<void> {
+        await fs.writeFile(path, content, "utf8");
+    }
 }

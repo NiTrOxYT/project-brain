@@ -27,7 +27,7 @@ async function runTests() {
         // Aider discovery does not support MCP configuration writes
         const aider = ProviderDiscoveryEngine.discover("aider");
         assert(aider.capabilities.supportsMcp === false);
-        assert(aider.capabilities.supportsToolCalling === true);
+        assert(aider.capabilities.supportsToolCalling === false);
     });
     await test("2. ProviderSessionInitializer returns Brain Context Consumption policy using official instructions config", () => {
         const claudeSession = ProviderSessionInitializer.initializeSession("claude");

@@ -59,11 +59,17 @@ export class WorkspaceService extends RuntimeService {
             }
         });
     }
+    async ensureSkillFile() {
+        const { WorkspaceSkillGenerator } = await import("./skill-generator.js");
+        const generator = new WorkspaceSkillGenerator(this.fs, this.root);
+        await generator.ensureSkillFile();
+    }
     async initialize() {
         const created = !(await this.exists()) || !(await this.fs.exists(this.manifestPath));
         if (created) {
             await this.create();
         }
+        await this.ensureSkillFile();
         return {
             created,
             root: this.root

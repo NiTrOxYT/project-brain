@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T17:11:26.501Z",
+  "generatedAt": "2026-06-28T18:09:51.652Z",
   "nodes": [
     {
       "id": "packages/agent-runtime/artifacts.ts#RuntimeArtifact",
@@ -3830,12 +3830,6 @@
       "kind": "property"
     },
     {
-      "id": "packages/filesystem/service.ts#FileSystemService",
-      "symbol": "FileSystemService",
-      "file": "packages/filesystem/service.ts",
-      "kind": "class"
-    },
-    {
       "id": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.constructor",
       "symbol": "FileSystemMemoryStorage.constructor",
       "file": "packages/architecture-memory/service.ts",
@@ -3860,21 +3854,9 @@
       "kind": "method"
     },
     {
-      "id": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "symbol": "FileSystemService.readJson",
-      "file": "packages/filesystem/service.ts",
-      "kind": "method"
-    },
-    {
       "id": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.saveMemory",
       "symbol": "FileSystemMemoryStorage.saveMemory",
       "file": "packages/architecture-memory/service.ts",
-      "kind": "method"
-    },
-    {
-      "id": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "symbol": "FileSystemService.writeJson",
-      "file": "packages/filesystem/service.ts",
       "kind": "method"
     },
     {
@@ -3911,12 +3893,6 @@
       "id": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.ensureDirectory",
       "symbol": "FileSystemMemoryStorage.ensureDirectory",
       "file": "packages/architecture-memory/service.ts",
-      "kind": "method"
-    },
-    {
-      "id": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "symbol": "FileSystemService.mkdir",
-      "file": "packages/filesystem/service.ts",
       "kind": "method"
     },
     {
@@ -5870,18 +5846,6 @@
       "kind": "variable"
     },
     {
-      "id": "packages/cli/commands/compile.ts#CompileOptions",
-      "symbol": "CompileOptions",
-      "file": "packages/cli/commands/compile.ts",
-      "kind": "interface"
-    },
-    {
-      "id": "packages/cli/commands/compile.ts#runCompile",
-      "symbol": "runCompile",
-      "file": "packages/cli/commands/compile.ts",
-      "kind": "function"
-    },
-    {
       "id": "packages/cli/utils/paths.ts#requireBrainInitialized",
       "symbol": "requireBrainInitialized",
       "file": "packages/cli/utils/paths.ts",
@@ -6300,12 +6264,6 @@
       "symbol": "runInit",
       "file": "packages/cli/commands/init.ts",
       "kind": "function"
-    },
-    {
-      "id": "packages/workspace/service.ts#WorkspaceService",
-      "symbol": "WorkspaceService",
-      "file": "packages/workspace/service.ts",
-      "kind": "class"
     },
     {
       "id": "external#initialize",
@@ -11084,12 +11042,6 @@
       "kind": "constructor"
     },
     {
-      "id": "packages/filesystem/service.ts#FileSystemService.exists",
-      "symbol": "FileSystemService.exists",
-      "file": "packages/filesystem/service.ts",
-      "kind": "method"
-    },
-    {
       "id": "packages/filesystem/types.ts#WriteJsonOptions",
       "symbol": "WriteJsonOptions",
       "file": "packages/filesystem/types.ts",
@@ -12581,12 +12533,6 @@
       "id": "packages/kernel/lifecycle.ts#LifecycleManager.shutdown",
       "symbol": "LifecycleManager.shutdown",
       "file": "packages/kernel/lifecycle.ts",
-      "kind": "method"
-    },
-    {
-      "id": "packages/workspace/service.ts#WorkspaceService.dispose",
-      "symbol": "WorkspaceService.dispose",
-      "file": "packages/workspace/service.ts",
       "kind": "method"
     },
     {
@@ -22376,18 +22322,6 @@
       "kind": "function"
     },
     {
-      "id": "packages/test-mcp-server.ts#test",
-      "symbol": "test",
-      "file": "packages/test-mcp-server.ts",
-      "kind": "function"
-    },
-    {
-      "id": "packages/test-mcp-server.ts#runTests",
-      "symbol": "runTests",
-      "file": "packages/test-mcp-server.ts",
-      "kind": "function"
-    },
-    {
       "id": "external#request",
       "symbol": "request",
       "file": "external",
@@ -23285,18 +23219,6 @@
       "id": "packages/test-provider-installation-pipeline.ts#runTests",
       "symbol": "runTests",
       "file": "packages/test-provider-installation-pipeline.ts",
-      "kind": "function"
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts#test",
-      "symbol": "test",
-      "file": "packages/test-provider-mcp-integration.ts",
-      "kind": "function"
-    },
-    {
-      "id": "packages/test-provider-mcp-integration.ts#runTests",
-      "symbol": "runTests",
-      "file": "packages/test-provider-mcp-integration.ts",
       "kind": "function"
     },
     {
@@ -24266,54 +24188,6 @@
       "kind": "constructor"
     },
     {
-      "id": "packages/workspace/service.ts#IWorkspaceService",
-      "symbol": "IWorkspaceService",
-      "file": "packages/workspace/service.ts",
-      "kind": "interface"
-    },
-    {
-      "id": "packages/workspace/service.ts#WorkspaceService.fs",
-      "symbol": "WorkspaceService.fs",
-      "file": "packages/workspace/service.ts",
-      "kind": "property"
-    },
-    {
-      "id": "packages/workspace/service.ts#WorkspaceService.constructor",
-      "symbol": "WorkspaceService.constructor",
-      "file": "packages/workspace/service.ts",
-      "kind": "constructor"
-    },
-    {
-      "id": "packages/workspace/service.ts#WorkspaceService.exists",
-      "symbol": "WorkspaceService.exists",
-      "file": "packages/workspace/service.ts",
-      "kind": "method"
-    },
-    {
-      "id": "packages/workspace/service.ts#WorkspaceService.create",
-      "symbol": "WorkspaceService.create",
-      "file": "packages/workspace/service.ts",
-      "kind": "method"
-    },
-    {
-      "id": "packages/workspace/service.ts#WorkspaceService.initialize",
-      "symbol": "WorkspaceService.initialize",
-      "file": "packages/workspace/service.ts",
-      "kind": "method"
-    },
-    {
-      "id": "packages/workspace/service.ts#WorkspaceService.validate",
-      "symbol": "WorkspaceService.validate",
-      "file": "packages/workspace/service.ts",
-      "kind": "method"
-    },
-    {
-      "id": "packages/workspace/service.ts#WorkspaceService.load",
-      "symbol": "WorkspaceService.load",
-      "file": "packages/workspace/service.ts",
-      "kind": "method"
-    },
-    {
       "id": "packages/workspace/types.ts#WorkspaceOptions",
       "symbol": "WorkspaceOptions",
       "file": "packages/workspace/types.ts",
@@ -24852,6 +24726,312 @@
       "symbol": "main",
       "file": "scratch/test-query.ts",
       "kind": "function"
+    },
+    {
+      "id": "packages/filesystem/service.ts#FileSystemService.writeText",
+      "symbol": "FileSystemService.writeText",
+      "file": "packages/filesystem/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/filesystem/service.ts#FileSystemService.readText",
+      "symbol": "FileSystemService.readText",
+      "file": "packages/filesystem/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/cli/commands/compile.ts#CompileOptions",
+      "symbol": "CompileOptions",
+      "file": "packages/cli/commands/compile.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/cli/commands/compile.ts#runCompile",
+      "symbol": "runCompile",
+      "file": "packages/cli/commands/compile.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService",
+      "symbol": "WorkspaceService",
+      "file": "packages/workspace/service.ts",
+      "kind": "class"
+    },
+    {
+      "id": "external#ensureSkillFile",
+      "symbol": "ensureSkillFile",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/filesystem/service.ts#FileSystemService",
+      "symbol": "FileSystemService",
+      "file": "packages/filesystem/service.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/filesystem/service.ts#FileSystemService.exists",
+      "symbol": "FileSystemService.exists",
+      "file": "packages/filesystem/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/filesystem/service.ts#FileSystemService.mkdir",
+      "symbol": "FileSystemService.mkdir",
+      "file": "packages/filesystem/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/filesystem/service.ts#FileSystemService.writeJson",
+      "symbol": "FileSystemService.writeJson",
+      "file": "packages/filesystem/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/filesystem/service.ts#FileSystemService.readJson",
+      "symbol": "FileSystemService.readJson",
+      "file": "packages/filesystem/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/test-mcp-server.ts#test",
+      "symbol": "test",
+      "file": "packages/test-mcp-server.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-mcp-server.ts#runTests",
+      "symbol": "runTests",
+      "file": "packages/test-mcp-server.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts#test",
+      "symbol": "test",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts#runTests",
+      "symbol": "runTests",
+      "file": "packages/test-provider-mcp-integration.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/workspace/service.ts#IWorkspaceService",
+      "symbol": "IWorkspaceService",
+      "file": "packages/workspace/service.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService.fs",
+      "symbol": "WorkspaceService.fs",
+      "file": "packages/workspace/service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService.constructor",
+      "symbol": "WorkspaceService.constructor",
+      "file": "packages/workspace/service.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService.exists",
+      "symbol": "WorkspaceService.exists",
+      "file": "packages/workspace/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService.create",
+      "symbol": "WorkspaceService.create",
+      "file": "packages/workspace/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService.ensureSkillFile",
+      "symbol": "WorkspaceService.ensureSkillFile",
+      "file": "packages/workspace/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService.initialize",
+      "symbol": "WorkspaceService.initialize",
+      "file": "packages/workspace/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService.validate",
+      "symbol": "WorkspaceService.validate",
+      "file": "packages/workspace/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService.load",
+      "symbol": "WorkspaceService.load",
+      "file": "packages/workspace/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/service.ts#WorkspaceService.dispose",
+      "symbol": "WorkspaceService.dispose",
+      "file": "packages/workspace/service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/test-skill-generation.ts#CLI",
+      "symbol": "CLI",
+      "file": "packages/test-skill-generation.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/test-skill-generation.ts#run",
+      "symbol": "run",
+      "file": "packages/test-skill-generation.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-skill-generation.ts#runJson",
+      "symbol": "runJson",
+      "file": "packages/test-skill-generation.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-skill-generation.ts#test",
+      "symbol": "test",
+      "file": "packages/test-skill-generation.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/test-skill-generation.ts#runTests",
+      "symbol": "runTests",
+      "file": "packages/test-skill-generation.ts",
+      "kind": "function"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator",
+      "symbol": "WorkspaceSkillGenerator",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "class"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "symbol": "WorkspaceSkillGenerator.getTemplateBody",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/test-skill-generation.ts#runTests.execute",
+      "symbol": "runTests.execute",
+      "file": "packages/test-skill-generation.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#ToolDoc",
+      "symbol": "ToolDoc",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#TOOL_DOCS",
+      "symbol": "TOOL_DOCS",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.constructor",
+      "symbol": "WorkspaceSkillGenerator.constructor",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateHeaderSection",
+      "symbol": "WorkspaceSkillGenerator.generateHeaderSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateOverviewSection",
+      "symbol": "WorkspaceSkillGenerator.generateOverviewSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateOperatingProcedureSection",
+      "symbol": "WorkspaceSkillGenerator.generateOperatingProcedureSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#getToolLink",
+      "symbol": "getToolLink",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateRulesSection",
+      "symbol": "WorkspaceSkillGenerator.generateRulesSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateRepositoryPolicySection",
+      "symbol": "WorkspaceSkillGenerator.generateRepositoryPolicySection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateMCPToolsSection",
+      "symbol": "WorkspaceSkillGenerator.generateMCPToolsSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateDecisionTreeSection",
+      "symbol": "WorkspaceSkillGenerator.generateDecisionTreeSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateWorkflowExamplesSection",
+      "symbol": "WorkspaceSkillGenerator.generateWorkflowExamplesSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateEfficiencySection",
+      "symbol": "WorkspaceSkillGenerator.generateEfficiencySection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateFAQSection",
+      "symbol": "WorkspaceSkillGenerator.generateFAQSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateFooterSection",
+      "symbol": "WorkspaceSkillGenerator.generateFooterSection",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.calculateHash",
+      "symbol": "WorkspaceSkillGenerator.calculateHash",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "symbol": "WorkspaceSkillGenerator.ensureSkillFile",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
+    },
+    {
+      "id": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.parseFrontmatter",
+      "symbol": "WorkspaceSkillGenerator.parseFrontmatter",
+      "file": "packages/workspace/skill-generator.ts",
+      "kind": "method"
     }
   ],
   "edges": [
@@ -28221,11 +28401,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.getMemoryPath",
       "to": "external#join",
       "type": "calls"
@@ -28237,22 +28412,7 @@
     },
     {
       "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.loadMemory",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "calls"
-    },
-    {
-      "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.loadMemory",
       "to": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.getMemoryPath",
-      "type": "calls"
-    },
-    {
-      "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.saveMemory",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.saveMemory",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
       "type": "calls"
     },
     {
@@ -28273,21 +28433,6 @@
     {
       "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.loadMetadata",
       "to": "external#exists",
-      "type": "calls"
-    },
-    {
-      "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.loadMetadata",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "calls"
-    },
-    {
-      "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.saveMetadata",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.saveMetadata",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
       "type": "calls"
     },
     {
@@ -28323,16 +28468,6 @@
     {
       "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.ensureDirectory",
       "to": "external#exists",
-      "type": "calls"
-    },
-    {
-      "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/architecture-memory/service.ts#FileSystemMemoryStorage.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
       "type": "calls"
     },
     {
@@ -30681,11 +30816,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/cache/service.ts#CacheService.fs",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/cache/service.ts#CacheService.initialize",
       "to": "external#join",
       "type": "calls"
@@ -30698,16 +30828,6 @@
     {
       "from": "packages/cache/service.ts#CacheService.initialize",
       "to": "external#exists",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cache/service.ts#CacheService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/cache/service.ts#CacheService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
       "type": "calls"
     },
     {
@@ -30803,101 +30923,6 @@
     {
       "from": "packages/cli/commands/clean.ts#runClean",
       "to": "packages/cli/utils/colors.ts#gray",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "packages/cli/utils/paths.ts#requireBrainInitialized",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "packages/cli/utils/spinner.ts#Spinner",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#start",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#now",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "packages/context-compiler/service.ts#ContextCompilerService",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#compile",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#compile",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#stop",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "packages/cli/utils/json.ts#printJson",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "packages/cli/utils/spinner.ts#Spinner.succeed",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#log",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#fail",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "packages/context-sync/workspace-listener.ts#WorkspaceListener",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#Promise",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#Promise",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#on",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/compile.ts#runCompile",
-      "to": "external#resolve",
       "type": "calls"
     },
     {
@@ -32014,11 +32039,6 @@
       "from": "packages/cli/commands/init.ts#runInit",
       "to": "packages/learning-engine/service.ts#LearningEngineService.import",
       "type": "calls"
-    },
-    {
-      "from": "packages/cli/commands/init.ts#runInit",
-      "to": "packages/workspace/service.ts#WorkspaceService",
-      "type": "constructs"
     },
     {
       "from": "packages/cli/commands/init.ts#runInit",
@@ -34417,16 +34437,6 @@
     },
     {
       "from": "packages/cli/main.ts#main",
-      "to": "packages/cli/commands/compile.ts#runCompile",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/cli/main.ts#main",
-      "to": "packages/cli/commands/compile.ts#runCompile",
-      "type": "calls"
-    },
-    {
-      "from": "packages/cli/main.ts#main",
       "to": "packages/cli/commands/inspect.ts#runInspect",
       "type": "awaits"
     },
@@ -35331,11 +35341,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/context-assembler/service.ts#ContextAssemblerService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/context-assembler/service.ts#ContextAssemblerService.constructor",
       "to": "packages/planner/service.ts#PlannerService",
       "type": "constructs"
@@ -35378,16 +35383,6 @@
     {
       "from": "packages/context-assembler/service.ts#ContextAssemblerService.assemble",
       "to": "external#exists",
-      "type": "calls"
-    },
-    {
-      "from": "packages/context-assembler/service.ts#ContextAssemblerService.assemble",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-assembler/service.ts#ContextAssemblerService.assemble",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -35532,26 +35527,6 @@
     },
     {
       "from": "packages/context-assembler/service.ts#ContextAssemblerService.assemble",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-assembler/service.ts#ContextAssemblerService.assemble",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/context-assembler/service.ts#ContextAssemblerService.assemble",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-assembler/service.ts#ContextAssemblerService.assemble",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
-    },
-    {
-      "from": "packages/context-assembler/service.ts#ContextAssemblerService.assemble",
       "to": "packages/context-assembler/errors.ts#ContextAssemblerError",
       "type": "constructs"
     },
@@ -35579,16 +35554,6 @@
       "from": "packages/context-compiler/cache.ts#SnapshotCache.constructor",
       "to": "packages/kernel/paths.ts#StoragePaths",
       "type": "constructs"
-    },
-    {
-      "from": "packages/context-compiler/cache.ts#SnapshotCache.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-compiler/cache.ts#SnapshotCache.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
     },
     {
       "from": "packages/context-compiler/cache.ts#SnapshotCache.has",
@@ -36568,16 +36533,6 @@
     {
       "from": "packages/context-compiler/metrics.ts#SnapshotMetricsTracker.reset",
       "to": "packages/context-compiler/metrics.ts#SnapshotMetricsTracker.save",
-      "type": "calls"
-    },
-    {
-      "from": "packages/context-compiler/metrics.ts#SnapshotMetricsTracker.save",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-compiler/metrics.ts#SnapshotMetricsTracker.save",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
       "type": "calls"
     },
     {
@@ -37966,16 +37921,6 @@
       "type": "constructs"
     },
     {
-      "from": "packages/context-compiler/storage.ts#SnapshotStorage.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-compiler/storage.ts#SnapshotStorage.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
       "from": "packages/context-compiler/storage.ts#SnapshotStorage.save",
       "to": "packages/context-compiler/storage.ts#SnapshotStorage.ensureDirectory",
       "type": "awaits"
@@ -38266,11 +38211,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/context-loader/service.ts#ContextLoaderService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/context-loader/service.ts#ContextLoaderService.constructor",
       "to": "packages/retriever/service.ts#RetrieverService",
       "type": "constructs"
@@ -38303,16 +38243,6 @@
     {
       "from": "packages/context-loader/service.ts#ContextLoaderService.load",
       "to": "external#map",
-      "type": "calls"
-    },
-    {
-      "from": "packages/context-loader/service.ts#ContextLoaderService.load",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-loader/service.ts#ContextLoaderService.load",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -38614,16 +38544,6 @@
       "from": "packages/context-retrieval/cache.ts#RetrievalCache.constructor",
       "to": "packages/kernel/paths.ts#StoragePaths",
       "type": "constructs"
-    },
-    {
-      "from": "packages/context-retrieval/cache.ts#RetrievalCache.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-retrieval/cache.ts#RetrievalCache.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
     },
     {
       "from": "packages/context-retrieval/cache.ts#RetrievalCache.computeKey",
@@ -39223,16 +39143,6 @@
     {
       "from": "packages/context-retrieval/metrics.ts#RetrievalMetricsTracker.reset",
       "to": "packages/context-retrieval/metrics.ts#RetrievalMetricsTracker.save",
-      "type": "calls"
-    },
-    {
-      "from": "packages/context-retrieval/metrics.ts#RetrievalMetricsTracker.save",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-retrieval/metrics.ts#RetrievalMetricsTracker.save",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
       "type": "calls"
     },
     {
@@ -40152,16 +40062,6 @@
     },
     {
       "from": "packages/context-sync/metrics.ts#SynchronizationMetricsTracker.save",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-sync/metrics.ts#SynchronizationMetricsTracker.save",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/context-sync/metrics.ts#SynchronizationMetricsTracker.save",
       "to": "external#dirname",
       "type": "calls"
     },
@@ -40757,16 +40657,6 @@
     },
     {
       "from": "packages/context-sync/storage.ts#SnapshotSyncStorage.ensureDirectories",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/context-sync/storage.ts#SnapshotSyncStorage.ensureDirectories",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/context-sync/storage.ts#SnapshotSyncStorage.ensureDirectories",
       "to": "external#ensureDirectory",
       "type": "awaits"
     },
@@ -41101,11 +40991,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/engineering-planner/service.ts#EngineeringPlannerService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/engineering-planner/service.ts#EngineeringPlannerService.plan",
       "to": "external#now",
       "type": "calls"
@@ -41128,16 +41013,6 @@
     {
       "from": "packages/engineering-planner/service.ts#EngineeringPlannerService.plan",
       "to": "external#slice",
-      "type": "calls"
-    },
-    {
-      "from": "packages/engineering-planner/service.ts#EngineeringPlannerService.plan",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/engineering-planner/service.ts#EngineeringPlannerService.plan",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -41351,11 +41226,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/execution-graph/service.ts#ExecutionGraphService.parser",
       "to": "packages/ast/service.ts#AstService",
       "type": "constructs"
@@ -41432,16 +41302,6 @@
     },
     {
       "from": "packages/execution-graph/service.ts#ExecutionGraphService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "calls"
-    },
-    {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.build",
       "to": "external#map",
       "type": "calls"
     },
@@ -41691,26 +41551,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
-    },
-    {
       "from": "packages/execution-graph/service.ts#ExecutionGraphService.buildIncremental",
       "to": "packages/execution-graph/service.ts#ExecutionGraphService.getProjectRoot",
       "type": "awaits"
@@ -41738,16 +41578,6 @@
     {
       "from": "packages/execution-graph/service.ts#ExecutionGraphService.buildIncremental",
       "to": "packages/execution-graph/service.ts#ExecutionGraphService.build",
-      "type": "calls"
-    },
-    {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.buildIncremental",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.buildIncremental",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -42006,69 +41836,14 @@
       "type": "calls"
     },
     {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.buildIncremental",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/execution-graph/service.ts#ExecutionGraphService.buildIncremental",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
-    },
-    {
       "from": "packages/filesystem/errors.ts#FileSystemError.constructor",
       "to": "external#super",
-      "type": "calls"
-    },
-    {
-      "from": "packages/filesystem/service.ts#FileSystemService.exists",
-      "to": "external#access",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/filesystem/service.ts#FileSystemService.exists",
-      "to": "external#access",
-      "type": "calls"
-    },
-    {
-      "from": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "to": "external#writeFile",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "to": "external#writeFile",
-      "type": "calls"
-    },
-    {
-      "from": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "to": "external#stringify",
-      "type": "calls"
-    },
-    {
-      "from": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "to": "external#readFile",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "to": "external#readFile",
-      "type": "calls"
-    },
-    {
-      "from": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "to": "external#parse",
       "type": "calls"
     },
     {
       "from": "packages/graph/errors.ts#GraphError.constructor",
       "to": "external#super",
       "type": "calls"
-    },
-    {
-      "from": "packages/graph/service.ts#GraphService.fs",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
     },
     {
       "from": "packages/graph/service.ts#GraphService.initialize",
@@ -42086,24 +41861,9 @@
       "type": "calls"
     },
     {
-      "from": "packages/graph/service.ts#GraphService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/graph/service.ts#GraphService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
-    },
-    {
       "from": "packages/graph-builder/errors.ts#GraphBuilderError.constructor",
       "to": "external#super",
       "type": "calls"
-    },
-    {
-      "from": "packages/graph-builder/service.ts#GraphBuilderService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
     },
     {
       "from": "packages/graph-builder/service.ts#GraphBuilderService.build",
@@ -42157,37 +41917,12 @@
     },
     {
       "from": "packages/graph-builder/service.ts#GraphBuilderService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/graph-builder/service.ts#GraphBuilderService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
-    },
-    {
-      "from": "packages/graph-builder/service.ts#GraphBuilderService.build",
       "to": "external#join",
       "type": "calls"
     },
     {
       "from": "packages/graph-traversal/errors.ts#GraphTraversalError.constructor",
       "to": "external#super",
-      "type": "calls"
-    },
-    {
-      "from": "packages/graph-traversal/service.ts#GraphTraversalService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/graph-traversal/service.ts#GraphTraversalService.traverse",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/graph-traversal/service.ts#GraphTraversalService.traverse",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -42218,21 +41953,6 @@
     {
       "from": "packages/import-resolver/errors.ts#ImportResolverError.constructor",
       "to": "external#super",
-      "type": "calls"
-    },
-    {
-      "from": "packages/import-resolver/service.ts#ImportResolverService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/import-resolver/service.ts#ImportResolverService.resolve",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/import-resolver/service.ts#ImportResolverService.resolve",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -42286,11 +42006,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/imports/service.ts#ImportsService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/imports/service.ts#ImportsService.parser",
       "to": "packages/ast/service.ts#AstService",
       "type": "constructs"
@@ -42334,16 +42049,6 @@
       "from": "packages/imports/service.ts#ImportsService.index",
       "to": "external#Date",
       "type": "constructs"
-    },
-    {
-      "from": "packages/imports/service.ts#ImportsService.index",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/imports/service.ts#ImportsService.index",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
     },
     {
       "from": "packages/imports/service.ts#ImportsService.index",
@@ -42436,11 +42141,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/indexer/service.ts#IndexerService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/indexer/service.ts#IndexerService.index",
       "to": "packages/indexer/service.ts#IndexerService.walk",
       "type": "awaits"
@@ -42448,16 +42148,6 @@
     {
       "from": "packages/indexer/service.ts#IndexerService.index",
       "to": "packages/indexer/service.ts#IndexerService.walk",
-      "type": "calls"
-    },
-    {
-      "from": "packages/indexer/service.ts#IndexerService.index",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/indexer/service.ts#IndexerService.index",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
       "type": "calls"
     },
     {
@@ -44061,16 +43751,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/kernel/lifecycle.ts#LifecycleManager.shutdown",
-      "to": "packages/workspace/service.ts#WorkspaceService.dispose",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/kernel/lifecycle.ts#LifecycleManager.shutdown",
-      "to": "packages/workspace/service.ts#WorkspaceService.dispose",
-      "type": "calls"
-    },
-    {
       "from": "packages/kernel/paths.ts#GlobalPaths.constructor",
       "to": "external#join",
       "type": "calls"
@@ -44281,11 +43961,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/knowledge/service.ts#KnowledgeService.fs",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/knowledge/service.ts#KnowledgeService.initialize",
       "to": "external#join",
       "type": "calls"
@@ -44301,24 +43976,9 @@
       "type": "calls"
     },
     {
-      "from": "packages/knowledge/service.ts#KnowledgeService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/knowledge/service.ts#KnowledgeService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
-    },
-    {
       "from": "packages/knowledge-fusion/errors.ts#KnowledgeFusionError.constructor",
       "to": "external#super",
       "type": "calls"
-    },
-    {
-      "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
     },
     {
       "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.constructor",
@@ -44383,16 +44043,6 @@
     {
       "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.fuse",
       "to": "external#exists",
-      "type": "calls"
-    },
-    {
-      "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.fuse",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/knowledge-fusion/service.ts#KnowledgeFusionService.fuse",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -45587,16 +45237,6 @@
     },
     {
       "from": "packages/learning-engine/storage.ts#LearningStorage.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/learning-engine/storage.ts#LearningStorage.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/learning-engine/storage.ts#LearningStorage.ensureDirectory",
       "to": "packages/learning-engine/errors.ts#LearningStorageError",
       "type": "constructs"
     },
@@ -45976,11 +45616,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/manifest/service.ts#ManifestService.fs",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/manifest/service.ts#ManifestService.constructor",
       "to": "external#super",
       "type": "calls"
@@ -46004,11 +45639,6 @@
       "from": "packages/manifest/service.ts#ManifestService.load",
       "to": "packages/manifest/errors.ts#ManifestError",
       "type": "constructs"
-    },
-    {
-      "from": "packages/manifest/service.ts#ManifestService.load",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "calls"
     },
     {
       "from": "packages/mcp-server/registry.ts#McpToolRegistry.tools",
@@ -46936,11 +46566,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/planner/service.ts#PlannerService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/planner/service.ts#PlannerService.plan",
       "to": "external#toLowerCase",
       "type": "calls"
@@ -46953,16 +46578,6 @@
     {
       "from": "packages/planner/service.ts#PlannerService.plan",
       "to": "packages/semantic/normalizer.ts#normalize",
-      "type": "calls"
-    },
-    {
-      "from": "packages/planner/service.ts#PlannerService.plan",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/planner/service.ts#PlannerService.plan",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -47026,11 +46641,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/project/service.ts#ProjectService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/project/service.ts#ProjectService.detect",
       "to": "external#join",
       "type": "calls"
@@ -47078,16 +46688,6 @@
     {
       "from": "packages/project/service.ts#ProjectService.detect",
       "to": "packages/project/service.ts#ProjectService.detectPackageManager",
-      "type": "calls"
-    },
-    {
-      "from": "packages/project/service.ts#ProjectService.detect",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/project/service.ts#ProjectService.detect",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
       "type": "calls"
     },
     {
@@ -47402,16 +47002,6 @@
     },
     {
       "from": "packages/prompt-intelligence/cache.ts#PromptCache.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/prompt-intelligence/cache.ts#PromptCache.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/prompt-intelligence/cache.ts#PromptCache.ensureDirectory",
       "to": "packages/prompt-intelligence/errors.ts#PromptCacheError",
       "type": "constructs"
     },
@@ -47678,16 +47268,6 @@
     {
       "from": "packages/prompt-intelligence/metrics.ts#PromptMetricsCollector.constructor",
       "to": "external#join",
-      "type": "calls"
-    },
-    {
-      "from": "packages/prompt-intelligence/metrics.ts#PromptMetricsCollector.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/prompt-intelligence/metrics.ts#PromptMetricsCollector.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
       "type": "calls"
     },
     {
@@ -48493,16 +48073,6 @@
     {
       "from": "packages/prompt-intelligence/snapshot.ts#PromptSnapshotManager.constructor",
       "to": "external#join",
-      "type": "calls"
-    },
-    {
-      "from": "packages/prompt-intelligence/snapshot.ts#PromptSnapshotManager.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/prompt-intelligence/snapshot.ts#PromptSnapshotManager.ensureDirectory",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
       "type": "calls"
     },
     {
@@ -54496,11 +54066,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/query-engine/service.ts#QueryEngineService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/query-engine/service.ts#QueryEngineService.query",
       "to": "external#now",
       "type": "calls"
@@ -54578,16 +54143,6 @@
     {
       "from": "packages/query-engine/service.ts#QueryEngineService.query",
       "to": "external#exists",
-      "type": "calls"
-    },
-    {
-      "from": "packages/query-engine/service.ts#QueryEngineService.query",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/query-engine/service.ts#QueryEngineService.query",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -54756,11 +54311,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/relationship-analyzer/service.ts#RelationshipAnalyzerService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/relationship-analyzer/service.ts#RelationshipAnalyzerService.parser",
       "to": "packages/ast/service.ts#AstService",
       "type": "constructs"
@@ -54807,16 +54357,6 @@
     },
     {
       "from": "packages/relationship-analyzer/service.ts#RelationshipAnalyzerService.analyze",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/relationship-analyzer/service.ts#RelationshipAnalyzerService.analyze",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "calls"
-    },
-    {
-      "from": "packages/relationship-analyzer/service.ts#RelationshipAnalyzerService.analyze",
       "to": "external#Set",
       "type": "constructs"
     },
@@ -54854,16 +54394,6 @@
       "from": "packages/relationship-analyzer/service.ts#RelationshipAnalyzerService.analyze",
       "to": "external#Date",
       "type": "constructs"
-    },
-    {
-      "from": "packages/relationship-analyzer/service.ts#RelationshipAnalyzerService.analyze",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/relationship-analyzer/service.ts#RelationshipAnalyzerService.analyze",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
     },
     {
       "from": "packages/relationship-analyzer/service.ts#RelationshipAnalyzerService.extractRelationships",
@@ -55006,11 +54536,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
       "to": "external#join",
       "type": "calls"
@@ -55027,32 +54552,12 @@
     },
     {
       "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
       "to": "packages/repository-evolution/service.ts#RepositoryEvolutionService.getCurrentHeadHash",
       "type": "awaits"
     },
     {
       "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
       "to": "packages/repository-evolution/service.ts#RepositoryEvolutionService.getCurrentHeadHash",
-      "type": "calls"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -55074,16 +54579,6 @@
       "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
       "to": "external#Date",
       "type": "constructs"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
     },
     {
       "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
@@ -55117,16 +54612,6 @@
     },
     {
       "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.rebuildAnalytics",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.rebuildAnalytics",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "calls"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.rebuildAnalytics",
       "to": "packages/repository-evolution/service.ts#RepositoryEvolutionService.computeAnalytics",
       "type": "awaits"
     },
@@ -55158,11 +54643,6 @@
     {
       "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.getAnalytics",
       "to": "packages/repository-evolution/service.ts#RepositoryEvolutionService.initialize",
-      "type": "calls"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.getAnalytics",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -55356,16 +54836,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.computeAnalytics",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/repository-evolution/service.ts#RepositoryEvolutionService.computeAnalytics",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
-    },
-    {
       "from": "packages/retriever/errors.ts#RetrieverError.constructor",
       "to": "external#super",
       "type": "calls"
@@ -55406,11 +54876,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/retriever/service.ts#RetrieverService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/retriever/service.ts#RetrieverService.retrieve",
       "to": "external#snapshot",
       "type": "awaits"
@@ -55424,16 +54889,6 @@
       "from": "packages/retriever/service.ts#RetrieverService.retrieve",
       "to": "packages/scanner/service.ts#ScannerService",
       "type": "constructs"
-    },
-    {
-      "from": "packages/retriever/service.ts#RetrieverService.retrieve",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/retriever/service.ts#RetrieverService.retrieve",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "calls"
     },
     {
       "from": "packages/retriever/service.ts#RetrieverService.retrieve",
@@ -55489,11 +54944,6 @@
       "from": "packages/runtime/errors.ts#RuntimeError.constructor",
       "to": "external#super",
       "type": "calls"
-    },
-    {
-      "from": "packages/runtime/service.ts#RuntimeService.initialize",
-      "to": "packages/workspace/service.ts#WorkspaceService",
-      "type": "constructs"
     },
     {
       "from": "packages/runtime/service.ts#RuntimeService.initialize",
@@ -55636,11 +55086,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/scanner/service.ts#ScannerService.fs",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/scanner/service.ts#ScannerService.snapshot",
       "to": "external#build",
       "type": "awaits"
@@ -55663,11 +55108,6 @@
     {
       "from": "packages/scanner/service.ts#ScannerService.snapshot",
       "to": "external#all",
-      "type": "calls"
-    },
-    {
-      "from": "packages/scanner/service.ts#ScannerService.snapshot",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -55826,11 +55266,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/semantic/service.ts#SemanticService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/semantic/service.ts#SemanticService.build",
       "to": "external#snapshot",
       "type": "awaits"
@@ -55864,16 +55299,6 @@
       "from": "packages/semantic/service.ts#SemanticService.build",
       "to": "external#Date",
       "type": "constructs"
-    },
-    {
-      "from": "packages/semantic/service.ts#SemanticService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/semantic/service.ts#SemanticService.build",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
     },
     {
       "from": "packages/semantic/service.ts#SemanticService.build",
@@ -57226,16 +56651,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/shared-memory/storage.ts#SharedMemoryStorage.ensureDirectories",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/shared-memory/storage.ts#SharedMemoryStorage.ensureDirectories",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
       "from": "packages/shared-memory/storage.ts#SharedMemoryStorage.saveSnapshot",
       "to": "packages/shared-memory/storage.ts#SharedMemoryStorage.ensureDirectories",
       "type": "awaits"
@@ -57377,16 +56792,6 @@
     },
     {
       "from": "packages/shared-memory/timeline.ts#CollaborationTimeline.append",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/shared-memory/timeline.ts#CollaborationTimeline.append",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/shared-memory/timeline.ts#CollaborationTimeline.append",
       "to": "external#dirname",
       "type": "calls"
     },
@@ -57451,11 +56856,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/symbols/service.ts#SymbolsService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/symbols/service.ts#SymbolsService.parser",
       "to": "packages/ast/service.ts#AstService",
       "type": "constructs"
@@ -57499,16 +56899,6 @@
       "from": "packages/symbols/service.ts#SymbolsService.index",
       "to": "external#Date",
       "type": "constructs"
-    },
-    {
-      "from": "packages/symbols/service.ts#SymbolsService.index",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/symbols/service.ts#SymbolsService.index",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
     },
     {
       "from": "packages/symbols/service.ts#SymbolsService.index",
@@ -57651,11 +57041,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/synchronizer/service.ts#SynchronizerService.filesystem",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
       "from": "packages/synchronizer/service.ts#SynchronizerService.constructor",
       "to": "external#endsWith",
       "type": "calls"
@@ -57708,16 +57093,6 @@
     {
       "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
       "to": "packages/synchronizer/service.ts#SynchronizerService.forceRebuild",
-      "type": "calls"
-    },
-    {
-      "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
-      "to": "packages/filesystem/service.ts#FileSystemService.readJson",
       "type": "calls"
     },
     {
@@ -57778,26 +57153,6 @@
     {
       "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
       "to": "external#toISOString",
-      "type": "calls"
-    },
-    {
-      "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/synchronizer/service.ts#SynchronizerService.synchronize",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
       "type": "calls"
     },
     {
@@ -61807,16 +61162,6 @@
     },
     {
       "from": "packages/test-context-compiler.ts#setup",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-context-compiler.ts#setup",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-context-compiler.ts#setup",
       "to": "external#join",
       "type": "calls"
     },
@@ -62212,16 +61557,6 @@
     },
     {
       "from": "packages/test-context-pipeline-retrieval.ts#runAll",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-context-pipeline-retrieval.ts#runAll",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-context-pipeline-retrieval.ts#runAll",
       "to": "external#join",
       "type": "calls"
     },
@@ -62283,16 +61618,6 @@
     {
       "from": "packages/test-context-pipeline-retrieval.ts#runAll",
       "to": "external#ok",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-context-pipeline-retrieval.ts#runAll",
-      "to": "packages/cli/commands/compile.ts#runCompile",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-context-pipeline-retrieval.ts#runAll",
-      "to": "packages/cli/commands/compile.ts#runCompile",
       "type": "calls"
     },
     {
@@ -62688,16 +62013,6 @@
     {
       "from": "packages/test-context-retrieval.ts#makeMockSnapshot",
       "to": "external#join",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-context-retrieval.ts#setup",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-context-retrieval.ts#setup",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
       "type": "calls"
     },
     {
@@ -63107,16 +62422,6 @@
     },
     {
       "from": "packages/test-context-sync.ts#setup",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-context-sync.ts#setup",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-context-sync.ts#setup",
       "to": "external#join",
       "type": "calls"
     },
@@ -63398,11 +62703,6 @@
     {
       "from": "packages/test-context-sync.ts#runSuite",
       "to": "external#catch",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-context-sync.ts#runSuite",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
       "type": "calls"
     },
     {
@@ -64301,16 +63601,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/test-learning-engine.ts#setupTestDir",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-learning-engine.ts#setupTestDir",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
       "from": "packages/test-learning-engine.ts#cleanupTestDir",
       "to": "external#rm",
       "type": "awaits"
@@ -64992,16 +64282,6 @@
     },
     {
       "from": "packages/test-learning-engine.ts#test12_ProviderRuntimeIntegration",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-learning-engine.ts#test12_ProviderRuntimeIntegration",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-learning-engine.ts#test12_ProviderRuntimeIntegration",
       "to": "external#writeFile",
       "type": "awaits"
     },
@@ -65157,16 +64437,6 @@
     },
     {
       "from": "packages/test-learning-engine.ts#test14_QueryEngineDiagnostics",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-learning-engine.ts#test14_QueryEngineDiagnostics",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-learning-engine.ts#test14_QueryEngineDiagnostics",
       "to": "external#now",
       "type": "calls"
     },
@@ -65312,196 +64582,6 @@
     },
     {
       "from": "packages/test-litmus-plugin.ts#main",
-      "to": "packages/cli/utils/logger.ts#logger.error",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#test",
-      "to": "external#fn",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#test",
-      "to": "external#fn",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#test",
-      "to": "external#log",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#test",
-      "to": "packages/cli/utils/logger.ts#logger.error",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#test",
-      "to": "external#exit",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#log",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/test-mcp-server.ts#test",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/test-mcp-server.ts#test",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#list",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#assert",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#get",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#clear",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/mcp-server/session.ts#McpSessionManager.generateSession",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/mcp-server/session.ts#McpSessionManager.validateToken",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#clearTelemetry",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/mcp-server/transports/stdio.ts#StdioTransport",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/mcp-server/server.ts#McpServer",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#start",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#start",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/mcp-server/server.ts#McpServer.handleRequest",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/mcp-server/server.ts#McpServer.handleRequest",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#stop",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#stop",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#getTelemetry",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/mcp-server/session.ts#McpSessionManager.getGlobalToken",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "packages/mcp-server/transports/http.ts#HttpTransport",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#stringify",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#Promise",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#request",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#byteLength",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#on",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#toString",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#resolve",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#parse",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#write",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#end",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
-      "to": "external#resPromise",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-mcp-server.ts#runTests",
       "to": "packages/cli/utils/logger.ts#logger.error",
       "type": "calls"
     },
@@ -67588,16 +66668,6 @@
     {
       "from": "packages/test-prompt-intelligence.ts#runSuite.test",
       "to": "packages/cli/utils/logger.ts#logger.error",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-prompt-intelligence.ts#runSuite",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-prompt-intelligence.ts#runSuite",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
       "type": "calls"
     },
     {
@@ -69928,91 +68998,6 @@
     {
       "from": "packages/test-provider-installation-pipeline.ts#runTests",
       "to": "external#diagnostics",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#test",
-      "to": "external#fn",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#test",
-      "to": "external#fn",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#test",
-      "to": "external#log",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#test",
-      "to": "packages/cli/utils/logger.ts#logger.error",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#test",
-      "to": "external#exit",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "external#log",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "packages/test-provider-mcp-integration.ts#test",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "packages/test-provider-mcp-integration.ts#test",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "external#discover",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "external#assert",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "packages/provider-bridge/session-instructions.ts#ProviderSessionInitializer.initializeSession",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "external#includes",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "external#clearTelemetry",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "packages/context-provider/provider.ts#ContextProvider",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "external#getTelemetry",
-      "type": "calls"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "packages/context-provider/provider.ts#ContextProvider.getContext",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-provider-mcp-integration.ts#runTests",
-      "to": "packages/context-provider/provider.ts#ContextProvider.getContext",
       "type": "calls"
     },
     {
@@ -72996,16 +71981,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/test-shared-memory.ts#setup",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/test-shared-memory.ts#setup",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
       "from": "packages/test-shared-memory.ts#teardown",
       "to": "external#rm",
       "type": "awaits"
@@ -75516,81 +74491,6 @@
       "type": "calls"
     },
     {
-      "from": "packages/workspace/service.ts#WorkspaceService.fs",
-      "to": "packages/filesystem/service.ts#FileSystemService",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.constructor",
-      "to": "external#super",
-      "type": "calls"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService",
-      "to": "external#join",
-      "type": "calls"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.create",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.create",
-      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
-      "type": "calls"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.create",
-      "to": "external#join",
-      "type": "calls"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.create",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.create",
-      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
-      "type": "calls"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.create",
-      "to": "external#toISOString",
-      "type": "calls"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.create",
-      "to": "external#Date",
-      "type": "constructs"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
-      "to": "packages/workspace/service.ts#WorkspaceService.exists",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
-      "to": "packages/workspace/service.ts#WorkspaceService.exists",
-      "type": "calls"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
-      "to": "packages/workspace/service.ts#WorkspaceService.create",
-      "type": "awaits"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
-      "to": "packages/workspace/service.ts#WorkspaceService.create",
-      "type": "calls"
-    },
-    {
-      "from": "packages/workspace/service.ts#WorkspaceService.validate",
-      "to": "packages/workspace/service.ts#WorkspaceService.exists",
-      "type": "calls"
-    },
-    {
       "from": "packages/workspace/workspace-engine.ts#generateTxId",
       "to": "external#now",
       "type": "calls"
@@ -76468,6 +75368,986 @@
     {
       "from": "scratch/test-query.ts#main",
       "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "packages/cli/utils/paths.ts#requireBrainInitialized",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "packages/workspace/service.ts#WorkspaceService",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#ensureSkillFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#ensureSkillFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "packages/cli/utils/spinner.ts#Spinner",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#start",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#now",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "packages/context-compiler/service.ts#ContextCompilerService",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#compile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#compile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#stop",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "packages/cli/utils/json.ts#printJson",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "packages/cli/utils/spinner.ts#Spinner.succeed",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#fail",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "packages/context-sync/workspace-listener.ts#WorkspaceListener",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#Promise",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#Promise",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#on",
+      "type": "calls"
+    },
+    {
+      "from": "packages/cli/commands/compile.ts#runCompile",
+      "to": "external#resolve",
+      "type": "calls"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.exists",
+      "to": "external#access",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.exists",
+      "to": "external#access",
+      "type": "calls"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.writeJson",
+      "to": "external#writeFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.writeJson",
+      "to": "external#writeFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.writeJson",
+      "to": "external#stringify",
+      "type": "calls"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.readJson",
+      "to": "external#readFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.readJson",
+      "to": "external#readFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.readJson",
+      "to": "external#parse",
+      "type": "calls"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.readText",
+      "to": "external#readFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.readText",
+      "to": "external#readFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.writeText",
+      "to": "external#writeFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/filesystem/service.ts#FileSystemService.writeText",
+      "to": "external#writeFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#test",
+      "to": "external#fn",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#test",
+      "to": "external#fn",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#test",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#test",
+      "to": "packages/cli/utils/logger.ts#logger.error",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#test",
+      "to": "external#exit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/test-mcp-server.ts#test",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/test-mcp-server.ts#test",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#list",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#clear",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/mcp-server/session.ts#McpSessionManager.generateSession",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/mcp-server/session.ts#McpSessionManager.validateToken",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#clearTelemetry",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/mcp-server/transports/stdio.ts#StdioTransport",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/mcp-server/server.ts#McpServer",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#start",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#start",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/mcp-server/server.ts#McpServer.handleRequest",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/mcp-server/server.ts#McpServer.handleRequest",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#stop",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#stop",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#getTelemetry",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/mcp-server/session.ts#McpSessionManager.getGlobalToken",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/mcp-server/transports/http.ts#HttpTransport",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#stringify",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#Promise",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#request",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#byteLength",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#on",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#toString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#resolve",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#parse",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#write",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#end",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "external#resPromise",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-mcp-server.ts#runTests",
+      "to": "packages/cli/utils/logger.ts#logger.error",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#test",
+      "to": "external#fn",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#test",
+      "to": "external#fn",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#test",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#test",
+      "to": "packages/cli/utils/logger.ts#logger.error",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#test",
+      "to": "external#exit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "packages/test-provider-mcp-integration.ts#test",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "packages/test-provider-mcp-integration.ts#test",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "external#discover",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "external#assert",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "packages/provider-bridge/session-instructions.ts#ProviderSessionInitializer.initializeSession",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "external#includes",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "external#clearTelemetry",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "packages/context-provider/provider.ts#ContextProvider",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "external#getTelemetry",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "packages/context-provider/provider.ts#ContextProvider.getContext",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts#runTests",
+      "to": "packages/context-provider/provider.ts#ContextProvider.getContext",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.fs",
+      "to": "packages/filesystem/service.ts#FileSystemService",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.create",
+      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.create",
+      "to": "packages/filesystem/service.ts#FileSystemService.mkdir",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.create",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.create",
+      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.create",
+      "to": "packages/filesystem/service.ts#FileSystemService.writeJson",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.create",
+      "to": "external#toISOString",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.create",
+      "to": "external#Date",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.ensureSkillFile",
+      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.ensureSkillFile",
+      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+      "to": "packages/workspace/service.ts#WorkspaceService.exists",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+      "to": "packages/workspace/service.ts#WorkspaceService.exists",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+      "to": "packages/workspace/service.ts#WorkspaceService.create",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+      "to": "packages/workspace/service.ts#WorkspaceService.create",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+      "to": "packages/workspace/service.ts#WorkspaceService.ensureSkillFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.initialize",
+      "to": "packages/workspace/service.ts#WorkspaceService.ensureSkillFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/service.ts#WorkspaceService.validate",
+      "to": "packages/workspace/service.ts#WorkspaceService.exists",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#CLI",
+      "to": "external#resolve",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#run",
+      "to": "external#cwd",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#run",
+      "to": "external#execSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runJson",
+      "to": "external#cwd",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runJson",
+      "to": "packages/test-skill-generation.ts#run",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runJson",
+      "to": "external#parse",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runJson",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#test",
+      "to": "external#fn",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#test",
+      "to": "external#fn",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#test",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#test",
+      "to": "packages/cli/utils/logger.ts#logger.error",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#test",
+      "to": "external#exit",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#log",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#mkdtempSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#tmpdir",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "packages/test-skill-generation.ts#runJson",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "packages/test-skill-generation.ts#test",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "packages/test-skill-generation.ts#test",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#ok",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#existsSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#readFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#includes",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#writeFileSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#strictEqual",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#unlinkSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "packages/filesystem/service.ts#FileSystemService",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator",
+      "type": "constructs"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#list",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#register",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#ensureSkillFile",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#ensureSkillFile",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#unregister",
+      "type": "calls"
+    },
+    {
+      "from": "packages/test-skill-generation.ts#runTests",
+      "to": "external#rmSync",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateOperatingProcedureSection",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateOperatingProcedureSection",
+      "to": "external#getToolLink",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateMCPToolsSection",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateMCPToolsSection",
+      "to": "external#keys",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateMCPToolsSection",
+      "to": "external#pop",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateMCPToolsSection",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateDecisionTreeSection",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateDecisionTreeSection",
+      "to": "external#getToolLink",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateWorkflowExamplesSection",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateWorkflowExamplesSection",
+      "to": "external#getToolLink",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateEfficiencySection",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateEfficiencySection",
+      "to": "external#getToolLink",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/learning-engine/service.ts#LearningEngineService.import",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "external#list",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateOverviewSection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateOperatingProcedureSection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateRulesSection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateRepositoryPolicySection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateMCPToolsSection",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateMCPToolsSection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateDecisionTreeSection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateWorkflowExamplesSection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateEfficiencySection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateFAQSection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateFooterSection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.calculateHash",
+      "to": "external#digest",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.calculateHash",
+      "to": "external#update",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.calculateHash",
+      "to": "external#createHash",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.calculateHash",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.getTemplateBody",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.calculateHash",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.generateHeaderSection",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "external#exists",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "external#exists",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "packages/filesystem/service.ts#FileSystemService.writeText",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "packages/filesystem/service.ts#FileSystemService.writeText",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "packages/filesystem/service.ts#FileSystemService.readText",
+      "type": "awaits"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "packages/filesystem/service.ts#FileSystemService.readText",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.ensureSkillFile",
+      "to": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.parseFrontmatter",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.parseFrontmatter",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.parseFrontmatter",
+      "to": "external#startsWith",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.parseFrontmatter",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.parseFrontmatter",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.parseFrontmatter",
+      "to": "external#slice",
+      "type": "calls"
+    },
+    {
+      "from": "packages/workspace/skill-generator.ts#WorkspaceSkillGenerator.parseFrontmatter",
+      "to": "external#match",
       "type": "calls"
     }
   ]

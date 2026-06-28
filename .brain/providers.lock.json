@@ -9,14 +9,34 @@
     "configurationChecksum": "f8941b779272f53e10d45b4cd08d0f39bee31c67",
     "selectedIntegrationMode": "mcp"
   },
-  "antigravity": {
-    "providerId": "antigravity",
+  "claude": {
+    "providerId": "claude",
     "executablePath": "",
     "detectedVersion": "1.0.0",
     "selectedTransport": "stdio",
-    "configurationFile": "/Users/sourik/.gemini/config/mcp_config.json",
-    "schemaVersion": "antigravity-v1",
-    "configurationChecksum": "646b4e0e026b764ea7e150f1864de2263d6d15da",
+    "configurationFile": "/var/folders/h7/30gmwgjs6f54xlwgjtf24xj80000gn/T/brain-test-068-buNxgU/claude/claude_desktop.json",
+    "schemaVersion": "claude-desktop-v1",
+    "configurationChecksum": "1077c5c7b16bd7dec4e9e00eb96aa57bec435a01",
+    "selectedIntegrationMode": "mcp"
+  },
+  "codex": {
+    "providerId": "codex",
+    "executablePath": "",
+    "detectedVersion": "1.0.0",
+    "selectedTransport": "stdio",
+    "configurationFile": "/var/folders/h7/30gmwgjs6f54xlwgjtf24xj80000gn/T/brain-test-068-buNxgU/codex/config.toml",
+    "schemaVersion": "codex-toml-v1",
+    "configurationChecksum": "a2e6e7c337915cf8a42debe9f9246cc96241a59c",
+    "selectedIntegrationMode": "mcp"
+  },
+  "continue": {
+    "providerId": "continue",
+    "executablePath": "",
+    "detectedVersion": "1.0.0",
+    "selectedTransport": "stdio",
+    "configurationFile": "/var/folders/h7/30gmwgjs6f54xlwgjtf24xj80000gn/T/brain-test-068-buNxgU/continue/config.yaml",
+    "schemaVersion": "continue-yaml-v1",
+    "configurationChecksum": "9237f23aeb1bfa567f447764bf600c1e8f2d3b4a",
     "selectedIntegrationMode": "mcp"
   }
 }

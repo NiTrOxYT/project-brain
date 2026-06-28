@@ -1,13 +1,13 @@
 {
-  "totalSnapshots": 3,
-  "totalCompilations": 3,
+  "totalSnapshots": 8,
+  "totalCompilations": 8,
   "cacheHits": 0,
-  "cacheMisses": 3,
+  "cacheMisses": 8,
   "incrementalCompiles": 0,
-  "fullCompiles": 3,
-  "averageCompilationMs": 507,
-  "averageTokens": 6677.666666666667,
+  "fullCompiles": 8,
+  "averageCompilationMs": 419.375,
+  "averageTokens": 19407.875,
   "tokenSavings": 0,
-  "lastCompilationAt": "2026-06-28T11:15:20.212Z",
-  "lastSnapshotId": "eb68dc5bbd3744867b19786f483862c1085b0ec1f6ba6145df24c99d4f962b6b"
+  "lastCompilationAt": "2026-06-28T18:05:46.083Z",
+  "lastSnapshotId": "80838089f31d71d921498310c22e604856b1f68d30530a623754e78364c307fe"
 }

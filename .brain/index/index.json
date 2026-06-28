@@ -843,8 +843,8 @@
     {
       "path": "package.json",
       "extension": ".json",
-      "size": 506,
-      "modifiedAt": "2026-06-27T14:49:09.752Z"
+      "size": 565,
+      "modifiedAt": "2026-06-28T17:56:16.813Z"
     },
     {
       "path": "packages/agent-runtime/artifacts.ts",
@@ -1371,8 +1371,8 @@
     {
       "path": "packages/cli/commands/compile.ts",
       "extension": ".ts",
-      "size": 3350,
-      "modifiedAt": "2026-06-27T14:49:09.752Z"
+      "size": 3553,
+      "modifiedAt": "2026-06-28T17:55:41.948Z"
     },
     {
       "path": "packages/cli/commands/config.ts",
@@ -2103,8 +2103,8 @@
     {
       "path": "packages/filesystem/service.ts",
       "extension": ".ts",
-      "size": 716,
-      "modifiedAt": "2026-06-26T15:41:48.569Z"
+      "size": 949,
+      "modifiedAt": "2026-06-28T17:55:19.700Z"
     },
     {
       "path": "packages/filesystem/types.ts",
@@ -3813,8 +3813,8 @@
     {
       "path": "packages/test-mcp-server.ts",
       "extension": ".ts",
-      "size": 6690,
-      "modifiedAt": "2026-06-28T10:52:11.755Z"
+      "size": 6745,
+      "modifiedAt": "2026-06-28T17:42:27.879Z"
     },
     {
       "path": "packages/test-mcp-stdio-compliance.ts",
@@ -3903,8 +3903,8 @@
     {
       "path": "packages/test-provider-mcp-integration.ts",
       "extension": ".ts",
-      "size": 3642,
-      "modifiedAt": "2026-06-28T08:39:47.463Z"
+      "size": 3643,
+      "modifiedAt": "2026-06-28T17:43:34.984Z"
     },
     {
       "path": "packages/test-provider-registration.ts",
@@ -3979,6 +3979,12 @@
       "modifiedAt": "2026-06-27T15:10:32.818Z"
     },
     {
+      "path": "packages/test-skill-generation.ts",
+      "extension": ".ts",
+      "size": 7766,
+      "modifiedAt": "2026-06-28T18:08:46.244Z"
+    },
+    {
       "path": "packages/test-symbols.ts",
       "extension": ".ts",
       "size": 355,
@@ -4017,14 +4023,20 @@
     {
       "path": "packages/workspace/index.ts",
       "extension": ".ts",
-      "size": 318,
-      "modifiedAt": "2026-06-27T15:10:32.819Z"
+      "size": 356,
+      "modifiedAt": "2026-06-28T17:55:31.665Z"
     },
     {
       "path": "packages/workspace/service.ts",
       "extension": ".ts",
-      "size": 2796,
-      "modifiedAt": "2026-06-28T10:46:41.444Z"
+      "size": 3087,
+      "modifiedAt": "2026-06-28T17:55:36.922Z"
+    },
+    {
+      "path": "packages/workspace/skill-generator.ts",
+      "extension": ".ts",
+      "size": 16646,
+      "modifiedAt": "2026-06-28T18:08:36.212Z"
     },
     {
       "path": "packages/workspace/types.ts",

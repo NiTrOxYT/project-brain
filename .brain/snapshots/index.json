@@ -1,5 +1,20 @@
 [
   {
+    "snapshotId": "ea8387d5702a285dbf94a87c14f255c8ae84d8eb8cdd92e3d781652c8e2648e3",
+    "createdAt": "2026-06-28T17:58:21.043Z",
+    "fingerprint": {
+      "hash": "ea8387d5702a285dbf94a87c14f255c8ae84d8eb8cdd92e3d781652c8e2648e3",
+      "filesystemHash": "3bdcc707a9c20838c291c136bf0f8e3ac5f08f49aac0094c6bb02b05b49eb10c",
+      "graphHash": "1e20adfb33846428d77cd77ea9ef25fa14b9c29bb8655f6cc242c236977389ce",
+      "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
+      "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
+      "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
+      "version": "35.773.714"
+    },
+    "estimatedTokens": 515239,
+    "incremental": false
+  },
+  {
     "snapshotId": "dbff6da1714614af3f415136f7355a05396c1ab920f44aab22c3529b6fdddc72",
     "createdAt": "2026-06-28T17:11:26.649Z",
     "fingerprint": {

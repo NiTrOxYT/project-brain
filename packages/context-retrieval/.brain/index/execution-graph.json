@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T11:15:20.199Z",
+  "generatedAt": "2026-06-28T18:05:46.067Z",
   "nodes": [
     {
       "id": "architecture-retriever.ts#ArchitectureRetriever",
@@ -2138,6 +2138,11 @@
     {
       "from": "service.ts#ContextRetrievalService.retrieve",
       "to": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#slice",
       "type": "calls"
     },
     {

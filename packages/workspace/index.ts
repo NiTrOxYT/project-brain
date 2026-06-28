@@ -7,3 +7,4 @@ export * from "./workspace-journal.js";
 export * from "./workspace-lock.js";
 export * from "./workspace-patch.js";
 export * from "./workspace-engine.js";
+export * from "./skill-generator.js";
