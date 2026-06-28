@@ -27,9 +27,25 @@ export class ExecutionGraphService {
         private readonly workspaceRoot: string
     ) {}
 
+    private async getProjectRoot(): Promise<string> {
+        try {
+            let configPath = path.join(this.workspaceRoot, "brain.json");
+            if (!(await this.filesystem.exists(configPath))) {
+                configPath = path.join(this.workspaceRoot, ".brain", "brain.json");
+            }
+            const raw = await fs.readFile(configPath, "utf8");
+            const config = JSON.parse(raw);
+            if (config.projectRoot) {
+                return config.projectRoot;
+            }
+        } catch {}
+        return this.workspaceRoot.endsWith(".brain") ? path.dirname(this.workspaceRoot) : this.workspaceRoot;
+    }
+
     async build(): Promise<ExecutionGraph> {
 
         try {
+            const projectRoot = await this.getProjectRoot();
 
             const indexPath = path.join(
                 this.workspaceRoot,
@@ -92,7 +108,7 @@ export class ExecutionGraphService {
 
             for (const filePath of tsFiles) {
 
-                const fullPath = path.join(process.cwd(), filePath);
+                const fullPath = path.join(projectRoot, filePath);
                 const parsed = await this.parser.parse(fullPath);
                 
                 const scopeStack: string[] = [];
@@ -189,7 +205,7 @@ export class ExecutionGraphService {
 
             for (const filePath of tsFiles) {
 
-                const fullPath = path.join(process.cwd(), filePath);
+                const fullPath = path.join(projectRoot, filePath);
                 const parsed = await this.parser.parse(fullPath);
                 
                 const scopeStack: string[] = [];
@@ -375,6 +391,7 @@ export class ExecutionGraphService {
         removedFiles: string[]
     ): Promise<ExecutionGraph> {
         try {
+            const projectRoot = await this.getProjectRoot();
             const graphPath = path.join(this.workspaceRoot, "index", "execution-graph.json");
             if (!(await this.filesystem.exists(graphPath))) {
                 return this.build();
@@ -453,7 +470,7 @@ export class ExecutionGraphService {
             };
 
             for (const filePath of tsFiles) {
-                const fullPath = path.join(process.cwd(), filePath);
+                const fullPath = path.join(projectRoot, filePath);
                 const parsed = await this.parser.parse(fullPath);
                 
                 const scopeStack: string[] = [];
@@ -541,7 +558,7 @@ export class ExecutionGraphService {
             };
 
             for (const filePath of changedFiles) {
-                const fullPath = path.join(process.cwd(), filePath);
+                const fullPath = path.join(projectRoot, filePath);
                 const parsed = await this.parser.parse(fullPath);
                 
                 const scopeStack: string[] = [];

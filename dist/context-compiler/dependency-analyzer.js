@@ -9,6 +9,10 @@ export class DependencyAnalyzer {
     normalizer = new SnapshotNormalizer();
     analyze(context) {
         const deps = [];
+        if (context.importsData) {
+            const extracted = this.extractFromImports(context.importsData, context.workspaceRoot);
+            deps.push(...extracted);
+        }
         // Primary: extract from relationships.json if it exists
         if (context.relationshipsData) {
             const extracted = this.extractFromRelationships(context.relationshipsData, context.workspaceRoot);
@@ -20,6 +24,26 @@ export class DependencyAnalyzer {
             deps.push(...extracted);
         }
         return this.normalizer.normalizeDependencies(deps);
+    }
+    extractFromImports(data, workspaceRoot) {
+        const deps = [];
+        if (!data || !Array.isArray(data.imports))
+            return deps;
+        for (const imp of data.imports) {
+            if (!imp || typeof imp !== "object")
+                continue;
+            const fromPath = imp.source || "";
+            const toPath = imp.target || "";
+            if (!fromPath || !toPath)
+                continue;
+            deps.push({
+                fromPath: this.normalizePath(fromPath, workspaceRoot),
+                toPath: this.normalizePath(toPath, workspaceRoot),
+                kind: "import",
+                importNames: []
+            });
+        }
+        return deps;
     }
     // ─── Extractors ──────────────────────────────────────────────────────────
     extractFromRelationships(data, workspaceRoot) {

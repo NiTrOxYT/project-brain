@@ -1,0 +1,56 @@
+{
+  "queryFingerprint": "a9f422b9fde67c956786d6b652f083eaca5ee104997ca2f7576a0b4f17cb0c3b_103c27de97a87d331ed019ecf82d7d114bff910767d0fbc53040a6c61b65acd0",
+  "snapshotId": "a9f422b9fde67c956786d6b652f083eaca5ee104997ca2f7576a0b4f17cb0c3b",
+  "retrievalPackage": {
+    "retrievalId": "retrieval-fd6b8b44f4bc",
+    "snapshotId": "a9f422b9fde67c956786d6b652f083eaca5ee104997ca2f7576a0b4f17cb0c3b",
+    "sections": [
+      {
+        "id": "filesystem-index",
+        "name": "Filesystem Index",
+        "kind": "filesystem-index",
+        "content": "[{\"path\":\"architecture-retriever.ts\",\"relativePath\":\"../../../architecture-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":1027,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"budget.ts\",\"relativePath\":\"../../../budget.ts\",\"extension\":\".ts\",\"sizeBytes\":3702,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"cache.ts\",\"relativePath\":\"../../../cache.ts\",\"extension\":\".ts\",\"sizeBytes\":3443,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"compressor.ts\",\"relativePath\":\"../../../compressor.ts\",\"extension\":\".ts\",\"sizeBytes\":2429,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"dependency-expander.ts\",\"relativePath\":\"../../../dependency-expander.ts\",\"extension\":\".ts\",\"sizeBytes\":2527,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"diagnostics.ts\",\"relativePath\":\"../../../diagnostics.ts\",\"extension\":\".ts\",\"sizeBytes\":2560,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"errors.ts\",\"relativePath\":\"../../../errors.ts\",\"extension\":\".ts\",\"sizeBytes\":1211,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"graph-traverser.ts\",\"relativePath\":\"../../../graph-traverser.ts\",\"extension\":\".ts\",\"sizeBytes\":5712,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"index.ts\",\"relativePath\":\"../../../index.ts\",\"extension\":\".ts\",\"sizeBytes\":966,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"learning-retriever.ts\",\"relativePath\":\"../../../learning-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":855,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"metrics.ts\",\"relativePath\":\"../../../metrics.ts\",\"extension\":\".ts\",\"sizeBytes\":2651,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"query-parser.ts\",\"relativePath\":\"../../../query-parser.ts\",\"extension\":\".ts\",\"sizeBytes\":3565,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"ranking.ts\",\"relativePath\":\"../../../ranking.ts\",\"extension\":\".ts\",\"sizeBytes\":3128,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"relationship-retriever.ts\",\"relativePath\":\"../../../relationship-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":1096,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"retrieval-planner.ts\",\"relativePath\":\"../../../retrieval-planner.ts\",\"extension\":\".ts\",\"sizeBytes\":1660,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"service.ts\",\"relativePath\":\"../../../service.ts\",\"extension\":\".ts\",\"sizeBytes\":13718,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"symbol-retriever.ts\",\"relativePath\":\"../../../symbol-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":1114,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"types.ts\",\"relativePath\":\"../../../types.ts\",\"extension\":\".ts\",\"sizeBytes\":4742,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"validator.ts\",\"relativePath\":\"../../../validator.ts\",\"extension\":\".ts\",\"sizeBytes\":2206,\"language\":\"TypeScript\",\"linesOfCode\":0}]",
+        "priority": 10,
+        "estimatedTokens": 680,
+        "reason": "system-config"
+      },
+      {
+        "id": "knowledge-graph",
+        "name": "Knowledge Graph",
+        "kind": "knowledge-graph",
+        "content": "[]",
+        "priority": 40,
+        "estimatedTokens": 1,
+        "reason": "relationship-link"
+      },
+      {
+        "id": "dependency-graph",
+        "name": "Dependency Graph",
+        "kind": "dependency-graph",
+        "content": "[]",
+        "priority": 50,
+        "estimatedTokens": 1,
+        "reason": "relationship-link"
+      },
+      {
+        "id": "repository-evolution",
+        "name": "Repository Evolution",
+        "kind": "repository-evolution",
+        "content": "[]",
+        "priority": 70,
+        "estimatedTokens": 1,
+        "reason": "evolution-history"
+      }
+    ],
+    "candidates": [],
+    "graph": {
+      "nodes": [],
+      "edges": [],
+      "topologicalOrder": []
+    },
+    "symbols": [],
+    "dependencies": [],
+    "relationships": []
+  },
+  "storedAt": "2026-06-28T10:52:33.723Z"
+}

@@ -1,42 +1,149 @@
+// ──────────────────────────────────────────────────────────────────────────────
+// BUILD-069 — Provider Configuration Discovery Engine (Synchronous & Always Returns Config)
+// ──────────────────────────────────────────────────────────────────────────────
+import fs from "fs";
+import path from "path";
+import { execFileSync } from "child_process";
+import { ProviderSchemaRegistry } from "./schema-registry.js";
+import { resolvePathPattern } from "./provider-manifest.js";
+import { ProviderCompatibilityRegistry } from "./provider-compatibility.js";
+function resolveBinarySync(executableNames) {
+    const pathEnv = process.env.PATH ?? process.env.Path ?? "";
+    const delimiter = process.platform === "win32" ? ";" : ":";
+    const entries = pathEnv.split(delimiter);
+    const extensions = process.platform === "win32" ? [".exe", ".cmd", ".bat", ""] : [""];
+    for (const binaryName of executableNames) {
+        for (const entry of entries) {
+            if (!entry)
+                continue;
+            for (const ext of extensions) {
+                const fullPath = path.join(entry.trim(), `${binaryName}${ext}`);
+                if (fs.existsSync(fullPath)) {
+                    try {
+                        if (!fs.statSync(fullPath).isDirectory()) {
+                            fs.accessSync(fullPath, fs.constants.X_OK);
+                            return fullPath;
+                        }
+                    }
+                    catch { }
+                }
+            }
+        }
+    }
+    return "";
+}
 export class ProviderDiscoveryEngine {
-    static discover(providerId) {
-        // Mock discovery based on provider profiles
-        let version = "1.0.0";
-        const caps = {
+    static getBinaryVersion(binaryPath, providerId) {
+        const args = ["--version"];
+        try {
+            const stdout = execFileSync(binaryPath, args, { encoding: "utf8", timeout: 1000 }).trim();
+            const match = stdout.match(/([0-9]+\.[0-9]+\.[0-9]+)/);
+            return match ? match[1] : stdout.split("\n")[0].trim();
+        }
+        catch {
+            try {
+                const stdout = execFileSync(binaryPath, ["-v"], { encoding: "utf8", timeout: 1000 }).trim();
+                const match = stdout.match(/([0-9]+\.[0-9]+\.[0-9]+)/);
+                return match ? match[1] : stdout.split("\n")[0].trim();
+            }
+            catch {
+                return "1.0.0";
+            }
+        }
+    }
+    static discover(providerId, workspaceRoot) {
+        const schema = ProviderSchemaRegistry.get(providerId);
+        if (!schema) {
+            throw new Error(`Provider "${providerId}" has no registered schema.`);
+        }
+        const manifest = schema.manifest;
+        const resolvedBinary = resolveBinarySync(manifest.executableNames);
+        let installed = false;
+        let executablePath = "";
+        let version = "0.0.0";
+        if (resolvedBinary) {
+            installed = true;
+            executablePath = resolvedBinary;
+            version = this.getBinaryVersion(executablePath, providerId);
+        }
+        else {
+            // Check config locations
+            const globalPaths = manifest.configurationLocations
+                .filter(l => l.type === "global")
+                .map(l => resolvePathPattern(l.pathPattern, workspaceRoot));
+            const workspacePaths = manifest.configurationLocations
+                .filter(l => l.type === "workspace")
+                .map(l => resolvePathPattern(l.pathPattern, workspaceRoot));
+            const pathCheck = [...globalPaths, ...workspacePaths].some(p => fs.existsSync(p));
+            if (pathCheck) {
+                installed = true;
+                version = "1.0.0";
+            }
+        }
+        const globalConfigs = manifest.configurationLocations
+            .filter(l => l.type === "global")
+            .map(l => resolvePathPattern(l.pathPattern, workspaceRoot));
+        const workspaceConfigs = manifest.configurationLocations
+            .filter(l => l.type === "workspace")
+            .map(l => resolvePathPattern(l.pathPattern, workspaceRoot));
+        const globalExists = globalConfigs.some(p => fs.existsSync(p));
+        const workspaceExists = workspaceConfigs.some(p => fs.existsSync(p));
+        let activeConfiguration = "global";
+        if (globalExists && workspaceExists) {
+            activeConfiguration = "mixed";
+        }
+        else if (workspaceExists) {
+            activeConfiguration = "workspace";
+        }
+        // Automatic Strategy Resolution:
+        // Order: Preferred integration -> supported integrations -> mcp fallback -> none
+        let selectedIntegrationMode = "none";
+        const availableModes = manifest.supportedIntegrationModes;
+        if (availableModes.includes(manifest.preferredIntegrationMode)) {
+            selectedIntegrationMode = manifest.preferredIntegrationMode;
+        }
+        else if (availableModes.length > 0) {
+            selectedIntegrationMode = availableModes[0];
+        }
+        const supportedTransports = manifest.supportedMcpTransports;
+        // Compatibility checks
+        const compatRes = ProviderCompatibilityRegistry.validateCompatibility(manifest.compatibility, version);
+        const versionSupport = {
+            supported: compatRes.supported,
+            minimumVersion: manifest.compatibility.minimumVersion,
+            maximumVersion: manifest.compatibility.maximumTestedVersion,
+            warning: compatRes.warning || compatRes.error
+        };
+        // Legacy compatibility object mapping
+        const legacyCapabilities = {
             launchWrapper: true,
             promptBridge: false,
             responseBridge: false,
             toolBridge: false,
             workspaceBridge: false,
-            mcpBridge: false,
+            mcpBridge: manifest.capabilities.supportsStdioMcp || manifest.capabilities.supportsHttpMcp,
             apiBridge: false,
-            contextProvider: false,
-            supportsMcp: false,
-            supportsToolCalling: false,
+            contextProvider: manifest.capabilities.supportsRuntimeToolDiscovery,
+            supportsMcp: manifest.capabilities.supportsStdioMcp || manifest.capabilities.supportsHttpMcp,
+            supportsToolCalling: manifest.capabilities.supportsRuntimeToolInvocation,
             supportsPlugins: false,
             supportsSdk: false
         };
-        if (providerId === "claude") {
-            version = "2.3.0";
-            caps.supportsMcp = true;
-            caps.supportsToolCalling = true;
-            caps.contextProvider = true;
-        }
-        else if (providerId === "opencode") {
-            version = "1.9.1";
-            caps.supportsMcp = true;
-            caps.supportsToolCalling = true;
-            caps.contextProvider = true;
-            caps.supportsSdk = true;
-        }
-        else if (providerId === "aider") {
-            version = "0.35.0";
-            caps.supportsToolCalling = true;
-        }
         return {
             providerId,
             version,
-            capabilities: caps
+            executable: executablePath,
+            globalConfigs,
+            workspaceConfigs,
+            activeConfiguration,
+            supportedTransports,
+            versionSupport,
+            configCapabilities: manifest.capabilities,
+            capabilities: legacyCapabilities,
+            installed,
+            supportedIntegrationModes: manifest.supportedIntegrationModes,
+            preferredIntegrationMode: manifest.preferredIntegrationMode,
+            selectedIntegrationMode
         };
     }
 }

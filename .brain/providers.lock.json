@@ -1,0 +1,12 @@
+{
+  "opencode": {
+    "providerId": "opencode",
+    "executablePath": "/Users/sourik/.project-brain/bin/opencode",
+    "detectedVersion": "1.17.11",
+    "selectedTransport": "stdio",
+    "configurationFile": "/Users/sourik/projects/project-brain/.opencode/opencode.json",
+    "schemaVersion": "opencode-v1",
+    "configurationChecksum": "f8941b779272f53e10d45b4cd08d0f39bee31c67",
+    "selectedIntegrationMode": "mcp"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "test-gateway": {
+    "lastSuccessfulVerification": "2026-06-28T10:02:48.439Z",
+    "lastSuccessfulMcpHandshake": null,
+    "lastSuccessfulToolInvocation": null,
+    "consecutiveFailures": 1,
+    "lastConfigurationMigration": null,
+    "lastRepairExecution": null
+  }
+}

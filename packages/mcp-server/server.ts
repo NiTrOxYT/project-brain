@@ -1,6 +1,8 @@
 import { McpToolRegistry } from "./registry.js";
 import { McpSessionManager } from "./session.js";
 import type { McpTransport } from "./types.js";
+import { errorResult } from "./tool-result.js";
+
 
 export interface McpServerTelemetry {
     uptimeStart:            number;
@@ -151,10 +153,11 @@ export class McpServer {
                     McpServer.telemetry.toolExecutionFailures++;
                     return {
                         jsonrpc: "2.0",
-                        error: { code: -32603, message: err.message || "Internal error during tool execution" },
+                        result: errorResult(err.message || "Internal error during tool execution"),
                         id
                     };
                 }
+
             }
 
             return {

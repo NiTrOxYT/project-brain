@@ -1,0 +1,7985 @@
+{
+  "generatedAt": "2026-06-28T11:15:20.181Z",
+  "relationships": [
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "keywords",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 6
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 8
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "architecture",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 8
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "keywordSet",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 9
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "has",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 9
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "entry",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 9
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "entry",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 10
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "keywordSet",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 10
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "has",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 10
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "entry",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 11
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "keywordSet",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 11
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "has",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 11
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "catMatch",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 13
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "titleMatch",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 13
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "tagMatch",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 13
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "keywords",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 13
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "result",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 14
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "entry",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 14
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "result",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 18
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "catComp",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 20
+    },
+    {
+      "source": "ArchitectureRetriever.retrieve",
+      "target": "catComp",
+      "type": "references",
+      "file": "architecture-retriever.ts",
+      "line": 20
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "RetrievalSection",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 16
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "allocatedSections",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 20
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "RetrievalSection",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 20
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "budget",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 21
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "RetrievalBudget",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 21
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "providerBudgets",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 23
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 27
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 28
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "architecture",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 29
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 29
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "files",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 30
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 30
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "symbols",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "relationships",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "learning",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 33
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 33
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "validation",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 34
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 34
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "architecture",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 40
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "files",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 41
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "symbols",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 42
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "relationships",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 43
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "learning",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 44
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "validation",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "RetrievalSection",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "sorted",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "s",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 58
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "runningTokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 61
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 61
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 61
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "s",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 64
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "allocatedSections",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 66
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "s",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 66
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "runningTokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 67
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 67
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "addActual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 68
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 68
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "s",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 68
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 68
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "allocatedSections",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 74
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "s",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 74
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "runningTokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 75
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 75
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "addActual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 76
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 76
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "s",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 76
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 76
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "RetrievalBudget",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 80
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "limit",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 81
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "allocated",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 82
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 83
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "allocatedSections",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 87
+    },
+    {
+      "source": "RetrievalBudgeter.allocate",
+      "target": "budget",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 88
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "lower",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 94
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 95
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "files",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 95
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 95
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "lower",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 96
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 97
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "symbols",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 97
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 97
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "lower",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 98
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 99
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "architecture",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 99
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 99
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "lower",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 100
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "lower",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 100
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 101
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "learning",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 101
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 101
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "lower",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 102
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "lower",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 102
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 103
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "relationships",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 103
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 103
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "lower",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 104
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 105
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 105
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "actual",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 107
+    },
+    {
+      "source": "RetrievalBudgeter.addActual",
+      "target": "tokens",
+      "type": "references",
+      "file": "budget.ts",
+      "line": 107
+    },
+    {
+      "source": "RetrievalCache.memoryCache",
+      "target": "RetrievalCacheEntry",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 9
+    },
+    {
+      "source": "RetrievalCache.constructor",
+      "target": "cacheDir",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 13
+    },
+    {
+      "source": "RetrievalCache.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 13
+    },
+    {
+      "source": "RetrievalCache.ensureDirectory",
+      "target": "cacheDir",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 17
+    },
+    {
+      "source": "RetrievalCache.computeKey",
+      "target": "queryHash",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 22
+    },
+    {
+      "source": "RetrievalCache.has",
+      "target": "computeKey",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 26
+    },
+    {
+      "source": "RetrievalCache.has",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 27
+    },
+    {
+      "source": "RetrievalCache.has",
+      "target": "has",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 27
+    },
+    {
+      "source": "RetrievalCache.has",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 27
+    },
+    {
+      "source": "RetrievalCache.has",
+      "target": "getCachePath",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 29
+    },
+    {
+      "source": "RetrievalCache.has",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 29
+    },
+    {
+      "source": "RetrievalCache.has",
+      "target": "p",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 38
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "computeKey",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 39
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 42
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "get",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 42
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 42
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "mem",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 43
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "mem",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "mem",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 47
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "getCachePath",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "p",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 53
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "parse",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "raw",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "RetrievalCacheEntry",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 55
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 55
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "entry",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 55
+    },
+    {
+      "source": "RetrievalCache.get",
+      "target": "entry",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 56
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 62
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "ensureDirectory",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 63
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "computeKey",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 64
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "RetrievalCacheEntry",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 65
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 66
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 72
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 72
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "entry",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 72
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 75
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "maxItems",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 75
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 76
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "firstKey",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 77
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 78
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "firstKey",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 78
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "getCachePath",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 81
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "firstKey",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 81
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "getCachePath",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 86
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 86
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "p",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 88
+    },
+    {
+      "source": "RetrievalCache.put",
+      "target": "entry",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 88
+    },
+    {
+      "source": "RetrievalCache.clear",
+      "target": "memoryCache",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 93
+    },
+    {
+      "source": "RetrievalCache.clear",
+      "target": "clear",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 93
+    },
+    {
+      "source": "RetrievalCache.clear",
+      "target": "cacheDir",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 95
+    },
+    {
+      "source": "RetrievalCache.clear",
+      "target": "files",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 96
+    },
+    {
+      "source": "RetrievalCache.clear",
+      "target": "file",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 97
+    },
+    {
+      "source": "RetrievalCache.clear",
+      "target": "cacheDir",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 98
+    },
+    {
+      "source": "RetrievalCache.clear",
+      "target": "file",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 98
+    },
+    {
+      "source": "RetrievalCache.getCachePath",
+      "target": "cacheDir",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 105
+    },
+    {
+      "source": "RetrievalCache.getCachePath",
+      "target": "key",
+      "type": "references",
+      "file": "cache.ts",
+      "line": 105
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 4
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 4
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "candidates",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 7
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "c",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 8
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenCandidates",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 9
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "has",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 9
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "normalized",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 9
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenCandidates",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 10
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "normalized",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 10
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "symbols",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 16
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "s",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 17
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "s",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 17
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenSymbols",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 18
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "has",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 18
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "key",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 18
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenSymbols",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 19
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "key",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 19
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "graph",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 25
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "nodes",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 25
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenNodes",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 26
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "has",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 26
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "n",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 26
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenNodes",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 27
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "n",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 27
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "graph",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "edges",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "e",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 33
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "e",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 33
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "e",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 33
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenEdges",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 34
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "has",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 34
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "key",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 34
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenEdges",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "key",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "dependencies",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 41
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenDeps",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 43
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "has",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 43
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "key",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 43
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenDeps",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 44
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "key",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 44
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "candidates",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "candidates",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "score",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "score",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "symbols",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 52
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "symbols",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 52
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "dependencies",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 53
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "dependencies",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 53
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "graph",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "nodes",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 55
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "nodes",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 55
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "edges",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 56
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "edges",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 56
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "topologicalOrder",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "graph",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "topologicalOrder",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "seenNodes",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalCompressor.compress",
+      "target": "has",
+      "type": "references",
+      "file": "compressor.ts",
+      "line": 57
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "p",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 9
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "snapshot",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 11
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "files",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 11
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "norm",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 11
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "norm",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 14
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "p",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 14
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "filesMap",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 16
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "normalized",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 16
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "normalized",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 16
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "match",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 17
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "queue",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 18
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "match",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 18
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "expanded",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 19
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "match",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 19
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "snapshot",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 27
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "dependencies",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 27
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "norm",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 28
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "dep",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 28
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "norm",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 29
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "dep",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 29
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "filesMap",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 32
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "from",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 32
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "from",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 32
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "filesMap",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 33
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "to",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 33
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "to",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 33
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "outgoing",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 35
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "get",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 35
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "fullFrom",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 35
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "outList",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 36
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "fullTo",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 36
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "outgoing",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 37
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "fullFrom",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 37
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "outList",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 37
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "incoming",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 39
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "get",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 39
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "fullTo",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 39
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "inList",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 40
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "fullFrom",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 40
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "incoming",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 41
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "fullTo",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 41
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "inList",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 41
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "queue",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 45
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "safety",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 45
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "queue",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 46
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "current",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 47
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "current",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 49
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "outgoing",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 52
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "get",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 52
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "current",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 52
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "outDeps",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 53
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "expanded",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 54
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "has",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 54
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "o",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 54
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "expanded",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 55
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "o",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 55
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "queue",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 56
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "o",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 56
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "current",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 56
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "incoming",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 61
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "get",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 61
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "current",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 61
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "inDeps",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 62
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "expanded",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 63
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "has",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 63
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "i",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 63
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "expanded",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 64
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "i",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 64
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "queue",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 65
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "i",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 65
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "current",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 65
+    },
+    {
+      "source": "DependencyExpander.expand",
+      "target": "expanded",
+      "type": "references",
+      "file": "dependency-expander.ts",
+      "line": 70
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "metrics",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 6
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "RetrievalMetrics",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 6
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "candidates",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 7
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "RetrievalCandidate",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 7
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "budget",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 8
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "RetrievalBudget",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 8
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 9
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "finalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 10
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "RetrievalDiagnostics",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 11
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "metrics",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 12
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "stages",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 12
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "stage",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 13
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "s",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 13
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "s",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 14
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "candidates",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 17
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "c",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 18
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "score",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 19
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "c",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 19
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "score",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 19
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "reasons",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 20
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "c",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 20
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "reasons",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 20
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 23
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 24
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "finalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 24
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 24
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "timeline",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 29
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "rankingExplanation",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 30
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "budget",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 34
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 34
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "finalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "finalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.build",
+      "target": "ratio",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 36
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "RetrievalDiagnostics",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 41
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 44
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 47
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "finalTokens",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 47
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "ratio",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 50
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "timeline",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 52
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 53
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "stage",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 53
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "stage",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 53
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "stage",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 53
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 56
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "rankingExplanation",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 58
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 59
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "c",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 59
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "score",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 59
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "c",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 59
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "c",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 59
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "reasons",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 59
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 62
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 63
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 64
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 65
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "actual",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 66
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 67
+    },
+    {
+      "source": "RetrievalDiagnosticsBuilder.format",
+      "target": "lines",
+      "type": "references",
+      "file": "diagnostics.ts",
+      "line": 70
+    },
+    {
+      "source": "ContextRetrievalError",
+      "target": "Error",
+      "type": "extends",
+      "file": "errors.ts",
+      "line": 1
+    },
+    {
+      "source": "RetrievalBudgetError",
+      "target": "ContextRetrievalError",
+      "type": "extends",
+      "file": "errors.ts",
+      "line": 8
+    },
+    {
+      "source": "GraphTraversalError",
+      "target": "ContextRetrievalError",
+      "type": "extends",
+      "file": "errors.ts",
+      "line": 15
+    },
+    {
+      "source": "RetrievalValidationError",
+      "target": "ContextRetrievalError",
+      "type": "extends",
+      "file": "errors.ts",
+      "line": 22
+    },
+    {
+      "source": "RankingError",
+      "target": "ContextRetrievalError",
+      "type": "extends",
+      "file": "errors.ts",
+      "line": 29
+    },
+    {
+      "source": "CompressionError",
+      "target": "ContextRetrievalError",
+      "type": "extends",
+      "file": "errors.ts",
+      "line": 36
+    },
+    {
+      "source": "RetrievalCacheError",
+      "target": "ContextRetrievalError",
+      "type": "extends",
+      "file": "errors.ts",
+      "line": 43
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "RetrievalGraph",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 10
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "snapshot",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 17
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "graph",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 17
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "nodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 17
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "n",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 17
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "n",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 17
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "snapshot",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 20
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "graph",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 20
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 20
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "adjacency",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 21
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "get",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 21
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 21
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "list",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 22
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 22
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "adjacency",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 23
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 23
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "list",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 23
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "startNodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 26
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "nodesMap",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 27
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "has",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 27
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "start",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 27
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "queue",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 28
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "start",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 28
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "visited",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 29
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "start",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 29
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "queue",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 34
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "safety",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 34
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "queue",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 35
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "nodesMap",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 36
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "get",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 36
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "current",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 36
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "resultNodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 37
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "node",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 37
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "node",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 37
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "current",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 39
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "adjacency",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 42
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "get",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 42
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "current",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 42
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 46
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "visited",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 47
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "has",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 47
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 47
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "visited",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 48
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 48
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "queue",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 49
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 49
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "current",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 49
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "resultEdges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 51
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 51
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "resultNodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 55
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "resultEdges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 56
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "fComp",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 58
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "fComp",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 58
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "nodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 63
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "n",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 63
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "nodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 66
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "edges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 67
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "topologicalOrder",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 68
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "GraphTraversalError",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 71
+    },
+    {
+      "source": "GraphTraverser.traverseBFS",
+      "target": "err",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 71
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "RetrievalGraph",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 79
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "snapshot",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 87
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "graph",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 87
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "nodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 87
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "n",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 87
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "n",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 87
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "snapshot",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 90
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "graph",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 90
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 90
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "adjacency",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 91
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "get",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 91
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 91
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "list",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 92
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 92
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "adjacency",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 93
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 93
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "list",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 93
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "startNodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 96
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "nodesMap",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 97
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "get",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 97
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "start",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 97
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "node",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 98
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "queue",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 99
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "start",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 99
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "node",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 99
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "visited",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 100
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "start",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 100
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "queue",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 105
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "safety",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 105
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "queue",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 107
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "queue",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 113
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "nodesMap",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 114
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "get",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 114
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "current",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 114
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "resultNodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 115
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "node",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 115
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "node",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 115
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "current",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 117
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "adjacency",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 119
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "get",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 119
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "current",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 119
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 120
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "visited",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 121
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "has",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 121
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 121
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "nodesMap",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 122
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "get",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 122
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 122
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "childNode",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 123
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "visited",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 124
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 124
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "queue",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 125
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 126
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "current",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 127
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "childNode",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 128
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "resultEdges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 132
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edge",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 132
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "resultNodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 136
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "resultEdges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 137
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "fComp",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 139
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "fComp",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 139
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "nodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 144
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "edges",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 145
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "topologicalOrder",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 146
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "nodes",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 146
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "n",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 146
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "GraphTraversalError",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 149
+    },
+    {
+      "source": "GraphTraverser.traversePriorityBFS",
+      "target": "err",
+      "type": "references",
+      "file": "graph-traverser.ts",
+      "line": 149
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 6
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 8
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "learning",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 8
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "exp",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 9
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "intent",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 9
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "exp",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 10
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "files",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 11
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "intentMatch",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 14
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "fileMatch",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 14
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 14
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "result",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 15
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "exp",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 15
+    },
+    {
+      "source": "LearningRetriever.retrieve",
+      "target": "result",
+      "type": "references",
+      "file": "learning-retriever.ts",
+      "line": 19
+    },
+    {
+      "source": "DEFAULT_STATS",
+      "target": "RetrievalStatistics",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 6
+    },
+    {
+      "source": "RetrievalMetricsTracker.stats",
+      "target": "RetrievalStatistics",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 18
+    },
+    {
+      "source": "RetrievalMetricsTracker.stats",
+      "target": "DEFAULT_STATS",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 18
+    },
+    {
+      "source": "RetrievalMetricsTracker.constructor",
+      "target": "statsPath",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 22
+    },
+    {
+      "source": "RetrievalMetricsTracker.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 22
+    },
+    {
+      "source": "RetrievalMetricsTracker.load",
+      "target": "statsPath",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 27
+    },
+    {
+      "source": "RetrievalMetricsTracker.load",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 28
+    },
+    {
+      "source": "RetrievalMetricsTracker.load",
+      "target": "DEFAULT_STATS",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 28
+    },
+    {
+      "source": "RetrievalMetricsTracker.load",
+      "target": "parse",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 28
+    },
+    {
+      "source": "RetrievalMetricsTracker.load",
+      "target": "raw",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 28
+    },
+    {
+      "source": "RetrievalMetricsTracker.load",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 30
+    },
+    {
+      "source": "RetrievalMetricsTracker.load",
+      "target": "DEFAULT_STATS",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 30
+    },
+    {
+      "source": "RetrievalMetricsTracker.load",
+      "target": "loaded",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "RetrievalMetrics",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "loaded",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 36
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "load",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 36
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 38
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 40
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 41
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 42
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 42
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "metrics",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 42
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 42
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 44
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "metrics",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 47
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "metrics",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 50
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "metrics",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 53
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 53
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "hits",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 56
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "metrics",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "n",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalMetricsTracker.record",
+      "target": "save",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 59
+    },
+    {
+      "source": "RetrievalMetricsTracker.get",
+      "target": "RetrievalStatistics",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 62
+    },
+    {
+      "source": "RetrievalMetricsTracker.get",
+      "target": "loaded",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 63
+    },
+    {
+      "source": "RetrievalMetricsTracker.get",
+      "target": "load",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 63
+    },
+    {
+      "source": "RetrievalMetricsTracker.get",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 64
+    },
+    {
+      "source": "RetrievalMetricsTracker.reset",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 68
+    },
+    {
+      "source": "RetrievalMetricsTracker.reset",
+      "target": "DEFAULT_STATS",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 68
+    },
+    {
+      "source": "RetrievalMetricsTracker.reset",
+      "target": "loaded",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 69
+    },
+    {
+      "source": "RetrievalMetricsTracker.reset",
+      "target": "save",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 70
+    },
+    {
+      "source": "RetrievalMetricsTracker.save",
+      "target": "statsPath",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 75
+    },
+    {
+      "source": "RetrievalMetricsTracker.save",
+      "target": "statsPath",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 77
+    },
+    {
+      "source": "RetrievalMetricsTracker.save",
+      "target": "stats",
+      "type": "references",
+      "file": "metrics.ts",
+      "line": 78
+    },
+    {
+      "source": "ParsedQuery",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 2
+    },
+    {
+      "source": "ParsedQuery",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 3
+    },
+    {
+      "source": "ParsedQuery",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 4
+    },
+    {
+      "source": "ParsedQuery",
+      "target": "keywords",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 6
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "ParsedQuery",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 11
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "ParsedQuery",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 15
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 16
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 16
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 17
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 18
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 18
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 18
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 19
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 20
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 20
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 21
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 22
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 22
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 22
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 23
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 24
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 24
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 24
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 25
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 26
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 26
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 26
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 26
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 26
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 27
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 28
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 28
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 28
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 29
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 30
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 30
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 30
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 31
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 32
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 32
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "lower",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 32
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 33
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "match",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 40
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "fileRegex",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 40
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 41
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "match",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 41
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "match",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 47
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "quoteRegex",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 47
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 48
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "match",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 48
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "match",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 53
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "symbolRegex",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 53
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "match",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 54
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "sym",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 57
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "sym",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 58
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "sym",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 59
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "sym",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 60
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "sym",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 61
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 62
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "sym",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 62
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 64
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "sym",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 64
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "intent",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 75
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 76
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 76
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 77
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 77
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "keywords",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 79
+    },
+    {
+      "source": "QueryParser.parse",
+      "target": "keywords",
+      "type": "references",
+      "file": "query-parser.ts",
+      "line": 79
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "RetrievalCandidate",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 11
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "RetrievalCandidate",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 12
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "p",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 14
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "symbols",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 15
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "s",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 15
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "p",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 18
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "primarySet",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 23
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "normalized",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 23
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "isPrimary",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 24
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 25
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "reasons",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 26
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "isPrimary",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 30
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "normalized",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 34
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "dir1",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "dir1",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "dir2",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "matchingDir",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 37
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 38
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "reasons",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 39
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "snapshot",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 44
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "symbols",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 44
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "s",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "normSymPath",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "normalized",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "normSymPath",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "normalized",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "normalized",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "normSymPath",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "symbolSet",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "has",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "s",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "hasMatchingSymbol",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 49
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "reasons",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 50
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "learning",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "normalized",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 55
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "matchingLearning",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 58
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "reasons",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 59
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 63
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 64
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "reasons",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 65
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "snapshot",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 68
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "files",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 68
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "p",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 68
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "result",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 70
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "p",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 71
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 72
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "reasons",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 73
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "file",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 74
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "result",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 79
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 80
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 80
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 80
+    },
+    {
+      "source": "RetrievalRanker.rank",
+      "target": "score",
+      "type": "references",
+      "file": "ranking.ts",
+      "line": 80
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 8
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 10
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "relationships",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 10
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "rel",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 11
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "rel",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 11
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "rel",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 11
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "seen",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 12
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "has",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 12
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "key",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 12
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "fileSet",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 14
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "rel",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 14
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "fileSet",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 15
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "rel",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 15
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "subMatch",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 17
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "objMatch",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 17
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "result",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 18
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "rel",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 18
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "seen",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 19
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "key",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 19
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "result",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 23
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "sComp",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 25
+    },
+    {
+      "source": "RelationshipRetriever.retrieve",
+      "target": "sComp",
+      "type": "references",
+      "file": "relationship-retriever.ts",
+      "line": 25
+    },
+    {
+      "source": "RetrievalPlan",
+      "target": "strategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 5
+    },
+    {
+      "source": "RetrievalPlan",
+      "target": "RetrievalStrategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 5
+    },
+    {
+      "source": "RetrievalPlan",
+      "target": "stages",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 6
+    },
+    {
+      "source": "RetrievalPlan",
+      "target": "expansionDepth",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 9
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "ParsedQuery",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 14
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "RetrievalStrategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 14
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "RetrievalPlan",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 14
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "RetrievalStrategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 15
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "parsed",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 29
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "intent",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 29
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "strategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 30
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "parsed",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "intent",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "parsed",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "intent",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "strategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "parsed",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 33
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "intent",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 33
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "strategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 34
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "parsed",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "strategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 36
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "strategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 40
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "strategy",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 46
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "stages",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 47
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "parsed",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "parsed",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 49
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 49
+    },
+    {
+      "source": "RetrievalPlanner.plan",
+      "target": "expansionDepth",
+      "type": "references",
+      "file": "retrieval-planner.ts",
+      "line": 50
+    },
+    {
+      "source": "ContextRetrievalService.parser",
+      "target": "QueryParser",
+      "type": "references",
+      "file": "service.ts",
+      "line": 35
+    },
+    {
+      "source": "ContextRetrievalService.planner",
+      "target": "RetrievalPlanner",
+      "type": "references",
+      "file": "service.ts",
+      "line": 36
+    },
+    {
+      "source": "ContextRetrievalService.traverser",
+      "target": "GraphTraverser",
+      "type": "references",
+      "file": "service.ts",
+      "line": 37
+    },
+    {
+      "source": "ContextRetrievalService.expander",
+      "target": "DependencyExpander",
+      "type": "references",
+      "file": "service.ts",
+      "line": 38
+    },
+    {
+      "source": "ContextRetrievalService.symbolRetriever",
+      "target": "SymbolRetriever",
+      "type": "references",
+      "file": "service.ts",
+      "line": 39
+    },
+    {
+      "source": "ContextRetrievalService.relationshipRetriever",
+      "target": "RelationshipRetriever",
+      "type": "references",
+      "file": "service.ts",
+      "line": 40
+    },
+    {
+      "source": "ContextRetrievalService.architectureRetriever",
+      "target": "ArchitectureRetriever",
+      "type": "references",
+      "file": "service.ts",
+      "line": 41
+    },
+    {
+      "source": "ContextRetrievalService.learningRetriever",
+      "target": "LearningRetriever",
+      "type": "references",
+      "file": "service.ts",
+      "line": 42
+    },
+    {
+      "source": "ContextRetrievalService.ranker",
+      "target": "RetrievalRanker",
+      "type": "references",
+      "file": "service.ts",
+      "line": 43
+    },
+    {
+      "source": "ContextRetrievalService.budgeter",
+      "target": "RetrievalBudgeter",
+      "type": "references",
+      "file": "service.ts",
+      "line": 44
+    },
+    {
+      "source": "ContextRetrievalService.compressor",
+      "target": "RetrievalCompressor",
+      "type": "references",
+      "file": "service.ts",
+      "line": 45
+    },
+    {
+      "source": "ContextRetrievalService.cache",
+      "target": "RetrievalCache",
+      "type": "references",
+      "file": "service.ts",
+      "line": 46
+    },
+    {
+      "source": "ContextRetrievalService.validator",
+      "target": "RetrievalValidator",
+      "type": "references",
+      "file": "service.ts",
+      "line": 47
+    },
+    {
+      "source": "ContextRetrievalService.metricsTracker",
+      "target": "RetrievalMetricsTracker",
+      "type": "references",
+      "file": "service.ts",
+      "line": 48
+    },
+    {
+      "source": "ContextRetrievalService.diagBuilder",
+      "target": "RetrievalDiagnosticsBuilder",
+      "type": "references",
+      "file": "service.ts",
+      "line": 49
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 58
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 58
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 59
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "syncService",
+      "type": "references",
+      "file": "service.ts",
+      "line": 60
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 60
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 60
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "compiler",
+      "type": "references",
+      "file": "service.ts",
+      "line": 61
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 61
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 61
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "cache",
+      "type": "references",
+      "file": "service.ts",
+      "line": 62
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "RetrievalCache",
+      "type": "references",
+      "file": "service.ts",
+      "line": 62
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 62
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "metricsTracker",
+      "type": "references",
+      "file": "service.ts",
+      "line": 63
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "RetrievalMetricsTracker",
+      "type": "references",
+      "file": "service.ts",
+      "line": 63
+    },
+    {
+      "source": "ContextRetrievalService.constructor",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 63
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "RetrievalRequest",
+      "type": "references",
+      "file": "service.ts",
+      "line": 66
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "RetrievalResult",
+      "type": "references",
+      "file": "service.ts",
+      "line": 66
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "syncService",
+      "type": "references",
+      "file": "service.ts",
+      "line": 73
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "syncService",
+      "type": "references",
+      "file": "service.ts",
+      "line": 74
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "latestSnapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 74
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 75
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compiler",
+      "type": "references",
+      "file": "service.ts",
+      "line": 77
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 78
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "projectRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 78
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 79
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "workspaceRoot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 79
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 82
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "comp",
+      "type": "references",
+      "file": "service.ts",
+      "line": 82
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 82
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 84
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "loadStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 86
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parser",
+      "type": "references",
+      "file": "service.ts",
+      "line": 92
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parse",
+      "type": "references",
+      "file": "service.ts",
+      "line": 92
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 93
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parseStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 95
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "cache",
+      "type": "references",
+      "file": "service.ts",
+      "line": 101
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "get",
+      "type": "references",
+      "file": "service.ts",
+      "line": 101
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 101
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "hit",
+      "type": "references",
+      "file": "service.ts",
+      "line": 102
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "start",
+      "type": "references",
+      "file": "service.ts",
+      "line": 103
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "RetrievalMetrics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 104
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "duration",
+      "type": "references",
+      "file": "service.ts",
+      "line": 105
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 106
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "hit",
+      "type": "references",
+      "file": "service.ts",
+      "line": 109
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "candidates",
+      "type": "references",
+      "file": "service.ts",
+      "line": 109
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "hit",
+      "type": "references",
+      "file": "service.ts",
+      "line": 110
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "symbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 110
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "hit",
+      "type": "references",
+      "file": "service.ts",
+      "line": 111
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "graph",
+      "type": "references",
+      "file": "service.ts",
+      "line": 111
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "edges",
+      "type": "references",
+      "file": "service.ts",
+      "line": 111
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "hit",
+      "type": "references",
+      "file": "service.ts",
+      "line": 113
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "s",
+      "type": "references",
+      "file": "service.ts",
+      "line": 113
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "metricsTracker",
+      "type": "references",
+      "file": "service.ts",
+      "line": 115
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "record",
+      "type": "references",
+      "file": "service.ts",
+      "line": 115
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "metrics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 115
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "hit",
+      "type": "references",
+      "file": "service.ts",
+      "line": 117
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "metrics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 118
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "planner",
+      "type": "references",
+      "file": "service.ts",
+      "line": 125
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "plan",
+      "type": "references",
+      "file": "service.ts",
+      "line": 125
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
+      "type": "references",
+      "file": "service.ts",
+      "line": 125
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "strategy",
+      "type": "references",
+      "file": "service.ts",
+      "line": 125
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expansionDepth",
+      "type": "references",
+      "file": "service.ts",
+      "line": 125
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expander",
+      "type": "references",
+      "file": "service.ts",
+      "line": 129
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expand",
+      "type": "references",
+      "file": "service.ts",
+      "line": 129
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 130
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
+      "type": "references",
+      "file": "service.ts",
+      "line": 131
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 131
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "plan",
+      "type": "references",
+      "file": "service.ts",
+      "line": 132
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expansionDepth",
+      "type": "references",
+      "file": "service.ts",
+      "line": 132
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 134
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 136
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "symbolRetriever",
+      "type": "references",
+      "file": "service.ts",
+      "line": 142
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 142
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 143
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
+      "type": "references",
+      "file": "service.ts",
+      "line": 144
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 144
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 145
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 147
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "symStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 149
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "relationshipRetriever",
+      "type": "references",
+      "file": "service.ts",
+      "line": 155
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 155
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 156
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 157
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 159
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "relStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 161
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "architectureRetriever",
+      "type": "references",
+      "file": "service.ts",
+      "line": 167
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 167
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 168
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
+      "type": "references",
+      "file": "service.ts",
+      "line": 169
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "keywords",
+      "type": "references",
+      "file": "service.ts",
+      "line": 169
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 171
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "archStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 173
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "learningRetriever",
+      "type": "references",
+      "file": "service.ts",
+      "line": 179
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 179
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 180
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
+      "type": "references",
+      "file": "service.ts",
+      "line": 181
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "intent",
+      "type": "references",
+      "file": "service.ts",
+      "line": 181
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 182
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 184
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "learnStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 186
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
+      "type": "references",
+      "file": "service.ts",
+      "line": 192
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 192
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "traverser",
+      "type": "references",
+      "file": "service.ts",
+      "line": 193
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "traverseBFS",
+      "type": "references",
+      "file": "service.ts",
+      "line": 193
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 193
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "startNodes",
+      "type": "references",
+      "file": "service.ts",
+      "line": 193
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "plan",
+      "type": "references",
+      "file": "service.ts",
+      "line": 193
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expansionDepth",
+      "type": "references",
+      "file": "service.ts",
+      "line": 193
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 194
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "graphStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 196
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "ranker",
+      "type": "references",
+      "file": "service.ts",
+      "line": 202
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "rank",
+      "type": "references",
+      "file": "service.ts",
+      "line": 202
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 203
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 204
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
+      "type": "references",
+      "file": "service.ts",
+      "line": 205
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 205
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "parsed",
+      "type": "references",
+      "file": "service.ts",
+      "line": 206
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "targetSymbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 206
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "learning",
+      "type": "references",
+      "file": "service.ts",
+      "line": 207
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 209
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "rankStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 211
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "RetrievalSection",
+      "type": "references",
+      "file": "service.ts",
+      "line": 216
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 217
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 220
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "RetrievalSection",
+      "type": "references",
+      "file": "service.ts",
+      "line": 222
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 224
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 225
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
+      "type": "references",
+      "file": "service.ts",
+      "line": 226
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 227
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "symbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 227
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 228
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
+      "type": "references",
+      "file": "service.ts",
+      "line": 229
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 230
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "architecture",
+      "type": "references",
+      "file": "service.ts",
+      "line": 230
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 231
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
+      "type": "references",
+      "file": "service.ts",
+      "line": 232
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 233
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "learning",
+      "type": "references",
+      "file": "service.ts",
+      "line": 233
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 234
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
+      "type": "references",
+      "file": "service.ts",
+      "line": 235
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 236
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 236
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 237
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
+      "type": "references",
+      "file": "service.ts",
+      "line": 238
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 239
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 240
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
+      "type": "references",
+      "file": "service.ts",
+      "line": 241
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 242
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 243
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
+      "type": "references",
+      "file": "service.ts",
+      "line": 244
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "matches",
+      "type": "references",
+      "file": "service.ts",
+      "line": 247
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "rawSections",
+      "type": "references",
+      "file": "service.ts",
+      "line": 248
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 249
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 250
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 251
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 252
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 253
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "sec",
+      "type": "references",
+      "file": "service.ts",
+      "line": 254
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "reason",
+      "type": "references",
+      "file": "service.ts",
+      "line": 255
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "allocatedSections",
+      "type": "references",
+      "file": "service.ts",
+      "line": 262
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "budget",
+      "type": "references",
+      "file": "service.ts",
+      "line": 262
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "budgeter",
+      "type": "references",
+      "file": "service.ts",
+      "line": 262
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "allocate",
+      "type": "references",
+      "file": "service.ts",
+      "line": 262
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "rawSections",
+      "type": "references",
+      "file": "service.ts",
+      "line": 263
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 267
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "budgetStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 269
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "service.ts",
+      "line": 274
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 276
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "allocatedSections",
+      "type": "references",
+      "file": "service.ts",
+      "line": 277
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "candidates",
+      "type": "references",
+      "file": "service.ts",
+      "line": 278
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "graph",
+      "type": "references",
+      "file": "service.ts",
+      "line": 279
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "symbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 280
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "dependencies",
+      "type": "references",
+      "file": "service.ts",
+      "line": 281
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 281
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "dependencies",
+      "type": "references",
+      "file": "service.ts",
+      "line": 281
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 282
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 282
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "relationships",
+      "type": "references",
+      "file": "service.ts",
+      "line": 284
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressor",
+      "type": "references",
+      "file": "service.ts",
+      "line": 289
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compress",
+      "type": "references",
+      "file": "service.ts",
+      "line": 289
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "uncompressedPkg",
+      "type": "references",
+      "file": "service.ts",
+      "line": 289
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 290
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 292
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "validator",
+      "type": "references",
+      "file": "service.ts",
+      "line": 298
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "validate",
+      "type": "references",
+      "file": "service.ts",
+      "line": 298
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressedPkg",
+      "type": "references",
+      "file": "service.ts",
+      "line": 298
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "budget",
+      "type": "references",
+      "file": "service.ts",
+      "line": 298
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 299
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "valStart",
+      "type": "references",
+      "file": "service.ts",
+      "line": 301
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "validation",
+      "type": "references",
+      "file": "service.ts",
+      "line": 302
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "start",
+      "type": "references",
+      "file": "service.ts",
+      "line": 305
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressedPkg",
+      "type": "references",
+      "file": "service.ts",
+      "line": 306
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "s",
+      "type": "references",
+      "file": "service.ts",
+      "line": 306
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "RetrievalMetrics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 308
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "duration",
+      "type": "references",
+      "file": "service.ts",
+      "line": 309
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "stages",
+      "type": "references",
+      "file": "service.ts",
+      "line": 310
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "expandedFiles",
+      "type": "references",
+      "file": "service.ts",
+      "line": 311
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "service.ts",
+      "line": 312
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "finalTokens",
+      "type": "references",
+      "file": "service.ts",
+      "line": 312
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "service.ts",
+      "line": 312
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "candidates",
+      "type": "references",
+      "file": "service.ts",
+      "line": 313
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "symbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 314
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "graph",
+      "type": "references",
+      "file": "service.ts",
+      "line": 315
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "edges",
+      "type": "references",
+      "file": "service.ts",
+      "line": 315
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "architecture",
+      "type": "references",
+      "file": "service.ts",
+      "line": 316
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "finalTokens",
+      "type": "references",
+      "file": "service.ts",
+      "line": 317
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "cache",
+      "type": "references",
+      "file": "service.ts",
+      "line": 321
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "put",
+      "type": "references",
+      "file": "service.ts",
+      "line": 321
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 321
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressedPkg",
+      "type": "references",
+      "file": "service.ts",
+      "line": 321
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "metricsTracker",
+      "type": "references",
+      "file": "service.ts",
+      "line": 322
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "record",
+      "type": "references",
+      "file": "service.ts",
+      "line": 322
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "metrics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 322
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "compressedPkg",
+      "type": "references",
+      "file": "service.ts",
+      "line": 325
+    },
+    {
+      "source": "ContextRetrievalService.retrieve",
+      "target": "metrics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 326
+    },
+    {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "RetrievalStrategy",
+      "type": "references",
+      "file": "service.ts",
+      "line": 331
+    },
+    {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 332
+    },
+    {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "strategy",
+      "type": "references",
+      "file": "service.ts",
+      "line": 332
+    },
+    {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "res",
+      "type": "references",
+      "file": "service.ts",
+      "line": 333
+    },
+    {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "candidates",
+      "type": "references",
+      "file": "service.ts",
+      "line": 333
+    },
+    {
+      "source": "ContextRetrievalService.retrieveFiles",
+      "target": "c",
+      "type": "references",
+      "file": "service.ts",
+      "line": 333
+    },
+    {
+      "source": "ContextRetrievalService.retrieveSymbols",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 337
+    },
+    {
+      "source": "ContextRetrievalService.retrieveSymbols",
+      "target": "res",
+      "type": "references",
+      "file": "service.ts",
+      "line": 338
+    },
+    {
+      "source": "ContextRetrievalService.retrieveSymbols",
+      "target": "symbols",
+      "type": "references",
+      "file": "service.ts",
+      "line": 338
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 342
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "syncService",
+      "type": "references",
+      "file": "service.ts",
+      "line": 344
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "latestSnapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 344
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 345
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "architectureRetriever",
+      "type": "references",
+      "file": "service.ts",
+      "line": 346
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 346
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 346
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "parser",
+      "type": "references",
+      "file": "service.ts",
+      "line": 346
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "parse",
+      "type": "references",
+      "file": "service.ts",
+      "line": 346
+    },
+    {
+      "source": "ContextRetrievalService.retrieveArchitecture",
+      "target": "keywords",
+      "type": "references",
+      "file": "service.ts",
+      "line": 346
+    },
+    {
+      "source": "ContextRetrievalService.retrieveLearning",
+      "target": "retrieve",
+      "type": "references",
+      "file": "service.ts",
+      "line": 350
+    },
+    {
+      "source": "ContextRetrievalService.retrieveLearning",
+      "target": "res",
+      "type": "references",
+      "file": "service.ts",
+      "line": 351
+    },
+    {
+      "source": "ContextRetrievalService.retrieveLearning",
+      "target": "s",
+      "type": "references",
+      "file": "service.ts",
+      "line": 351
+    },
+    {
+      "source": "ContextRetrievalService.expand",
+      "target": "expander",
+      "type": "references",
+      "file": "service.ts",
+      "line": 355
+    },
+    {
+      "source": "ContextRetrievalService.expand",
+      "target": "expand",
+      "type": "references",
+      "file": "service.ts",
+      "line": 355
+    },
+    {
+      "source": "ContextRetrievalService.expand",
+      "target": "snapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 355
+    },
+    {
+      "source": "ContextRetrievalService.compress",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "service.ts",
+      "line": 358
+    },
+    {
+      "source": "ContextRetrievalService.compress",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "service.ts",
+      "line": 358
+    },
+    {
+      "source": "ContextRetrievalService.compress",
+      "target": "compressor",
+      "type": "references",
+      "file": "service.ts",
+      "line": 359
+    },
+    {
+      "source": "ContextRetrievalService.compress",
+      "target": "compress",
+      "type": "references",
+      "file": "service.ts",
+      "line": 359
+    },
+    {
+      "source": "ContextRetrievalService.validate",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "service.ts",
+      "line": 362
+    },
+    {
+      "source": "ContextRetrievalService.validate",
+      "target": "validator",
+      "type": "references",
+      "file": "service.ts",
+      "line": 363
+    },
+    {
+      "source": "ContextRetrievalService.validate",
+      "target": "validate",
+      "type": "references",
+      "file": "service.ts",
+      "line": 363
+    },
+    {
+      "source": "ContextRetrievalService.statistics",
+      "target": "RetrievalStatistics",
+      "type": "references",
+      "file": "service.ts",
+      "line": 366
+    },
+    {
+      "source": "ContextRetrievalService.statistics",
+      "target": "metricsTracker",
+      "type": "references",
+      "file": "service.ts",
+      "line": 367
+    },
+    {
+      "source": "ContextRetrievalService.statistics",
+      "target": "get",
+      "type": "references",
+      "file": "service.ts",
+      "line": 367
+    },
+    {
+      "source": "ContextRetrievalService.latestSnapshot",
+      "target": "syncService",
+      "type": "references",
+      "file": "service.ts",
+      "line": 371
+    },
+    {
+      "source": "ContextRetrievalService.latestSnapshot",
+      "target": "latestSnapshot",
+      "type": "references",
+      "file": "service.ts",
+      "line": 371
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "s",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 8
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "targetFiles",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 9
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "snapshot",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 11
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "symbols",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 11
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "s",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 12
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "s",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 12
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "seen",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 13
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "has",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 13
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "key",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 13
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "symbolNames",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 15
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "has",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 15
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "s",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 15
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "fileSet",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 16
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "s",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 16
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "nameMatch",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 18
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "fileMatch",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 18
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "result",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 19
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "s",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 19
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "seen",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 20
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "key",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 20
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "result",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 24
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "fComp",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 26
+    },
+    {
+      "source": "SymbolRetriever.retrieve",
+      "target": "fComp",
+      "type": "references",
+      "file": "symbol-retriever.ts",
+      "line": 26
+    },
+    {
+      "source": "RetrievalRequest",
+      "target": "strategy",
+      "type": "references",
+      "file": "types.ts",
+      "line": 22
+    },
+    {
+      "source": "RetrievalRequest",
+      "target": "RetrievalStrategy",
+      "type": "references",
+      "file": "types.ts",
+      "line": 22
+    },
+    {
+      "source": "RetrievalRequest",
+      "target": "expansionDepth",
+      "type": "references",
+      "file": "types.ts",
+      "line": 23
+    },
+    {
+      "source": "RetrievalResult",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "types.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalResult",
+      "target": "metrics",
+      "type": "references",
+      "file": "types.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalResult",
+      "target": "RetrievalMetrics",
+      "type": "references",
+      "file": "types.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalSection",
+      "target": "reason",
+      "type": "references",
+      "file": "types.ts",
+      "line": 43
+    },
+    {
+      "source": "RetrievalSection",
+      "target": "RetrievalReason",
+      "type": "references",
+      "file": "types.ts",
+      "line": 43
+    },
+    {
+      "source": "RetrievalCandidate",
+      "target": "score",
+      "type": "references",
+      "file": "types.ts",
+      "line": 48
+    },
+    {
+      "source": "RetrievalCandidate",
+      "target": "reasons",
+      "type": "references",
+      "file": "types.ts",
+      "line": 49
+    },
+    {
+      "source": "RetrievalCandidate",
+      "target": "file",
+      "type": "references",
+      "file": "types.ts",
+      "line": 50
+    },
+    {
+      "source": "RetrievalGraph",
+      "target": "nodes",
+      "type": "references",
+      "file": "types.ts",
+      "line": 54
+    },
+    {
+      "source": "RetrievalGraph",
+      "target": "edges",
+      "type": "references",
+      "file": "types.ts",
+      "line": 55
+    },
+    {
+      "source": "RetrievalGraph",
+      "target": "topologicalOrder",
+      "type": "references",
+      "file": "types.ts",
+      "line": 56
+    },
+    {
+      "source": "RetrievalNode",
+      "target": "score",
+      "type": "references",
+      "file": "types.ts",
+      "line": 70
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "allocated",
+      "type": "references",
+      "file": "types.ts",
+      "line": 96
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "architecture",
+      "type": "references",
+      "file": "types.ts",
+      "line": 99
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "files",
+      "type": "references",
+      "file": "types.ts",
+      "line": 100
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "symbols",
+      "type": "references",
+      "file": "types.ts",
+      "line": 101
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "relationships",
+      "type": "references",
+      "file": "types.ts",
+      "line": 102
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "learning",
+      "type": "references",
+      "file": "types.ts",
+      "line": 103
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "validation",
+      "type": "references",
+      "file": "types.ts",
+      "line": 104
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "actual",
+      "type": "references",
+      "file": "types.ts",
+      "line": 106
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "architecture",
+      "type": "references",
+      "file": "types.ts",
+      "line": 109
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "files",
+      "type": "references",
+      "file": "types.ts",
+      "line": 110
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "symbols",
+      "type": "references",
+      "file": "types.ts",
+      "line": 111
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "relationships",
+      "type": "references",
+      "file": "types.ts",
+      "line": 112
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "learning",
+      "type": "references",
+      "file": "types.ts",
+      "line": 113
+    },
+    {
+      "source": "RetrievalBudget",
+      "target": "validation",
+      "type": "references",
+      "file": "types.ts",
+      "line": 114
+    },
+    {
+      "source": "RetrievalMetrics",
+      "target": "stages",
+      "type": "references",
+      "file": "types.ts",
+      "line": 120
+    },
+    {
+      "source": "RetrievalMetrics",
+      "target": "RetrievalStage",
+      "type": "references",
+      "file": "types.ts",
+      "line": 120
+    },
+    {
+      "source": "RetrievalDiagnostics",
+      "target": "timeline",
+      "type": "references",
+      "file": "types.ts",
+      "line": 148
+    },
+    {
+      "source": "RetrievalDiagnostics",
+      "target": "stage",
+      "type": "references",
+      "file": "types.ts",
+      "line": 148
+    },
+    {
+      "source": "RetrievalDiagnostics",
+      "target": "rankingExplanation",
+      "type": "references",
+      "file": "types.ts",
+      "line": 149
+    },
+    {
+      "source": "RetrievalDiagnostics",
+      "target": "score",
+      "type": "references",
+      "file": "types.ts",
+      "line": 149
+    },
+    {
+      "source": "RetrievalDiagnostics",
+      "target": "reasons",
+      "type": "references",
+      "file": "types.ts",
+      "line": 149
+    },
+    {
+      "source": "RetrievalDiagnostics",
+      "target": "RetrievalBudget",
+      "type": "references",
+      "file": "types.ts",
+      "line": 150
+    },
+    {
+      "source": "RetrievalDiagnostics",
+      "target": "originalTokens",
+      "type": "references",
+      "file": "types.ts",
+      "line": 152
+    },
+    {
+      "source": "RetrievalDiagnostics",
+      "target": "finalTokens",
+      "type": "references",
+      "file": "types.ts",
+      "line": 152
+    },
+    {
+      "source": "RetrievalDiagnostics",
+      "target": "ratio",
+      "type": "references",
+      "file": "types.ts",
+      "line": 152
+    },
+    {
+      "source": "RetrievalCacheEntry",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "types.ts",
+      "line": 158
+    },
+    {
+      "source": "RetrievalCompression",
+      "target": "ratio",
+      "type": "references",
+      "file": "types.ts",
+      "line": 183
+    },
+    {
+      "source": "RetrievalValidation",
+      "target": "errors",
+      "type": "references",
+      "file": "types.ts",
+      "line": 188
+    },
+    {
+      "source": "RetrievalValidation",
+      "target": "warnings",
+      "type": "references",
+      "file": "types.ts",
+      "line": 189
+    },
+    {
+      "source": "RetrievalPackage",
+      "target": "RetrievalSection",
+      "type": "references",
+      "file": "types.ts",
+      "line": 195
+    },
+    {
+      "source": "RetrievalPackage",
+      "target": "candidates",
+      "type": "references",
+      "file": "types.ts",
+      "line": 196
+    },
+    {
+      "source": "RetrievalPackage",
+      "target": "RetrievalCandidate",
+      "type": "references",
+      "file": "types.ts",
+      "line": 196
+    },
+    {
+      "source": "RetrievalPackage",
+      "target": "graph",
+      "type": "references",
+      "file": "types.ts",
+      "line": 197
+    },
+    {
+      "source": "RetrievalPackage",
+      "target": "RetrievalGraph",
+      "type": "references",
+      "file": "types.ts",
+      "line": 197
+    },
+    {
+      "source": "RetrievalPackage",
+      "target": "symbols",
+      "type": "references",
+      "file": "types.ts",
+      "line": 198
+    },
+    {
+      "source": "RetrievalPackage",
+      "target": "dependencies",
+      "type": "references",
+      "file": "types.ts",
+      "line": 199
+    },
+    {
+      "source": "RetrievalPackage",
+      "target": "relationships",
+      "type": "references",
+      "file": "types.ts",
+      "line": 200
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "RetrievalPackage",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 4
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "RetrievalValidation",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 4
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "candidates",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 10
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "c",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 11
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "seenCandidates",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 12
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "has",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 12
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "norm",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 12
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "errors",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 13
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "c",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 13
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "seenCandidates",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 15
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "norm",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 15
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "symbols",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 20
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "s",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 21
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "s",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 21
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "seenSymbols",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 22
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "has",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 22
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "key",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 22
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "errors",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 23
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "s",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 23
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "s",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 23
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "seenSymbols",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 25
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "key",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 25
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "graph",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 30
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "edges",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 30
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "e",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "e",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "e",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 31
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "seenEdges",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "has",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "key",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 32
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "errors",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 33
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "key",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 33
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "seenEdges",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "key",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 35
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "totalTokens",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 41
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "s",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 41
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "totalTokens",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 44
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "errors",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "totalTokens",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 45
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "i",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 49
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "i",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 49
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "i",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 50
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "i",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 50
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "warnings",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "i",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "i",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 51
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "errors",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 56
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "errors",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 57
+    },
+    {
+      "source": "RetrievalValidator.validate",
+      "target": "warnings",
+      "type": "references",
+      "file": "validator.ts",
+      "line": 58
+    }
+  ]
+}

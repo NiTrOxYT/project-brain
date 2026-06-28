@@ -60,9 +60,8 @@ export class RetrievalBudgeter {
             // Enforce hard constraint check
             if (runningTokens + tokens > limit) {
                 // If it is a critical system/task section, we must try to keep it,
-                // but if we cannot, we throw a Budget Error or drop it if low priority.
-                if (s.priority <= 20) {
-                    // Critical section: keep it but log warning or throw if overflow is too large
+                // but only if it actually fits within the total budget limit by itself.
+                if (s.priority <= 20 && tokens <= limit) {
                     allocatedSections.push(s);
                     runningTokens += tokens;
                     this.addActual(actual, s.kind, tokens);
@@ -75,6 +74,7 @@ export class RetrievalBudgeter {
                 runningTokens += tokens;
                 this.addActual(actual, s.kind, tokens);
             }
+
         }
 
         const budget: RetrievalBudget = {

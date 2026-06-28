@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T21:01:31.821Z",
+  "generatedAt": "2026-06-28T12:31:10.394Z",
   "nodes": [
     {
       "id": "packages/agent-runtime/executor.ts",
@@ -50,11 +50,19 @@
       "type": "file"
     },
     {
+      "id": "packages/ai-gateway/adapters/claude-code.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/ai-gateway/adapters/claude.ts",
       "type": "file"
     },
     {
       "id": "packages/ai-gateway/adapters/codex.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/ai-gateway/adapters/continue.ts",
       "type": "file"
     },
     {
@@ -306,11 +314,19 @@
       "type": "file"
     },
     {
+      "id": "packages/cli/commands/inspect.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/cli/commands/install.ts",
       "type": "file"
     },
     {
       "id": "packages/cli/commands/learning.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/cli/commands/mcp.ts",
       "type": "file"
     },
     {
@@ -327,6 +343,10 @@
     },
     {
       "id": "packages/cli/commands/runtime.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/cli/commands/search-memory.ts",
       "type": "file"
     },
     {
@@ -475,6 +495,22 @@
     },
     {
       "id": "packages/context-loader/service.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/context-provider/cache.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/context-provider/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/context-provider/optimizer.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/context-provider/provider.ts",
       "type": "file"
     },
     {
@@ -806,6 +842,54 @@
       "type": "file"
     },
     {
+      "id": "packages/mcp-server/index.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/registry.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/server.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/session.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/tools/explain-file.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/tools/find-dependencies.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/tools/find-symbol.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/tools/get-architecture.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/tools/get-context.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/tools/search-memory.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/transports/http.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/mcp-server/transports/stdio.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/orchestrator/executor.ts",
       "type": "file"
     },
@@ -914,6 +998,14 @@
       "type": "file"
     },
     {
+      "id": "packages/provider-bridge/discovery.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/fallback.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/provider-bridge/index.ts",
       "type": "file"
     },
@@ -930,7 +1022,63 @@
       "type": "file"
     },
     {
+      "id": "packages/provider-bridge/provider-cache.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-configurator.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-events.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-health.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-integration.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-lock.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-manifest.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-policy.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-profile.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-state.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-strategy-registry.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/provider-verifier.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/provider-bridge/registry.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/schema-registry.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
       "type": "file"
     },
     {
@@ -1334,6 +1482,18 @@
       "type": "file"
     },
     {
+      "id": "packages/test-context-pipeline-retrieval.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-context-provider.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-context-retrieval-e2e.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/test-context-retrieval.ts",
       "type": "file"
     },
@@ -1374,11 +1534,31 @@
       "type": "file"
     },
     {
+      "id": "packages/test-mcp-server.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-mcp-stdio-compliance.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-mcp-stdio-purity.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-mcp-tool-compatibility.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/test-native-providers.ts",
       "type": "file"
     },
     {
       "id": "packages/test-normalizer.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-opencode-config-schema.ts",
       "type": "file"
     },
     {
@@ -1402,7 +1582,23 @@
       "type": "file"
     },
     {
+      "id": "packages/test-provider-context-consumption.ts",
+      "type": "file"
+    },
+    {
       "id": "packages/test-provider-execution.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-provider-installation-pipeline.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-provider-mcp-integration.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-provider-registration.ts",
       "type": "file"
     },
     {
@@ -1411,6 +1607,10 @@
     },
     {
       "id": "packages/test-provider-runtime.ts",
+      "type": "file"
+    },
+    {
+      "id": "packages/test-provider-universal-enhanced.ts",
       "type": "file"
     },
     {
@@ -1741,6 +1941,26 @@
       "type": "imports"
     },
     {
+      "from": "packages/ai-gateway/adapters/aider.ts",
+      "to": "../../provider-bridge/schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/aider.ts",
+      "to": "../../provider-bridge/provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/aider.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/aider.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
       "from": "packages/ai-gateway/adapters/base.ts",
       "to": "child_process",
       "type": "imports"
@@ -1811,6 +2031,41 @@
       "type": "imports"
     },
     {
+      "from": "packages/ai-gateway/adapters/claude-code.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/claude-code.ts",
+      "to": "../adapter-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/claude-code.ts",
+      "to": "./base.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/claude-code.ts",
+      "to": "../../provider-bridge/schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/claude-code.ts",
+      "to": "../../provider-bridge/provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/claude-code.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/claude-code.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
       "from": "packages/ai-gateway/adapters/claude.ts",
       "to": "../types.js",
       "type": "imports"
@@ -1826,6 +2081,26 @@
       "type": "imports"
     },
     {
+      "from": "packages/ai-gateway/adapters/claude.ts",
+      "to": "../../provider-bridge/schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/claude.ts",
+      "to": "../../provider-bridge/provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/claude.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/claude.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
       "from": "packages/ai-gateway/adapters/codex.ts",
       "to": "../types.js",
       "type": "imports"
@@ -1838,6 +2113,61 @@
     {
       "from": "packages/ai-gateway/adapters/codex.ts",
       "to": "./base.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/codex.ts",
+      "to": "../../provider-bridge/schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/codex.ts",
+      "to": "../../provider-bridge/provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/codex.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/codex.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/continue.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/continue.ts",
+      "to": "../adapter-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/continue.ts",
+      "to": "./base.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/continue.ts",
+      "to": "../../provider-bridge/schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/continue.ts",
+      "to": "../../provider-bridge/provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/continue.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/continue.ts",
+      "to": "os",
       "type": "imports"
     },
     {
@@ -1887,6 +2217,16 @@
     },
     {
       "from": "packages/ai-gateway/adapters/index.ts",
+      "to": "./claude-code.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/index.ts",
+      "to": "./continue.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/index.ts",
       "to": "./claude.js",
       "type": "imports"
     },
@@ -1913,6 +2253,16 @@
     {
       "from": "packages/ai-gateway/adapters/index.ts",
       "to": "./ollama.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/index.ts",
+      "to": "./claude-code.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/index.ts",
+      "to": "./continue.js",
       "type": "imports"
     },
     {
@@ -1953,6 +2303,26 @@
     {
       "from": "packages/ai-gateway/adapters/opencode.ts",
       "to": "./base.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/opencode.ts",
+      "to": "../../provider-bridge/schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/opencode.ts",
+      "to": "../../provider-bridge/provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/opencode.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ai-gateway/adapters/opencode.ts",
+      "to": "os",
       "type": "imports"
     },
     {
@@ -2508,6 +2878,11 @@
     {
       "from": "packages/ast/service.ts",
       "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/ast/service.ts",
+      "to": "path",
       "type": "imports"
     },
     {
@@ -3352,6 +3727,11 @@
     },
     {
       "from": "packages/cli/commands/doctor.ts",
+      "to": "../../ai-gateway/adapters/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/doctor.ts",
       "to": "../utils/logger.js",
       "type": "imports"
     },
@@ -3407,22 +3787,27 @@
     },
     {
       "from": "packages/cli/commands/doctor.ts",
-      "to": "../../ai-gateway/provider-resolver.js",
+      "to": "../../provider-bridge/discovery.js",
       "type": "imports"
     },
     {
       "from": "packages/cli/commands/doctor.ts",
-      "to": "../../ai-gateway/adapter-registry.js",
+      "to": "../../provider-bridge/provider-verifier.js",
       "type": "imports"
     },
     {
       "from": "packages/cli/commands/doctor.ts",
-      "to": "../../ai-gateway/invocation-classifier.js",
+      "to": "../../provider-bridge/schema-registry.js",
       "type": "imports"
     },
     {
       "from": "packages/cli/commands/doctor.ts",
-      "to": "child_process",
+      "to": "../../provider-bridge/provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/doctor.ts",
+      "to": "../utils/colors.js",
       "type": "imports"
     },
     {
@@ -3483,6 +3868,16 @@
     {
       "from": "packages/cli/commands/gateway-diagnostics.ts",
       "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/gateway-diagnostics.ts",
+      "to": "../../context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/gateway-diagnostics.ts",
+      "to": "../../mcp-server/index.js",
       "type": "imports"
     },
     {
@@ -3576,6 +3971,56 @@
       "type": "imports"
     },
     {
+      "from": "packages/cli/commands/init.ts",
+      "to": "../../workspace/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/inspect.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/inspect.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/inspect.ts",
+      "to": "../main.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/inspect.ts",
+      "to": "../utils/logger.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/inspect.ts",
+      "to": "../utils/json.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/inspect.ts",
+      "to": "../utils/paths.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/inspect.ts",
+      "to": "../../context-compiler/storage.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/inspect.ts",
+      "to": "../../context-retrieval/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/inspect.ts",
+      "to": "../../kernel/paths.js",
+      "type": "imports"
+    },
+    {
       "from": "packages/cli/commands/install.ts",
       "to": "../main.js",
       "type": "imports"
@@ -3613,6 +4058,16 @@
     {
       "from": "packages/cli/commands/install.ts",
       "to": "../../ai-gateway/adapters/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/install.ts",
+      "to": "../../provider-bridge/provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/install.ts",
+      "to": "../../provider-bridge/provider-policy.js",
       "type": "imports"
     },
     {
@@ -3661,8 +4116,73 @@
       "type": "imports"
     },
     {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "../main.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "../utils/logger.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "../utils/paths.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "../../mcp-server/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "../utils/logger.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "../utils/logger.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "../utils/colors.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "../../mcp-server/transports/stdio.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/mcp.ts",
+      "to": "../../mcp-server/session.js",
+      "type": "imports"
+    },
+    {
       "from": "packages/cli/commands/provider.ts",
       "to": "../main.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/provider.ts",
+      "to": "../../ai-gateway/adapters/index.js",
       "type": "imports"
     },
     {
@@ -3682,11 +4202,6 @@
     },
     {
       "from": "packages/cli/commands/provider.ts",
-      "to": "../utils/table.js",
-      "type": "imports"
-    },
-    {
-      "from": "packages/cli/commands/provider.ts",
       "to": "../utils/paths.js",
       "type": "imports"
     },
@@ -3702,12 +4217,52 @@
     },
     {
       "from": "packages/cli/commands/provider.ts",
-      "to": "../../provider-runtime/service.js",
+      "to": "../../provider-bridge/discovery.js",
       "type": "imports"
     },
     {
       "from": "packages/cli/commands/provider.ts",
-      "to": "../../provider-runtime/health.js",
+      "to": "../../provider-bridge/provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/provider.ts",
+      "to": "../../provider-bridge/provider-verifier.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/provider.ts",
+      "to": "../../provider-bridge/schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/provider.ts",
+      "to": "../../provider-bridge/provider-policy.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/provider.ts",
+      "to": "../../provider-bridge/provider-lock.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/provider.ts",
+      "to": "../../provider-bridge/provider-compatibility.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/provider.ts",
+      "to": "../../provider-bridge/provider-health.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/provider.ts",
+      "to": "./install.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/provider.ts",
+      "to": "fs",
       "type": "imports"
     },
     {
@@ -3823,6 +4378,36 @@
     {
       "from": "packages/cli/commands/runtime.ts",
       "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/search-memory.ts",
+      "to": "../main.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/search-memory.ts",
+      "to": "../utils/logger.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/search-memory.ts",
+      "to": "../utils/json.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/search-memory.ts",
+      "to": "../utils/paths.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/search-memory.ts",
+      "to": "../utils/errors.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/commands/search-memory.ts",
+      "to": "../../context-compiler/storage.js",
       "type": "imports"
     },
     {
@@ -4142,6 +4727,11 @@
     },
     {
       "from": "packages/cli/main.ts",
+      "to": "./commands/inspect.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/main.ts",
       "to": "./commands/sync.js",
       "type": "imports"
     },
@@ -4153,6 +4743,11 @@
     {
       "from": "packages/cli/main.ts",
       "to": "./commands/query.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/main.ts",
+      "to": "./commands/search-memory.js",
       "type": "imports"
     },
     {
@@ -4228,6 +4823,11 @@
     {
       "from": "packages/cli/main.ts",
       "to": "./commands/explain.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/cli/main.ts",
+      "to": "./commands/mcp.js",
       "type": "imports"
     },
     {
@@ -4642,6 +5242,11 @@
     },
     {
       "from": "packages/context-compiler/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-compiler/service.ts",
       "to": "./types.js",
       "type": "imports"
     },
@@ -4713,6 +5318,11 @@
     {
       "from": "packages/context-compiler/service.ts",
       "to": "./diagnostics.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-compiler/service.ts",
+      "to": "../synchronizer/service.js",
       "type": "imports"
     },
     {
@@ -4828,6 +5438,61 @@
     {
       "from": "packages/context-loader/service.ts",
       "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/cache.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/index.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/index.ts",
+      "to": "./cache.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/index.ts",
+      "to": "./optimizer.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/index.ts",
+      "to": "./provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/optimizer.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/provider.ts",
+      "to": "./cache.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/provider.ts",
+      "to": "./optimizer.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/provider.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/provider.ts",
+      "to": "../context-retrieval/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-provider/provider.ts",
+      "to": "../learning-engine/service.js",
       "type": "imports"
     },
     {
@@ -5048,6 +5713,11 @@
     {
       "from": "packages/context-retrieval/service.ts",
       "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-retrieval/service.ts",
+      "to": "path",
       "type": "imports"
     },
     {
@@ -5347,6 +6017,11 @@
     },
     {
       "from": "packages/context-sync/service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-sync/service.ts",
       "to": "../context-compiler/service.js",
       "type": "imports"
     },
@@ -5413,6 +6088,11 @@
     {
       "from": "packages/context-sync/service.ts",
       "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/context-sync/service.ts",
+      "to": "../synchronizer/service.js",
       "type": "imports"
     },
     {
@@ -6471,6 +7151,236 @@
       "type": "imports"
     },
     {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./session.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./server.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./transports/stdio.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./transports/http.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./tools/get-context.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./tools/find-symbol.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./tools/find-dependencies.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./tools/search-memory.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./tools/get-architecture.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/index.ts",
+      "to": "./tools/explain-file.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/registry.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/server.ts",
+      "to": "./registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/server.ts",
+      "to": "./session.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/server.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/server.ts",
+      "to": "./tool-result.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/session.ts",
+      "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/explain-file.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/explain-file.ts",
+      "to": "../tool-result.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/explain-file.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/find-dependencies.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/find-dependencies.ts",
+      "to": "../tool-result.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/find-dependencies.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/find-symbol.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/find-symbol.ts",
+      "to": "../tool-result.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/find-symbol.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/get-architecture.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/get-architecture.ts",
+      "to": "../../context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/get-architecture.ts",
+      "to": "../tool-result.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/get-architecture.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/get-context.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/get-context.ts",
+      "to": "../../context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/get-context.ts",
+      "to": "../tool-result.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/get-context.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/search-memory.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/search-memory.ts",
+      "to": "../../context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/search-memory.ts",
+      "to": "../tool-result.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/tools/search-memory.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/transports/http.ts",
+      "to": "http",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/transports/http.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/transports/http.ts",
+      "to": "../session.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/transports/stdio.ts",
+      "to": "readline",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/transports/stdio.ts",
+      "to": "../types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/mcp-server/transports/stdio.ts",
+      "to": "../session.js",
+      "type": "imports"
+    },
+    {
       "from": "packages/orchestrator/executor.ts",
       "to": "../engineering-planner/index.js",
       "type": "imports"
@@ -7001,6 +7911,61 @@
       "type": "imports"
     },
     {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "./schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "./provider-capabilities.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "./provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "./provider-compatibility.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/discovery.ts",
+      "to": "./provider-integration.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/fallback.ts",
+      "to": "../context-provider/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/fallback.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
       "from": "packages/provider-bridge/index.ts",
       "to": "./types.js",
       "type": "imports"
@@ -7026,6 +7991,36 @@
       "type": "imports"
     },
     {
+      "from": "packages/provider-bridge/index.ts",
+      "to": "./fallback.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/index.ts",
+      "to": "./discovery.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/index.ts",
+      "to": "./session-instructions.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/index.ts",
+      "to": "./provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/index.ts",
+      "to": "./provider-policy.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/index.ts",
+      "to": "./provider-verifier.js",
+      "type": "imports"
+    },
+    {
       "from": "packages/provider-bridge/integration.ts",
       "to": "../domain/index.js",
       "type": "imports"
@@ -7033,6 +8028,21 @@
     {
       "from": "packages/provider-bridge/integration.ts",
       "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/integration.ts",
+      "to": "../context-provider/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/integration.ts",
+      "to": "../mcp-server/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/integration.ts",
+      "to": "../context-provider/provider.js",
       "type": "imports"
     },
     {
@@ -7081,6 +8091,331 @@
       "type": "imports"
     },
     {
+      "from": "packages/provider-bridge/provider-cache.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-cache.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./discovery.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./provider-strategy-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./provider-profile.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./provider-lock.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./provider-state.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./provider-events.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./provider-compatibility.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./provider-integration.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-configurator.ts",
+      "to": "./provider-strategy-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-events.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-events.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-health.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-health.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-integration.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-integration.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-integration.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-integration.ts",
+      "to": "./provider-strategy-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-integration.ts",
+      "to": "./schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-integration.ts",
+      "to": "./provider-strategy-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-integration.ts",
+      "to": "./provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-integration.ts",
+      "to": "./yaml-toml-utils.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-lock.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-lock.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-lock.ts",
+      "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-manifest.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-manifest.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-manifest.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-manifest.ts",
+      "to": "./provider-compatibility.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-manifest.ts",
+      "to": "./provider-capabilities.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-manifest.ts",
+      "to": "./provider-integration.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-policy.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-policy.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-policy.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-profile.ts",
+      "to": "./schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-profile.ts",
+      "to": "./discovery.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-profile.ts",
+      "to": "./provider-integration.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-state.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-state.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-strategy-registry.ts",
+      "to": "./provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-strategy-registry.ts",
+      "to": "./provider-profile.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-strategy-registry.ts",
+      "to": "./discovery.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-strategy-registry.ts",
+      "to": "./provider-integration.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./discovery.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-strategy-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-profile.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-lock.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-state.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-health.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-events.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-cache.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-compatibility.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "../mcp-server/registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "../context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-integration.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/provider-verifier.ts",
+      "to": "./provider-strategy-registry.js",
+      "type": "imports"
+    },
+    {
       "from": "packages/provider-bridge/registry.ts",
       "to": "./integration.js",
       "type": "imports"
@@ -7088,11 +8423,121 @@
     {
       "from": "packages/provider-bridge/registry.ts",
       "to": "./integration.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/schema-registry.ts",
+      "to": "./provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/schema-registry.ts",
+      "to": "./provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "../ai-gateway/adapters/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-compatibility.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-manifest.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-strategy-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-lock.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-state.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-health.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-events.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-cache.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-profile.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "./provider-verifier.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/test-provider-compatibility-lifecycle.ts",
+      "to": "../mcp-server/registry.js",
       "type": "imports"
     },
     {
       "from": "packages/provider-bridge/types.ts",
       "to": "../domain/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-bridge/types.ts",
+      "to": "../context-provider/types.js",
       "type": "imports"
     },
     {
@@ -7428,6 +8873,16 @@
     {
       "from": "packages/provider-runtime/service.ts",
       "to": "./health.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "../ai-gateway/adapter-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/provider-runtime/service.ts",
+      "to": "../provider-bridge/provider-configurator.js",
       "type": "imports"
     },
     {
@@ -9626,6 +11081,136 @@
       "type": "imports"
     },
     {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "url",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "./cli/commands/init.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "./cli/commands/compile.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "./cli/commands/inspect.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "./mcp-server/tools/get-context.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "./mcp-server/tools/get-architecture.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-pipeline-retrieval.ts",
+      "to": "./mcp-server/tools/search-memory.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-provider.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-provider.ts",
+      "to": "./context-provider/cache.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-provider.ts",
+      "to": "./context-provider/optimizer.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-provider.ts",
+      "to": "./context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-provider.ts",
+      "to": "./context-provider/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "url",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "./context-compiler/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "./context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "./context-sync/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "./mcp-server/tools/get-context.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "./mcp-server/tools/get-architecture.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "./mcp-server/tools/search-memory.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "./cli/commands/search-memory.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-context-retrieval-e2e.ts",
+      "to": "./cli/utils/logger.js",
+      "type": "imports"
+    },
+    {
       "from": "packages/test-context-retrieval.ts",
       "to": "assert",
       "type": "imports"
@@ -10216,6 +11801,91 @@
       "type": "imports"
     },
     {
+      "from": "packages/test-mcp-server.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-server.ts",
+      "to": "http",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-server.ts",
+      "to": "./mcp-server/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-stdio-compliance.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-stdio-compliance.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-stdio-compliance.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-stdio-compliance.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-stdio-purity.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-stdio-purity.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-tool-compatibility.ts",
+      "to": "./mcp-server/tools/get-context.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-tool-compatibility.ts",
+      "to": "./mcp-server/tools/get-architecture.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-tool-compatibility.ts",
+      "to": "./mcp-server/tools/search-memory.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-tool-compatibility.ts",
+      "to": "./mcp-server/tools/explain-file.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-tool-compatibility.ts",
+      "to": "./mcp-server/tools/find-symbol.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-tool-compatibility.ts",
+      "to": "./mcp-server/tools/find-dependencies.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-tool-compatibility.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-mcp-tool-compatibility.ts",
+      "to": "url",
+      "type": "imports"
+    },
+    {
       "from": "packages/test-native-providers.ts",
       "to": "fs",
       "type": "imports"
@@ -10278,6 +11948,46 @@
     {
       "from": "packages/test-normalizer.ts",
       "to": "./semantic/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-opencode-config-schema.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-opencode-config-schema.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-opencode-config-schema.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-opencode-config-schema.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-opencode-config-schema.ts",
+      "to": "./provider-bridge/provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-opencode-config-schema.ts",
+      "to": "./ai-gateway/adapters/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-opencode-config-schema.ts",
+      "to": "child_process",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-opencode-config-schema.ts",
+      "to": "util",
       "type": "imports"
     },
     {
@@ -10461,6 +12171,31 @@
       "type": "imports"
     },
     {
+      "from": "packages/test-provider-context-consumption.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-context-consumption.ts",
+      "to": "./context-provider/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-context-consumption.ts",
+      "to": "./context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-context-consumption.ts",
+      "to": "./provider-bridge/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-context-consumption.ts",
+      "to": "./provider-bridge/fallback.js",
+      "type": "imports"
+    },
+    {
       "from": "packages/test-provider-execution.ts",
       "to": "fs",
       "type": "imports"
@@ -10533,6 +12268,111 @@
     {
       "from": "packages/test-provider-execution.ts",
       "to": "./provider-runtime/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-installation-pipeline.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-installation-pipeline.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-installation-pipeline.ts",
+      "to": "./cli/commands/install.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-installation-pipeline.ts",
+      "to": "./provider-bridge/provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-installation-pipeline.ts",
+      "to": "./provider-bridge/provider-policy.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-installation-pipeline.ts",
+      "to": "./provider-runtime/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts",
+      "to": "./provider-bridge/discovery.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts",
+      "to": "./provider-bridge/session-instructions.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts",
+      "to": "./context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts",
+      "to": "./context-provider/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-mcp-integration.ts",
+      "to": "./ai-gateway/adapters/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-registration.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-registration.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-registration.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-registration.ts",
+      "to": "./provider-bridge/provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-registration.ts",
+      "to": "./provider-bridge/provider-policy.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-registration.ts",
+      "to": "./provider-bridge/provider-verifier.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-registration.ts",
+      "to": "./context-provider/provider.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-registration.ts",
+      "to": "./ai-gateway/adapters/index.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-registration.ts",
+      "to": "./mcp-server/index.js",
       "type": "imports"
     },
     {
@@ -10743,6 +12583,51 @@
     {
       "from": "packages/test-provider-runtime.ts",
       "to": "./query-engine/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-universal-enhanced.ts",
+      "to": "assert",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-universal-enhanced.ts",
+      "to": "fs",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-universal-enhanced.ts",
+      "to": "os",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-universal-enhanced.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-universal-enhanced.ts",
+      "to": "./provider-bridge/discovery.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-universal-enhanced.ts",
+      "to": "./provider-bridge/provider-configurator.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-universal-enhanced.ts",
+      "to": "./provider-bridge/schema-registry.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-universal-enhanced.ts",
+      "to": "./provider-bridge/provider-verifier.js",
+      "type": "imports"
+    },
+    {
+      "from": "packages/test-provider-universal-enhanced.ts",
+      "to": "./ai-gateway/adapters/index.js",
       "type": "imports"
     },
     {

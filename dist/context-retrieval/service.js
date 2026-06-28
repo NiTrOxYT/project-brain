@@ -1,4 +1,5 @@
 import crypto from "crypto";
+import path from "path";
 import { ContextCompilerService } from "../context-compiler/service.js";
 import { ContextSynchronizationService } from "../context-sync/service.js";
 import { QueryParser } from "./query-parser.js";
@@ -17,8 +18,6 @@ import { RetrievalValidator } from "./validator.js";
 import { RetrievalMetricsTracker } from "./metrics.js";
 import { RetrievalDiagnosticsBuilder } from "./diagnostics.js";
 export class ContextRetrievalService {
-    projectRoot;
-    workspaceRoot;
     syncService;
     compiler;
     parser = new QueryParser();
@@ -36,20 +35,24 @@ export class ContextRetrievalService {
     validator = new RetrievalValidator();
     metricsTracker;
     diagBuilder = new RetrievalDiagnosticsBuilder();
+    projectRoot;
+    workspaceRoot;
     constructor(projectRoot, workspaceRoot) {
         this.projectRoot = projectRoot;
-        this.workspaceRoot = workspaceRoot;
-        this.syncService = new ContextSynchronizationService(projectRoot, workspaceRoot);
-        this.compiler = new ContextCompilerService(projectRoot, workspaceRoot);
-        this.cache = new RetrievalCache(workspaceRoot);
-        this.metricsTracker = new RetrievalMetricsTracker(workspaceRoot);
+        this.workspaceRoot = workspaceRoot.endsWith(".brain") ? workspaceRoot : path.join(workspaceRoot, ".brain");
+        this.syncService = new ContextSynchronizationService(this.projectRoot, this.workspaceRoot);
+        this.compiler = new ContextCompilerService(this.projectRoot, this.workspaceRoot);
+        this.cache = new RetrievalCache(this.workspaceRoot);
+        this.metricsTracker = new RetrievalMetricsTracker(this.workspaceRoot);
     }
     async retrieve(req) {
         const start = Date.now();
         const stages = [];
         // Load Snapshot
         const loadStart = Date.now();
-        let snapshot = await this.syncService.latestSnapshot();
+        let snapshot = req.snapshotId && req.snapshotId !== "latest"
+            ? await this.syncService.loadSnapshot(req.snapshotId)
+            : await this.syncService.latestSnapshot();
         if (!snapshot) {
             // Rebuild fully if missing
             const comp = await this.compiler.compile({
@@ -147,9 +150,13 @@ export class ContextRetrievalService {
             durationMs: Date.now() - graphStart,
             success: true
         });
-        // Ranking
+        // Ranking — when no specific files were targeted, seed with top snapshot files
+        // so ranking always produces a meaningful ordered candidate list.
         const rankStart = Date.now();
-        const candidates = this.ranker.rank(snapshot, expandedFiles, parsed.targetFiles, parsed.targetSymbols, learning);
+        const filesToRank = expandedFiles.length > 0
+            ? expandedFiles
+            : snapshot.files.slice(0, 50).map(f => f.path);
+        const candidates = this.ranker.rank(snapshot, filesToRank, parsed.targetFiles, parsed.targetSymbols, learning);
         stages.push({
             name: "Rank",
             durationMs: Date.now() - rankStart,
@@ -158,7 +165,9 @@ export class ContextRetrievalService {
         // Build unbudgeted package sections
         const rawSections = [];
         const originalTokens = snapshot.metadata.estimatedTokens;
-        // Extract and map matching sections from snapshot
+        // Extract and map matching sections from snapshot.
+        // Core sections are ALWAYS included — they contain the primary workspace context.
+        // Conditional sections are included when their specific retrieval produced results.
         for (const sec of snapshot.sections) {
             let matches = false;
             let reason = "system-config";
@@ -166,13 +175,15 @@ export class ContextRetrievalService {
                 matches = true;
                 reason = "system-config";
             }
-            else if (sec.id === "symbol-index" && symbols.length > 0) {
+            else if (sec.id === "symbol-index") {
+                // Always include — symbol index is always relevant context
                 matches = true;
-                reason = "primary-target";
+                reason = symbols.length > 0 ? "primary-target" : "system-config";
             }
-            else if (sec.id === "architecture-memory" && architecture.length > 0) {
+            else if (sec.id === "architecture-memory") {
+                // Always include — architecture is always relevant context
                 matches = true;
-                reason = "architecture";
+                reason = architecture.length > 0 ? "architecture" : "system-config";
             }
             else if (sec.id === "learning-summary" && learning.length > 0) {
                 matches = true;
@@ -290,5 +301,8 @@ export class ContextRetrievalService {
     }
     statistics() {
         return this.metricsTracker.get();
+    }
+    async latestSnapshot() {
+        return this.syncService.latestSnapshot();
     }
 }

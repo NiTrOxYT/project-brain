@@ -22,6 +22,7 @@ export interface RetrievalRequest {
     strategy?: RetrievalStrategy;
     expansionDepth?: number;
     useCache?: boolean;
+    snapshotId?: string;
 }
 
 export type RetrievalStrategy = "target-centric" | "dependency-centric" | "architecture-centric" | "learning-centric" | "hybrid";

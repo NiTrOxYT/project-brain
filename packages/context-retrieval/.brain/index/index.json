@@ -1,0 +1,136 @@
+{
+  "files": [
+    {
+      "path": "architecture-retriever.ts",
+      "extension": ".ts",
+      "size": 1027,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "budget.ts",
+      "extension": ".ts",
+      "size": 3702,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "cache.ts",
+      "extension": ".ts",
+      "size": 3443,
+      "modifiedAt": "2026-06-27T16:13:40.670Z"
+    },
+    {
+      "path": "compressor.ts",
+      "extension": ".ts",
+      "size": 2429,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "dependency-expander.ts",
+      "extension": ".ts",
+      "size": 2527,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "diagnostics.ts",
+      "extension": ".ts",
+      "size": 2560,
+      "modifiedAt": "2026-06-27T15:10:32.778Z"
+    },
+    {
+      "path": "errors.ts",
+      "extension": ".ts",
+      "size": 1211,
+      "modifiedAt": "2026-06-27T12:50:21.883Z"
+    },
+    {
+      "path": "graph-traverser.ts",
+      "extension": ".ts",
+      "size": 5712,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "index.ts",
+      "extension": ".ts",
+      "size": 966,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "learning-retriever.ts",
+      "extension": ".ts",
+      "size": 855,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "metrics.ts",
+      "extension": ".ts",
+      "size": 2651,
+      "modifiedAt": "2026-06-27T16:13:49.545Z"
+    },
+    {
+      "path": "packages/context-retrieval/.opencode/opencode.json",
+      "extension": ".json",
+      "size": 160,
+      "modifiedAt": "2026-06-28T11:15:15.775Z"
+    },
+    {
+      "path": "packages/context-retrieval/.opencode/opencode.json.backup-1782645237438",
+      "extension": ".backup-1782645237438",
+      "size": 15,
+      "modifiedAt": "2026-06-28T11:13:57.438Z"
+    },
+    {
+      "path": "packages/context-retrieval/.opencode/opencode.json.backup-1782645313761",
+      "extension": ".backup-1782645313761",
+      "size": 15,
+      "modifiedAt": "2026-06-28T11:15:13.761Z"
+    },
+    {
+      "path": "query-parser.ts",
+      "extension": ".ts",
+      "size": 3565,
+      "modifiedAt": "2026-06-27T12:59:13.291Z"
+    },
+    {
+      "path": "ranking.ts",
+      "extension": ".ts",
+      "size": 3128,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "relationship-retriever.ts",
+      "extension": ".ts",
+      "size": 1096,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "retrieval-planner.ts",
+      "extension": ".ts",
+      "size": 1660,
+      "modifiedAt": "2026-06-27T15:10:32.779Z"
+    },
+    {
+      "path": "service.ts",
+      "extension": ".ts",
+      "size": 13718,
+      "modifiedAt": "2026-06-28T10:50:33.275Z"
+    },
+    {
+      "path": "symbol-retriever.ts",
+      "extension": ".ts",
+      "size": 1114,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    },
+    {
+      "path": "types.ts",
+      "extension": ".ts",
+      "size": 4742,
+      "modifiedAt": "2026-06-28T10:44:10.735Z"
+    },
+    {
+      "path": "validator.ts",
+      "extension": ".ts",
+      "size": 2206,
+      "modifiedAt": "2026-06-27T15:10:32.780Z"
+    }
+  ]
+}

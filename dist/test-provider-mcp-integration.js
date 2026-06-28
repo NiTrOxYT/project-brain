@@ -2,6 +2,7 @@ import assert from "assert";
 import { ProviderDiscoveryEngine } from "./provider-bridge/discovery.js";
 import { ProviderSessionInitializer } from "./provider-bridge/session-instructions.js";
 import { ContextProvider } from "./context-provider/provider.js";
+import "./ai-gateway/adapters/index.js";
 // Helper to run a test block and report outcomes
 async function test(name, fn) {
     try {

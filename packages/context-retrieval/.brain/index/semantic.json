@@ -1,0 +1,2939 @@
+{
+  "generatedAt": "2026-06-28T11:15:20.202Z",
+  "entries": [
+    {
+      "id": "architecture-retriever.ts::ArchitectureRetriever",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "architecture",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::retrieve",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::result",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::keywordSet",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "keyword",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::entry",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::catMatch",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "cat",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::titleMatch",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "title",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::tagMatch",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "tag",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::catComp",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "cat",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::RetrievalBudgeter",
+      "file": "budget.ts",
+      "terms": [
+        "retrieval",
+        "budgeter"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::providerBudgets",
+      "file": "budget.ts",
+      "terms": [
+        "provider",
+        "budgets"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::allocate",
+      "file": "budget.ts",
+      "terms": [
+        "allocate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::limit",
+      "file": "budget.ts",
+      "terms": [
+        "limit"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::allocated",
+      "file": "budget.ts",
+      "terms": [
+        "allocated"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::actual",
+      "file": "budget.ts",
+      "terms": [
+        "actual"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::sorted",
+      "file": "budget.ts",
+      "terms": [
+        "sorted"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::allocatedSections",
+      "file": "budget.ts",
+      "terms": [
+        "allocated",
+        "sections"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::runningTokens",
+      "file": "budget.ts",
+      "terms": [
+        "running",
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::s",
+      "file": "budget.ts",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::tokens",
+      "file": "budget.ts",
+      "terms": [
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::budget",
+      "file": "budget.ts",
+      "terms": [
+        "budget"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::addActual",
+      "file": "budget.ts",
+      "terms": [
+        "add",
+        "actual"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::lower",
+      "file": "budget.ts",
+      "terms": [
+        "lower"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::RetrievalCache",
+      "file": "cache.ts",
+      "terms": [
+        "retrieval",
+        "cache"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::cacheDir",
+      "file": "cache.ts",
+      "terms": [
+        "cache",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::memoryCache",
+      "file": "cache.ts",
+      "terms": [
+        "memory",
+        "cache"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::maxItems",
+      "file": "cache.ts",
+      "terms": [
+        "max",
+        "items"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::constructor",
+      "file": "cache.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::ensureDirectory",
+      "file": "cache.ts",
+      "terms": [
+        "ensure",
+        "directory"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::computeKey",
+      "file": "cache.ts",
+      "terms": [
+        "compute",
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::queryHash",
+      "file": "cache.ts",
+      "terms": [
+        "query",
+        "hash"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::has",
+      "file": "cache.ts",
+      "terms": [
+        "has"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::key",
+      "file": "cache.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::p",
+      "file": "cache.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::get",
+      "file": "cache.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::key",
+      "file": "cache.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::mem",
+      "file": "cache.ts",
+      "terms": [
+        "mem"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::p",
+      "file": "cache.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::raw",
+      "file": "cache.ts",
+      "terms": [
+        "raw"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::entry",
+      "file": "cache.ts",
+      "terms": [
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::put",
+      "file": "cache.ts",
+      "terms": [
+        "put"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::key",
+      "file": "cache.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::entry",
+      "file": "cache.ts",
+      "terms": [
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::firstKey",
+      "file": "cache.ts",
+      "terms": [
+        "first",
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::p",
+      "file": "cache.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::clear",
+      "file": "cache.ts",
+      "terms": [
+        "clear"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::files",
+      "file": "cache.ts",
+      "terms": [
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::file",
+      "file": "cache.ts",
+      "terms": [
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::getCachePath",
+      "file": "cache.ts",
+      "terms": [
+        "get",
+        "cache",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::RetrievalCompressor",
+      "file": "compressor.ts",
+      "terms": [
+        "retrieval",
+        "compressor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::compress",
+      "file": "compressor.ts",
+      "terms": [
+        "compress"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenCandidates",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "candidates"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::candidates",
+      "file": "compressor.ts",
+      "terms": [
+        "candidates"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::normalized",
+      "file": "compressor.ts",
+      "terms": [
+        "normalized"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenSymbols",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::symbols",
+      "file": "compressor.ts",
+      "terms": [
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::key",
+      "file": "compressor.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenNodes",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::nodes",
+      "file": "compressor.ts",
+      "terms": [
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenEdges",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::edges",
+      "file": "compressor.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::key",
+      "file": "compressor.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenDeps",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "deps"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::dependencies",
+      "file": "compressor.ts",
+      "terms": [
+        "dependencies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::key",
+      "file": "compressor.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::DependencyExpander",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "dependency",
+        "expander"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::expand",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "expand"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::expanded",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "expanded"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::queue",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "queue"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::norm",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "norm"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::filesMap",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "files",
+        "map"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::p",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::normalized",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "normalized"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::match",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::outgoing",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "outgoing"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::incoming",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "incoming"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::dep",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "dep"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::from",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "from"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::to",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "to"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::fullFrom",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "full",
+        "from"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::fullTo",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "full",
+        "to"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::outList",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "out",
+        "list"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::inList",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "in",
+        "list"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::safety",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "safety"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::current",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "current"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::outDeps",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "out",
+        "deps"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::o",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "o"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::inDeps",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "in",
+        "deps"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::i",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "i"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::RetrievalDiagnosticsBuilder",
+      "file": "diagnostics.ts",
+      "terms": [
+        "retrieval",
+        "diagnostics",
+        "builder"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::build",
+      "file": "diagnostics.ts",
+      "terms": [
+        "build"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::timeline",
+      "file": "diagnostics.ts",
+      "terms": [
+        "timeline"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::rankingExplanation",
+      "file": "diagnostics.ts",
+      "terms": [
+        "ranking",
+        "explanation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::ratio",
+      "file": "diagnostics.ts",
+      "terms": [
+        "ratio"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::format",
+      "file": "diagnostics.ts",
+      "terms": [
+        "format"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::lines",
+      "file": "diagnostics.ts",
+      "terms": [
+        "lines"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::stage",
+      "file": "diagnostics.ts",
+      "terms": [
+        "stage"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::c",
+      "file": "diagnostics.ts",
+      "terms": [
+        "c"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::ContextRetrievalError",
+      "file": "errors.ts",
+      "terms": [
+        "context",
+        "retrieval",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::RetrievalBudgetError",
+      "file": "errors.ts",
+      "terms": [
+        "retrieval",
+        "budget",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::GraphTraversalError",
+      "file": "errors.ts",
+      "terms": [
+        "graph",
+        "traversal",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::RetrievalValidationError",
+      "file": "errors.ts",
+      "terms": [
+        "retrieval",
+        "validation",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::RankingError",
+      "file": "errors.ts",
+      "terms": [
+        "ranking",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::CompressionError",
+      "file": "errors.ts",
+      "terms": [
+        "compression",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::RetrievalCacheError",
+      "file": "errors.ts",
+      "terms": [
+        "retrieval",
+        "cache",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::GraphTraverser",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "graph",
+        "traverser"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::traverseBFS",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "traverse",
+        "bfs"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::visited",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "visited"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::queue",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "queue"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::resultNodes",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "result",
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::resultEdges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "result",
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::nodesMap",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "nodes",
+        "map"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::adjacency",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "adjacency"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edge",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::list",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "list"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::start",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::safety",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "safety"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::current",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "current"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::node",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edge",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::nodes",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::fComp",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "f",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::topologicalOrder",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "topological",
+        "order"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::err",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::traversePriorityBFS",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "traverse",
+        "priority",
+        "bfs"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::visited",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "visited"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::queue",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "queue"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::resultNodes",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "result",
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::resultEdges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "result",
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::nodesMap",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "nodes",
+        "map"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::adjacency",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "adjacency"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edge",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::list",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "list"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::start",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::node",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::safety",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "safety"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::current",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "current"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::node",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edge",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::childNode",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "child",
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::nodes",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::fComp",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "f",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::err",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::LearningRetriever",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "learning",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::retrieve",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::result",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::files",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::exp",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "exp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::intentMatch",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "intent",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::fileMatch",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "file",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::DEFAULT_STATS",
+      "file": "metrics.ts",
+      "terms": [
+        "default",
+        "stats"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::RetrievalMetricsTracker",
+      "file": "metrics.ts",
+      "terms": [
+        "retrieval",
+        "metrics",
+        "tracker"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::statsPath",
+      "file": "metrics.ts",
+      "terms": [
+        "stats",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::stats",
+      "file": "metrics.ts",
+      "terms": [
+        "stats"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::loaded",
+      "file": "metrics.ts",
+      "terms": [
+        "loaded"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::constructor",
+      "file": "metrics.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::load",
+      "file": "metrics.ts",
+      "terms": [
+        "load"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::raw",
+      "file": "metrics.ts",
+      "terms": [
+        "raw"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::record",
+      "file": "metrics.ts",
+      "terms": [
+        "record"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::n",
+      "file": "metrics.ts",
+      "terms": [
+        "n"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::hits",
+      "file": "metrics.ts",
+      "terms": [
+        "hits"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::get",
+      "file": "metrics.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::reset",
+      "file": "metrics.ts",
+      "terms": [
+        "reset"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::save",
+      "file": "metrics.ts",
+      "terms": [
+        "save"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::ParsedQuery",
+      "file": "query-parser.ts",
+      "terms": [
+        "parsed",
+        "query"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::QueryParser",
+      "file": "query-parser.ts",
+      "terms": [
+        "query",
+        "parser"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::parse",
+      "file": "query-parser.ts",
+      "terms": [
+        "parse"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::lower",
+      "file": "query-parser.ts",
+      "terms": [
+        "lower"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::intent",
+      "file": "query-parser.ts",
+      "terms": [
+        "intent"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::targetFiles",
+      "file": "query-parser.ts",
+      "terms": [
+        "target",
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::fileRegex",
+      "file": "query-parser.ts",
+      "terms": [
+        "file",
+        "regex"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::match",
+      "file": "query-parser.ts",
+      "terms": [
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::targetSymbols",
+      "file": "query-parser.ts",
+      "terms": [
+        "target",
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::quoteRegex",
+      "file": "query-parser.ts",
+      "terms": [
+        "quote",
+        "regex"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::symbolRegex",
+      "file": "query-parser.ts",
+      "terms": [
+        "symbol",
+        "regex"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::sym",
+      "file": "query-parser.ts",
+      "terms": [
+        "sym"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::keywords",
+      "file": "query-parser.ts",
+      "terms": [
+        "keywords"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::RetrievalRanker",
+      "file": "ranking.ts",
+      "terms": [
+        "retrieval",
+        "ranker"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::rank",
+      "file": "ranking.ts",
+      "terms": [
+        "rank"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::result",
+      "file": "ranking.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::primarySet",
+      "file": "ranking.ts",
+      "terms": [
+        "primary",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::symbolSet",
+      "file": "ranking.ts",
+      "terms": [
+        "symbol",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::p",
+      "file": "ranking.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::normalized",
+      "file": "ranking.ts",
+      "terms": [
+        "normalized"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::score",
+      "file": "ranking.ts",
+      "terms": [
+        "score"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::reasons",
+      "file": "ranking.ts",
+      "terms": [
+        "reasons"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::isPrimary",
+      "file": "ranking.ts",
+      "terms": [
+        "is",
+        "primary"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::matchingDir",
+      "file": "ranking.ts",
+      "terms": [
+        "matching",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::dir1",
+      "file": "ranking.ts",
+      "terms": [
+        "dir1"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::dir2",
+      "file": "ranking.ts",
+      "terms": [
+        "dir2"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::hasMatchingSymbol",
+      "file": "ranking.ts",
+      "terms": [
+        "has",
+        "matching",
+        "symbol"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::normSymPath",
+      "file": "ranking.ts",
+      "terms": [
+        "norm",
+        "sym",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::matchingLearning",
+      "file": "ranking.ts",
+      "terms": [
+        "matching",
+        "learning"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::file",
+      "file": "ranking.ts",
+      "terms": [
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::RelationshipRetriever",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "relationship",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::retrieve",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::result",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::seen",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "seen"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::fileSet",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "file",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::rel",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "rel"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::key",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::subMatch",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "sub",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::objMatch",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "obj",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::sComp",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "s",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::RetrievalPlan",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "retrieval",
+        "plan"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::RetrievalPlanner",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "retrieval",
+        "planner"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::plan",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "plan"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::strategy",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "strategy"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::stages",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "stages"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::expansionDepth",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "expansion",
+        "depth"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::ContextRetrievalService",
+      "file": "service.ts",
+      "terms": [
+        "context",
+        "retrieval",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::syncService",
+      "file": "service.ts",
+      "terms": [
+        "sync",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compiler",
+      "file": "service.ts",
+      "terms": [
+        "compiler"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::parser",
+      "file": "service.ts",
+      "terms": [
+        "parser"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::planner",
+      "file": "service.ts",
+      "terms": [
+        "planner"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::traverser",
+      "file": "service.ts",
+      "terms": [
+        "traverser"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::expander",
+      "file": "service.ts",
+      "terms": [
+        "expander"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::symbolRetriever",
+      "file": "service.ts",
+      "terms": [
+        "symbol",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::relationshipRetriever",
+      "file": "service.ts",
+      "terms": [
+        "relationship",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::architectureRetriever",
+      "file": "service.ts",
+      "terms": [
+        "architecture",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::learningRetriever",
+      "file": "service.ts",
+      "terms": [
+        "learning",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::ranker",
+      "file": "service.ts",
+      "terms": [
+        "ranker"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::budgeter",
+      "file": "service.ts",
+      "terms": [
+        "budgeter"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compressor",
+      "file": "service.ts",
+      "terms": [
+        "compressor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::cache",
+      "file": "service.ts",
+      "terms": [
+        "cache"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::validator",
+      "file": "service.ts",
+      "terms": [
+        "validator"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::metricsTracker",
+      "file": "service.ts",
+      "terms": [
+        "metrics",
+        "tracker"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::diagBuilder",
+      "file": "service.ts",
+      "terms": [
+        "diag",
+        "builder"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::projectRoot",
+      "file": "service.ts",
+      "terms": [
+        "project",
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::workspaceRoot",
+      "file": "service.ts",
+      "terms": [
+        "workspace",
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::constructor",
+      "file": "service.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieve",
+      "file": "service.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::start",
+      "file": "service.ts",
+      "terms": [
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::stages",
+      "file": "service.ts",
+      "terms": [
+        "stages"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::loadStart",
+      "file": "service.ts",
+      "terms": [
+        "load",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::snapshot",
+      "file": "service.ts",
+      "terms": [
+        "snapshot"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::comp",
+      "file": "service.ts",
+      "terms": [
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::parseStart",
+      "file": "service.ts",
+      "terms": [
+        "parse",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::parsed",
+      "file": "service.ts",
+      "terms": [
+        "parsed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::hit",
+      "file": "service.ts",
+      "terms": [
+        "hit"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::duration",
+      "file": "service.ts",
+      "terms": [
+        "duration"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::metrics",
+      "file": "service.ts",
+      "terms": [
+        "metrics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::plan",
+      "file": "service.ts",
+      "terms": [
+        "plan"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::expStart",
+      "file": "service.ts",
+      "terms": [
+        "exp",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::expandedFiles",
+      "file": "service.ts",
+      "terms": [
+        "expanded",
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::symStart",
+      "file": "service.ts",
+      "terms": [
+        "sym",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::symbols",
+      "file": "service.ts",
+      "terms": [
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::relStart",
+      "file": "service.ts",
+      "terms": [
+        "rel",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::relationships",
+      "file": "service.ts",
+      "terms": [
+        "relationships"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::archStart",
+      "file": "service.ts",
+      "terms": [
+        "arch",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::architecture",
+      "file": "service.ts",
+      "terms": [
+        "architecture"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::learnStart",
+      "file": "service.ts",
+      "terms": [
+        "learn",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::learning",
+      "file": "service.ts",
+      "terms": [
+        "learning"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::graphStart",
+      "file": "service.ts",
+      "terms": [
+        "graph",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::startNodes",
+      "file": "service.ts",
+      "terms": [
+        "start",
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::graph",
+      "file": "service.ts",
+      "terms": [
+        "graph"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::rankStart",
+      "file": "service.ts",
+      "terms": [
+        "rank",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::candidates",
+      "file": "service.ts",
+      "terms": [
+        "candidates"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::rawSections",
+      "file": "service.ts",
+      "terms": [
+        "raw",
+        "sections"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::originalTokens",
+      "file": "service.ts",
+      "terms": [
+        "original",
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::sec",
+      "file": "service.ts",
+      "terms": [
+        "sec"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::matches",
+      "file": "service.ts",
+      "terms": [
+        "matches"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::reason",
+      "file": "service.ts",
+      "terms": [
+        "reason"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::budgetStart",
+      "file": "service.ts",
+      "terms": [
+        "budget",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::uncompressedPkg",
+      "file": "service.ts",
+      "terms": [
+        "uncompressed",
+        "pkg"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compressStart",
+      "file": "service.ts",
+      "terms": [
+        "compress",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compressedPkg",
+      "file": "service.ts",
+      "terms": [
+        "compressed",
+        "pkg"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::valStart",
+      "file": "service.ts",
+      "terms": [
+        "val",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::validation",
+      "file": "service.ts",
+      "terms": [
+        "validation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::duration",
+      "file": "service.ts",
+      "terms": [
+        "duration"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::finalTokens",
+      "file": "service.ts",
+      "terms": [
+        "final",
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::metrics",
+      "file": "service.ts",
+      "terms": [
+        "metrics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieveFiles",
+      "file": "service.ts",
+      "terms": [
+        "retrieve",
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::res",
+      "file": "service.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieveSymbols",
+      "file": "service.ts",
+      "terms": [
+        "retrieve",
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::res",
+      "file": "service.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieveArchitecture",
+      "file": "service.ts",
+      "terms": [
+        "retrieve",
+        "architecture"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::res",
+      "file": "service.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::snapshot",
+      "file": "service.ts",
+      "terms": [
+        "snapshot"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieveLearning",
+      "file": "service.ts",
+      "terms": [
+        "retrieve",
+        "learning"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::res",
+      "file": "service.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::expand",
+      "file": "service.ts",
+      "terms": [
+        "expand"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compress",
+      "file": "service.ts",
+      "terms": [
+        "compress"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::validate",
+      "file": "service.ts",
+      "terms": [
+        "validate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::statistics",
+      "file": "service.ts",
+      "terms": [
+        "statistics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::latestSnapshot",
+      "file": "service.ts",
+      "terms": [
+        "latest",
+        "snapshot"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::SymbolRetriever",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "symbol",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::retrieve",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::result",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::seen",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "seen"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::symbolNames",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "symbol",
+        "names"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::fileSet",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "file",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::s",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::key",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::nameMatch",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "name",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::fileMatch",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "file",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::fComp",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "f",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalRequest",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "request"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalStrategy",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "strategy"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalResult",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalSection",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalCandidate",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "candidate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalGraph",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "graph"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalEdge",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalNode",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalReason",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "reason"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalScore",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "score"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalBudget",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "budget"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalMetrics",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "metrics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalStage",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "stage"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalStatistics",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "statistics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalDiagnostics",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "diagnostics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalCacheEntry",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "cache",
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalSnapshotReference",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "snapshot",
+        "reference"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalProfile",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "profile"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalExpansion",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "expansion"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalCompression",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "compression"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalValidation",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "validation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalPackage",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "package"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::RetrievalValidator",
+      "file": "validator.ts",
+      "terms": [
+        "retrieval",
+        "validator"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::validate",
+      "file": "validator.ts",
+      "terms": [
+        "validate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::errors",
+      "file": "validator.ts",
+      "terms": [
+        "errors"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::warnings",
+      "file": "validator.ts",
+      "terms": [
+        "warnings"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::seenCandidates",
+      "file": "validator.ts",
+      "terms": [
+        "seen",
+        "candidates"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::c",
+      "file": "validator.ts",
+      "terms": [
+        "c"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::norm",
+      "file": "validator.ts",
+      "terms": [
+        "norm"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::seenSymbols",
+      "file": "validator.ts",
+      "terms": [
+        "seen",
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::s",
+      "file": "validator.ts",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::key",
+      "file": "validator.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::seenEdges",
+      "file": "validator.ts",
+      "terms": [
+        "seen",
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::e",
+      "file": "validator.ts",
+      "terms": [
+        "e"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::key",
+      "file": "validator.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::totalTokens",
+      "file": "validator.ts",
+      "terms": [
+        "total",
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::s",
+      "file": "validator.ts",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::i",
+      "file": "validator.ts",
+      "terms": [
+        "i"
+      ],
+      "weight": 100
+    }
+  ]
+}

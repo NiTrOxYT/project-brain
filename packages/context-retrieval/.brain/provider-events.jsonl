@@ -1,0 +1,10 @@
+{"timestamp":"2026-06-28T11:13:19.832Z","providerId":"opencode","event":"migrated","details":{"from":"1.0.0"}}
+{"timestamp":"2026-06-28T11:13:21.846Z","providerId":"opencode","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T11:13:25.909Z","providerId":"opencode","event":"audit failed","details":{"errors":["Required brain.get_context tool missing in registry."]}}
+{"timestamp":"2026-06-28T11:13:53.414Z","providerId":"opencode","event":"configuration restored","details":{}}
+{"timestamp":"2026-06-28T11:13:59.451Z","providerId":"opencode","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T11:14:03.516Z","providerId":"opencode","event":"audit failed","details":{"errors":["Required brain.get_context tool missing in registry."]}}
+{"timestamp":"2026-06-28T11:15:09.737Z","providerId":"opencode","event":"configuration restored","details":{}}
+{"timestamp":"2026-06-28T11:15:15.774Z","providerId":"opencode","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T11:15:20.214Z","providerId":"opencode","event":"verified","details":{"state":"Brain Optimized"}}
+{"timestamp":"2026-06-28T11:15:24.236Z","providerId":"opencode","event":"configuration restored","details":{}}

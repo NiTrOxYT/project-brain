@@ -60,7 +60,7 @@ export class WorkspaceService extends RuntimeService {
         });
     }
     async initialize() {
-        const created = !(await this.exists());
+        const created = !(await this.exists()) || !(await this.fs.exists(this.manifestPath));
         if (created) {
             await this.create();
         }

@@ -1,3 +1,4 @@
+import fs from "fs/promises";
 import path from "path";
 import ts from "typescript";
 import { AstService } from "../ast/index.js";
@@ -10,8 +11,24 @@ export class ExecutionGraphService {
     constructor(workspaceRoot) {
         this.workspaceRoot = workspaceRoot;
     }
+    async getProjectRoot() {
+        try {
+            let configPath = path.join(this.workspaceRoot, "brain.json");
+            if (!(await this.filesystem.exists(configPath))) {
+                configPath = path.join(this.workspaceRoot, ".brain", "brain.json");
+            }
+            const raw = await fs.readFile(configPath, "utf8");
+            const config = JSON.parse(raw);
+            if (config.projectRoot) {
+                return config.projectRoot;
+            }
+        }
+        catch { }
+        return this.workspaceRoot.endsWith(".brain") ? path.dirname(this.workspaceRoot) : this.workspaceRoot;
+    }
     async build() {
         try {
+            const projectRoot = await this.getProjectRoot();
             const indexPath = path.join(this.workspaceRoot, "index", "index.json");
             if (!(await this.filesystem.exists(indexPath))) {
                 throw new ExecutionGraphError("index.json file does not exist");
@@ -60,7 +77,7 @@ export class ExecutionGraphService {
                 simpleNameMap.get(lastPart).push(info);
             };
             for (const filePath of tsFiles) {
-                const fullPath = path.join(process.cwd(), filePath);
+                const fullPath = path.join(projectRoot, filePath);
                 const parsed = await this.parser.parse(fullPath);
                 const scopeStack = [];
                 const visitDiscovery = (node) => {
@@ -151,7 +168,7 @@ export class ExecutionGraphService {
                 return null;
             };
             for (const filePath of tsFiles) {
-                const fullPath = path.join(process.cwd(), filePath);
+                const fullPath = path.join(projectRoot, filePath);
                 const parsed = await this.parser.parse(fullPath);
                 const scopeStack = [];
                 const kindStack = [];
@@ -327,6 +344,7 @@ export class ExecutionGraphService {
     }
     async buildIncremental(changedFiles, removedFiles) {
         try {
+            const projectRoot = await this.getProjectRoot();
             const graphPath = path.join(this.workspaceRoot, "index", "execution-graph.json");
             if (!(await this.filesystem.exists(graphPath))) {
                 return this.build();
@@ -393,7 +411,7 @@ export class ExecutionGraphService {
                 simpleNameMap.get(lastPart).push(info);
             };
             for (const filePath of tsFiles) {
-                const fullPath = path.join(process.cwd(), filePath);
+                const fullPath = path.join(projectRoot, filePath);
                 const parsed = await this.parser.parse(fullPath);
                 const scopeStack = [];
                 const visitDiscovery = (node) => {
@@ -478,7 +496,7 @@ export class ExecutionGraphService {
                 return null;
             };
             for (const filePath of changedFiles) {
-                const fullPath = path.join(process.cwd(), filePath);
+                const fullPath = path.join(projectRoot, filePath);
                 const parsed = await this.parser.parse(fullPath);
                 const scopeStack = [];
                 const kindStack = [];

@@ -9,6 +9,7 @@ import fs     from "fs";
 import os     from "os";
 import path   from "path";
 import { ProviderConfigurator } from "./provider-bridge/provider-configurator.js";
+import "./ai-gateway/adapters/index.js";
 
 // ─── Test helpers ─────────────────────────────────────────────────────────────
 
@@ -42,6 +43,12 @@ const _origGetConfigPath = ProviderConfigurator.getConfigPath.bind(ProviderConfi
     return _origGetConfigPath(id);
 };
 
+const _origGetActiveConfigPath = ProviderConfigurator.getActiveConfigPath.bind(ProviderConfigurator);
+(ProviderConfigurator as any).getActiveConfigPath = (id: string, workspaceRoot?: string) => {
+    if (id === "opencode") return { path: TEST_CONFIG, source: "global" };
+    return _origGetActiveConfigPath(id, workspaceRoot);
+};
+
 process.on("exit", () => {
     // Cleanup temp directory on exit
     try { fs.rmSync(TEST_TMP_DIR, { recursive: true, force: true }); } catch { /* ignore */ }
@@ -60,9 +67,9 @@ async function runTests(): Promise<void> {
     console.log("Starting BUILD-067C OpenCode Configuration Schema Regression Test Suite...\n");
 
     // ── 1. Correct root key ────────────────────────────────────────────────────
-    await test("1. configure() writes 'mcp' root key, not 'mcpServers'", () => {
+    await test("1. configure() writes 'mcp' root key, not 'mcpServers'", async () => {
         cleanConfig();
-        const res = ProviderConfigurator.configure("opencode", { transport: "stdio" });
+        const res = await ProviderConfigurator.configure("opencode", { transport: "stdio" });
         assert.strictEqual(res.success, true, res.error);
 
         const raw  = fs.readFileSync(TEST_CONFIG, "utf-8");
@@ -76,9 +83,9 @@ async function runTests(): Promise<void> {
     });
 
     // ── 2. Local entry shape (type + command array) ────────────────────────────
-    await test("2. Local stdio entry has type:'local' and command as string[]", () => {
+    await test("2. Local stdio entry has type:'local' and command as string[]", async () => {
         cleanConfig();
-        ProviderConfigurator.configure("opencode", { transport: "stdio" });
+        await ProviderConfigurator.configure("opencode", { transport: "stdio" });
 
         const data  = JSON.parse(fs.readFileSync(TEST_CONFIG, "utf-8"));
         const entry = data.mcp.brain;
@@ -98,9 +105,9 @@ async function runTests(): Promise<void> {
     });
 
     // ── 3. Remote entry shape ──────────────────────────────────────────────────
-    await test("3. Remote HTTP entry has type:'remote' and url string", () => {
+    await test("3. Remote HTTP entry has type:'remote' and url string", async () => {
         cleanConfig();
-        ProviderConfigurator.configure("opencode", { transport: "http", port: 8765 });
+        await ProviderConfigurator.configure("opencode", { transport: "http", port: 8765 });
 
         const data  = JSON.parse(fs.readFileSync(TEST_CONFIG, "utf-8"));
         const entry = data.mcp.brain;
@@ -113,7 +120,7 @@ async function runTests(): Promise<void> {
     });
 
     // ── 4. Idempotent merge — preserves existing user settings ─────────────────
-    await test("4. configure() preserves unrelated user settings (model, agent, etc.)", () => {
+    await test("4. configure() preserves unrelated user settings (model, agent, etc.)", async () => {
         cleanConfig();
 
         // Write a realistic existing OpenCode config with real schema fields
@@ -129,7 +136,7 @@ async function runTests(): Promise<void> {
         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
         fs.writeFileSync(TEST_CONFIG, JSON.stringify(existing, null, 2), "utf-8");
 
-        const res = ProviderConfigurator.configure("opencode", { transport: "stdio" });
+        const res = await ProviderConfigurator.configure("opencode", { transport: "stdio" });
         assert.strictEqual(res.success, true, res.error);
 
         const data = JSON.parse(fs.readFileSync(TEST_CONFIG, "utf-8"));
@@ -143,7 +150,7 @@ async function runTests(): Promise<void> {
     });
 
     // ── 5. Legacy mcpServers.brain is migrated automatically ──────────────────
-    await test("5. configure() migrates legacy mcpServers.brain to mcp.brain automatically", () => {
+    await test("5. configure() migrates legacy mcpServers.brain to mcp.brain automatically", async () => {
         cleanConfig();
 
         // Simulate the old broken installer having written mcpServers.brain
@@ -158,7 +165,7 @@ async function runTests(): Promise<void> {
         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
         fs.writeFileSync(TEST_CONFIG, JSON.stringify(legacyConfig, null, 2), "utf-8");
 
-        const res = ProviderConfigurator.configure("opencode", { transport: "stdio" });
+        const res = await ProviderConfigurator.configure("opencode", { transport: "stdio" });
         assert.strictEqual(res.success, true, `Migration should succeed: ${res.error}`);
 
         const data = JSON.parse(fs.readFileSync(TEST_CONFIG, "utf-8"));
@@ -174,7 +181,7 @@ async function runTests(): Promise<void> {
     });
 
     // ── 5b. Validation rejects configs with unknown root keys ──────────────────
-    await test("5b. configure() rejects existing config that has unknown root keys (e.g. 'badKey')", () => {
+    await test("5b. configure() rejects existing config that has unknown root keys (e.g. 'badKey')", async () => {
         cleanConfig();
 
         // Simulate a config with an unsupported key (not from our installer)
@@ -183,7 +190,7 @@ async function runTests(): Promise<void> {
         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
         fs.writeFileSync(TEST_CONFIG, JSON.stringify(corrupt, null, 2), "utf-8");
 
-        const res = ProviderConfigurator.configure("opencode", { transport: "stdio" });
+        const res = await ProviderConfigurator.configure("opencode", { transport: "stdio" });
         assert.strictEqual(res.success, false, "Should fail validation");
         assert.ok(res.error?.includes("badKey"), `Error should mention the unknown key, got: ${res.error}`);
 
@@ -196,7 +203,7 @@ async function runTests(): Promise<void> {
     });
 
     // ── 6. isConfigured reads 'mcp.brain', not 'mcpServers.brain' ─────────────
-    await test("6. isConfigured() returns true only when mcp.brain exists", () => {
+    await test("6. isConfigured() returns true only when mcp.brain exists", async () => {
         cleanConfig();
 
         // Old-style mcpServers config must NOT be considered configured
@@ -208,7 +215,7 @@ async function runTests(): Promise<void> {
             "Legacy mcpServers config must NOT be considered configured");
 
         // New-style mcp config must be considered configured
-        ProviderConfigurator.configure("opencode", { transport: "stdio" });
+        await ProviderConfigurator.configure("opencode", { transport: "stdio" });
         assert.strictEqual(ProviderConfigurator.isConfigured("opencode"), true,
             "New mcp config must be considered configured");
 
@@ -216,7 +223,7 @@ async function runTests(): Promise<void> {
     });
 
     // ── 7. unconfigure() removes only the brain entry, leaves others intact ────
-    await test("7. unconfigure() removes mcp.brain and preserves other mcp entries", () => {
+    await test("7. unconfigure() removes mcp.brain and preserves other mcp entries", async () => {
         cleanConfig();
 
         // Install brain + a fake user-defined server
@@ -230,7 +237,7 @@ async function runTests(): Promise<void> {
         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
         fs.writeFileSync(TEST_CONFIG, JSON.stringify(initial, null, 2), "utf-8");
 
-        ProviderConfigurator.unconfigure("opencode");
+        await ProviderConfigurator.unconfigure("opencode");
 
         const data = JSON.parse(fs.readFileSync(TEST_CONFIG, "utf-8"));
         assert.strictEqual(data.mcp?.brain, undefined,     "brain entry removed");
@@ -240,7 +247,7 @@ async function runTests(): Promise<void> {
     });
 
     // ── 8. Full round-trip: configure → read back → matches schema ─────────────
-    await test("8. Full round-trip produces schema-valid config (real example from docs)", () => {
+    await test("8. Full round-trip produces schema-valid config (real example from docs)", async () => {
         cleanConfig();
 
         // Start from the example config from OpenCode documentation
@@ -260,7 +267,7 @@ async function runTests(): Promise<void> {
         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
         fs.writeFileSync(TEST_CONFIG, JSON.stringify(docsExample, null, 2), "utf-8");
 
-        const res = ProviderConfigurator.configure("opencode", { transport: "stdio" });
+        const res = await ProviderConfigurator.configure("opencode", { transport: "stdio" });
         assert.strictEqual(res.success, true, `configure() failed: ${res.error}`);
 
         const data = JSON.parse(fs.readFileSync(TEST_CONFIG, "utf-8"));
@@ -278,7 +285,7 @@ async function runTests(): Promise<void> {
     // ── 9. Integration: validate config is accepted by OpenCode binary ─────────
     await test("9. Generated config is accepted by 'opencode --version' (smoke test for parse errors)", async () => {
         cleanConfig();
-        ProviderConfigurator.configure("opencode", { transport: "stdio" });
+        await ProviderConfigurator.configure("opencode", { transport: "stdio" });
 
         // Try to run opencode --version or opencode --help which parses config.
         // If config is invalid opencode exits non-zero and prints the rejection.

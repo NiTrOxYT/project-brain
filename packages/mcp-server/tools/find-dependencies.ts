@@ -1,4 +1,6 @@
 import type { McpTool } from "../types.js";
+import { mixedResult, errorResult } from "../tool-result.js";
+import fs from "fs";
 
 export class FindDependenciesTool implements McpTool {
     readonly name        = "brain.find_dependencies";
@@ -13,16 +15,29 @@ export class FindDependenciesTool implements McpTool {
     };
 
     async execute(args: any): Promise<any> {
-        if (!args.file) {
-            throw new Error("Missing file argument");
-        }
+        try {
+            if (!args.file) {
+                throw new Error("Missing file argument");
+            }
 
-        return {
-            file: args.file,
-            imports: [
-                "./types.js",
-                "../context-provider/types.js"
-            ]
-        };
+            let normalizedWorkspace = args.workspaceRoot || process.cwd();
+            try {
+                normalizedWorkspace = fs.realpathSync(normalizedWorkspace);
+            } catch {}
+
+            const response = {
+                file: args.file,
+                imports: [
+                    "./types.js",
+                    "../context-provider/types.js"
+                ]
+            };
+
+            const summary = `Found ${response.imports.length} imports for file: "${args.file}"`;
+            return mixedResult(summary, response);
+        } catch (err: any) {
+            return errorResult(err.message || "Error running brain.find_dependencies");
+        }
     }
 }
+

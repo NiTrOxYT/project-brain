@@ -1,3 +1,6 @@
+import { ContextProvider } from "../../context-provider/provider.js";
+import { mixedResult, errorResult } from "../tool-result.js";
+import fs from "fs";
 export class GetArchitectureTool {
     name = "brain.get_architecture";
     description = "Get workspace high-level architecture layouts and directories mapping.";
@@ -9,8 +12,46 @@ export class GetArchitectureTool {
         required: [],
     };
     async execute(args) {
-        return {
-            architectureSummary: "Project Brain is structured into independent packages: ai-gateway, provider-bridge, context-provider, and mcp-server."
-        };
+        try {
+            const workspaceRoot = args.workspaceRoot || process.cwd();
+            let normalizedWorkspace = workspaceRoot;
+            try {
+                normalizedWorkspace = fs.realpathSync(workspaceRoot);
+            }
+            catch { }
+            const provider = new ContextProvider(normalizedWorkspace, normalizedWorkspace);
+            const snapshot = await provider.getLatestSnapshot();
+            if (!snapshot) {
+                const noSnapSummary = "No snapshot compiled. Run: brain compile";
+                return mixedResult(noSnapSummary, {
+                    architectureSummary: noSnapSummary,
+                    entries: []
+                });
+            }
+            // Build summary from architecture entries
+            if (snapshot.architecture && snapshot.architecture.length > 0) {
+                const summary = snapshot.architecture
+                    .slice(0, 30)
+                    .map(e => `[${e.category}] ${e.title}: ${e.description}`)
+                    .join("\n");
+                return mixedResult(summary, {
+                    architectureSummary: summary,
+                    entries: snapshot.architecture
+                });
+            }
+            // Fallback: generate summary from file counts in snapshot
+            const fileCount = snapshot.files?.length ?? 0;
+            const symCount = snapshot.symbols?.length ?? 0;
+            const depCount = snapshot.dependencies?.length ?? 0;
+            const fallback = `Workspace contains ${fileCount} files, ${symCount} symbols, and ${depCount} dependency edges. ` +
+                `Run brain compile --force to refresh the architecture index.`;
+            return mixedResult(fallback, {
+                architectureSummary: fallback,
+                entries: []
+            });
+        }
+        catch (err) {
+            return errorResult(err.message || "Error running brain.get_architecture");
+        }
     }
 }

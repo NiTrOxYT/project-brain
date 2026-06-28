@@ -83,7 +83,8 @@ export class SnapshotBuilder {
             graph: params.graph,
             architecture: params.architecture,
             evolution: params.evolution,
-            learning: params.learning
+            learning: params.learning,
+            semanticMemory: this.extractSemanticMemory(params.context)
         };
     }
 
@@ -312,8 +313,27 @@ export class SnapshotBuilder {
         const data = context.relationshipsData;
         if (!data) return rels;
 
-        // Object map: key → array of targets
-        if (!Array.isArray(data) && typeof data === "object") {
+        const items = Array.isArray(data)
+            ? data
+            : Array.isArray(data.relationships)
+                ? data.relationships
+                : null;
+
+        if (items) {
+            for (const item of items) {
+                if (!item || typeof item !== "object") continue;
+                const subject = item.source || item.subject || "";
+                const object = item.target || item.object || "";
+                const predicate = item.type || item.predicate || "references";
+                if (!subject || !object) continue;
+                rels.push({
+                    subject,
+                    predicate,
+                    object,
+                    weight: typeof item.weight === "number" ? item.weight : 1
+                });
+            }
+        } else if (typeof data === "object") {
             for (const [subject, targets] of Object.entries(data)) {
                 if (!Array.isArray(targets)) continue;
                 for (const target of targets as any[]) {
@@ -334,24 +354,149 @@ export class SnapshotBuilder {
 
     extractArchitecture(context: SnapshotContext): SnapshotArchitectureEntry[] {
         const raw = context.architectureData;
-        if (!raw) return [];
-        const entries: any[] = Array.isArray(raw)
-            ? raw
-            : Array.isArray(raw.entries)
-                ? raw.entries
-                : [];
-        const result: SnapshotArchitectureEntry[] = [];
-        for (const e of entries) {
-            if (!e || typeof e !== "object") continue;
-            result.push({
-                category: e.category || "General",
-                title: e.title || "",
-                description: e.description || "",
-                tags: Array.isArray(e.tags) ? e.tags : []
-            });
+        const parsed: SnapshotArchitectureEntry[] = [];
+
+        if (raw) {
+            const entries: any[] = Array.isArray(raw)
+                ? raw
+                : Array.isArray(raw.entries)
+                    ? raw.entries
+                    : [];
+            for (const e of entries) {
+                if (!e || typeof e !== "object") continue;
+                // Skip legacy stub-only entries
+                if (e.title === "Legacy ADR entry") continue;
+                parsed.push({
+                    category: e.category || "General",
+                    title: e.title || "",
+                    description: e.description || "",
+                    tags: Array.isArray(e.tags) ? e.tags : []
+                });
+            }
         }
+
+        // Always augment with auto-generated structural entries from the project
+        const generated = this.generateArchitectureFromContext(context);
+        const result = [...parsed, ...generated];
+
         return this.normalizer.normalizeArchitecture(result);
     }
+
+    private generateArchitectureFromContext(context: SnapshotContext): SnapshotArchitectureEntry[] {
+        const entries: SnapshotArchitectureEntry[] = [];
+        const filePaths = context.filePaths || [];
+
+        // ── Language distribution ────────────────────────────────────────────
+        const langCounts: Record<string, number> = {};
+        for (const fp of filePaths) {
+            const ext = fp.split(".").pop()?.toLowerCase() || "";
+            const lang = this.inferLanguage("." + ext);
+            if (lang !== "Unknown") langCounts[lang] = (langCounts[lang] || 0) + 1;
+        }
+        const topLangs = Object.entries(langCounts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 5)
+            .map(([lang, count]) => `${lang} (${count} files)`)
+            .join(", ");
+        if (topLangs) {
+            entries.push({
+                category: "Language",
+                title: "Primary Languages",
+                description: topLangs,
+                tags: Object.keys(langCounts).slice(0, 5)
+            });
+        }
+
+        // ── Top-level directory structure ────────────────────────────────────
+        const topDirs: Record<string, number> = {};
+        for (const fp of filePaths) {
+            const rel = fp.startsWith(context.projectRoot)
+                ? fp.slice(context.projectRoot.length + 1)
+                : fp;
+            const parts = rel.split("/");
+            if (parts.length > 1 && parts[0]) {
+                const dir = parts[0];
+                if (!["node_modules", ".git", ".brain", "dist", "build"].includes(dir)) {
+                    topDirs[dir] = (topDirs[dir] || 0) + 1;
+                }
+            }
+        }
+        const topDirList = Object.entries(topDirs)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 8)
+            .map(([dir, count]) => `${dir}/ (${count} files)`)
+            .join(", ");
+        if (topDirList) {
+            entries.push({
+                category: "Structure",
+                title: "Top-level Directories",
+                description: topDirList,
+                tags: Object.keys(topDirs).slice(0, 8)
+            });
+        }
+
+        // ── Packages (if monorepo-style) ─────────────────────────────────────
+        const pkgDirs = new Set<string>();
+        for (const fp of filePaths) {
+            if (fp.includes("/packages/") || fp.includes("/apps/") || fp.includes("/libs/")) {
+                const rel = fp.startsWith(context.projectRoot)
+                    ? fp.slice(context.projectRoot.length + 1)
+                    : fp;
+                const parts = rel.split("/");
+                const groupIdx = parts.findIndex(p => ["packages", "apps", "libs"].includes(p));
+                if (groupIdx >= 0 && parts[groupIdx + 1]) {
+                    pkgDirs.add(`${parts[groupIdx]}/${parts[groupIdx + 1]}`);
+                }
+            }
+        }
+        if (pkgDirs.size > 0) {
+            entries.push({
+                category: "Modules",
+                title: "Packages / Modules",
+                description: [...pkgDirs].sort().join(", "),
+                tags: ["monorepo", "packages"]
+            });
+        }
+
+        // ── Symbol summary ───────────────────────────────────────────────────
+        const symbolsData = context.symbolsData;
+        if (symbolsData) {
+            const items: any[] = Array.isArray(symbolsData)
+                ? symbolsData
+                : Array.isArray(symbolsData.symbols) ? symbolsData.symbols : [];
+            const kindCounts: Record<string, number> = {};
+            for (const s of items) {
+                const k = s?.kind || s?.type || "function";
+                kindCounts[k] = (kindCounts[k] || 0) + 1;
+            }
+            const kindSummary = Object.entries(kindCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 6)
+                .map(([k, n]) => `${n} ${k}s`)
+                .join(", ");
+            if (kindSummary) {
+                entries.push({
+                    category: "Symbols",
+                    title: "Exported Symbol Types",
+                    description: kindSummary,
+                    tags: Object.keys(kindCounts).slice(0, 6)
+                });
+            }
+        }
+
+        // ── File count summary ───────────────────────────────────────────────
+        if (filePaths.length > 0) {
+            entries.push({
+                category: "Overview",
+                title: "Workspace Size",
+                description: `${filePaths.length} tracked files across the workspace`,
+                tags: ["overview", "size"]
+            });
+        }
+
+        return entries;
+    }
+
 
     extractEvolution(context: SnapshotContext): SnapshotEvolutionEntry[] {
         const raw = context.evolutionData;
@@ -441,5 +586,15 @@ export class SnapshotBuilder {
         if (lower.includes("const")) return "constant";
         if (lower.includes("var")) return "variable";
         return "function";
+    }
+
+    extractSemanticMemory(context: SnapshotContext): any[] {
+        const raw = context.semanticMemoryData;
+        if (!raw) return [];
+        return Array.isArray(raw)
+            ? raw
+            : Array.isArray(raw.entries)
+                ? raw.entries
+                : [];
     }
 }

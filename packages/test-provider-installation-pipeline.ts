@@ -51,8 +51,8 @@ async function runTests() {
         // 1. Verify MCP configuration written safely
         assert(ProviderConfigurator.isConfigured(providerId) === true, "OpenCode must be marked configured");
         const configData = JSON.parse(fs.readFileSync(configPath, "utf-8"));
-        assert(configData.mcpServers.brain !== undefined, "Brain MCP registration must exist");
-        assert(configData.mcpServers.brain.command === "brain");
+        assert(configData.mcp.brain !== undefined, "Brain MCP registration must exist");
+        assert(configData.mcp.brain.command[0] === "brain");
 
         // 2. Verify policy instructions file created
         assert(ProviderPolicyInstaller.isPolicyInstalled(providerId) === true, "Context policy file must be installed");

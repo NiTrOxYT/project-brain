@@ -1,0 +1,2344 @@
+{
+  "generatedAt": "2026-06-28T11:15:20.199Z",
+  "nodes": [
+    {
+      "id": "architecture-retriever.ts#ArchitectureRetriever",
+      "symbol": "ArchitectureRetriever",
+      "file": "architecture-retriever.ts",
+      "kind": "class"
+    },
+    {
+      "id": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "symbol": "ArchitectureRetriever.retrieve",
+      "file": "architecture-retriever.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#Set",
+      "symbol": "Set",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#map",
+      "symbol": "map",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#toLowerCase",
+      "symbol": "toLowerCase",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.has",
+      "symbol": "RetrievalCache.has",
+      "file": "cache.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#some",
+      "symbol": "some",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#split",
+      "symbol": "split",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#push",
+      "symbol": "push",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#sort",
+      "symbol": "sort",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#localeCompare",
+      "symbol": "localeCompare",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "budget.ts#RetrievalBudgeter",
+      "symbol": "RetrievalBudgeter",
+      "file": "budget.ts",
+      "kind": "class"
+    },
+    {
+      "id": "budget.ts#RetrievalBudgeter.providerBudgets",
+      "symbol": "RetrievalBudgeter.providerBudgets",
+      "file": "budget.ts",
+      "kind": "property"
+    },
+    {
+      "id": "budget.ts#RetrievalBudgeter.allocate",
+      "symbol": "RetrievalBudgeter.allocate",
+      "file": "budget.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#floor",
+      "symbol": "floor",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "budget.ts#RetrievalBudgeter.addActual",
+      "symbol": "RetrievalBudgeter.addActual",
+      "file": "budget.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#includes",
+      "symbol": "includes",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "cache.ts#RetrievalCache",
+      "symbol": "RetrievalCache",
+      "file": "cache.ts",
+      "kind": "class"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.cacheDir",
+      "symbol": "RetrievalCache.cacheDir",
+      "file": "cache.ts",
+      "kind": "property"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.memoryCache",
+      "symbol": "RetrievalCache.memoryCache",
+      "file": "cache.ts",
+      "kind": "property"
+    },
+    {
+      "id": "external#Map",
+      "symbol": "Map",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.maxItems",
+      "symbol": "RetrievalCache.maxItems",
+      "file": "cache.ts",
+      "kind": "property"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.constructor",
+      "symbol": "RetrievalCache.constructor",
+      "file": "cache.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "external#StoragePaths",
+      "symbol": "StoragePaths",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.ensureDirectory",
+      "symbol": "RetrievalCache.ensureDirectory",
+      "file": "cache.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#mkdir",
+      "symbol": "mkdir",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.computeKey",
+      "symbol": "RetrievalCache.computeKey",
+      "file": "cache.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#digest",
+      "symbol": "digest",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#update",
+      "symbol": "update",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#createHash",
+      "symbol": "createHash",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.getCachePath",
+      "symbol": "RetrievalCache.getCachePath",
+      "file": "cache.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#access",
+      "symbol": "access",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.get",
+      "symbol": "RetrievalCache.get",
+      "file": "cache.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#delete",
+      "symbol": "delete",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#set",
+      "symbol": "set",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#readFile",
+      "symbol": "readFile",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "query-parser.ts#QueryParser.parse",
+      "symbol": "QueryParser.parse",
+      "file": "query-parser.ts",
+      "kind": "method"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.put",
+      "symbol": "RetrievalCache.put",
+      "file": "cache.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#toISOString",
+      "symbol": "toISOString",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#Date",
+      "symbol": "Date",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#next",
+      "symbol": "next",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#keys",
+      "symbol": "keys",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#unlink",
+      "symbol": "unlink",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#writeFile",
+      "symbol": "writeFile",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#stringify",
+      "symbol": "stringify",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "cache.ts#RetrievalCache.clear",
+      "symbol": "RetrievalCache.clear",
+      "file": "cache.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#readdir",
+      "symbol": "readdir",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#endsWith",
+      "symbol": "endsWith",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#join",
+      "symbol": "join",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "compressor.ts#RetrievalCompressor",
+      "symbol": "RetrievalCompressor",
+      "file": "compressor.ts",
+      "kind": "class"
+    },
+    {
+      "id": "compressor.ts#RetrievalCompressor.compress",
+      "symbol": "RetrievalCompressor.compress",
+      "file": "compressor.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#filter",
+      "symbol": "filter",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#replace",
+      "symbol": "replace",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#add",
+      "symbol": "add",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "dependency-expander.ts#DependencyExpander",
+      "symbol": "DependencyExpander",
+      "file": "dependency-expander.ts",
+      "kind": "class"
+    },
+    {
+      "id": "dependency-expander.ts#DependencyExpander.expand",
+      "symbol": "DependencyExpander.expand",
+      "file": "dependency-expander.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#norm",
+      "symbol": "norm",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#find",
+      "symbol": "find",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#get",
+      "symbol": "get",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#shift",
+      "symbol": "shift",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "diagnostics.ts#RetrievalDiagnosticsBuilder",
+      "symbol": "RetrievalDiagnosticsBuilder",
+      "file": "diagnostics.ts",
+      "kind": "class"
+    },
+    {
+      "id": "diagnostics.ts#RetrievalDiagnosticsBuilder.build",
+      "symbol": "RetrievalDiagnosticsBuilder.build",
+      "file": "diagnostics.ts",
+      "kind": "method"
+    },
+    {
+      "id": "diagnostics.ts#RetrievalDiagnosticsBuilder.format",
+      "symbol": "RetrievalDiagnosticsBuilder.format",
+      "file": "diagnostics.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#toFixed",
+      "symbol": "toFixed",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#padEnd",
+      "symbol": "padEnd",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#slice",
+      "symbol": "slice",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#toString",
+      "symbol": "toString",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#entries",
+      "symbol": "entries",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "errors.ts#ContextRetrievalError",
+      "symbol": "ContextRetrievalError",
+      "file": "errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "errors.ts#ContextRetrievalError.constructor",
+      "symbol": "ContextRetrievalError.constructor",
+      "file": "errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "external#super",
+      "symbol": "super",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "errors.ts#RetrievalBudgetError",
+      "symbol": "RetrievalBudgetError",
+      "file": "errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "errors.ts#RetrievalBudgetError.constructor",
+      "symbol": "RetrievalBudgetError.constructor",
+      "file": "errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "errors.ts#GraphTraversalError",
+      "symbol": "GraphTraversalError",
+      "file": "errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "errors.ts#GraphTraversalError.constructor",
+      "symbol": "GraphTraversalError.constructor",
+      "file": "errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "errors.ts#RetrievalValidationError",
+      "symbol": "RetrievalValidationError",
+      "file": "errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "errors.ts#RetrievalValidationError.constructor",
+      "symbol": "RetrievalValidationError.constructor",
+      "file": "errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "errors.ts#RankingError",
+      "symbol": "RankingError",
+      "file": "errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "errors.ts#RankingError.constructor",
+      "symbol": "RankingError.constructor",
+      "file": "errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "errors.ts#CompressionError",
+      "symbol": "CompressionError",
+      "file": "errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "errors.ts#CompressionError.constructor",
+      "symbol": "CompressionError.constructor",
+      "file": "errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "errors.ts#RetrievalCacheError",
+      "symbol": "RetrievalCacheError",
+      "file": "errors.ts",
+      "kind": "class"
+    },
+    {
+      "id": "errors.ts#RetrievalCacheError.constructor",
+      "symbol": "RetrievalCacheError.constructor",
+      "file": "errors.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "graph-traverser.ts#GraphTraverser",
+      "symbol": "GraphTraverser",
+      "file": "graph-traverser.ts",
+      "kind": "class"
+    },
+    {
+      "id": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "symbol": "GraphTraverser.traverseBFS",
+      "file": "graph-traverser.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#values",
+      "symbol": "values",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "symbol": "GraphTraverser.traversePriorityBFS",
+      "file": "graph-traverser.ts",
+      "kind": "method"
+    },
+    {
+      "id": "learning-retriever.ts#LearningRetriever",
+      "symbol": "LearningRetriever",
+      "file": "learning-retriever.ts",
+      "kind": "class"
+    },
+    {
+      "id": "learning-retriever.ts#LearningRetriever.retrieve",
+      "symbol": "LearningRetriever.retrieve",
+      "file": "learning-retriever.ts",
+      "kind": "method"
+    },
+    {
+      "id": "metrics.ts#DEFAULT_STATS",
+      "symbol": "DEFAULT_STATS",
+      "file": "metrics.ts",
+      "kind": "variable"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker",
+      "symbol": "RetrievalMetricsTracker",
+      "file": "metrics.ts",
+      "kind": "class"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker.statsPath",
+      "symbol": "RetrievalMetricsTracker.statsPath",
+      "file": "metrics.ts",
+      "kind": "property"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker.stats",
+      "symbol": "RetrievalMetricsTracker.stats",
+      "file": "metrics.ts",
+      "kind": "property"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker.loaded",
+      "symbol": "RetrievalMetricsTracker.loaded",
+      "file": "metrics.ts",
+      "kind": "property"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker.constructor",
+      "symbol": "RetrievalMetricsTracker.constructor",
+      "file": "metrics.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker.load",
+      "symbol": "RetrievalMetricsTracker.load",
+      "file": "metrics.ts",
+      "kind": "method"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker.record",
+      "symbol": "RetrievalMetricsTracker.record",
+      "file": "metrics.ts",
+      "kind": "method"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker.save",
+      "symbol": "RetrievalMetricsTracker.save",
+      "file": "metrics.ts",
+      "kind": "method"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker.get",
+      "symbol": "RetrievalMetricsTracker.get",
+      "file": "metrics.ts",
+      "kind": "method"
+    },
+    {
+      "id": "metrics.ts#RetrievalMetricsTracker.reset",
+      "symbol": "RetrievalMetricsTracker.reset",
+      "file": "metrics.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#dirname",
+      "symbol": "dirname",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "query-parser.ts#ParsedQuery",
+      "symbol": "ParsedQuery",
+      "file": "query-parser.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "query-parser.ts#QueryParser",
+      "symbol": "QueryParser",
+      "file": "query-parser.ts",
+      "kind": "class"
+    },
+    {
+      "id": "external#exec",
+      "symbol": "exec",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#trim",
+      "symbol": "trim",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "ranking.ts#RetrievalRanker",
+      "symbol": "RetrievalRanker",
+      "file": "ranking.ts",
+      "kind": "class"
+    },
+    {
+      "id": "ranking.ts#RetrievalRanker.rank",
+      "symbol": "RetrievalRanker.rank",
+      "file": "ranking.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#isArray",
+      "symbol": "isArray",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "relationship-retriever.ts#RelationshipRetriever",
+      "symbol": "RelationshipRetriever",
+      "file": "relationship-retriever.ts",
+      "kind": "class"
+    },
+    {
+      "id": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "symbol": "RelationshipRetriever.retrieve",
+      "file": "relationship-retriever.ts",
+      "kind": "method"
+    },
+    {
+      "id": "retrieval-planner.ts#RetrievalPlan",
+      "symbol": "RetrievalPlan",
+      "file": "retrieval-planner.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "retrieval-planner.ts#RetrievalPlanner",
+      "symbol": "RetrievalPlanner",
+      "file": "retrieval-planner.ts",
+      "kind": "class"
+    },
+    {
+      "id": "retrieval-planner.ts#RetrievalPlanner.plan",
+      "symbol": "RetrievalPlanner.plan",
+      "file": "retrieval-planner.ts",
+      "kind": "method"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService",
+      "symbol": "ContextRetrievalService",
+      "file": "service.ts",
+      "kind": "class"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.syncService",
+      "symbol": "ContextRetrievalService.syncService",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.compiler",
+      "symbol": "ContextRetrievalService.compiler",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.parser",
+      "symbol": "ContextRetrievalService.parser",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.planner",
+      "symbol": "ContextRetrievalService.planner",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.traverser",
+      "symbol": "ContextRetrievalService.traverser",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.expander",
+      "symbol": "ContextRetrievalService.expander",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.symbolRetriever",
+      "symbol": "ContextRetrievalService.symbolRetriever",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "symbol-retriever.ts#SymbolRetriever",
+      "symbol": "SymbolRetriever",
+      "file": "symbol-retriever.ts",
+      "kind": "class"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.relationshipRetriever",
+      "symbol": "ContextRetrievalService.relationshipRetriever",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.architectureRetriever",
+      "symbol": "ContextRetrievalService.architectureRetriever",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.learningRetriever",
+      "symbol": "ContextRetrievalService.learningRetriever",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.ranker",
+      "symbol": "ContextRetrievalService.ranker",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.budgeter",
+      "symbol": "ContextRetrievalService.budgeter",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.compressor",
+      "symbol": "ContextRetrievalService.compressor",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.cache",
+      "symbol": "ContextRetrievalService.cache",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.validator",
+      "symbol": "ContextRetrievalService.validator",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "validator.ts#RetrievalValidator",
+      "symbol": "RetrievalValidator",
+      "file": "validator.ts",
+      "kind": "class"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.metricsTracker",
+      "symbol": "ContextRetrievalService.metricsTracker",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.diagBuilder",
+      "symbol": "ContextRetrievalService.diagBuilder",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.projectRoot",
+      "symbol": "ContextRetrievalService.projectRoot",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.workspaceRoot",
+      "symbol": "ContextRetrievalService.workspaceRoot",
+      "file": "service.ts",
+      "kind": "property"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.constructor",
+      "symbol": "ContextRetrievalService.constructor",
+      "file": "service.ts",
+      "kind": "constructor"
+    },
+    {
+      "id": "external#ContextSynchronizationService",
+      "symbol": "ContextSynchronizationService",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#ContextCompilerService",
+      "symbol": "ContextCompilerService",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.retrieve",
+      "symbol": "ContextRetrievalService.retrieve",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#now",
+      "symbol": "now",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#loadSnapshot",
+      "symbol": "loadSnapshot",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.latestSnapshot",
+      "symbol": "ContextRetrievalService.latestSnapshot",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#compile",
+      "symbol": "compile",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "external#reduce",
+      "symbol": "reduce",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.expand",
+      "symbol": "ContextRetrievalService.expand",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "external#randomBytes",
+      "symbol": "randomBytes",
+      "file": "external",
+      "kind": "external"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.compress",
+      "symbol": "ContextRetrievalService.compress",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.validate",
+      "symbol": "ContextRetrievalService.validate",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.retrieveFiles",
+      "symbol": "ContextRetrievalService.retrieveFiles",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.retrieveSymbols",
+      "symbol": "ContextRetrievalService.retrieveSymbols",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.retrieveArchitecture",
+      "symbol": "ContextRetrievalService.retrieveArchitecture",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.retrieveLearning",
+      "symbol": "ContextRetrievalService.retrieveLearning",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "service.ts#ContextRetrievalService.statistics",
+      "symbol": "ContextRetrievalService.statistics",
+      "file": "service.ts",
+      "kind": "method"
+    },
+    {
+      "id": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "symbol": "SymbolRetriever.retrieve",
+      "file": "symbol-retriever.ts",
+      "kind": "method"
+    },
+    {
+      "id": "types.ts#RetrievalRequest",
+      "symbol": "RetrievalRequest",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalStrategy",
+      "symbol": "RetrievalStrategy",
+      "file": "types.ts",
+      "kind": "type"
+    },
+    {
+      "id": "types.ts#RetrievalResult",
+      "symbol": "RetrievalResult",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalSection",
+      "symbol": "RetrievalSection",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalCandidate",
+      "symbol": "RetrievalCandidate",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalGraph",
+      "symbol": "RetrievalGraph",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalEdge",
+      "symbol": "RetrievalEdge",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalNode",
+      "symbol": "RetrievalNode",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalReason",
+      "symbol": "RetrievalReason",
+      "file": "types.ts",
+      "kind": "type"
+    },
+    {
+      "id": "types.ts#RetrievalScore",
+      "symbol": "RetrievalScore",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalBudget",
+      "symbol": "RetrievalBudget",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalMetrics",
+      "symbol": "RetrievalMetrics",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalStage",
+      "symbol": "RetrievalStage",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalStatistics",
+      "symbol": "RetrievalStatistics",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalDiagnostics",
+      "symbol": "RetrievalDiagnostics",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalCacheEntry",
+      "symbol": "RetrievalCacheEntry",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalSnapshotReference",
+      "symbol": "RetrievalSnapshotReference",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalProfile",
+      "symbol": "RetrievalProfile",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalExpansion",
+      "symbol": "RetrievalExpansion",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalCompression",
+      "symbol": "RetrievalCompression",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalValidation",
+      "symbol": "RetrievalValidation",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "types.ts#RetrievalPackage",
+      "symbol": "RetrievalPackage",
+      "file": "types.ts",
+      "kind": "interface"
+    },
+    {
+      "id": "validator.ts#RetrievalValidator.validate",
+      "symbol": "RetrievalValidator.validate",
+      "file": "validator.ts",
+      "kind": "method"
+    }
+  ],
+  "edges": [
+    {
+      "from": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "to": "external#toLowerCase",
+      "type": "calls"
+    },
+    {
+      "from": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "to": "cache.ts#RetrievalCache.has",
+      "type": "calls"
+    },
+    {
+      "from": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "to": "external#some",
+      "type": "calls"
+    },
+    {
+      "from": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "architecture-retriever.ts#ArchitectureRetriever.retrieve",
+      "to": "external#localeCompare",
+      "type": "calls"
+    },
+    {
+      "from": "budget.ts#RetrievalBudgeter.allocate",
+      "to": "external#floor",
+      "type": "calls"
+    },
+    {
+      "from": "budget.ts#RetrievalBudgeter.allocate",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "budget.ts#RetrievalBudgeter.allocate",
+      "to": "external#localeCompare",
+      "type": "calls"
+    },
+    {
+      "from": "budget.ts#RetrievalBudgeter.allocate",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "budget.ts#RetrievalBudgeter.allocate",
+      "to": "budget.ts#RetrievalBudgeter.addActual",
+      "type": "calls"
+    },
+    {
+      "from": "budget.ts#RetrievalBudgeter.addActual",
+      "to": "external#toLowerCase",
+      "type": "calls"
+    },
+    {
+      "from": "budget.ts#RetrievalBudgeter.addActual",
+      "to": "external#includes",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.memoryCache",
+      "to": "external#Map",
+      "type": "constructs"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.constructor",
+      "to": "external#StoragePaths",
+      "type": "constructs"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.ensureDirectory",
+      "to": "external#mkdir",
+      "type": "awaits"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.ensureDirectory",
+      "to": "external#mkdir",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.computeKey",
+      "to": "external#digest",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.computeKey",
+      "to": "external#update",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.computeKey",
+      "to": "external#createHash",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.has",
+      "to": "cache.ts#RetrievalCache.computeKey",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.has",
+      "to": "cache.ts#RetrievalCache.getCachePath",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.has",
+      "to": "external#access",
+      "type": "awaits"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.has",
+      "to": "external#access",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.get",
+      "to": "cache.ts#RetrievalCache.computeKey",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.get",
+      "to": "external#delete",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.get",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.get",
+      "to": "cache.ts#RetrievalCache.getCachePath",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.get",
+      "to": "external#readFile",
+      "type": "awaits"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.get",
+      "to": "external#readFile",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.get",
+      "to": "query-parser.ts#QueryParser.parse",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "cache.ts#RetrievalCache.ensureDirectory",
+      "type": "awaits"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "cache.ts#RetrievalCache.ensureDirectory",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "cache.ts#RetrievalCache.computeKey",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#toISOString",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#Date",
+      "type": "constructs"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#next",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#keys",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#delete",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#unlink",
+      "type": "awaits"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#unlink",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "cache.ts#RetrievalCache.getCachePath",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#writeFile",
+      "type": "awaits"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#writeFile",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.put",
+      "to": "external#stringify",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.clear",
+      "to": "external#readdir",
+      "type": "awaits"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.clear",
+      "to": "external#readdir",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.clear",
+      "to": "external#endsWith",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.clear",
+      "to": "external#unlink",
+      "type": "awaits"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.clear",
+      "to": "external#unlink",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.clear",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "cache.ts#RetrievalCache.getCachePath",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "compressor.ts#RetrievalCompressor.compress",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "compressor.ts#RetrievalCompressor.compress",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "compressor.ts#RetrievalCompressor.compress",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "compressor.ts#RetrievalCompressor.compress",
+      "to": "cache.ts#RetrievalCache.has",
+      "type": "calls"
+    },
+    {
+      "from": "compressor.ts#RetrievalCompressor.compress",
+      "to": "external#add",
+      "type": "calls"
+    },
+    {
+      "from": "compressor.ts#RetrievalCompressor.compress",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "compressor.ts#RetrievalCompressor.compress",
+      "to": "external#localeCompare",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#Map",
+      "type": "constructs"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#norm",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#keys",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#endsWith",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#add",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#shift",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "cache.ts#RetrievalCache.has",
+      "type": "calls"
+    },
+    {
+      "from": "dependency-expander.ts#DependencyExpander.expand",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "diagnostics.ts#RetrievalDiagnosticsBuilder.build",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "diagnostics.ts#RetrievalDiagnosticsBuilder.format",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "diagnostics.ts#RetrievalDiagnosticsBuilder.format",
+      "to": "external#toFixed",
+      "type": "calls"
+    },
+    {
+      "from": "diagnostics.ts#RetrievalDiagnosticsBuilder.format",
+      "to": "external#padEnd",
+      "type": "calls"
+    },
+    {
+      "from": "diagnostics.ts#RetrievalDiagnosticsBuilder.format",
+      "to": "external#slice",
+      "type": "calls"
+    },
+    {
+      "from": "diagnostics.ts#RetrievalDiagnosticsBuilder.format",
+      "to": "external#toString",
+      "type": "calls"
+    },
+    {
+      "from": "diagnostics.ts#RetrievalDiagnosticsBuilder.format",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "diagnostics.ts#RetrievalDiagnosticsBuilder.format",
+      "to": "external#entries",
+      "type": "calls"
+    },
+    {
+      "from": "errors.ts#ContextRetrievalError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "errors.ts#RetrievalBudgetError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "errors.ts#GraphTraversalError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "errors.ts#RetrievalValidationError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "errors.ts#RankingError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "errors.ts#CompressionError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "errors.ts#RetrievalCacheError.constructor",
+      "to": "external#super",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#Map",
+      "type": "constructs"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "cache.ts#RetrievalCache.has",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#add",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#shift",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#localeCompare",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "external#values",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "to": "errors.ts#GraphTraversalError",
+      "type": "constructs"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#Map",
+      "type": "constructs"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#set",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#add",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#localeCompare",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#shift",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "cache.ts#RetrievalCache.has",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "external#values",
+      "type": "calls"
+    },
+    {
+      "from": "graph-traverser.ts#GraphTraverser.traversePriorityBFS",
+      "to": "errors.ts#GraphTraversalError",
+      "type": "constructs"
+    },
+    {
+      "from": "learning-retriever.ts#LearningRetriever.retrieve",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "learning-retriever.ts#LearningRetriever.retrieve",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "learning-retriever.ts#LearningRetriever.retrieve",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "learning-retriever.ts#LearningRetriever.retrieve",
+      "to": "external#toLowerCase",
+      "type": "calls"
+    },
+    {
+      "from": "learning-retriever.ts#LearningRetriever.retrieve",
+      "to": "external#some",
+      "type": "calls"
+    },
+    {
+      "from": "learning-retriever.ts#LearningRetriever.retrieve",
+      "to": "external#endsWith",
+      "type": "calls"
+    },
+    {
+      "from": "learning-retriever.ts#LearningRetriever.retrieve",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "learning-retriever.ts#LearningRetriever.retrieve",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "learning-retriever.ts#LearningRetriever.retrieve",
+      "to": "external#localeCompare",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.constructor",
+      "to": "external#StoragePaths",
+      "type": "constructs"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.load",
+      "to": "external#readFile",
+      "type": "awaits"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.load",
+      "to": "external#readFile",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.load",
+      "to": "query-parser.ts#QueryParser.parse",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.record",
+      "to": "metrics.ts#RetrievalMetricsTracker.load",
+      "type": "awaits"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.record",
+      "to": "metrics.ts#RetrievalMetricsTracker.load",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.record",
+      "to": "metrics.ts#RetrievalMetricsTracker.save",
+      "type": "awaits"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.record",
+      "to": "metrics.ts#RetrievalMetricsTracker.save",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.get",
+      "to": "metrics.ts#RetrievalMetricsTracker.load",
+      "type": "awaits"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.get",
+      "to": "metrics.ts#RetrievalMetricsTracker.load",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.reset",
+      "to": "metrics.ts#RetrievalMetricsTracker.save",
+      "type": "awaits"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.reset",
+      "to": "metrics.ts#RetrievalMetricsTracker.save",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.save",
+      "to": "external#mkdir",
+      "type": "awaits"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.save",
+      "to": "external#mkdir",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.save",
+      "to": "external#dirname",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.save",
+      "to": "external#writeFile",
+      "type": "awaits"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.save",
+      "to": "external#writeFile",
+      "type": "calls"
+    },
+    {
+      "from": "metrics.ts#RetrievalMetricsTracker.save",
+      "to": "external#stringify",
+      "type": "calls"
+    },
+    {
+      "from": "query-parser.ts#QueryParser.parse",
+      "to": "external#toLowerCase",
+      "type": "calls"
+    },
+    {
+      "from": "query-parser.ts#QueryParser.parse",
+      "to": "external#includes",
+      "type": "calls"
+    },
+    {
+      "from": "query-parser.ts#QueryParser.parse",
+      "to": "external#exec",
+      "type": "calls"
+    },
+    {
+      "from": "query-parser.ts#QueryParser.parse",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "query-parser.ts#QueryParser.parse",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "query-parser.ts#QueryParser.parse",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "query-parser.ts#QueryParser.parse",
+      "to": "external#split",
+      "type": "calls"
+    },
+    {
+      "from": "query-parser.ts#QueryParser.parse",
+      "to": "external#trim",
+      "type": "calls"
+    },
+    {
+      "from": "query-parser.ts#QueryParser.parse",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#toLowerCase",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#some",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#endsWith",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#dirname",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "cache.ts#RetrievalCache.has",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#isArray",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#find",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "ranking.ts#RetrievalRanker.rank",
+      "to": "external#localeCompare",
+      "type": "calls"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "cache.ts#RetrievalCache.has",
+      "type": "calls"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "external#some",
+      "type": "calls"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "external#endsWith",
+      "type": "calls"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "external#add",
+      "type": "calls"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "relationship-retriever.ts#RelationshipRetriever.retrieve",
+      "to": "external#localeCompare",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.parser",
+      "to": "query-parser.ts#QueryParser",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.planner",
+      "to": "retrieval-planner.ts#RetrievalPlanner",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.traverser",
+      "to": "graph-traverser.ts#GraphTraverser",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.expander",
+      "to": "dependency-expander.ts#DependencyExpander",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.symbolRetriever",
+      "to": "symbol-retriever.ts#SymbolRetriever",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.relationshipRetriever",
+      "to": "relationship-retriever.ts#RelationshipRetriever",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.architectureRetriever",
+      "to": "architecture-retriever.ts#ArchitectureRetriever",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.learningRetriever",
+      "to": "learning-retriever.ts#LearningRetriever",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.ranker",
+      "to": "ranking.ts#RetrievalRanker",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.budgeter",
+      "to": "budget.ts#RetrievalBudgeter",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.compressor",
+      "to": "compressor.ts#RetrievalCompressor",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.validator",
+      "to": "validator.ts#RetrievalValidator",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.diagBuilder",
+      "to": "diagnostics.ts#RetrievalDiagnosticsBuilder",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.constructor",
+      "to": "external#endsWith",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.constructor",
+      "to": "external#join",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.constructor",
+      "to": "external#ContextSynchronizationService",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.constructor",
+      "to": "external#ContextCompilerService",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.constructor",
+      "to": "cache.ts#RetrievalCache",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.constructor",
+      "to": "metrics.ts#RetrievalMetricsTracker",
+      "type": "constructs"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#now",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#loadSnapshot",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#loadSnapshot",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "service.ts#ContextRetrievalService.latestSnapshot",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "service.ts#ContextRetrievalService.latestSnapshot",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#compile",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#compile",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "query-parser.ts#QueryParser.parse",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#get",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#reduce",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "metrics.ts#RetrievalMetricsTracker.record",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "metrics.ts#RetrievalMetricsTracker.record",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "retrieval-planner.ts#RetrievalPlanner.plan",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "service.ts#ContextRetrievalService.expand",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "graph-traverser.ts#GraphTraverser.traverseBFS",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "ranking.ts#RetrievalRanker.rank",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "budget.ts#RetrievalBudgeter.allocate",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#toString",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#randomBytes",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "external#includes",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "service.ts#ContextRetrievalService.compress",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "service.ts#ContextRetrievalService.validate",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "cache.ts#RetrievalCache.put",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieve",
+      "to": "cache.ts#RetrievalCache.put",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveFiles",
+      "to": "service.ts#ContextRetrievalService.retrieve",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveFiles",
+      "to": "service.ts#ContextRetrievalService.retrieve",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveFiles",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveSymbols",
+      "to": "service.ts#ContextRetrievalService.retrieve",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveSymbols",
+      "to": "service.ts#ContextRetrievalService.retrieve",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveArchitecture",
+      "to": "service.ts#ContextRetrievalService.retrieve",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveArchitecture",
+      "to": "service.ts#ContextRetrievalService.retrieve",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveArchitecture",
+      "to": "service.ts#ContextRetrievalService.latestSnapshot",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveArchitecture",
+      "to": "service.ts#ContextRetrievalService.latestSnapshot",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveArchitecture",
+      "to": "query-parser.ts#QueryParser.parse",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveLearning",
+      "to": "service.ts#ContextRetrievalService.retrieve",
+      "type": "awaits"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveLearning",
+      "to": "service.ts#ContextRetrievalService.retrieve",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.retrieveLearning",
+      "to": "external#filter",
+      "type": "calls"
+    },
+    {
+      "from": "service.ts#ContextRetrievalService.statistics",
+      "to": "external#get",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#map",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#toLowerCase",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "cache.ts#RetrievalCache.has",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#some",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#endsWith",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#add",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#sort",
+      "type": "calls"
+    },
+    {
+      "from": "symbol-retriever.ts#SymbolRetriever.retrieve",
+      "to": "external#localeCompare",
+      "type": "calls"
+    },
+    {
+      "from": "validator.ts#RetrievalValidator.validate",
+      "to": "external#Set",
+      "type": "constructs"
+    },
+    {
+      "from": "validator.ts#RetrievalValidator.validate",
+      "to": "external#replace",
+      "type": "calls"
+    },
+    {
+      "from": "validator.ts#RetrievalValidator.validate",
+      "to": "cache.ts#RetrievalCache.has",
+      "type": "calls"
+    },
+    {
+      "from": "validator.ts#RetrievalValidator.validate",
+      "to": "external#push",
+      "type": "calls"
+    },
+    {
+      "from": "validator.ts#RetrievalValidator.validate",
+      "to": "external#add",
+      "type": "calls"
+    }
+  ]
+}

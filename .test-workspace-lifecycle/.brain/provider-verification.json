@@ -1,0 +1,11 @@
+{
+  "test-gateway": {
+    "providerId": "test-gateway",
+    "installationVerified": true,
+    "configurationVerified": true,
+    "connectivityVerified": false,
+    "toolVerificationPassed": false,
+    "behaviorVerificationPassed": false,
+    "verificationTimestamp": "2026-06-28T10:02:48.439Z"
+  }
+}

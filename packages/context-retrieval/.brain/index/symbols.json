@@ -1,0 +1,2081 @@
+{
+  "generatedAt": "2026-06-28T11:15:20.158Z",
+  "symbols": [
+    {
+      "name": "ArchitectureRetriever",
+      "kind": "class",
+      "file": "architecture-retriever.ts",
+      "line": 3
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "file": "architecture-retriever.ts",
+      "line": 4
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "architecture-retriever.ts",
+      "line": 5
+    },
+    {
+      "name": "keywordSet",
+      "kind": "variable",
+      "file": "architecture-retriever.ts",
+      "line": 6
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "architecture-retriever.ts",
+      "line": 8
+    },
+    {
+      "name": "catMatch",
+      "kind": "variable",
+      "file": "architecture-retriever.ts",
+      "line": 9
+    },
+    {
+      "name": "titleMatch",
+      "kind": "variable",
+      "file": "architecture-retriever.ts",
+      "line": 10
+    },
+    {
+      "name": "tagMatch",
+      "kind": "variable",
+      "file": "architecture-retriever.ts",
+      "line": 11
+    },
+    {
+      "name": "catComp",
+      "kind": "variable",
+      "file": "architecture-retriever.ts",
+      "line": 19
+    },
+    {
+      "name": "RetrievalBudgeter",
+      "kind": "class",
+      "file": "budget.ts",
+      "line": 4
+    },
+    {
+      "name": "providerBudgets",
+      "kind": "property",
+      "file": "budget.ts",
+      "line": 5
+    },
+    {
+      "name": "allocate",
+      "kind": "method",
+      "file": "budget.ts",
+      "line": 15
+    },
+    {
+      "name": "limit",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 23
+    },
+    {
+      "name": "allocated",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 26
+    },
+    {
+      "name": "actual",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 37
+    },
+    {
+      "name": "sorted",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 49
+    },
+    {
+      "name": "allocatedSections",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 54
+    },
+    {
+      "name": "runningTokens",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 55
+    },
+    {
+      "name": "s",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 57
+    },
+    {
+      "name": "tokens",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 58
+    },
+    {
+      "name": "budget",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 80
+    },
+    {
+      "name": "addActual",
+      "kind": "method",
+      "file": "budget.ts",
+      "line": 92
+    },
+    {
+      "name": "lower",
+      "kind": "variable",
+      "file": "budget.ts",
+      "line": 93
+    },
+    {
+      "name": "RetrievalCache",
+      "kind": "class",
+      "file": "cache.ts",
+      "line": 7
+    },
+    {
+      "name": "cacheDir",
+      "kind": "property",
+      "file": "cache.ts",
+      "line": 8
+    },
+    {
+      "name": "memoryCache",
+      "kind": "property",
+      "file": "cache.ts",
+      "line": 9
+    },
+    {
+      "name": "maxItems",
+      "kind": "property",
+      "file": "cache.ts",
+      "line": 10
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "cache.ts",
+      "line": 12
+    },
+    {
+      "name": "ensureDirectory",
+      "kind": "method",
+      "file": "cache.ts",
+      "line": 16
+    },
+    {
+      "name": "computeKey",
+      "kind": "method",
+      "file": "cache.ts",
+      "line": 20
+    },
+    {
+      "name": "queryHash",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 21
+    },
+    {
+      "name": "has",
+      "kind": "method",
+      "file": "cache.ts",
+      "line": 25
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 26
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 29
+    },
+    {
+      "name": "get",
+      "kind": "method",
+      "file": "cache.ts",
+      "line": 38
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 39
+    },
+    {
+      "name": "mem",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 42
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 51
+    },
+    {
+      "name": "raw",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 53
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 54
+    },
+    {
+      "name": "put",
+      "kind": "method",
+      "file": "cache.ts",
+      "line": 62
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 64
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 65
+    },
+    {
+      "name": "firstKey",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 76
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 86
+    },
+    {
+      "name": "clear",
+      "kind": "method",
+      "file": "cache.ts",
+      "line": 92
+    },
+    {
+      "name": "files",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 95
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "cache.ts",
+      "line": 96
+    },
+    {
+      "name": "getCachePath",
+      "kind": "method",
+      "file": "cache.ts",
+      "line": 104
+    },
+    {
+      "name": "RetrievalCompressor",
+      "kind": "class",
+      "file": "compressor.ts",
+      "line": 3
+    },
+    {
+      "name": "compress",
+      "kind": "method",
+      "file": "compressor.ts",
+      "line": 4
+    },
+    {
+      "name": "seenCandidates",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 6
+    },
+    {
+      "name": "candidates",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 7
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 8
+    },
+    {
+      "name": "seenSymbols",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 15
+    },
+    {
+      "name": "symbols",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 16
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 17
+    },
+    {
+      "name": "seenNodes",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 24
+    },
+    {
+      "name": "nodes",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 25
+    },
+    {
+      "name": "seenEdges",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 31
+    },
+    {
+      "name": "edges",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 32
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 33
+    },
+    {
+      "name": "seenDeps",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 40
+    },
+    {
+      "name": "dependencies",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 41
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "compressor.ts",
+      "line": 42
+    },
+    {
+      "name": "DependencyExpander",
+      "kind": "class",
+      "file": "dependency-expander.ts",
+      "line": 3
+    },
+    {
+      "name": "expand",
+      "kind": "method",
+      "file": "dependency-expander.ts",
+      "line": 4
+    },
+    {
+      "name": "expanded",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 5
+    },
+    {
+      "name": "queue",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 6
+    },
+    {
+      "name": "norm",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 9
+    },
+    {
+      "name": "filesMap",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 11
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 13
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 14
+    },
+    {
+      "name": "match",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 16
+    },
+    {
+      "name": "outgoing",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 24
+    },
+    {
+      "name": "incoming",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 25
+    },
+    {
+      "name": "dep",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 27
+    },
+    {
+      "name": "from",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 28
+    },
+    {
+      "name": "to",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 29
+    },
+    {
+      "name": "fullFrom",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 32
+    },
+    {
+      "name": "fullTo",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 33
+    },
+    {
+      "name": "outList",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 35
+    },
+    {
+      "name": "inList",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 39
+    },
+    {
+      "name": "safety",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 44
+    },
+    {
+      "name": "current",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 46
+    },
+    {
+      "name": "outDeps",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 52
+    },
+    {
+      "name": "o",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 53
+    },
+    {
+      "name": "inDeps",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 61
+    },
+    {
+      "name": "i",
+      "kind": "variable",
+      "file": "dependency-expander.ts",
+      "line": 62
+    },
+    {
+      "name": "RetrievalDiagnosticsBuilder",
+      "kind": "class",
+      "file": "diagnostics.ts",
+      "line": 3
+    },
+    {
+      "name": "build",
+      "kind": "method",
+      "file": "diagnostics.ts",
+      "line": 4
+    },
+    {
+      "name": "timeline",
+      "kind": "variable",
+      "file": "diagnostics.ts",
+      "line": 12
+    },
+    {
+      "name": "rankingExplanation",
+      "kind": "variable",
+      "file": "diagnostics.ts",
+      "line": 17
+    },
+    {
+      "name": "ratio",
+      "kind": "variable",
+      "file": "diagnostics.ts",
+      "line": 23
+    },
+    {
+      "name": "format",
+      "kind": "method",
+      "file": "diagnostics.ts",
+      "line": 41
+    },
+    {
+      "name": "lines",
+      "kind": "variable",
+      "file": "diagnostics.ts",
+      "line": 42
+    },
+    {
+      "name": "stage",
+      "kind": "variable",
+      "file": "diagnostics.ts",
+      "line": 52
+    },
+    {
+      "name": "c",
+      "kind": "variable",
+      "file": "diagnostics.ts",
+      "line": 58
+    },
+    {
+      "name": "ContextRetrievalError",
+      "kind": "class",
+      "file": "errors.ts",
+      "line": 1
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "errors.ts",
+      "line": 2
+    },
+    {
+      "name": "RetrievalBudgetError",
+      "kind": "class",
+      "file": "errors.ts",
+      "line": 8
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "errors.ts",
+      "line": 9
+    },
+    {
+      "name": "GraphTraversalError",
+      "kind": "class",
+      "file": "errors.ts",
+      "line": 15
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "errors.ts",
+      "line": 16
+    },
+    {
+      "name": "RetrievalValidationError",
+      "kind": "class",
+      "file": "errors.ts",
+      "line": 22
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "errors.ts",
+      "line": 23
+    },
+    {
+      "name": "RankingError",
+      "kind": "class",
+      "file": "errors.ts",
+      "line": 29
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "errors.ts",
+      "line": 30
+    },
+    {
+      "name": "CompressionError",
+      "kind": "class",
+      "file": "errors.ts",
+      "line": 36
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "errors.ts",
+      "line": 37
+    },
+    {
+      "name": "RetrievalCacheError",
+      "kind": "class",
+      "file": "errors.ts",
+      "line": 43
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "errors.ts",
+      "line": 44
+    },
+    {
+      "name": "GraphTraverser",
+      "kind": "class",
+      "file": "graph-traverser.ts",
+      "line": 5
+    },
+    {
+      "name": "traverseBFS",
+      "kind": "method",
+      "file": "graph-traverser.ts",
+      "line": 6
+    },
+    {
+      "name": "visited",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 12
+    },
+    {
+      "name": "queue",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 13
+    },
+    {
+      "name": "resultNodes",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 14
+    },
+    {
+      "name": "resultEdges",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 15
+    },
+    {
+      "name": "nodesMap",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 17
+    },
+    {
+      "name": "adjacency",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 18
+    },
+    {
+      "name": "edge",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 20
+    },
+    {
+      "name": "list",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 21
+    },
+    {
+      "name": "start",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 26
+    },
+    {
+      "name": "safety",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 33
+    },
+    {
+      "name": "current",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 35
+    },
+    {
+      "name": "node",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 36
+    },
+    {
+      "name": "edges",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 42
+    },
+    {
+      "name": "edge",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 46
+    },
+    {
+      "name": "nodes",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 55
+    },
+    {
+      "name": "edges",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 56
+    },
+    {
+      "name": "fComp",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 57
+    },
+    {
+      "name": "topologicalOrder",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 63
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 70
+    },
+    {
+      "name": "traversePriorityBFS",
+      "kind": "method",
+      "file": "graph-traverser.ts",
+      "line": 75
+    },
+    {
+      "name": "visited",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 82
+    },
+    {
+      "name": "queue",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 83
+    },
+    {
+      "name": "resultNodes",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 84
+    },
+    {
+      "name": "resultEdges",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 85
+    },
+    {
+      "name": "nodesMap",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 87
+    },
+    {
+      "name": "adjacency",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 88
+    },
+    {
+      "name": "edge",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 90
+    },
+    {
+      "name": "list",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 91
+    },
+    {
+      "name": "start",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 96
+    },
+    {
+      "name": "node",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 97
+    },
+    {
+      "name": "safety",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 104
+    },
+    {
+      "name": "current",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 113
+    },
+    {
+      "name": "node",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 114
+    },
+    {
+      "name": "edges",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 119
+    },
+    {
+      "name": "edge",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 120
+    },
+    {
+      "name": "childNode",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 122
+    },
+    {
+      "name": "nodes",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 136
+    },
+    {
+      "name": "edges",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 137
+    },
+    {
+      "name": "fComp",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 138
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "file": "graph-traverser.ts",
+      "line": 148
+    },
+    {
+      "name": "LearningRetriever",
+      "kind": "class",
+      "file": "learning-retriever.ts",
+      "line": 3
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "file": "learning-retriever.ts",
+      "line": 4
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "learning-retriever.ts",
+      "line": 5
+    },
+    {
+      "name": "files",
+      "kind": "variable",
+      "file": "learning-retriever.ts",
+      "line": 6
+    },
+    {
+      "name": "exp",
+      "kind": "variable",
+      "file": "learning-retriever.ts",
+      "line": 8
+    },
+    {
+      "name": "intentMatch",
+      "kind": "variable",
+      "file": "learning-retriever.ts",
+      "line": 9
+    },
+    {
+      "name": "fileMatch",
+      "kind": "variable",
+      "file": "learning-retriever.ts",
+      "line": 10
+    },
+    {
+      "name": "DEFAULT_STATS",
+      "kind": "variable",
+      "file": "metrics.ts",
+      "line": 6
+    },
+    {
+      "name": "RetrievalMetricsTracker",
+      "kind": "class",
+      "file": "metrics.ts",
+      "line": 16
+    },
+    {
+      "name": "statsPath",
+      "kind": "property",
+      "file": "metrics.ts",
+      "line": 17
+    },
+    {
+      "name": "stats",
+      "kind": "property",
+      "file": "metrics.ts",
+      "line": 18
+    },
+    {
+      "name": "loaded",
+      "kind": "property",
+      "file": "metrics.ts",
+      "line": 19
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "metrics.ts",
+      "line": 21
+    },
+    {
+      "name": "load",
+      "kind": "method",
+      "file": "metrics.ts",
+      "line": 25
+    },
+    {
+      "name": "raw",
+      "kind": "variable",
+      "file": "metrics.ts",
+      "line": 27
+    },
+    {
+      "name": "record",
+      "kind": "method",
+      "file": "metrics.ts",
+      "line": 35
+    },
+    {
+      "name": "n",
+      "kind": "variable",
+      "file": "metrics.ts",
+      "line": 40
+    },
+    {
+      "name": "hits",
+      "kind": "variable",
+      "file": "metrics.ts",
+      "line": 53
+    },
+    {
+      "name": "get",
+      "kind": "method",
+      "file": "metrics.ts",
+      "line": 62
+    },
+    {
+      "name": "reset",
+      "kind": "method",
+      "file": "metrics.ts",
+      "line": 67
+    },
+    {
+      "name": "save",
+      "kind": "method",
+      "file": "metrics.ts",
+      "line": 73
+    },
+    {
+      "name": "ParsedQuery",
+      "kind": "interface",
+      "file": "query-parser.ts",
+      "line": 1
+    },
+    {
+      "name": "QueryParser",
+      "kind": "class",
+      "file": "query-parser.ts",
+      "line": 10
+    },
+    {
+      "name": "parse",
+      "kind": "method",
+      "file": "query-parser.ts",
+      "line": 11
+    },
+    {
+      "name": "lower",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 12
+    },
+    {
+      "name": "intent",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 15
+    },
+    {
+      "name": "targetFiles",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 37
+    },
+    {
+      "name": "fileRegex",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 38
+    },
+    {
+      "name": "match",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 39
+    },
+    {
+      "name": "targetSymbols",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 45
+    },
+    {
+      "name": "quoteRegex",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 46
+    },
+    {
+      "name": "symbolRegex",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 52
+    },
+    {
+      "name": "sym",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 54
+    },
+    {
+      "name": "keywords",
+      "kind": "variable",
+      "file": "query-parser.ts",
+      "line": 69
+    },
+    {
+      "name": "RetrievalRanker",
+      "kind": "class",
+      "file": "ranking.ts",
+      "line": 4
+    },
+    {
+      "name": "rank",
+      "kind": "method",
+      "file": "ranking.ts",
+      "line": 5
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 12
+    },
+    {
+      "name": "primarySet",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 14
+    },
+    {
+      "name": "symbolSet",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 15
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 17
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 18
+    },
+    {
+      "name": "score",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 19
+    },
+    {
+      "name": "reasons",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 20
+    },
+    {
+      "name": "isPrimary",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 23
+    },
+    {
+      "name": "matchingDir",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 32
+    },
+    {
+      "name": "dir1",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 33
+    },
+    {
+      "name": "dir2",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 34
+    },
+    {
+      "name": "hasMatchingSymbol",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 44
+    },
+    {
+      "name": "normSymPath",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 45
+    },
+    {
+      "name": "matchingLearning",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 54
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "file": "ranking.ts",
+      "line": 68
+    },
+    {
+      "name": "RelationshipRetriever",
+      "kind": "class",
+      "file": "relationship-retriever.ts",
+      "line": 3
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "file": "relationship-retriever.ts",
+      "line": 4
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "relationship-retriever.ts",
+      "line": 5
+    },
+    {
+      "name": "seen",
+      "kind": "variable",
+      "file": "relationship-retriever.ts",
+      "line": 6
+    },
+    {
+      "name": "fileSet",
+      "kind": "variable",
+      "file": "relationship-retriever.ts",
+      "line": 8
+    },
+    {
+      "name": "rel",
+      "kind": "variable",
+      "file": "relationship-retriever.ts",
+      "line": 10
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "relationship-retriever.ts",
+      "line": 11
+    },
+    {
+      "name": "subMatch",
+      "kind": "variable",
+      "file": "relationship-retriever.ts",
+      "line": 14
+    },
+    {
+      "name": "objMatch",
+      "kind": "variable",
+      "file": "relationship-retriever.ts",
+      "line": 15
+    },
+    {
+      "name": "sComp",
+      "kind": "variable",
+      "file": "relationship-retriever.ts",
+      "line": 24
+    },
+    {
+      "name": "RetrievalPlan",
+      "kind": "interface",
+      "file": "retrieval-planner.ts",
+      "line": 4
+    },
+    {
+      "name": "RetrievalPlanner",
+      "kind": "class",
+      "file": "retrieval-planner.ts",
+      "line": 13
+    },
+    {
+      "name": "plan",
+      "kind": "method",
+      "file": "retrieval-planner.ts",
+      "line": 14
+    },
+    {
+      "name": "strategy",
+      "kind": "variable",
+      "file": "retrieval-planner.ts",
+      "line": 15
+    },
+    {
+      "name": "stages",
+      "kind": "variable",
+      "file": "retrieval-planner.ts",
+      "line": 16
+    },
+    {
+      "name": "expansionDepth",
+      "kind": "variable",
+      "file": "retrieval-planner.ts",
+      "line": 43
+    },
+    {
+      "name": "ContextRetrievalService",
+      "kind": "class",
+      "file": "service.ts",
+      "line": 32
+    },
+    {
+      "name": "syncService",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 33
+    },
+    {
+      "name": "compiler",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 34
+    },
+    {
+      "name": "parser",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 35
+    },
+    {
+      "name": "planner",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 36
+    },
+    {
+      "name": "traverser",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 37
+    },
+    {
+      "name": "expander",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 38
+    },
+    {
+      "name": "symbolRetriever",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 39
+    },
+    {
+      "name": "relationshipRetriever",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 40
+    },
+    {
+      "name": "architectureRetriever",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 41
+    },
+    {
+      "name": "learningRetriever",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 42
+    },
+    {
+      "name": "ranker",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 43
+    },
+    {
+      "name": "budgeter",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 44
+    },
+    {
+      "name": "compressor",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 45
+    },
+    {
+      "name": "cache",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 46
+    },
+    {
+      "name": "validator",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 47
+    },
+    {
+      "name": "metricsTracker",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 48
+    },
+    {
+      "name": "diagBuilder",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 49
+    },
+    {
+      "name": "projectRoot",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 51
+    },
+    {
+      "name": "workspaceRoot",
+      "kind": "property",
+      "file": "service.ts",
+      "line": 52
+    },
+    {
+      "name": "constructor",
+      "kind": "constructor",
+      "file": "service.ts",
+      "line": 54
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 66
+    },
+    {
+      "name": "start",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 67
+    },
+    {
+      "name": "stages",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 68
+    },
+    {
+      "name": "loadStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 71
+    },
+    {
+      "name": "snapshot",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 72
+    },
+    {
+      "name": "comp",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 77
+    },
+    {
+      "name": "parseStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 91
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 92
+    },
+    {
+      "name": "hit",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 101
+    },
+    {
+      "name": "duration",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 103
+    },
+    {
+      "name": "metrics",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 104
+    },
+    {
+      "name": "plan",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 125
+    },
+    {
+      "name": "expStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 128
+    },
+    {
+      "name": "expandedFiles",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 129
+    },
+    {
+      "name": "symStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 141
+    },
+    {
+      "name": "symbols",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 142
+    },
+    {
+      "name": "relStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 154
+    },
+    {
+      "name": "relationships",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 155
+    },
+    {
+      "name": "archStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 166
+    },
+    {
+      "name": "architecture",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 167
+    },
+    {
+      "name": "learnStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 178
+    },
+    {
+      "name": "learning",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 179
+    },
+    {
+      "name": "graphStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 191
+    },
+    {
+      "name": "startNodes",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 192
+    },
+    {
+      "name": "graph",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 193
+    },
+    {
+      "name": "rankStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 201
+    },
+    {
+      "name": "candidates",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 202
+    },
+    {
+      "name": "rawSections",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 216
+    },
+    {
+      "name": "originalTokens",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 217
+    },
+    {
+      "name": "sec",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 220
+    },
+    {
+      "name": "matches",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 221
+    },
+    {
+      "name": "reason",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 222
+    },
+    {
+      "name": "budgetStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 261
+    },
+    {
+      "name": "uncompressedPkg",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 274
+    },
+    {
+      "name": "compressStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 288
+    },
+    {
+      "name": "compressedPkg",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 289
+    },
+    {
+      "name": "valStart",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 297
+    },
+    {
+      "name": "validation",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 298
+    },
+    {
+      "name": "duration",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 305
+    },
+    {
+      "name": "finalTokens",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 306
+    },
+    {
+      "name": "metrics",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 308
+    },
+    {
+      "name": "retrieveFiles",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 331
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 332
+    },
+    {
+      "name": "retrieveSymbols",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 336
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 337
+    },
+    {
+      "name": "retrieveArchitecture",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 341
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 342
+    },
+    {
+      "name": "snapshot",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 344
+    },
+    {
+      "name": "retrieveLearning",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 349
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "file": "service.ts",
+      "line": 350
+    },
+    {
+      "name": "expand",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 354
+    },
+    {
+      "name": "compress",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 358
+    },
+    {
+      "name": "validate",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 362
+    },
+    {
+      "name": "statistics",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 366
+    },
+    {
+      "name": "latestSnapshot",
+      "kind": "method",
+      "file": "service.ts",
+      "line": 370
+    },
+    {
+      "name": "SymbolRetriever",
+      "kind": "class",
+      "file": "symbol-retriever.ts",
+      "line": 3
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "file": "symbol-retriever.ts",
+      "line": 4
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "file": "symbol-retriever.ts",
+      "line": 5
+    },
+    {
+      "name": "seen",
+      "kind": "variable",
+      "file": "symbol-retriever.ts",
+      "line": 6
+    },
+    {
+      "name": "symbolNames",
+      "kind": "variable",
+      "file": "symbol-retriever.ts",
+      "line": 8
+    },
+    {
+      "name": "fileSet",
+      "kind": "variable",
+      "file": "symbol-retriever.ts",
+      "line": 9
+    },
+    {
+      "name": "s",
+      "kind": "variable",
+      "file": "symbol-retriever.ts",
+      "line": 11
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "symbol-retriever.ts",
+      "line": 12
+    },
+    {
+      "name": "nameMatch",
+      "kind": "variable",
+      "file": "symbol-retriever.ts",
+      "line": 15
+    },
+    {
+      "name": "fileMatch",
+      "kind": "variable",
+      "file": "symbol-retriever.ts",
+      "line": 16
+    },
+    {
+      "name": "fComp",
+      "kind": "variable",
+      "file": "symbol-retriever.ts",
+      "line": 25
+    },
+    {
+      "name": "RetrievalRequest",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 14
+    },
+    {
+      "name": "RetrievalStrategy",
+      "kind": "type",
+      "file": "types.ts",
+      "line": 28
+    },
+    {
+      "name": "RetrievalResult",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 30
+    },
+    {
+      "name": "RetrievalSection",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 36
+    },
+    {
+      "name": "RetrievalCandidate",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 46
+    },
+    {
+      "name": "RetrievalGraph",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 53
+    },
+    {
+      "name": "RetrievalEdge",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 59
+    },
+    {
+      "name": "RetrievalNode",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 66
+    },
+    {
+      "name": "RetrievalReason",
+      "kind": "type",
+      "file": "types.ts",
+      "line": 73
+    },
+    {
+      "name": "RetrievalScore",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 83
+    },
+    {
+      "name": "RetrievalBudget",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 94
+    },
+    {
+      "name": "RetrievalMetrics",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 118
+    },
+    {
+      "name": "RetrievalStage",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 130
+    },
+    {
+      "name": "RetrievalStatistics",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 136
+    },
+    {
+      "name": "RetrievalDiagnostics",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 146
+    },
+    {
+      "name": "RetrievalCacheEntry",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 155
+    },
+    {
+      "name": "RetrievalSnapshotReference",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 162
+    },
+    {
+      "name": "RetrievalProfile",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 168
+    },
+    {
+      "name": "RetrievalExpansion",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 174
+    },
+    {
+      "name": "RetrievalCompression",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 180
+    },
+    {
+      "name": "RetrievalValidation",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 186
+    },
+    {
+      "name": "RetrievalPackage",
+      "kind": "interface",
+      "file": "types.ts",
+      "line": 192
+    },
+    {
+      "name": "RetrievalValidator",
+      "kind": "class",
+      "file": "validator.ts",
+      "line": 3
+    },
+    {
+      "name": "validate",
+      "kind": "method",
+      "file": "validator.ts",
+      "line": 4
+    },
+    {
+      "name": "errors",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 5
+    },
+    {
+      "name": "warnings",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 6
+    },
+    {
+      "name": "seenCandidates",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 9
+    },
+    {
+      "name": "c",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 10
+    },
+    {
+      "name": "norm",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 11
+    },
+    {
+      "name": "seenSymbols",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 19
+    },
+    {
+      "name": "s",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 20
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 21
+    },
+    {
+      "name": "seenEdges",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 29
+    },
+    {
+      "name": "e",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 30
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 31
+    },
+    {
+      "name": "totalTokens",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 39
+    },
+    {
+      "name": "s",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 40
+    },
+    {
+      "name": "i",
+      "kind": "variable",
+      "file": "validator.ts",
+      "line": 49
+    }
+  ]
+}

@@ -186,6 +186,8 @@ export interface SemanticSnapshot {
     evolution: SnapshotEvolutionEntry[];
     /** Learning experiences summary. */
     learning: SnapshotLearningEntry[];
+    /** Semantic memory entries. */
+    semanticMemory?: any[];
 }
 
 // ─── Delta ───────────────────────────────────────────────────────────────────
@@ -334,6 +336,8 @@ export interface SnapshotContext {
     indexData?: any;
     /** Raw symbols.json content. */
     symbolsData?: any;
+    /** Raw imports.json content. */
+    importsData?: any;
     /** Raw relationships.json content. */
     relationshipsData?: any;
     /** Raw graph/graph.json content. */
@@ -344,6 +348,8 @@ export interface SnapshotContext {
     evolutionData?: any;
     /** Raw learning experiences + optimizations. */
     learningData?: any;
+    /** Raw semantic.json content. */
+    semanticMemoryData?: any;
     /** Paths of all files in the workspace. */
     filePaths?: string[];
 }

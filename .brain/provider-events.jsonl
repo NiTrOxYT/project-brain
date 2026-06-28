@@ -1,0 +1,3 @@
+{"timestamp":"2026-06-28T12:20:28.143Z","providerId":"opencode","event":"migrated","details":{"from":"1.0.0"}}
+{"timestamp":"2026-06-28T12:20:30.157Z","providerId":"opencode","event":"configured","details":{"transport":"stdio","mode":"mcp"}}
+{"timestamp":"2026-06-28T14:09:16.205Z","providerId":"opencode","event":"configured","details":{"transport":"stdio","mode":"mcp"}}

@@ -45,8 +45,13 @@ export class SymbolsService {
                 await this.walk(fullPath, output);
                 continue;
             }
-            if (!fullPath.endsWith(".ts") &&
-                !fullPath.endsWith(".tsx")) {
+            const ext = path.extname(fullPath).toLowerCase();
+            if (ext !== ".ts" &&
+                ext !== ".tsx" &&
+                ext !== ".js" &&
+                ext !== ".jsx" &&
+                ext !== ".mjs" &&
+                ext !== ".cjs") {
                 continue;
             }
             const parsed = await this.parser.parse(fullPath);

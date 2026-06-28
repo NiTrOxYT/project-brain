@@ -12,6 +12,7 @@
 //   • Provider agnostic
 // ──────────────────────────────────────────────────────────────────────────────
 import EventEmitter from "events";
+import path from "path";
 import { SnapshotCompilationError } from "./errors.js";
 import { SnapshotCollector } from "./collector.js";
 import { SnapshotNormalizer } from "./normalizer.js";
@@ -27,8 +28,6 @@ import { SnapshotStorage } from "./storage.js";
 import { SnapshotMetricsTracker } from "./metrics.js";
 import { SnapshotDiagnosticsBuilder } from "./diagnostics.js";
 export class ContextCompilerService {
-    projectRoot;
-    workspaceRoot;
     /** Global emitter — external systems may listen for 'snapshot-compiled' events. */
     static emitter = new EventEmitter();
     collector;
@@ -44,13 +43,15 @@ export class ContextCompilerService {
     validator = new SnapshotValidator();
     metrics;
     diagBuilder = new SnapshotDiagnosticsBuilder();
+    projectRoot;
+    workspaceRoot;
     constructor(projectRoot, workspaceRoot) {
         this.projectRoot = projectRoot;
-        this.workspaceRoot = workspaceRoot;
-        this.collector = new SnapshotCollector(projectRoot, workspaceRoot);
-        this.cache = new SnapshotCache(workspaceRoot);
-        this.storage = new SnapshotStorage(workspaceRoot);
-        this.metrics = new SnapshotMetricsTracker(workspaceRoot);
+        this.workspaceRoot = workspaceRoot.endsWith(".brain") ? workspaceRoot : path.join(workspaceRoot, ".brain");
+        this.collector = new SnapshotCollector(this.projectRoot, this.workspaceRoot);
+        this.cache = new SnapshotCache(this.workspaceRoot);
+        this.storage = new SnapshotStorage(this.workspaceRoot);
+        this.metrics = new SnapshotMetricsTracker(this.workspaceRoot);
     }
     // ─── Public API ──────────────────────────────────────────────────────────
     /**
@@ -64,6 +65,13 @@ export class ContextCompilerService {
         const stages = [];
         const compilationStart = Date.now();
         try {
+            // Pre-stage: Synchronize indexes
+            const { SynchronizerService } = await import("../synchronizer/service.js");
+            const synchronizer = new SynchronizerService(this.projectRoot, this.workspaceRoot);
+            if (req.force) {
+                await synchronizer.forceRebuild();
+            }
+            await synchronizer.synchronize();
             // Stage 1: Collect
             const context = await this.runStage(stages, "Collector", () => this.collector.collect());
             // Stage 2: Fingerprint
@@ -160,6 +168,14 @@ export class ContextCompilerService {
                 await this.storage.save(optimizedSnapshot);
                 await this.cache.put(optimizedSnapshot);
             });
+            // Compile Validation Check: verify compile actually persists and is readable
+            const readBack = await this.storage.load(optimizedSnapshot.snapshotId);
+            if (!readBack) {
+                throw new SnapshotCompilationError("Compile validation failed: snapshot could not be read back from storage.");
+            }
+            if (!readBack.metadata || !readBack.files || !readBack.symbols || !readBack.graph) {
+                throw new SnapshotCompilationError("Compile validation failed: snapshot is corrupted or missing critical sections.");
+            }
             const finalMetrics = {
                 totalDurationMs: Date.now() - compilationStart,
                 stages,

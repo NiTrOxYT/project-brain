@@ -1,0 +1,12 @@
+{
+  "test-gateway": {
+    "providerId": "test-gateway",
+    "executablePath": "/usr/bin/test-gateway",
+    "detectedVersion": "1.5.0",
+    "selectedTransport": "stdio",
+    "configurationFile": "/Users/sourik/projects/project-brain/.test-workspace-lifecycle/config.json",
+    "schemaVersion": "v1",
+    "configurationChecksum": "abd4749684340802813cb413ab964fc8f1933962",
+    "selectedIntegrationMode": "mcp"
+  }
+}

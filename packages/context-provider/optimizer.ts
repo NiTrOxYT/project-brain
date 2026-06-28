@@ -29,7 +29,7 @@ export class TokenBudgetOptimizer {
                 semanticMemory.push(entry);
                 remainingTokens -= entryTokens;
             } else {
-                break;
+                continue;
             }
         }
 
@@ -41,7 +41,7 @@ export class TokenBudgetOptimizer {
                 snippets.push(snip);
                 remainingTokens -= snipTokens;
             } else {
-                break;
+                continue;
             }
         }
 
@@ -53,9 +53,10 @@ export class TokenBudgetOptimizer {
                 dependencySummary.push(dep);
                 remainingTokens -= depTokens;
             } else {
-                break;
+                continue;
             }
         }
+
 
         // 5. Ranked files metadata
         const rankedFiles: RankedFile[] = [];
@@ -65,8 +66,9 @@ export class TokenBudgetOptimizer {
                 rankedFiles.push(f);
                 remainingTokens -= fileTokens;
             } else {
-                break;
+                continue;
             }
+
         }
 
         const estimatedTokens = maxTokens - remainingTokens;

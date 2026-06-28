@@ -123,7 +123,7 @@ export class StoragePaths {
     workflowsDir;
     constructor(workspaceRoot) {
         this.workspaceRoot = workspaceRoot;
-        this.brainDir = path.join(workspaceRoot, ".brain");
+        this.brainDir = workspaceRoot.endsWith(".brain") ? workspaceRoot : path.join(workspaceRoot, ".brain");
         this.configPath = path.join(this.brainDir, "brain.json");
         this.snapshotsDir = path.join(this.brainDir, "snapshots");
         this.indexPath = path.join(this.snapshotsDir, "index.json");

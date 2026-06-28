@@ -1,0 +1,11 @@
+{
+  "opencode": {
+    "providerId": "opencode",
+    "installationVerified": false,
+    "configurationVerified": false,
+    "connectivityVerified": false,
+    "toolVerificationPassed": false,
+    "behaviorVerificationPassed": false,
+    "verificationTimestamp": "2026-06-28T11:15:24.236Z"
+  }
+}

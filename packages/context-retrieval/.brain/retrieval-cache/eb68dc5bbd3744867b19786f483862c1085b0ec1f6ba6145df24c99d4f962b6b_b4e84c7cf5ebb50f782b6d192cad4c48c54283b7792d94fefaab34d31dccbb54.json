@@ -1,0 +1,56 @@
+{
+  "queryFingerprint": "eb68dc5bbd3744867b19786f483862c1085b0ec1f6ba6145df24c99d4f962b6b_b4e84c7cf5ebb50f782b6d192cad4c48c54283b7792d94fefaab34d31dccbb54",
+  "snapshotId": "eb68dc5bbd3744867b19786f483862c1085b0ec1f6ba6145df24c99d4f962b6b",
+  "retrievalPackage": {
+    "retrievalId": "retrieval-3cccd76f3151",
+    "snapshotId": "eb68dc5bbd3744867b19786f483862c1085b0ec1f6ba6145df24c99d4f962b6b",
+    "sections": [
+      {
+        "id": "filesystem-index",
+        "name": "Filesystem Index",
+        "kind": "filesystem-index",
+        "content": "[{\"path\":\"architecture-retriever.ts\",\"relativePath\":\"../../../architecture-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":1027,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"budget.ts\",\"relativePath\":\"../../../budget.ts\",\"extension\":\".ts\",\"sizeBytes\":3702,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"cache.ts\",\"relativePath\":\"../../../cache.ts\",\"extension\":\".ts\",\"sizeBytes\":3443,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"compressor.ts\",\"relativePath\":\"../../../compressor.ts\",\"extension\":\".ts\",\"sizeBytes\":2429,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"dependency-expander.ts\",\"relativePath\":\"../../../dependency-expander.ts\",\"extension\":\".ts\",\"sizeBytes\":2527,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"diagnostics.ts\",\"relativePath\":\"../../../diagnostics.ts\",\"extension\":\".ts\",\"sizeBytes\":2560,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"errors.ts\",\"relativePath\":\"../../../errors.ts\",\"extension\":\".ts\",\"sizeBytes\":1211,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"graph-traverser.ts\",\"relativePath\":\"../../../graph-traverser.ts\",\"extension\":\".ts\",\"sizeBytes\":5712,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"index.ts\",\"relativePath\":\"../../../index.ts\",\"extension\":\".ts\",\"sizeBytes\":966,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"learning-retriever.ts\",\"relativePath\":\"../../../learning-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":855,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"metrics.ts\",\"relativePath\":\"../../../metrics.ts\",\"extension\":\".ts\",\"sizeBytes\":2651,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/.opencode/opencode.json\",\"relativePath\":\"../.opencode/opencode.json\",\"extension\":\".json\",\"sizeBytes\":160,\"language\":\"JSON\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/.opencode/opencode.json.backup-1782645237438\",\"relativePath\":\"../.opencode/opencode.json.backup-1782645237438\",\"extension\":\".backup-1782645237438\",\"sizeBytes\":15,\"language\":\"Unknown\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/.opencode/opencode.json.backup-1782645313761\",\"relativePath\":\"../.opencode/opencode.json.backup-1782645313761\",\"extension\":\".backup-1782645313761\",\"sizeBytes\":15,\"language\":\"Unknown\",\"linesOfCode\":0},{\"path\":\"query-parser.ts\",\"relativePath\":\"../../../query-parser.ts\",\"extension\":\".ts\",\"sizeBytes\":3565,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"ranking.ts\",\"relativePath\":\"../../../ranking.ts\",\"extension\":\".ts\",\"sizeBytes\":3128,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"relationship-retriever.ts\",\"relativePath\":\"../../../relationship-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":1096,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"retrieval-planner.ts\",\"relativePath\":\"../../../retrieval-planner.ts\",\"extension\":\".ts\",\"sizeBytes\":1660,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"service.ts\",\"relativePath\":\"../../../service.ts\",\"extension\":\".ts\",\"sizeBytes\":13718,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"symbol-retriever.ts\",\"relativePath\":\"../../../symbol-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":1114,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"types.ts\",\"relativePath\":\"../../../types.ts\",\"extension\":\".ts\",\"sizeBytes\":4742,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"validator.ts\",\"relativePath\":\"../../../validator.ts\",\"extension\":\".ts\",\"sizeBytes\":2206,\"language\":\"TypeScript\",\"linesOfCode\":0}]",
+        "priority": 10,
+        "estimatedTokens": 842,
+        "reason": "system-config"
+      },
+      {
+        "id": "knowledge-graph",
+        "name": "Knowledge Graph",
+        "kind": "knowledge-graph",
+        "content": "[]",
+        "priority": 40,
+        "estimatedTokens": 1,
+        "reason": "relationship-link"
+      },
+      {
+        "id": "dependency-graph",
+        "name": "Dependency Graph",
+        "kind": "dependency-graph",
+        "content": "[]",
+        "priority": 50,
+        "estimatedTokens": 1,
+        "reason": "relationship-link"
+      },
+      {
+        "id": "repository-evolution",
+        "name": "Repository Evolution",
+        "kind": "repository-evolution",
+        "content": "[]",
+        "priority": 70,
+        "estimatedTokens": 1,
+        "reason": "evolution-history"
+      }
+    ],
+    "candidates": [],
+    "graph": {
+      "nodes": [],
+      "edges": [],
+      "topologicalOrder": []
+    },
+    "symbols": [],
+    "dependencies": [],
+    "relationships": []
+  },
+  "storedAt": "2026-06-28T11:15:20.213Z"
+}

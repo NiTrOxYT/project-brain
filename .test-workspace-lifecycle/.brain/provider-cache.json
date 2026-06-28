@@ -1,0 +1,11 @@
+{
+  "test-gateway": {
+    "providerVersion": "1.5.0",
+    "brainVersion": "0.1.0",
+    "configurationChecksum": "some-hash",
+    "schemaVersion": "v1",
+    "verificationResult": {
+      "cached": true
+    }
+  }
+}

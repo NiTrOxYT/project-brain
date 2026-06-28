@@ -1,4 +1,6 @@
 import type { McpTool } from "../types.js";
+import { mixedResult, errorResult } from "../tool-result.js";
+import fs from "fs";
 
 export class ExplainFileTool implements McpTool {
     readonly name        = "brain.explain_file";
@@ -13,13 +15,24 @@ export class ExplainFileTool implements McpTool {
     };
 
     async execute(args: any): Promise<any> {
-        if (!args.path) {
-            throw new Error("Missing path argument");
-        }
+        try {
+            if (!args.path) {
+                throw new Error("Missing path argument");
+            }
 
-        return {
-            path: args.path,
-            explanation: `File at ${args.path} acts as an interface adapter layer connecting transports or services.`
-        };
+            let normalizedWorkspace = args.workspaceRoot || process.cwd();
+            try {
+                normalizedWorkspace = fs.realpathSync(normalizedWorkspace);
+            } catch {}
+
+            const explanation = `File at ${args.path} acts as an interface adapter layer connecting transports or services.`;
+            return mixedResult(explanation, {
+                path: args.path,
+                explanation
+            });
+        } catch (err: any) {
+            return errorResult(err.message || "Error running brain.explain_file");
+        }
     }
 }
+

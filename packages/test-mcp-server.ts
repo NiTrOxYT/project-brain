@@ -139,8 +139,13 @@ async function runTests() {
         });
 
         const res = await resPromise;
-        assert(res.jsonrpc === "2.0");
-        assert(res.error === undefined);
+        try {
+            assert(res.jsonrpc === "2.0");
+            assert(res.error === undefined);
+        } catch (err) {
+            console.error("MCP HTTP Response was:", res);
+            throw err;
+        }
         assert(res.result.confidence > 0.5);
 
         const tel = McpServer.getTelemetry();

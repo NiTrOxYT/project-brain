@@ -1,0 +1,6317 @@
+{
+  "snapshotId": "eb68dc5bbd3744867b19786f483862c1085b0ec1f6ba6145df24c99d4f962b6b",
+  "metadata": {
+    "snapshotId": "eb68dc5bbd3744867b19786f483862c1085b0ec1f6ba6145df24c99d4f962b6b",
+    "projectRoot": "/Users/sourik/projects/project-brain/packages/context-retrieval",
+    "workspaceRoot": "/Users/sourik/projects/project-brain/packages/context-retrieval/.brain",
+    "createdAt": "2026-06-28T11:15:20.210Z",
+    "compiledAt": "2026-06-28T11:15:20.210Z",
+    "compilerVersion": "1.0.0",
+    "fingerprint": {
+      "hash": "eb68dc5bbd3744867b19786f483862c1085b0ec1f6ba6145df24c99d4f962b6b",
+      "filesystemHash": "ee3271a87ff7c8416a8025cd610d8892e9c900ddd90df422dd706a6e7188dc66",
+      "graphHash": "cbc6f1c0c698bf3b8a5b959091e02e0a934b09e4dfd01ac4df12bf27a9017ee1",
+      "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
+      "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
+      "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
+      "version": "264.411.439"
+    },
+    "stageCount": 12,
+    "compilationDurationMs": 372,
+    "fileCount": 22,
+    "symbolCount": 304,
+    "dependencyEdgeCount": 0,
+    "graphNodeCount": 17,
+    "estimatedTokens": 9713,
+    "incremental": false
+  },
+  "sections": [
+    {
+      "id": "filesystem-index",
+      "name": "Filesystem Index",
+      "kind": "filesystem-index",
+      "content": "[{\"path\":\"architecture-retriever.ts\",\"relativePath\":\"../../../architecture-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":1027,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"budget.ts\",\"relativePath\":\"../../../budget.ts\",\"extension\":\".ts\",\"sizeBytes\":3702,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"cache.ts\",\"relativePath\":\"../../../cache.ts\",\"extension\":\".ts\",\"sizeBytes\":3443,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"compressor.ts\",\"relativePath\":\"../../../compressor.ts\",\"extension\":\".ts\",\"sizeBytes\":2429,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"dependency-expander.ts\",\"relativePath\":\"../../../dependency-expander.ts\",\"extension\":\".ts\",\"sizeBytes\":2527,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"diagnostics.ts\",\"relativePath\":\"../../../diagnostics.ts\",\"extension\":\".ts\",\"sizeBytes\":2560,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"errors.ts\",\"relativePath\":\"../../../errors.ts\",\"extension\":\".ts\",\"sizeBytes\":1211,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"graph-traverser.ts\",\"relativePath\":\"../../../graph-traverser.ts\",\"extension\":\".ts\",\"sizeBytes\":5712,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"index.ts\",\"relativePath\":\"../../../index.ts\",\"extension\":\".ts\",\"sizeBytes\":966,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"learning-retriever.ts\",\"relativePath\":\"../../../learning-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":855,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"metrics.ts\",\"relativePath\":\"../../../metrics.ts\",\"extension\":\".ts\",\"sizeBytes\":2651,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/.opencode/opencode.json\",\"relativePath\":\"../.opencode/opencode.json\",\"extension\":\".json\",\"sizeBytes\":160,\"language\":\"JSON\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/.opencode/opencode.json.backup-1782645237438\",\"relativePath\":\"../.opencode/opencode.json.backup-1782645237438\",\"extension\":\".backup-1782645237438\",\"sizeBytes\":15,\"language\":\"Unknown\",\"linesOfCode\":0},{\"path\":\"packages/context-retrieval/.opencode/opencode.json.backup-1782645313761\",\"relativePath\":\"../.opencode/opencode.json.backup-1782645313761\",\"extension\":\".backup-1782645313761\",\"sizeBytes\":15,\"language\":\"Unknown\",\"linesOfCode\":0},{\"path\":\"query-parser.ts\",\"relativePath\":\"../../../query-parser.ts\",\"extension\":\".ts\",\"sizeBytes\":3565,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"ranking.ts\",\"relativePath\":\"../../../ranking.ts\",\"extension\":\".ts\",\"sizeBytes\":3128,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"relationship-retriever.ts\",\"relativePath\":\"../../../relationship-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":1096,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"retrieval-planner.ts\",\"relativePath\":\"../../../retrieval-planner.ts\",\"extension\":\".ts\",\"sizeBytes\":1660,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"service.ts\",\"relativePath\":\"../../../service.ts\",\"extension\":\".ts\",\"sizeBytes\":13718,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"symbol-retriever.ts\",\"relativePath\":\"../../../symbol-retriever.ts\",\"extension\":\".ts\",\"sizeBytes\":1114,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"types.ts\",\"relativePath\":\"../../../types.ts\",\"extension\":\".ts\",\"sizeBytes\":4742,\"language\":\"TypeScript\",\"linesOfCode\":0},{\"path\":\"validator.ts\",\"relativePath\":\"../../../validator.ts\",\"extension\":\".ts\",\"sizeBytes\":2206,\"language\":\"TypeScript\",\"linesOfCode\":0}]",
+      "priority": 10,
+      "contentHash": "72dd1136b610b69331f5e74e7e64e0b5598025b4c7b2aeba3a587249414ecfb0",
+      "estimatedTokens": 842,
+      "sourcePaths": [
+        "architecture-retriever.ts",
+        "budget.ts",
+        "cache.ts",
+        "compressor.ts",
+        "dependency-expander.ts",
+        "diagnostics.ts",
+        "errors.ts",
+        "graph-traverser.ts",
+        "index.ts",
+        "learning-retriever.ts",
+        "metrics.ts",
+        "packages/context-retrieval/.opencode/opencode.json",
+        "packages/context-retrieval/.opencode/opencode.json.backup-1782645237438",
+        "packages/context-retrieval/.opencode/opencode.json.backup-1782645313761",
+        "query-parser.ts",
+        "ranking.ts",
+        "relationship-retriever.ts",
+        "retrieval-planner.ts",
+        "service.ts",
+        "symbol-retriever.ts",
+        "types.ts",
+        "validator.ts"
+      ]
+    },
+    {
+      "id": "symbol-index",
+      "name": "Symbol Index",
+      "kind": "symbol-index",
+      "content": "[{\"name\":\"ArchitectureRetriever\",\"kind\":\"class\",\"filePath\":\"architecture-retriever.ts\",\"line\":3,\"exported\":false},{\"name\":\"retrieve\",\"kind\":\"method\",\"filePath\":\"architecture-retriever.ts\",\"line\":4,\"exported\":false},{\"name\":\"result\",\"kind\":\"variable\",\"filePath\":\"architecture-retriever.ts\",\"line\":5,\"exported\":false},{\"name\":\"keywordSet\",\"kind\":\"variable\",\"filePath\":\"architecture-retriever.ts\",\"line\":6,\"exported\":false},{\"name\":\"entry\",\"kind\":\"variable\",\"filePath\":\"architecture-retriever.ts\",\"line\":8,\"exported\":false},{\"name\":\"catMatch\",\"kind\":\"variable\",\"filePath\":\"architecture-retriever.ts\",\"line\":9,\"exported\":false},{\"name\":\"titleMatch\",\"kind\":\"variable\",\"filePath\":\"architecture-retriever.ts\",\"line\":10,\"exported\":false},{\"name\":\"tagMatch\",\"kind\":\"variable\",\"filePath\":\"architecture-retriever.ts\",\"line\":11,\"exported\":false},{\"name\":\"catComp\",\"kind\":\"variable\",\"filePath\":\"architecture-retriever.ts\",\"line\":19,\"exported\":false},{\"name\":\"RetrievalBudgeter\",\"kind\":\"class\",\"filePath\":\"budget.ts\",\"line\":4,\"exported\":false},{\"name\":\"providerBudgets\",\"kind\":\"property\",\"filePath\":\"budget.ts\",\"line\":5,\"exported\":false},{\"name\":\"allocate\",\"kind\":\"method\",\"filePath\":\"budget.ts\",\"line\":15,\"exported\":false},{\"name\":\"limit\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":23,\"exported\":false},{\"name\":\"allocated\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":26,\"exported\":false},{\"name\":\"actual\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":37,\"exported\":false},{\"name\":\"sorted\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":49,\"exported\":false},{\"name\":\"allocatedSections\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":54,\"exported\":false},{\"name\":\"runningTokens\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":55,\"exported\":false},{\"name\":\"s\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":57,\"exported\":false},{\"name\":\"tokens\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":58,\"exported\":false},{\"name\":\"budget\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":80,\"exported\":false},{\"name\":\"addActual\",\"kind\":\"method\",\"filePath\":\"budget.ts\",\"line\":92,\"exported\":false},{\"name\":\"lower\",\"kind\":\"variable\",\"filePath\":\"budget.ts\",\"line\":93,\"exported\":false},{\"name\":\"RetrievalCache\",\"kind\":\"class\",\"filePath\":\"cache.ts\",\"line\":7,\"exported\":false},{\"name\":\"cacheDir\",\"kind\":\"property\",\"filePath\":\"cache.ts\",\"line\":8,\"exported\":false},{\"name\":\"memoryCache\",\"kind\":\"property\",\"filePath\":\"cache.ts\",\"line\":9,\"exported\":false},{\"name\":\"maxItems\",\"kind\":\"property\",\"filePath\":\"cache.ts\",\"line\":10,\"exported\":false},{\"name\":\"constructor\",\"kind\":\"constant\",\"filePath\":\"cache.ts\",\"line\":12,\"exported\":false},{\"name\":\"ensureDirectory\",\"kind\":\"method\",\"filePath\":\"cache.ts\",\"line\":16,\"exported\":false},{\"name\":\"computeKey\",\"kind\":\"method\",\"filePath\":\"cache.ts\",\"line\":20,\"exported\":false},{\"name\":\"queryHash\",\"kind\":\"variable\",\"filePath\":\"cache.ts\",\"line\":21,\"exported\":false},{\"name\":\"has\",\"kind\":\"method\",\"filePath\":\"cache.ts\",\"line\":25,\"exported\":false},{\"name\":\"key\",\"kind\":\"variable\",\"filePath\":\"cache.ts\",\"line\":26,\"exported\":false},{\"name\":\"p\",\"kind\":\"variable\",\"filePath\":\"cache.ts\",\"line\":29,\"exported\":false},{\"name\":\"get\",\"kind\":\"method\",\"filePath\":\"cache.ts\",\"line\":38,\"exported\":false},{\"name\":\"mem\",\"kind\":\"variable\",\"filePath\":\"cache.ts\",\"line\":42,\"exported\":false},{\"name\":\"raw\",\"kind\":\"variable\",\"filePath\":\"cache.ts\",\"line\":53,\"exported\":false},{\"name\":\"entry\",\"kind\":\"variable\",\"filePath\":\"cache.ts\",\"line\":54,\"exported\":false},{\"name\":\"put\",\"kind\":\"method\",\"filePath\":\"cache.ts\",\"line\":62,\"exported\":false},{\"name\":\"firstKey\",\"kind\":\"variable\",\"filePath\":\"cache.ts\",\"line\":76,\"exported\":false},{\"name\":\"clear\",\"kind\":\"method\",\"filePath\":\"cache.ts\",\"line\":92,\"exported\":false},{\"name\":\"files\",\"kind\":\"variable\",\"filePath\":\"cache.ts\",\"line\":95,\"exported\":false},{\"name\":\"file\",\"kind\":\"variable\",\"filePath\":\"cache.ts\",\"line\":96,\"exported\":false},{\"name\":\"getCachePath\",\"kind\":\"method\",\"filePath\":\"cache.ts\",\"line\":104,\"exported\":false},{\"name\":\"RetrievalCompressor\",\"kind\":\"class\",\"filePath\":\"compressor.ts\",\"line\":3,\"exported\":false},{\"name\":\"compress\",\"kind\":\"method\",\"filePath\":\"compressor.ts\",\"line\":4,\"exported\":false},{\"name\":\"seenCandidates\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":6,\"exported\":false},{\"name\":\"candidates\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":7,\"exported\":false},{\"name\":\"normalized\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":8,\"exported\":false},{\"name\":\"seenSymbols\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":15,\"exported\":false},{\"name\":\"symbols\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":16,\"exported\":false},{\"name\":\"key\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":17,\"exported\":false},{\"name\":\"seenNodes\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":24,\"exported\":false},{\"name\":\"nodes\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":25,\"exported\":false},{\"name\":\"seenEdges\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":31,\"exported\":false},{\"name\":\"edges\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":32,\"exported\":false},{\"name\":\"seenDeps\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":40,\"exported\":false},{\"name\":\"dependencies\",\"kind\":\"variable\",\"filePath\":\"compressor.ts\",\"line\":41,\"exported\":false},{\"name\":\"DependencyExpander\",\"kind\":\"class\",\"filePath\":\"dependency-expander.ts\",\"line\":3,\"exported\":false},{\"name\":\"expand\",\"kind\":\"method\",\"filePath\":\"dependency-expander.ts\",\"line\":4,\"exported\":false},{\"name\":\"expanded\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":5,\"exported\":false},{\"name\":\"queue\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":6,\"exported\":false},{\"name\":\"norm\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":9,\"exported\":false},{\"name\":\"filesMap\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":11,\"exported\":false},{\"name\":\"p\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":13,\"exported\":false},{\"name\":\"normalized\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":14,\"exported\":false},{\"name\":\"match\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":16,\"exported\":false},{\"name\":\"outgoing\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":24,\"exported\":false},{\"name\":\"incoming\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":25,\"exported\":false},{\"name\":\"dep\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":27,\"exported\":false},{\"name\":\"from\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":28,\"exported\":false},{\"name\":\"to\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":29,\"exported\":false},{\"name\":\"fullFrom\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":32,\"exported\":false},{\"name\":\"fullTo\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":33,\"exported\":false},{\"name\":\"outList\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":35,\"exported\":false},{\"name\":\"inList\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":39,\"exported\":false},{\"name\":\"safety\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":44,\"exported\":false},{\"name\":\"current\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":46,\"exported\":false},{\"name\":\"outDeps\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":52,\"exported\":false},{\"name\":\"o\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":53,\"exported\":false},{\"name\":\"inDeps\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":61,\"exported\":false},{\"name\":\"i\",\"kind\":\"variable\",\"filePath\":\"dependency-expander.ts\",\"line\":62,\"exported\":false},{\"name\":\"RetrievalDiagnosticsBuilder\",\"kind\":\"class\",\"filePath\":\"diagnostics.ts\",\"line\":3,\"exported\":false},{\"name\":\"build\",\"kind\":\"method\",\"filePath\":\"diagnostics.ts\",\"line\":4,\"exported\":false},{\"name\":\"timeline\",\"kind\":\"variable\",\"filePath\":\"diagnostics.ts\",\"line\":12,\"exported\":false},{\"name\":\"rankingExplanation\",\"kind\":\"variable\",\"filePath\":\"diagnostics.ts\",\"line\":17,\"exported\":false},{\"name\":\"ratio\",\"kind\":\"variable\",\"filePath\":\"diagnostics.ts\",\"line\":23,\"exported\":false},{\"name\":\"format\",\"kind\":\"method\",\"filePath\":\"diagnostics.ts\",\"line\":41,\"exported\":false},{\"name\":\"lines\",\"kind\":\"variable\",\"filePath\":\"diagnostics.ts\",\"line\":42,\"exported\":false},{\"name\":\"stage\",\"kind\":\"variable\",\"filePath\":\"diagnostics.ts\",\"line\":52,\"exported\":false},{\"name\":\"c\",\"kind\":\"variable\",\"filePath\":\"diagnostics.ts\",\"line\":58,\"exported\":false},{\"name\":\"ContextRetrievalError\",\"kind\":\"class\",\"filePath\":\"errors.ts\",\"line\":1,\"exported\":false},{\"name\":\"constructor\",\"kind\":\"constant\",\"filePath\":\"errors.ts\",\"line\":2,\"exported\":false},{\"name\":\"RetrievalBudgetError\",\"kind\":\"class\",\"filePath\":\"errors.ts\",\"line\":8,\"exported\":false},{\"name\":\"GraphTraversalError\",\"kind\":\"class\",\"filePath\":\"errors.ts\",\"line\":15,\"exported\":false},{\"name\":\"RetrievalValidationError\",\"kind\":\"class\",\"filePath\":\"errors.ts\",\"line\":22,\"exported\":false},{\"name\":\"RankingError\",\"kind\":\"class\",\"filePath\":\"errors.ts\",\"line\":29,\"exported\":false},{\"name\":\"CompressionError\",\"kind\":\"class\",\"filePath\":\"errors.ts\",\"line\":36,\"exported\":false},{\"name\":\"RetrievalCacheError\",\"kind\":\"class\",\"filePath\":\"errors.ts\",\"line\":43,\"exported\":false},{\"name\":\"GraphTraverser\",\"kind\":\"class\",\"filePath\":\"graph-traverser.ts\",\"line\":5,\"exported\":false},{\"name\":\"traverseBFS\",\"kind\":\"method\",\"filePath\":\"graph-traverser.ts\",\"line\":6,\"exported\":false},{\"name\":\"visited\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":12,\"exported\":false},{\"name\":\"queue\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":13,\"exported\":false},{\"name\":\"resultNodes\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":14,\"exported\":false},{\"name\":\"resultEdges\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":15,\"exported\":false},{\"name\":\"nodesMap\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":17,\"exported\":false},{\"name\":\"adjacency\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":18,\"exported\":false},{\"name\":\"edge\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":20,\"exported\":false},{\"name\":\"list\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":21,\"exported\":false},{\"name\":\"start\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":26,\"exported\":false},{\"name\":\"safety\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":33,\"exported\":false},{\"name\":\"current\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":35,\"exported\":false},{\"name\":\"node\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":36,\"exported\":false},{\"name\":\"edges\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":42,\"exported\":false},{\"name\":\"nodes\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":55,\"exported\":false},{\"name\":\"fComp\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":57,\"exported\":false},{\"name\":\"topologicalOrder\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":63,\"exported\":false},{\"name\":\"err\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":70,\"exported\":false},{\"name\":\"traversePriorityBFS\",\"kind\":\"method\",\"filePath\":\"graph-traverser.ts\",\"line\":75,\"exported\":false},{\"name\":\"childNode\",\"kind\":\"variable\",\"filePath\":\"graph-traverser.ts\",\"line\":122,\"exported\":false},{\"name\":\"LearningRetriever\",\"kind\":\"class\",\"filePath\":\"learning-retriever.ts\",\"line\":3,\"exported\":false},{\"name\":\"retrieve\",\"kind\":\"method\",\"filePath\":\"learning-retriever.ts\",\"line\":4,\"exported\":false},{\"name\":\"result\",\"kind\":\"variable\",\"filePath\":\"learning-retriever.ts\",\"line\":5,\"exported\":false},{\"name\":\"files\",\"kind\":\"variable\",\"filePath\":\"learning-retriever.ts\",\"line\":6,\"exported\":false},{\"name\":\"exp\",\"kind\":\"variable\",\"filePath\":\"learning-retriever.ts\",\"line\":8,\"exported\":false},{\"name\":\"intentMatch\",\"kind\":\"variable\",\"filePath\":\"learning-retriever.ts\",\"line\":9,\"exported\":false},{\"name\":\"fileMatch\",\"kind\":\"variable\",\"filePath\":\"learning-retriever.ts\",\"line\":10,\"exported\":false},{\"name\":\"DEFAULT_STATS\",\"kind\":\"variable\",\"filePath\":\"metrics.ts\",\"line\":6,\"exported\":false},{\"name\":\"RetrievalMetricsTracker\",\"kind\":\"class\",\"filePath\":\"metrics.ts\",\"line\":16,\"exported\":false},{\"name\":\"statsPath\",\"kind\":\"property\",\"filePath\":\"metrics.ts\",\"line\":17,\"exported\":false},{\"name\":\"stats\",\"kind\":\"property\",\"filePath\":\"metrics.ts\",\"line\":18,\"exported\":false},{\"name\":\"loaded\",\"kind\":\"property\",\"filePath\":\"metrics.ts\",\"line\":19,\"exported\":false},{\"name\":\"constructor\",\"kind\":\"constant\",\"filePath\":\"metrics.ts\",\"line\":21,\"exported\":false},{\"name\":\"load\",\"kind\":\"method\",\"filePath\":\"metrics.ts\",\"line\":25,\"exported\":false},{\"name\":\"raw\",\"kind\":\"variable\",\"filePath\":\"metrics.ts\",\"line\":27,\"exported\":false},{\"name\":\"record\",\"kind\":\"method\",\"filePath\":\"metrics.ts\",\"line\":35,\"exported\":false},{\"name\":\"n\",\"kind\":\"variable\",\"filePath\":\"metrics.ts\",\"line\":40,\"exported\":false},{\"name\":\"hits\",\"kind\":\"variable\",\"filePath\":\"metrics.ts\",\"line\":53,\"exported\":false},{\"name\":\"get\",\"kind\":\"method\",\"filePath\":\"metrics.ts\",\"line\":62,\"exported\":false},{\"name\":\"reset\",\"kind\":\"method\",\"filePath\":\"metrics.ts\",\"line\":67,\"exported\":false},{\"name\":\"save\",\"kind\":\"method\",\"filePath\":\"metrics.ts\",\"line\":73,\"exported\":false},{\"name\":\"ParsedQuery\",\"kind\":\"interface\",\"filePath\":\"query-parser.ts\",\"line\":1,\"exported\":false},{\"name\":\"QueryParser\",\"kind\":\"class\",\"filePath\":\"query-parser.ts\",\"line\":10,\"exported\":false},{\"name\":\"parse\",\"kind\":\"method\",\"filePath\":\"query-parser.ts\",\"line\":11,\"exported\":false},{\"name\":\"lower\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":12,\"exported\":false},{\"name\":\"intent\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":15,\"exported\":false},{\"name\":\"targetFiles\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":37,\"exported\":false},{\"name\":\"fileRegex\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":38,\"exported\":false},{\"name\":\"match\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":39,\"exported\":false},{\"name\":\"targetSymbols\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":45,\"exported\":false},{\"name\":\"quoteRegex\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":46,\"exported\":false},{\"name\":\"symbolRegex\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":52,\"exported\":false},{\"name\":\"sym\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":54,\"exported\":false},{\"name\":\"keywords\",\"kind\":\"variable\",\"filePath\":\"query-parser.ts\",\"line\":69,\"exported\":false},{\"name\":\"RetrievalRanker\",\"kind\":\"class\",\"filePath\":\"ranking.ts\",\"line\":4,\"exported\":false},{\"name\":\"rank\",\"kind\":\"method\",\"filePath\":\"ranking.ts\",\"line\":5,\"exported\":false},{\"name\":\"result\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":12,\"exported\":false},{\"name\":\"primarySet\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":14,\"exported\":false},{\"name\":\"symbolSet\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":15,\"exported\":false},{\"name\":\"p\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":17,\"exported\":false},{\"name\":\"normalized\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":18,\"exported\":false},{\"name\":\"score\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":19,\"exported\":false},{\"name\":\"reasons\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":20,\"exported\":false},{\"name\":\"isPrimary\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":23,\"exported\":false},{\"name\":\"matchingDir\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":32,\"exported\":false},{\"name\":\"dir1\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":33,\"exported\":false},{\"name\":\"dir2\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":34,\"exported\":false},{\"name\":\"hasMatchingSymbol\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":44,\"exported\":false},{\"name\":\"normSymPath\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":45,\"exported\":false},{\"name\":\"matchingLearning\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":54,\"exported\":false},{\"name\":\"file\",\"kind\":\"variable\",\"filePath\":\"ranking.ts\",\"line\":68,\"exported\":false},{\"name\":\"RelationshipRetriever\",\"kind\":\"class\",\"filePath\":\"relationship-retriever.ts\",\"line\":3,\"exported\":false},{\"name\":\"retrieve\",\"kind\":\"method\",\"filePath\":\"relationship-retriever.ts\",\"line\":4,\"exported\":false},{\"name\":\"result\",\"kind\":\"variable\",\"filePath\":\"relationship-retriever.ts\",\"line\":5,\"exported\":false},{\"name\":\"seen\",\"kind\":\"variable\",\"filePath\":\"relationship-retriever.ts\",\"line\":6,\"exported\":false},{\"name\":\"fileSet\",\"kind\":\"variable\",\"filePath\":\"relationship-retriever.ts\",\"line\":8,\"exported\":false},{\"name\":\"rel\",\"kind\":\"variable\",\"filePath\":\"relationship-retriever.ts\",\"line\":10,\"exported\":false},{\"name\":\"key\",\"kind\":\"variable\",\"filePath\":\"relationship-retriever.ts\",\"line\":11,\"exported\":false},{\"name\":\"subMatch\",\"kind\":\"variable\",\"filePath\":\"relationship-retriever.ts\",\"line\":14,\"exported\":false},{\"name\":\"objMatch\",\"kind\":\"variable\",\"filePath\":\"relationship-retriever.ts\",\"line\":15,\"exported\":false},{\"name\":\"sComp\",\"kind\":\"variable\",\"filePath\":\"relationship-retriever.ts\",\"line\":24,\"exported\":false},{\"name\":\"RetrievalPlan\",\"kind\":\"interface\",\"filePath\":\"retrieval-planner.ts\",\"line\":4,\"exported\":false},{\"name\":\"RetrievalPlanner\",\"kind\":\"class\",\"filePath\":\"retrieval-planner.ts\",\"line\":13,\"exported\":false},{\"name\":\"plan\",\"kind\":\"method\",\"filePath\":\"retrieval-planner.ts\",\"line\":14,\"exported\":false},{\"name\":\"strategy\",\"kind\":\"variable\",\"filePath\":\"retrieval-planner.ts\",\"line\":15,\"exported\":false},{\"name\":\"stages\",\"kind\":\"variable\",\"filePath\":\"retrieval-planner.ts\",\"line\":16,\"exported\":false},{\"name\":\"expansionDepth\",\"kind\":\"variable\",\"filePath\":\"retrieval-planner.ts\",\"line\":43,\"exported\":false},{\"name\":\"ContextRetrievalService\",\"kind\":\"class\",\"filePath\":\"service.ts\",\"line\":32,\"exported\":false},{\"name\":\"syncService\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":33,\"exported\":false},{\"name\":\"compiler\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":34,\"exported\":false},{\"name\":\"parser\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":35,\"exported\":false},{\"name\":\"planner\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":36,\"exported\":false},{\"name\":\"traverser\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":37,\"exported\":false},{\"name\":\"expander\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":38,\"exported\":false},{\"name\":\"symbolRetriever\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":39,\"exported\":false},{\"name\":\"relationshipRetriever\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":40,\"exported\":false},{\"name\":\"architectureRetriever\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":41,\"exported\":false},{\"name\":\"learningRetriever\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":42,\"exported\":false},{\"name\":\"ranker\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":43,\"exported\":false},{\"name\":\"budgeter\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":44,\"exported\":false},{\"name\":\"compressor\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":45,\"exported\":false},{\"name\":\"cache\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":46,\"exported\":false},{\"name\":\"validator\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":47,\"exported\":false},{\"name\":\"metricsTracker\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":48,\"exported\":false},{\"name\":\"diagBuilder\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":49,\"exported\":false},{\"name\":\"projectRoot\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":51,\"exported\":false},{\"name\":\"workspaceRoot\",\"kind\":\"property\",\"filePath\":\"service.ts\",\"line\":52,\"exported\":false},{\"name\":\"constructor\",\"kind\":\"constant\",\"filePath\":\"service.ts\",\"line\":54,\"exported\":false},{\"name\":\"retrieve\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":66,\"exported\":false},{\"name\":\"start\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":67,\"exported\":false},{\"name\":\"stages\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":68,\"exported\":false},{\"name\":\"loadStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":71,\"exported\":false},{\"name\":\"snapshot\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":72,\"exported\":false},{\"name\":\"comp\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":77,\"exported\":false},{\"name\":\"parseStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":91,\"exported\":false},{\"name\":\"parsed\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":92,\"exported\":false},{\"name\":\"hit\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":101,\"exported\":false},{\"name\":\"duration\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":103,\"exported\":false},{\"name\":\"metrics\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":104,\"exported\":false},{\"name\":\"plan\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":125,\"exported\":false},{\"name\":\"expStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":128,\"exported\":false},{\"name\":\"expandedFiles\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":129,\"exported\":false},{\"name\":\"symStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":141,\"exported\":false},{\"name\":\"symbols\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":142,\"exported\":false},{\"name\":\"relStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":154,\"exported\":false},{\"name\":\"relationships\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":155,\"exported\":false},{\"name\":\"archStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":166,\"exported\":false},{\"name\":\"architecture\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":167,\"exported\":false},{\"name\":\"learnStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":178,\"exported\":false},{\"name\":\"learning\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":179,\"exported\":false},{\"name\":\"graphStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":191,\"exported\":false},{\"name\":\"startNodes\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":192,\"exported\":false},{\"name\":\"graph\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":193,\"exported\":false},{\"name\":\"rankStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":201,\"exported\":false},{\"name\":\"candidates\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":202,\"exported\":false},{\"name\":\"rawSections\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":216,\"exported\":false},{\"name\":\"originalTokens\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":217,\"exported\":false},{\"name\":\"sec\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":220,\"exported\":false},{\"name\":\"matches\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":221,\"exported\":false},{\"name\":\"reason\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":222,\"exported\":false},{\"name\":\"budgetStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":261,\"exported\":false},{\"name\":\"uncompressedPkg\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":274,\"exported\":false},{\"name\":\"compressStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":288,\"exported\":false},{\"name\":\"compressedPkg\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":289,\"exported\":false},{\"name\":\"valStart\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":297,\"exported\":false},{\"name\":\"validation\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":298,\"exported\":false},{\"name\":\"finalTokens\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":306,\"exported\":false},{\"name\":\"retrieveFiles\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":331,\"exported\":false},{\"name\":\"res\",\"kind\":\"variable\",\"filePath\":\"service.ts\",\"line\":332,\"exported\":false},{\"name\":\"retrieveSymbols\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":336,\"exported\":false},{\"name\":\"retrieveArchitecture\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":341,\"exported\":false},{\"name\":\"retrieveLearning\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":349,\"exported\":false},{\"name\":\"expand\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":354,\"exported\":false},{\"name\":\"compress\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":358,\"exported\":false},{\"name\":\"validate\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":362,\"exported\":false},{\"name\":\"statistics\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":366,\"exported\":false},{\"name\":\"latestSnapshot\",\"kind\":\"method\",\"filePath\":\"service.ts\",\"line\":370,\"exported\":false},{\"name\":\"SymbolRetriever\",\"kind\":\"class\",\"filePath\":\"symbol-retriever.ts\",\"line\":3,\"exported\":false},{\"name\":\"retrieve\",\"kind\":\"method\",\"filePath\":\"symbol-retriever.ts\",\"line\":4,\"exported\":false},{\"name\":\"result\",\"kind\":\"variable\",\"filePath\":\"symbol-retriever.ts\",\"line\":5,\"exported\":false},{\"name\":\"seen\",\"kind\":\"variable\",\"filePath\":\"symbol-retriever.ts\",\"line\":6,\"exported\":false},{\"name\":\"symbolNames\",\"kind\":\"variable\",\"filePath\":\"symbol-retriever.ts\",\"line\":8,\"exported\":false},{\"name\":\"fileSet\",\"kind\":\"variable\",\"filePath\":\"symbol-retriever.ts\",\"line\":9,\"exported\":false},{\"name\":\"s\",\"kind\":\"variable\",\"filePath\":\"symbol-retriever.ts\",\"line\":11,\"exported\":false},{\"name\":\"key\",\"kind\":\"variable\",\"filePath\":\"symbol-retriever.ts\",\"line\":12,\"exported\":false},{\"name\":\"nameMatch\",\"kind\":\"variable\",\"filePath\":\"symbol-retriever.ts\",\"line\":15,\"exported\":false},{\"name\":\"fileMatch\",\"kind\":\"variable\",\"filePath\":\"symbol-retriever.ts\",\"line\":16,\"exported\":false},{\"name\":\"fComp\",\"kind\":\"variable\",\"filePath\":\"symbol-retriever.ts\",\"line\":25,\"exported\":false},{\"name\":\"RetrievalRequest\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":14,\"exported\":false},{\"name\":\"RetrievalStrategy\",\"kind\":\"type\",\"filePath\":\"types.ts\",\"line\":28,\"exported\":false},{\"name\":\"RetrievalResult\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":30,\"exported\":false},{\"name\":\"RetrievalSection\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":36,\"exported\":false},{\"name\":\"RetrievalCandidate\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":46,\"exported\":false},{\"name\":\"RetrievalGraph\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":53,\"exported\":false},{\"name\":\"RetrievalEdge\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":59,\"exported\":false},{\"name\":\"RetrievalNode\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":66,\"exported\":false},{\"name\":\"RetrievalReason\",\"kind\":\"type\",\"filePath\":\"types.ts\",\"line\":73,\"exported\":false},{\"name\":\"RetrievalScore\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":83,\"exported\":false},{\"name\":\"RetrievalBudget\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":94,\"exported\":false},{\"name\":\"RetrievalMetrics\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":118,\"exported\":false},{\"name\":\"RetrievalStage\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":130,\"exported\":false},{\"name\":\"RetrievalStatistics\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":136,\"exported\":false},{\"name\":\"RetrievalDiagnostics\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":146,\"exported\":false},{\"name\":\"RetrievalCacheEntry\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":155,\"exported\":false},{\"name\":\"RetrievalSnapshotReference\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":162,\"exported\":false},{\"name\":\"RetrievalProfile\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":168,\"exported\":false},{\"name\":\"RetrievalExpansion\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":174,\"exported\":false},{\"name\":\"RetrievalCompression\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":180,\"exported\":false},{\"name\":\"RetrievalValidation\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":186,\"exported\":false},{\"name\":\"RetrievalPackage\",\"kind\":\"interface\",\"filePath\":\"types.ts\",\"line\":192,\"exported\":false},{\"name\":\"RetrievalValidator\",\"kind\":\"class\",\"filePath\":\"validator.ts\",\"line\":3,\"exported\":false},{\"name\":\"validate\",\"kind\":\"method\",\"filePath\":\"validator.ts\",\"line\":4,\"exported\":false},{\"name\":\"errors\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":5,\"exported\":false},{\"name\":\"warnings\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":6,\"exported\":false},{\"name\":\"seenCandidates\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":9,\"exported\":false},{\"name\":\"c\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":10,\"exported\":false},{\"name\":\"norm\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":11,\"exported\":false},{\"name\":\"seenSymbols\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":19,\"exported\":false},{\"name\":\"s\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":20,\"exported\":false},{\"name\":\"key\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":21,\"exported\":false},{\"name\":\"seenEdges\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":29,\"exported\":false},{\"name\":\"e\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":30,\"exported\":false},{\"name\":\"totalTokens\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":39,\"exported\":false},{\"name\":\"i\",\"kind\":\"variable\",\"filePath\":\"validator.ts\",\"line\":49,\"exported\":false}]",
+      "priority": 20,
+      "contentHash": "0b86336293f732605b6b2e8079c82e4e041046bb112a113306c77e8552a6954b",
+      "estimatedTokens": 7083,
+      "sourcePaths": [
+        "architecture-retriever.ts",
+        "budget.ts",
+        "cache.ts",
+        "compressor.ts",
+        "dependency-expander.ts",
+        "diagnostics.ts",
+        "errors.ts",
+        "graph-traverser.ts",
+        "learning-retriever.ts",
+        "metrics.ts",
+        "query-parser.ts",
+        "ranking.ts",
+        "relationship-retriever.ts",
+        "retrieval-planner.ts",
+        "service.ts",
+        "symbol-retriever.ts",
+        "types.ts",
+        "validator.ts"
+      ]
+    },
+    {
+      "id": "architecture-memory",
+      "name": "Architecture Memory",
+      "kind": "architecture-memory",
+      "content": "[]",
+      "priority": 30,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "Knowledge Graph",
+      "kind": "knowledge-graph",
+      "content": "[]",
+      "priority": 40,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "dependency-graph",
+      "name": "Dependency Graph",
+      "kind": "dependency-graph",
+      "content": "[]",
+      "priority": 50,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "execution-graph",
+      "name": "Execution Graph",
+      "kind": "execution-graph",
+      "content": "{\"nodes\":[{\"id\":\"architecture-retriever.ts\",\"type\":\"file\",\"title\":\"architecture-retriever.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"budget.ts\",\"type\":\"file\",\"title\":\"budget.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"cache.ts\",\"type\":\"file\",\"title\":\"cache.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"compressor.ts\",\"type\":\"file\",\"title\":\"compressor.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"dependency-expander.ts\",\"type\":\"file\",\"title\":\"dependency-expander.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"diagnostics.ts\",\"type\":\"file\",\"title\":\"diagnostics.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"graph-traverser.ts\",\"type\":\"file\",\"title\":\"graph-traverser.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"index.ts\",\"type\":\"file\",\"title\":\"index.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"learning-retriever.ts\",\"type\":\"file\",\"title\":\"learning-retriever.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"metrics.ts\",\"type\":\"file\",\"title\":\"metrics.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"ranking.ts\",\"type\":\"file\",\"title\":\"ranking.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"relationship-retriever.ts\",\"type\":\"file\",\"title\":\"relationship-retriever.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"retrieval-planner.ts\",\"type\":\"file\",\"title\":\"retrieval-planner.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"service.ts\",\"type\":\"file\",\"title\":\"service.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"symbol-retriever.ts\",\"type\":\"file\",\"title\":\"symbol-retriever.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"types.ts\",\"type\":\"file\",\"title\":\"types.ts\",\"status\":\"pending\",\"priority\":50},{\"id\":\"validator.ts\",\"type\":\"file\",\"title\":\"validator.ts\",\"status\":\"pending\",\"priority\":50}],\"edges\":[{\"fromId\":\"architecture-retriever.ts\",\"toId\":\"../context-compiler/types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"budget.ts\",\"toId\":\"./errors.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"budget.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"cache.ts\",\"toId\":\"../kernel/paths.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"cache.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"cache.ts\",\"toId\":\"crypto\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"cache.ts\",\"toId\":\"fs/promises\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"cache.ts\",\"toId\":\"path\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"compressor.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"dependency-expander.ts\",\"toId\":\"../context-compiler/types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"diagnostics.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"graph-traverser.ts\",\"toId\":\"../context-compiler/types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"graph-traverser.ts\",\"toId\":\"./errors.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"graph-traverser.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./architecture-retriever.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./budget.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./cache.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./compressor.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./dependency-expander.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./diagnostics.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./errors.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./graph-traverser.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./learning-retriever.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./metrics.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./query-parser.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./ranking.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./relationship-retriever.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./retrieval-planner.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./service.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./symbol-retriever.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"index.ts\",\"toId\":\"./validator.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"learning-retriever.ts\",\"toId\":\"../context-compiler/types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"metrics.ts\",\"toId\":\"../kernel/paths.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"metrics.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"metrics.ts\",\"toId\":\"fs/promises\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"metrics.ts\",\"toId\":\"path\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"ranking.ts\",\"toId\":\"../context-compiler/types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"ranking.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"ranking.ts\",\"toId\":\"path\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"relationship-retriever.ts\",\"toId\":\"../context-compiler/types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"retrieval-planner.ts\",\"toId\":\"./query-parser.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"retrieval-planner.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"../context-compiler/service.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"../context-compiler/types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"../context-sync/service.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./architecture-retriever.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./budget.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./cache.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./compressor.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./dependency-expander.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./diagnostics.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./graph-traverser.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./learning-retriever.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./metrics.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./query-parser.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./ranking.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./relationship-retriever.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./retrieval-planner.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./symbol-retriever.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"./validator.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"crypto\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"service.ts\",\"toId\":\"path\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"symbol-retriever.ts\",\"toId\":\"../context-compiler/types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"types.ts\",\"toId\":\"../context-compiler/types.js\",\"kind\":\"uses\",\"weight\":1},{\"fromId\":\"validator.ts\",\"toId\":\"./types.js\",\"kind\":\"uses\",\"weight\":1}],\"topologicalOrder\":[\"architecture-retriever.ts\",\"budget.ts\",\"cache.ts\",\"compressor.ts\",\"dependency-expander.ts\",\"diagnostics.ts\",\"graph-traverser.ts\",\"index.ts\",\"learning-retriever.ts\",\"metrics.ts\",\"ranking.ts\",\"relationship-retriever.ts\",\"retrieval-planner.ts\",\"service.ts\",\"symbol-retriever.ts\",\"types.ts\",\"validator.ts\"]}",
+      "priority": 60,
+      "contentHash": "3e780b28e3a08bb4e9297ce11988af4ccae390c6157975de1661a393d2c94921",
+      "estimatedTokens": 1783,
+      "sourcePaths": []
+    },
+    {
+      "id": "repository-evolution",
+      "name": "Repository Evolution",
+      "kind": "repository-evolution",
+      "content": "[]",
+      "priority": 70,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    },
+    {
+      "id": "learning-summary",
+      "name": "Learning Summary",
+      "kind": "learning-summary",
+      "content": "[]",
+      "priority": 80,
+      "contentHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "estimatedTokens": 1,
+      "sourcePaths": []
+    }
+  ],
+  "files": [
+    {
+      "path": "architecture-retriever.ts",
+      "relativePath": "../../../architecture-retriever.ts",
+      "extension": ".ts",
+      "sizeBytes": 1027,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "budget.ts",
+      "relativePath": "../../../budget.ts",
+      "extension": ".ts",
+      "sizeBytes": 3702,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "cache.ts",
+      "relativePath": "../../../cache.ts",
+      "extension": ".ts",
+      "sizeBytes": 3443,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "compressor.ts",
+      "relativePath": "../../../compressor.ts",
+      "extension": ".ts",
+      "sizeBytes": 2429,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "dependency-expander.ts",
+      "relativePath": "../../../dependency-expander.ts",
+      "extension": ".ts",
+      "sizeBytes": 2527,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "diagnostics.ts",
+      "relativePath": "../../../diagnostics.ts",
+      "extension": ".ts",
+      "sizeBytes": 2560,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "errors.ts",
+      "relativePath": "../../../errors.ts",
+      "extension": ".ts",
+      "sizeBytes": 1211,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "graph-traverser.ts",
+      "relativePath": "../../../graph-traverser.ts",
+      "extension": ".ts",
+      "sizeBytes": 5712,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "index.ts",
+      "relativePath": "../../../index.ts",
+      "extension": ".ts",
+      "sizeBytes": 966,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "learning-retriever.ts",
+      "relativePath": "../../../learning-retriever.ts",
+      "extension": ".ts",
+      "sizeBytes": 855,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "metrics.ts",
+      "relativePath": "../../../metrics.ts",
+      "extension": ".ts",
+      "sizeBytes": 2651,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/.opencode/opencode.json",
+      "relativePath": "../.opencode/opencode.json",
+      "extension": ".json",
+      "sizeBytes": 160,
+      "linesOfCode": 0,
+      "language": "JSON",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/.opencode/opencode.json.backup-1782645237438",
+      "relativePath": "../.opencode/opencode.json.backup-1782645237438",
+      "extension": ".backup-1782645237438",
+      "sizeBytes": 15,
+      "linesOfCode": 0,
+      "language": "Unknown",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "packages/context-retrieval/.opencode/opencode.json.backup-1782645313761",
+      "relativePath": "../.opencode/opencode.json.backup-1782645313761",
+      "extension": ".backup-1782645313761",
+      "sizeBytes": 15,
+      "linesOfCode": 0,
+      "language": "Unknown",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "query-parser.ts",
+      "relativePath": "../../../query-parser.ts",
+      "extension": ".ts",
+      "sizeBytes": 3565,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "ranking.ts",
+      "relativePath": "../../../ranking.ts",
+      "extension": ".ts",
+      "sizeBytes": 3128,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "relationship-retriever.ts",
+      "relativePath": "../../../relationship-retriever.ts",
+      "extension": ".ts",
+      "sizeBytes": 1096,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "retrieval-planner.ts",
+      "relativePath": "../../../retrieval-planner.ts",
+      "extension": ".ts",
+      "sizeBytes": 1660,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "service.ts",
+      "relativePath": "../../../service.ts",
+      "extension": ".ts",
+      "sizeBytes": 13718,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "symbol-retriever.ts",
+      "relativePath": "../../../symbol-retriever.ts",
+      "extension": ".ts",
+      "sizeBytes": 1114,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "types.ts",
+      "relativePath": "../../../types.ts",
+      "extension": ".ts",
+      "sizeBytes": 4742,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    },
+    {
+      "path": "validator.ts",
+      "relativePath": "../../../validator.ts",
+      "extension": ".ts",
+      "sizeBytes": 2206,
+      "linesOfCode": 0,
+      "language": "TypeScript",
+      "lastModified": "1970-01-01T00:00:00.000Z",
+      "contentHash": "",
+      "changeKind": "unchanged"
+    }
+  ],
+  "symbols": [
+    {
+      "name": "ArchitectureRetriever",
+      "kind": "class",
+      "filePath": "architecture-retriever.ts",
+      "line": 3,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "filePath": "architecture-retriever.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "filePath": "architecture-retriever.ts",
+      "line": 5,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "keywordSet",
+      "kind": "variable",
+      "filePath": "architecture-retriever.ts",
+      "line": 6,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "filePath": "architecture-retriever.ts",
+      "line": 8,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "catMatch",
+      "kind": "variable",
+      "filePath": "architecture-retriever.ts",
+      "line": 9,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "titleMatch",
+      "kind": "variable",
+      "filePath": "architecture-retriever.ts",
+      "line": 10,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "tagMatch",
+      "kind": "variable",
+      "filePath": "architecture-retriever.ts",
+      "line": 11,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "catComp",
+      "kind": "variable",
+      "filePath": "architecture-retriever.ts",
+      "line": 19,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalBudgeter",
+      "kind": "class",
+      "filePath": "budget.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "providerBudgets",
+      "kind": "property",
+      "filePath": "budget.ts",
+      "line": 5,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "allocate",
+      "kind": "method",
+      "filePath": "budget.ts",
+      "line": 15,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "limit",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 23,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "allocated",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 26,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "actual",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 37,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "sorted",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 49,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "allocatedSections",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 54,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "runningTokens",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 55,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "s",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 57,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "tokens",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 58,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "budget",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 80,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "addActual",
+      "kind": "method",
+      "filePath": "budget.ts",
+      "line": 92,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "lower",
+      "kind": "variable",
+      "filePath": "budget.ts",
+      "line": 93,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalCache",
+      "kind": "class",
+      "filePath": "cache.ts",
+      "line": 7,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "cacheDir",
+      "kind": "property",
+      "filePath": "cache.ts",
+      "line": 8,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "memoryCache",
+      "kind": "property",
+      "filePath": "cache.ts",
+      "line": 9,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "maxItems",
+      "kind": "property",
+      "filePath": "cache.ts",
+      "line": 10,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "constructor",
+      "kind": "constant",
+      "filePath": "cache.ts",
+      "line": 12,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "ensureDirectory",
+      "kind": "method",
+      "filePath": "cache.ts",
+      "line": 16,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "computeKey",
+      "kind": "method",
+      "filePath": "cache.ts",
+      "line": 20,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "queryHash",
+      "kind": "variable",
+      "filePath": "cache.ts",
+      "line": 21,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "has",
+      "kind": "method",
+      "filePath": "cache.ts",
+      "line": 25,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "filePath": "cache.ts",
+      "line": 26,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "filePath": "cache.ts",
+      "line": 29,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "get",
+      "kind": "method",
+      "filePath": "cache.ts",
+      "line": 38,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "mem",
+      "kind": "variable",
+      "filePath": "cache.ts",
+      "line": 42,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "raw",
+      "kind": "variable",
+      "filePath": "cache.ts",
+      "line": 53,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "entry",
+      "kind": "variable",
+      "filePath": "cache.ts",
+      "line": 54,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "put",
+      "kind": "method",
+      "filePath": "cache.ts",
+      "line": 62,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "firstKey",
+      "kind": "variable",
+      "filePath": "cache.ts",
+      "line": 76,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "clear",
+      "kind": "method",
+      "filePath": "cache.ts",
+      "line": 92,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "files",
+      "kind": "variable",
+      "filePath": "cache.ts",
+      "line": 95,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "filePath": "cache.ts",
+      "line": 96,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "getCachePath",
+      "kind": "method",
+      "filePath": "cache.ts",
+      "line": 104,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalCompressor",
+      "kind": "class",
+      "filePath": "compressor.ts",
+      "line": 3,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "compress",
+      "kind": "method",
+      "filePath": "compressor.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seenCandidates",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 6,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "candidates",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 7,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 8,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seenSymbols",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 15,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "symbols",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 16,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 17,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seenNodes",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 24,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "nodes",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 25,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seenEdges",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 31,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "edges",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 32,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seenDeps",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 40,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "dependencies",
+      "kind": "variable",
+      "filePath": "compressor.ts",
+      "line": 41,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "DependencyExpander",
+      "kind": "class",
+      "filePath": "dependency-expander.ts",
+      "line": 3,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "expand",
+      "kind": "method",
+      "filePath": "dependency-expander.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "expanded",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 5,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "queue",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 6,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "norm",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 9,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "filesMap",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 11,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 13,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 14,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "match",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 16,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "outgoing",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 24,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "incoming",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 25,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "dep",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 27,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "from",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 28,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "to",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 29,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "fullFrom",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 32,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "fullTo",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 33,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "outList",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 35,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "inList",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 39,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "safety",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 44,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "current",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 46,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "outDeps",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 52,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "o",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 53,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "inDeps",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 61,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "i",
+      "kind": "variable",
+      "filePath": "dependency-expander.ts",
+      "line": 62,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalDiagnosticsBuilder",
+      "kind": "class",
+      "filePath": "diagnostics.ts",
+      "line": 3,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "build",
+      "kind": "method",
+      "filePath": "diagnostics.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "timeline",
+      "kind": "variable",
+      "filePath": "diagnostics.ts",
+      "line": 12,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "rankingExplanation",
+      "kind": "variable",
+      "filePath": "diagnostics.ts",
+      "line": 17,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "ratio",
+      "kind": "variable",
+      "filePath": "diagnostics.ts",
+      "line": 23,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "format",
+      "kind": "method",
+      "filePath": "diagnostics.ts",
+      "line": 41,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "lines",
+      "kind": "variable",
+      "filePath": "diagnostics.ts",
+      "line": 42,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "stage",
+      "kind": "variable",
+      "filePath": "diagnostics.ts",
+      "line": 52,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "c",
+      "kind": "variable",
+      "filePath": "diagnostics.ts",
+      "line": 58,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "ContextRetrievalError",
+      "kind": "class",
+      "filePath": "errors.ts",
+      "line": 1,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "constructor",
+      "kind": "constant",
+      "filePath": "errors.ts",
+      "line": 2,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalBudgetError",
+      "kind": "class",
+      "filePath": "errors.ts",
+      "line": 8,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "GraphTraversalError",
+      "kind": "class",
+      "filePath": "errors.ts",
+      "line": 15,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalValidationError",
+      "kind": "class",
+      "filePath": "errors.ts",
+      "line": 22,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RankingError",
+      "kind": "class",
+      "filePath": "errors.ts",
+      "line": 29,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "CompressionError",
+      "kind": "class",
+      "filePath": "errors.ts",
+      "line": 36,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalCacheError",
+      "kind": "class",
+      "filePath": "errors.ts",
+      "line": 43,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "GraphTraverser",
+      "kind": "class",
+      "filePath": "graph-traverser.ts",
+      "line": 5,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "traverseBFS",
+      "kind": "method",
+      "filePath": "graph-traverser.ts",
+      "line": 6,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "visited",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 12,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "queue",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 13,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "resultNodes",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 14,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "resultEdges",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 15,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "nodesMap",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 17,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "adjacency",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 18,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "edge",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 20,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "list",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 21,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "start",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 26,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "safety",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 33,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "current",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 35,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "node",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 36,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "edges",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 42,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "nodes",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 55,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "fComp",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 57,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "topologicalOrder",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 63,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "err",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 70,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "traversePriorityBFS",
+      "kind": "method",
+      "filePath": "graph-traverser.ts",
+      "line": 75,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "childNode",
+      "kind": "variable",
+      "filePath": "graph-traverser.ts",
+      "line": 122,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "LearningRetriever",
+      "kind": "class",
+      "filePath": "learning-retriever.ts",
+      "line": 3,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "filePath": "learning-retriever.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "filePath": "learning-retriever.ts",
+      "line": 5,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "files",
+      "kind": "variable",
+      "filePath": "learning-retriever.ts",
+      "line": 6,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "exp",
+      "kind": "variable",
+      "filePath": "learning-retriever.ts",
+      "line": 8,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "intentMatch",
+      "kind": "variable",
+      "filePath": "learning-retriever.ts",
+      "line": 9,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "fileMatch",
+      "kind": "variable",
+      "filePath": "learning-retriever.ts",
+      "line": 10,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "DEFAULT_STATS",
+      "kind": "variable",
+      "filePath": "metrics.ts",
+      "line": 6,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalMetricsTracker",
+      "kind": "class",
+      "filePath": "metrics.ts",
+      "line": 16,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "statsPath",
+      "kind": "property",
+      "filePath": "metrics.ts",
+      "line": 17,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "stats",
+      "kind": "property",
+      "filePath": "metrics.ts",
+      "line": 18,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "loaded",
+      "kind": "property",
+      "filePath": "metrics.ts",
+      "line": 19,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "constructor",
+      "kind": "constant",
+      "filePath": "metrics.ts",
+      "line": 21,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "load",
+      "kind": "method",
+      "filePath": "metrics.ts",
+      "line": 25,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "raw",
+      "kind": "variable",
+      "filePath": "metrics.ts",
+      "line": 27,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "record",
+      "kind": "method",
+      "filePath": "metrics.ts",
+      "line": 35,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "n",
+      "kind": "variable",
+      "filePath": "metrics.ts",
+      "line": 40,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "hits",
+      "kind": "variable",
+      "filePath": "metrics.ts",
+      "line": 53,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "get",
+      "kind": "method",
+      "filePath": "metrics.ts",
+      "line": 62,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "reset",
+      "kind": "method",
+      "filePath": "metrics.ts",
+      "line": 67,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "save",
+      "kind": "method",
+      "filePath": "metrics.ts",
+      "line": 73,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "ParsedQuery",
+      "kind": "interface",
+      "filePath": "query-parser.ts",
+      "line": 1,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "QueryParser",
+      "kind": "class",
+      "filePath": "query-parser.ts",
+      "line": 10,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "parse",
+      "kind": "method",
+      "filePath": "query-parser.ts",
+      "line": 11,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "lower",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 12,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "intent",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 15,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "targetFiles",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 37,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "fileRegex",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 38,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "match",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 39,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "targetSymbols",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 45,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "quoteRegex",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 46,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "symbolRegex",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 52,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "sym",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 54,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "keywords",
+      "kind": "variable",
+      "filePath": "query-parser.ts",
+      "line": 69,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalRanker",
+      "kind": "class",
+      "filePath": "ranking.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "rank",
+      "kind": "method",
+      "filePath": "ranking.ts",
+      "line": 5,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 12,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "primarySet",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 14,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "symbolSet",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 15,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "p",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 17,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "normalized",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 18,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "score",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 19,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "reasons",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 20,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "isPrimary",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 23,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "matchingDir",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 32,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "dir1",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 33,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "dir2",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 34,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "hasMatchingSymbol",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 44,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "normSymPath",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 45,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "matchingLearning",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 54,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "file",
+      "kind": "variable",
+      "filePath": "ranking.ts",
+      "line": 68,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RelationshipRetriever",
+      "kind": "class",
+      "filePath": "relationship-retriever.ts",
+      "line": 3,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "filePath": "relationship-retriever.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "filePath": "relationship-retriever.ts",
+      "line": 5,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seen",
+      "kind": "variable",
+      "filePath": "relationship-retriever.ts",
+      "line": 6,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "fileSet",
+      "kind": "variable",
+      "filePath": "relationship-retriever.ts",
+      "line": 8,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "rel",
+      "kind": "variable",
+      "filePath": "relationship-retriever.ts",
+      "line": 10,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "filePath": "relationship-retriever.ts",
+      "line": 11,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "subMatch",
+      "kind": "variable",
+      "filePath": "relationship-retriever.ts",
+      "line": 14,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "objMatch",
+      "kind": "variable",
+      "filePath": "relationship-retriever.ts",
+      "line": 15,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "sComp",
+      "kind": "variable",
+      "filePath": "relationship-retriever.ts",
+      "line": 24,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalPlan",
+      "kind": "interface",
+      "filePath": "retrieval-planner.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalPlanner",
+      "kind": "class",
+      "filePath": "retrieval-planner.ts",
+      "line": 13,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "plan",
+      "kind": "method",
+      "filePath": "retrieval-planner.ts",
+      "line": 14,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "strategy",
+      "kind": "variable",
+      "filePath": "retrieval-planner.ts",
+      "line": 15,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "stages",
+      "kind": "variable",
+      "filePath": "retrieval-planner.ts",
+      "line": 16,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "expansionDepth",
+      "kind": "variable",
+      "filePath": "retrieval-planner.ts",
+      "line": 43,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "ContextRetrievalService",
+      "kind": "class",
+      "filePath": "service.ts",
+      "line": 32,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "syncService",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 33,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "compiler",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 34,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "parser",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 35,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "planner",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 36,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "traverser",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 37,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "expander",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 38,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "symbolRetriever",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 39,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "relationshipRetriever",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 40,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "architectureRetriever",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 41,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "learningRetriever",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 42,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "ranker",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 43,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "budgeter",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 44,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "compressor",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 45,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "cache",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 46,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "validator",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 47,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "metricsTracker",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 48,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "diagBuilder",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 49,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "projectRoot",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 51,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "workspaceRoot",
+      "kind": "property",
+      "filePath": "service.ts",
+      "line": 52,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "constructor",
+      "kind": "constant",
+      "filePath": "service.ts",
+      "line": 54,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 66,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "start",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 67,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "stages",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 68,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "loadStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 71,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "snapshot",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 72,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "comp",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 77,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "parseStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 91,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "parsed",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 92,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "hit",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 101,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "duration",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 103,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "metrics",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 104,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "plan",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 125,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "expStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 128,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "expandedFiles",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 129,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "symStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 141,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "symbols",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 142,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "relStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 154,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "relationships",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 155,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "archStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 166,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "architecture",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 167,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "learnStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 178,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "learning",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 179,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "graphStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 191,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "startNodes",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 192,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "graph",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 193,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "rankStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 201,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "candidates",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 202,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "rawSections",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 216,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "originalTokens",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 217,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "sec",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 220,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "matches",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 221,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "reason",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 222,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "budgetStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 261,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "uncompressedPkg",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 274,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "compressStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 288,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "compressedPkg",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 289,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "valStart",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 297,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "validation",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 298,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "finalTokens",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 306,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "retrieveFiles",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 331,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "res",
+      "kind": "variable",
+      "filePath": "service.ts",
+      "line": 332,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "retrieveSymbols",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 336,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "retrieveArchitecture",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 341,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "retrieveLearning",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 349,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "expand",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 354,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "compress",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 358,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "validate",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 362,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "statistics",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 366,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "latestSnapshot",
+      "kind": "method",
+      "filePath": "service.ts",
+      "line": 370,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "SymbolRetriever",
+      "kind": "class",
+      "filePath": "symbol-retriever.ts",
+      "line": 3,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "retrieve",
+      "kind": "method",
+      "filePath": "symbol-retriever.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "result",
+      "kind": "variable",
+      "filePath": "symbol-retriever.ts",
+      "line": 5,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seen",
+      "kind": "variable",
+      "filePath": "symbol-retriever.ts",
+      "line": 6,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "symbolNames",
+      "kind": "variable",
+      "filePath": "symbol-retriever.ts",
+      "line": 8,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "fileSet",
+      "kind": "variable",
+      "filePath": "symbol-retriever.ts",
+      "line": 9,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "s",
+      "kind": "variable",
+      "filePath": "symbol-retriever.ts",
+      "line": 11,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "filePath": "symbol-retriever.ts",
+      "line": 12,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "nameMatch",
+      "kind": "variable",
+      "filePath": "symbol-retriever.ts",
+      "line": 15,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "fileMatch",
+      "kind": "variable",
+      "filePath": "symbol-retriever.ts",
+      "line": 16,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "fComp",
+      "kind": "variable",
+      "filePath": "symbol-retriever.ts",
+      "line": 25,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalRequest",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 14,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalStrategy",
+      "kind": "type",
+      "filePath": "types.ts",
+      "line": 28,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalResult",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 30,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalSection",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 36,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalCandidate",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 46,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalGraph",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 53,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalEdge",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 59,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalNode",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 66,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalReason",
+      "kind": "type",
+      "filePath": "types.ts",
+      "line": 73,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalScore",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 83,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalBudget",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 94,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalMetrics",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 118,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalStage",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 130,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalStatistics",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 136,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalDiagnostics",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 146,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalCacheEntry",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 155,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalSnapshotReference",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 162,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalProfile",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 168,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalExpansion",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 174,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalCompression",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 180,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalValidation",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 186,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalPackage",
+      "kind": "interface",
+      "filePath": "types.ts",
+      "line": 192,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "RetrievalValidator",
+      "kind": "class",
+      "filePath": "validator.ts",
+      "line": 3,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "validate",
+      "kind": "method",
+      "filePath": "validator.ts",
+      "line": 4,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "errors",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 5,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "warnings",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 6,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seenCandidates",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 9,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "c",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 10,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "norm",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 11,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seenSymbols",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 19,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "s",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 20,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "key",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 21,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "seenEdges",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 29,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "e",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 30,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "totalTokens",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 39,
+      "exported": false,
+      "contentHash": ""
+    },
+    {
+      "name": "i",
+      "kind": "variable",
+      "filePath": "validator.ts",
+      "line": 49,
+      "exported": false,
+      "contentHash": ""
+    }
+  ],
+  "dependencies": [],
+  "relationships": [],
+  "graph": {
+    "nodes": [
+      {
+        "id": "architecture-retriever.ts",
+        "type": "file",
+        "title": "architecture-retriever.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "budget.ts",
+        "type": "file",
+        "title": "budget.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "cache.ts",
+        "type": "file",
+        "title": "cache.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "compressor.ts",
+        "type": "file",
+        "title": "compressor.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "dependency-expander.ts",
+        "type": "file",
+        "title": "dependency-expander.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "diagnostics.ts",
+        "type": "file",
+        "title": "diagnostics.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "graph-traverser.ts",
+        "type": "file",
+        "title": "graph-traverser.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "index.ts",
+        "type": "file",
+        "title": "index.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "learning-retriever.ts",
+        "type": "file",
+        "title": "learning-retriever.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "metrics.ts",
+        "type": "file",
+        "title": "metrics.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "ranking.ts",
+        "type": "file",
+        "title": "ranking.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "relationship-retriever.ts",
+        "type": "file",
+        "title": "relationship-retriever.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "retrieval-planner.ts",
+        "type": "file",
+        "title": "retrieval-planner.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "service.ts",
+        "type": "file",
+        "title": "service.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "symbol-retriever.ts",
+        "type": "file",
+        "title": "symbol-retriever.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "types.ts",
+        "type": "file",
+        "title": "types.ts",
+        "status": "pending",
+        "priority": 50
+      },
+      {
+        "id": "validator.ts",
+        "type": "file",
+        "title": "validator.ts",
+        "status": "pending",
+        "priority": 50
+      }
+    ],
+    "edges": [
+      {
+        "fromId": "architecture-retriever.ts",
+        "toId": "../context-compiler/types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "budget.ts",
+        "toId": "./errors.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "budget.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "cache.ts",
+        "toId": "../kernel/paths.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "cache.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "cache.ts",
+        "toId": "crypto",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "cache.ts",
+        "toId": "fs/promises",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "cache.ts",
+        "toId": "path",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "compressor.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "dependency-expander.ts",
+        "toId": "../context-compiler/types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "diagnostics.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "graph-traverser.ts",
+        "toId": "../context-compiler/types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "graph-traverser.ts",
+        "toId": "./errors.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "graph-traverser.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./architecture-retriever.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./budget.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./cache.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./compressor.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./dependency-expander.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./diagnostics.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./errors.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./graph-traverser.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./learning-retriever.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./metrics.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./query-parser.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./ranking.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./relationship-retriever.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./retrieval-planner.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./service.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./symbol-retriever.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "index.ts",
+        "toId": "./validator.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "learning-retriever.ts",
+        "toId": "../context-compiler/types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "metrics.ts",
+        "toId": "../kernel/paths.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "metrics.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "metrics.ts",
+        "toId": "fs/promises",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "metrics.ts",
+        "toId": "path",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "ranking.ts",
+        "toId": "../context-compiler/types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "ranking.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "ranking.ts",
+        "toId": "path",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "relationship-retriever.ts",
+        "toId": "../context-compiler/types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "retrieval-planner.ts",
+        "toId": "./query-parser.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "retrieval-planner.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "../context-compiler/service.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "../context-compiler/types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "../context-sync/service.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./architecture-retriever.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./budget.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./cache.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./compressor.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./dependency-expander.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./diagnostics.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./graph-traverser.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./learning-retriever.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./metrics.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./query-parser.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./ranking.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./relationship-retriever.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./retrieval-planner.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./symbol-retriever.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "./validator.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "crypto",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "service.ts",
+        "toId": "path",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "symbol-retriever.ts",
+        "toId": "../context-compiler/types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "types.ts",
+        "toId": "../context-compiler/types.js",
+        "kind": "uses",
+        "weight": 1
+      },
+      {
+        "fromId": "validator.ts",
+        "toId": "./types.js",
+        "kind": "uses",
+        "weight": 1
+      }
+    ],
+    "topologicalOrder": [
+      "architecture-retriever.ts",
+      "budget.ts",
+      "cache.ts",
+      "compressor.ts",
+      "dependency-expander.ts",
+      "diagnostics.ts",
+      "graph-traverser.ts",
+      "index.ts",
+      "learning-retriever.ts",
+      "metrics.ts",
+      "ranking.ts",
+      "relationship-retriever.ts",
+      "retrieval-planner.ts",
+      "service.ts",
+      "symbol-retriever.ts",
+      "types.ts",
+      "validator.ts"
+    ]
+  },
+  "architecture": [],
+  "evolution": [],
+  "learning": [],
+  "semanticMemory": [
+    {
+      "id": "architecture-retriever.ts::ArchitectureRetriever",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "architecture",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::retrieve",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::result",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::keywordSet",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "keyword",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::entry",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::catMatch",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "cat",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::titleMatch",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "title",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::tagMatch",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "tag",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "architecture-retriever.ts::catComp",
+      "file": "architecture-retriever.ts",
+      "terms": [
+        "cat",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::RetrievalBudgeter",
+      "file": "budget.ts",
+      "terms": [
+        "retrieval",
+        "budgeter"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::providerBudgets",
+      "file": "budget.ts",
+      "terms": [
+        "provider",
+        "budgets"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::allocate",
+      "file": "budget.ts",
+      "terms": [
+        "allocate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::limit",
+      "file": "budget.ts",
+      "terms": [
+        "limit"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::allocated",
+      "file": "budget.ts",
+      "terms": [
+        "allocated"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::actual",
+      "file": "budget.ts",
+      "terms": [
+        "actual"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::sorted",
+      "file": "budget.ts",
+      "terms": [
+        "sorted"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::allocatedSections",
+      "file": "budget.ts",
+      "terms": [
+        "allocated",
+        "sections"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::runningTokens",
+      "file": "budget.ts",
+      "terms": [
+        "running",
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::s",
+      "file": "budget.ts",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::tokens",
+      "file": "budget.ts",
+      "terms": [
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::budget",
+      "file": "budget.ts",
+      "terms": [
+        "budget"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::addActual",
+      "file": "budget.ts",
+      "terms": [
+        "add",
+        "actual"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "budget.ts::lower",
+      "file": "budget.ts",
+      "terms": [
+        "lower"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::RetrievalCache",
+      "file": "cache.ts",
+      "terms": [
+        "retrieval",
+        "cache"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::cacheDir",
+      "file": "cache.ts",
+      "terms": [
+        "cache",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::memoryCache",
+      "file": "cache.ts",
+      "terms": [
+        "memory",
+        "cache"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::maxItems",
+      "file": "cache.ts",
+      "terms": [
+        "max",
+        "items"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::constructor",
+      "file": "cache.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::ensureDirectory",
+      "file": "cache.ts",
+      "terms": [
+        "ensure",
+        "directory"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::computeKey",
+      "file": "cache.ts",
+      "terms": [
+        "compute",
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::queryHash",
+      "file": "cache.ts",
+      "terms": [
+        "query",
+        "hash"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::has",
+      "file": "cache.ts",
+      "terms": [
+        "has"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::key",
+      "file": "cache.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::p",
+      "file": "cache.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::get",
+      "file": "cache.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::key",
+      "file": "cache.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::mem",
+      "file": "cache.ts",
+      "terms": [
+        "mem"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::p",
+      "file": "cache.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::raw",
+      "file": "cache.ts",
+      "terms": [
+        "raw"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::entry",
+      "file": "cache.ts",
+      "terms": [
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::put",
+      "file": "cache.ts",
+      "terms": [
+        "put"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::key",
+      "file": "cache.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::entry",
+      "file": "cache.ts",
+      "terms": [
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::firstKey",
+      "file": "cache.ts",
+      "terms": [
+        "first",
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::p",
+      "file": "cache.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::clear",
+      "file": "cache.ts",
+      "terms": [
+        "clear"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::files",
+      "file": "cache.ts",
+      "terms": [
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::file",
+      "file": "cache.ts",
+      "terms": [
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "cache.ts::getCachePath",
+      "file": "cache.ts",
+      "terms": [
+        "get",
+        "cache",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::RetrievalCompressor",
+      "file": "compressor.ts",
+      "terms": [
+        "retrieval",
+        "compressor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::compress",
+      "file": "compressor.ts",
+      "terms": [
+        "compress"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenCandidates",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "candidates"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::candidates",
+      "file": "compressor.ts",
+      "terms": [
+        "candidates"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::normalized",
+      "file": "compressor.ts",
+      "terms": [
+        "normalized"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenSymbols",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::symbols",
+      "file": "compressor.ts",
+      "terms": [
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::key",
+      "file": "compressor.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenNodes",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::nodes",
+      "file": "compressor.ts",
+      "terms": [
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenEdges",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::edges",
+      "file": "compressor.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::key",
+      "file": "compressor.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::seenDeps",
+      "file": "compressor.ts",
+      "terms": [
+        "seen",
+        "deps"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::dependencies",
+      "file": "compressor.ts",
+      "terms": [
+        "dependencies"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "compressor.ts::key",
+      "file": "compressor.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::DependencyExpander",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "dependency",
+        "expander"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::expand",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "expand"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::expanded",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "expanded"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::queue",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "queue"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::norm",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "norm"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::filesMap",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "files",
+        "map"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::p",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::normalized",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "normalized"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::match",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::outgoing",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "outgoing"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::incoming",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "incoming"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::dep",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "dep"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::from",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "from"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::to",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "to"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::fullFrom",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "full",
+        "from"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::fullTo",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "full",
+        "to"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::outList",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "out",
+        "list"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::inList",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "in",
+        "list"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::safety",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "safety"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::current",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "current"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::outDeps",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "out",
+        "deps"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::o",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "o"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::inDeps",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "in",
+        "deps"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "dependency-expander.ts::i",
+      "file": "dependency-expander.ts",
+      "terms": [
+        "i"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::RetrievalDiagnosticsBuilder",
+      "file": "diagnostics.ts",
+      "terms": [
+        "retrieval",
+        "diagnostics",
+        "builder"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::build",
+      "file": "diagnostics.ts",
+      "terms": [
+        "build"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::timeline",
+      "file": "diagnostics.ts",
+      "terms": [
+        "timeline"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::rankingExplanation",
+      "file": "diagnostics.ts",
+      "terms": [
+        "ranking",
+        "explanation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::ratio",
+      "file": "diagnostics.ts",
+      "terms": [
+        "ratio"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::format",
+      "file": "diagnostics.ts",
+      "terms": [
+        "format"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::lines",
+      "file": "diagnostics.ts",
+      "terms": [
+        "lines"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::stage",
+      "file": "diagnostics.ts",
+      "terms": [
+        "stage"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "diagnostics.ts::c",
+      "file": "diagnostics.ts",
+      "terms": [
+        "c"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::ContextRetrievalError",
+      "file": "errors.ts",
+      "terms": [
+        "context",
+        "retrieval",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::RetrievalBudgetError",
+      "file": "errors.ts",
+      "terms": [
+        "retrieval",
+        "budget",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::GraphTraversalError",
+      "file": "errors.ts",
+      "terms": [
+        "graph",
+        "traversal",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::RetrievalValidationError",
+      "file": "errors.ts",
+      "terms": [
+        "retrieval",
+        "validation",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::RankingError",
+      "file": "errors.ts",
+      "terms": [
+        "ranking",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::CompressionError",
+      "file": "errors.ts",
+      "terms": [
+        "compression",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::RetrievalCacheError",
+      "file": "errors.ts",
+      "terms": [
+        "retrieval",
+        "cache",
+        "error"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "errors.ts::constructor",
+      "file": "errors.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::GraphTraverser",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "graph",
+        "traverser"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::traverseBFS",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "traverse",
+        "bfs"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::visited",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "visited"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::queue",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "queue"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::resultNodes",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "result",
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::resultEdges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "result",
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::nodesMap",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "nodes",
+        "map"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::adjacency",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "adjacency"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edge",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::list",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "list"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::start",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::safety",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "safety"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::current",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "current"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::node",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edge",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::nodes",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::fComp",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "f",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::topologicalOrder",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "topological",
+        "order"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::err",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::traversePriorityBFS",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "traverse",
+        "priority",
+        "bfs"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::visited",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "visited"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::queue",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "queue"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::resultNodes",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "result",
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::resultEdges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "result",
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::nodesMap",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "nodes",
+        "map"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::adjacency",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "adjacency"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edge",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::list",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "list"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::start",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::node",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::safety",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "safety"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::current",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "current"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::node",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edge",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::childNode",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "child",
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::nodes",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::edges",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::fComp",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "f",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "graph-traverser.ts::err",
+      "file": "graph-traverser.ts",
+      "terms": [
+        "err"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::LearningRetriever",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "learning",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::retrieve",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::result",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::files",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::exp",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "exp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::intentMatch",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "intent",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "learning-retriever.ts::fileMatch",
+      "file": "learning-retriever.ts",
+      "terms": [
+        "file",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::DEFAULT_STATS",
+      "file": "metrics.ts",
+      "terms": [
+        "default",
+        "stats"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::RetrievalMetricsTracker",
+      "file": "metrics.ts",
+      "terms": [
+        "retrieval",
+        "metrics",
+        "tracker"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::statsPath",
+      "file": "metrics.ts",
+      "terms": [
+        "stats",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::stats",
+      "file": "metrics.ts",
+      "terms": [
+        "stats"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::loaded",
+      "file": "metrics.ts",
+      "terms": [
+        "loaded"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::constructor",
+      "file": "metrics.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::load",
+      "file": "metrics.ts",
+      "terms": [
+        "load"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::raw",
+      "file": "metrics.ts",
+      "terms": [
+        "raw"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::record",
+      "file": "metrics.ts",
+      "terms": [
+        "record"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::n",
+      "file": "metrics.ts",
+      "terms": [
+        "n"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::hits",
+      "file": "metrics.ts",
+      "terms": [
+        "hits"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::get",
+      "file": "metrics.ts",
+      "terms": [
+        "get"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::reset",
+      "file": "metrics.ts",
+      "terms": [
+        "reset"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "metrics.ts::save",
+      "file": "metrics.ts",
+      "terms": [
+        "save"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::ParsedQuery",
+      "file": "query-parser.ts",
+      "terms": [
+        "parsed",
+        "query"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::QueryParser",
+      "file": "query-parser.ts",
+      "terms": [
+        "query",
+        "parser"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::parse",
+      "file": "query-parser.ts",
+      "terms": [
+        "parse"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::lower",
+      "file": "query-parser.ts",
+      "terms": [
+        "lower"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::intent",
+      "file": "query-parser.ts",
+      "terms": [
+        "intent"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::targetFiles",
+      "file": "query-parser.ts",
+      "terms": [
+        "target",
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::fileRegex",
+      "file": "query-parser.ts",
+      "terms": [
+        "file",
+        "regex"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::match",
+      "file": "query-parser.ts",
+      "terms": [
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::targetSymbols",
+      "file": "query-parser.ts",
+      "terms": [
+        "target",
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::quoteRegex",
+      "file": "query-parser.ts",
+      "terms": [
+        "quote",
+        "regex"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::symbolRegex",
+      "file": "query-parser.ts",
+      "terms": [
+        "symbol",
+        "regex"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::sym",
+      "file": "query-parser.ts",
+      "terms": [
+        "sym"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "query-parser.ts::keywords",
+      "file": "query-parser.ts",
+      "terms": [
+        "keywords"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::RetrievalRanker",
+      "file": "ranking.ts",
+      "terms": [
+        "retrieval",
+        "ranker"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::rank",
+      "file": "ranking.ts",
+      "terms": [
+        "rank"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::result",
+      "file": "ranking.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::primarySet",
+      "file": "ranking.ts",
+      "terms": [
+        "primary",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::symbolSet",
+      "file": "ranking.ts",
+      "terms": [
+        "symbol",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::p",
+      "file": "ranking.ts",
+      "terms": [
+        "p"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::normalized",
+      "file": "ranking.ts",
+      "terms": [
+        "normalized"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::score",
+      "file": "ranking.ts",
+      "terms": [
+        "score"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::reasons",
+      "file": "ranking.ts",
+      "terms": [
+        "reasons"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::isPrimary",
+      "file": "ranking.ts",
+      "terms": [
+        "is",
+        "primary"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::matchingDir",
+      "file": "ranking.ts",
+      "terms": [
+        "matching",
+        "dir"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::dir1",
+      "file": "ranking.ts",
+      "terms": [
+        "dir1"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::dir2",
+      "file": "ranking.ts",
+      "terms": [
+        "dir2"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::hasMatchingSymbol",
+      "file": "ranking.ts",
+      "terms": [
+        "has",
+        "matching",
+        "symbol"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::normSymPath",
+      "file": "ranking.ts",
+      "terms": [
+        "norm",
+        "sym",
+        "path"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::matchingLearning",
+      "file": "ranking.ts",
+      "terms": [
+        "matching",
+        "learning"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "ranking.ts::file",
+      "file": "ranking.ts",
+      "terms": [
+        "file"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::RelationshipRetriever",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "relationship",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::retrieve",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::result",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::seen",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "seen"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::fileSet",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "file",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::rel",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "rel"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::key",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::subMatch",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "sub",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::objMatch",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "obj",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "relationship-retriever.ts::sComp",
+      "file": "relationship-retriever.ts",
+      "terms": [
+        "s",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::RetrievalPlan",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "retrieval",
+        "plan"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::RetrievalPlanner",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "retrieval",
+        "planner"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::plan",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "plan"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::strategy",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "strategy"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::stages",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "stages"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "retrieval-planner.ts::expansionDepth",
+      "file": "retrieval-planner.ts",
+      "terms": [
+        "expansion",
+        "depth"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::ContextRetrievalService",
+      "file": "service.ts",
+      "terms": [
+        "context",
+        "retrieval",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::syncService",
+      "file": "service.ts",
+      "terms": [
+        "sync",
+        "service"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compiler",
+      "file": "service.ts",
+      "terms": [
+        "compiler"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::parser",
+      "file": "service.ts",
+      "terms": [
+        "parser"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::planner",
+      "file": "service.ts",
+      "terms": [
+        "planner"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::traverser",
+      "file": "service.ts",
+      "terms": [
+        "traverser"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::expander",
+      "file": "service.ts",
+      "terms": [
+        "expander"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::symbolRetriever",
+      "file": "service.ts",
+      "terms": [
+        "symbol",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::relationshipRetriever",
+      "file": "service.ts",
+      "terms": [
+        "relationship",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::architectureRetriever",
+      "file": "service.ts",
+      "terms": [
+        "architecture",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::learningRetriever",
+      "file": "service.ts",
+      "terms": [
+        "learning",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::ranker",
+      "file": "service.ts",
+      "terms": [
+        "ranker"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::budgeter",
+      "file": "service.ts",
+      "terms": [
+        "budgeter"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compressor",
+      "file": "service.ts",
+      "terms": [
+        "compressor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::cache",
+      "file": "service.ts",
+      "terms": [
+        "cache"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::validator",
+      "file": "service.ts",
+      "terms": [
+        "validator"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::metricsTracker",
+      "file": "service.ts",
+      "terms": [
+        "metrics",
+        "tracker"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::diagBuilder",
+      "file": "service.ts",
+      "terms": [
+        "diag",
+        "builder"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::projectRoot",
+      "file": "service.ts",
+      "terms": [
+        "project",
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::workspaceRoot",
+      "file": "service.ts",
+      "terms": [
+        "workspace",
+        "root"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::constructor",
+      "file": "service.ts",
+      "terms": [
+        "constructor"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieve",
+      "file": "service.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::start",
+      "file": "service.ts",
+      "terms": [
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::stages",
+      "file": "service.ts",
+      "terms": [
+        "stages"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::loadStart",
+      "file": "service.ts",
+      "terms": [
+        "load",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::snapshot",
+      "file": "service.ts",
+      "terms": [
+        "snapshot"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::comp",
+      "file": "service.ts",
+      "terms": [
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::parseStart",
+      "file": "service.ts",
+      "terms": [
+        "parse",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::parsed",
+      "file": "service.ts",
+      "terms": [
+        "parsed"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::hit",
+      "file": "service.ts",
+      "terms": [
+        "hit"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::duration",
+      "file": "service.ts",
+      "terms": [
+        "duration"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::metrics",
+      "file": "service.ts",
+      "terms": [
+        "metrics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::plan",
+      "file": "service.ts",
+      "terms": [
+        "plan"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::expStart",
+      "file": "service.ts",
+      "terms": [
+        "exp",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::expandedFiles",
+      "file": "service.ts",
+      "terms": [
+        "expanded",
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::symStart",
+      "file": "service.ts",
+      "terms": [
+        "sym",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::symbols",
+      "file": "service.ts",
+      "terms": [
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::relStart",
+      "file": "service.ts",
+      "terms": [
+        "rel",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::relationships",
+      "file": "service.ts",
+      "terms": [
+        "relationships"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::archStart",
+      "file": "service.ts",
+      "terms": [
+        "arch",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::architecture",
+      "file": "service.ts",
+      "terms": [
+        "architecture"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::learnStart",
+      "file": "service.ts",
+      "terms": [
+        "learn",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::learning",
+      "file": "service.ts",
+      "terms": [
+        "learning"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::graphStart",
+      "file": "service.ts",
+      "terms": [
+        "graph",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::startNodes",
+      "file": "service.ts",
+      "terms": [
+        "start",
+        "nodes"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::graph",
+      "file": "service.ts",
+      "terms": [
+        "graph"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::rankStart",
+      "file": "service.ts",
+      "terms": [
+        "rank",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::candidates",
+      "file": "service.ts",
+      "terms": [
+        "candidates"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::rawSections",
+      "file": "service.ts",
+      "terms": [
+        "raw",
+        "sections"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::originalTokens",
+      "file": "service.ts",
+      "terms": [
+        "original",
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::sec",
+      "file": "service.ts",
+      "terms": [
+        "sec"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::matches",
+      "file": "service.ts",
+      "terms": [
+        "matches"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::reason",
+      "file": "service.ts",
+      "terms": [
+        "reason"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::budgetStart",
+      "file": "service.ts",
+      "terms": [
+        "budget",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::uncompressedPkg",
+      "file": "service.ts",
+      "terms": [
+        "uncompressed",
+        "pkg"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compressStart",
+      "file": "service.ts",
+      "terms": [
+        "compress",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compressedPkg",
+      "file": "service.ts",
+      "terms": [
+        "compressed",
+        "pkg"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::valStart",
+      "file": "service.ts",
+      "terms": [
+        "val",
+        "start"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::validation",
+      "file": "service.ts",
+      "terms": [
+        "validation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::duration",
+      "file": "service.ts",
+      "terms": [
+        "duration"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::finalTokens",
+      "file": "service.ts",
+      "terms": [
+        "final",
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::metrics",
+      "file": "service.ts",
+      "terms": [
+        "metrics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieveFiles",
+      "file": "service.ts",
+      "terms": [
+        "retrieve",
+        "files"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::res",
+      "file": "service.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieveSymbols",
+      "file": "service.ts",
+      "terms": [
+        "retrieve",
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::res",
+      "file": "service.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieveArchitecture",
+      "file": "service.ts",
+      "terms": [
+        "retrieve",
+        "architecture"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::res",
+      "file": "service.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::snapshot",
+      "file": "service.ts",
+      "terms": [
+        "snapshot"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::retrieveLearning",
+      "file": "service.ts",
+      "terms": [
+        "retrieve",
+        "learning"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::res",
+      "file": "service.ts",
+      "terms": [
+        "res"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::expand",
+      "file": "service.ts",
+      "terms": [
+        "expand"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::compress",
+      "file": "service.ts",
+      "terms": [
+        "compress"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::validate",
+      "file": "service.ts",
+      "terms": [
+        "validate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::statistics",
+      "file": "service.ts",
+      "terms": [
+        "statistics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "service.ts::latestSnapshot",
+      "file": "service.ts",
+      "terms": [
+        "latest",
+        "snapshot"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::SymbolRetriever",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "symbol",
+        "retriever"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::retrieve",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "retrieve"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::result",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::seen",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "seen"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::symbolNames",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "symbol",
+        "names"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::fileSet",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "file",
+        "set"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::s",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::key",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::nameMatch",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "name",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::fileMatch",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "file",
+        "match"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "symbol-retriever.ts::fComp",
+      "file": "symbol-retriever.ts",
+      "terms": [
+        "f",
+        "comp"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalRequest",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "request"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalStrategy",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "strategy"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalResult",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "result"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalSection",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "section"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalCandidate",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "candidate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalGraph",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "graph"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalEdge",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "edge"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalNode",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "node"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalReason",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "reason"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalScore",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "score"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalBudget",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "budget"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalMetrics",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "metrics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalStage",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "stage"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalStatistics",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "statistics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalDiagnostics",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "diagnostics"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalCacheEntry",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "cache",
+        "entry"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalSnapshotReference",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "snapshot",
+        "reference"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalProfile",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "profile"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalExpansion",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "expansion"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalCompression",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "compression"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalValidation",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "validation"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "types.ts::RetrievalPackage",
+      "file": "types.ts",
+      "terms": [
+        "retrieval",
+        "package"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::RetrievalValidator",
+      "file": "validator.ts",
+      "terms": [
+        "retrieval",
+        "validator"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::validate",
+      "file": "validator.ts",
+      "terms": [
+        "validate"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::errors",
+      "file": "validator.ts",
+      "terms": [
+        "errors"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::warnings",
+      "file": "validator.ts",
+      "terms": [
+        "warnings"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::seenCandidates",
+      "file": "validator.ts",
+      "terms": [
+        "seen",
+        "candidates"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::c",
+      "file": "validator.ts",
+      "terms": [
+        "c"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::norm",
+      "file": "validator.ts",
+      "terms": [
+        "norm"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::seenSymbols",
+      "file": "validator.ts",
+      "terms": [
+        "seen",
+        "symbols"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::s",
+      "file": "validator.ts",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::key",
+      "file": "validator.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::seenEdges",
+      "file": "validator.ts",
+      "terms": [
+        "seen",
+        "edges"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::e",
+      "file": "validator.ts",
+      "terms": [
+        "e"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::key",
+      "file": "validator.ts",
+      "terms": [
+        "key"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::totalTokens",
+      "file": "validator.ts",
+      "terms": [
+        "total",
+        "tokens"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::s",
+      "file": "validator.ts",
+      "terms": [
+        "s"
+      ],
+      "weight": 100
+    },
+    {
+      "id": "validator.ts::i",
+      "file": "validator.ts",
+      "terms": [
+        "i"
+      ],
+      "weight": 100
+    }
+  ]
+}

@@ -9,11 +9,21 @@ export const BRAIN_DIR     = ".brain";
 export const BRAIN_CONFIG  = "brain.json";
 
 export function resolveWorkspace(workspacePath?: string): string {
-    return path.resolve(workspacePath ?? process.cwd());
+    const resolved = path.resolve(workspacePath ?? process.cwd());
+    try {
+        return fs.realpathSync(resolved);
+    } catch {
+        return resolved;
+    }
 }
 
 export function resolveProject(projectPath?: string, workspace?: string): string {
-    return path.resolve(projectPath ?? workspace ?? process.cwd());
+    const resolved = path.resolve(projectPath ?? workspace ?? process.cwd());
+    try {
+        return fs.realpathSync(resolved);
+    } catch {
+        return resolved;
+    }
 }
 
 export function brainDir(workspace: string): string {

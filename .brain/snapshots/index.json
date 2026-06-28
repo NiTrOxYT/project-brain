@@ -1,33 +1,47 @@
 [
   {
-    "snapshotId": "56c0dc5708fb0ec56ffd8772aba07d7292a5d4f32ae34debf23fd915c96190d8",
-    "createdAt": "2026-06-27T17:45:34.028Z",
+    "snapshotId": "4d27b612ebb7149d2893a342db1e52fd8661fd5969a8bdb3ef99c06ccc79d71d",
+    "createdAt": "2026-06-28T12:31:10.527Z",
     "fingerprint": {
-      "hash": "56c0dc5708fb0ec56ffd8772aba07d7292a5d4f32ae34debf23fd915c96190d8",
-      "filesystemHash": "61b4bd92b63288596d82182e31274dc91e238e7f3350f1d8794895bc656efd15",
-      "graphHash": "1980e664bd4b395a21c517d839ebdc44db261b23285853b03d6a4b5848262470",
+      "hash": "4d27b612ebb7149d2893a342db1e52fd8661fd5969a8bdb3ef99c06ccc79d71d",
+      "filesystemHash": "db8eccda9c2f44bbf706da96c0f1cb4ab3a3f5c5bcc73c5c203d28e02516cceb",
+      "graphHash": "42b77045be7f2bdfff79fbdf70e690e5b4c75eaab8a7957da901223147786bb4",
       "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
       "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
       "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
-      "version": "208.407.299"
+      "version": "751.610.343"
     },
-    "estimatedTokens": 31065,
-    "incremental": true,
-    "parentSnapshotId": "56c0dc5708fb0ec56ffd8772aba07d7292a5d4f32ae34debf23fd915c96190d8"
+    "estimatedTokens": 512492,
+    "incremental": false
   },
   {
-    "snapshotId": "53302a96a637ba3c30de63afb5784a878f6fc62223a366490c68ddf961cbbcb4",
-    "createdAt": "2026-06-27T17:45:34.028Z",
+    "snapshotId": "6310c3d37a8e7d809c9559ed5ac1ff3d49e9662707ab162e0dfbe13fccf356dd",
+    "createdAt": "2026-06-28T12:20:36.092Z",
     "fingerprint": {
-      "hash": "53302a96a637ba3c30de63afb5784a878f6fc62223a366490c68ddf961cbbcb4",
-      "filesystemHash": "01ffef70bc568c06168e45a22c7595f9af4547ab45e5f55896ea3bddd22152eb",
-      "graphHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hash": "6310c3d37a8e7d809c9559ed5ac1ff3d49e9662707ab162e0dfbe13fccf356dd",
+      "filesystemHash": "f72ca2e8901767da6a9c0dffa565095566ba1e8cd2599870fe119c91b0ee51cf",
+      "graphHash": "18f217a530461c7397adac0723e635bf7ebc5e6e9be86ac847de6d5ea967a99e",
       "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
       "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
       "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
-      "version": "296.902.551"
+      "version": "360.131.374"
     },
-    "estimatedTokens": 31065,
+    "estimatedTokens": 510961,
+    "incremental": false
+  },
+  {
+    "snapshotId": "656a350f53b35d68060cf85b20b6ba72c46fbabc1330ad1d35012f0d24af0960",
+    "createdAt": "2026-06-28T12:20:17.174Z",
+    "fingerprint": {
+      "hash": "656a350f53b35d68060cf85b20b6ba72c46fbabc1330ad1d35012f0d24af0960",
+      "filesystemHash": "0b794e61631ed2dfb48d10432ead41fa0ec11832ab757450867912542eca1699",
+      "graphHash": "3b2bd9af93c5be9f15eeb6605dc71df207e6722565911d1f0c1ee4f1c9724f5c",
+      "architectureHash": "d801aa1fb7ddcc330a5e3173372ea6af4a3d08ec58074478e85aa5603e926658",
+      "evolutionHash": "498ec4377c2c6869fb0379c91f6aff62d3559ba52b9063696082cd6e3f4331c7",
+      "learningHash": "a8c2e2365adfac36681b4695309de58ac1246b3f390de674a7632b19227f79f0",
+      "version": "962.583.427"
+    },
+    "estimatedTokens": 510881,
     "incremental": false
   }
 ]

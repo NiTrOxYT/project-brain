@@ -1,0 +1,273 @@
+{
+  "generatedAt": "2026-06-28T11:15:20.170Z",
+  "imports": [
+    {
+      "source": "architecture-retriever.ts",
+      "target": "../context-compiler/types.js"
+    },
+    {
+      "source": "budget.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "budget.ts",
+      "target": "./errors.js"
+    },
+    {
+      "source": "cache.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "cache.ts",
+      "target": "path"
+    },
+    {
+      "source": "cache.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "cache.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "cache.ts",
+      "target": "../kernel/paths.js"
+    },
+    {
+      "source": "compressor.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "dependency-expander.ts",
+      "target": "../context-compiler/types.js"
+    },
+    {
+      "source": "diagnostics.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "graph-traverser.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "graph-traverser.ts",
+      "target": "./errors.js"
+    },
+    {
+      "source": "graph-traverser.ts",
+      "target": "../context-compiler/types.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./service.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./query-parser.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./retrieval-planner.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./graph-traverser.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./dependency-expander.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./symbol-retriever.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./relationship-retriever.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./architecture-retriever.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./learning-retriever.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./ranking.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./budget.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./compressor.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./cache.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./validator.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./metrics.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./diagnostics.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "index.ts",
+      "target": "./errors.js"
+    },
+    {
+      "source": "learning-retriever.ts",
+      "target": "../context-compiler/types.js"
+    },
+    {
+      "source": "metrics.ts",
+      "target": "fs/promises"
+    },
+    {
+      "source": "metrics.ts",
+      "target": "path"
+    },
+    {
+      "source": "metrics.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "metrics.ts",
+      "target": "../kernel/paths.js"
+    },
+    {
+      "source": "ranking.ts",
+      "target": "../context-compiler/types.js"
+    },
+    {
+      "source": "ranking.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "ranking.ts",
+      "target": "path"
+    },
+    {
+      "source": "relationship-retriever.ts",
+      "target": "../context-compiler/types.js"
+    },
+    {
+      "source": "retrieval-planner.ts",
+      "target": "./query-parser.js"
+    },
+    {
+      "source": "retrieval-planner.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "crypto"
+    },
+    {
+      "source": "service.ts",
+      "target": "path"
+    },
+    {
+      "source": "service.ts",
+      "target": "../context-compiler/service.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "../context-sync/service.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./types.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./query-parser.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./retrieval-planner.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./graph-traverser.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./dependency-expander.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./symbol-retriever.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./relationship-retriever.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./architecture-retriever.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./learning-retriever.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./ranking.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./budget.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./compressor.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./cache.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./validator.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./metrics.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "./diagnostics.js"
+    },
+    {
+      "source": "service.ts",
+      "target": "../context-compiler/types.js"
+    },
+    {
+      "source": "symbol-retriever.ts",
+      "target": "../context-compiler/types.js"
+    },
+    {
+      "source": "types.ts",
+      "target": "../context-compiler/types.js"
+    },
+    {
+      "source": "validator.ts",
+      "target": "./types.js"
+    }
+  ]
+}

@@ -19,7 +19,7 @@ export class TokenBudgetOptimizer {
                 remainingTokens -= entryTokens;
             }
             else {
-                break;
+                continue;
             }
         }
         // 3. snippets
@@ -31,7 +31,7 @@ export class TokenBudgetOptimizer {
                 remainingTokens -= snipTokens;
             }
             else {
-                break;
+                continue;
             }
         }
         // 4. dependency summaries
@@ -43,7 +43,7 @@ export class TokenBudgetOptimizer {
                 remainingTokens -= depTokens;
             }
             else {
-                break;
+                continue;
             }
         }
         // 5. Ranked files metadata
@@ -55,7 +55,7 @@ export class TokenBudgetOptimizer {
                 remainingTokens -= fileTokens;
             }
             else {
-                break;
+                continue;
             }
         }
         const estimatedTokens = maxTokens - remainingTokens;

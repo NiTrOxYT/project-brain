@@ -18,10 +18,16 @@ export class SynchronizerService {
 
     private readonly filesystem = new FileSystemService();
 
+    private readonly projectRoot: string;
+    private readonly workspaceRoot: string;
+
     constructor(
-        private readonly projectRoot: string,
-        private readonly workspaceRoot: string
-    ) {}
+        projectRoot: string,
+        workspaceRoot: string
+    ) {
+        this.projectRoot = projectRoot;
+        this.workspaceRoot = workspaceRoot.endsWith(".brain") ? workspaceRoot : path.join(workspaceRoot, ".brain");
+    }
 
     async forceRebuild(): Promise<void> {
         try {
@@ -122,7 +128,8 @@ export class SynchronizerService {
             const addedSymbols: SymbolRecord[] = [];
 
             for (const relPath of newlyAddedOrChanged) {
-                if (relPath.endsWith(".ts") || relPath.endsWith(".tsx")) {
+                const ext = path.extname(relPath).toLowerCase();
+                if (ext === ".ts" || ext === ".tsx" || ext === ".js" || ext === ".jsx" || ext === ".mjs" || ext === ".cjs") {
                     const fileSyms = await symbolsService.extractFromFile(relPath);
                     addedSymbols.push(...fileSyms);
                 }
@@ -148,7 +155,8 @@ export class SynchronizerService {
             const addedImports: ImportRecord[] = [];
 
             for (const relPath of newlyAddedOrChanged) {
-                if (relPath.endsWith(".ts") || relPath.endsWith(".tsx")) {
+                const ext = path.extname(relPath).toLowerCase();
+                if (ext === ".ts" || ext === ".tsx" || ext === ".js" || ext === ".jsx" || ext === ".mjs" || ext === ".cjs") {
                     const fileImps = await importsService.extractFromFile(relPath);
                     addedImports.push(...fileImps);
                 }
@@ -175,7 +183,8 @@ export class SynchronizerService {
             const addedRelationships: RelationshipRecord[] = [];
 
             for (const relPath of newlyAddedOrChanged) {
-                if (relPath.endsWith(".ts") || relPath.endsWith(".tsx")) {
+                const ext = path.extname(relPath).toLowerCase();
+                if (ext === ".ts" || ext === ".tsx" || ext === ".js" || ext === ".jsx" || ext === ".mjs" || ext === ".cjs") {
                     const fileRels = await relService.extractFromFile(relPath, projectSymbols);
                     addedRelationships.push(...fileRels);
                 }

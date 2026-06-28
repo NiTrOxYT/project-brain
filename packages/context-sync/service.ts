@@ -1,4 +1,5 @@
 import EventEmitter from "events";
+import path from "path";
 import { ContextCompilerService } from "../context-compiler/service.js";
 import {
     ContextSyncRequest,
@@ -23,7 +24,11 @@ import { SemanticSnapshot, CompilationStage } from "../context-compiler/types.js
 
 export class ContextSynchronizationService {
     static readonly emitter = new EventEmitter();
-    private static cachedLatestSnapshot: SemanticSnapshot | null = null;
+
+    // Per-instance cache — avoids cross-workspace pollution from static fields.
+    // TTL: 500 ms — fast enough for burst calls, short enough to pick up new compiles.
+    private cachedSnapshot: SemanticSnapshot | null = null;
+    private cacheExpiresAt = 0;
 
     private readonly compiler: ContextCompilerService;
     private readonly changeDetector = new ChangeDetector();
@@ -38,13 +43,18 @@ export class ContextSynchronizationService {
     private readonly diagBuilder = new SynchronizationDiagnosticsBuilder();
     private readonly listener: WorkspaceListener;
 
+    private readonly projectRoot: string;
+    private readonly workspaceRoot: string;
+
     constructor(
-        private readonly projectRoot: string,
-        private readonly workspaceRoot: string
+        projectRoot: string,
+        workspaceRoot: string
     ) {
-        this.compiler = new ContextCompilerService(projectRoot, workspaceRoot);
-        this.storage = new SnapshotSyncStorage(workspaceRoot);
-        this.metricsTracker = new SynchronizationMetricsTracker(workspaceRoot);
+        this.projectRoot = projectRoot;
+        this.workspaceRoot = workspaceRoot.endsWith(".brain") ? workspaceRoot : path.join(workspaceRoot, ".brain");
+        this.compiler = new ContextCompilerService(this.projectRoot, this.workspaceRoot);
+        this.storage = new SnapshotSyncStorage(this.workspaceRoot);
+        this.metricsTracker = new SynchronizationMetricsTracker(this.workspaceRoot);
         this.listener = new WorkspaceListener(req => this.sync(req));
 
         this.listener.start();
@@ -65,6 +75,11 @@ export class ContextSynchronizationService {
     async sync(req: ContextSyncRequest): Promise<ContextSyncResult> {
         const start = Date.now();
         const stages: CompilationStage[] = [];
+
+        // Run Synchronizer Service first to update disk indexes
+        const { SynchronizerService } = await import("../synchronizer/service.js");
+        const synchronizer = new SynchronizerService(req.projectRoot, req.workspaceRoot);
+        await synchronizer.synchronize();
 
         // Load latest snapshot
         const latest = await this.runStage(stages, "LoadLatest", () =>
@@ -99,7 +114,8 @@ export class ContextSynchronizationService {
                 metrics
             });
 
-            ContextSynchronizationService.cachedLatestSnapshot = fullResult.snapshot;
+            this.cachedSnapshot = fullResult.snapshot;
+            this.cacheExpiresAt = Date.now() + 500;
 
             return {
                 snapshot: fullResult.snapshot,
@@ -226,7 +242,8 @@ export class ContextSynchronizationService {
             metrics: finalMetrics
         });
 
-        ContextSynchronizationService.cachedLatestSnapshot = updatedSnapshot;
+        this.cachedSnapshot = updatedSnapshot;
+        this.cacheExpiresAt = Date.now() + 500;
 
         return {
             snapshot: updatedSnapshot,
@@ -258,7 +275,8 @@ export class ContextSynchronizationService {
 
     async rollback(targetSnapshotId: string): Promise<SemanticSnapshot> {
         const snap = await this.storage.rollback(targetSnapshotId);
-        ContextSynchronizationService.cachedLatestSnapshot = snap;
+        this.cachedSnapshot = snap;
+        this.cacheExpiresAt = Date.now() + 500;
         return snap;
     }
 
@@ -284,12 +302,20 @@ export class ContextSynchronizationService {
     }
 
     async latestSnapshot(): Promise<SemanticSnapshot | null> {
-        if (ContextSynchronizationService.cachedLatestSnapshot) {
-            return ContextSynchronizationService.cachedLatestSnapshot;
+        if (this.cachedSnapshot && Date.now() < this.cacheExpiresAt) {
+            return this.cachedSnapshot;
         }
         const snap = await this.storage.latestSnapshot();
-        ContextSynchronizationService.cachedLatestSnapshot = snap;
+        this.cachedSnapshot = snap;
+        this.cacheExpiresAt = Date.now() + 500;
         return snap;
+    }
+
+    async loadSnapshot(snapshotId: string): Promise<SemanticSnapshot | null> {
+        if (!snapshotId || snapshotId === "latest") {
+            return this.latestSnapshot();
+        }
+        return this.storage.loadSnapshot(snapshotId);
     }
 
     subscribe(callback: (val: any) => void): void {

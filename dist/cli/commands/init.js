@@ -37,6 +37,9 @@ export async function runInit(opts) {
     for (const sub of subdirs) {
         fs.mkdirSync(sub, { recursive: true });
     }
+    const { WorkspaceService } = await import("../../workspace/service.js");
+    const ws = new WorkspaceService({ root: workspace });
+    await ws.initialize();
     const config = {
         version: "1",
         projectRoot: opts.project,

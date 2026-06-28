@@ -26,7 +26,8 @@ function parseArgs(argv) {
             // boolean flags
             if (key === "json" || key === "verbose" || key === "quiet" || key === "no-color"
                 || key === "force" || key === "incremental" || key === "watch"
-                || key === "full" || key === "dry-run" || key === "help" || key === "version") {
+                || key === "full" || key === "dry-run" || key === "help" || key === "version"
+                || key === "debug") {
                 flags.set(key, true);
             }
             else {
@@ -82,9 +83,12 @@ const HELP = `
 \x1b[1mCommands:\x1b[0m
   init                    Initialize .brain workspace
   compile                 Run Context Compiler
+  inspect                 Display snapshot status and integrity
   sync                    Run Context Synchronization
   retrieve                Run Context Retrieval
   query                   Run Query Engine
+  search_memory           Query workspace local semantic memory
+
   workflow <sub>          Autonomous Workflow  (run/resume/cancel/status/history/report/diagnostics)
   runtime  <sub>          Autonomous Runtime   (execute/resume/status)
   shared-memory <sub>     Shared Memory        (status/agents/tasks/conflicts/consensus/snapshot/restore/statistics/diagnostics)
@@ -299,12 +303,24 @@ Inspect and monitor capability providers (LLM and tools).
 
 Subcommands:
   list                    List registered providers
+  install                 Install executable wrapper policies for provider
+  uninstall               Uninstall wrapper policies/registrations for provider
+  configure               Configure provider settings and MCP registration
+  verify                  Verify provider capability integration stages
+  diagnose                Diagnose integration failures and recommend fixes
+  status                  Show version, files, lock status and checksums
+  repair                  Run transaction self-healing repair/reconfiguration
+  update                  Check version compatibility rules
+  audit                   Run transactional drift and schema validation audit
   health                  Run live health/latency checks on providers
   benchmark               Benchmark registered providers
 
+Options:
+  --provider <name>       Target provider ID (defaults to opencode)
+
 Examples:
-  brain provider list
-  brain provider health
+  brain provider audit --provider opencode
+  brain provider repair --provider claude
 `,
     doctor: `
 Usage: brain doctor
@@ -350,6 +366,17 @@ Examples:
   brain config show
   brain config set --key compiler.incremental --value false
   brain config reset
+`,
+    search_memory: `
+Usage: brain search_memory <query> [options]
+
+Query workspace local semantic memory and recommendations.
+
+Options:
+  --debug                 Show verbose matching and similarity details
+
+Examples:
+  brain search_memory "authentication middleware" --debug
 `
 };
 // ── Main ──────────────────────────────────────────────────────────────────────
@@ -413,6 +440,11 @@ export async function main(argv = process.argv.slice(2)) {
                 });
                 break;
             }
+            case "inspect": {
+                const { runInspect } = await import("./commands/inspect.js");
+                await runInspect(opts);
+                break;
+            }
             case "sync": {
                 const { runSync } = await import("./commands/sync.js");
                 await runSync(opts, {
@@ -435,6 +467,15 @@ export async function main(argv = process.argv.slice(2)) {
                 await runQuery(opts, {
                     query: flagStr(flags, "query"),
                     format: flagStr(flags, "format"),
+                });
+                break;
+            }
+            case "search_memory": {
+                const queryStr = flagStr(flags, "query") || positionals.slice(1).join(" ");
+                const { runSearchMemory } = await import("./commands/search-memory.js");
+                await runSearchMemory(opts, {
+                    query: queryStr,
+                    debug: flag(flags, "debug") || opts.verbose,
                 });
                 break;
             }
@@ -507,9 +548,10 @@ export async function main(argv = process.argv.slice(2)) {
                 });
                 break;
             }
+            case "providers":
             case "provider": {
                 if (!subcommand) {
-                    process.stdout.write("Usage: brain provider <list|health|benchmark|configure|verify|status> [--provider <name>]\n");
+                    process.stdout.write("Usage: brain provider <list|install|uninstall|configure|verify|diagnose|status|repair|update|audit> [--provider <name>]\n");
                     process.exit(EXIT_VALIDATION);
                 }
                 const { runProvider } = await import("./commands/provider.js");
@@ -551,7 +593,7 @@ export async function main(argv = process.argv.slice(2)) {
                     dryRun: flag(flags, "dry-run"),
                     repair: flag(flags, "repair"),
                     uninstall: flag(flags, "uninstall"),
-                    providerId: flagStr(flags, "provider"),
+                    providerId: flagStr(flags, "provider") || subcommand,
                     binDir: flagStr(flags, "bin-dir"),
                 });
                 break;

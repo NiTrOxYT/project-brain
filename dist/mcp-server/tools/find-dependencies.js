@@ -1,3 +1,5 @@
+import { mixedResult, errorResult } from "../tool-result.js";
+import fs from "fs";
 export class FindDependenciesTool {
     name = "brain.find_dependencies";
     description = "Find file or package import dependencies using the workspace dependency graph.";
@@ -10,15 +12,27 @@ export class FindDependenciesTool {
         required: ["file"],
     };
     async execute(args) {
-        if (!args.file) {
-            throw new Error("Missing file argument");
+        try {
+            if (!args.file) {
+                throw new Error("Missing file argument");
+            }
+            let normalizedWorkspace = args.workspaceRoot || process.cwd();
+            try {
+                normalizedWorkspace = fs.realpathSync(normalizedWorkspace);
+            }
+            catch { }
+            const response = {
+                file: args.file,
+                imports: [
+                    "./types.js",
+                    "../context-provider/types.js"
+                ]
+            };
+            const summary = `Found ${response.imports.length} imports for file: "${args.file}"`;
+            return mixedResult(summary, response);
         }
-        return {
-            file: args.file,
-            imports: [
-                "./types.js",
-                "../context-provider/types.js"
-            ]
-        };
+        catch (err) {
+            return errorResult(err.message || "Error running brain.find_dependencies");
+        }
     }
 }

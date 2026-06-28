@@ -19,20 +19,24 @@ export class SnapshotCollector {
         const [
             indexData,
             symbolsData,
+            importsData,
             relationshipsData,
             graphData,
             architectureData,
             evolutionData,
             learningData,
+            semanticMemoryData,
             filePaths
         ] = await Promise.all([
             this.loadJsonSafe(path.join(this.workspaceRoot, "index", "index.json")),
             this.loadJsonSafe(path.join(this.workspaceRoot, "index", "symbols.json")),
+            this.loadJsonSafe(path.join(this.workspaceRoot, "index", "imports.json")),
             this.loadJsonSafe(path.join(this.workspaceRoot, "index", "relationships.json")),
             this.loadJsonSafe(path.join(this.workspaceRoot, "graph", "graph.json")),
             this.loadArchitecture(),
             this.loadEvolution(),
             this.loadLearning(),
+            this.loadJsonSafe(path.join(this.workspaceRoot, "index", "semantic.json")),
             this.collectFilePaths()
         ]);
 
@@ -41,11 +45,13 @@ export class SnapshotCollector {
             workspaceRoot: this.workspaceRoot,
             indexData,
             symbolsData,
+            importsData,
             relationshipsData,
             graphData,
             architectureData,
             evolutionData,
             learningData,
+            semanticMemoryData,
             filePaths
         };
     }
@@ -53,35 +59,48 @@ export class SnapshotCollector {
     // ─── Loaders ─────────────────────────────────────────────────────────────
 
     private async loadArchitecture(): Promise<any> {
-        // Try primary path first
-        const primary = path.join(this.workspaceRoot, "memory", "architecture.json");
+        // Try projectRoot/memory/architecture.json, fallback to workspaceRoot/memory/architecture.json
+        let primary = path.join(this.projectRoot, "memory", "architecture.json");
+        let raw = "";
         try {
-            const raw = await fs.readFile(primary, "utf8");
-            return JSON.parse(raw);
+            raw = await fs.readFile(primary, "utf8");
         } catch {
-            // Scan memory directory for any JSON files
             try {
-                const memDir = path.join(this.workspaceRoot, "memory");
-                const files = await fs.readdir(memDir);
+                primary = path.join(this.workspaceRoot, "memory", "architecture.json");
+                raw = await fs.readFile(primary, "utf8");
+            } catch {
+                // Scan memory directory for any JSON files (projectRoot first, then workspaceRoot)
+                const directoriesToTry = [
+                    path.join(this.projectRoot, "memory"),
+                    path.join(this.workspaceRoot, "memory")
+                ];
                 const entries: any[] = [];
-                for (const file of files) {
-                    if (!file.endsWith(".json") || file === "metadata.json") continue;
+                for (const memDir of directoriesToTry) {
                     try {
-                        const raw = await fs.readFile(path.join(memDir, file), "utf8");
-                        const parsed = JSON.parse(raw);
-                        if (parsed.entries) {
-                            entries.push(...parsed.entries);
-                        } else if (Array.isArray(parsed)) {
-                            entries.push(...parsed);
+                        const files = await fs.readdir(memDir);
+                        for (const file of files) {
+                            if (!file.endsWith(".json") || file === "metadata.json") continue;
+                            try {
+                                const fileRaw = await fs.readFile(path.join(memDir, file), "utf8");
+                                const parsed = JSON.parse(fileRaw);
+                                if (parsed.entries) {
+                                    entries.push(...parsed.entries);
+                                } else if (Array.isArray(parsed)) {
+                                    entries.push(...parsed);
+                                }
+                            } catch {
+                                // skip individual file failures
+                            }
                         }
-                    } catch {
-                        // skip individual file failures
-                    }
+                    } catch {}
                 }
                 return { entries };
-            } catch {
-                return { entries: [] };
             }
+        }
+        try {
+            return JSON.parse(raw);
+        } catch {
+            return { entries: [] };
         }
     }
 

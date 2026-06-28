@@ -154,16 +154,16 @@ export class SymbolsService {
 
             }
 
+            const ext = path.extname(fullPath).toLowerCase();
             if (
-
-                !fullPath.endsWith(".ts") &&
-
-                !fullPath.endsWith(".tsx")
-
+                ext !== ".ts" &&
+                ext !== ".tsx" &&
+                ext !== ".js" &&
+                ext !== ".jsx" &&
+                ext !== ".mjs" &&
+                ext !== ".cjs"
             ) {
-
                 continue;
-
             }
 
             const parsed =

@@ -1,0 +1,410 @@
+{
+  "generatedAt": "2026-06-28T11:15:20.201Z",
+  "nodes": [
+    {
+      "id": "architecture-retriever.ts",
+      "type": "file"
+    },
+    {
+      "id": "budget.ts",
+      "type": "file"
+    },
+    {
+      "id": "cache.ts",
+      "type": "file"
+    },
+    {
+      "id": "compressor.ts",
+      "type": "file"
+    },
+    {
+      "id": "dependency-expander.ts",
+      "type": "file"
+    },
+    {
+      "id": "diagnostics.ts",
+      "type": "file"
+    },
+    {
+      "id": "graph-traverser.ts",
+      "type": "file"
+    },
+    {
+      "id": "index.ts",
+      "type": "file"
+    },
+    {
+      "id": "learning-retriever.ts",
+      "type": "file"
+    },
+    {
+      "id": "metrics.ts",
+      "type": "file"
+    },
+    {
+      "id": "ranking.ts",
+      "type": "file"
+    },
+    {
+      "id": "relationship-retriever.ts",
+      "type": "file"
+    },
+    {
+      "id": "retrieval-planner.ts",
+      "type": "file"
+    },
+    {
+      "id": "service.ts",
+      "type": "file"
+    },
+    {
+      "id": "symbol-retriever.ts",
+      "type": "file"
+    },
+    {
+      "id": "types.ts",
+      "type": "file"
+    },
+    {
+      "id": "validator.ts",
+      "type": "file"
+    }
+  ],
+  "edges": [
+    {
+      "from": "architecture-retriever.ts",
+      "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "budget.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "budget.ts",
+      "to": "./errors.js",
+      "type": "imports"
+    },
+    {
+      "from": "cache.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "cache.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "cache.ts",
+      "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "cache.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "cache.ts",
+      "to": "../kernel/paths.js",
+      "type": "imports"
+    },
+    {
+      "from": "compressor.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "dependency-expander.ts",
+      "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "diagnostics.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "graph-traverser.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "graph-traverser.ts",
+      "to": "./errors.js",
+      "type": "imports"
+    },
+    {
+      "from": "graph-traverser.ts",
+      "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./service.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./query-parser.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./retrieval-planner.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./graph-traverser.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./dependency-expander.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./symbol-retriever.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./relationship-retriever.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./architecture-retriever.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./learning-retriever.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./ranking.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./budget.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./compressor.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./cache.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./validator.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./metrics.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./diagnostics.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "index.ts",
+      "to": "./errors.js",
+      "type": "imports"
+    },
+    {
+      "from": "learning-retriever.ts",
+      "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "metrics.ts",
+      "to": "fs/promises",
+      "type": "imports"
+    },
+    {
+      "from": "metrics.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "metrics.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "metrics.ts",
+      "to": "../kernel/paths.js",
+      "type": "imports"
+    },
+    {
+      "from": "ranking.ts",
+      "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "ranking.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "ranking.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "relationship-retriever.ts",
+      "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "retrieval-planner.ts",
+      "to": "./query-parser.js",
+      "type": "imports"
+    },
+    {
+      "from": "retrieval-planner.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "crypto",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "path",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "../context-compiler/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "../context-sync/service.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./types.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./query-parser.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./retrieval-planner.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./graph-traverser.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./dependency-expander.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./symbol-retriever.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./relationship-retriever.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./architecture-retriever.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./learning-retriever.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./ranking.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./budget.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./compressor.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./cache.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./validator.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./metrics.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "./diagnostics.js",
+      "type": "imports"
+    },
+    {
+      "from": "service.ts",
+      "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "symbol-retriever.ts",
+      "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "types.ts",
+      "to": "../context-compiler/types.js",
+      "type": "imports"
+    },
+    {
+      "from": "validator.ts",
+      "to": "./types.js",
+      "type": "imports"
+    }
+  ]
+}

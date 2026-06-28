@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import path from "path";
 import ts from "typescript";
 
 import { ParsedSourceFile } from "./types.js";
@@ -26,9 +27,13 @@ export class AstService {
 
                 true,
 
-                file.endsWith(".tsx")
-                    ? ts.ScriptKind.TSX
-                    : ts.ScriptKind.TS
+                (() => {
+                    const ext = path.extname(file).toLowerCase();
+                    if (ext === ".tsx") return ts.ScriptKind.TSX;
+                    if (ext === ".jsx") return ts.ScriptKind.JSX;
+                    if (ext === ".js" || ext === ".mjs" || ext === ".cjs") return ts.ScriptKind.JS;
+                    return ts.ScriptKind.TS;
+                })()
 
             );
 

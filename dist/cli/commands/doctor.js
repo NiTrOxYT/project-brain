@@ -224,95 +224,70 @@ export async function runDoctor(opts, subcommand) {
     }
 }
 export async function runDoctorProviders(opts) {
-    const { ProviderResolverService } = await import("../../ai-gateway/provider-resolver.js");
-    const { AdapterRegistry } = await import("../../ai-gateway/adapter-registry.js");
-    const { InvocationMode } = await import("../../ai-gateway/invocation-classifier.js");
-    const { spawn } = await import("child_process");
-    const resolver = new ProviderResolverService();
-    const resolutions = await resolver.discover();
+    const { ProviderDiscoveryEngine } = await import("../../provider-bridge/discovery.js");
+    const { ProviderVerificationEngine } = await import("../../provider-bridge/provider-verifier.js");
+    const { ProviderSchemaRegistry } = await import("../../provider-bridge/schema-registry.js");
+    const { ProviderConfigurator } = await import("../../provider-bridge/provider-configurator.js");
+    const { green, red, yellow, cyan, bold } = await import("../utils/colors.js");
+    const schemas = ProviderSchemaRegistry.list();
     if (opts.json) {
-        printJson({ ok: true, resolutions });
+        const diagnostics = [];
+        for (const s of schemas) {
+            const disc = ProviderDiscoveryEngine.discover(s.providerId, opts.workspace);
+            const res = await ProviderVerificationEngine.verify(s.providerId, opts.workspace);
+            diagnostics.push({ providerId: s.providerId, discovery: disc, verification: res });
+        }
+        printJson({ ok: true, diagnostics });
         return;
     }
-    logger.log("🧠 \x1b[1mProject Brain — Doctor Providers Diagnostics\x1b[0m\n");
-    for (const res of resolutions) {
-        const adapter = AdapterRegistry.lookup(res.providerId);
-        // 1. Wrapper exists
-        const wrapperExists = res.wrapperPath && fs.existsSync(res.wrapperPath);
-        // 2. Provider exists
-        const providerExists = res.executableExists;
-        // 3. Wrapper executable
-        let wrapperExecutable = false;
-        if (res.wrapperPath) {
-            try {
-                fs.accessSync(res.wrapperPath, fs.constants.F_OK | fs.constants.X_OK);
-                wrapperExecutable = true;
-            }
-            catch { }
+    logger.log("🧠 \x1b[1mProject Brain — Provider Diagnostics Report\x1b[0m\n");
+    for (const s of schemas) {
+        const disc = ProviderDiscoveryEngine.discover(s.providerId, opts.workspace);
+        const res = await ProviderVerificationEngine.verify(s.providerId, opts.workspace);
+        logger.log(`${bold(s.providerId.toUpperCase())}`);
+        if (!disc) {
+            logger.log(`    Status: ${red("Not Installed")}`);
+            logger.log(`    Remediation: Install the provider tool on your system.\n`);
+            continue;
         }
-        // 4. Provider executable
-        const providerExecutable = res.executable;
-        // 5. Manifest checksum
-        let manifestChecksum = false;
-        if (res.manifestPath && fs.existsSync(res.manifestPath)) {
-            try {
-                const manifest = JSON.parse(fs.readFileSync(res.manifestPath, "utf8"));
-                const record = manifest.wrappers?.[res.providerId];
-                if (record && record.checksum) {
-                    manifestChecksum = true;
+        const activeConfigRes = ProviderConfigurator.getActiveConfigPath(s.providerId, opts.workspace);
+        const minVer = s.manifest.compatibility.minimumVersion || "none";
+        const maxVer = s.manifest.compatibility.maximumTestedVersion || "none";
+        // Find unsupported capabilities
+        const unsupportedCaps = [];
+        for (const [k, v] of Object.entries(s.manifest.capabilities)) {
+            if (v === false) {
+                unsupportedCaps.push(k.replace("supports", ""));
+            }
+        }
+        logger.log(`    Version                  : ${disc.version}`);
+        logger.log(`    Supported Version Range  : min: ${minVer}, max: ${maxVer}`);
+        logger.log(`    Configuration Mode       : ${disc.activeConfiguration}`);
+        logger.log(`    Configuration Source     : ${activeConfigRes.path}`);
+        logger.log(`    Selected MCP Transport   : ${disc.supportedTransports.join(" or ") || "none"}`);
+        logger.log(`    Verification Stages:`);
+        logger.log(`        Installation         : ${res.stages.installation === "Passed" ? green("Passed") : red("Failed")}`);
+        logger.log(`        Configuration        : ${res.stages.configuration === "Passed" ? green("Passed") : red("Failed")}`);
+        logger.log(`        Connectivity         : ${res.stages.connectivity === "Passed" ? green("Passed") : res.stages.connectivity === "Skipped" ? cyan("Skipped") : red("Failed")}`);
+        logger.log(`        Behavioral           : ${res.stages.behavioral === "Passed" ? green("Passed") : res.stages.behavioral === "Skipped" ? cyan("Skipped") : red("Failed")}`);
+        logger.log(`    Unsupported Capabilities : ${unsupportedCaps.join(", ") || "none"}`);
+        logger.log(`    Last Verification        : ${new Date().toISOString()}`);
+        logger.log(`    Result                   : ${res.state === "Brain Optimized" || res.state === "Brain Enabled" ? green(res.state) : red(res.state)}`);
+        if (res.errors.length > 0) {
+            logger.log(`    Suggested Remediation:`);
+            for (const err of res.errors) {
+                logger.log(`      - ${yellow(err)}`);
+                if (err.includes("installation")) {
+                    logger.log(`        👉 Install/Update ${s.providerId} or ensure it is accessible in PATH.`);
+                }
+                else if (err.includes("registration") || err.includes("missing")) {
+                    logger.log(`        👉 Run: ${cyan(`brain provider configure ${s.providerId}`)} to setup MCP configuration.`);
+                }
+                else if (err.includes("handshake") || err.includes("spawn")) {
+                    logger.log(`        👉 Run: ${cyan(`brain provider repair ${s.providerId}`)} to repair wrapper scripts.`);
                 }
             }
-            catch { }
         }
-        // 6. Dispatch classification
-        const dec1 = adapter.classifyInvocation(["--version"]);
-        const dec2 = adapter.classifyInvocation([]);
-        const classificationOk = dec1.mode === InvocationMode.Passthrough && dec2.mode === InvocationMode.Gateway;
-        // 7. Passthrough test
-        const passthroughTest = dec1.mode === InvocationMode.Passthrough;
-        // 8. Gateway test
-        const gatewayTest = dec2.mode === InvocationMode.Gateway;
-        // 9. TTY compatibility
-        const ttyCompatibility = adapter.supportsInteractiveTTY();
-        // 10. Exit code forwarding
-        const exitCodeForwarding = true; // Handled natively in WrapperDispatcher
-        // 11. Signal forwarding
-        const signalForwarding = true; // Handled natively in WrapperDispatcher
-        // 12. Version separation
-        const versionSeparation = !!res.wrapperVersion && !!res.providerVersion;
-        // 13. Wrapper transparency
-        const wrapperTransparency = true; // Passthrough mode runs real binary directly
-        const isReady = wrapperExists && providerExists && wrapperExecutable && providerExecutable && classificationOk;
-        logger.log(`Provider`);
-        logger.log(`    ${adapter.displayName}`);
-        logger.log(`Wrapper`);
-        logger.log(`    ${wrapperExists ? "✓" : "✗"}`);
-        logger.log(`Provider Binary`);
-        logger.log(`    ${providerExists ? "✓" : "✗"}`);
-        logger.log(`Wrapper Executable`);
-        logger.log(`    ${wrapperExecutable ? "✓" : "✗"}`);
-        logger.log(`Provider Executable`);
-        logger.log(`    ${providerExecutable ? "✓" : "✗"}`);
-        logger.log(`Manifest Checksum`);
-        logger.log(`    ${manifestChecksum ? "✓" : "✗"}`);
-        logger.log(`Dispatch Classification`);
-        logger.log(`    ${classificationOk ? "✓" : "✗"}`);
-        logger.log(`Passthrough Test`);
-        logger.log(`    ${passthroughTest ? "✓" : "✗"}`);
-        logger.log(`Gateway Test`);
-        logger.log(`    ${gatewayTest ? "✓" : "✗"}`);
-        logger.log(`TTY Compatibility`);
-        logger.log(`    ${ttyCompatibility ? "✓" : "✗"}`);
-        logger.log(`Exit Code Forwarding`);
-        logger.log(`    ${exitCodeForwarding ? "✓" : "✗"}`);
-        logger.log(`Signal Forwarding`);
-        logger.log(`    ${signalForwarding ? "✓" : "✗"}`);
-        logger.log(`Version Separation`);
-        logger.log(`    ${versionSeparation ? "✓" : "✗"}`);
-        logger.log(`Wrapper Transparency`);
-        logger.log(`    ${wrapperTransparency ? "✓" : "✗"}`);
-        logger.log(`Result`);
-        logger.log(`    ${isReady ? "\x1b[32mREADY\x1b[0m" : "\x1b[31mFAILED\x1b[0m"}`);
         logger.log("");
     }
 }

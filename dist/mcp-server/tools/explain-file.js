@@ -1,3 +1,5 @@
+import { mixedResult, errorResult } from "../tool-result.js";
+import fs from "fs";
 export class ExplainFileTool {
     name = "brain.explain_file";
     description = "Get snapshot explanations and documentation context for a single file.";
@@ -10,12 +12,23 @@ export class ExplainFileTool {
         required: ["path"],
     };
     async execute(args) {
-        if (!args.path) {
-            throw new Error("Missing path argument");
+        try {
+            if (!args.path) {
+                throw new Error("Missing path argument");
+            }
+            let normalizedWorkspace = args.workspaceRoot || process.cwd();
+            try {
+                normalizedWorkspace = fs.realpathSync(normalizedWorkspace);
+            }
+            catch { }
+            const explanation = `File at ${args.path} acts as an interface adapter layer connecting transports or services.`;
+            return mixedResult(explanation, {
+                path: args.path,
+                explanation
+            });
         }
-        return {
-            path: args.path,
-            explanation: `File at ${args.path} acts as an interface adapter layer connecting transports or services.`
-        };
+        catch (err) {
+            return errorResult(err.message || "Error running brain.explain_file");
+        }
     }
 }

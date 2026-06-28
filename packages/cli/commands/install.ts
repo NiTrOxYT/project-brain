@@ -42,7 +42,7 @@ export async function runInstall(
 
         if (cmdOpts.uninstall) {
             for (const disc of result.discovered) {
-                ProviderConfigurator.unconfigure(disc.id);
+                await ProviderConfigurator.unconfigure(disc.id);
                 ProviderPolicyInstaller.removePolicy(disc.id);
             }
             if (opts.json) {
@@ -63,7 +63,7 @@ export async function runInstall(
                 if (!opts.quiet) {
                     logger.log(`Configuring Brain MCP for provider: ${disc.id}...`);
                 }
-                const confRes = ProviderConfigurator.configure(disc.id, { transport: "stdio" });
+                const confRes = await ProviderConfigurator.configure(disc.id, { transport: "stdio" });
                 if (!confRes.success) {
                     throw new Error(`Failed to configure MCP registration for ${disc.id}: ${confRes.error}`);
                 }

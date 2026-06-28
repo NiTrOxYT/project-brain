@@ -1,0 +1,939 @@
+{
+  "queryFingerprint": "656a350f53b35d68060cf85b20b6ba72c46fbabc1330ad1d35012f0d24af0960_401f40d3eb4c6170019b61833843a69772c3b3aba9a6c529ce2d7966d7793c0e",
+  "snapshotId": "656a350f53b35d68060cf85b20b6ba72c46fbabc1330ad1d35012f0d24af0960",
+  "retrievalPackage": {
+    "retrievalId": "retrieval-e2b4ea8b887b",
+    "snapshotId": "656a350f53b35d68060cf85b20b6ba72c46fbabc1330ad1d35012f0d24af0960",
+    "sections": [
+      {
+        "id": "architecture-memory",
+        "name": "Architecture Memory",
+        "kind": "architecture-memory",
+        "content": "[{\"category\":\"Language\",\"title\":\"Primary Languages\",\"description\":\"TypeScript (530 files), Markdown (63 files), JavaScript (57 files), JSON (8 files), Python (7 files)\",\"tags\":[\"Markdown\",\"Python\",\"TOML\",\"YAML\",\"JSON\"]},{\"category\":\"Modules\",\"title\":\"Packages / Modules\",\"description\":\"packages/context-retrieval\",\"tags\":[\"monorepo\",\"packages\"]},{\"category\":\"Overview\",\"title\":\"Workspace Size\",\"description\":\"673 tracked files across the workspace\",\"tags\":[\"overview\",\"size\"]},{\"category\":\"Structure\",\"title\":\"Top-level Directories\",\"description\":\"packages/ (532 files), .agent/ (126 files), spec/ (3 files), .test-workspace-lifecycle/ (1 files), learning/ (1 files), scratch/ (1 files)\",\"tags\":[\".agent\",\".test-workspace-lifecycle\",\"learning\",\"packages\",\"scratch\",\"spec\"]},{\"category\":\"Symbols\",\"title\":\"Exported Symbol Types\",\"description\":\"12991 variables, 1930 functions, 1195 methods, 691 propertys, 416 classs, function Object() { [native code] }11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 constructors\",\"tags\":[\"function\",\"variable\",\"method\",\"class\",\"constructor\",\"interface\"]}]",
+        "priority": 30,
+        "estimatedTokens": 326,
+        "reason": "architecture"
+      },
+      {
+        "id": "repository-evolution",
+        "name": "Repository Evolution",
+        "kind": "repository-evolution",
+        "content": "[]",
+        "priority": 70,
+        "estimatedTokens": 1,
+        "reason": "evolution-history"
+      }
+    ],
+    "candidates": [
+      {
+        "path": ".agent/skills/brandkit/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/brandkit/SKILL.md",
+          "relativePath": "../.agent/skills/brandkit/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 15992,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/cavecrew/README.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/cavecrew/README.md",
+          "relativePath": "../.agent/skills/cavecrew/README.md",
+          "extension": ".md",
+          "sizeBytes": 2009,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/cavecrew/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/cavecrew/SKILL.md",
+          "relativePath": "../.agent/skills/cavecrew/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 3936,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-commit/README.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-commit/README.md",
+          "relativePath": "../.agent/skills/caveman-commit/README.md",
+          "extension": ".md",
+          "sizeBytes": 1226,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-commit/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-commit/SKILL.md",
+          "relativePath": "../.agent/skills/caveman-commit/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 2588,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/README.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/README.md",
+          "relativePath": "../.agent/skills/caveman-compress/README.md",
+          "extension": ".md",
+          "sizeBytes": 5305,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/scripts/__init__.py",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/scripts/__init__.py",
+          "relativePath": "../.agent/skills/caveman-compress/scripts/__init__.py",
+          "extension": ".py",
+          "sizeBytes": 224,
+          "linesOfCode": 0,
+          "language": "Python",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/scripts/__main__.py",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/scripts/__main__.py",
+          "relativePath": "../.agent/skills/caveman-compress/scripts/__main__.py",
+          "extension": ".py",
+          "sizeBytes": 30,
+          "linesOfCode": 0,
+          "language": "Python",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/scripts/benchmark.py",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/scripts/benchmark.py",
+          "relativePath": "../.agent/skills/caveman-compress/scripts/benchmark.py",
+          "extension": ".py",
+          "sizeBytes": 2425,
+          "linesOfCode": 0,
+          "language": "Python",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/scripts/cli.py",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/scripts/cli.py",
+          "relativePath": "../.agent/skills/caveman-compress/scripts/cli.py",
+          "extension": ".py",
+          "sizeBytes": 2089,
+          "linesOfCode": 0,
+          "language": "Python",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/scripts/compress.py",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/scripts/compress.py",
+          "relativePath": "../.agent/skills/caveman-compress/scripts/compress.py",
+          "extension": ".py",
+          "sizeBytes": 13146,
+          "linesOfCode": 0,
+          "language": "Python",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/scripts/detect.py",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/scripts/detect.py",
+          "relativePath": "../.agent/skills/caveman-compress/scripts/detect.py",
+          "extension": ".py",
+          "sizeBytes": 4064,
+          "linesOfCode": 0,
+          "language": "Python",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/scripts/validate.py",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/scripts/validate.py",
+          "relativePath": "../.agent/skills/caveman-compress/scripts/validate.py",
+          "extension": ".py",
+          "sizeBytes": 5752,
+          "linesOfCode": 0,
+          "language": "Python",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/SECURITY.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/SECURITY.md",
+          "relativePath": "../.agent/skills/caveman-compress/SECURITY.md",
+          "extension": ".md",
+          "sizeBytes": 1557,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-compress/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-compress/SKILL.md",
+          "relativePath": "../.agent/skills/caveman-compress/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 4535,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-help/README.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-help/README.md",
+          "relativePath": "../.agent/skills/caveman-help/README.md",
+          "extension": ".md",
+          "sizeBytes": 976,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-help/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-help/SKILL.md",
+          "relativePath": "../.agent/skills/caveman-help/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 2300,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-review/README.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-review/README.md",
+          "relativePath": "../.agent/skills/caveman-review/README.md",
+          "extension": ".md",
+          "sizeBytes": 1210,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-review/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-review/SKILL.md",
+          "relativePath": "../.agent/skills/caveman-review/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 2739,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-stats/README.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-stats/README.md",
+          "relativePath": "../.agent/skills/caveman-stats/README.md",
+          "extension": ".md",
+          "sizeBytes": 936,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman-stats/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman-stats/SKILL.md",
+          "relativePath": "../.agent/skills/caveman-stats/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 607,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman/README.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman/README.md",
+          "relativePath": "../.agent/skills/caveman/README.md",
+          "extension": ".md",
+          "sizeBytes": 1891,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/caveman/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/caveman/SKILL.md",
+          "relativePath": "../.agent/skills/caveman/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 5009,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/design-taste-frontend-v1/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/design-taste-frontend-v1/SKILL.md",
+          "relativePath": "../.agent/skills/design-taste-frontend-v1/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 21195,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/design-taste-frontend/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/design-taste-frontend/SKILL.md",
+          "relativePath": "../.agent/skills/design-taste-frontend/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 87253,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/emil-design-eng/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/emil-design-eng/SKILL.md",
+          "relativePath": "../.agent/skills/emil-design-eng/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 27335,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/full-output-enforcement/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/full-output-enforcement/SKILL.md",
+          "relativePath": "../.agent/skills/full-output-enforcement/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 2592,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/gpt-taste/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/gpt-taste/SKILL.md",
+          "relativePath": "../.agent/skills/gpt-taste/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 7857,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/high-end-visual-design/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/high-end-visual-design/SKILL.md",
+          "relativePath": "../.agent/skills/high-end-visual-design/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 10561,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/image-to-code/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/image-to-code/SKILL.md",
+          "relativePath": "../.agent/skills/image-to-code/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 36442,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/imagegen-frontend-mobile/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/imagegen-frontend-mobile/SKILL.md",
+          "relativePath": "../.agent/skills/imagegen-frontend-mobile/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 40326,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/imagegen-frontend-web/SKILL.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/imagegen-frontend-web/SKILL.md",
+          "relativePath": "../.agent/skills/imagegen-frontend-web/SKILL.md",
+          "extension": ".md",
+          "sizeBytes": 36854,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/agents/impeccable_asset_producer.toml",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/agents/impeccable_asset_producer.toml",
+          "relativePath": "../.agent/skills/impeccable/agents/impeccable_asset_producer.toml",
+          "extension": ".toml",
+          "sizeBytes": 8258,
+          "linesOfCode": 0,
+          "language": "TOML",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+          "relativePath": "../.agent/skills/impeccable/agents/impeccable_manual_edit_applier.toml",
+          "extension": ".toml",
+          "sizeBytes": 7116,
+          "linesOfCode": 0,
+          "language": "TOML",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/agents/openai.yaml",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/agents/openai.yaml",
+          "relativePath": "../.agent/skills/impeccable/agents/openai.yaml",
+          "extension": ".yaml",
+          "sizeBytes": 235,
+          "linesOfCode": 0,
+          "language": "YAML",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/adapt.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/adapt.md",
+          "relativePath": "../.agent/skills/impeccable/reference/adapt.md",
+          "extension": ".md",
+          "sizeBytes": 10124,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/animate.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/animate.md",
+          "relativePath": "../.agent/skills/impeccable/reference/animate.md",
+          "extension": ".md",
+          "sizeBytes": 10466,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/audit.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/audit.md",
+          "relativePath": "../.agent/skills/impeccable/reference/audit.md",
+          "extension": ".md",
+          "sizeBytes": 7276,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/bolder.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/bolder.md",
+          "relativePath": "../.agent/skills/impeccable/reference/bolder.md",
+          "extension": ".md",
+          "sizeBytes": 6571,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/brand.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/brand.md",
+          "relativePath": "../.agent/skills/impeccable/reference/brand.md",
+          "extension": ".md",
+          "sizeBytes": 10477,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/clarify.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/clarify.md",
+          "relativePath": "../.agent/skills/impeccable/reference/clarify.md",
+          "extension": ".md",
+          "sizeBytes": 10646,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/codex.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/codex.md",
+          "relativePath": "../.agent/skills/impeccable/reference/codex.md",
+          "extension": ".md",
+          "sizeBytes": 7002,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/colorize.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/colorize.md",
+          "relativePath": "../.agent/skills/impeccable/reference/colorize.md",
+          "extension": ".md",
+          "sizeBytes": 13568,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/craft.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/craft.md",
+          "relativePath": "../.agent/skills/impeccable/reference/craft.md",
+          "extension": ".md",
+          "sizeBytes": 11944,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/critique.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/critique.md",
+          "relativePath": "../.agent/skills/impeccable/reference/critique.md",
+          "extension": ".md",
+          "sizeBytes": 39483,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/delight.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/delight.md",
+          "relativePath": "../.agent/skills/impeccable/reference/delight.md",
+          "extension": ".md",
+          "sizeBytes": 9827,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/distill.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/distill.md",
+          "relativePath": "../.agent/skills/impeccable/reference/distill.md",
+          "extension": ".md",
+          "sizeBytes": 5740,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/document.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/document.md",
+          "relativePath": "../.agent/skills/impeccable/reference/document.md",
+          "extension": ".md",
+          "sizeBytes": 27949,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/extract.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/extract.md",
+          "relativePath": "../.agent/skills/impeccable/reference/extract.md",
+          "extension": ".md",
+          "sizeBytes": 3431,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      },
+      {
+        "path": ".agent/skills/impeccable/reference/harden.md",
+        "score": 5,
+        "reasons": [
+          "transitive-dependency"
+        ],
+        "file": {
+          "path": ".agent/skills/impeccable/reference/harden.md",
+          "relativePath": "../.agent/skills/impeccable/reference/harden.md",
+          "extension": ".md",
+          "sizeBytes": 8594,
+          "linesOfCode": 0,
+          "language": "Markdown",
+          "lastModified": "1970-01-01T00:00:00.000Z",
+          "contentHash": "",
+          "changeKind": "unchanged"
+        }
+      }
+    ],
+    "graph": {
+      "nodes": [],
+      "edges": [],
+      "topologicalOrder": []
+    },
+    "symbols": [],
+    "dependencies": [],
+    "relationships": []
+  },
+  "storedAt": "2026-06-28T12:20:26.463Z"
+}
