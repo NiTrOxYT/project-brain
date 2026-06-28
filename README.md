@@ -1,5 +1,9 @@
 <div align="center">
 
+
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/81655eb1-b91e-4576-ab97-1afed6ebd931" />
+
+
 # 🧠 Project Brain
 
 ### Semantic Context Engine for AI Coding Agents
