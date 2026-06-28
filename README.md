@@ -11,7 +11,7 @@ Compile your codebase into a semantic knowledge graph that AI assistants can que
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-20+-green)
 ![MCP](https://img.shields.io/badge/MCP-Compatible-purple)
-![License](https://img.shields.io/github/license/USERNAME/project-brain)
+![License](https://img.shields.io/github/license/NiTrOxYT/project-brain)
 ![Tests](https://img.shields.io/github/actions/workflow/status/USERNAME/project-brain/test.yml)
 
 [Documentation](#documentation) •
