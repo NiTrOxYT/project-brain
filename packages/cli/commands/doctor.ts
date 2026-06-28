@@ -6,6 +6,7 @@
 import fs from "fs";
 import path from "path";
 import { GlobalOptions } from "../main.js";
+import "../../ai-gateway/adapters/index.js";
 import { logger } from "../utils/logger.js";
 import { printJson } from "../utils/json.js";
 import { brainDir, isBrainInitialized } from "../utils/paths.js";

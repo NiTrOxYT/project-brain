@@ -380,13 +380,26 @@ export async function main(argv = process.argv.slice(2)): Promise<void> {
     const parsed = parseArgs(argv);
     const { command, subcommand, flags, positionals } = parsed;
 
+    // ── Early MCP stdio detection ─────────────────────────────────────────────
+    // When running as an MCP stdio server, stdout is exclusively for JSON-RPC.
+    // Suppress all other output before any other initialization runs.
+    const isMcpStdio = (argv[0] === "mcp" && argv[1] === "stdio") ||
+                       (process.env["BRAIN_MCP_STDIO"] === "1");
+    if (isMcpStdio) {
+        setColorEnabled(false);
+        setLogLevel("silent");
+        setJsonMode(false);
+    }
+
     // Apply global options immediately
     if (flag(flags, "no-color")) setColorEnabled(false);
     const json    = flag(flags, "json");
     const verbose = flag(flags, "verbose");
     const quiet   = flag(flags, "quiet");
-    setJsonMode(json);
-    setLogLevel(verbose ? "verbose" : quiet ? "quiet" : "normal");
+    if (!isMcpStdio) {
+        setJsonMode(json);
+        setLogLevel(verbose ? "verbose" : quiet ? "quiet" : "normal");
+    }
 
     if (flag(flags, "version")) {
         if (json) process.stdout.write(JSON.stringify({ version: VERSION }) + "\n");
@@ -539,11 +552,13 @@ export async function main(argv = process.argv.slice(2)): Promise<void> {
 
             case "provider": {
                 if (!subcommand) {
-                    process.stdout.write("Usage: brain provider <list|health|benchmark>\n");
+                    process.stdout.write("Usage: brain provider <list|health|benchmark|configure|verify|status> [--provider <name>]\n");
                     process.exit(EXIT_VALIDATION);
                 }
                 const { runProvider } = await import("./commands/provider.js");
-                await runProvider(opts, subcommand as any, {});
+                await runProvider(opts, subcommand as any, {
+                    provider: flagStr(flags, "provider"),
+                });
                 break;
             }
 
@@ -628,6 +643,33 @@ export async function main(argv = process.argv.slice(2)): Promise<void> {
                 const sessionId = positionals[1];
                 const { runExplain } = await import("./commands/explain.js");
                 await runExplain(opts, sessionId);
+                break;
+            }
+
+            case "mcp": {
+                if (!subcommand) {
+                    process.stdout.write("Usage: brain mcp <start|stop|status|tools|stdio|verify> [options]\n");
+                    process.exit(EXIT_VALIDATION);
+                }
+                const { runMcpStart, runMcpStop, runMcpStatus, runMcpTools, runMcpStdio, runMcpVerify } = await import("./commands/mcp.js");
+                const port = flagNum(flags, "port") ?? undefined;
+                
+                if (subcommand === "start") {
+                    await runMcpStart(opts, { port });
+                } else if (subcommand === "stdio") {
+                    await runMcpStdio(opts);
+                } else if (subcommand === "verify") {
+                    await runMcpVerify(opts);
+                } else if (subcommand === "stop") {
+                    await runMcpStop(opts, {});
+                } else if (subcommand === "status") {
+                    await runMcpStatus(opts, {});
+                } else if (subcommand === "tools") {
+                    await runMcpTools(opts, {});
+                } else {
+                    process.stdout.write(`Unknown mcp subcommand: ${subcommand}\n`);
+                    process.exit(EXIT_VALIDATION);
+                }
                 break;
             }
 

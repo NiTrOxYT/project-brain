@@ -15,7 +15,11 @@ export class LaunchWrapperIntegration {
             workspaceBridge: false,
             streaming: true,
             interactiveTTY: true,
-            contextProvider: false
+            contextProvider: capabilities.contextProvider || false,
+            supportsMcp: capabilities.supportsMcp || false,
+            supportsToolCalling: capabilities.supportsToolCalling || false,
+            supportsPlugins: capabilities.supportsPlugins || false,
+            supportsSdk: capabilities.supportsSdk || false
         };
     }
     async connect(session) {
@@ -25,6 +29,13 @@ export class LaunchWrapperIntegration {
         this.session = undefined;
     }
     async requestContext(request) {
+        if (this.effectiveCapabilities.contextProvider) {
+            const { McpToolRegistry } = await import("../mcp-server/index.js");
+            const tool = McpToolRegistry.get("brain.get_context");
+            if (tool) {
+                return tool.execute(request);
+            }
+        }
         const { ContextProvider } = await import("../context-provider/provider.js");
         const provider = new ContextProvider(request.workspaceRoot, request.workspaceRoot);
         return provider.getContext(request);
@@ -47,7 +58,11 @@ export class LaunchWrapperDescriptor {
             workspaceBridge: false,
             mcpBridge: false,
             apiBridge: false,
-            contextProvider: false
+            contextProvider: false,
+            supportsMcp: false,
+            supportsToolCalling: false,
+            supportsPlugins: false,
+            supportsSdk: false
         };
     }
     async supports(environment) {

@@ -4,6 +4,7 @@
 // ──────────────────────────────────────────────────────────────────────────────
 import fs from "fs";
 import path from "path";
+import "../../ai-gateway/adapters/index.js";
 import { logger } from "../utils/logger.js";
 import { printJson } from "../utils/json.js";
 import { isBrainInitialized } from "../utils/paths.js";

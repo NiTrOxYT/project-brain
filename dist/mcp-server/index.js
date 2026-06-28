@@ -1,0 +1,20 @@
+export * from "./types.js";
+export * from "./registry.js";
+export * from "./session.js";
+export * from "./server.js";
+export * from "./transports/stdio.js";
+export * from "./transports/http.js";
+// Statically register tools
+import { McpToolRegistry } from "./registry.js";
+import { GetContextTool } from "./tools/get-context.js";
+import { FindSymbolTool } from "./tools/find-symbol.js";
+import { FindDependenciesTool } from "./tools/find-dependencies.js";
+import { SearchMemoryTool } from "./tools/search-memory.js";
+import { GetArchitectureTool } from "./tools/get-architecture.js";
+import { ExplainFileTool } from "./tools/explain-file.js";
+McpToolRegistry.register(new GetContextTool());
+McpToolRegistry.register(new FindSymbolTool());
+McpToolRegistry.register(new FindDependenciesTool());
+McpToolRegistry.register(new SearchMemoryTool());
+McpToolRegistry.register(new GetArchitectureTool());
+McpToolRegistry.register(new ExplainFileTool());

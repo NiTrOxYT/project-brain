@@ -15,6 +15,18 @@ export interface ContextProviderTelemetry {
     cacheHitCount:             number;
     totalScanLatencyMs:        number;
     satisfiedCount:            number;
+    mcpConfigured:             boolean;
+    mcpConnected:              number;
+    mcpToolInvocations:        number;
+    sessionsStarted:           number;
+    brainContextRequested:     number;
+    brainToolUsed:             number;
+    repoSearchExecuted:        number;
+    repoSearchAvoided:         number;
+    repoSearchReasons:         string[];
+    repoFallbackReasons:       string[];
+    promptTokensSaved:         number;
+    contextTokensReturned:     number;
 }
 
 export class ContextProvider {
@@ -28,7 +40,19 @@ export class ContextProvider {
         averageConfidence:         1.0,
         cacheHitCount:             0,
         totalScanLatencyMs:        0,
-        satisfiedCount:            0
+        satisfiedCount:            0,
+        mcpConfigured:             false,
+        mcpConnected:              0,
+        mcpToolInvocations:        0,
+        sessionsStarted:           0,
+        brainContextRequested:     0,
+        brainToolUsed:             0,
+        repoSearchExecuted:        0,
+        repoSearchAvoided:         0,
+        repoSearchReasons:         [],
+        repoFallbackReasons:       [],
+        promptTokensSaved:         0,
+        contextTokensReturned:     0
     };
 
     private readonly retrievalService: ContextRetrievalService;
@@ -100,13 +124,21 @@ export class ContextProvider {
 
         // 5. Update confidence
         let confidence = 0.95;
+        ContextProvider.telemetry.brainContextRequested++;
+        ContextProvider.telemetry.brainToolUsed++;
+        ContextProvider.telemetry.mcpToolInvocations++;
+
         if (response.snippets.length === 0) {
             confidence = 0.1; // low confidence if no snippets retrieved
             ContextProvider.telemetry.repositoryFallbackCount++;
+            ContextProvider.telemetry.repoSearchExecuted++;
+            ContextProvider.telemetry.repoFallbackReasons.push("Low confidence, empty snippets retrieved.");
             ContextProvider.telemetry.totalScanLatencyMs += 1500; // Simulated scan fallback latency
         } else {
             ContextProvider.telemetry.requestsServedDirectly++;
             ContextProvider.telemetry.satisfiedCount++;
+            ContextProvider.telemetry.repoSearchAvoided++;
+            ContextProvider.telemetry.repoSearchReasons.push("High-confidence context returned from ContextProvider.");
         }
 
         response.confidence = confidence;
@@ -119,6 +151,8 @@ export class ContextProvider {
         // Mock token savings (Baseline repository scan = 420000, context retrieve = optimized response)
         const savedTokens = Math.max(0, 420000 - response.estimatedTokens);
         ContextProvider.telemetry.totalSavedTokens += savedTokens;
+        ContextProvider.telemetry.promptTokensSaved += savedTokens;
+        ContextProvider.telemetry.contextTokensReturned += response.estimatedTokens;
 
         // Recalculate average confidence
         const total = ContextProvider.telemetry.requestsServed;
@@ -172,7 +206,19 @@ export class ContextProvider {
             averageConfidence:         1.0,
             cacheHitCount:             0,
             totalScanLatencyMs:        0,
-            satisfiedCount:            0
+            satisfiedCount:            0,
+            mcpConfigured:             false,
+            mcpConnected:              0,
+            mcpToolInvocations:        0,
+            sessionsStarted:           0,
+            brainContextRequested:     0,
+            brainToolUsed:             0,
+            repoSearchExecuted:        0,
+            repoSearchAvoided:         0,
+            repoSearchReasons:         [],
+            repoFallbackReasons:       [],
+            promptTokensSaved:         0,
+            contextTokensReturned:     0
         };
     }
 }

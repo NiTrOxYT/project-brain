@@ -4,3 +4,8 @@ export * from "./manager.js";
 export * from "./negotiator.js";
 export * from "./registry.js";
 export * from "./fallback.js";
+export * from "./discovery.js";
+export * from "./session-instructions.js";
+export * from "./provider-configurator.js";
+export * from "./provider-policy.js";
+export * from "./provider-verifier.js";

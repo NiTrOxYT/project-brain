@@ -84,7 +84,11 @@ async function runTests() {
                 workspaceBridge: true,
                 mcpBridge:       false,
                 apiBridge:       false,
-                contextProvider: false
+                contextProvider: false,
+                supportsMcp:     false,
+                supportsToolCalling: false,
+                supportsPlugins: false,
+                supportsSdk:     false
             };
 
             async supports(env: RuntimeEnvironment): Promise<SupportResult> {
@@ -106,7 +110,11 @@ async function runTests() {
                         workspaceBridge: true,
                         streaming:       true,
                         interactiveTTY:  false,
-                        contextProvider: false
+                        contextProvider: false,
+                        supportsMcp:     false,
+                        supportsToolCalling: false,
+                        supportsPlugins: false,
+                        supportsSdk:     false
                     },
                     transport: "sdk",
                     connect: async () => {},

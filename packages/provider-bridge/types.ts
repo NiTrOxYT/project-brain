@@ -9,6 +9,10 @@ export interface ProviderCapabilities {
     mcpBridge:       boolean;
     apiBridge:       boolean;
     contextProvider: boolean;
+    supportsMcp:     boolean;
+    supportsToolCalling: boolean;
+    supportsPlugins: boolean;
+    supportsSdk:     boolean;
 }
 
 export interface EffectiveCapabilities {
@@ -19,6 +23,10 @@ export interface EffectiveCapabilities {
     streaming:       boolean;
     interactiveTTY:  boolean;
     contextProvider: boolean;
+    supportsMcp:     boolean;
+    supportsToolCalling: boolean;
+    supportsPlugins: boolean;
+    supportsSdk:     boolean;
 }
 
 export interface ToolInvocation {

@@ -83,7 +83,11 @@ export abstract class BaseProviderAdapter implements ProviderAdapter, Plugin {
             workspaceBridge: false,
             mcpBridge:       false,
             apiBridge:       false,
-            contextProvider: false
+            contextProvider: false,
+            supportsMcp:     false,
+            supportsToolCalling: false,
+            supportsPlugins: false,
+            supportsSdk:     false
         };
     }
 

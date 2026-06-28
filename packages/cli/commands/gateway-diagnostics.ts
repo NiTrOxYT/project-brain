@@ -104,4 +104,26 @@ export async function runGatewayIntegrationDiagnostics(
     logger.log(`  Saved Tokens      : ${tel.totalSavedTokens}`);
     logger.log(`  Avg Confidence    : ${(tel.averageConfidence * 100).toFixed(1)}%`);
     logger.log(`-----------------------------------`);
+
+    // MCP Server Diagnostics
+    const { McpServer, McpToolRegistry, McpSessionManager } = await import("../../mcp-server/index.js");
+    const mcpTel = McpServer.getTelemetry();
+    const activeSessions = McpSessionManager.listSessions();
+
+    logger.log(`\n🔌 \x1b[1mModel Context Protocol (MCP) Server Diagnostics\x1b[0m\n`);
+    logger.log(`  Server Status    : \x1b[32mactive\x1b[0m`);
+    logger.log(`  Active Sessions  : ${activeSessions.length}`);
+    logger.log(`  Registered Tools : ${McpToolRegistry.list().length}`);
+    logger.log(`  Requests Served  : ${mcpTel.requestsServed}`);
+    logger.log(`  Avg Latency      : ${mcpTel.requestsServed > 0 ? (mcpTel.totalLatencyMs / mcpTel.requestsServed).toFixed(1) : 0}ms`);
+    logger.log(`  Auth Failures    : ${mcpTel.authenticationFailures}`);
+    logger.log(`  Tool Failures    : ${mcpTel.toolExecutionFailures}`);
+    logger.log(`  MCP Configured   : ${tel.mcpConfigured ? "\x1b[32myes\x1b[0m" : "\x1b[31mno\x1b[0m"}`);
+    logger.log(`  MCP Connected    : ${tel.mcpConnected}`);
+    logger.log(`  Tool Invocations : ${tel.mcpToolInvocations}`);
+    logger.log(`  Sessions Started : ${tel.sessionsStarted}`);
+    logger.log(`  Repo Avoided     : ${tel.repoSearchAvoided}`);
+    logger.log(`  Repo Fallbacks   : ${tel.repoSearchExecuted}`);
+    logger.log(`  Tokens Saved     : ${tel.promptTokensSaved}`);
+    logger.log(`-----------------------------------`);
 }

@@ -36,20 +36,61 @@ export async function runInstall(
     try {
         const result = await runGatewayInstaller(ctx, cmdOpts);
 
-        if (opts.json) {
-            printJson({ ok: true, ...result });
-            return;
-        }
-
-        if (opts.quiet) return;
+        // Configure and validate providers
+        const { ProviderConfigurator } = await import("../../provider-bridge/provider-configurator.js");
+        const { ProviderPolicyInstaller } = await import("../../provider-bridge/provider-policy.js");
 
         if (cmdOpts.uninstall) {
+            for (const disc of result.discovered) {
+                ProviderConfigurator.unconfigure(disc.id);
+                ProviderPolicyInstaller.removePolicy(disc.id);
+            }
+            if (opts.json) {
+                printJson({ ok: true, ...result });
+                return;
+            }
+            if (opts.quiet) return;
             logger.log(success("Project Brain wrappers successfully uninstalled."));
             if (result.removed.length > 0) {
                 logger.log("Removed: " + result.removed.map(r => r.id).join(", "));
             }
             return;
         }
+
+        // Configure all discovered supported providers
+        for (const disc of result.discovered) {
+            if (disc.id === "opencode" || disc.id === "claude") {
+                if (!opts.quiet) {
+                    logger.log(`Configuring Brain MCP for provider: ${disc.id}...`);
+                }
+                const confRes = ProviderConfigurator.configure(disc.id, { transport: "stdio" });
+                if (!confRes.success) {
+                    throw new Error(`Failed to configure MCP registration for ${disc.id}: ${confRes.error}`);
+                }
+
+                // Install policy instructions file
+                const polRes = ProviderPolicyInstaller.installPolicy(disc.id);
+                if (!polRes.success) {
+                    throw new Error(`Failed to install policy instructions for ${disc.id}: ${polRes.error}`);
+                }
+
+                // Immediately validate configuration by reading it back from disk
+                const isValid = ProviderConfigurator.isConfigured(disc.id);
+                if (!isValid) {
+                    throw new Error(`Validation failed: Brain MCP registration not present in ${disc.id} config after write.`);
+                }
+                if (!opts.quiet) {
+                    logger.log(`  ✓ Configuration successfully merged and validated for ${disc.id}`);
+                }
+            }
+        }
+
+        if (opts.json) {
+            printJson({ ok: true, ...result });
+            return;
+        }
+
+        if (opts.quiet) return;
 
         // ── Step 1: Platform ─────────────────────────────────────────────
         const shellInfo = result.pathResult
